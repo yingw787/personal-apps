@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "$/*": ["./*"],
-      "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"],
+      "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
+      "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
