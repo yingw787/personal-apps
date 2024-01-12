@@ -236,6 +236,7 @@ const AvatarContainer = ({
   );
 };
 
+// TODO: Remove
 const Avatar = ({
   large = false,
   className,
