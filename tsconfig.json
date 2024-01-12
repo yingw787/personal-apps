@@ -1,0 +1,5 @@
+{
+  // Including this dummy file back in, because otherwise npx shadcn-ui@latest
+  // add $COMPONENT will refuse to install.
+  "extends": "./tsconfig.base.json"
+}
