@@ -1,0 +1,24 @@
+{
+  "name": "lib-ui-shadcn",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkg/src/libs/lib-ui-shadcn/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "autoformat": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "pkg/src/libs/lib-ui-shadcn",
+        "commands": [
+          "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
+        ],
+        "parallel": true
+      },
+      "envFile": ".env.local"
+    }
+  }
+}
