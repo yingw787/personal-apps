@@ -6,6 +6,8 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.4",
     "@nx/next": "17.2.8",
     "@radix-ui/react-accordion": "^1.1.2",
