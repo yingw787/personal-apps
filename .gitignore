@@ -7,6 +7,8 @@ tmp
 
 # dependencies
 node_modules
+/.pnp
+.pnp.js
 
 # IDEs and editors
 /.idea
@@ -34,11 +36,24 @@ yarn-error.log
 testem.log
 /typings
 
+# local env files
+*env*.local
+*env*.production
+
+# vercel
+**/.vercel
+
 # System Files
 .DS_Store
 Thumbs.db
-
-.nx/cache
+*.pem
 
 # Next.js
-.next
+**/.next
+
+# typescript
+*.tsbuildinfo
+**/next-env.d.ts
+
+# Nx
+.nx/
