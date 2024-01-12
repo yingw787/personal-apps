@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
+    "@next/mdx": "^14.0.4",
     "@nx/next": "17.2.8",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
