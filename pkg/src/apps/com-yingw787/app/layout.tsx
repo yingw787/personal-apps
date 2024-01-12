@@ -8,10 +8,10 @@ import { ApplicationLayout } from "@apps/com-yingw787/components/application-lay
 export const metadata: Metadata = {
   title: {
     template: "%s - Ying Wang",
-    default: "Ying Wang - The only thing I know is that I know nothing.",
+    default: "Ying Wang",
   },
   description:
-    "I'm Ying, a software engineer based out of Arlington, VA. I build quality software products and engineering teams.",
+    "The only thing I know is that I know nothing.",
 };
 
 export default function RootLayout({
