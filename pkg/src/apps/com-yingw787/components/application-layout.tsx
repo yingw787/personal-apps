@@ -1,7 +1,11 @@
 import { Footer } from "@apps/com-yingw787/components/footer";
 import { Header } from "@apps/com-yingw787/components/header";
 
-export const ApplicationLayout = ({ children }: { children: React.ReactNode }) => {
+export const ApplicationLayout = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">
@@ -16,4 +20,4 @@ export const ApplicationLayout = ({ children }: { children: React.ReactNode }) =
       </div>
     </>
   );
-}
+};
