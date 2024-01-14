@@ -1,13 +1,16 @@
 import "$/global.css";
 
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
 
-const playfair_display = Playfair_Display({ subsets: ["latin"] });
+import { ApplicationProvider } from "@apps/com-yingw787/contexts/application-context";
+import { ApplicationLayout } from "@apps/com-yingw787/components/application-layout";
 
-// The html <head> title and description metadata.
 export const metadata: Metadata = {
-  title: "Ying Wang",
+  title: {
+    template: "%s - Ying Wang",
+    default: "Ying Wang",
+  },
+  description: "The only thing I know is that I know nothing.",
 };
 
 export default function RootLayout({
@@ -16,10 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/* The head should be programmatically generated using the NextJS metadata API - see: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons */}
-      <link rel="icon" href="/images/logo_cat.jpg" sizes="any" />
-      <body className={playfair_display.className}>{children}</body>
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <ApplicationProvider>
+          <div className="flex w-full">
+            <ApplicationLayout>{children}</ApplicationLayout>
+          </div>
+        </ApplicationProvider>
+      </body>
     </html>
   );
 }

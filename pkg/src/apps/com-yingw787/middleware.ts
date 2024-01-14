@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import {
-  ALL_ROUTES,
-  ROUTE_REDIRECT_TO,
-} from "@apps/com-yingw787/lib/routes";
+import { ALL_ROUTES, ROUTE_REDIRECT_TO } from "@apps/com-yingw787/lib/routes";
 
 export async function middleware(req: NextRequest) {
   const res = NextResponse.next();
@@ -16,7 +13,7 @@ export async function middleware(req: NextRequest) {
         // Need to do an exact match - pathname does not include any URL
         // parameters, exact match prevents e.g. '/privacy-policyeohuatsueh'
         // from being routed.
-        req.nextUrl.pathname === existingRoute
+        req.nextUrl.pathname === existingRoute,
     )
   ) {
     const redirectUrl = req.nextUrl.clone();
