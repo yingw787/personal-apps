@@ -1,7 +1,8 @@
 import Image from "next/image";
 // import Image, { type ImageProps } from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 import clsx from "clsx";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 // import { Button } from '@/components/Button'
 // import { Card } from '@/components/Card'
@@ -98,18 +99,18 @@ import image4 from "@apps/com-yingw787/public/images/picture_hiking.jpg";
 //   )
 // }
 
-// function SocialLink({
-//   icon: Icon,
-//   ...props
-// }: React.ComponentPropsWithoutRef<typeof Link> & {
-//   icon: React.ComponentType<{ className?: string }>
-// }) {
-//   return (
-//     <Link className="group -m-1 p-1" {...props}>
-//       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-//     </Link>
-//   )
-// }
+const SocialLink = ({
+  icon: Icon,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof Link> & {
+  icon: React.ComponentType<{ className?: string }>
+}) => {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    </Link>
+  )
+}
 
 // function Newsletter() {
 //   return (
@@ -282,26 +283,16 @@ export default async function Home() {
             powerlifting, reading, and trying new things.
           </p>
           <div className="mt-6 flex gap-6">
-            {/* <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
             <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com"
+              href="https://github.com/yingw787"
               aria-label="Follow on GitHub"
-              icon={GitHubIcon}
+              icon={FaGithub}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/yingw787"
               aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            /> */}
+              icon={FaLinkedin}
+            />
           </div>
         </div>
       </Container>
