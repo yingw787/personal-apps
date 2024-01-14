@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     template: "%s - Ying Wang",
     default: "Ying Wang",
   },
-  description:
-    "The only thing I know is that I know nothing.",
+  description: "The only thing I know is that I know nothing.",
 };
 
 export default function RootLayout({
