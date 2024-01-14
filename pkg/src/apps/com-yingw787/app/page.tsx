@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import {
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa6";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 import { Container } from "@apps/com-yingw787/components/container";
 
@@ -83,6 +80,6 @@ const Home = () => {
       <Photos />
     </>
   );
-}
+};
 
 export default Home;
