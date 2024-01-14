@@ -4,25 +4,28 @@ import {
   ContainerInner,
   ContainerOuter,
 } from "@apps/com-yingw787/components/container";
-
-const NavLink = ({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <Link
-      href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
-    >
-      {children}
-    </Link>
-  );
-};
+import {
+  ROUTE_ABOUT,
+  ROUTE_PROJECTS,
+  ROUTE_TOOLCHAIN,
+} from "@apps/com-yingw787/lib/routes";
 
 export const Footer = () => {
+  const links = [
+    {
+      href: ROUTE_ABOUT,
+      title: "About",
+    },
+    {
+      href: ROUTE_PROJECTS,
+      title: "Projects",
+    },
+    {
+      href: ROUTE_TOOLCHAIN,
+      title: "Toolchain",
+    },
+  ];
+
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -30,13 +33,21 @@ export const Footer = () => {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                {/* TODO: Replace with ROUTES IN LIB/ROUTES */}
+                {links.map((link, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      className="transition hover:text-brand-primary-500 dark:hover:text-brand-primary-400"
+                    >
+                      {link.title}
+                    </Link>
+                  );
+                })}
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Ying Wang. All rights
                 reserved.
               </p>
             </div>
