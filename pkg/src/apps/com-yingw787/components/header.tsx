@@ -21,27 +21,18 @@ import {
   ROUTE_PROJECTS,
   ROUTE_TOOLCHAIN,
 } from "@apps/com-yingw787/lib/routes";
+import {
+  Navigation,
+  createNavigation,
+} from "@apps/com-yingw787/lib/navigation";
 
-const MobileNavigation = (
-  props: React.ComponentPropsWithoutRef<typeof Popover>,
-) => {
-  const links = [
-    {
-      href: ROUTE_ABOUT,
-      title: "About",
-    },
-    {
-      href: ROUTE_PROJECTS,
-      title: "Projects",
-    },
-    {
-      href: ROUTE_TOOLCHAIN,
-      title: "Toolchain",
-    },
-  ];
+interface MobileNavigationProps {
+  links: Navigation[];
+}
 
+const MobileNavigation = ({ links }: MobileNavigationProps) => {
   return (
-    <Popover {...props}>
+    <Popover className="pointer-events-auto md:hidden">
       <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
@@ -400,7 +391,7 @@ export const Header = () => {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
+                <MobileNavigation links={createNavigation()} />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
