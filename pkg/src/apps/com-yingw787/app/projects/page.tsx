@@ -6,6 +6,7 @@ import { Card } from "@apps/com-yingw787/components/card";
 import { SimpleLayout } from "@apps/com-yingw787/components/simple-layout";
 
 import logoScaffoldable from "@apps/com-yingw787/public/images/logo_scaffoldable_small.png";
+import logoTopright from "@apps/com-yingw787/public/images/logo_topright_small.png";
 
 const projects = [
   {
@@ -13,6 +14,12 @@ const projects = [
     description: "A simple Mint alternative.",
     link: { href: "http://scaffoldable.com", label: "scaffoldable.com" },
     logo: logoScaffoldable,
+  },
+  {
+    name: "TopRight",
+    description: "Pre-approvals in 60 seconds.",
+    link: { href: "http://gotopright.com", label: "gotopright.com" },
+    logo: logoTopright,
   },
 ];
 
@@ -54,6 +61,6 @@ const Projects = () => {
       </ul>
     </SimpleLayout>
   );
-}
+};
 
 export default Projects;
