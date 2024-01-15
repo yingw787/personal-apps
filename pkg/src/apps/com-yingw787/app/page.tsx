@@ -3,7 +3,7 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import { Container } from "@apps/com-yingw787/components/container";
-import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaPersonHiking, FaPersonWalkingLuggage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 import portraitImage from "@apps/com-yingw787/public/images/picture_gym_propic.jpg";
@@ -81,6 +81,20 @@ const Home = () => {
               className="mt-4"
             >
               My LinkedIn
+            </SocialLink>
+            <SocialLink
+              href="https://blog.yingw787.com"
+              icon={FaPersonHiking}
+              className="mt-4"
+            >
+              My Personal Blog
+            </SocialLink>
+            <SocialLink
+              href="https://bytes.yingw787.com"
+              icon={FaPersonWalkingLuggage}
+              className="mt-4"
+            >
+              My Professional Blog
             </SocialLink>
             <SocialLink
               href="mailto:me@yingw787.com"
