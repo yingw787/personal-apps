@@ -6,7 +6,7 @@ import { Container } from "@apps/com-yingw787/components/container";
 import { FaLinkedin, FaGithub, FaPersonHiking, FaPersonWalkingLuggage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-import portraitImage from "@apps/com-yingw787/public/images/picture_gym_propic.jpg";
+import portraitImage from "@apps/com-yingw787/public/images/picture_hiking.jpg";
 
 const SocialLink = ({
   className,
