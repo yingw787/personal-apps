@@ -17,11 +17,11 @@ export const createNavigation = (): Navigation[] => {
     },
     {
       href: "https://resume.yingw787.com",
-      title: "My Resume",
+      title: "Resume",
     },
     {
       href: "https://dotfiles.yingw787.com",
-      title: "My Dotfiles",
+      title: "Dotfiles",
     },
   ];
   return links;
