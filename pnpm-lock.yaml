@@ -322,6 +322,9 @@ devDependencies:
   '@nx/workspace':
     specifier: ^17.2.8
     version: 17.2.8(@swc-node/register@1.6.8)(@swc/core@1.3.102)
+  '@nxtensions/astro':
+    specifier: ^16.2.0
+    version: 16.2.0(@nx/devkit@17.2.8)(@nx/js@17.2.8)(@nx/linter@17.2.8)(@nx/workspace@17.2.8)(astro@4.1.2)(encoding@0.1.13)(nx@17.2.8)(typescript@5.2.2)
   '@playwright/test':
     specifier: ^1.36.0
     version: 1.40.1
@@ -3380,6 +3383,40 @@ packages:
       - '@swc/core'
       - debug
 
+  /@nxtensions/astro@16.2.0(@nx/devkit@17.2.8)(@nx/js@17.2.8)(@nx/linter@17.2.8)(@nx/workspace@17.2.8)(astro@4.1.2)(encoding@0.1.13)(nx@17.2.8)(typescript@5.2.2):
+    resolution: {integrity: sha512-7YsyxjL+OsC0a9hCWhKgqzx8EGsN9H9PYuuHg+3+Ba3yfXFw+id1l579N+HoajbA0V+1/XLIo35k7BDh44X2sw==}
+    peerDependencies:
+      '@nx/cypress': ^16.0.0
+      '@nx/devkit': ^16.0.0
+      '@nx/js': ^16.0.0
+      '@nx/linter': ^16.0.0
+      '@nx/workspace': ^16.0.0
+      astro: ^1.6.0 || ^2.0.0
+      nx: ^16.0.0
+      typescript: '>=4.6.2'
+    peerDependenciesMeta:
+      '@nx/cypress':
+        optional: true
+      '@nx/linter':
+        optional: true
+    dependencies:
+      '@astrojs/compiler': 1.8.2
+      '@nx/devkit': 17.2.8(nx@17.2.8)
+      '@nx/js': 17.2.8(@swc-node/register@1.6.8)(@swc/core@1.3.102)(@types/node@18.16.9)(nx@17.2.8)(typescript@5.2.2)
+      '@nx/linter': 17.2.8(@swc-node/register@1.6.8)(@swc/core@1.3.102)(@types/node@18.16.9)(eslint@8.48.0)(nx@17.2.8)
+      '@nx/workspace': 17.2.8(@swc-node/register@1.6.8)(@swc/core@1.3.102)
+      '@phenomnomnominal/tsquery': 6.1.3(typescript@5.2.2)
+      astro: 4.1.2(@types/node@18.16.9)(typescript@5.2.2)
+      fs-extra: 11.1.1
+      node-fetch: 2.6.13(encoding@0.1.13)
+      nx: 17.2.8(@swc-node/register@1.6.8)(@swc/core@1.3.102)
+      semver: 7.5.4
+      strip-ansi: 6.0.1
+      typescript: 5.2.2
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@oclif/command@1.8.36(@oclif/config@1.18.17):
     resolution: {integrity: sha512-/zACSgaYGtAQRzc7HjzrlIs14FuEYAZrMOEwicRoUnZVyRunG4+t5iSEeQu0Xy2bgbCD0U1SP/EdeNZSTXRwjQ==}
     engines: {node: '>=12.0.0'}
@@ -3546,6 +3583,16 @@ packages:
     dependencies:
       esquery: 1.5.0
       typescript: 5.2.2
+
+  /@phenomnomnominal/tsquery@6.1.3(typescript@5.2.2):
+    resolution: {integrity: sha512-CEqpJ872StsxRmwv9ePCZ4BCisrJSlREUC5XxIRYxhvODt4aQoJFFmjTgaP6meyKiiXxxN/VWPZ58j4yHXRkmw==}
+    peerDependencies:
+      typescript: ^3 || ^4 || ^5
+    dependencies:
+      '@types/esquery': 1.5.3
+      esquery: 1.5.0
+      typescript: 5.2.2
+    dev: true
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -6482,6 +6529,12 @@ packages:
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
+
+  /@types/esquery@1.5.3:
+    resolution: {integrity: sha512-c55hQOcoPkWDfuEN9EdP1YyNH4D909U40gUEpY0nB5PWHExWHEPxcx3sx0fJ1Gzf4j1OpWktmIgciIlpgHtfDg==}
+    dependencies:
+      '@types/estree': 1.0.5
+    dev: true
 
   /@types/estree-jsx@1.0.3:
     resolution: {integrity: sha512-pvQ+TKeRHeiUGRhvYwRrQ/ISnohKkSJR14fT2yqyZ4e9K5vqc7hrtY2Y1Dw0ZwAzQ6DQsxsaCUuSIIi8v0Cq6w==}
@@ -10527,6 +10580,15 @@ packages:
   /fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
 
+  /fs-extra@11.1.1:
+    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.1
+    dev: true
+
   /fs-extra@11.2.0:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
@@ -14019,6 +14081,19 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: false
 
+  /node-fetch@2.6.13(encoding@0.1.13):
+    resolution: {integrity: sha512-StxNAxh15zr77QvvkmveSQ8uCQ4+v5FkvNTj0OESmiHu+VRi/gXArXtkWMElOsOUNLtUEvI4yS+rdtOHZTwlQA==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      encoding: 0.1.13
+      whatwg-url: 5.0.0
+    dev: true
+
   /node-fetch@2.7.0(encoding@0.1.13):
     resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
     engines: {node: 4.x || >=6.0.0}
@@ -17288,7 +17363,6 @@ packages:
 
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-    dev: false
 
   /tr46@3.0.0:
     resolution: {integrity: sha512-l7FvfAHlcmulp8kr+flpQZmVwtu7nfRV7NZujtN0OqES8EL4O4e0qqzL0DC5gAvx/ZC/9lk6rhcUwYvkBnBnYA==}
@@ -18071,7 +18145,6 @@ packages:
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
-    dev: false
 
   /webidl-conversions@7.0.0:
     resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
@@ -18158,7 +18231,6 @@ packages:
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
-    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/BaseLayout.astro';
+import { Blog } from '@leosvel/blog';
+
+const title = 'Blog';
+const description =
+  'My blog with articles about web development and programming in general.';
+const extraKeywords = [
+  'Web Development',
+  'JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'Monorepos',
+  'Nx',
+  'Angular',
+];
+
+const posts = (await Astro.glob('../../blog-posts/*.mdx')).sort(
+  (a, b) =>
+    new Date(b.frontmatter.date).valueOf() -
+    new Date(a.frontmatter.date).valueOf()
+);
+---
+
+<Layout
+  title={title}
+  description={description}
+  extraKeywords={extraKeywords}
+  socialImage="/assets/blog-leosvel.dev.png"
+  socialImageAlt="Leosvel's blog social image"
+>
+  <Blog description={description} posts={posts} />
+</Layout>
