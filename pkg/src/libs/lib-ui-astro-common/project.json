@@ -1,14 +1,14 @@
 {
-  "name": "lib-ui-astro-blog",
+  "name": "lib-ui-astro-common",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "pkg/src/libs/lib-ui-astro-blog",
+  "sourceRoot": "pkg/src/libs/lib-ui-astro-common",
   "projectType": "library",
   "tags": [],
   "targets": {
     "autoformat": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "pkg/src/libs/lib-ui-astro-blog",
+        "cwd": "pkg/src/libs/lib-ui-astro-common",
         "commands": [
           "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
         ],
