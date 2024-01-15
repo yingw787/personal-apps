@@ -16,10 +16,8 @@ import {
 
 import { Container } from "@apps/com-yingw787/components/container";
 import avatarImage from "@apps/com-yingw787/public/images/logo_cat.jpg";
-import {
-  Navigation,
-  createNavigation,
-} from "@apps/com-yingw787/lib/navigation";
+import { Navigation } from "@apps/com-yingw787/lib/navigation";
+import { ROUTE_HOME } from "@apps/com-yingw787/lib/routes";
 
 interface MobileNavigationProps {
   links: Navigation[];
@@ -168,7 +166,6 @@ const AvatarContainer = ({
   );
 };
 
-// TODO: Remove
 const Avatar = ({
   large = false,
   className,
@@ -178,7 +175,7 @@ const Avatar = ({
 }) => {
   return (
     <Link
-      href="/"
+      href={ROUTE_HOME}
       aria-label="Home"
       className={clsx(className, "pointer-events-auto")}
       {...props}
@@ -197,7 +194,11 @@ const Avatar = ({
   );
 };
 
-export const Header = () => {
+interface HeaderProps {
+  links: Navigation[];
+}
+
+export const Header = ({ links }: HeaderProps) => {
   const isHomePage = usePathname() === "/";
 
   const headerRef = useRef<React.ElementRef<"div">>(null);
@@ -375,8 +376,8 @@ export const Header = () => {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation links={createNavigation()} />
-                <DesktopNavigation links={createNavigation()} />
+                <MobileNavigation links={links} />
+                <DesktopNavigation links={links} />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">

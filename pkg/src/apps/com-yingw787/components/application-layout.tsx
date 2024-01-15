@@ -1,5 +1,6 @@
 import { Footer } from "@apps/com-yingw787/components/footer";
 import { Header } from "@apps/com-yingw787/components/header";
+import { createNavigation } from "@apps/com-yingw787/lib/navigation";
 
 export const ApplicationLayout = ({
   children,
@@ -14,9 +15,9 @@ export const ApplicationLayout = ({
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <Header />
+        <Header links={createNavigation()} />
         <main className="flex-auto">{children}</main>
-        <Footer />
+        <Footer links={createNavigation()} />
       </div>
     </>
   );

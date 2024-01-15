@@ -4,28 +4,13 @@ import {
   ContainerInner,
   ContainerOuter,
 } from "@apps/com-yingw787/components/container";
-import {
-  ROUTE_ABOUT,
-  ROUTE_PROJECTS,
-  ROUTE_TOOLCHAIN,
-} from "@apps/com-yingw787/lib/routes";
+import { Navigation } from "@apps/com-yingw787/lib/navigation";
 
-export const Footer = () => {
-  const links = [
-    {
-      href: ROUTE_ABOUT,
-      title: "About",
-    },
-    {
-      href: ROUTE_PROJECTS,
-      title: "Projects",
-    },
-    {
-      href: ROUTE_TOOLCHAIN,
-      title: "Toolchain",
-    },
-  ];
+interface FooterProps {
+  links: Navigation[];
+}
 
+export const Footer = ({ links }: FooterProps) => {
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -33,7 +18,6 @@ export const Footer = () => {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                {/* TODO: Replace with ROUTES IN LIB/ROUTES */}
                 {links.map((link, index) => {
                   return (
                     <Link
