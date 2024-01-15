@@ -1,0 +1,20 @@
+{
+  "name": "lib-ui-astro-landing",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkg/src/libs/lib-ui-astro-landing",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "autoformat": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "pkg/src/libs/lib-ui-astro-landing",
+        "commands": [
+          "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
+        ],
+        "parallel": true
+      },
+      "envFile": ".env.local"
+    }
+  }
+}

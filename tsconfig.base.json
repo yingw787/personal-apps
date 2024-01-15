@@ -19,6 +19,7 @@
       "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
       "@libs/astro-blog/*": ["pkg/src/libs/lib-ui-astro-blog/src/*"],
       "@libs/astro-common/*": ["pkg/src/libs/lib-ui-astro-common/src/*"],
+      "@libs/astro-landing/*": ["pkg/src/libs/lib-ui-astro-landing/src/*"],
       "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"]
     }
   },

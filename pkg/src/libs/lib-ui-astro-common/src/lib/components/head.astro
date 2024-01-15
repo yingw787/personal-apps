@@ -1,5 +1,5 @@
 ---
-import '@libs/astro-common/styles/global.css';
+import "@libs/astro-common/styles/global.css";
 
 export interface Props {
   canonicalURL: URL;
@@ -17,14 +17,16 @@ const {
   siteName,
   title,
   extraKeywords = [],
-  socialImage = 'assets/leosvel.dev.png',
+  socialImage = "assets/leosvel.dev.png",
   socialImageAlt = `Leosvel's website social image`,
 } = Astro.props;
 const canonicalImageSrc = new URL(socialImage, Astro.site);
-const sanitizedDescription = description.replace(/(<([^>]+)>)/ig, '');
+const sanitizedDescription = description.replace(/(<([^>]+)>)/gi, "");
 
-const defaultKeywords = ['Leosvel Pérez Espinosa', 'Blog'];
-const keywords = Array.from(new Set([...defaultKeywords, ...extraKeywords])).join(', ');
+const defaultKeywords = ["Leosvel Pérez Espinosa", "Blog"];
+const keywords = Array.from(
+  new Set([...defaultKeywords, ...extraKeywords]),
+).join(", ");
 ---
 
 <!-- Global Metadata -->
@@ -35,10 +37,15 @@ const keywords = Array.from(new Set([...defaultKeywords, ...extraKeywords])).joi
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="sitemap" href="/sitemap-index.xml" />
-<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Leosvel's blog RSS Feed">
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="/rss.xml"
+  title="Leosvel's blog RSS Feed"
+/>
 
 <!-- Primary Meta Tags -->
-<title set:html={title}></title>
+<title set:html={title} />
 <meta name="title" content={title} />
 <meta name="author" content="Leosvel Pérez Espinosa" />
 <meta name="description" content={sanitizedDescription} />
@@ -65,4 +72,7 @@ const keywords = Array.from(new Set([...defaultKeywords, ...extraKeywords])).joi
 <meta name="twitter:image:alt" content={socialImageAlt} />
 
 <!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30e7f4a2b20548998ad672795c296f1c"}'></script>
+<script
+  defer
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "30e7f4a2b20548998ad672795c296f1c"}'></script>
