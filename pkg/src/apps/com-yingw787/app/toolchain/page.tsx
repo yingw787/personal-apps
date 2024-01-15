@@ -55,11 +55,11 @@ const Toolchain = () => {
             </p>
             <br />
             <p>
-              When I interviewed at Mercury in 2019, Max mentioned it was a bit
-              slower than other laptops around the office. I decided to upgrade
-              to make my interviewing experience a bit better and got myself a
-              Lenovo. I tripped over the power cord that December and bent the
-              plug, and that is when I decided to keep it.
+              In 2019, an interviewer mentioned my laptop was a bit slower than
+              other laptops around the office. I decided to upgrade to make my
+              interviewing experience a bit better and got myself a Lenovo. I
+              tripped over the power cord that December and bent the plug, and
+              that is when I decided to keep it.
             </p>
             <br />
             <p>
