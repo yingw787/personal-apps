@@ -24,10 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className={twMerge(
-        "flex h-full bg-zinc-50 dark:bg-black",
-        inter.className
-      )}>
+      <body
+        className={twMerge(
+          "flex h-full bg-zinc-50 dark:bg-black",
+          inter.className,
+        )}
+      >
         <ApplicationProvider>
           <div className="flex w-full">
             <ApplicationLayout>{children}</ApplicationLayout>
