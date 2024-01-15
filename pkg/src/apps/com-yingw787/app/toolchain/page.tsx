@@ -48,27 +48,27 @@ const Toolchain = () => {
       <div className="space-y-20">
         <ToolsSection title="Workstation">
           <Tool title="Lenovo ThinkPad P1 Gen 2 (2019)">
-            <p>
+            <div>
               My first professional grade laptop was a 2012 MacBook Pro my dad
               bought me for college. I used it all the way until 2019, upgrading
               the internals along the way when things got to slow.
-            </p>
+            </div>
             <br />
-            <p>
+            <div>
               In 2019, an interviewer mentioned my laptop was a bit slower than
               other laptops around the office. I decided to upgrade to make my
               interviewing experience a bit better and got myself a Lenovo. I
               tripped over the power cord that December and bent the plug, and
               that is when I decided to keep it.
-            </p>
+            </div>
             <br />
-            <p>
+            <div>
               I like this laptop for the upgradeability - I buy RAM and disk
               separately to get the best price and upgrade on my own timeline.
               Since I use Linux, I&apos;m hoping this is the last laptop I
               really need to upgrade to. If Ubuntu gets too slow, I&apos;ll
               change the distro to something like Arch.
-            </p>
+            </div>
           </Tool>
           <Tool title="2x Dell U2717D Monitors (2018)">
             Linux resolution scaling can be a nightmare. I purchased my laptop
