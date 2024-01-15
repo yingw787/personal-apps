@@ -1,0 +1,21 @@
+{
+  "name": "com-yingw787-blog-e2e",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkg/src/apps/com-yingw787-blog-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": [
+        "{workspaceRoot}/dist/.playwright/pkg/src/apps/com-yingw787-blog-e2e"
+      ],
+      "options": {
+        "config": "pkg/src/apps/com-yingw787-blog-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "implicitDependencies": ["com-yingw787-blog"]
+}
