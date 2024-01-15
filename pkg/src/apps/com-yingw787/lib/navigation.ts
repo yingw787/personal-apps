@@ -15,6 +15,10 @@ export const createNavigation = (): Navigation[] => {
       href: ROUTE_TOOLCHAIN,
       title: "Toolchain",
     },
+    {
+      href: "https://resume.yingw787.com",
+      title: "My Resume",
+    },
   ];
   return links;
 };
