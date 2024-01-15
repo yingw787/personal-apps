@@ -1,8 +1,4 @@
-import {
-  ROUTE_ABOUT,
-  ROUTE_PROJECTS,
-  ROUTE_TOOLCHAIN,
-} from "@apps/com-yingw787/lib/routes";
+import { ROUTE_PROJECTS, ROUTE_TOOLCHAIN } from "@apps/com-yingw787/lib/routes";
 
 export type Navigation = {
   href: string;
@@ -11,10 +7,6 @@ export type Navigation = {
 
 export const createNavigation = (): Navigation[] => {
   const links = [
-    {
-      href: ROUTE_ABOUT,
-      title: "About",
-    },
     {
       href: ROUTE_PROJECTS,
       title: "Projects",
