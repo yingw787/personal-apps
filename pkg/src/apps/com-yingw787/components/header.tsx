@@ -17,6 +17,7 @@ import {
 import { Container } from "@apps/com-yingw787/components/container";
 import avatarImage from "@apps/com-yingw787/public/images/logo_cat.jpg";
 import { Navigation } from "@apps/com-yingw787/lib/navigation";
+import { ROUTE_HOME } from "@apps/com-yingw787/lib/routes";
 
 interface MobileNavigationProps {
   links: Navigation[];
@@ -174,7 +175,7 @@ const Avatar = ({
 }) => {
   return (
     <Link
-      href="/"
+      href={ROUTE_HOME}
       aria-label="Home"
       className={clsx(className, "pointer-events-auto")}
       {...props}
