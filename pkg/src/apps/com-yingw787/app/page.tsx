@@ -61,9 +61,8 @@ const Home = () => {
               divisions from scratch.
             </p>
             <p>
-              When I&apos;m not working, I like powerlifting (my deadlift PR is
-              315 lbs), reading, and trying new things (I&apos;ve been skydiving
-              and scuba diving).
+              When I&apos;m not working, I like powerlifting, reading, and
+              trying new things.
             </p>
           </div>
         </div>
