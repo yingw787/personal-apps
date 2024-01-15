@@ -1,0 +1,40 @@
+---
+import BlogPostPreview from "@libs/astro-blog/blog-post-preview.astro";
+
+export interface Props {
+  description: string;
+  posts: any[];
+}
+
+const { description, posts } = Astro.props;
+---
+
+<div
+  class="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-6xl mx-auto px-4 py-12 sm:px-12 w-full flex flex-col text-cyan-900 transition-all"
+>
+  <section class="mb-8 pb-1 border-b-2 border-cyan-700/50">
+    <h1 class="mb-4 text-3xl">Leosvel's blog</h1>
+    <p class="text-lg italic" set:html={description} />
+  </section>
+
+  <section class="grid justify-center sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {
+      posts.map((post) => {
+        const link = `/blog/${post.file.split("/").pop().split(".").shift()}`;
+
+        return (
+          <BlogPostPreview
+            post={{
+              title: post.frontmatter.title,
+              description: post.frontmatter.description,
+              date: post.frontmatter.date,
+              link,
+              thumbnailImage: post.frontmatter.thumbnailImage,
+              thumbnailImageAlt: post.frontmatter.thumbnailImageAlt,
+            }}
+          />
+        );
+      })
+    }
+  </section>
+</div>
