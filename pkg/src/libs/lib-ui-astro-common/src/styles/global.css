@@ -1,0 +1,16 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0891b2 transparent;
+}
+
+::-webkit-scrollbar {
+  @apply h-[6px] w-[6px] bg-transparent;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-600;
+}

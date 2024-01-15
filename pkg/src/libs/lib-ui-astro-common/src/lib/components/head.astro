@@ -1,0 +1,68 @@
+---
+import '@libs/astro-common/styles/global.css';
+
+export interface Props {
+  canonicalURL: URL;
+  description: string;
+  siteName: string;
+  title: string;
+  extraKeywords?: string[];
+  socialImage?: string;
+  socialImageAlt?: string;
+}
+
+const {
+  canonicalURL,
+  description,
+  siteName,
+  title,
+  extraKeywords = [],
+  socialImage = 'assets/leosvel.dev.png',
+  socialImageAlt = `Leosvel's website social image`,
+} = Astro.props;
+const canonicalImageSrc = new URL(socialImage, Astro.site);
+const sanitizedDescription = description.replace(/(<([^>]+)>)/ig, '');
+
+const defaultKeywords = ['Leosvel Pérez Espinosa', 'Blog'];
+const keywords = Array.from(new Set([...defaultKeywords, ...extraKeywords])).join(', ');
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#164e63" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Leosvel's blog RSS Feed">
+
+<!-- Primary Meta Tags -->
+<title set:html={title}></title>
+<meta name="title" content={title} />
+<meta name="author" content="Leosvel Pérez Espinosa" />
+<meta name="description" content={sanitizedDescription} />
+<meta name="keywords" content={keywords} />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- OpenGraph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={sanitizedDescription} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content={canonicalImageSrc} />
+<meta property="og:image:alt" content={socialImageAlt} />
+
+<!-- Twitter Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@leosvelperez_" />
+<meta name="twitter:creator" content="@leosvelperez_" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={sanitizedDescription} />
+<meta name="twitter:image" content={canonicalImageSrc} />
+<meta name="twitter:image:alt" content={socialImageAlt} />
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30e7f4a2b20548998ad672795c296f1c"}'></script>
