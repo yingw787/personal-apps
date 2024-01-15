@@ -13,7 +13,7 @@ const ToolsSection = ({
       </ul>
     </Section>
   );
-}
+};
 
 const Tool = ({
   title,
@@ -32,7 +32,7 @@ const Tool = ({
       <Card.Description>{children}</Card.Description>
     </Card>
   );
-}
+};
 
 export const metadata = {
   title: "Toolchain",
@@ -43,17 +43,34 @@ const Toolchain = () => {
   return (
     <SimpleLayout
       title="Things I recommend to get the job done."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      intro="Over the years, I've collected some clutter that makes my life more enjoyable. Here's some of my favorites."
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+          <Tool title="Lenovo ThinkPad P1 Gen 2 (2019)">
+            <p>
+              My first professional grade laptop was a 2012 MacBook Pro my dad
+              bought me for college. I used it all the way until 2019, upgrading
+              the internals along the way when things got to slow.
+            </p>
+            <br />
+            <p>
+              When I interviewed at Mercury in 2019, Max mentioned it was a bit
+              slower than other laptops around the office. I decided to upgrade
+              to make my interviewing experience a bit better and got myself a
+              Lenovo. I tripped over the power cord that December and bent the
+              plug, and that is when I decided to keep it.
+            </p>
+            <br />
+            <p>
+              I like this laptop for the upgradeability - I buy RAM and disk
+              separately to get the best price and upgrade on my own timeline.
+              Since I use Linux, I&apos;m hoping this is the last laptop I
+              really need to upgrade to. If Ubuntu gets too slow, I&apos;ll
+              change the distro to something like Arch.
+            </p>
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
+          <Tool title="2x Dell U2717D Monitors (2018)">
             The only display on the market if you want something HiDPI and
             bigger than 27”. When you’re working at planetary scale, every pixel
             you can get counts.
@@ -120,6 +137,6 @@ const Toolchain = () => {
       </div>
     </SimpleLayout>
   );
-}
+};
 
 export default Toolchain;
