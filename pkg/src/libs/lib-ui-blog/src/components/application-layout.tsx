@@ -37,7 +37,12 @@ export const ApplicationLayout = ({
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <Header avatarImage={avatarImage} routeHome={routeHome} links={links} />
+        <Header
+          avatarImage={avatarImage}
+          routeHome={routeHome}
+          links={links}
+          theme={theme}
+        />
         <main className="flex-auto">{children}</main>
         <Footer links={links} theme={theme} />
       </div>

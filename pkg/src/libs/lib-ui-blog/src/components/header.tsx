@@ -18,15 +18,25 @@ import { twMerge } from "tailwind-merge";
 
 import { Container } from "@libs/blog/components/container";
 import { Navigation } from "@libs/blog/types/navigation";
+import { Theme } from "@libs/blog/types/themes";
 
 interface MobileNavigationProps {
   links: Navigation[];
+  theme: Theme;
 }
 
-const MobileNavigation = ({ links }: MobileNavigationProps) => {
+const MobileNavigation = ({ links, theme }: MobileNavigationProps) => {
   return (
     <Popover className="pointer-events-auto md:hidden">
-      <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
+      <Popover.Button
+        className={twMerge(
+          "group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 backdrop-blur",
+          theme === "default"
+            ? "bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-zinc-900/5 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+            : "",
+
+        )}
+      >
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
       </Popover.Button>
@@ -89,9 +99,10 @@ const MobileNavigation = ({ links }: MobileNavigationProps) => {
 
 interface DesktopNavigationProps {
   links: Navigation[];
+  theme: Theme;
 }
 
-const DesktopNavigation = ({ links }: DesktopNavigationProps) => {
+const DesktopNavigation = ({ links, theme }: DesktopNavigationProps) => {
   const currentPath = usePathname();
 
   return (
@@ -204,9 +215,15 @@ interface HeaderProps {
   avatarImage: StaticImageData;
   routeHome: string;
   links: Navigation[];
+  theme: Theme;
 }
 
-export const Header = ({ avatarImage, routeHome, links }: HeaderProps) => {
+export const Header = ({
+  avatarImage,
+  routeHome,
+  links,
+  theme,
+}: HeaderProps) => {
   const isHomePage = usePathname() === "/";
 
   const headerRef = useRef<React.ElementRef<"div">>(null);
@@ -384,8 +401,8 @@ export const Header = ({ avatarImage, routeHome, links }: HeaderProps) => {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation links={links} />
-                <DesktopNavigation links={links} />
+                <MobileNavigation links={links} theme={theme} />
+                <DesktopNavigation links={links} theme={theme} />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
