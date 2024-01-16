@@ -23,6 +23,7 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
+    "**/*.mjs",
     "../../../../pkg/src/apps/com-yingw787-blog/.next/types/**/*.ts",
     "../../../../dist/pkg/src/apps/com-yingw787-blog/.next/types/**/*.ts",
     "next-env.d.ts"
