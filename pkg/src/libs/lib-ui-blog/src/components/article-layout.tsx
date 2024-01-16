@@ -35,11 +35,13 @@ interface ArticleHeaderProps {
 const ArticleHeader = ({ article, theme }: ArticleHeaderProps) => {
   return (
     <header className="flex flex-col">
-      <h1 className={twMerge(
-        "mt-6 text-2xl font-bold tracking-tight sm:text-4xl",
-        theme === "default" ? "text-zinc-800  dark:text-zinc-100" : "",
-        theme === "solarized" ? "text-base01 dark:text-base1" : ""
-      )}>
+      <h1
+        className={twMerge(
+          "mt-6 text-2xl font-bold tracking-tight sm:text-4xl",
+          theme === "default" ? "text-zinc-800  dark:text-zinc-100" : "",
+          theme === "solarized" ? "text-base01 dark:text-base1" : "",
+        )}
+      >
         {article.title}
       </h1>
       <time
@@ -47,7 +49,7 @@ const ArticleHeader = ({ article, theme }: ArticleHeaderProps) => {
         className={twMerge(
           "order-first flex items-center text-base",
           theme === "default" ? "text-zinc-400 dark:text-zinc-500" : "",
-          theme === "solarized" ? "text-base01 dark:text-base1" : ""
+          theme === "solarized" ? "text-base01 dark:text-base1" : "",
         )}
       >
         <span className="h-4 w-0.5 rounded-full bg-base01 dark:bg-base1" />
