@@ -1,35 +1,31 @@
+import Link from "next/link";
+import { twMerge } from "tailwind-merge";
+
 export type HeaderNavigation = {
   href: string;
   title: string;
+  isActive: boolean;
 };
 
 interface HeaderProps {
   headerTitle: string;
-  homeRoute: string;
+  routeHome: string;
   navigation: HeaderNavigation[];
 }
 
-export const Header = ({ headerTitle, homeRoute, navigation }: HeaderProps) => {
+export const Header = ({ headerTitle, routeHome, navigation }: HeaderProps) => {
   return (
     <header>
-      <div className="nav-container">
-        {/* <div class="top-nav-wrap">
-      <a href="/" class="logo whitespace-nowrap">
-        {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
-              alt={SITE.title}
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.title
-          )
-        }
-      </a>
-      <nav id="nav-menu">
-        <button
+      <div className="mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row">
+        <div className="relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8">
+          <Link
+            href={routeHome}
+            className="absolute py-1 text-xl font-semibold sm:static sm:text-2xl whitespace-nowrap"
+          >
+            {headerTitle}
+          </Link>
+          <nav>
+            {/* <button
           class="hamburger-menu focus-outline"
           aria-label="Open Menu"
           aria-expanded="false"
@@ -54,24 +50,25 @@ export const Header = ({ headerTitle, homeRoute, navigation }: HeaderProps) => {
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button> */}
-        {/* <ul id="menu-items" class="display-none sm:flex">
-          <li>
-            <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
-              Posts
-            </a>
-          </li>
-          <li>
-            <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
-              Tags
-            </a>
-          </li>
-          <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
-            </a>
-          </li>
-          <li> */}
-        {/* <LinkButton
+            <ul className="display-none sm:flex">
+              {navigation.map((link, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={link.href}
+                      className={twMerge(
+                        link.isActive
+                          ? "underline decoration-wavy decoration-2 underline-offset-4"
+                          : "",
+                      )}
+                    >
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })}
+              {/* <li> */}
+              {/* <LinkButton
               href="/search"
               className={`focus-outline p-3 sm:p-1 ${
                 activeNav === "search" ? "active" : ""
@@ -88,8 +85,8 @@ export const Header = ({ headerTitle, homeRoute, navigation }: HeaderProps) => {
               </svg>
               <span class="sr-only">Search</span>
             </LinkButton> */}
-        {/* </li> */}
-        {/* {
+              {/* </li> */}
+              {/* {
             SITE.lightAndDarkMode && (
               <li>
                 <button
@@ -110,8 +107,9 @@ export const Header = ({ headerTitle, homeRoute, navigation }: HeaderProps) => {
             )
           }
         </ul> */}
-        {/* </nav>
-    </div> */}
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );

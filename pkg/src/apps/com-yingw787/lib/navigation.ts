@@ -22,7 +22,7 @@ export const createNavigation = (): Navigation[] => {
     {
       href: "https://dotfiles.yingw787.com",
       title: "Dotfiles",
-    }
+    },
   ];
   return links;
 };
