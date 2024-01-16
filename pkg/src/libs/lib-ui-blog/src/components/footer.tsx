@@ -1,20 +1,31 @@
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 import {
   ContainerInner,
   ContainerOuter,
 } from "@libs/blog/components/container";
 import { Navigation } from "@libs/blog/types/navigation";
+import { Theme } from "@libs/blog/types/themes";
 
 interface FooterProps {
   links: Navigation[];
+  theme: Theme;
 }
 
-export const Footer = ({ links }: FooterProps) => {
+export const Footer = ({ links, theme }: FooterProps) => {
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
-        <div className="border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
+        <div
+          className={twMerge(
+            "pb-16 pt-10 border-t",
+            theme === "default"
+              ? "dark:border-zinc-700/40 border-zinc-100"
+              : "",
+            theme === "solarized" ? "dark:border-base1 border-base01" : "",
+          )}
+        >
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">

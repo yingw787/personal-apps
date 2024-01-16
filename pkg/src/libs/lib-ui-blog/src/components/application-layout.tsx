@@ -39,7 +39,7 @@ export const ApplicationLayout = ({
       <div className="relative flex w-full flex-col">
         <Header avatarImage={avatarImage} routeHome={routeHome} links={links} />
         <main className="flex-auto">{children}</main>
-        <Footer links={links} />
+        <Footer links={links} theme={theme} />
       </div>
     </>
   );
