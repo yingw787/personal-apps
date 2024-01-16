@@ -1,4 +1,4 @@
-import { Container } from "@apps/com-yingw787/components/container";
+import { Container } from "@libs/blog/components/container";
 
 export const SimpleLayout = ({
   title,

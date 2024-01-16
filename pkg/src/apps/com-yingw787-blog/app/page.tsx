@@ -1,5 +1,10 @@
+"use client";
+
 const Homepage = () => {
-  return <>hi</>;
-}
+  return (
+    <>
+    </>
+  );
+};
 
 export default Homepage;

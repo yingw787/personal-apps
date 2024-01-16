@@ -3,8 +3,8 @@ import Link from "next/link";
 import {
   ContainerInner,
   ContainerOuter,
-} from "@apps/com-yingw787/components/container";
-import { Navigation } from "@apps/com-yingw787/lib/navigation";
+} from "@libs/blog/components/container";
+import { Navigation } from "@libs/blog/types/navigation";
 
 interface FooterProps {
   links: Navigation[];

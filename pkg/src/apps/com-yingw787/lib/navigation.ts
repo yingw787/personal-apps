@@ -1,9 +1,5 @@
 import { ROUTE_PROJECTS, ROUTE_TOOLCHAIN } from "@apps/com-yingw787/lib/routes";
-
-export type Navigation = {
-  href: string;
-  title: string;
-};
+import { Navigation } from "@libs/blog/types/navigation";
 
 export const createNavigation = (): Navigation[] => {
   const links = [
@@ -17,7 +13,11 @@ export const createNavigation = (): Navigation[] => {
     },
     {
       href: "https://resume.yingw787.com",
-      title: "My Resume",
+      title: "Resume",
+    },
+    {
+      href: "https://dotfiles.yingw787.com",
+      title: "Dotfiles",
     },
   ];
   return links;

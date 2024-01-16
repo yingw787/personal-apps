@@ -4,8 +4,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
-import { ApplicationProvider } from "@apps/com-yingw787/contexts/application-context";
-import { ApplicationLayout } from "@apps/com-yingw787/components/application-layout";
+import { ApplicationProvider } from "@libs/blog/contexts/application-context";
+import { ApplicationLayout } from "@libs/blog/components/application-layout";
+
+import { createNavigation } from "@apps/com-yingw787/lib/navigation";
+import avatarImage from "@apps/com-yingw787/public/images/logo_cat.jpg";
+import { ROUTE_HOME } from "@apps/com-yingw787/lib/routes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +36,13 @@ export default function RootLayout({
       >
         <ApplicationProvider>
           <div className="flex w-full">
-            <ApplicationLayout>{children}</ApplicationLayout>
+            <ApplicationLayout
+              avatarImage={avatarImage}
+              routeHome={ROUTE_HOME}
+              links={createNavigation()}
+            >
+              {children}
+            </ApplicationLayout>
           </div>
         </ApplicationProvider>
       </body>

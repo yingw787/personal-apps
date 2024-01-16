@@ -13,11 +13,11 @@ import {
   SunIcon,
   MoonIcon,
 } from "@heroicons/react/24/outline";
+import { StaticImageData } from "next/image";
+import { twMerge } from "tailwind-merge";
 
-import { Container } from "@apps/com-yingw787/components/container";
-import avatarImage from "@apps/com-yingw787/public/images/logo_cat.jpg";
-import { Navigation } from "@apps/com-yingw787/lib/navigation";
-import { ROUTE_HOME } from "@apps/com-yingw787/lib/routes";
+import { Container } from "@libs/blog/components/container";
+import { Navigation } from "@libs/blog/types/navigation";
 
 interface MobileNavigationProps {
   links: Navigation[];
@@ -167,18 +167,24 @@ const AvatarContainer = ({
 };
 
 const Avatar = ({
+  avatarImage,
+  routeHome,
   large = false,
   className,
-  ...props
 }: Omit<React.ComponentPropsWithoutRef<typeof Link>, "href"> & {
+  avatarImage: StaticImageData;
+  routeHome: string;
   large?: boolean;
 }) => {
   return (
     <Link
-      href={ROUTE_HOME}
+      href={routeHome}
       aria-label="Home"
-      className={clsx(className, "pointer-events-auto")}
-      {...props}
+      className={twMerge(
+        clsx(className, "pointer-events-auto"),
+        "block h-16 w-16 origin-left",
+      )}
+      style={{ transform: "var(--avatar-image-transform)" }}
     >
       <Image
         src={avatarImage}
@@ -195,10 +201,12 @@ const Avatar = ({
 };
 
 interface HeaderProps {
+  avatarImage: StaticImageData;
+  routeHome: string;
   links: Navigation[];
 }
 
-export const Header = ({ links }: HeaderProps) => {
+export const Header = ({ avatarImage, routeHome, links }: HeaderProps) => {
   const isHomePage = usePathname() === "/";
 
   const headerRef = useRef<React.ElementRef<"div">>(null);
@@ -343,9 +351,9 @@ export const Header = ({ links }: HeaderProps) => {
                     }}
                   />
                   <Avatar
+                    avatarImage={avatarImage}
+                    routeHome={routeHome}
                     large
-                    className="block h-16 w-16 origin-left"
-                    style={{ transform: "var(--avatar-image-transform)" }}
                   />
                 </div>
               </div>
@@ -371,7 +379,7 @@ export const Header = ({ links }: HeaderProps) => {
               <div className="flex flex-1">
                 {!isHomePage && (
                   <AvatarContainer>
-                    <Avatar />
+                    <Avatar avatarImage={avatarImage} routeHome={routeHome} />
                   </AvatarContainer>
                 )}
               </div>
