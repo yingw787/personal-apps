@@ -34,7 +34,9 @@ const MobileNavigation = ({ links, theme }: MobileNavigationProps) => {
           theme === "default"
             ? "bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-zinc-900/5 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
             : "",
-
+          theme === "solarized"
+            ? "bg-base3/90 text-base01 shadow-base01/5 ring-base02/5 dark:bg-base03/90 dark:text-base1 dark:ring-base2/10 dark:hover:ring-base2/20"
+            : "",
         )}
       >
         Menu
