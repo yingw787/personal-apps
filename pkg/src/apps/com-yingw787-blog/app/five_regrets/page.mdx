@@ -1,0 +1,28 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-12-01",
+  title: "Five Regrets of the Dying",
+  description: "Five Regrets of the Dying",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+**From [Collective
+Evolution](https://www.collective-evolution.com/2013/04/27/the-top-5-regrets-of-the-dying/):**
+
+A pallative nurse recorded the most common regrets of the dying and put her
+findings into a book called [_"The Top Five Regrets of the
+Dying"_](http://www.amazon.co.uk/The-Top-Five-Regrets-Dying/dp/1848509995/ref=sr_1_1?ie=UTF8&qid=1367096226&sr=8-1&keywords=top+regrets+of+the+dying).
+It's not surprising to see what made the list, as they are all things that touch
+each of our lives as we struggle to pay attention to and make time for the
+things we truly love. Below is the list of each regret along with an excerpt
+from the book.
