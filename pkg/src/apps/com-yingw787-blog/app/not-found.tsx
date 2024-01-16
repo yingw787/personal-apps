@@ -9,15 +9,19 @@ const NotFound = () => {
         <div className="mb-14 flex flex-col items-center justify-center">
           <h1
             aria-label="404 Not Found"
-            className="text-9xl font-bold text-skin-accent"
+            className="text-9xl font-bold text-base00 dark:text-base0"
           >
             404
           </h1>
-          <span aria-hidden="true">¯\_(ツ)_/¯</span>
-          <p className="mt-4 text-2xl sm:text-3xl">Page Not Found</p>
+          <span aria-hidden="true" className="text-base00 dark:text-base0">
+            ¯\_(ツ)_/¯
+          </span>
+          <p className="mt-4 text-2xl sm:text-3xl text-base00 dark:text-base0">
+            Page Not Found
+          </p>
           <Link
             href={ROUTE_HOME}
-            className="my-6 underline decoration-dashed underline-offset-8 text-lg"
+            className="my-6 underline decoration-dashed underline-offset-8 text-lg text-base00 dark:text-base0"
           >
             Go back home
           </Link>
