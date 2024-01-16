@@ -23,7 +23,7 @@ export const Footer = ({ links, theme }: FooterProps) => {
             theme === "default"
               ? "border-zinc-100 dark:border-zinc-700/40"
               : "",
-            theme === "solarized" ? "border-base01 dark:border-base1" : "",
+            theme === "solarized" ? "border-base1 dark:border-base01" : "",
           )}
         >
           <ContainerInner>
