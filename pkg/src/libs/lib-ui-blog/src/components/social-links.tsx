@@ -10,22 +10,42 @@ interface SocialLinkProps {
   className?: string;
   href: string;
   icon: React.ComponentType<{ className?: string }>;
+  theme: Theme;
   children: React.ReactNode;
 }
 
 const SocialLink = ({
   className,
   href,
-  children,
   icon: Icon,
+  theme,
+  children,
 }: SocialLinkProps) => {
   return (
     <li className={clsx(className, "flex")}>
       <Link
         href={href}
-        className="group flex items-center text-sm font-medium text-zinc-800 transition hover:text-brand-primary-500 dark:text-zinc-200 dark:hover:text-brand-primary-500"
+        className={twMerge(
+          "group flex items-center text-sm font-medium",
+          theme === "default"
+            ? "text-zinc-800 transition hover:text-brand-primary-500 dark:text-zinc-200 dark:hover:text-brand-primary-500"
+            : "",
+          theme === "solarized"
+            ? "text-base01 dark:text-base1 hover:text-base02 dark:hover:text-base2"
+            : "",
+        )}
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-brand-primary-500" />
+        <Icon
+          className={twMerge(
+            "h-6 w-6 flex-none",
+            theme === "default"
+              ? "fill-zinc-500 transition group-hover:fill-brand-primary-500"
+              : "",
+            theme === "solarized"
+              ? "text-base01 dark:text-base1 hover:text-base02 dark:hover:text-base2"
+              : "",
+          )}
+        />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -48,7 +68,11 @@ export const SocialLinksSection = ({
       {socialLinks.map((socialLink, index) => {
         return (
           <div className="mt-4" key={index}>
-            <SocialLink href={socialLink.href} icon={socialLink.icon}>
+            <SocialLink
+              href={socialLink.href}
+              icon={socialLink.icon}
+              theme={theme}
+            >
               {socialLink.title}
             </SocialLink>
           </div>
@@ -62,7 +86,7 @@ export const SocialLinksSection = ({
           )}
         />
       </div>
-      <SocialLink href={emailLink.href} icon={emailLink.icon}>
+      <SocialLink href={emailLink.href} icon={emailLink.icon} theme={theme}>
         {emailLink.title}
       </SocialLink>
     </ul>
