@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body
         className={twMerge(
-          "flex h-full bg-base2 dark:bg-base03",
+          "flex h-full bg-base3 dark:bg-base03",
           ibmPlexMono.className,
         )}
       >
