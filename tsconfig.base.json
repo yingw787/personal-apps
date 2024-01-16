@@ -17,6 +17,7 @@
     "paths": {
       "$/*": ["./*"],
       "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
+      "@apps/com-yingw787-blog/*": ["pkg/src/apps/com-yingw787-blog/*"],
       "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"]
     }
   },
