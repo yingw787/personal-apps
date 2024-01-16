@@ -2,8 +2,8 @@ import { type Metadata } from "next";
 import Image from "next/image";
 import { FaLink } from "react-icons/fa6";
 
-import { Card } from "@apps/com-yingw787/components/card";
-import { SimpleLayout } from "@apps/com-yingw787/components/simple-layout";
+import { Card } from "@libs/blog/components/card";
+import { SimpleLayout } from "@libs/blog/components/simple-layout";
 
 import logoScaffoldable from "@apps/com-yingw787/public/images/logo_scaffoldable_small.png";
 import logoTopright from "@apps/com-yingw787/public/images/logo_topright_small.png";

@@ -1,6 +1,6 @@
-import { Card } from "@apps/com-yingw787/components/card";
-import { Section } from "@apps/com-yingw787/components/section";
-import { SimpleLayout } from "@apps/com-yingw787/components/simple-layout";
+import { Card } from "@libs/blog/components/card";
+import { Section } from "@libs/blog/components/section";
+import { SimpleLayout } from "@libs/blog/components/simple-layout";
 
 const ToolsSection = ({
   children,

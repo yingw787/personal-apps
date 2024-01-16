@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 
-import { Container } from "@apps/com-yingw787/components/container";
+import { Container } from "@libs/blog/components/container";
 import {
   FaLinkedin,
   FaGithub,

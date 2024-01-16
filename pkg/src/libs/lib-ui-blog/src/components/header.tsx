@@ -1,116 +1,407 @@
+"use client";
+
+import { Fragment, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
+import { Popover, Transition } from "@headlessui/react";
+import clsx from "clsx";
+import {
+  XMarkIcon,
+  ChevronDownIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/outline";
+import { StaticImageData } from "next/image";
 import { twMerge } from "tailwind-merge";
 
-export type HeaderNavigation = {
-  href: string;
-  title: string;
-  isActive: boolean;
+import { Container } from "@libs/blog/components/container";
+import { Navigation } from "@libs/blog/types/navigation";
+
+interface MobileNavigationProps {
+  links: Navigation[];
+}
+
+const MobileNavigation = ({ links }: MobileNavigationProps) => {
+  return (
+    <Popover className="pointer-events-auto md:hidden">
+      <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
+        Menu
+        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+      </Popover.Button>
+      <Transition.Root>
+        <Transition.Child
+          as={Fragment}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="duration-150 ease-in"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <Popover.Overlay className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80" />
+        </Transition.Child>
+        <Transition.Child
+          as={Fragment}
+          enter="duration-150 ease-out"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="duration-150 ease-in"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
+          <Popover.Panel
+            focus
+            className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+          >
+            <div className="flex flex-row-reverse items-center justify-between">
+              <Popover.Button aria-label="Close menu" className="-m-1 p-1">
+                <XMarkIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
+              </Popover.Button>
+              <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                Navigation
+              </h2>
+            </div>
+            <nav className="mt-6">
+              <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                {links.map((link, index) => {
+                  return (
+                    <li key={index}>
+                      <Popover.Button
+                        as={Link}
+                        href={link.href}
+                        className="block py-2"
+                      >
+                        {link.title}
+                      </Popover.Button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </Popover.Panel>
+        </Transition.Child>
+      </Transition.Root>
+    </Popover>
+  );
+};
+
+interface DesktopNavigationProps {
+  links: Navigation[];
+}
+
+const DesktopNavigation = ({ links }: DesktopNavigationProps) => {
+  const currentPath = usePathname();
+
+  return (
+    <nav className="pointer-events-auto hidden md:block">
+      <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+        {links.map((link, index) => {
+          const isActive = currentPath === link.href;
+          return (
+            <li key={index}>
+              <Link
+                href={link.href}
+                className={clsx(
+                  "relative block px-3 py-2 transition",
+                  isActive
+                    ? "text-brand-primary-500 dark:text-brand-primary-400"
+                    : "hover:text-brand-primary-500 dark:hover:text-brand-primary-400",
+                )}
+              >
+                {link.title}
+                {isActive && (
+                  <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-brand-primary-500/0 via-brand-primary-500/40 to-brand-primary-500/0 dark:from-brand-primary-400/0 dark:via-brand-primary-400/40 dark:to-brand-primary-400/0" />
+                )}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
+};
+
+const ThemeToggle = () => {
+  const { resolvedTheme, setTheme } = useTheme();
+  const otherTheme = resolvedTheme === "dark" ? "light" : "dark";
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return (
+    <button
+      type="button"
+      aria-label={mounted ? `Switch to ${otherTheme} theme` : "Toggle theme"}
+      className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+      onClick={() => setTheme(otherTheme)}
+    >
+      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-brand-primary-50 [@media(prefers-color-scheme:dark)]:stroke-brand-primary-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-brand-primary-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-brand-primary-600" />
+      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-brand-primary-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-brand-primary-500" />
+    </button>
+  );
+};
+
+function clamp(number: number, a: number, b: number) {
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
+  return Math.min(Math.max(number, min), max);
+}
+
+const AvatarContainer = ({
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<"div">) => {
+  return (
+    <div
+      className={clsx(
+        className,
+        "h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10",
+      )}
+      {...props}
+    />
+  );
+};
+
+const Avatar = ({
+  avatarImage,
+  routeHome,
+  large = false,
+  className,
+}: Omit<React.ComponentPropsWithoutRef<typeof Link>, "href"> & {
+  avatarImage: StaticImageData;
+  routeHome: string;
+  large?: boolean;
+}) => {
+  return (
+    <Link
+      href={routeHome}
+      aria-label="Home"
+      className={twMerge(
+        clsx(className, "pointer-events-auto"),
+        "block h-16 w-16 origin-left",
+      )}
+      style={{ transform: "var(--avatar-image-transform)" }}
+    >
+      <Image
+        src={avatarImage}
+        alt=""
+        sizes={large ? "4rem" : "2.25rem"}
+        className={clsx(
+          "rounded-full bg-zinc-100 object-cover dark:bg-zinc-800",
+          large ? "h-16 w-16" : "h-9 w-9",
+        )}
+        priority
+      />
+    </Link>
+  );
 };
 
 interface HeaderProps {
-  headerTitle: string;
+  avatarImage: StaticImageData;
   routeHome: string;
-  navigation: HeaderNavigation[];
+  links: Navigation[];
 }
 
-export const Header = ({ headerTitle, routeHome, navigation }: HeaderProps) => {
+export const Header = ({ avatarImage, routeHome, links }: HeaderProps) => {
+  const isHomePage = usePathname() === "/";
+
+  const headerRef = useRef<React.ElementRef<"div">>(null);
+  const avatarRef = useRef<React.ElementRef<"div">>(null);
+  const isInitial = useRef(true);
+
+  useEffect(() => {
+    const downDelay = avatarRef.current?.offsetTop ?? 0;
+    const upDelay = 64;
+
+    function setProperty(property: string, value: string) {
+      document.documentElement.style.setProperty(property, value);
+    }
+
+    function removeProperty(property: string) {
+      document.documentElement.style.removeProperty(property);
+    }
+
+    function updateHeaderStyles() {
+      if (!headerRef.current) {
+        return;
+      }
+
+      const { top, height } = headerRef.current.getBoundingClientRect();
+      const scrollY = clamp(
+        window.scrollY,
+        0,
+        document.body.scrollHeight - window.innerHeight,
+      );
+
+      if (isInitial.current) {
+        setProperty("--header-position", "sticky");
+      }
+
+      setProperty("--content-offset", `${downDelay}px`);
+
+      if (isInitial.current || scrollY < downDelay) {
+        setProperty("--header-height", `${downDelay + height}px`);
+        setProperty("--header-mb", `${-downDelay}px`);
+      } else if (top + height < -upDelay) {
+        const offset = Math.max(height, scrollY - upDelay);
+        setProperty("--header-height", `${offset}px`);
+        setProperty("--header-mb", `${height - offset}px`);
+      } else if (top === 0) {
+        setProperty("--header-height", `${scrollY + height}px`);
+        setProperty("--header-mb", `${-scrollY}px`);
+      }
+
+      if (top === 0 && scrollY > 0 && scrollY >= downDelay) {
+        setProperty("--header-inner-position", "fixed");
+        removeProperty("--header-top");
+        removeProperty("--avatar-top");
+      } else {
+        removeProperty("--header-inner-position");
+        setProperty("--header-top", "0px");
+        setProperty("--avatar-top", "0px");
+      }
+    }
+
+    function updateAvatarStyles() {
+      if (!isHomePage) {
+        return;
+      }
+
+      const fromScale = 1;
+      const toScale = 36 / 64;
+      const fromX = 0;
+      const toX = 2 / 16;
+
+      const scrollY = downDelay - window.scrollY;
+
+      let scale = (scrollY * (fromScale - toScale)) / downDelay + toScale;
+      scale = clamp(scale, fromScale, toScale);
+
+      let x = (scrollY * (fromX - toX)) / downDelay + toX;
+      x = clamp(x, fromX, toX);
+
+      setProperty(
+        "--avatar-image-transform",
+        `translate3d(${x}rem, 0, 0) scale(${scale})`,
+      );
+
+      const borderScale = 1 / (toScale / scale);
+      const borderX = (-toX + x) * borderScale;
+      const borderTransform = `translate3d(${borderX}rem, 0, 0) scale(${borderScale})`;
+
+      setProperty("--avatar-border-transform", borderTransform);
+      setProperty("--avatar-border-opacity", scale === toScale ? "1" : "0");
+    }
+
+    function updateStyles() {
+      updateHeaderStyles();
+      updateAvatarStyles();
+      isInitial.current = false;
+    }
+
+    updateStyles();
+    window.addEventListener("scroll", updateStyles, { passive: true });
+    window.addEventListener("resize", updateStyles);
+
+    return () => {
+      window.removeEventListener("scroll", updateStyles);
+      window.removeEventListener("resize", updateStyles);
+    };
+  }, [isHomePage]);
+
   return (
-    <header>
-      <div className="mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row">
-        <div className="relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8">
-          <Link
-            href={routeHome}
-            className="absolute py-1 text-xl font-semibold sm:static sm:text-2xl whitespace-nowrap"
-          >
-            {headerTitle}
-          </Link>
-          <nav>
-            {/* <button
-          class="hamburger-menu focus-outline"
-          aria-label="Open Menu"
-          aria-expanded="false"
-          aria-controls="menu-items"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="menu-icon"
-          >
-            <line x1="7" y1="12" x2="21" y2="12" class="line"></line>
-            <line x1="3" y1="6" x2="21" y2="6" class="line"></line>
-            <line x1="12" y1="18" x2="21" y2="18" class="line"></line>
-            <line x1="18" y1="6" x2="6" y2="18" class="close"></line>
-            <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
-          </svg>
-        </button> */}
-            <ul className="display-none sm:flex">
-              {navigation.map((link, index) => {
-                return (
-                  <li key={index}>
-                    <a
-                      href={link.href}
-                      className={twMerge(
-                        link.isActive
-                          ? "underline decoration-wavy decoration-2 underline-offset-4"
-                          : "",
-                      )}
-                    >
-                      {link.title}
-                    </a>
-                  </li>
-                );
-              })}
-              {/* <li> */}
-              {/* <LinkButton
-              href="/search"
-              className={`focus-outline p-3 sm:p-1 ${
-                activeNav === "search" ? "active" : ""
-              } flex`}
-              ariaLabel="search"
-              title="Search"
+    <>
+      <header
+        className="pointer-events-none relative z-50 flex flex-none flex-col"
+        style={{
+          height: "var(--header-height)",
+          marginBottom: "var(--header-mb)",
+        }}
+      >
+        {isHomePage && (
+          <>
+            <div
+              ref={avatarRef}
+              className="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"
+            />
+            <Container
+              className="top-0 order-last -mb-3 pt-3"
+              style={{
+                position:
+                  "var(--header-position)" as React.CSSProperties["position"],
+              }}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="scale-125 sm:scale-100"
-                ><path
-                  d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
-                ></path>
-              </svg>
-              <span class="sr-only">Search</span>
-            </LinkButton> */}
-              {/* </li> */}
-              {/* {
-            SITE.lightAndDarkMode && (
-              <li>
-                <button
-                  id="theme-btn"
-                  class="focus-outline"
-                  title="Toggles light & dark"
-                  aria-label="auto"
-                  aria-live="polite"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" id="moon-svg">
-                    <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z" />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" id="sun-svg">
-                    <path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z" />
-                  </svg>
-                </button>
-              </li>
-            )
-          }
-        </ul> */}
-            </ul>
-          </nav>
+              <div
+                className="top-[var(--avatar-top,theme(spacing.3))] w-full"
+                style={{
+                  position:
+                    "var(--header-inner-position)" as React.CSSProperties["position"],
+                }}
+              >
+                <div className="relative">
+                  <AvatarContainer
+                    className="absolute left-0 top-3 origin-left transition-opacity"
+                    style={{
+                      opacity: "var(--avatar-border-opacity, 0)",
+                      transform: "var(--avatar-border-transform)",
+                    }}
+                  />
+                  <Avatar
+                    avatarImage={avatarImage}
+                    routeHome={routeHome}
+                    large
+                  />
+                </div>
+              </div>
+            </Container>
+          </>
+        )}
+        <div
+          ref={headerRef}
+          className="top-0 z-10 h-16 pt-6"
+          style={{
+            position:
+              "var(--header-position)" as React.CSSProperties["position"],
+          }}
+        >
+          <Container
+            className="top-[var(--header-top,theme(spacing.6))] w-full"
+            style={{
+              position:
+                "var(--header-inner-position)" as React.CSSProperties["position"],
+            }}
+          >
+            <div className="relative flex gap-4">
+              <div className="flex flex-1">
+                {!isHomePage && (
+                  <AvatarContainer>
+                    <Avatar avatarImage={avatarImage} routeHome={routeHome} />
+                  </AvatarContainer>
+                )}
+              </div>
+              <div className="flex flex-1 justify-end md:justify-center">
+                <MobileNavigation links={links} />
+                <DesktopNavigation links={links} />
+              </div>
+              <div className="flex justify-end md:flex-1">
+                <div className="pointer-events-auto">
+                  <ThemeToggle />
+                </div>
+              </div>
+            </div>
+          </Container>
         </div>
-      </div>
-    </header>
+      </header>
+      {isHomePage && (
+        <div
+          className="flex-none"
+          style={{ height: "var(--content-offset)" }}
+        />
+      )}
+    </>
   );
 };
