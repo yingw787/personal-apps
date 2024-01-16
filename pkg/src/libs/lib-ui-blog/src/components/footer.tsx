@@ -21,27 +21,47 @@ export const Footer = ({ links, theme }: FooterProps) => {
           className={twMerge(
             "pb-16 pt-10 border-t",
             theme === "default"
-              ? "dark:border-zinc-700/40 border-zinc-100"
+              ? "border-zinc-100 dark:border-zinc-700/40"
               : "",
-            theme === "solarized" ? "dark:border-base1 border-base01" : "",
+            theme === "solarized" ? "border-base01 dark:border-base1" : "",
           )}
         >
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
+              <div
+                className={twMerge(
+                  "flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium",
+                  theme === "default" ? "text-zinc-800 dark:text-zinc-200" : "",
+                  theme === "solarized" ? "text-base01 dark:text-base1" : "",
+                )}
+              >
                 {links.map((link, index) => {
                   return (
                     <Link
                       key={index}
                       href={link.href}
-                      className="transition hover:text-brand-primary-500 dark:hover:text-brand-primary-400"
+                      className={twMerge(
+                        "transition",
+                        theme === "default"
+                          ? "hover:text-brand-primary-500 dark:hover:text-brand-primary-400"
+                          : "",
+                        theme === "solarized"
+                          ? "hover:text-base02 dark:hover:text-base2"
+                          : "",
+                      )}
                     >
                       {link.title}
                     </Link>
                   );
                 })}
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
+              <p
+                className={twMerge(
+                  "text-sm",
+                  theme === "default" ? "text-zinc-400 dark:text-zinc-500" : "",
+                  theme === "solarized" ? "text-base01 dark:text-base1" : "",
+                )}
+              >
                 &copy; {new Date().getFullYear()} Ying Wang. All rights
                 reserved.
               </p>
