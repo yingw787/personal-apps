@@ -25,7 +25,7 @@ export async function Image({
 
       if (src.startsWith("http")) {
         imageBuffer = Buffer.from(
-          await fetch(src).then(res => res.arrayBuffer())
+          await fetch(src).then((res) => res.arrayBuffer()),
         );
       } else {
         if (
@@ -34,15 +34,15 @@ export async function Image({
           process.env.NODE_ENV === "production"
         ) {
           imageBuffer = Buffer.from(
-            await fetch("https://" + process.env.VERCEL_URL + src).then(res =>
-              res.arrayBuffer()
-            )
+            await fetch("https://" + process.env.VERCEL_URL + src).then((res) =>
+              res.arrayBuffer(),
+            ),
           );
         } else {
           imageBuffer = await readFile(
             new URL(
-              join(import.meta.url, "..", "..", "..", "..", "public", src)
-            ).pathname
+              join(import.meta.url, "..", "..", "..", "..", "public", src),
+            ).pathname,
           );
         }
       }
