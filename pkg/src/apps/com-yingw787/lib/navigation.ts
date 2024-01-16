@@ -1,4 +1,8 @@
-import { ROUTE_HOME, ROUTE_PROJECTS, ROUTE_TOOLCHAIN } from "@apps/com-yingw787/lib/routes";
+import {
+  ROUTE_HOME,
+  ROUTE_PROJECTS,
+  ROUTE_TOOLCHAIN,
+} from "@apps/com-yingw787/lib/routes";
 import { Navigation } from "@libs/blog/types/navigation";
 
 export const createNavigation = (): Navigation[] => {
