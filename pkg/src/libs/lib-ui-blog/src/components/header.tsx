@@ -40,7 +40,17 @@ const MobileNavigation = ({ links, theme }: MobileNavigationProps) => {
         )}
       >
         Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+        <ChevronDownIcon
+          className={twMerge(
+            "ml-3 h-auto w-2",
+            theme === "default"
+              ? "stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400"
+              : "",
+            theme === "solarized"
+              ? "stroke-base01 group-hover:stroke-base02 dark:stroke-base1 dark:group-hover:stroke-base2"
+              : "",
+          )}
+        />
       </Popover.Button>
       <Transition.Root>
         <Transition.Child
