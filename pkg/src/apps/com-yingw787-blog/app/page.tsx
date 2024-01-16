@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import clsx from "clsx";
 import {
   FaLinkedin,
   FaGithub,
@@ -10,33 +8,39 @@ import {
 import { MdEmail } from "react-icons/md";
 
 import { Container } from "@libs/blog/components/container";
+import { SocialLinksSection } from "@libs/blog/components/social-links";
+import { SocialLinkNavigation } from "@libs/blog/types/navigation";
 import portraitImage from "@apps/com-yingw787-blog/public/images/picture_kate_sleeping.jpg";
 
-const SocialLink = ({
-  className,
-  href,
-  children,
-  icon: Icon,
-}: {
-  className?: string;
-  href: string;
-  icon: React.ComponentType<{ className?: string }>;
-  children: React.ReactNode;
-}) => {
-  return (
-    <li className={clsx(className, "flex")}>
-      <Link
-        href={href}
-        className="group flex items-center text-sm font-medium text-zinc-800 transition hover:text-brand-primary-500 dark:text-zinc-200 dark:hover:text-brand-primary-500"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-brand-primary-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  );
-};
-
 const Home = () => {
+  const socialLinks: SocialLinkNavigation[] = [
+    {
+      href: "https://github.com/yingw787",
+      icon: FaGithub,
+      title: "My GitHub"
+    },
+    {
+      href: "https://linkedin.com/in/yingw787",
+      icon: FaLinkedin,
+      title: "My LinkedIn"
+    },
+    {
+      href: "https://blog.yingw787.com",
+      icon: FaPersonHiking,
+      title: "My Personal Blog"
+    },
+    {
+      href: "https://bytes.yingw787.com",
+      icon: FaPersonWalkingLuggage,
+      title: "My Professional Blog"
+    },
+  ]
+  const emailLink: SocialLinkNavigation = {
+    href: "mailto:me@yingw787.com",
+    icon: MdEmail,
+    title: "me@yingw787.com"
+  }
+
   return (
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -63,43 +67,7 @@ const Home = () => {
           </blockquote>
         </div>
         <div className="lg:pl-20">
-          <ul role="list">
-            <SocialLink
-              href="https://github.com/yingw787"
-              icon={FaGithub}
-              className="mt-4"
-            >
-              My GitHub
-            </SocialLink>
-            <SocialLink
-              href="https://linkedin.com/in/yingw787"
-              icon={FaLinkedin}
-              className="mt-4"
-            >
-              My LinkedIn
-            </SocialLink>
-            <SocialLink
-              href="https://blog.yingw787.com"
-              icon={FaPersonHiking}
-              className="mt-4"
-            >
-              My Personal Blog
-            </SocialLink>
-            <SocialLink
-              href="https://bytes.yingw787.com"
-              icon={FaPersonWalkingLuggage}
-              className="mt-4"
-            >
-              My Professional Blog
-            </SocialLink>
-            <SocialLink
-              href="mailto:me@yingw787.com"
-              icon={MdEmail}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-            >
-              me@yingw787.com
-            </SocialLink>
-          </ul>
+          <SocialLinksSection socialLinks={socialLinks} emailLink={emailLink} />
         </div>
       </div>
     </Container>
