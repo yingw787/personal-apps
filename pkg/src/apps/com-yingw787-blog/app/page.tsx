@@ -17,29 +17,29 @@ const Home = () => {
     {
       href: "https://github.com/yingw787",
       icon: FaGithub,
-      title: "My GitHub"
+      title: "My GitHub",
     },
     {
       href: "https://linkedin.com/in/yingw787",
       icon: FaLinkedin,
-      title: "My LinkedIn"
+      title: "My LinkedIn",
     },
     {
       href: "https://blog.yingw787.com",
       icon: FaPersonHiking,
-      title: "My Personal Blog"
+      title: "My Personal Blog",
     },
     {
       href: "https://bytes.yingw787.com",
       icon: FaPersonWalkingLuggage,
-      title: "My Professional Blog"
+      title: "My Professional Blog",
     },
-  ]
+  ];
   const emailLink: SocialLinkNavigation = {
     href: "mailto:me@yingw787.com",
     icon: MdEmail,
-    title: "me@yingw787.com"
-  }
+    title: "me@yingw787.com",
+  };
 
   return (
     <Container className="mt-16 sm:mt-32">

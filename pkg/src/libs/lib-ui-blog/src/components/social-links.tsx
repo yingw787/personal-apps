@@ -48,7 +48,9 @@ export const SocialLinksSection = ({
           </div>
         );
       })}
-      <Separator className="mt-8 pt-8" />
+      <div className="py-4">
+        <Separator />
+      </div>
       <SocialLink href={emailLink.href} icon={emailLink.icon}>
         {emailLink.title}
       </SocialLink>
