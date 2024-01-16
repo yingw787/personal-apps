@@ -404,7 +404,7 @@ export const Header = ({
                 "var(--header-inner-position)" as React.CSSProperties["position"],
             }}
           >
-            <div className="relative flex gap-4">
+            <div className="relative flex items-center gap-4">
               <div className="flex flex-1">
                 {!isHomePage && (
                   <AvatarContainer>
