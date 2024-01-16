@@ -67,7 +67,11 @@ const Home = () => {
           </blockquote>
         </div>
         <div className="lg:pl-20">
-          <SocialLinksSection socialLinks={socialLinks} emailLink={emailLink} />
+          <SocialLinksSection
+            socialLinks={socialLinks}
+            emailLink={emailLink}
+            theme="solarized"
+          />
         </div>
       </div>
     </Container>

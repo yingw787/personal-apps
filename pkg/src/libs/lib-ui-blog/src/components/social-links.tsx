@@ -1,20 +1,24 @@
 import Link from "next/link";
 import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 
 import { SocialLinkNavigation } from "@libs/blog/types/navigation";
+import { Theme } from "@libs/blog/types/themes";
 import { Separator } from "@libs/shadcn-ui/components/ui/separator";
+
+interface SocialLinkProps {
+  className?: string;
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+  children: React.ReactNode;
+}
 
 const SocialLink = ({
   className,
   href,
   children,
   icon: Icon,
-}: {
-  className?: string;
-  href: string;
-  icon: React.ComponentType<{ className?: string }>;
-  children: React.ReactNode;
-}) => {
+}: SocialLinkProps) => {
   return (
     <li className={clsx(className, "flex")}>
       <Link
@@ -31,17 +35,19 @@ const SocialLink = ({
 interface SocialLinksSectionProps {
   socialLinks: SocialLinkNavigation[];
   emailLink: SocialLinkNavigation;
+  theme?: Theme;
 }
 
 export const SocialLinksSection = ({
   socialLinks,
   emailLink,
+  theme = "default",
 }: SocialLinksSectionProps) => {
   return (
     <ul>
       {socialLinks.map((socialLink, index) => {
         return (
-          <div className="mt-4">
+          <div className="mt-4" key={index}>
             <SocialLink href={socialLink.href} icon={socialLink.icon}>
               {socialLink.title}
             </SocialLink>
@@ -49,7 +55,12 @@ export const SocialLinksSection = ({
         );
       })}
       <div className="py-4">
-        <Separator />
+        <Separator
+          className={twMerge(
+            theme === "default" ? "bg-zinc-100 dark:bg-zinc-700/40" : "",
+            theme === "solarized" ? "bg-base3 dark:bg-base03" : "",
+          )}
+        />
       </div>
       <SocialLink href={emailLink.href} icon={emailLink.icon}>
         {emailLink.title}
