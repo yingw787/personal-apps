@@ -37,6 +37,7 @@ export default function RootLayout({
               avatarImage={avatarImage}
               routeHome={ROUTE_HOME}
               links={createNavigation()}
+              theme="solarized"
             >
               {children}
             </ApplicationLayout>
