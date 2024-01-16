@@ -1,6 +1,7 @@
 import {
   ROUTE_ABOUT,
   ROUTE_FIVE_REGRETS,
+  ROUTE_HOME,
   ROUTE_POSTS,
   ROUTE_VALUES,
 } from "@apps/com-yingw787-blog/lib/routes";
@@ -8,6 +9,10 @@ import { Navigation } from "@libs/blog/types/navigation";
 
 export const createNavigation = (): Navigation[] => {
   const links = [
+    {
+      href: ROUTE_HOME,
+      title: "Home",
+    },
     {
       href: ROUTE_ABOUT,
       title: "About",
