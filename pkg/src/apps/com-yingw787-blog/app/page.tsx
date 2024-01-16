@@ -1,5 +1,11 @@
+import { Header } from "@libs/blog/components/header";
+
 const Homepage = () => {
-  return <>hi</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Homepage;
