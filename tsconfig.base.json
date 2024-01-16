@@ -16,8 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "$/*": ["./*"],
-      "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
       "@apps/com-yingw787-blog/*": ["pkg/src/apps/com-yingw787-blog/*"],
+      "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
+      "@libs/blog/*": ["pkg/src/libs/lib-ui-blog/src/*"],
       "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"]
     }
   },
