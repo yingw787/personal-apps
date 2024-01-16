@@ -9,4 +9,4 @@ export type SocialLinkNavigation = {
   href: string;
   title: string;
   icon: IconType;
-}
+};

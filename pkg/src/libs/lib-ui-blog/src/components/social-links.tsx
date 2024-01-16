@@ -28,34 +28,30 @@ const SocialLink = ({
   );
 };
 
-
 interface SocialLinksSectionProps {
   socialLinks: SocialLinkNavigation[];
   emailLink: SocialLinkNavigation;
 }
 
-export const SocialLinksSection = ({socialLinks, emailLink}: SocialLinksSectionProps) => {
+export const SocialLinksSection = ({
+  socialLinks,
+  emailLink,
+}: SocialLinksSectionProps) => {
   return (
     <ul>
       {socialLinks.map((socialLink, index) => {
         return (
           <div className="mt-4">
-            <SocialLink
-              href={socialLink.href}
-              icon={socialLink.icon}
-            >
+            <SocialLink href={socialLink.href} icon={socialLink.icon}>
               {socialLink.title}
             </SocialLink>
           </div>
-        )
+        );
       })}
       <Separator className="mt-8 pt-8" />
-      <SocialLink
-        href={emailLink.href}
-        icon={emailLink.icon}
-      >
+      <SocialLink href={emailLink.href} icon={emailLink.icon}>
         {emailLink.title}
       </SocialLink>
     </ul>
-  )
-}
+  );
+};
