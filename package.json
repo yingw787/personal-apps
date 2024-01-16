@@ -68,6 +68,7 @@
     "next": "^14.0.3",
     "next-themes": "^0.2.1",
     "nextra": "alpha",
+    "nextra-theme-blog": "3.0.0-alpha.12",
     "openai": "^4.16.1",
     "plaid": "^16.0.0",
     "posthog-js": "^1.83.0",
