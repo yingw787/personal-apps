@@ -36,6 +36,24 @@
       "envFile": "${workspaceFolder}/.env.local",
       "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "com-yingw787-bytes",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "nx",
+        "serve",
+        "com-yingw787-bytes",
+        "--port",
+        "5002",
+        "--inspect"
+      ],
+      "envFile": "${workspaceFolder}/.env.local",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
     // repeat for each debuggable app
   ]
