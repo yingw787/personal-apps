@@ -3,9 +3,10 @@ import { ArticleLayout } from "@libs/blog/components/article-layout";
 export const article = {
   author: "Ying Wang",
   date: "2020-06-15",
-  title: "#lifeprotip: Haskell-inspired \"lifting into structure\" for individual shell commands within a Docker context",
+  title:
+    '#lifeprotip: Haskell-inspired "lifting into structure" for individual shell commands within a Docker context',
   description:
-    "#lifeprotip: Haskell-inspired \"lifting into structure\" for individual shell commands within a Docker context",
+    '#lifeprotip: Haskell-inspired "lifting into structure" for individual shell commands within a Docker context',
 };
 
 export const metadata = {
@@ -44,7 +45,7 @@ runtime. Combined with having its own independent build process, you can lock
 into place a set of fixed dependencies that version separately from your other
 projects.
 
-__________
+---
 
 Let's walk through a project to see what I mean.
 
@@ -181,7 +182,7 @@ RUN chown -R 1000:1000 /app
 CMD [ "exec", "\"@\"" ]
 ```
 
-__________
+---
 
 I use `make` and Makefiles in order to template out commands, as it's easier in
 order to consistently pass in CLI arguments for `docker run`. It's also a bit
@@ -222,11 +223,11 @@ safer and transportable than using `bash`.
     doesn't exist), and installing `hugo` modules required by the `hugo` theme
     in order to run properly. Note how when I'm running `git clone` in the
     second step, I'm referencing the destination directory as
-    *`/app/themes/docuapi`*, and not *`${GIT_REPO_ROOT}/themes/docuapi`*,
+    _`/app/themes/docuapi`_, and not _`${GIT_REPO_ROOT}/themes/docuapi`_,
     because `/app` is my Docker container working directory `${WORKDIR}`. I'm
-    downloading the dependency *within my Docker context*, even though through
+    downloading the dependency _within my Docker context_, even though through
     the usage of `-v $(GIT_REPO_ROOT):/app` it will still appear on my local
-    directory, *as though I had cloned to my local system*.
+    directory, _as though I had cloned to my local system_.
 
     ```make
     # Use the custom fork, for styling purposes.
@@ -352,7 +353,7 @@ start: setup
     $(MAKE) run "hugo server -p $(HUGO_PORT)"
 ```
 
-__________
+---
 
 This isn't a terribly large amount of work, and it's a lot easier than say,
 using Bazel (which I had wanted to use for TinyDevCRM, but eventually decided
