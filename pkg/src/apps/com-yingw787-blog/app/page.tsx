@@ -32,8 +32,8 @@ const InspirationalQuote = () => {
 async function RecentPosts() {
   const articles = (await getAllPosts()).slice(0, 4);
   return (
-    <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-      <div className="flex flex-col gap-16">
+    <div className="mx-6 my-12 max-w-xl">
+      <div className="flex flex-col space-y-10">
         {articles.map((article, index) => (
           <RecentArticle key={index} article={article} />
         ))}
