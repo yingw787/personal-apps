@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { ROUTE_HOME } from "@apps/com-yingw787-blog/lib/routes";
+import { ROUTE_HOME } from "@apps/com-yingw787-bytes/lib/routes";
 
 const NotFound = () => {
   return (
