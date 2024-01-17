@@ -4,7 +4,8 @@ export const article = {
   author: "Ying Wang",
   date: "2021-02-02",
   title: "Property-Based Testing with `hypothesis`, and associated use cases",
-  description: "Property-Based Testing with `hypothesis`, and associated use cases",
+  description:
+    "Property-Based Testing with `hypothesis`, and associated use cases",
 };
 
 export const metadata = {
@@ -28,13 +29,13 @@ repository](https://github.com/yingw787/pydistrict_pbt).
 
 The full YouTube talk can be seen [here](https://youtu.be/nUwXwZevenA).
 
-__________
+---
 
 [Hacker News](https://news.ycombinator.com/item?id=26010998)
 
 [Lobste.rs](https://lobste.rs/s/tdvcvf/property_based_testing_with_hypothesis)
 
-__________
+---
 
 ## Overview
 
@@ -50,7 +51,7 @@ discussion around tests, and that's because not only does software fail in more
 ways than anybody without job security may care to admit, it fails in novel and
 unpredictable manners.
 
-What sucks even more is *just how important effective software testing is* for
+What sucks even more is _just how important effective software testing is_ for
 software engineers to quickly and confidently contribute value. The absolute
 first thing I do after cloning most `git` repositories these days, for work or
 otherwise, is run the test suite. Test suites are self-documenting and always
@@ -58,7 +59,7 @@ more accurate than a wiki or other forms of documentation, and since they're
 programmatic it's much easier to tie into the rest of your developer workflow
 (say when setting up automated deployments to production).
 
-__________
+---
 
 Honestly, this probably isn't news to you if you've been working in industry for
 a while, and it's easy to fall into a trap of powerlessness and believing any
@@ -72,7 +73,7 @@ The first is we're usually using paradigms that are decades old. Professional
 software is usually incremental in action and incrementalist in thinking. This
 implies there's often new concepts in academia or research that might solve
 current problems. One professor I talked to around graduation 4 years ago
-brought up how the A* path-finding algorithm was invented 20 years before its
+brought up how the A\* path-finding algorithm was invented 20 years before its
 adoption in the video game industry (and apparently that's at least one reason
 why NPCs don't collide with in-world walls anymore).
 
@@ -184,13 +185,13 @@ def test_addsub_returns_value(_input):
     assert subOne(addOne(_input)) == _input
 ```
 
-So what else is it similar to / different from? One's *generative testing*,
+So what else is it similar to / different from? One's _generative testing_,
 which are tests that create tests. Since we're creating a spec here,
 `hypothesis` is generating tests underneath the hood for us and running them.
 Otherwise, property-based testing is a bit different as it supports intelligent
 search strategies that allow us to shrink the error space.
 
-Another testing paradigm similar to property-based testing is *fuzz testing*,
+Another testing paradigm similar to property-based testing is _fuzz testing_,
 where random inputs are inserted into a program to see how it behaves and
 whether it crashes. To me, fuzz testing is more an extension of black-box
 integration testing, and extends more into devops or security related testing,
@@ -322,12 +323,12 @@ regular expression, I came up with this:
 `r'(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}'`. To break this regex
 down:
 
--   `(?=.*[0-9])` matches all numeric digits.
--   `(?=.*[a-z])` matches all lowercase alphabetical letters.
--   `(?=.*[A-Z])` matches all uppercase alphabetical letters.
--   `(?=.*[!@#$%^&*])` matches all special characters.
--   `{8,}` matches if and only if the length of the sample text is greater than
-    or equal to 8 characters.
+- `(?=.*[0-9])` matches all numeric digits.
+- `(?=.*[a-z])` matches all lowercase alphabetical letters.
+- `(?=.*[A-Z])` matches all uppercase alphabetical letters.
+- `(?=.*[!@#$%^&*])` matches all special characters.
+- `{8,}` matches if and only if the length of the sample text is greater than
+  or equal to 8 characters.
 
 If you run
 `st.from_regex(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}").example()`
@@ -354,7 +355,7 @@ This example describes a sample web-based API backend that you might use when
 starting a new SaaS project or internal microservice. It takes in some URL with
 URL parameters, then spits out a JSON response either affirming the creation of
 a record in the database, or erroring out with an accurate status code and a
-helpful error message. It should *not* respond with an HTML error page, or a
+helpful error message. It should _not_ respond with an HTML error page, or a
 stack trace of any sort. Various `CHECK` clauses are added to the SQL table
 definition preventing insertion of invalid records at the database layer.
 
