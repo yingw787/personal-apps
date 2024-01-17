@@ -1,4 +1,12 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@libs/shadcn-ui/components/ui/table";
 
 export const article = {
   author: "Ying Wang",
@@ -12,6 +20,54 @@ export const metadata = {
   title: article.title,
   description: article.description,
 };
+
+export function TableStack() {
+  const values = [
+    {
+      stackComponent: "VPC (network layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-vpc&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/vpc.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch vpc"/>
+          </a>
+        </>
+      ),
+    }
+  ];
+
+return (
+
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableHead>Stack Component</TableHead>
+      <TableHead>CloudFormation Template</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    {values.map((value, index) => (
+      <TableRow key={index}>
+        <TableCell>{value.stackComponent}</TableCell>
+        <TableCell className="flex items-start">{value.cloudformationTemplate}</TableCell>
+      </TableRow>
+    ))}
+  </TableBody>
+</Table>
+); }
+
+export function HerokuDeployButton() {
+  return (
+    <div className="flex w-full items-start">
+      <a
+        target="blank"
+        style={{border: "none"}}
+        href="https://heroku.com/deploy?template=https://github.com/PostgREST/postgrest"
+      >
+        <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
+      </a>
+    </div>
+  )
+}
 
 export default (props) => (
   <ArticleLayout article={article} theme="default" {...props} />
@@ -31,32 +87,31 @@ requirements, and follow the instructions in the README.
 
 Alternatively, here's a 3-step process to try out this stack:
 
-1.  Deploy the database stack to AWS using AWS CloudFormation in descending
+{/*
+
+    // | Stack Component                     | CloudFormation template                                                                                                                                                                                                                                                                                                                                             |
+    // | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    // | VPC (network layer)                 | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-vpc&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/vpc.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch vpc"/></a>         |
+    // | RDS (origin data source)            | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-rds&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/rds.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch rds"/></a>         |
+    // | EBS (custom database data layer)    | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-persist&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/persist.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch ebs"/></a> |
+    // | ECS (custom database compute layer) | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-compute&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/compute.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch db"/></a>  |
+
+*/}
+
+
+-   Deploy the database stack to AWS using AWS CloudFormation in descending
     order:
 
-    | Stack Component                     | CloudFormation template                                                                                                                                                                                                                                                                                                                                             |
-    | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | VPC (network layer)                 | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-vpc&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/vpc.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch vpc"/></a>         |
-    | RDS (origin data source)            | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-rds&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/rds.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch rds"/></a>         |
-    | EBS (custom database data layer)    | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-persist&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/persist.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch ebs"/></a> |
-    | ECS (custom database compute layer) | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-compute&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/compute.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch db"/></a>  |
+    <TableStack />
 
-2.  Run through the ["AWS Modeling" steps listed in the
+-   Run through the ["AWS Modeling" steps listed in the
     README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order
     to set up your SQL tables. This involves connecting to your RDS origin
     database and ECS custom database.
 
-3.  After you've done that, deploy PostgREST to Heroku:
+-   After you've done that, deploy PostgREST to Heroku:
 
-    <a
-      target="blank"
-      style="border: none;"
-      href="https://heroku.com/deploy?template=https://github.com/PostgREST/postgrest"
-    >
-      <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
-    </a>
-    <br />
-    <br />
+    <HerokuDeployButton />
 
     Punch in values for `DB_ANON_ROLE` as your custom database username,
     `DB_SCHEMA` for your custom database schema (should just be `public`), and
@@ -236,25 +291,24 @@ concept.
   _keep_ your VBA macros. No need to learn SQL, no need to switch computers or
   operating systems or change your workflow in any way, because if it ain't
   broke fixing it costs money and might break more things. This company called
-  Layer 2 creates codeless data integration tools between Microsoft products
-  and SQL, and [released a connector for SharePoint and Office 365 with
+  Layer 2 creates codeless data integration tools between Microsoft products and
+  SQL, and [released a connector for SharePoint and Office 365 with
   Postgres](https://www.layer2solutions.com/support/cloud-connector-faqs/postgresql-sharepoint-integration).
-  This other company called [Seekwell](https://seekwell.io/) does much the
-  same thing (their pricing looks tantalizing for an indie SaaS company).
+  This other company called [Seekwell](https://seekwell.io/) does much the same
+  thing (their pricing looks tantalizing for an indie SaaS company).
 
   I'm sure somebody would be able to build an executable to create a local
-  server that does pretty much the same thing for on-prem Excel. Biggest
-  problem might be something like navigating corporate firewalls.
+  server that does pretty much the same thing for on-prem Excel. Biggest problem
+  might be something like navigating corporate firewalls.
 
 - **Create your own Airtable:** Slap on something like
-  [Grid.js](https://gridjs.io/) or [DataTables](https://www.datatables.net/)
-  or [Handsontable](https://handsontable.com/) or
-  [PostGUI](https://github.com/priyank-purohit/PostGUI) or [really any of
-  these plugins](https://jspreadsheets.com/) as a client, combine it with
-  something like [SQitch](https://sqitch.org/) for a running log of
-  framework-agonstic SQL migrations per table, and you have your own
-  self-deployable version of Airtable, with open-source APIs at every layer
-  (GUI, API, DB).
+  [Grid.js](https://gridjs.io/) or [DataTables](https://www.datatables.net/) or
+  [Handsontable](https://handsontable.com/) or
+  [PostGUI](https://github.com/priyank-purohit/PostGUI) or [really any of these
+  plugins](https://jspreadsheets.com/) as a client, combine it with something
+  like [SQitch](https://sqitch.org/) for a running log of framework-agonstic SQL
+  migrations per table, and you have your own self-deployable version of
+  Airtable, with open-source APIs at every layer (GUI, API, DB).
 
   Type the API response from each table on a per-column basis, in order to
   dispatch the correct React.js view component (Image, DatePicker, etc.) to
@@ -263,36 +317,36 @@ concept.
   the URI within Postgres). It should be reasonably easy to execute on; but as
   always, the hard part is doing it.
 
-  I think this might be something I'd be interested in building out. I have
-  this sleep log on Google Sheets where the y-axis range is bisected at
-  midnight and upside down from what I want, and it's quite annoying. I wanted
-  to get into Airtable a few years ago, but I didn't like the GUI...and the
-  data lock-in is glaringly evident. In any case, it'd be great to offboard
-  from Google. Apparently they do shenanigans like [inserting a line break on
-  carriage return based on the user agent of the
+  I think this might be something I'd be interested in building out. I have this
+  sleep log on Google Sheets where the y-axis range is bisected at midnight and
+  upside down from what I want, and it's quite annoying. I wanted to get into
+  Airtable a few years ago, but I didn't like the GUI...and the data lock-in is
+  glaringly evident. In any case, it'd be great to offboard from Google.
+  Apparently they do shenanigans like [inserting a line break on carriage return
+  based on the user agent of the
   browser](https://news.ycombinator.com/item?id=22686126).
 
-- **Create your own Firebase:** You can use your data management auth flow as
-  a pass-through entity for cheap mobile and web clients, without needing any
+- **Create your own Firebase:** You can use your data management auth flow as a
+  pass-through entity for cheap mobile and web clients, without needing any
   SDKs, if you don't need full-duplex realtime streaming protocols like
-  WebSockets. You can also connect a webapp framework like Django to a
-  specific Postgres schema, as per [this Stack Overflow
+  WebSockets. You can also connect a webapp framework like Django to a specific
+  Postgres schema, as per [this Stack Overflow
   answer](https://stackoverflow.com/a/51007441), and have apps within your
   master admin app, without the need to create / destroy individual Postgres
   databases. Sharding data onto new compute nodes, and scaling admin-related
   tasks such as data import/export, still remain unknowns to me.
 
-  This is what I think [Supabase](https://supabase.io/) aspires to be. It's
-  also what TinyDev aspires to be, on a tiny scale.
+  This is what I think [Supabase](https://supabase.io/) aspires to be. It's also
+  what TinyDev aspires to be, on a tiny scale.
 
-- **Data-driven testing framework:** I've mentioned data-driven testing
-  before, but a platform like this one might just wrap everything in one go.
-  Create your state tables, deduplicate inputs using an Alloy model or some
-  other kind of formal reasoning metric, and then couple together input sets
-  using a directed acyclic graph. I'm not sure if this is possible still,
-  Postgres would have to expose its relational algebra as an API, but I think
-  it's worth taking a stab at. If it is possible, this means you can
-  integration test ETL tools like Airflow.
+- **Data-driven testing framework:** I've mentioned data-driven testing before,
+  but a platform like this one might just wrap everything in one go. Create your
+  state tables, deduplicate inputs using an Alloy model or some other kind of
+  formal reasoning metric, and then couple together input sets using a directed
+  acyclic graph. I'm not sure if this is possible still, Postgres would have to
+  expose its relational algebra as an API, but I think it's worth taking a stab
+  at. If it is possible, this means you can integration test ETL tools like
+  Airflow.
 
 I'm sure there's other ideas I haven't thought of. The app possibilities are
 quite endless, as they are with anything. But this with kernel as the core of
