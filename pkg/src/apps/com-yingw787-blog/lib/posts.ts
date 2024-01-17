@@ -8,7 +8,7 @@ async function importPost(postFilename: string): Promise<ArticleWithSlug> {
   );
   const postWithSlug = {
     slug: postFilename.replace(/(\/page)?\.mdx$/, ""),
-    ...post.article as Article,
+    ...(post.article as Article),
   };
   return postWithSlug;
 }

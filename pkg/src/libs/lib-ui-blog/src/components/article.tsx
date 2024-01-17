@@ -10,9 +10,7 @@ interface RecentArticleProps {
 export const RecentArticle = ({ article }: RecentArticleProps) => {
   return (
     <Card as="article">
-      <Card.Title href={`/posts/${article.slug}`}>
-        {article.title}
-      </Card.Title>
+      <Card.Title href={`/posts/${article.slug}`}>{article.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
         {moment(article.date).utc().format("MMMM D, YYYY")}
       </Card.Eyebrow>
