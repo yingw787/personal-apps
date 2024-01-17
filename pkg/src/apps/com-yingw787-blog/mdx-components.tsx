@@ -13,7 +13,11 @@ import { Figure } from "@libs/mdx-components/components/figure";
 import { Snippet } from "@libs/mdx-components/components/snippet";
 import { Caption } from "@libs/mdx-components/components/caption";
 import { Callout } from "@libs/mdx-components/components/callout";
-import { Ref, FootNotes, FootNote } from "@libs/mdx-components/components/footnotes";
+import {
+  Ref,
+  FootNotes,
+  FootNote,
+} from "@libs/mdx-components/components/footnotes";
 import { Blockquote as blockquote } from "@libs/mdx-components/components/blockquote";
 
 export function useMDXComponents(components: {

@@ -1,0 +1,362 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@libs/shadcn-ui/components/ui/table";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2022-12-28",
+  title: "Values-Based Identity",
+  description: "Values-Based Identity",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export function TableDemo() {
+  const values = [
+    {
+      value: "Acceptance",
+      description: "To be open to and accepting of myself, others, life, etc.",
+      rating: "V"
+    },
+    {
+      value: "Adventure",
+      description: "To be adventurous; to actively seek, create, or explore novel or stimulating experiences.",
+      rating: "N"
+    },
+    {
+      value: "Assertiveness",
+      description: "To respectfully stand up for my rights and request what I want.",
+      rating: "V"
+    },
+    {
+      value: "Authenticity",
+      description: "To be authentic, genuine, real; to be true to myself.",
+      rating: "V"
+    },
+    {
+      value: "Beauty",
+      description: "To appreciate, create, nurture or cultivate beauty in myself, others, the environment, etc.",
+      rating: "N"
+    },
+    {
+      value: "Caring",
+      description: "To be caring towards myself, others, the environment, etc.",
+      rating: "Q"
+    },
+    {
+      value: "Challenge",
+      description: "To keep challenging myself to grow, learn, and improve.",
+      rating: "V"
+    },
+    {
+      value: "Compassion",
+      description: "To act with kindness towards those who are suffering.",
+      rating: "Q"
+    },
+    {
+      value: "Connection",
+      description: "To engage fully in whatever I am doing, and be fully present with others.",
+      rating: "Q"
+    },
+    {
+      value: "Contribution",
+      description: "To contribute, help, assist, or make a positive difference to myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Conformity",
+      description: "To be respectful and obedient of rules and obligations.",
+      rating: "N"
+    },
+    {
+      value: "Cooperation",
+      description: "To be cooperative and collaborative with others.",
+      rating: "Q"
+    },
+    {
+      value: "Courage",
+      description: "To be courageous or brave; to persist in the face of fear, threat, or difficulty.",
+      rating: "V"
+    },
+    {
+      value: "Creativity",
+      description: "To be creative or innovative.",
+      rating: "N"
+    },
+    {
+      value: "Curiosity",
+      description: "To be curious, open-minded and interested; to explore and discover.",
+      rating: "Q"
+    },
+    {
+      value: "Encouragement",
+      description: "To encourage and reward behaviour that I value in myself or others.",
+      rating: "V"
+    },
+    {
+      value: "Equality",
+      description: "To treat others as equal to myself, and vice-versa.",
+      rating: "Q"
+    },
+    {
+      value: "Excitement",
+      description: "To seek, create and engage in activities that are exciting, stimulating or thrilling.",
+      rating: "Q"
+    },
+    {
+      value: "Fairness",
+      description: "To be fair to myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Fitness",
+      description: "To maintain or improve my fitness; to look after my physical and mental health and wellbeing.",
+      rating: "V"
+    },
+    {
+      value: "Flexibility",
+      description: "To adjust and adapt readily to changing circumstances.",
+      rating: "Q"
+    },
+    {
+      value: "Freedom",
+      description: "To live freely; to choose how I live and behave, or help others do likewise.",
+      rating: "V"
+    },
+    {
+      value: "Friendliness",
+      description: "To be friendly, companionable, or agreeable towards others.",
+      rating: "Q"
+    },
+    {
+      value: "Forgiveness",
+      description: "To be forgiving towards myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Fun",
+      description: "To be fun-loving; to seek, create, and engage in fun-filled activities.",
+      rating: "N"
+    },
+    {
+      value: "Generosity",
+      description: "To be generous, sharing andgiving, to myself or others.",
+      rating: "N"
+    },
+    {
+      value: "Gratitude",
+      description: "To be grateful for and appreciative of the positive aspects of myself, others and life.",
+      rating: "V"
+    },
+    {
+      value: "Honesty",
+      description: "To be honest, truthful, and sincere with myself and others.",
+      rating: "V"
+    },
+    {
+      value: "Humour",
+      description: "To see and appreciate the humorous side of life.",
+      rating: "V"
+    },
+    {
+      value: "Humility",
+      description: "To be humble or modest; to let my achievements speak for themselves.",
+      rating: "Q"
+    },
+    {
+      value: "Industry",
+      description: "To be industrious, hard-working, dedicated.",
+      rating: "V"
+    },
+    {
+      value: "Independence",
+      description: "To be self-supportive, and choose my own way of doing things.",
+      rating: "V"
+    },
+    {
+      value: "Intimacy",
+      description: "To open up, reveal, and share myself -- emotionally or physically – in my close personal relationships.",
+      rating: "N"
+    },
+    {
+      value: "Justice",
+      description: "To uphold justice and fairness.",
+      rating: "N"
+    },
+    {
+      value: "Kindness",
+      description: "To be kind, compassionate, considerate, nurturing or caring towards myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Love",
+      description: "To act lovingly or affectionately towards myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Mindfulness",
+      description: "To be conscious of, open to, and curious about my here-and-now experience.",
+      rating: "Q"
+    },
+    {
+      value: "Order",
+      description: "To be orderly and organized.",
+      rating: "Q"
+    },
+    {
+      value: "Open-mindedness",
+      description: "To think things through, see things from other’s points of view, and weigh evidence fairly.",
+      rating: "Q"
+    },
+    {
+      value: "Patience",
+      description: "To wait calmly for what I want.",
+      rating: "N"
+    },
+    {
+      value: "Persistence",
+      description: "To continue resolutely, despite problems or difficulties.",
+      rating: "V"
+    },
+    {
+      value: "Pleasure",
+      description: "To create and give pleasure to myself or others.",
+      rating: "N"
+    },
+    {
+      value: "Power",
+      description: "To strongly influence or wield authority over others, e.g. taking charge, leading, organizing.",
+      rating: "Q"
+    },
+    {
+      value: "Reciprocity",
+      description: "To build relationships in which there is a fair balance of giving and taking.",
+      rating: "Q"
+    },
+    {
+      value: "Respect",
+      description: "To be respectful towards myself or others; to be polite, considerate and show positive regard.",
+      rating: "Q"
+    },
+    {
+      value: "Responsibility",
+      description: "To be responsible and accountable for my actions.",
+      rating: "V"
+    },
+    {
+      value: "Romance",
+      description: "To be romantic; to display and express love or strong affection.",
+      rating: "Q"
+    },
+    {
+      value: "Safety",
+      description: "To secure, protect, or ensure safety of myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Self-awareness",
+      description: "To be aware of my own thoughts, feelings and actions.",
+      rating: "V"
+    },
+    {
+      value: "Self-care",
+      description: "To look after my health and wellbeing, and get my needs met.",
+      rating: "V"
+    },
+    {
+      value: "Self-development",
+      description: "To keep growing, advancing or improving in knowledge, skills, character, or life experience.",
+      rating: "Q"
+    },
+    {
+      value: "Self-control",
+      description: "To act in accordance with my own ideals.",
+      rating: "Q"
+    },
+    {
+      value: "Sensuality",
+      description: "To create, explore and enjoy experiences that stimulate the five senses.",
+      rating: "N"
+    },
+    {
+      value: "Sexuality",
+      description: "To explore or express my sexuality.",
+      rating: "N"
+    },
+    {
+      value: "Spirituality",
+      description: "To connect with things bigger than myself.",
+      rating: "N"
+    },
+    {
+      value: "Skillfulness",
+      description: "To continually practice and improve my skills, and apply myself fully when using them.",
+      rating: "Q"
+    },
+    {
+      value: "Supportiveness",
+      description: "To be supportive, helpful, encouraging, and available to myself or others.",
+      rating: "Q"
+    },
+    {
+      value: "Trust",
+      description: "To be trustworthy; to be loyal, faithful, sincere, and reliable.",
+      rating: "Q"
+    }
+  ];
+
+return (
+
+<Table>
+  <TableCaption>My results, as of 12/28/2022.</TableCaption>
+  <TableHeader>
+    <TableRow>
+      <TableHead>Value</TableHead>
+      <TableHead>Description</TableHead>
+      <TableHead>Rating</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    {values.map((value, index) => (
+      <TableRow key={index}>
+        <TableCell className="font-medium">{value.value}</TableCell>
+        <TableCell>{value.description}</TableCell>
+        <TableCell className="text-center">{value.rating}</TableCell>
+      </TableRow>
+    ))}
+  </TableBody>
+</Table>
+); }
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+From ["The Confidence Gap", by Russ
+Harris](http://thehappinesstrap.com/upimages/complete_worksheets_for_The_Confidence_Gap.pdf):
+
+> Values are your heart’s deepest desires for how you want to behave as a human
+> being. Values are not about what you want to get or achieve; they are about
+> how you want to behave or act on an ongoing basis.
+>
+> There are literally hundreds of different values, but below you’ll find a list
+> of the most common ones. Probably, not all of them will be relevant to you.
+> Keep in mind there are no such things as ‘right values’ or ‘wrong values’.
+> It’s a bit like our taste in pizzas. If you prefer ham and pineapple but I
+> prefer salami and olives, that doesn’t mean that my taste in pizzas is right
+> and yours is wrong. It just means we have different tastes. And similarly, we
+> may have different values. So read through the list below and write a letter
+> next to each value: V = Very important, Q = Quite important, and N = Not so
+> important; and make sure to score at least ten of them as Very important.
+
+<TableDemo />
