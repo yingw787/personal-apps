@@ -1,0 +1,379 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-06-15",
+  title: "#lifeprotip: Haskell-inspired \"lifting into structure\" for individual shell commands within a Docker context",
+  description:
+    "#lifeprotip: Haskell-inspired \"lifting into structure\" for individual shell commands within a Docker context",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+You could say this is a continuation of [my experiment using Docker as a server
+for development workflows](/posts/2020/02/27/docker_as_vagrant). In the end
+though, I've found deployments to production in AWS to be far more complex than
+that model allowed, and I ended up using a more conventional model of
+`docker-compose` to model systems locally and to build Dockerfile images to ship
+to the remote Docker registries.
+
+In contrast, I've been using an adjusted version of the prior workflow to
+develop my frontends. This is mostly due to my usage of `hugo`, the static
+website generator. I double-checked CloudFront and I have something like 15
+different `hugo` bundles in production right now, created at different times.
+The problem is that `hugo` is still primarily a work-in-progress project, and
+there are breaking changes made between different `hugo` versions. This impacts
+changes between versions of different `hugo` themes. I've encountered this
+difficulty when upgrading dependency versions for my personal blog. I already
+had to request help from the maintainer, [Munif
+Tanjim](https://muniftanjim.com/), who very graciously walked me through the
+upgrade process and even created some diffs himself. I felt embarrassed that I
+needed help doing that, and I didn't really want to go through that experience
+again when creating [TinyDevCRM's documentation](https://docs.tinydevcrm.com).
+
+When I was working with Docker for TinyDevCRM I learned of command `exec "@"`,
+which if set as the Dockerfile `CMD`, allows you to pipe in a command to run at
+runtime. Combined with having its own independent build process, you can lock
+into place a set of fixed dependencies that version separately from your other
+projects.
+
+__________
+
+Let's walk through a project to see what I mean.
+
+1.  Install the following system dependencies:
+
+    `docker`, I'm using:
+
+    ```shell
+    $ docker version
+    Docker version 19.03.8, build afacb8b7f0
+    ```
+
+    `make`, I'm using:
+
+    ```shell
+    $ make version
+    GNU Make 4.2.1
+    Built for x86_64-pc-linux-gnu
+    Copyright (C) 1988-2016 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+    ```
+
+2.  Create a directory with the following files:
+
+    ```shell
+    $ cd /path/to/dir
+    $ tree .
+    .
+    ├── Dockerfile
+    └── Makefile
+    ```
+
+3.  In your `Dockerfile`, add your base Docker image reference, labels, and
+    other build arguments:
+
+    ```docker
+    FROM debian:buster-20200514
+    LABEL maintainer="me@yingw787.com"
+
+    # Set build arguments.
+    ARG DEBIAN_FRONTEND=noninteractive
+    ```
+
+4.  In your `Dockerfile`, update package archives and download `curl`. Note that
+    updating package archives does not update system dependencies, and the
+    container should still mirror the base image until dependencies are
+    upgraded.
+
+    ```docker
+    # Get package lists, important for getting 'curl' and such.
+    RUN apt-get -y update
+
+    # Install build dependencies.
+    RUN apt-get install -y curl
+    ```
+
+5.  In your `Dockerfile`, install your runtime dependencies. You can see why
+    Golang took off for cloud-native development here; it's a single binary you
+    need to `curl` for each app!
+
+    ```docker
+    # Install golang.
+    RUN curl https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz -o /tmp/go1.14.4.linux-amd64.tar.gz
+    RUN tar -C /usr/local -xvzf /tmp/go1.14.4.linux-amd64.tar.gz
+    ENV PATH=$PATH:/usr/local/go/bin
+
+    # Install hugo. It's important to lock down the version of `hugo` since it's
+    # still a development version with breaking changes.
+    #
+    # Use '-L' to follow redirects from GitHub releases.
+    RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.62.0/hugo_0.62.0_Linux-64bit.deb -o /tmp/hugo_0.62.0_Linux-64bit.deb
+    RUN dpkg -i /tmp/hugo_0.62.0_Linux-64bit.deb
+    ```
+
+6.  In your `Dockerfile`, set your default home directory and update directory
+    permissions. I'm using '1000` as my user is the first non-root user on my
+    system, as per [this forum
+    answer](https://www.linuxquestions.org/questions/linux-general-1/what-is-the-user-1000-a-4175510196/).
+
+    ```docker
+    # Setup workdirectory.
+    RUN mkdir /app
+    WORKDIR /app
+
+    # Setup permissions.
+    RUN chown -R 1000:1000 /app
+    ```
+
+7.  In your `Dockerfile`, set your default command to run `exec "@"` in order to
+    pass in commands at runtime:
+
+    ```docker
+    # Run commands.
+    CMD [ "exec", "\"@\"" ]
+    ```
+
+The final `Dockerfile` should look something like this:
+
+```docker
+FROM debian:buster-20200514
+LABEL maintainer="me@yingw787.com"
+
+# Set build arguments.
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Get package lists, important for getting 'curl' and such.
+RUN apt-get -y update
+
+# Install build dependencies.
+RUN apt-get install -y curl
+
+# Install golang.
+RUN curl https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz -o /tmp/go1.14.4.linux-amd64.tar.gz
+RUN tar -C /usr/local -xvzf /tmp/go1.14.4.linux-amd64.tar.gz
+ENV PATH=$PATH:/usr/local/go/bin
+
+# Install hugo. It's important to lock down the version of `hugo` since it's
+# still a development version with breaking changes.
+#
+# Use '-L' to follow redirects from GitHub releases.
+RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.62.0/hugo_0.62.0_Linux-64bit.deb -o /tmp/hugo_0.62.0_Linux-64bit.deb
+RUN dpkg -i /tmp/hugo_0.62.0_Linux-64bit.deb
+
+# Setup workdirectory.
+RUN mkdir /app
+WORKDIR /app
+
+# Setup permissions.
+RUN chown -R 1000:1000 /app
+
+# Run commands.
+CMD [ "exec", "\"@\"" ]
+```
+
+__________
+
+I use `make` and Makefiles in order to template out commands, as it's easier in
+order to consistently pass in CLI arguments for `docker run`. It's also a bit
+safer and transportable than using `bash`.
+
+1.  In your `Makefile`, declare your enviroment variables. I'm declaring
+    `AWS_PROFILE` for (omitted) CloudFormation lifecycle management,
+    `APP_VERSION` for defining the Docker image version as the commit hash,
+    `GIT_REPO_ROOT` to define the absolute path to the `git` repository root (I
+    don't like relative paths), `DOCKER_IMAGE_NAME` for `docker` image name,
+    `HUGO_PORT` to define which port on `localhost` I should expose this
+    container on, and `USERID` / `GROUPID` to run the Docker container as a
+    specific user and group (in order to keep directory resources under the same
+    user/group to avoid `sudo`).
+
+    `.PHONY` enforces a `make` target runs irrespective of the filesystem state.
+    See [this Stack Overflow answer](https://stackoverflow.com/a/2145605) for
+    more details.
+
+    ```make
+    #!/usr/bin/env make
+
+    .PHONY: version check setup run start
+
+    export AWS_PROFILE ?= tinydevcrm-user
+    export APP_VERSION ?= $(shell git rev-parse --short HEAD)
+    export GIT_REPO_ROOT ?= $(shell git rev-parse --show-toplevel)
+
+    export DOCKER_IMAGE_NAME ?= tinydevcrm-api-docs
+    export HUGO_PORT ?= 1320
+
+    export USERID ?= $(shell id -u $(whoami))
+    export GROUPID ?= $(shell id -g $(whoami))
+    ```
+
+2.  In your `Makefile`, add a `setup` target in order to setup your repository
+    after first cloning it. I'm downloading the `hugo` theme I need (if it
+    doesn't exist), and installing `hugo` modules required by the `hugo` theme
+    in order to run properly. Note how when I'm running `git clone` in the
+    second step, I'm referencing the destination directory as
+    *`/app/themes/docuapi`*, and not *`${GIT_REPO_ROOT}/themes/docuapi`*,
+    because `/app` is my Docker container working directory `${WORKDIR}`. I'm
+    downloading the dependency *within my Docker context*, even though through
+    the usage of `-v $(GIT_REPO_ROOT):/app` it will still appear on my local
+    directory, *as though I had cloned to my local system*.
+
+    ```make
+    # Use the custom fork, for styling purposes.
+    setup:
+        docker build \
+            --file $(GIT_REPO_ROOT)/Dockerfile \
+            --tag $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+            $(GIT_REPO_ROOT)
+        docker run \
+            -v $(GIT_REPO_ROOT):/app \
+            --net=host \
+            -u $(USERID):$(GROUPID) \
+            $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+            git clone https://github.com/tinydevcrm/docuapi /app/themes/docuapi || true
+        docker run \
+            -v $(GIT_REPO_ROOT):/app \
+            --net=host \
+            -u $(USERID):$(GROUPID) \
+            $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+            hugo mod get -u
+    ```
+
+3.  In your `Makefile`, create the `run` target. This `run` target is nice
+    because it lifts the command line arguments and inserts them directly into
+    the `docker run` command, while still enabling things like `--net=host` for
+    unifying the Docker network with my system network (ensuring `localhost` on
+    Docker is `localhost` on system), connecting the Docker volumes together,
+    and passing in any other flags (like passing in the aws config / credentials
+    directory for usage of `awscli` within my Docker context using my system
+    secrets) that I need in order to require as few dependencies on my system as
+    possible.
+
+    ```make
+    # From: https://stackoverflow.com/a/14061796
+    # If the first argument is "run"...
+    ifeq (run,$(firstword $(MAKECMDGOALS)))
+    # use the rest as arguments for "run"
+    RUN_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+    # ...and turn them into do-nothing targets
+    $(eval $(RUN_ARGS):;@:)
+    endif
+
+    # Lifts command into `docker run` context.
+    run:
+        docker run \
+            -v $(GIT_REPO_ROOT):/app \
+            -v ~/.aws:/root/.aws \
+            --net=host \
+            -u $(USERID):$(GROUPID) \
+            $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+            $(RUN_ARGS)
+    ```
+
+4.  Add various other targets you may need to commonly reference. I templated
+    out the `hugo server` command because I run `hugo server` often. This
+    involves the usage of recursive `make` within the same file, which might not
+    be the best way of doing things; would love to hear of a better way.
+    Commands passed in here should be wrapped in double quotes, otherwise they
+    might be interpreted as part of the `make` command instead of passed
+    wholesale.
+
+    ```make
+    start: setup
+        $(MAKE) run "hugo server -p $(HUGO_PORT)"
+    ```
+
+The final `Makefile` should look something like this:
+
+```make
+#!/usr/bin/env make
+
+.PHONY: version check setup run start
+
+export AWS_PROFILE ?= tinydevcrm-user
+export APP_VERSION ?= $(shell git rev-parse --short HEAD)
+export GIT_REPO_ROOT ?= $(shell git rev-parse --show-toplevel)
+
+export DOCKER_IMAGE_NAME ?= tinydevcrm-api-docs
+export HUGO_PORT ?= 1320
+
+export USERID ?= $(shell id -u $(whoami))
+export GROUPID ?= $(shell id -g $(whoami))
+
+# Use the custom fork, for styling purposes.
+setup:
+    docker build \
+        --file $(GIT_REPO_ROOT)/Dockerfile \
+        --tag $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+        $(GIT_REPO_ROOT)
+    docker run \
+        -v $(GIT_REPO_ROOT):/app \
+        --net=host \
+        -u $(USERID):$(GROUPID) \
+        $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+        git clone https://github.com/tinydevcrm/docuapi /app/themes/docuapi || true
+    docker run \
+        -v $(GIT_REPO_ROOT):/app \
+        --net=host \
+        -u $(USERID):$(GROUPID) \
+        $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+        hugo mod get -u
+
+# From: https://stackoverflow.com/a/14061796
+# If the first argument is "run"...
+ifeq (run,$(firstword $(MAKECMDGOALS)))
+  # use the rest as arguments for "run"
+  RUN_ARGS := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+  # ...and turn them into do-nothing targets
+  $(eval $(RUN_ARGS):;@:)
+endif
+
+# Lifts command into `docker run` context.
+run:
+    docker run \
+        -v $(GIT_REPO_ROOT):/app \
+        -v ~/.aws:/root/.aws \
+        --net=host \
+        -u $(USERID):$(GROUPID) \
+        $(DOCKER_IMAGE_NAME):$(APP_VERSION) \
+        $(RUN_ARGS)
+
+start: setup
+    $(MAKE) run "hugo server -p $(HUGO_PORT)"
+```
+
+__________
+
+This isn't a terribly large amount of work, and it's a lot easier than say,
+using Bazel (which I had wanted to use for TinyDevCRM, but eventually decided
+against after seeing just how much work building out my own source would
+entail).
+
+It's also useful for integrating debuggers and needing to expose a
+process to a stdout stream. For example, running `python -m ipdb manage.py
+runserver` for a Django process hits a `pdb` trace before starting the Django
+process. This means without having a stdout stream available, either you can't
+use `ipdb` or `pdb` within Docker, or you have to somehow elide that first `pdb`
+trace and attach to the Docker process manually before adding a `pdb` trace and
+hitting the server process with a request to see it. This is a comfortable third
+option.
+
+There's still problems with this stack; I usually use `Ctrl+C` in order to exit
+the Docker container, resulting it merely stopping instead of deleting itself,
+but otherwise it's not bad. I like to think it keeps the Haskell philosophy of
+"lifting into structure", which I've found applicable outside of one programming
+language.
+
+You can find [`tinydevcrm-api-docs`
+I've used for inspiration for this blog post
+here](https://github.com/tinydevcrm/tinydevcrm-api-docs).

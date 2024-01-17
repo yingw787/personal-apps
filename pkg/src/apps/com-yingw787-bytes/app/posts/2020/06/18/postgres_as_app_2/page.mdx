@@ -1,0 +1,30 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-06-18",
+  title: "Postgres, as an App! (Now with one-click deploys to AWS + Heroku!)",
+  description:
+    "Postgres, as an App! (Now with one-click deploys to AWS + Heroku!)",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+Me saying ["use Postgres as an app"](/posts/2020/06/15/postgres_as_app_1) is
+fine, but without shipping anything it doesn't do anyone much good. So let's
+ship!
+
+## First, the code
+
+Here's [the GitHub repository](https://github.com/yingw787/postgres_as_app)
+complementing this blog post. Clone the repository, set up the system
+requirements, and follow the instructions in the README.
+
+__________
