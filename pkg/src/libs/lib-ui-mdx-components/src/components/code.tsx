@@ -1,4 +1,4 @@
-export const Code = ({ children }) => {
+export const Code = ({ children }: { children: React.ReactNode }) => {
   return (
     <code
       className={`

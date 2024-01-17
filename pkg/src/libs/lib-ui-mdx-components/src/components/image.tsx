@@ -17,7 +17,6 @@ export async function Image({
 }) {
   const isDataImage = src.startsWith("data:");
   if (isDataImage) {
-    /* eslint-disable @next/next/no-img-element */
     return <img src={src} alt={originalAlt ?? ""} />;
   } else {
     if (width === null || height === null) {

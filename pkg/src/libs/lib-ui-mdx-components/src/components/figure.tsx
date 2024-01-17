@@ -1,4 +1,10 @@
-export function Figure({ wide = false, children }) {
+export function Figure({
+  wide = false,
+  children,
+}: {
+  wide: boolean;
+  children: React.ReactNode;
+}) {
   return (
     <div
       className={`

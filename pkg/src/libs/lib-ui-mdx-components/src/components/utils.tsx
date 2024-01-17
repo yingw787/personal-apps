@@ -1,6 +1,6 @@
 import { Children } from "react";
 
-export function withHeadingId(children) {
+export function withHeadingId(children: React.ReactNode) {
   return Children.map(children, (el) => {
     if ("string" === typeof el) {
       const re = /\[#([^\]]+)\]\s*$/m;
@@ -28,13 +28,6 @@ export function withHeadingId(children) {
               #
             </a>
 
-            <a
-              id={match[1]}
-              className={`
-              absolute
-              -top-[20px]
-            `}
-            />
             {el.substring(0, match.index)}
           </span>
         );
