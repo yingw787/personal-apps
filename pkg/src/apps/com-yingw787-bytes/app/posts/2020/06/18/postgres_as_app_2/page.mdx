@@ -32,6 +32,36 @@ export function TableStack() {
           </a>
         </>
       ),
+    },
+    {
+      stackComponent: "RDS (origin data source)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-rds&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/rds.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch rds"/>
+          </a>
+        </>
+      ),
+    },
+    {
+      stackComponent: "EBS (custom database data layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-persist&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/persist.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch ebs"/>
+          </a>
+        </>
+      ),
+    },
+    {
+      stackComponent: "ECS (custom database compute layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-compute&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/compute.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch db"/>
+          </a>
+        </>
+      ),
     }
   ];
 
@@ -48,7 +78,9 @@ return (
     {values.map((value, index) => (
       <TableRow key={index}>
         <TableCell>{value.stackComponent}</TableCell>
-        <TableCell className="flex items-start">{value.cloudformationTemplate}</TableCell>
+        <TableCell className="flex items-start">
+          {value.cloudformationTemplate}
+        </TableCell>
       </TableRow>
     ))}
   </TableBody>
@@ -60,13 +92,13 @@ export function HerokuDeployButton() {
     <div className="flex w-full items-start">
       <a
         target="blank"
-        style={{border: "none"}}
+        style={{ border: "none" }}
         href="https://heroku.com/deploy?template=https://github.com/PostgREST/postgrest"
       >
         <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
       </a>
     </div>
-  )
+  );
 }
 
 export default (props) => (
@@ -87,39 +119,27 @@ requirements, and follow the instructions in the README.
 
 Alternatively, here's a 3-step process to try out this stack:
 
-{/*
+- Deploy the database stack to AWS using AWS CloudFormation in descending
+  order:
 
-    // | Stack Component                     | CloudFormation template                                                                                                                                                                                                                                                                                                                                             |
-    // | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    // | VPC (network layer)                 | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-vpc&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/vpc.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch vpc"/></a>         |
-    // | RDS (origin data source)            | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-rds&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/rds.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch rds"/></a>         |
-    // | EBS (custom database data layer)    | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-persist&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/persist.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch ebs"/></a> |
-    // | ECS (custom database compute layer) | <a target="blank" style="border: none;" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-compute&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/compute.yaml"><img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch db"/></a>  |
+  <TableStack />
 
-*/}
+- Run through the ["AWS Modeling" steps listed in the
+  README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order
+  to set up your SQL tables. This involves connecting to your RDS origin
+  database and ECS custom database.
 
+- After you've done that, deploy PostgREST to Heroku:
 
--   Deploy the database stack to AWS using AWS CloudFormation in descending
-    order:
+  <HerokuDeployButton />
 
-    <TableStack />
+  Punch in values for `DB_ANON_ROLE` as your custom database username,
+  `DB_SCHEMA` for your custom database schema (should just be `public`), and
+  `DB_URI` for the custom database URI. Change `POSTGREST_VER` from `7.0.1` to
+  `0.5.0.0`.
 
--   Run through the ["AWS Modeling" steps listed in the
-    README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order
-    to set up your SQL tables. This involves connecting to your RDS origin
-    database and ECS custom database.
-
--   After you've done that, deploy PostgREST to Heroku:
-
-    <HerokuDeployButton />
-
-    Punch in values for `DB_ANON_ROLE` as your custom database username,
-    `DB_SCHEMA` for your custom database schema (should just be `public`), and
-    `DB_URI` for the custom database URI. Change `POSTGREST_VER` from `7.0.1` to
-    `0.5.0.0`.
-
-    Then, open up your Heroku app, and go to `$YOUR_APP_NAME/$YOUR_TABLE_NAME`
-    to see your table!
+  Then, open up your Heroku app, and go to `$YOUR_APP_NAME/$YOUR_TABLE_NAME`
+  to see your table!
 
 ---
 
