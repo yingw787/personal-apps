@@ -3,15 +3,14 @@ import glob from "fast-glob";
 import { Article, ArticleWithSlug } from "@libs/blog/types/articles";
 
 async function importPost(postFilename: string): Promise<ArticleWithSlug> {
-  const { post } = (await import(`../app/posts/${postFilename}`)) as {
-    default: React.ComponentType;
-    post: Article;
-  };
-
-  return {
+  const post = await import(
+    `@apps/com-yingw787-blog/app/posts/${postFilename}`
+  );
+  const postWithSlug = {
     slug: postFilename.replace(/(\/page)?\.mdx$/, ""),
-    ...post,
+    ...post.article as Article,
   };
+  return postWithSlug;
 }
 
 export async function getAllPosts() {
