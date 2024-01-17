@@ -1,0 +1,369 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-06-15",
+  title: "Postgres...as an App?",
+  description: "Postgres...as an App?",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+## Overview
+
+I'm still working on [TinyDevCRM](https://tinydevcrm.com), and I'm getting
+_really_ close to release. No, really, I mean it this time. I even released
+[some API documentation](https://docs.tinydevcrm.com) that should match up with
+the final spec pretty closely.
+
+Along the way, I've learned a good deal since I first started working on this
+project a few months ago. Much of this stuff I've distilled in a "Things I've
+learned this week" section of the [weekly progress updates I've regularly
+published here](/categories/tinydevcrm/). I'll probably share a bit more about
+those lessons after shipping the MVP.
+
+The biggest thing I've learned is just how much mileage you can get out of your
+everyday, "boring" tech stack. I'm not a terribly big fan of [resume-driven
+development](https://web.archive.org/web/20191121231115/http://radar.oreilly.com/2014/10/resume-driven-development.html),
+because I think it gets in the way of self-reliance / independence, investing in
+things that don't change, and focusing on my BATNA. I like tiny build sizes,
+tiny dependency trees, and tiny bugs, so that tech can get out of the way of
+solving problems.
+
+### Problem
+
+No matter how you slice and dice it, all meaningful apps do need a database. If
+you don't own a database, your data's probably managed by somebody else. In a
+world where [data is the new
+oil](https://www.ceotodaymagazine.com/2018/04/is-data-the-new-gold/), that
+ruffles my feathers. I'm a software engineer, with data engineering experience.
+There's no reason I can't own my data.
+
+Picking a database is important, even if they are, in the end, just fancy file
+managers. That's how the biggest focus of my project ended up being Postgres.
+For me, Postgres offers the best combination of out-of-the-box features,
+extensibility, and reliability. If I have to incorporate a dependency, I'll
+stretch it until it can't reasonably stretch any more, and I'm lucky Postgres
+can stretch rather far.
+
+In a jiffy, Postgres isn't just a SQL-based, ACID-compliant OLTP database. It's
+also [a NoSQL JSON-backed document
+store](https://github.com/EnterpriseDB/pg_nosql_benchmark), [a time-series
+database](https://github.com/timescale/timescaledb), and [a graph
+database](https://github.com/bitnine-oss/agensgraph), among other illusions. It
+might not do the job as well as the leading industry benchmark, for sure. But I
+wouldn't be surprised if it was a #2 or #3 option in whatever shindig you wanted
+to piece together. It's the Python of databases, a Swiss Army knife you can use
+to easily prove out a proof-of-concept or use at a small scale before having to
+hire another developer or consider using another stack.
+
+So color me disappointed when I realized [AWS RDS](https://aws.amazon.com/rds/)
+doesn't allow you to do all that much with its Postgres deployment. To RDS, it's
+more important things like data integrity or high availability work properly.
+That means no touching server internals, no root access to the server, and no
+installing custom extensions.
+
+It's disappointing because I really wanted to combine the safety of a managed
+solution like RDS with the extensibility granted by root access to the database
+and its internals. It's not necessarily because I like hacking together my own
+solution. On the contrary, I think such a solution could offer the best global
+tradeoff for [optionality between
+clouds](/posts/2020/05/27/clouds_kernel_of_optionality), costs management, and
+maintainability, among other considerations.
+
+### Solution
+
+As it turns out, it's quite possible to have a hybrid RDS / bespoke solution.
+Postgres supports this nifty concept called ["foreign data wrappers"
+(FDWs)](https://wiki.postgresql.org/wiki/Foreign_data_wrappers) where you can
+read/write to external data sources. This is actually part of the SQL standard,
+called [SQL/MED](https://en.wikipedia.org/wiki/SQL/MED), and implemented by
+other databases as well.
+
+Depending on your risk tolerance, there's different FDW extensions you can use.
+[CSV files](https://www.postgresql.org/docs/current/file-fdw.html) and
+[Postgres](https://www.postgresql.org/docs/current/postgres-fdw.html) are
+supported out of the box. [MySQL](https://github.com/EnterpriseDB/mysql_fdw) and
+[MongoDB](https://github.com/EnterpriseDB/mongo_fdw) wrappers are supported by
+EnterpriseDB, who I believe retain a number of core Postgres developers.
+[Oracle](https://github.com/laurenz/oracle_fdw) and
+[JDBC](https://github.com/atris/JDBC_FDW) wrappers are developed by third-party
+individual contributors, and might not be as well maintained. Finally, if you
+want something made in-house, you can always roll your own FDW using
+[Multicorn](https://multicorn.org/), and rewrite it using native C for
+performance if the concept sticks.
+
+[RDS supports `postgres_fdw` for Postgres for
+RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#postgresql-commondbatasks-fdw).
+This means you can create references to Postgres tables in RDS from your bespoke
+Postgres database deployment.
+
+There's also this nifty project called
+[PostgREST](http://postgrest.org/en/latest/), which "lifts" existing Postgres
+resources into an HTTP context automatically. This means you don't need to log
+in using a console to access your data. You can view it in the browser, and
+remotely connect to it using whatever clients fit your fancy. It's also nice for
+other reasons. PostgREST cuts out the ORM middleman, unifies security at the
+data layer instead of fragmenting it between the app and the database, and runs
+stored procedures against the database by turning HTTP + PL/pgSQL into a sort-of
+RPC language.
+
+Now, the full system design swims into view:
+
+```viz-dot
+digraph {
+    "aws" [
+        label = "Postgres on AWS RDS"
+        shape = "record"
+    ];
+
+    "postgres" [
+        label = "Custom Postgres"
+        shape = "record"
+    ]
+
+    "http" [
+        label = "PostgREST"
+        shape = "record"
+    ]
+
+    data -> aws [
+        label = "  sql"
+    ]
+    aws -> postgres [
+        label = "  postgres_fdw bridge"
+    ]
+    postgres -> http
+    http -> "end user" [
+        label = "  http"
+    ]
+}
+```
+
+This is _Postgres as an app_. All the complex logic you'd normally have to get a
+developer to write, or spend time writing yourself, is abstracted into the
+actual database, without abstracting away user freedom. It's a 1:1 mapping of
+the data model from the SQL layer to the HTTP layer. This means you can use [any
+number of cheap
+clients](http://postgrest.org/en/v7.0.0/ecosystem.html#example-apps) to connect
+to and interact with your data.
+
+### Tradeoffs
+
+As with any system design, there's benefits and downsides:
+
+#### Pros
+
+- **Optionality goes through the roof.** Since `postgres_fdw` is a Postgres
+  standard, you don't necessarily need to have your data source located on AWS.
+  You can migrate your data to Google Cloud Platform, Microsoft Azure, Oracle
+  Cloud Infrastructure, VMWare Cloud, or your own on-premise servers. This is
+  important because optionality increases your BATNA. You can hunt for the best
+  cloud deals, and migrate if one offers you a big enough carrot. This is
+  important if you're a team lead or manager in a large company trying to make a
+  VP happy.
+
+  BATNA benefits apply to other parts of the stack as well. Again, you don't
+  have to use Postgres as your data source at all. You can use another data
+  source, and still run Postgres queries against it through your FDW, and not
+  have that affect the rest of your stack. To your apps and APIs, you're still
+  using Postgres. So if you're comfortable using the JDBC wrapper, you can
+  replace the Postgres data source with any data source that speaks JDBC, which
+  is _a lot_ of different data sources. This helps keep product managers and ops
+  people happy, because you can shift things around and not tell people and
+  stuff will not break (hopefully).
+
+  You don't have to connect to the HTTP endpoint. You can use something like
+  [Metabase](https://www.metabase.com/) and connect directly to the underlying
+  database using JDBC. This method also doesn't prevent you from running
+  migrations. Framework-free tools like [sqitch](https://sqitch.org/) help out
+  there. If you're more familiar with ORMs, that's fine too. Connect a backend
+  and frontend to a specific database schema, like [this Stack Overflow
+  answer](https://stackoverflow.com/a/51007441) describes for Django, and use
+  multiple apps per database. This is important if you're a startup founder and
+  you need to pivot fast by creating and tossing static bundles and random
+  webapp backends until you get product-market fit.
+
+- **Few, highly vetted dependencies.** The only core dependencies you really
+  need for this stack are Postgres and PostgREST. That's it. There's no ORM, no
+  webapp framework, no random protocol somewhere, nothing else you really need
+  to maintain.
+
+  This is important because the more dependencies you have, the more knobs you
+  need to turn, the more possible points of failure exist, and the more mailing
+  lists and news you need to keep up with to ensure you have the latest security
+  updates and ecosystem support. This may force you to work harder or hire more
+  people than necessary. Managed solutions might cost extra money, or might have
+  their own hidden dependencies that cause them to suffer downtime during
+  inconvenient moments, without the benefit of being open-source or easily
+  grokkable.
+
+  This is important for everybody. If you're into resume-driven development,
+  this stack ensures the _critical_ stuff in your pipeline will not break, which
+  means the argument for stopping resume-driven development decreases. If you're
+  against resume-driven development, you basically only need these two things to
+  get up and running.
+
+- **Painless extensibility.** There's far more extensions to the Postgres
+  ecosystem than just foreign data wrappers.
+
+  One I've incorporated into TinyDevCRM is
+  [**`pg_cron`**](https://github.com/citusdata/pg_cron), an extension to turn
+  cron jobs into Postgres tables. This not only means Postgres can generate
+  events using cron job syntax, but it also means your cron jobs can be easily
+  scaled to multiple machines as per Postgres's replication / failover policy,
+  as long as each server has that extension up and running.
+
+  [Citus](https://github.com/citusdata/citus) turns your Postgres instance into
+  a horizontally scalable cluster while presenting it as a single-node instance,
+  in [NewSQL](https://en.wikipedia.org/wiki/NewSQL) fashion. [Servers aren't
+  cattle](https://news.ycombinator.com/item?id=23237647), but they shouldn't be
+  coddled, and horizontal scalability is much better at re-defining that
+  paradigm than vertical scaling.
+
+  Finally, Postgres offers untrusted Python execution via
+  [PL/Python](https://www.postgresql.org/docs/current/plpython.html). So if you
+  had a Python/C library requiring copious usage of data (like any kind of AI/ML
+  task), you can probably use PL/Python in order to define AI/ML stored
+  procedures with TensorFlow or PyTorch, and run said SQL procedures on the
+  database server to generate batched AI/ML insights. This may cut down on the
+  amount of ETL grunging you need to do, and reduce the overhead of having to
+  learn yet another new tool or ill-fitting custom query language.
+  [Greenplum](https://greenplum.org/) is an example of this implementation in
+  production.
+
+  You can see other extensions via [the Postgres extensions
+  network](https://pgxn.org). You can also learn about more Postgres resources
+  at [this GitHub repository](https://github.com/dhamaniasad/awesome-postgres).
+
+  The degree to which you can go nuts is much higher at the data layer than at
+  the application layer. If you manage the chaos right, you can open up new
+  possibilities.
+
+- **It's stupid cheap.** I wouldn't skimp money on RDS for any real kind of
+  production usage. Seriously, don't do it.
+
+  But...if you have your own database running on the side, it's not hair-on-fire
+  critical if it falls over. You might suffer downtime for stuff connected to
+  that instance, but if you rely on RDS, you're not losing your data and you're
+  not preventing customers from reading from and writing to it. You can click a
+  button in the RDS instance and turn it into a high availability instance in a
+  few minutes.
+
+  I don't think price is a great argument for doing things in general, because
+  it's easy to get bogged down in attritionary thinking, but if you are
+  cost-constrained, there's novel ways to reduce costs if you relax the uptime
+  constraint. You only need to import the information you need, so you can
+  always export results elsewhere and delete intermediate data in a rolling
+  fashion. If you set up regular backups to a storage engine like S3, you can
+  add a layer on top of the one-click deployment here to import said backup and
+  get right back at it. If you only need an occasional report, it might be worth
+  scripting the setup / teardown of the CloudFormation stack with additional
+  logic to run a specific SQL query or procedure against an imported copy of the
+  data, kind of like your own SQL-query-as-a-service utility. That way, you can
+  run a larger database instance for a shorter period of time. While this may be
+  more secure and cheaper, it may be more time-intensive.
+
+  Of course, you can always scale your costs depending on how much you need this
+  stack to be up and running.
+
+  RDS for Postgres, at its cheapest, is around $50 / mo. when I looked at the
+  [AWS billing calculator](https://calculator.aws). If you run your analytics
+  database on the tiniest node possible, it would cost $5 / mo for a `t2.micro`
+  instance (or other VMs that throttle performance upon maxing out system
+  resources). When you compare that to hiring a developer (hundreds of dollars
+  an hour for a competent one), or locking yourself into the latest no-code tool
+  and having your prices rise exponentially, it looks attractive.
+
+#### Cons
+
+- **Database security models may be disappointing.** Maybe it's because
+  databases interact with so many parts of a computer, but effectively securing
+  a database is quite tricky. Increasing security involves a number of
+  tradeoffs, such as decreased performance, and while those tradeoffs might make
+  sense at other levels of a tech stack, they may not make sense for a database,
+  by default. My current impression of databases is they need to exist within a
+  walled garden where the server knows it's safe and secure, and that that's
+  best practice. So you use a private subnet, and add a NAT gateway where a
+  database can request things from the outside world, but where the outside
+  world can't make direct requests to the database.
+
+  Databases are also meant to be stable, rock-solid products in a sea of change,
+  likely because low-level languages used by performant code take more time to
+  support different authentication models. If you have different forms of
+  authenticating a user or an agent, you can't expect that a database will
+  incorporate all those methods.
+
+  That lack of investment may translate to a fragmented security model where you
+  may not be able to import and export all users / policies / configurations in
+  one go. Rather, you'd have to write up your own stored procedure to do so,
+  which may leave some gaps during upgrading or migrating. I'd love to be wrong
+  on this, and I haven't spent that much time looking into this.
+
+  I'm not speaking from experience on this one. Googling trustless
+  infrastructure turns up a bunch of blockchain crap, so I'm not terribly sure
+  how security for databases in production works. I definitely could be wrong on
+  some of these things, especially if they're state-of-the-art.
+
+- **Foreign tables aren't colocated with your compute instance.** According to
+  [the Postgres documentation on foreign
+  data](https://www.postgresql.org/docs/current/ddl-foreign-data.html), Postgres
+  asks the foreign data wrapper to fetch the data from the external resource for
+  each request. This can be problematic for certain situations where you might
+  want to colocate your data and compute together. For example, if you have a
+  GPU and you're looking to use
+  [**`pg_strom`**](https://github.com/heterodb/pg-strom) (a Postgres extension
+  that generates GPU-optimized code and injects it into your query optimizer at
+  runtime), you might not see too much benefit from having a remote table, since
+  the peformance of your compute may be outweighed by the network overhead of
+  copying the table over. Of course, you'd have to prove this out empirically
+  before making a data-driven argument, but it seems plausible.
+
+  Of course, you can copy the table over to your bespoke database instance, but
+  that would take time and incur network bandwidth costs, you'd be duplicating
+  your data, and you'd have to worry about capacity constraints on your
+  instance. If you needed to run regular queries, you'd have to keep the table
+  in sync with your latest data, which may be difficult.
+
+- **Coupling code as a database extension may make software development
+  lifecycles longer.** I'm not quite sure how testing Postgres extensions works,
+  and whether things I might find on the web are best practice. By contrast, far
+  more people run tests for independent pieces of code, and you can get a far
+  better feel on what's the "right" way to do things with a larger sample size.
+
+- **There's a far larger investment in man hours.** Setting this up just the way
+  you want it will almost certainly take up more of your time than installing
+  Apache Spark. It will probably make much more time than setting up Redis, or
+  RabbitMQ, or Celery, or the otherwise #1 industry leading solution for your
+  thing. You'd also have to maintain it yourself, which adds in more time when
+  compared to managed solutions by other companies.
+
+  Time is not cheap, and that's a good thing. It means life is valuable compared
+  to computers and other magic rocks, something that isn't always respected by
+  everybody if it isn't baked into financials. I'd say this time sink of
+  implementing this presents the best argument against proceeding in this
+  direction. I hope to shave off some time for myself and for others with this
+  initial investment, but it's more a learning experience for me, which is why
+  monetization of TinyDevCRM was a distant second priority.
+
+  I'm really glad companies like [Retool](https://retool.com) make it easy for
+  building these kinds of internal tools quickly. It'd be cool to see them offer
+  something like this, though a database-specific extension is probably more
+  akin to something Citus Data might develop.
+
+I'm working on a multi-stage CloudFormation deploy of this stack, so you (we)
+can try it for ourselves to see how it works and compares. Should be up in the
+next couple of days. Stay tuned.
+
+---
+
+If shipping software along this direction is something you're interested in
+bringing to your organization, I'm looking for remote freelance / contract work
+and I'd love to have a conversation. Email is `me@yingw787.com`.

@@ -1,0 +1,374 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@libs/shadcn-ui/components/ui/table";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-06-18",
+  title: "Postgres, as an App! (Now with one-click deploys to AWS + Heroku!)",
+  description:
+    "Postgres, as an App! (Now with one-click deploys to AWS + Heroku!)",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export function TableStack() {
+  const values = [
+    {
+      stackComponent: "VPC (network layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-vpc&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/vpc.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch vpc"/>
+          </a>
+        </>
+      ),
+    },
+    {
+      stackComponent: "RDS (origin data source)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-rds&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/rds.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch rds"/>
+          </a>
+        </>
+      ),
+    },
+    {
+      stackComponent: "EBS (custom database data layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-persist&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/persist.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch ebs"/>
+          </a>
+        </>
+      ),
+    },
+    {
+      stackComponent: "ECS (custom database compute layer)",
+      cloudformationTemplate: (
+        <>
+          <a target="blank" style={{ border: "none" }} href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=postgresasapp-compute&amp;templateURL=https://bytes-by-ying-postgres-as-app.s3.amazonaws.com/compute.yaml">
+            <img src="https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg" alt="launch db"/>
+          </a>
+        </>
+      ),
+    }
+  ];
+
+return (
+
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableHead>Stack Component</TableHead>
+      <TableHead>CloudFormation Template</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    {values.map((value, index) => (
+      <TableRow key={index}>
+        <TableCell>{value.stackComponent}</TableCell>
+        <TableCell className="flex items-start">
+          {value.cloudformationTemplate}
+        </TableCell>
+      </TableRow>
+    ))}
+  </TableBody>
+</Table>
+); }
+
+export function HerokuDeployButton() {
+  return (
+    <div className="flex w-full items-start">
+      <a
+        target="blank"
+        style={{ border: "none" }}
+        href="https://heroku.com/deploy?template=https://github.com/PostgREST/postgrest"
+      >
+        <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
+      </a>
+    </div>
+  );
+}
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+Me saying ["use Postgres as an app"](/posts/2020/06/15/postgres_as_app_1) is
+fine, but without shipping anything it doesn't do anyone much good. So let's
+ship!
+
+## First, the code
+
+Here's [the GitHub repository](https://github.com/yingw787/postgres_as_app)
+complementing this blog post. Clone the repository, set up the system
+requirements, and follow the instructions in the README.
+
+---
+
+Alternatively, here's a 3-step process to try out this stack:
+
+- Deploy the database stack to AWS using AWS CloudFormation in descending
+  order:
+
+  <TableStack />
+
+- Run through the ["AWS Modeling" steps listed in the
+  README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order
+  to set up your SQL tables. This involves connecting to your RDS origin
+  database and ECS custom database.
+
+- After you've done that, deploy PostgREST to Heroku:
+
+  <HerokuDeployButton />
+
+  Punch in values for `DB_ANON_ROLE` as your custom database username,
+  `DB_SCHEMA` for your custom database schema (should just be `public`), and
+  `DB_URI` for the custom database URI. Change `POSTGREST_VER` from `7.0.1` to
+  `0.5.0.0`.
+
+  Then, open up your Heroku app, and go to `$YOUR_APP_NAME/$YOUR_TABLE_NAME`
+  to see your table!
+
+---
+
+## Local Modeling
+
+Follow the instructions listed in the [local
+setup](https://github.com/yingw787/postgres_as_app#local-setup). This should
+model the stack on your local computer using `docker-compose`.
+
+The difficulty of synchronizing foreign tables surprised me. Foreign table
+references can vary in many different ways, since they remain arbitrary table
+definitions, and something like JDBC-based database synchronization isn't
+possible or if it is, isn't cheap. [This blog
+post](https://www.postgresonline.com/journal/index.php?/archives/322-Generating-Create-Foreign-Table-Statements-for-postgres_fdw.html)
+references a stored procedure that can pull in multiple tables by regex at a
+time. I haven't tried it myself, but this would be one option I'd like to try in
+production should the need arise. Combine that with a job scheduler, and you can
+run a batched synchronization process. I've saved a copy of the stored procedure
+[here](/documents/2020/06/18/script_foreign_tables.sql).
+
+# Remote Modeling on AWS
+
+Follow the instructions listed in the [AWS
+setup](https://github.com/yingw787/postgres_as_app#aws-setup). This should model
+the stack on AWS using AWS CloudFormation, a cloud-native infrastructure-as-code
+tool. Keep in mind that you do need a valid AWS account for this step, and
+running this stack may cost money / credits (may not fall within AWS Free Tier
+usage). This stack also assumes free access to the Internet for downloading
+package archives and for accessing AWS.
+
+I broke up this stack into multiple CloudFormation templates, because then each
+stack's lifecycle can be managed separately from one another. This can be
+especially important for databases, because you can tear down the database
+without deleting the underlying files. Whether those files are useful in a
+recovery situation is a separate discussion, but I wanted to be able to mount a
+volume on AWS like you can locally with Docker volumes. It might also minimize
+the amount of copying and pasting you need to do to run templates in different
+regions, without resorting to something like [Pulumi](https://www.pulumi.com/).
+
+### Defining an AWS IAM user
+
+AWS supports a complete [identity and access management
+platform](https://aws.amazon.com/iam). The collection of roles, policies, and
+permissions keeps unwarranted behavior to a minimum, which is nice from a
+security and legal perspective.
+
+I read [_Docker on AWS_ by Justin
+Menga](https://blog.yingw787.com/posts/2020/04/14/docker_on_aws/) a few months
+back, and he walks you through how to set up an IAM user to force multi-factor
+authentication when accessing AWS resources. I liked it enough to structure it
+as an AWS CloudFormation template. In practice, MFA may be annoying to use at
+times, and it grants IAM admin access (everything except billing) after MFA
+login, but I think it's a great first step towards further refining IAM
+policies.
+
+I found password scripting for IAM users fairly tricky. I've created my own
+passwords and IAM rejected them as they did not follow AWS's default password
+policy, so now I use `awscli` and the `aws secretsmanager` command instead.
+[This Stack Overflow answer](https://stackoverflow.com/a/52363111) provided some
+good insight to me with respect to what's appropriate for AWS, as the password
+policy appeared opaque to me. Keep in mind you can always change your password
+in the AWS console later and get clearer errors. Store passwords in a password
+manager like [Bitwarden](https://bitwarden.com/) for ease of access later on.
+
+I've found this to be the only step I can't script, and / or don't feel
+comfortable scripting entirely, since you need to add some changes to your local
+system (i.e. it's not all changes to remote infrastructure), and since you need
+to use it in all other parts of your stack. You don't have to set up an IAM
+user, as long as you have access to the relevant AWS resources defined in these
+templates.
+
+### Configuring a VPC
+
+AWS by default creates a VPC and two public subnets for your applications, and
+those are the ones used if you don't create your own VPC. If all services you're
+creating are accessible via Internet and need access to the Internet, this
+arrangement is perfectly fine.
+
+I'm creating my own VPC here because in addition to learning how to do so, I'd
+like to add private subnets and a network address translation (NAT) gateway to
+this VPC, in order to secure the custom database while pulling down updates from
+package archives (i.e. running `sudo apt-get -y update`, which requires DNS
+resolution). I haven't done so, I acknowledge it's bad, but NAT gateways cost
+extra money to run and I'm pretty cost-constrained. Suffice to say a NAT would
+be the first thing on my todo list. Either that, or building a VM with no
+expectation of needing the Internet, and deploying said VM behind a private
+subnet without adding a NAT gateway.
+
+I found [this InfoQ
+article](https://www.infoq.com/articles/aws-vpc-cloudformation/) very useful on
+getting started with VPCs and CloudFormation.
+
+### Creating the RDS instance
+
+It's a bit difficult to prototype using RDS because it takes some time for
+instances to start up and tear down, due to running backups and whatnot. That
+may be another reason why separating out various services into their own
+CloudFormation templates is a good idea, because faster deployment cycles means
+engineering is less of a bottleneck.
+
+Since this is a proof of concept only, I templated this without usage of any
+private subnets, enabled access outside the VPC, and turned on global access to
+the instance via SSH. In production, you'd want to use private subnets and
+remove inbound rules except to allowlisted IPs.
+
+If you log into the RDS instance, and try to create an unsupported extension,
+you can see how RDS locks down your data:
+
+```text
+pgdb=> CREATE EXTENSION pg_cron;
+ERROR:  Extension "pg_cron" is not supported by Amazon RDS
+DETAIL:  Installing the extension "pg_cron" failed, because it is not on the list of extensions supported by Amazon RDS.
+HINT:  Amazon RDS allows users with rds_superuser role to install supported extensions. See: SHOW rds.extensions;
+```
+
+If you didn't want to create the table by hand, you can also create an AWS
+Lambda custom resource in order to run a SQL file or script after RDS signals
+CloudFormation that the database is stood up. I didn't create the custom
+resource for this tutorial due to time and resource constraints.
+
+### Creating the EBS data layer
+
+We can back our custom database deployment using AWS Elastic Block Store (EBS).
+I found [this AWS article on deploying databases with ECS and
+EBS](https://aws.amazon.com/blogs/compute/amazon-ecs-and-docker-volume-drivers-amazon-ebs/)
+to be very useful when templating out this feature.
+
+### Creating the ECS compute node for custom Postgres / PostgREST
+
+Now, we can stick on our compute node for our custom database, and our PostgREST
+proxy.
+
+I'm using Docker and AWS ECS to deploy this stack. If you don't want to use
+Docker, you can define your own "automated machine image" using a tool like
+[Packer](https://www.packer.io/), and deploy that AMI directly onto a VM,
+cutting Docker out of the process. That's honestly a safer way of doing things,
+since containers are meant to be created and terminated without notice, which
+may not be appropriate for databases. Might also be faster, as well, as ECS API
+calls are on top of EC2 API calls.
+
+I'm using an EC2 autoscaling group, which from my understanding means the Docker
+containers for a given ECS cluster run on that EC2 node, and if additional load
+is detected, a new EC2 instance is created with that cluster replicated. If that
+is the case, it's kind of like a Kubernetes pod, without having to install
+Kubernetes.
+
+I'm using Docker Hub for this example. Usually, I use AWS Elastic Container
+Registry (ECR) an alternative to Docker Hub. I typically use ECR over Docker Hub
+because of the unlimited private repositories you can create, and because you
+can template it easily with CloudFormation. I'm not using ECR for this tutorial
+because it isn't possible to fetch public Docker images from a private
+repository unless you add things like API Gateway + Lambda, which may be prone
+to breaking, and because building and uploading Docker images may work well with
+one-click deploys.
+
+I wanted to integrate PostgREST with AWS ECS, but I ran into the problem of
+service discovery between interconnected containers. Apparently, containers from
+different task definitions have a hard time communicating with each other.
+There's ways around it, like AWS has a Route 53 DNS-based service discovery tool
+integrated with AWS Cloud Map, but that involves standing up your own DNS
+servers and that's where I drew the line in terms of scoping out this proof of
+concept.
+
+## What comes next?
+
+- **Synchronize to Office 365 or Google Sheets:** It's a lot easier to solve a
+  technical problem than a cultural one (if a problem exists in the first
+  place!), and so it is with people using Excel. You like your VBA macros, you
+  _keep_ your VBA macros. No need to learn SQL, no need to switch computers or
+  operating systems or change your workflow in any way, because if it ain't
+  broke fixing it costs money and might break more things. This company called
+  Layer 2 creates codeless data integration tools between Microsoft products and
+  SQL, and [released a connector for SharePoint and Office 365 with
+  Postgres](https://www.layer2solutions.com/support/cloud-connector-faqs/postgresql-sharepoint-integration).
+  This other company called [Seekwell](https://seekwell.io/) does much the same
+  thing (their pricing looks tantalizing for an indie SaaS company).
+
+  I'm sure somebody would be able to build an executable to create a local
+  server that does pretty much the same thing for on-prem Excel. Biggest problem
+  might be something like navigating corporate firewalls.
+
+- **Create your own Airtable:** Slap on something like
+  [Grid.js](https://gridjs.io/) or [DataTables](https://www.datatables.net/) or
+  [Handsontable](https://handsontable.com/) or
+  [PostGUI](https://github.com/priyank-purohit/PostGUI) or [really any of these
+  plugins](https://jspreadsheets.com/) as a client, combine it with something
+  like [SQitch](https://sqitch.org/) for a running log of framework-agonstic SQL
+  migrations per table, and you have your own self-deployable version of
+  Airtable, with open-source APIs at every layer (GUI, API, DB).
+
+  Type the API response from each table on a per-column basis, in order to
+  dispatch the correct React.js view component (Image, DatePicker, etc.) to
+  render your data, and use a separate webapp backend in order to orchestrate
+  file / object handling (e.g. image and file uploads go to S3, while storing
+  the URI within Postgres). It should be reasonably easy to execute on; but as
+  always, the hard part is doing it.
+
+  I think this might be something I'd be interested in building out. I have this
+  sleep log on Google Sheets where the y-axis range is bisected at midnight and
+  upside down from what I want, and it's quite annoying. I wanted to get into
+  Airtable a few years ago, but I didn't like the GUI...and the data lock-in is
+  glaringly evident. In any case, it'd be great to offboard from Google.
+  Apparently they do shenanigans like [inserting a line break on carriage return
+  based on the user agent of the
+  browser](https://news.ycombinator.com/item?id=22686126).
+
+- **Create your own Firebase:** You can use your data management auth flow as a
+  pass-through entity for cheap mobile and web clients, without needing any
+  SDKs, if you don't need full-duplex realtime streaming protocols like
+  WebSockets. You can also connect a webapp framework like Django to a specific
+  Postgres schema, as per [this Stack Overflow
+  answer](https://stackoverflow.com/a/51007441), and have apps within your
+  master admin app, without the need to create / destroy individual Postgres
+  databases. Sharding data onto new compute nodes, and scaling admin-related
+  tasks such as data import/export, still remain unknowns to me.
+
+  This is what I think [Supabase](https://supabase.io/) aspires to be. It's also
+  what TinyDev aspires to be, on a tiny scale.
+
+- **Data-driven testing framework:** I've mentioned data-driven testing before,
+  but a platform like this one might just wrap everything in one go. Create your
+  state tables, deduplicate inputs using an Alloy model or some other kind of
+  formal reasoning metric, and then couple together input sets using a directed
+  acyclic graph. I'm not sure if this is possible still, Postgres would have to
+  expose its relational algebra as an API, but I think it's worth taking a stab
+  at. If it is possible, this means you can integration test ETL tools like
+  Airflow.
+
+I'm sure there's other ideas I haven't thought of. The app possibilities are
+quite endless, as they are with anything. But this with kernel as the core of
+your stack, you can effectively communicate your work and results with
+non-technical stakeholders in a much more transparent manner.
