@@ -1,0 +1,42 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2022-12-28",
+  title: "About",
+  description: "About",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+This is my personal blog, where I publish book reviews, ruminate on aspects of
+my life, and generally voice my internal monologue.
+
+<br/>
+<br/>
+
+<div className="flex w-full justify-center">
+  <img src="/images/picture_happycat_cropped.jpg" className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 max-h-[100px]" />
+</div>
+
+<br/>
+<br/>
+
+If you're not me and you're coming here from somewhere else (which could be
+happening since I find this blog above [my professional
+techblog](https://bytes.yingw787.com) when I search my username on Google),
+there are two important differences:
+
+- The posts here are much more unvarnished than the posts on my tech blog, as I
+  spend far less time preparing each one. It's more of a stream of consciousness
+  rather than well-executed checkpoints.
+
+- I don't keep Google Analytics on this blog, and I never will. This so I can
+  use this blog as my personal scratchpad.
