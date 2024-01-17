@@ -14,7 +14,7 @@ import { ROUTE_HOME } from "@apps/com-yingw787-bytes/lib/routes";
 const ibmPlexMono = IBM_Plex_Mono({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ying Wang's Professional Blog",
+  title: "Bytes by Ying",
   description: "Professional experience as professional insights.",
 };
 
