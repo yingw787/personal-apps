@@ -49,7 +49,7 @@ projects.
 
 Let's walk through a project to see what I mean.
 
-1.  Install the following system dependencies:
+-   Install the following system dependencies:
 
     `docker`, I'm using:
 
@@ -70,7 +70,7 @@ Let's walk through a project to see what I mean.
     There is NO WARRANTY, to the extent permitted by law.
     ```
 
-2.  Create a directory with the following files:
+-   Create a directory with the following files:
 
     ```shell
     $ cd /path/to/dir
@@ -80,7 +80,7 @@ Let's walk through a project to see what I mean.
     └── Makefile
     ```
 
-3.  In your `Dockerfile`, add your base Docker image reference, labels, and
+-   In your `Dockerfile`, add your base Docker image reference, labels, and
     other build arguments:
 
     ```docker
@@ -91,7 +91,7 @@ Let's walk through a project to see what I mean.
     ARG DEBIAN_FRONTEND=noninteractive
     ```
 
-4.  In your `Dockerfile`, update package archives and download `curl`. Note that
+-   In your `Dockerfile`, update package archives and download `curl`. Note that
     updating package archives does not update system dependencies, and the
     container should still mirror the base image until dependencies are
     upgraded.
@@ -104,7 +104,7 @@ Let's walk through a project to see what I mean.
     RUN apt-get install -y curl
     ```
 
-5.  In your `Dockerfile`, install your runtime dependencies. You can see why
+-   In your `Dockerfile`, install your runtime dependencies. You can see why
     Golang took off for cloud-native development here; it's a single binary you
     need to `curl` for each app!
 
@@ -122,7 +122,7 @@ Let's walk through a project to see what I mean.
     RUN dpkg -i /tmp/hugo_0.62.0_Linux-64bit.deb
     ```
 
-6.  In your `Dockerfile`, set your default home directory and update directory
+-   In your `Dockerfile`, set your default home directory and update directory
     permissions. I'm using '1000` as my user is the first non-root user on my
     system, as per [this forum
     answer](https://www.linuxquestions.org/questions/linux-general-1/what-is-the-user-1000-a-4175510196/).
@@ -136,7 +136,7 @@ Let's walk through a project to see what I mean.
     RUN chown -R 1000:1000 /app
     ```
 
-7.  In your `Dockerfile`, set your default command to run `exec "@"` in order to
+-   In your `Dockerfile`, set your default command to run `exec "@"` in order to
     pass in commands at runtime:
 
     ```docker
@@ -188,7 +188,7 @@ I use `make` and Makefiles in order to template out commands, as it's easier in
 order to consistently pass in CLI arguments for `docker run`. It's also a bit
 safer and transportable than using `bash`.
 
-1.  In your `Makefile`, declare your enviroment variables. I'm declaring
+-   In your `Makefile`, declare your enviroment variables. I'm declaring
     `AWS_PROFILE` for (omitted) CloudFormation lifecycle management,
     `APP_VERSION` for defining the Docker image version as the commit hash,
     `GIT_REPO_ROOT` to define the absolute path to the `git` repository root (I
@@ -218,7 +218,7 @@ safer and transportable than using `bash`.
     export GROUPID ?= $(shell id -g $(whoami))
     ```
 
-2.  In your `Makefile`, add a `setup` target in order to setup your repository
+-   In your `Makefile`, add a `setup` target in order to setup your repository
     after first cloning it. I'm downloading the `hugo` theme I need (if it
     doesn't exist), and installing `hugo` modules required by the `hugo` theme
     in order to run properly. Note how when I'm running `git clone` in the
@@ -250,7 +250,7 @@ safer and transportable than using `bash`.
             hugo mod get -u
     ```
 
-3.  In your `Makefile`, create the `run` target. This `run` target is nice
+-   In your `Makefile`, create the `run` target. This `run` target is nice
     because it lifts the command line arguments and inserts them directly into
     the `docker run` command, while still enabling things like `--net=host` for
     unifying the Docker network with my system network (ensuring `localhost` on
@@ -281,7 +281,7 @@ safer and transportable than using `bash`.
             $(RUN_ARGS)
     ```
 
-4.  Add various other targets you may need to commonly reference. I templated
+-   Add various other targets you may need to commonly reference. I templated
     out the `hugo server` command because I run `hugo server` often. This
     involves the usage of recursive `make` within the same file, which might not
     be the best way of doing things; would love to hear of a better way.
@@ -360,14 +360,13 @@ using Bazel (which I had wanted to use for TinyDevCRM, but eventually decided
 against after seeing just how much work building out my own source would
 entail).
 
-It's also useful for integrating debuggers and needing to expose a
-process to a stdout stream. For example, running `python -m ipdb manage.py
-runserver` for a Django process hits a `pdb` trace before starting the Django
-process. This means without having a stdout stream available, either you can't
-use `ipdb` or `pdb` within Docker, or you have to somehow elide that first `pdb`
-trace and attach to the Docker process manually before adding a `pdb` trace and
-hitting the server process with a request to see it. This is a comfortable third
-option.
+It's also useful for integrating debuggers and needing to expose a process to a
+stdout stream. For example, running `python -m ipdb manage.py runserver` for a
+Django process hits a `pdb` trace before starting the Django process. This means
+without having a stdout stream available, either you can't use `ipdb` or `pdb`
+within Docker, or you have to somehow elide that first `pdb` trace and attach to
+the Docker process manually before adding a `pdb` trace and hitting the server
+process with a request to see it. This is a comfortable third option.
 
 There's still problems with this stack; I usually use `Ctrl+C` in order to exit
 the Docker container, resulting it merely stopping instead of deleting itself,
@@ -375,6 +374,5 @@ but otherwise it's not bad. I like to think it keeps the Haskell philosophy of
 "lifting into structure", which I've found applicable outside of one programming
 language.
 
-You can find [`tinydevcrm-api-docs`
-I've used for inspiration for this blog post
+You can find [`tinydevcrm-api-docs` I've used for inspiration for this blog post
 here](https://github.com/tinydevcrm/tinydevcrm-api-docs).
