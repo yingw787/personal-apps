@@ -1,0 +1,437 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-02-02",
+  title: "Property-Based Testing with `hypothesis`, and associated use cases",
+  description: "Property-Based Testing with `hypothesis`, and associated use cases",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+NOTE: This blog post complements [a PyDistrict
+presentation](https://www.meetup.com/pydistrict/events/274066238/) on the same
+topic posted on this date.
+
+Thanks to [Rami Chowdhury](https://necaris.net/) for inviting me to speak, and
+the PyDistrict organizers for hosting me.
+
+Code samples from this talk are available at [this GitHub
+repository](https://github.com/yingw787/pydistrict_pbt).
+
+The full YouTube talk can be seen [here](https://youtu.be/nUwXwZevenA).
+
+__________
+
+[Hacker News](https://news.ycombinator.com/item?id=26010998)
+
+[Lobste.rs](https://lobste.rs/s/tdvcvf/property_based_testing_with_hypothesis)
+
+__________
+
+## Overview
+
+Writing tests today sucks. Tests are expensive to write. They're even more
+expensive to maintain. They're somewhat opaque to anybody who's not intimately
+familiar with the test harness. You can't always be sure whether you're writing
+the "right" tests for your situation. Worst of all, it's sometimes difficult to
+persuade a non-technical stakeholder that software testing actually does
+anything underneath the hood, except maybe inflate operational expenses for your
+software budget. [Every software development horror
+story](https://news.ycombinator.com/item?id=18442941) I've heard comes with some
+discussion around tests, and that's because not only does software fail in more
+ways than anybody without job security may care to admit, it fails in novel and
+unpredictable manners.
+
+What sucks even more is *just how important effective software testing is* for
+software engineers to quickly and confidently contribute value. The absolute
+first thing I do after cloning most `git` repositories these days, for work or
+otherwise, is run the test suite. Test suites are self-documenting and always
+more accurate than a wiki or other forms of documentation, and since they're
+programmatic it's much easier to tie into the rest of your developer workflow
+(say when setting up automated deployments to production).
+
+__________
+
+Honestly, this probably isn't news to you if you've been working in industry for
+a while, and it's easy to fall into a trap of powerlessness and believing any
+endemic lack of alignment is eternal. And while it's not always (and usually
+not) the fault of technical limitations, it may be useful to think of technical
+ways to grow beyond the immediate problem. So I'd like to say there are two
+great aspects about professional software that could be applied to software
+testing.
+
+The first is we're usually using paradigms that are decades old. Professional
+software is usually incremental in action and incrementalist in thinking. This
+implies there's often new concepts in academia or research that might solve
+current problems. One professor I talked to around graduation 4 years ago
+brought up how the A* path-finding algorithm was invented 20 years before its
+adoption in the video game industry (and apparently that's at least one reason
+why NPCs don't collide with in-world walls anymore).
+
+The second is test suites usually under the full control of engineering. There
+might be a QA department within engineering, but I have yet to see a
+sales/marketing department care deeply about how you structure a test harness,
+vs. the layout of a landing page. While serving the company is the goal of any
+business-oriented engineering department, this means there's more agency than
+usual in how engineering approaches testing, than say product implementation or
+devops.
+
+What we're looking for as software engineers is to write as many good tests as
+possible within some limited time frame.
+
+## Different software testing strategies I've used
+
+The most important thing about writing good tests is to start writing good
+source code and develop good habits. This might involve separating concerns in a
+codebase by using functions instead of classes, gradually applying type
+signatures using `mypy` or `pyre-check` and adding a typechecking step to your
+CI pipeline, and paying attention to software properties like immutability
+(updating an object creates a copy of the object with the update instead of
+mutating the original object) and idempotency (running a code block generates
+the same output for the same input even for multiple runs). You can bring a lot
+of value to the table by using tools + infrastructure like `black` for
+autoformatting and Docker / `docker-compose` for running local infrastructure,
+and a lot of this undergirds higher-order testing strategies like property-based
+testing later on.
+
+Some of these strategies I've applied in the field revolve around these simpler
+ideas. When I'm building a webapp frontend or backend, I adopted the idea of
+"functional core, imperative shell", where you have a soup of decoupled methods
+within your app that are easily unit testable, and a set of well-defined I/O
+interfaces and stubs to imperative resources like your network or database to
+create the cheapest possible integration tests. This is nice for stateless,
+pass-through entities, but works less well when you're primarily looking for
+effects (e.g. it'd be very difficult to unit test most of PostgreSQL
+effectively). So when I became a data engineer, and I spent most of my day
+interacting with effectful systems, I attempted with some success to write a set
+of [data-driven integration tests using
+`pytest`](/posts/2018/11/07/data_driven_testing) and leverage its ability to
+parameterize over fixtures using data to create essentially a mongodump of test
+descriptions. This solution was nice since it allowed me to scale the amount of
+data I tested far beyond the amount of code I needed to write. However, I still
+needed to come up with my own oracle values to test with. It's easy to run an
+expensive integration test with very little added value.
+
+This is where my interest in property-based testing stems from. I'd also mention
+that even with property-based testing, all these testing strategies (and others
+I haven't covered or discovered yet) have their place and their tradeoffs. You
+should decide for yourself when to apply or to not apply each.
+
+## What is property-based testing?
+
+At its simplest, property-based testing is the inverse of normal unit testing.
+Instead of providing some amount of data and a transformation so the computer
+can assert a property, you provide a property and a transformation, so the
+computer can provide some data.
+
+Let's go back to the basics. Say you defined a method `addOne()` to increment an
+integer by one:
+
+```python
+def addOne(x: int) -> int:
+    return x + 1
+```
+
+In order to test method `addOne()`, you can define a set of unit tests:
+
+```python
+def test_addOne():
+    assert addOne(5) == 6
+```
+
+You can even parameterize a list of oracle inputs and expected values:
+
+```python
+import pytest
+
+@pytest.mark.parametrize('_input, _expected', [(5,6), (6,7), (7,8)])
+def test_addOne(_input, _expected):
+    assert addOne(_input) == _expected
+```
+
+The final leap is realizing that instead of coming up with your own oracle
+values, you just care that the inputs are integers and the outputs are a
+functional, deterministic transform resulting in an integer output. This is
+where property-based testing:
+
+```python
+from hypothesis import given, strategies as st
+
+@given(st.integers())
+def test_addOne(_input):
+    assert addOne(_input) == _input + 1
+```
+
+For some properties, you can define and apply the opposite transform, which when
+combined with the original transform, generates the identity function, which
+should then leave the input untouched:
+
+```python
+def subOne(x: int) -> int:
+    return x - 1
+
+from hypothesis import given, strategies as st
+@given(st.integers())
+def test_addsub_returns_value(_input):
+    assert subOne(addOne(_input)) == _input
+```
+
+So what else is it similar to / different from? One's *generative testing*,
+which are tests that create tests. Since we're creating a spec here,
+`hypothesis` is generating tests underneath the hood for us and running them.
+Otherwise, property-based testing is a bit different as it supports intelligent
+search strategies that allow us to shrink the error space.
+
+Another testing paradigm similar to property-based testing is *fuzz testing*,
+where random inputs are inserted into a program to see how it behaves and
+whether it crashes. To me, fuzz testing is more an extension of black-box
+integration testing, and extends more into devops or security related testing,
+rather than the unit-focused nature of property-based testing.
+
+## What is `hypothesis`?
+
+`hypothesis` is one of the more popular implementations of property-based
+testing in Python. I had thought it originated from a PBT library called
+[**`QuickCheck`**](https://hackage.haskell.org/package/QuickCheck) in Haskell,
+but after reading through a Haskell book earlier this year and [talking to some
+folks online](https://lobste.rs/s/ovebeq/pythonista_s_review_haskell#c_gz09vc),
+there's a more "intelligent" PBT library in Haskell it came from called
+[**`Hedgehog`**](https://hackage.haskell.org/package/hedgehog), which applies
+built-in shrinking as part of the test generation suite.
+
+You can find the `hypothesis` for Python documentation
+[here](https://hypothesis.readthedocs.io/en/latest), and additional
+documentation around the team behind Hypothesis
+[here](https://hypothesis.works/).
+
+### `hypothesis` strategies
+
+The key idea behind `hypothesis` is strategy generation. You can see examples of
+it by running this code segment in your `python` terminal:
+
+```python
+from hypothesis import strategies as st
+
+st.text().example()
+```
+
+`hypothesis` supports basic strategies like those targeting Python's "primitive"
+types. You can create `st.integers()` or `st.text()`. You can also do more
+advanced things, like create strategies from structs like dictionaries or lists,
+combine strategies together, infer strategies from a regular expression, and
+build strategies from well-recognized third-party classes from `pandas` or
+Django.
+
+### `hypothesis` tactics
+
+I took a lot of these tactics from [a talk by Zac Hatfield-Dodds introducing PBT
+at PyCon US](https://www.youtube.com/watch?v=KcyGUVzL7HA). Check out his website
+[here](https://zhd.dev/).
+
+The types of properties you can apply with `hypothesis` allow for certain
+tactics you can play with in `hypothesis`.
+
+One of these tactics might be manually defining the property, then letting
+`hypothesis` generate the test cases for you. One common way this tactic is
+applied is to look for "round-trip" properties, where you look for the inverse
+method and check that applying both would result in the identity method.
+
+Another tactic might be to use an oracle function. This can be really helpful if
+you're refactoring a piece of code and you want to carry forward the original
+behavior of that method, regardless of whether it's correct or incorrect. In
+this case, that method becomes an oracle and you can apply the equal-by-value
+constraint between the original and refactored methods as a property to test
+against.
+
+There's other tactics, like metamorphic testing or hyperproperties, that I
+won't get into here (because I honestly don't understand them yet), but one
+great resource besides the `hypothesis` documentation and the blogs / talks
+given by the `hypothesis` core devs is [Hillel Wayne's
+blog](https://www.hillelwayne.com).
+
+## Working through some real-world problems
+
+So this is all well and good, but for me personally, working through some
+examples really helps solidify some of these learnings. So I took the
+opportunity to create three different real-world code samples, so we can discuss
+how to implement property-based testing for each one.
+
+### Example: password validator
+
+[**CODE
+SAMPLE**](https://github.com/yingw787/pydistrict_pbt/blob/master/examples/password_validation.py)
+
+This first example describes a sample password validator that you might
+implement as part of your codebase. The rules for this password validator is
+that the password must have 8 characters, contain one special character, one
+uppercase character, one lowercase character, and at least one number. These
+rules might change by codebase or by context, and so you can say it's some
+method that takes a string input and applies some set of gates in order to
+generate a boolean value. When you describe it like that, this method doesn't
+appear all that different from other methods you might encounter in your
+codebase.
+
+#### Some regular unit tests
+
+So this method is fully unit-testable, no need for complex integration tests.
+What do conventional unit tests look like for this method?
+
+```python
+@pytest.mark.parametrize(
+    "_input, _expected",
+    [
+        ("", False),
+        ("ohautoeauna", False),
+        ("732814084212", False),
+        ("OAHUETNASU", False),
+        ("&*&*()&", False),
+        ("789&(*&(ht", False),
+        ("aBcD1234@", True),
+    ],
+)
+def test_password_matches_validation_for_inputs(_input, _expected):
+    assert password_is_valid(_input) == _expected
+```
+
+This is applying `@pytest.mark.parametrize` over some amount of data in order to
+generate test cases for our unit test.
+
+These are tests that you can come up with just by looking at the defined rules
+within the source code. But you might forget that in Python 3, strings are
+Unicode and they're not always UTF-8, and the notion of a character and a
+character length may change by language. And once you remember that, you're left
+wondering what else you've forgotten about.
+
+#### PBT approach
+
+So this is a great opportunity to apply `hypothesis`. We have the rules
+available in the source code. If we're able to create a regular expression from
+these rules, we might be able to generate data that passes our password
+validation method. If it doesn't, then we know there's an error.
+
+After fiddling around on [Pythex](https://pythex.org/) to create a proper
+regular expression, I came up with this:
+`r'(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}'`. To break this regex
+down:
+
+-   `(?=.*[0-9])` matches all numeric digits.
+-   `(?=.*[a-z])` matches all lowercase alphabetical letters.
+-   `(?=.*[A-Z])` matches all uppercase alphabetical letters.
+-   `(?=.*[!@#$%^&*])` matches all special characters.
+-   `{8,}` matches if and only if the length of the sample text is greater than
+    or equal to 8 characters.
+
+If you run
+`st.from_regex(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}").example()`
+you should be able to get a good amount of arbitrary output. Note, that
+printable characters go beyond `string.printable` or just ASCII.
+
+So, this means our unit test suite can be re-written as:
+
+```python
+from hypothesis import strategies as st
+
+# `hypothesis` test suite
+@given(st.from_regex(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}"))
+def test_password_matches_validation_for_arbitrary_inputs(_input):
+    assert password_is_valid(_input)
+```
+
+### Example: basic webapp (REST to SQL)
+
+[**CODE
+SAMPLE**](https://github.com/yingw787/pydistrict_pbt/blob/master/examples/web_server.py)
+
+This example describes a sample web-based API backend that you might use when
+starting a new SaaS project or internal microservice. It takes in some URL with
+URL parameters, then spits out a JSON response either affirming the creation of
+a record in the database, or erroring out with an accurate status code and a
+helpful error message. It should *not* respond with an HTML error page, or a
+stack trace of any sort. Various `CHECK` clauses are added to the SQL table
+definition preventing insertion of invalid records at the database layer.
+
+#### Regular approach: functional soup, imperative shell
+
+Normally, a web application like this would contain a good deal more business
+logic which can be unit-testable, but since our example is rather small, the
+source code mainly comprises the API layer and the database call. For this
+reason, we're going to focus primarily on writing good integration tests.
+
+Flask has a `pytest` plugin called `pytest-flask` that makes it easy to create
+app clients. The `pytest` fixture would look something like this:
+
+```python
+@pytest.fixture
+def client():
+    with app.test_client() as testing_client:
+        with app.app_context():
+            yield testing_client
+```
+
+Let's say we want to test that every type of string can be a name, and every
+type of int can be an age. It's pretty easy to create some basic tests:
+
+```python
+def test_init_returns_ok(client):
+    response = client.get("/init")
+    assert response.status_code == 200
+
+
+def test_test_returns_ok_with_params(client):
+    response = client.get("/test?name=Ted&age=25")
+    assert response.status_code == 200
+```
+
+One problem with this approach is how while this works for naive URL parameters,
+any string requiring URL encoding will fail. This happens even with names, since
+names can have special characters. It's far better to handle cases like these
+programmatically, rather than working around the webapp (e.g. requiring manual
+data entry for names with special characters). We're also not handling either
+`CHECK` clauses here properly. These are things we could try and fix in our
+existing test harness. However, we may be able to handle this better if we moved
+to a PBT-based approach.
+
+#### PBT approach to web server
+
+Pretty much any bytestream can be a legal name, so let's use the regex
+`r"\A\d{1,}\Z"` as our name, like `st.from_regex(r"\A\d{1,}\Z")`. I tried
+`(\W+){1,}` and `([a-zA-Z]+){1,}`, but according to [this GitHub
+issue](https://github.com/HypothesisWorks/hypothesis/issues/839), it's important
+to set boundary markers to exclude prefixes and suffixes. We can then apply a
+filter to the stream of possible integer inputs in order to constrain ourselves
+to ages above 18, like `st.integers().filter(lambda x: x >= 18)`.
+
+The full method templates in a sanitized URL, calls endpoint in order to add a
+record with those attributes to the database, and then checks for an HTTP 200 OK
+response:
+
+```python
+@given(st.from_regex(r"\A\d{1,}\Z"), st.integers().filter(lambda x: x >= 18))
+def test_test_returns_ok_with_arbitrary_inputs(client, name, age):
+    url_string = f"/test?name={urllib.parse.quote(name.encode('utf-8'))}&age={age}"
+    response = client.get(url_string)
+    json_response = json.loads(response.data)
+    assert json_response.get("status") == 200
+```
+
+From doing this, I noticed that Flask has an `escape` method in order to
+sanitize inputs from request arguments. I didn't notice that before, and
+wouldn't have noticed it if I had approached testing this service without
+`hypothesis`.
+
+## Where to go from here
+
+These are really quick, whipped-up examples of how to apply property-based
+testing. I advocate for the usage of property-based testing, not just because it
+can catch edge cases, but because it changes your mindset towards programming.
+I've learned to think more critically about types and properties after using
+property-based testing, and developed programming habits to guard against
+certain classes of errors.
