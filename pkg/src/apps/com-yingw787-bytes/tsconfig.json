@@ -25,7 +25,8 @@
     "**/*.jsx",
     "../../../../pkg/src/apps/com-yingw787-bytes/.next/types/**/*.ts",
     "../../../../dist/pkg/src/apps/com-yingw787-bytes/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
