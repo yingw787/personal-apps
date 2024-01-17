@@ -10,7 +10,37 @@ import { MdEmail } from "react-icons/md";
 import { Container } from "@libs/blog/components/container";
 import { SocialLinksSection } from "@libs/blog/components/social-links";
 import { SocialLinkNavigation } from "@libs/blog/types/navigation";
+import { RecentArticle } from "@libs/blog/components/article";
 import portraitImage from "@apps/com-yingw787-blog/public/images/picture_kate_sleeping.jpg";
+import { getAllPosts } from "@apps/com-yingw787-blog/lib/posts";
+
+const InspirationalQuote = () => {
+  return (
+    <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-base3 dark:border-gray-500 dark:bg-base03">
+      <p className="text-lg italic font-bold leading-relaxed text-gray-900 dark:text-white">
+        &quot;You don&apos;t ever have to do anything sensational for people to
+        love you.&quot;
+      </p>
+      <br />
+      <p className="text-md font-medium leading-relaxed text-gray-900 dark:text-white">
+        Fred Rogers, Dartmouth College commencement address, 2002
+      </p>
+    </blockquote>
+  );
+};
+
+async function RecentPosts() {
+  const articles = (await getAllPosts()).slice(0, 4);
+  return (
+    <div className="mx-6 my-12 max-w-2xl">
+      <div className="flex flex-col space-y-10">
+        {articles.map((article, index) => (
+          <RecentArticle key={index} article={article} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const Home = () => {
   const socialLinks: SocialLinkNavigation[] = [
@@ -55,16 +85,8 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <blockquote className="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
-            <p className="text-2xl italic font-bold leading-relaxed text-gray-900 dark:text-white">
-              &quot;You don&apos;t ever have to do anything sensational for
-              people to love you.&quot;
-            </p>
-            <br />
-            <p className="text-xl font-medium leading-relaxed text-gray-900 dark:text-white">
-              Fred Rogers, Dartmouth College commencement address, 2002
-            </p>
-          </blockquote>
+          <InspirationalQuote />
+          <RecentPosts />
         </div>
         <div className="lg:pl-20">
           <SocialLinksSection
