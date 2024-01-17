@@ -56,7 +56,7 @@
     "autoformat": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "pkg/src/apps/com-yingw787-blog",
+        "cwd": "pkg/src/apps/com-yingw787-bytes",
         "commands": [
           "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
         ],
