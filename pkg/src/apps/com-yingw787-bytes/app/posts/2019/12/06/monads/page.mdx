@@ -1,0 +1,651 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-12-06",
+  title: "Monads aren't as hard as you think",
+  description: "Monads aren't as hard as you think",
+  categories: ["Python", "Functional Programming"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+**(Update on 01/30/2020)**: I now have [a slightly better understanding of
+Haskell](/posts/2020/01/30/a_review_of_haskell), and I agree that much of this
+tutorial doesn't do true monads justice. This [advice from Stephen
+Diehl](http://dev.stephendiehl.com/hask/#eightfold-path-to-monad-satori) rings
+true for me today, and I think it is worth mentioning here:
+
+> Much ink has been spilled waxing lyrical about the supposed mystique of
+> monads. Instead, I suggest a path to enlightenment:
+>
+> Don’t read the monad tutorials.
+>
+> No really, don’t read the monad tutorials.
+>
+> Learn about [Haskell
+> types](http://book.realworldhaskell.org/read/types-and-functions.html).
+>
+> Learn what a typeclass is.
+>
+> Read the [Typeclassopedia](http://wiki.haskell.org/Typeclassopedia).
+>
+> Read the monad definitions.
+>
+> Use monads in real code.
+>
+> Don’t write monad-analogy tutorials.
+>
+> In other words, the only path to understanding monads is to read the fine
+> source, fire up GHC, and write some code. Analogies and metaphors will not
+> lead to understanding.
+
+---
+
+Much of this information comes from
+[Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA) and
+[their video on monads](https://www.youtube.com/watch?v=t1e8gqXLbsU). I found
+their videos extraordinarily beginner-friendly and understandable. Highly
+recommend you to check them out :smile:
+
+I would also like to give a big shoutout to [Jason
+DeLaat](https://bitbucket.org/%7Be3e424c7-ef48-4816-bf9d-412cfc59c86c%7D/) for
+building the
+[**`pymonad`**](https://bitbucket.org/jason_delaat/pymonad/src/master/) project.
+I had a hard time mentally converting some principles from Haskell to Python and
+his project helped me gain a far better understanding than I would have on my
+own.
+
+---
+
+I've been scared of monads ever since I first heard of them. So many references
+to burritos, or nuclear waste containers, or some other analogy that didn't make
+sense to me. So if you're scared of monads too, maybe my take on what a monad is
+will help.
+
+_A monad is a [data type](https://en.wikipedia.org/wiki/Data_type) (e.g. `int`)
+that encapsulates some [control
+flow](https://en.wikipedia.org/wiki/Control_flow) (e.g. `try/catch`)_.
+
+See? Not too bad.
+
+---
+
+The natural thing to ask afterwards would be, _why are monads important to
+understand_?
+
+From my experience working in the software industry, I'm amazed at how much of
+success at doing something involves just doing that something and not failing at
+it, and _just how hard it is to not fail at it_. Things that aren't complicated
+when codebases are small (e.g. error model design and management) become
+intractably difficult as codebases scale.
+
+For example, here are three things you may encounter when writing code at work:
+
+- Conditional statements (like `if/else`)
+
+- Error handling
+
+- Return values of different types
+
+They seem trivial enough to execute on, but given the right context, may involve
+a good deal of reasoning to ensure correctness for all cases.
+
+Let's go ahead and implement division, in Python 3.7:
+
+```python
+def div(a, b):
+    return a / b
+```
+
+Seems straightforward enough for happy path inputs:
+
+```python
+>>> def div(a, b):
+...     return a / b
+...
+>>> div(4, 2)
+2.0
+>>> type(div(4, 2))
+<type 'float'>
+>>>
+```
+
+But what happens if you divide by zero? This is a possibility you may face if
+you don't pre-process your input. If you want to maintain separation of
+concerns, your method really shouldn't compose any pre-processing logic under
+the interface layer. Otherwise, you might duplicate pieces of your validation
+logic in different portions of your codebase, and multiple implementations of
+validation logic may make satisfying _any_ specification and quickly iterating
+on that specification according to business requirements much more difficult.
+
+And of course, if you have a pre-processing layer between your data retrieval
+layer and this method, it might not be implemented correctly, or you might be
+using a library that doesn't control pre-processing at a fine enough
+granularity, and bad inputs might get through. You can fix a broken service or
+executable of course, but until it's fixed, it may break production and cause
+downtime or data loss.
+
+So formally speaking, if your input `b` is of the set of all integers, this
+situation may occur:
+
+```python
+>>> def div(a, b):
+...     return a / b
+...
+>>> div(5, 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in div
+ZeroDivisionError: division by zero
+>>>
+```
+
+If you want your method to play nice with others, you really can't just raise a
+`ZeroDivisionError` and halt execution whenever you get a "bad" input, and
+panic for help from the user. For one thing, there may not be a human user-agent
+available, if the code exists as part of an automated service. If your service
+fails, this may cause the rest of the service stack to start failing, and force
+all affected developers to comb through logs and such to find the root cause.
+Furthermore, you may not always have some other parent service that can handle
+propagated errors, or you are building the parent service handling propagated
+errors from others, and you cannot afford to "fail fast". Maybe you are
+currently processing some chunk of data and if you fail in processing a subset
+of that chunk, you have to throw away the entire chunk, and the time it took to
+process the rest of that chunk.
+
+Okay, so let's add the ability to gracefully handle exceptions so as to not
+terminate program execution. However, adding graceful handling logic can get
+messy really quickly:
+
+```python
+def div(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        pass # WHAT TO DO HERE??
+    # General catch-all for unhandled
+    # edge cases
+    except Exception as err:
+        raise err
+```
+
+For one, you could be raising any number of exception types within that method
+(e.g. an exception that could be raised at any time within client processes is
+[**`KeyboardInterrupt`**](https://docs.python.org/3/library/exceptions.html#KeyboardInterrupt)).
+This would lead to many different `except` clauses, which would expand your
+try/catch block (and [SLOC](https://en.wikipedia.org/wiki/Source_lines_of_code))
+with respect to the number of exception types you want to catch. Second, if you
+apply exception handling as part of any mainline program execution, you lose the
+ability to accurately trace any exceptions from the handling logic and before.
+This stings, especially for a language like Python that explicitly trades off
+performance for clean stack traces.
+
+So what do you do? You can't return an integer, because not only is that
+mathematically undefined and impossible, there are no sane integer defaults
+because any integer on the number line could be another valid result of two
+inputs for this method. If `b` was 1, `div(a, 1)` would return `a` where `a` is
+of the set of all integers).
+
+Maybe you can try returning a value of a different type (say `NoneType`)
+instead:
+
+```python
+def div(a, b):
+    if b == 0:
+        return None
+    return a / b
+```
+
+Well that takes care of that problem, right?
+
+```python
+>>> def div(a, b):
+...     if b == 0:
+...         return None
+...     return a / b
+...
+>>> div(5, 0)
+>>> type(div(5, 0))
+<type 'NoneType'>
+```
+
+Not quite. Type `NoneType` does not have the same attributes as type `int`,
+which may result in errors down the line if you are
+[duck-typing](https://en.wikipedia.org/wiki/Duck_typing), which dynamically
+typed languages like Python allow and encourage:
+
+```python
+>>> None + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+>>>
+```
+
+So if you were using this definition of division in another program, you risk
+cascading the failure downstream. Let's say you were implementing a basic
+map/reduce operation over some arbitrary data:
+
+```python
+>>> mylist = [0, 1, 2, 3]
+>>> def mapper(n):
+...     return div(5, n)
+...
+>>> map(mapper, mylist)
+[None, 5, 2, 1]
+>>> def reducer(a, b):
+...     return a + b
+...
+>>> reduce(reducer, map(mapper, mylist))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in reducer
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+>>>
+```
+
+Note that the stack trace has absolutely nothing to do with the map/reduce
+operation, which is implemented correctly, but rather with the underlying
+implementation of the `div()` method. Not only does this prevent effective
+pipelining of the source code you write, but it introduces another layer of
+obfuscation that increases debugging overhead.
+
+Could you try replacing type `int` with a superclass instance that had some of
+type `int`'s attributes (e.g. `__add__`)? Unfortunately not; as type `int`
+inherits directly from type `object`, there's no concrete superclass you can
+really substitute:
+
+```python
+# '__mro__' stands for "Method Resolution
+# Order". This resolves issues with multiple
+# inheritance like "the diamond problem",
+# where method resolution may be ambiguous:
+# https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem
+#
+# Guido van Rossum wrote more about method
+# resolution order here:
+# https://python-history.blogspot.com/2010/06/method-resolution-order.html
+>>> int.__mro__
+(<class 'int'>, <class 'object'>)
+>>> type(None).__mro__
+(<class 'NoneType'>, <class 'object'>)
+>>>
+```
+
+I mention all these situations as a guy who fell into many of these holes (and
+read about the rest). The implication behind software where engineers cannot
+guarantee certain correctness properties along critical execution paths is that
+recurring bugs can easily lead to alignment issues with the rest of the
+organization, which at best increases management overhead and at worst impedes
+the quality of execution.
+
+---
+
+Easy things should be simple, and we can clearly see that the easy path of
+adding conditionals and special handling to problems can make things
+complicated. Maybe there's another way. This is how I got into learning about
+monads.
+
+The key for me in understanding the benefit of monads was realizing _expressions
+themselves don't cause exceptions, the evaluation of expressions causes
+exceptions_. If you can resolve your expression to a type that can be evaluated
+later, you may be able to handle exceptions as part of a type definition, which
+could provide a handle for static analysis tools or compile-time guarantees to
+hook into.
+
+At this point, I want to introduce three different "things": `Maybe`, `Just`,
+and `Nothing`. They're monads, and they can help us implement a safer version of
+division without suffering many of the negative side effects that come with the
+aforementioned alternatives.
+
+(I won't go into a deeper dive of functors, applicatives, or monoids. Besides
+the fact that I don't know them myself :see_no_evil:, I'd say a script-kitty
+understanding that communicates intent/purpose is the "something different" that
+can help people relate this solution with their existing problems and transcend
+the stereotype that monads are hard to learn. If you would like to learn more
+(and you -- and I -- absolutely should), a great resource is "Learn You a
+Haskell for Great Good" by Miran Lipovača, whose book is [available for free
+online](http://learnyouahaskell.com/chapters), or "Haskell Programming From
+First Principles" by Christopher Allen and Julie Moronuku, whose book is
+[available for purchase here](https://haskellbook.com/).)
+
+Here's an initial definition of `Maybe`, `Just`, and `Nothing`:
+
+```python
+class _Maybe(object):
+    """An implementation of the 'Maybe' monad.
+
+    This class definition exists to add any monadic attributes or operators.
+
+    Since we're talking about 'Maybe', 'Nothing', and 'Just' only, and since
+    'Nothing' and 'Just' inherit from 'Maybe', we'll wrap any basic monadic
+    attributes as part of this class definition.
+    """
+
+
+def Maybe(cls):
+    """Parametrization of a typedef to include monadic attributes. This method
+    enables dynamic classdef generation by inheriting a base class passed in as
+    an input argument and overriding class attribute '__bases__'.
+
+    This is a psuedo-definition of generics, which may assist understanding of
+    monads between a statically typed language like Haskell and a dynamically
+    typed language like Python.
+
+    See the Python documentation for more information on method 'type()' and
+    attribute '__bases__':
+
+    https://docs.python.org/3/library/functions.html#type
+    https://docs.python.org/3/library/stdtypes.html#class.__bases__
+    """
+    # NOTE: Concrete implementation of Maybe() should be left to concrete base
+    # types.
+    raise NotImplementedError
+
+
+class _Just(_Maybe):
+    """A successful evaluation of a Maybe monad.
+    """
+
+
+def Just(cls):
+    """Functional instantiation of `Just`.
+    """
+    return type('Just(%s)' % cls.__name__, (_Just, cls), {})
+
+
+class _Nothing(_Maybe):
+    """A failed evaluation of a Maybe monad.
+    """
+
+
+# Ensure that `Nothing` is unique; uniqueness implies same `id()` result, which
+# implies a global object (singleton), much like `None = type(None)()` is a
+# singleton.
+#
+# >>> id(type(None)())
+# 4562745448 # Some object ID, this may vary.
+# >>> id(None)
+# 4562745448 # Same object ID as before.
+# >>>
+Nothing = _Nothing()
+```
+
+This results in the following:
+
+```python
+>>> Just(int)(1)
+1
+>>> type(Just(int)(1))
+<class '__main__.Just(int)'>
+```
+
+What this bit of logic does is apply multiple inheritance to render effects onto
+a parametrized base type. This is further made functional by using the
+first-class function `type()` and the extended constructor method that updates
+the underlying object attribute `__bases__`. This satisfies one property of the
+Maybe monad, in that they can turn pure effects (e.g. a mathematical expression)
+into impure effects (e.g. essentially replacing a try/catch statement with a
+type).
+
+(I first found out about the ability to parametrize types in a functional manner
+in Python through the [**`odo`**](https://github.com/blaze/odo/) project, which
+I became familiar with at work.)
+
+---
+
+So as a first-order approximation, our division operation which looked like
+this:
+
+```python
+def div(a : int, b : int) -> float:
+    return a / b
+```
+
+Can be turned into this:
+
+```python
+def safediv(a : Maybe(int), b : Maybe(int)) -> Maybe(float):
+    if (
+        a is Nothing or
+        b is Nothing or
+        b == 0
+    ):
+        return Nothing
+    return Just(float)(a / b)
+```
+
+---
+
+Okay, that's nice. So what's the clincher?
+
+The second, game-changing aspect about monads is the sequencing / binding
+operation. The type parametrization aspect of monads, at least applied in this
+context, creates a bound on how a portion of control flow _should_ fail: it
+simply returns `Nothing`. Because it's a _type_ that represents an _error_, and
+because calling a monadic method with `Nothing` generates `Nothing` (enforcing
+idempotency), the runtime doesn't need to worry about having to raise an
+exception to avoid propagating an error that cannot be handled later on. As long
+as the types match, it's safe to run. Errors become safe to pipeline, and
+pipelining allows systems of arbitrary complexity to be developed.
+
+This is powerful, because _it linearizes your error model_. No matter how
+complex your pipeline may get, you should only ever expect to get more `Nothing`
+types with a longer pipeline, and _not totally new types of errors_. You
+shouldn't ever compose two monadic services and get a completely different
+error. And if you do, you don't need to update the service itself, _you update
+the monad type / object definition_, which enables all monadic services
+leveraging that type to gain that benefit automatically after updating your
+executable / runtime.
+
+You may think this makes debugging harder because all failures are of type
+`Nothing`. This isn't necessarily the case. Not only can you log the error
+message / input arguments / metadata to reproduce the error as part of the monad
+definition, you can also create new monad definitions whenever you need. Indeed,
+[the Haskell documentation on monads for error
+handling](https://hackage.haskell.org/package/category-extras-0.52.0/docs/Control-Monad-Either.html)
+references `Either`, `Left`, and `Right` in place of `Maybe`, `Nothing`, and
+`Just` respectively:
+
+> The Either type is sometimes used to represent a value which is either correct
+> or an error; by convention, the Left constructor is used to hold an error
+> value and the Right constructor is used to hold a correct value (mnemonic:
+> "right" also means "correct").
+
+---
+
+Let's try implementing binding / sequencing attributes for our monad classes.
+
+```python
+# Removing docstrings and comments for sake of brevity, entire script is
+# referenced at the end of this post.
+class _Maybe(object):
+    def __init__(self, data=None):
+        self.data = data
+        raise NotImplementedError
+
+    def bind(self, function):
+        raise NotImplementedError
+
+    def __rshift__(self, function):
+        if not isinstance(function, _Maybe):
+            error_message = 'Can only pipeline monads.'
+            raise TypeError(error_message)
+
+        if not callable(function):
+            function = lambda _ : function
+
+        return self.bind(function)
+
+# ...
+
+class _Just(_Maybe):
+    def __init__(self, data=None):
+        self.data = data
+
+    def bind(self, function):
+        return function(self)
+
+# ...
+
+class _Nothing(_Maybe):
+    """A failed evaluation of a Maybe monad.
+    """
+    def __init__(self, _=None):
+
+    def __str__(self):
+        return "Nothing"
+
+    def bind(self, _):
+        return self
+```
+
+You can see that implementations of method `bind` are different based on the
+monad class definition. `Nothing` always binds to `Nothing`, whereas `Just`
+binds to itself applied within a function. Hence, state within the pipeline
+mutates with `Just` and stays idempotent with `Nothing`.
+
+Next, we can implement a form of
+[currying](https://en.wikipedia.org/wiki/Currying) for our division method, so
+that we can pipeline our monadic method calls the same as our monadic data:
+
+```python
+def curry(method):
+    num_args = len(inspect.signature(method).parameters)
+
+    def build_reader(argument_values, num_args):
+        if num_args == 0:
+            return method(*argument_values)
+        else:
+            return lambda x: build_reader(argument_values + [x], num_args - 1)
+
+    # NOTE: This Reader class is important to understand when implementing the
+    # full solution. For now, think of it as a helper class to implementing
+    # curry using our existing monad class definitions. It's available in the
+    # full script available at the end of this post.
+    return Reader(build_reader([], num_args))
+```
+
+You can see that the helper method `build_reader` takes in a top-level,
+decorated method `method` and builds a "Reader" object that expects some number
+of arguments serially. You can think of this "Reader" class as the functional
+analogue to [the object-oriented Builder
+pattern](https://en.wikipedia.org/wiki/Builder_pattern).
+
+Now, we can define some curried methods:
+
+```python
+@curry
+def add(a : Maybe(int), b : Maybe(int)) -> Maybe(int):
+    if (
+        a is Nothing or
+        b is Nothing
+    ):
+        return Nothing
+    return Just(int)(a.data + b.data)
+
+@curry
+def div(denominator : Maybe(int), numerator : Maybe(int)) -> Maybe(float):
+    if (
+        numerator is Nothing or
+        denominator is Nothing or
+        denominator.data == 0
+    ):
+        return Nothing
+    return Just(float)(numerator.data / denominator.data)
+```
+
+Finally, we can write some basic pipelines and see monads in action:
+
+```python
+>>> from monads import *
+# Basic addition
+>>> Just(int)(7) >> add(Just(int)(8))
+15
+# Basic division
+>>> Just(int)(5) >> div(Just(int)(10))
+0.5
+# Division by zero, resulting in `Nothing`
+>>> Just(int)(7) >> add(Just(int)(8)) >> div(Just(int)(0))
+<monads._Nothing object at 0x1040b0b90>
+# Add after division by zero, still returns `Nothing`
+>>> Just(int)(7) >> add(Just(int)(8)) >> div(Just(int)(0)) >> add(Just(int)(15))
+<monads._Nothing object at 0x1040b0b90>
+```
+
+---
+
+If monads are so useful, then why don't we see them everywhere in production? As
+we've seen, monads aren't so bad to reason about, and they do have some
+significant benefits when used correctly. From my limited experience working
+with monads, I can think of the following:
+
+- **Object-oriented languages are not type-oriented**: Our return value for
+  monadic division is a monadic type. _How do we use it when our language is
+  object-oriented?_ Short answer is, you don't. Longer answer is, you don't
+  because you would need to mutate all method definitions you wish to use as
+  part of monadic pipelines to accept monadic types _only_, which may result
+  in a Cambrian explosion of types across your project. Either all methods and
+  types are monadic in a way the underlying language isn't built to handle, or
+  a heterogeneous mix occurs where some methods accept some monadic types and
+  some methods do not, which is impossible to maintain. This impediment is
+  disqualifying for production software.
+
+  Haskell is primarily a _type-oriented language_. You can create types in
+  Haskell pretty much as easily as you can create objects in Python.
+  Arbitrarily creating types in an object-oriented language like Python is
+  akin to creating objects (state containers) in Haskell. You just don't do
+  it.
+
+  This goes back to a larger discussion about property assurances in
+  languages, which I briefly touched on when I reviewed [variables that
+  complect identity and
+  state](/posts/2019/01/26/concurrency_with_python_identity_and_state) and how
+  designing variables at that granularity is highly dependent on a cooperating
+  language specification.
+
+- **Powerful abstractions may prevent scalability**: Like it or not, most of
+  the production software world works on paradigms predating that of the
+  computer science world rediscovering monads. Having a powerful programming
+  language can tightly couple your team of developers to the source code, and
+  that's bad for business. This isn't cynicism; even healthy companies
+  experience churn, and have to watch their bus factors, and have to hire
+  junior developers as their labor funnel becomes longer and broader. Great
+  production software is highly replaceable, and highly replaceable source
+  code is defined at the interface contract layer, not by its error model.
+
+  You may be surprised as I was to learn powerful abstractions don't
+  necessarily result in performance penalties. Haskell does have an FFI, which
+  is receiving a lot of attention in the Haskell 2020 specification RFC, and
+  the [Glasgow Haskell Compiler](https://www.aosabook.org/en/ghc.html) has the
+  ability to target C, LLVM IR, and native assembly.
+
+This doesn't mean monads are completely useless, or learning about monads is
+completely meaningless. The UNIX philosophy of building services that are great
+at doing one thing, and composing pipelines out of those services, is very much
+akin to monads in that they both enable composability. Having a discrete set of
+error codes is akin to returning an erroneous type in that they both manage
+failure in a predictable manner. The granularity may vary, and it's much more
+implementation-dependent than property guarantees at the language level, but the
+model is more or less the same. Monads represent a different way to think about
+programming languages that remains highly applicable to modern production
+software at a system design level.
+
+---
+
+Here's the full, final source code we worked through, [to run as one
+file](/documents/2019/12/06/monads.py). All you need is a UNIX-like operating
+system and a build of Python 3.7.x. After that, copy and paste the following
+code block into your terminal:
+
+```bash
+curl -sSL https://bytes.yingw787.com/documents/2019/12/06/monads.py | tee $(mktemp) | $(which python3.7)
+```
