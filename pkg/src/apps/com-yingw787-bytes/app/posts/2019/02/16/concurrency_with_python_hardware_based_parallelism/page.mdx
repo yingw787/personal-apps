@@ -56,21 +56,21 @@ ecosystem very much worth investing in.
 
 Python excels with hardware-based parallelism for a number of reasons:
 
-- **A complementary development model**: Python as a language is rather
-  simple. Many design decisions around the language (such as the lack of tail
-  recursion elimination, mentioned in [the discussion on functional
+- **A complementary development model**: Python as a language is rather simple.
+  Many design decisions around the language (such as the lack of tail recursion
+  elimination, mentioned in [the discussion on functional
   programming](/posts/2019/01/19/concurrency_with_python_functional_programming))
   keep writing and debugging Python code as simple, quick, and painless as
   possible.
 
-  In contrast, many low-level, high-performance libraries are quite
-  complicated. For example, Michael Lehn wrote a great [Stack Overflow
+  In contrast, many low-level, high-performance libraries are quite complicated.
+  For example, Michael Lehn wrote a great [Stack Overflow
   answer](https://stackoverflow.com/a/11421344) on how
-  [**BLAS**](http://www.netlib.org/blas/) implementations take advantage of
-  CPU microarchitectural optimizations by segmenting functions based on their
-  inputs (vector-vector, matrix-vector, matrix-matrix), and rewriting
-  functions from scratch instead of composing them from lower-level functions
-  by using specialized CPU instructions when possible.
+  [**BLAS**](http://www.netlib.org/blas/) implementations take advantage of CPU
+  microarchitectural optimizations by segmenting functions based on their inputs
+  (vector-vector, matrix-vector, matrix-matrix), and rewriting functions from
+  scratch instead of composing them from lower-level functions by using
+  specialized CPU instructions when possible.
 
   Python composes these low-level libraries to eliminate this tradeoff between
   application performance and development velocity. Stable code susceptible to
@@ -78,19 +78,18 @@ Python excels with hardware-based parallelism for a number of reasons:
   represented as a Python library. Python glue code ties these libraries
   together, keeping most errors in Python and easily patchable. Low-level
   libraries can also have their own library bindings between each other, which
-  reduces the need to propagate control flow to Python for
-  performance-sensitive work while still separating concerns.
+  reduces the need to propagate control flow to Python for performance-sensitive
+  work while still separating concerns.
 
 - **The GIL as a forcing function**: Removing the GIL from CPython is not
   possible without decreasing performance or correctness. This [`pypy` blog
   post](https://morepypy.blogspot.com/2017/08/lets-remove-global-interpreter-lock.html)
   aptly explains why. It's easier to simply work around the GIL rather than to
   try and remove it entirely, and amortize the costs of spending time in
-  Python-land instead of reducing the cost of time spent in Python-land.
-  Hence, the GIL acts as a forcing function for the Python community to find
-  other ways to increase performance, which may unify/increase investment into
-  the C/C++ API and the interfacing ecosystem around hardware-based
-  parallelism.
+  Python-land instead of reducing the cost of time spent in Python-land. Hence,
+  the GIL acts as a forcing function for the Python community to find other ways
+  to increase performance, which may unify/increase investment into the C/C++
+  API and the interfacing ecosystem around hardware-based parallelism.
 
 There are a number of serious downsides to applying hardware-based parallelism
 as a concurrency model, which should be carefully considered before deploying
@@ -99,8 +98,8 @@ hardware-accelerated Python to production:
 - **Speedups may be marginal and difficult to measure**: For [embarassingly
   parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) problems
   (like deep learning), or problems with dedicated hardware instructions,
-  hardware-based parallelism makes sense since there are fewer resource
-  bounds. For example, on some graphics-oriented GPU microbenchmarks, such as
+  hardware-based parallelism makes sense since there are fewer resource bounds.
+  For example, on some graphics-oriented GPU microbenchmarks, such as
   [**`GPU_4Polygon`**](https://github.com/OlegKonings/GPU_4Polygon) or
   [**`CUDA_brute_triangle`**](https://github.com/OlegKonings/CUDA_brute_triangle),
   you may see speedups well within two orders of magnitude. However, this may
@@ -108,8 +107,7 @@ hardware-accelerated Python to production:
   NVIDIA DevTalk discusses how speedups of more than 5x may be
   suspicious](https://devtalk.nvidia.com/default/topic/945987/cuda-programming-and-performance/what-is-maximum-speed-up-that-can-be-obtained-with-gpu-/post/4909734/#4909734)
   for CPU-bound or memory-bound work, likely because production workloads have
-  different resource bounds over time that reduce hardware resource
-  utilization.
+  different resource bounds over time that reduce hardware resource utilization.
 
   Comparing speedups between different hardware targets is also difficult;
   parameter tuning and/or source rewrites generate process differences for
@@ -148,17 +146,17 @@ hardware-accelerated Python to production:
   post on the difficulties of working with
   Linux](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
   One primary difficulty raised is Linux GPU device driver compatibility, and
-  how NVIDIA oftentimes patches around its own API specification. Since CUDA
-  is the only commercially viable GPGPU library, this may have outstanding
-  effects on GPGPU use cases.
+  how NVIDIA oftentimes patches around its own API specification. Since CUDA is
+  the only commercially viable GPGPU library, this may have outstanding effects
+  on GPGPU use cases.
 
 - **Difficult API development**: Performance relies on ensuring as much
   processing occurs within the lower-level code without interruption. Hence,
   performance may be made more efficient and predictable to build a massive
   request and flush it at once through `ffi` than it is to piece together
-  multiple Python API requests and having to continually move between Python
-  and its low-level bindings. This may make it more difficult to design
-  explainable, stable, and simple APIs. The method
+  multiple Python API requests and having to continually move between Python and
+  its low-level bindings. This may make it more difficult to design explainable,
+  stable, and simple APIs. The method
   [**`pandas.read_csv()`**](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)
   may act as a weak signal in this regard; its function signature has _48_
   optional parameters.

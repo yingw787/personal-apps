@@ -60,13 +60,13 @@ scale systems.
 
 Python brings a number of strengths around data-intensive processing:
 
-- **Python-based I/O-bound tasks are not affected by the GIL**: Since
-  I/O-bound tasks likely define the [wall-clock
+- **Python-based I/O-bound tasks are not affected by the GIL**: Since I/O-bound
+  tasks likely define the [wall-clock
   time](https://en.wikipedia.org/wiki/Elapsed_real_time) a data-intensive
-  process may take to run, the GIL should not define the real latency
-  threshold I/O-bound Python processes will take to complete. Of course, this
-  claim comes with its own disclaimers. To verify which circumstances apply to
-  your situation, run performance profiling on your system using tools like
+  process may take to run, the GIL should not define the real latency threshold
+  I/O-bound Python processes will take to complete. Of course, this claim comes
+  with its own disclaimers. To verify which circumstances apply to your
+  situation, run performance profiling on your system using tools like
   [**`pyflame`**](https://github.com/uber/pyflame) or
   [**`snakeviz`**](https://github.com/jiffyclub/snakeviz), and examine the
   breakdown of how real time is allocated during the lifetime of the process.
@@ -76,30 +76,30 @@ Python brings a number of strengths around data-intensive processing:
   typing](https://docs.python.org/3/extending/newtypes_tutorial.html), and the
   ability to call shared libraries with the
   [**`ctypes`**](https://docs.python.org/3/library/ctypes.html) library. In
-  data-intensive tasks, one prime difficulty is maintaining a common type
-  system across all services, since different definitions of common types
-  (e.g. float) cause data loss or corruption, many-to-many mappings between
-  language-specific types rapidly leads to confusion, and since some data
-  specifications (like that of [ESRI
-  Shapefiles](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf))
-  are defined at the byte level. This problem is also extraordinarily
-  difficult to retrofit a solution for, since other libraries (like one
-  implementing a common [data definition language, or
+  data-intensive tasks, one prime difficulty is maintaining a common type system
+  across all services, since different definitions of common types (e.g. float)
+  cause data loss or corruption, many-to-many mappings between language-specific
+  types rapidly leads to confusion, and since some data specifications (like
+  that of [ESRI
+  Shapefiles](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)) are
+  defined at the byte level. This problem is also extraordinarily difficult to
+  retrofit a solution for, since other libraries (like one implementing a common
+  [data definition language, or
   DDL](https://en.wikipedia.org/wiki/Data_definition_language)), depend on the
   type system for their own definitions of correctness. With the ability to
-  define types in C, and the ability to use C types in a discrete manner at
-  the Python level, Python can leverage an entire third-party type system if
-  need be, and communicate with other languages using a commonly accepted type
+  define types in C, and the ability to use C types in a discrete manner at the
+  Python level, Python can leverage an entire third-party type system if need
+  be, and communicate with other languages using a commonly accepted type
   system.
 
-- **Continued investment into existing Python-based tooling**: Python
-  libraries intended for high performance on single machines may evolve
-  concurrently with libraries using multiple machines. As many of these
-  libraries use [hardware-based
+- **Continued investment into existing Python-based tooling**: Python libraries
+  intended for high performance on single machines may evolve concurrently with
+  libraries using multiple machines. As many of these libraries use
+  [hardware-based
   parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism)
-  and leverage Python for composability and orchestration, the already
-  existing separation of concerns may make retrofitting a low-level API for
-  distributed tasks easier. One such project evolution is
+  and leverage Python for composability and orchestration, the already existing
+  separation of concerns may make retrofitting a low-level API for distributed
+  tasks easier. One such project evolution is
   [**`dask`**](https://github.com/dask/dask), which has the ability to define
   data structures on distributed data as with
   [**`dask.distributed`**](https://distributed.dask.org/en/latest/), by
@@ -110,39 +110,38 @@ Python brings a number of strengths around data-intensive processing:
 Python may bring a number of downsides when it comes to creating data-intensive
 systems:
 
-- **Pipelining systems may cause latency amplification**: If data
-  infrastructure architectures follow [data-driven programming best
+- **Pipelining systems may cause latency amplification**: If data infrastructure
+  architectures follow [data-driven programming best
   practices](https://en.wikipedia.org/wiki/Data-driven_programming), and
-  multiple applications come together to compose different data pipelines,
-  there may be unavoidable propagation of control flow to Python user code if
-  library components communicate with each other using Python APIs. Some
-  amount of latency amplification may occur as a result, as CPU-bound Python
-  code is generally orders of magnitude slower than e.g. CPU-bound C code.
+  multiple applications come together to compose different data pipelines, there
+  may be unavoidable propagation of control flow to Python user code if library
+  components communicate with each other using Python APIs. Some amount of
+  latency amplification may occur as a result, as CPU-bound Python code is
+  generally orders of magnitude slower than e.g. CPU-bound C code.
 
 - **Python's dynamic type system**: Python is a dynamically typed language,
   where type-checking occurs at runtime. This contrasts with static typing,
-  where type checking occurs at compile-time. While dynamic typing may result
-  in boosts to developer productivity, it comes at the cost of latent
-  technical debt when scaling codebases, in addition to typing errors only
-  being caught on runtime. Type systems are sometimes the subject of various
-  religious wars, as noted in [this `xkcd` forum
+  where type checking occurs at compile-time. While dynamic typing may result in
+  boosts to developer productivity, it comes at the cost of latent technical
+  debt when scaling codebases, in addition to typing errors only being caught on
+  runtime. Type systems are sometimes the subject of various religious wars, as
+  noted in [this `xkcd` forum
   thread](http://forums.xkcd.com/viewtopic.php?t=4244). However, when
   prioritizing robustness and reliability, static typing provide more tangible
   advantages than dynamic typing.
 
   This cost may be mitigated in Python by using a type checker like
   [**`mypy`**](https://github.com/python/mypy),
-  [**`pyre-check`**](https://github.com/facebook/pyre-check), or [Python
-  3.5+'s native type
-  annotations](https://docs.python.org/3/library/typing.html). Ultimately
-  though, type checking on dynamically typed languages may not be as
+  [**`pyre-check`**](https://github.com/facebook/pyre-check), or [Python 3.5+'s
+  native type annotations](https://docs.python.org/3/library/typing.html).
+  Ultimately though, type checking on dynamically typed languages may not be as
   computationally efficient for data-intensive systems as statically typed
   languages, and may increase developer cognitive load and organizational
   process overhead. The cost of having a static type system may also decrease
-  with time, with newer languages like
-  [Rust](https://github.com/rust-lang/rust) emulating more efficient
-  Haskell-like static typing rather than verbose Java-like static typing (Paul
-  Chiusano describes his conversion back to static typing in [this blog
+  with time, with newer languages like [Rust](https://github.com/rust-lang/rust)
+  emulating more efficient Haskell-like static typing rather than verbose
+  Java-like static typing (Paul Chiusano describes his conversion back to static
+  typing in [this blog
   post](https://pchiusano.github.io/2016-09-15/static-vs-dynamic.html)).
 
 ## Common Data Engineering Patterns
@@ -208,16 +207,16 @@ across any service implementation may include discussion of the following:
   language-specific error mappings rapidly causes confusion as to exactly what
   part of a service is failing. An error service, with clearly defined error
   propagation and exit codes, may lend itself to a service failing more
-  predictably and assist in debugging/patching in production, but also
-  increases implementation costs as branching and state mutation exponentially
-  increase the number of error conditions to be handled.
+  predictably and assist in debugging/patching in production, but also increases
+  implementation costs as branching and state mutation exponentially increase
+  the number of error conditions to be handled.
 
-- **How does the service interact with outside agents**: One example of this
-  is how does it interact with [IPC
+- **How does the service interact with outside agents**: One example of this is
+  how does it interact with [IPC
   signals](<https://en.wikipedia.org/wiki/Signal_(IPC)>) like `SIGTERM`,
-  `SIGINT`, or `SIGKILL`. This is an important consideration with Python
-  because singular instructions may break out into multiple bytecode
-  instructions, as discussed in the blog post around [complecting identity and
+  `SIGINT`, or `SIGKILL`. This is an important consideration with Python because
+  singular instructions may break out into multiple bytecode instructions, as
+  discussed in the blog post around [complecting identity and
   state](/posts/2019/01/26/concurrency_with_python_identity_and_state), and no
   guarantee is made by the Python virtual machine to exit after an instruction
   termination as opposed to bytecode termination. Hence, handling interrupts
@@ -231,16 +230,15 @@ across any service implementation may include discussion of the following:
   is expected to fail in a manner the sandbox can handle.
 
 - **What assumptions does the service make, and are those assumptions accurate
-  in all environments**: Python as a language only assumes a single CPU core
-  and some data store (RAM, disk) is available to execute Python code.
-  Additional performance can be gained by increasing the number of assumptions
-  made about the environment, or changing existing assumptions. For example,
-  breaking the assumption that CPU is always faster than I/O, and being able
-  to assume I/O availability, makes for much different systems designs than
-  otherwise. [This Hacker News
-  discussion](https://news.ycombinator.com/item?id=19818899) discusses some of
-  these tradeoffs, which are also mentioned in one of [Dan Luu's blog
-  posts](https://danluu.com/infinite-disk/).
+  in all environments**: Python as a language only assumes a single CPU core and
+  some data store (RAM, disk) is available to execute Python code. Additional
+  performance can be gained by increasing the number of assumptions made about
+  the environment, or changing existing assumptions. For example, breaking the
+  assumption that CPU is always faster than I/O, and being able to assume I/O
+  availability, makes for much different systems designs than otherwise. [This
+  Hacker News discussion](https://news.ycombinator.com/item?id=19818899)
+  discusses some of these tradeoffs, which are also mentioned in one of [Dan
+  Luu's blog posts](https://danluu.com/infinite-disk/).
 
 - **Does this service clearly respect separation of concerns**: Services that
   focus on doing one thing well are much more likely to reach a stable state
@@ -252,19 +250,19 @@ This tiny subset of concerns around data-intensive systems design lends itself
 to building out well-tested, stable libraries around which user-defined scripts
 and data can execute reliably. Python's role in this design may be relegated to:
 
-- **Increasing system observability for non-technical stakeholders**: This
-  role is key in order to guarantee engineering flexibility in implementation,
-  and ensure effective communication between engineering and the rest of the
-  company when establishing roadmaps and requirements. Python's toolchain
-  lends itself greatly to observable achievements like GUIs and applications.
-  Netflix's data operations team [discusses Jupyter notebook
+- **Increasing system observability for non-technical stakeholders**: This role
+  is key in order to guarantee engineering flexibility in implementation, and
+  ensure effective communication between engineering and the rest of the company
+  when establishing roadmaps and requirements. Python's toolchain lends itself
+  greatly to observable achievements like GUIs and applications. Netflix's data
+  operations team [discusses Jupyter notebook
   scheduling](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6)
   by leveraging tools like
   [**`papermill`**](https://github.com/nteract/papermill) in order to replace
   scripts and templates.
 
-- **Increasing asynchronicity between engineering teams**: Forced
-  synchronicity results in wasted time as implementation efforts suffer
-  bottlenecks. Python's ability to deliver more observability ensures less
-  face-to-face communication is necessary to keep track of progress, and next
-  steps can be prefetched and anticipated before the need for them arises.
+- **Increasing asynchronicity between engineering teams**: Forced synchronicity
+  results in wasted time as implementation efforts suffer bottlenecks. Python's
+  ability to deliver more observability ensures less face-to-face communication
+  is necessary to keep track of progress, and next steps can be prefetched and
+  anticipated before the need for them arises.

@@ -75,19 +75,19 @@ covered:
   the language itself supports structs where atomic snapshots can be taken
   safely.
 
-- [Actor models](/posts/2019/02/02/concurrency_with_python_actor_models/),
-  where developers constrained their code to fit the framework of sending and
+- [Actor models](/posts/2019/02/02/concurrency_with_python_actor_models/), where
+  developers constrained their code to fit the framework of sending and
   receiving messages.
 
 - [Communicating sequential
   processes](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/),
-  where channels share information between state machines concurrently
-  executing tasks.
+  where channels share information between state machines concurrently executing
+  tasks.
 
 - [Hardware-based
   parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/),
-  where specialized hardware enabling parallelism provided a software
-  framework to move data from one place to another.
+  where specialized hardware enabling parallelism provided a software framework
+  to move data from one place to another.
 
 - [Data-intensive
   architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/),
@@ -100,44 +100,44 @@ I've found as I've worked through this series that I gained more questions than
 answers, but that there are some heuristics you can always apply when designing
 systems at scale:
 
-- **Focus on the properties of the language**: Fundamental programming
-  language aspects like the type system (e.g. encodings and byte definitions
-  of types, type system richness and extensibility), attribute defaults (e.g.
-  immutability and identity of data structures), and control flow primitives
-  will strongly affect what kinds of concurrency paradigms are appropriate.
-  This is essentially describing the field of [programming language
+- **Focus on the properties of the language**: Fundamental programming language
+  aspects like the type system (e.g. encodings and byte definitions of types,
+  type system richness and extensibility), attribute defaults (e.g. immutability
+  and identity of data structures), and control flow primitives will strongly
+  affect what kinds of concurrency paradigms are appropriate. This is
+  essentially describing the field of [programming language
   theory](https://en.wikipedia.org/wiki/Programming_language_theory), and this
   series is effectively detailing why it's important.
 
   Generally, decisions that can be formally proved are better than those that
-  cannot. Mark Semann published [a great blog post about this reason
-  propelling his move from object-oriented to functional
+  cannot. Mark Semann published [a great blog post about this reason propelling
+  his move from object-oriented to functional
   languages](https://blog.ploeh.dk/2017/10/04/from-design-patterns-to-category-theory/),
   since functional languages relate to [category
   theory](https://en.wikipedia.org/wiki/Category_theory) while object-oriented
-  languages relate to design patterns, which is more of a heuristic. Along
-  that axis of exploration, learning about how languages implement [process
+  languages relate to design patterns, which is more of a heuristic. Along that
+  axis of exploration, learning about how languages implement [process
   calculuses](https://en.wikipedia.org/wiki/Process_calculus) may shine light
   into how tightly defined a language implements a concurrency model.
 
 - **The simplest abstractions (to the hardware) are the ones that thrive**:
-  Originally, I thought the simplest abstractions to the developer would be
-  the ones that thrive. If you took [a monkey, a typewriter, and the ability
-  to write code](https://en.wikipedia.org/wiki/Infinite_monkey_theorem), you
-  could produce pretty much any program in that language, and imagining it as
-  such makes it easy to see how most software is just bugs with a few happy
-  paths sprinkled in. Hence, simple abstractions that are easy to grok should
-  provide the most reliable guarantees of correctness, the smallest
-  organizational overhead, and the happiest developers. Right?
+  Originally, I thought the simplest abstractions to the developer would be the
+  ones that thrive. If you took [a monkey, a typewriter, and the ability to
+  write code](https://en.wikipedia.org/wiki/Infinite_monkey_theorem), you could
+  produce pretty much any program in that language, and imagining it as such
+  makes it easy to see how most software is just bugs with a few happy paths
+  sprinkled in. Hence, simple abstractions that are easy to grok should provide
+  the most reliable guarantees of correctness, the smallest organizational
+  overhead, and the happiest developers. Right?
 
   Not necessarily. While strongly opinionated languages like Erlang or Clojure
   may [attract the best developers](http://www.paulgraham.com/pypar.html), the
-  languages with broad corporate support are the ones that give developers
-  lots of access and power. While threading/locking code is difficult to
-  write, using threads and locks instead of actors might eke out a tiny
-  performance gain, which may result in millions of dollars of savings at
-  scale, which results in continued corporate investment into the language
-  that made it possible. Hence, the positive spiral of success.
+  languages with broad corporate support are the ones that give developers lots
+  of access and power. While threading/locking code is difficult to write, using
+  threads and locks instead of actors might eke out a tiny performance gain,
+  which may result in millions of dollars of savings at scale, which results in
+  continued corporate investment into the language that made it possible. Hence,
+  the positive spiral of success.
 
 - **Concurrency models, as with all software models, come with different
   tradeoffs**: Many of these models do not play nice with each other, and
@@ -149,8 +149,7 @@ systems at scale:
 
   This is likely why most general-purpose languages and toolchains don't
   recommend a single concurrency model, but instead offer a wide suite of
-  options and make it work. With a "way out", the model loses much of its
-  strong guarantees, but developers gain a lot of flexibility in shipping
-  results.
+  options and make it work. With a "way out", the model loses much of its strong
+  guarantees, but developers gain a lot of flexibility in shipping results.
 
 <br />
