@@ -1,0 +1,225 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-23",
+  title: "#todayilearned: Isolate your Development Environment",
+  description: "#todayilearned: Isolate your Development Environment",
+  categories: ["Python", "TIL"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+Today I wanted to share with you the hardest bug that I have encountered yet at
+work. It's a great argument for why language-specific "virtual environments"
+don't really work well in practice, especially if there's a mismatch between its
+intended use cases and yours, and why you should strictly isolate your
+development environment from your build environment even while compiling
+locally.
+
+I use [**`conda`**](https://anaconda.org/) for my development environment.
+`conda` is very helpful in terms of isolating and deploying your source code
+**only** into production, but as it turns out, it can fail pretty hard in terms
+of making sure the rest of your development environment remains free of any side
+effects it generates.
+
+Sometimes, I need to compile on-premise distributions of my ETL tool in order to
+verify its functional integrity from my development laptop. This custom-built
+compilation process, while it manages itself quite well, doesn't really check
+for side effects because it assumes it is compiling in our CI/CD pipelines.
+
+You might see where this is going.
+
+So there's this dependency called [**`freetds`**](http://www.freetds.org/),
+which enables your Unix-based operating system to talk to Windows-based database
+products like Microsoft SQL Server. This is important if you want your ETL tool
+to talk to SQL Server and ingest data from it. This dependency in turn requires
+a dependency on [**`openssl`**](https://www.openssl.org/), which is an
+open-source implementation of the TLS/SSL encryption protocol. We keep the copy
+of `openssl` we compile with in a special location, and the compilation process
+fetches that copy of `openssl`.
+
+One day, I was executing a compilation to check a particular feature. Instead of
+the rather straightforward build I was expecting, I got this logged out instead:
+
+```
+./.libs/libtdssrv.a(tls.o): In function `sk_GENERAL_NAME_num':
+tls.c:(.text+0x7c): undefined reference to `OPENSSL_sk_num'
+./.libs/libtdssrv.a(tls.o): In function `sk_GENERAL_NAME_value':
+tls.c:(.text+0x9e): undefined reference to `OPENSSL_sk_value'
+./.libs/libtdssrv.a(tls.o): In function `sk_GENERAL_NAME_pop_free':
+tls.c:(.text+0xc3): undefined reference to `OPENSSL_sk_pop_free'
+./.libs/libtdssrv.a(tls.o): In function `tds_pull_func_login':
+tls.c:(.text+0xe5): undefined reference to `BIO_get_data'
+./.libs/libtdssrv.a(tls.o): In function `tds_push_func_login':
+tls.c:(.text+0x20c): undefined reference to `BIO_get_data'
+./.libs/libtdssrv.a(tls.o): In function `tds_pull_func':
+tls.c:(.text+0x27d): undefined reference to `BIO_get_data'
+./.libs/libtdssrv.a(tls.o): In function `tds_push_func':
+tls.c:(.text+0x2f0): undefined reference to `BIO_get_data'
+./.libs/libtdssrv.a(tls.o): In function `tds_ssl_ctrl_login':
+tls.c:(.text+0x36a): undefined reference to `BIO_get_data'
+./.libs/libtdssrv.a(tls.o): In function `tds_init_ssl_methods':
+tls.c:(.text+0x3c7): undefined reference to `BIO_meth_new'
+tls.c:(.text+0x3e9): undefined reference to `BIO_meth_set_write'
+tls.c:(.text+0x3fc): undefined reference to `BIO_meth_set_read'
+tls.c:(.text+0x40f): undefined reference to `BIO_meth_set_ctrl'
+tls.c:(.text+0x422): undefined reference to `BIO_meth_set_destroy'
+tls.c:(.text+0x433): undefined reference to `BIO_meth_new'
+tls.c:(.text+0x455): undefined reference to `BIO_meth_set_write'
+tls.c:(.text+0x468): undefined reference to `BIO_meth_set_read'
+tls.c:(.text+0x47b): undefined reference to `BIO_meth_set_destroy'
+./.libs/libtdssrv.a(tls.o): In function `tds_deinit_openssl_methods':
+tls.c:(.text+0x491): undefined reference to `BIO_meth_free'
+tls.c:(.text+0x4a0): undefined reference to `BIO_meth_free'
+./.libs/libtdssrv.a(tls.o): In function `tds_init_openssl':
+tls.c:(.text+0x4da): undefined reference to `OPENSSL_init_ssl'
+tls.c:(.text+0x4fa): undefined reference to `TLS_client_method'
+./.libs/libtdssrv.a(tls.o): In function `tds_ssl_init':
+tls.c:(.text+0xb92): undefined reference to `SSL_CTX_set_options'
+tls.c:(.text+0xd6d): undefined reference to `BIO_set_init'
+tls.c:(.text+0xd80): undefined reference to `BIO_set_data'
+tls.c:(.text+0xebd): undefined reference to `SSL_set_options'
+tls.c:(.text+0xef1): undefined reference to `SSL_get_state'
+tls.c:(.text+0xfdb): undefined reference to `BIO_set_init'
+tls.c:(.text+0xfee): undefined reference to `BIO_set_data'
+collect2: error: ld returned 1 exit status
+```
+
+To be honest, this was a little terrifying. Not only did I not see _anything_
+like this before, I not know how C/C++ projects are compiled, and I also didn't
+understand how my own tool's compilation process worked underneath the hood
+because it was handled by another team.
+
+Although I asked around, the bug got propagated, and multiple people took a
+look, none of us really knew what was going on. The distribution was compiling
+fine on the CI/CD pipelines, and because we were finalizing our major release
+and didn't have enough man-hours to devote to this, we decided to work on source
+code only changes, pay extra super-duper attention during code review, and just
+verify it worked in development before merging into release. Obviously, this
+dont-poke-the-kraken approach was unsustainable over the long run given how
+different the development and distribution environments were (How different?
+Different enough to bite us), and one day we simply needed to squash this bug.
+Our senior devops engineer and I began pair programming on my machine to
+diagnose this issue.
+
+So first, we tried logging out all the environment variables that touched the
+compilation. One is the default `$PATH` variable. My mistake was letting `conda`
+prepend its own path to `$PATH`. If `conda` isn't at the head of `$PATH`,
+running `$(which python)` may turn up a different Python version in your
+environment than `conda`, which is not what `conda` wants.
+
+Did you know that `conda` comes with its own version of OpenSSL (besides the
+version that is compiled with Python)? I didn't either!
+
+So this was an issue of the compile process finding the wrong version of OpenSSL
+to use. I simply renamed the executable in `/path/to/anaconda2/bin` from `ssl`
+to `ssl.bak`, and then made sure that `$PATH` did not have the path to `conda`
+prepended, but rather appended instead, as I still needed access to my
+development environment. Somehow though, the OpenSSL binaries from `conda` were
+still being pulled into the build process, _even though the path to the correct
+version of OpenSSL was ahead in `$PATH` and should have been picked up first_.
+
+All this didn't address one particular nagging concern; exactly why was
+_OpenSSL_ complaining of not understanding some _internal variables_? Even if
+the slightly different version of OpenSSL was used, it should all still compile
+correctly, right? For a while, I wondered whether OpenSSL published a broken
+build that I downloaded and tried to compile, because `pyspark` had came broken
+with some of the newer release builds of Apache Spark. This turned out to not be
+the case. Then I wondered whether `freetds` relied on a specific version of
+OpenSSL, which after combing through the source code, turned out not to be the
+same either. So this meant the `freetds` compilation errors were blocked by
+OpenSSL build failures while the OpenSSL libraries worked fine previously
+(proved out by regressions successfully transporting data over HTTPS), and while
+`freetds` did not rely on a specific OpenSSL version.
+
+We needed additional information on how to turn on verbose output during
+compilation of `freetds` to see what inputs it was taking in. There wasn't a
+whole lot of information in the README for `freetds` on how to do this, and not
+much information online. Eventually we found a variable called `AM_V_CC`, which
+is [used in `make` debugging](https://autotools.io/automake/silent.html).
+Recursively `grep`-ing for this variable turned up the statement `AM_V_CC =
+$(am__v_CC_$(V))` was found. Recursively `grep`-ing `am__v_CC_*` found the
+statement `am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))` in
+[**`fisql`**](https://www.systutorials.com/docs/linux/man/1-fisql/)'s Makefile,
+which then led us to recursively `grep` for `AM_DEFAULT_VERBOSITY`.
+
+A lot of work to tell us verbosity was passed in with the flag `--V={0,1}`, 1
+for verbose output. But now, we had the keys to the kingdom.
+
+Now, when we ran `make clean && make V=1 2>&1 | tee debug.out`, we could see
+something suspicious:
+
+```
+In file included from /path/to/anaconda2/include/openssl/e_os2.h:13:0,
+from /path/to/anaconda2/include/openssl/ssl.h:15,
+from ../../include/freetds/tls.h:37,
+from tls.c:55:
+```
+
+Somehow, miraculously, `/path/to/anaconda2/include` was showing up! This means
+some files related to OpenSSL are fetched from the `conda` version instead of
+the proper location, _and_ being used by `freetds` during compilation! So why is
+this happening?
+
+After executing the build process with an inline `$PATH` excluding the directory
+entirely, `tee`-ing the verbose output to a file, and `vimdiff`-ing it with a
+log of the original run, the file `/path/to/anaconda2/bin/odbc_config` was
+discovered. This executable had a `--include-prefix` flag, which when run added
+`/path/to/anaconda2/include` to the `make` command.
+
+Did you know that `conda` came with an `odbc_config` executable? I didn't
+either! I still don't even know what it does. I renamed it to `odbc_config.bak`,
+reran compilation, and everything worked again.
+
+So in conclusion, an unknown executable caused the `freetds` Makefile
+configuration setup to include the `conda` header files, causing the header
+files for OpenSSL to be fetched from a separate directory than the source files
+for a separate version of OpenSSL. The headers and source were not compatible
+with each other, which caused OpenSSL to fail compilation.
+
+In doing all of this, I broke my development environment. I had failed to script
+the development environment install because small [bus
+factors](https://en.wikipedia.org/wiki/Bus_factor) meant prioritization of
+features over taking time to setup reproducible development environments. This
+wasn't a large loss by any means, as I had kept instructions and [flight
+rules](https://github.com/k88hudson/git-flight-rules) elsewhere; this was just
+somewhat inconvenient. An hour of bash scripting, and it's patched, good as new.
+
+---
+
+So what did I learn from this whole experience?
+
+- **`conda` is a virtual environment for Python, and not a full-service virtual
+  environment**. If you are deploying source code, training models, or otherwise
+  using Python at a high level, `conda` is a good fit. Otherwise, consider a
+  tool like [**`vagrant`**](https://www.vagrantup.com/) or
+  [**`docker`**](https://www.docker.com/). Vagrant in particular is intended for
+  development environments, with source files compiled on a virtual machine
+  connected to a regular developer front-end. I've heard of development issues
+  with containerization (exactly what I don't remember), so if I had to do it
+  over again, I would rely on Vagrant.
+
+- When in doubt, **turn on verbose logs during compilation** and `diff` those
+  logs against those you know work. We would not have been able to debug this
+  issue had the logs not mentioned the incorrect include paths.
+
+- **Source code is the true documentation**, especially for more obscure and
+  less well maintained open source projects. You can't be afraid of diving into
+  the source because sometimes that's the only way you can figure out what's
+  going on.
+
+When we have the time, we will probably create separate CI/CD pipelines for
+client-side tooling in order to not risk encountering issues like these.
+
+---
+
+Much thanks to Jeremy Hutchins (senior devops engineer) for the assistance;
+solving this problem would not be possible without him.

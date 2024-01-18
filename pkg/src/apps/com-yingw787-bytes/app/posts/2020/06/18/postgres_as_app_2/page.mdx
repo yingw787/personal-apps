@@ -120,15 +120,14 @@ requirements, and follow the instructions in the README.
 
 Alternatively, here's a 3-step process to try out this stack:
 
-- Deploy the database stack to AWS using AWS CloudFormation in descending
-  order:
+- Deploy the database stack to AWS using AWS CloudFormation in descending order:
 
   <TableStack />
 
 - Run through the ["AWS Modeling" steps listed in the
-  README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order
-  to set up your SQL tables. This involves connecting to your RDS origin
-  database and ECS custom database.
+  README](https://github.com/yingw787/postgres_as_app#aws-modeling) in order to
+  set up your SQL tables. This involves connecting to your RDS origin database
+  and ECS custom database.
 
 - After you've done that, deploy PostgREST to Heroku:
 
@@ -139,8 +138,8 @@ Alternatively, here's a 3-step process to try out this stack:
   `DB_URI` for the custom database URI. Change `POSTGREST_VER` from `7.0.1` to
   `0.5.0.0`.
 
-  Then, open up your Heroku app, and go to `$YOUR_APP_NAME/$YOUR_TABLE_NAME`
-  to see your table!
+  Then, open up your Heroku app, and go to `$YOUR_APP_NAME/$YOUR_TABLE_NAME` to
+  see your table!
 
 ---
 

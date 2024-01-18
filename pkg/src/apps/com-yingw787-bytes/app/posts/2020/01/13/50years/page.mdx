@@ -77,13 +77,13 @@ old things, particularly _old tech_.
 
 ---
 
-My family's first new car (in fact, probably my _lineage's_ first new car) is
-a 2000 Honda Accord, that we still drive 20 years later. When I was growing up,
-my dad never failed to point out the new cars and say how hard it was to change
-the timing belt, or change the oil, or realign the tires, or some other
-maintenance nightmare a random coworker might have shared in passing, all of
-which he does himself. I remember during the Great Recession, when Pontiac went
-out of business, a whole bunch of new Pontiacs were driving around because the
+My family's first new car (in fact, probably my _lineage's_ first new car) is a
+2000 Honda Accord, that we still drive 20 years later. When I was growing up, my
+dad never failed to point out the new cars and say how hard it was to change the
+timing belt, or change the oil, or realign the tires, or some other maintenance
+nightmare a random coworker might have shared in passing, all of which he does
+himself. I remember during the Great Recession, when Pontiac went out of
+business, a whole bunch of new Pontiacs were driving around because the
 dealerships had fire sales. If I think about it, I don't see too many Pontiacs
 these days, and those cars were a decade newer than my dad's. I still see the
 occasional 2000 Honda Accord.
@@ -117,23 +117,23 @@ how exactly _do_ we make tech that ages well?
 To me, tech that ages well:
 
 - **stays simple in important ways**: `grep` ships as a set of dynamically
-  linked libraries, with a handful of references in `/usr/bin` as `{grep,
-egrep, fgrep, rgrep}`. Among other benefits, this may make it easier to
-  instrument, to deploy and to permission. It also has an tightly scoped
-  interface contract, with UNIX-based stdin/stdout/stderr, which means any
-  programming language with shell compatibility can access it.
+  linked libraries, with a handful of references in `/usr/bin` as `{grep, egrep,
+fgrep, rgrep}`. Among other benefits, this may make it easier to instrument, to
+  deploy and to permission. It also has an tightly scoped interface contract,
+  with UNIX-based stdin/stdout/stderr, which means any programming language with
+  shell compatibility can access it.
 
 - **gets better with changing requirements**: Antifragile systems become
-  stronger when faced with adversity. I love the concept of antifragility as
-  an improvement over mere resiliency, and I'm looking forward to adding it to
-  my common vernacular.
+  stronger when faced with adversity. I love the concept of antifragility as an
+  improvement over mere resiliency, and I'm looking forward to adding it to my
+  common vernacular.
 
   The humble [barcode](https://en.wikipedia.org/wiki/Universal_Product_Code),
   first used in 1974 to scan a pack of chewing gum, takes up minimal packaging
   surface area, can be printed / faxed / scanned without losing fidelity, and
   remains tolerant to manufacturing defects using error correction codes,
-  suboptimal scanning orientations using odd/even parity, and technology
-  changes like OSes or encodings by defining your own encoding associativity.
+  suboptimal scanning orientations using odd/even parity, and technology changes
+  like OSes or encodings by defining your own encoding associativity.
 
   This is all already pretty great, but the nice part about starting with a
   sparse encoding is that you can compress it. For smaller packages, and given
@@ -142,14 +142,14 @@ egrep, fgrep, rgrep}`. Among other benefits, this may make it easier to
 
   [upc](/images/2020/01/13/50years_1.png)
 
-  These are the same barcode, and yet one has maybe half the surface area of
-  the other one. I can see how this can be helpful. You might also notice that
-  the images aren't scaled properly and suffer from significant artifacting,
-  but that if you were to scan them, they'd probably still generate the proper
+  These are the same barcode, and yet one has maybe half the surface area of the
+  other one. I can see how this can be helpful. You might also notice that the
+  images aren't scaled properly and suffer from significant artifacting, but
+  that if you were to scan them, they'd probably still generate the proper
   product code. You could say this is a strict improvement, as the tradeoff
-  between UPC-A and UPC-E is the number of possible product codes vs. space,
-  and not say fault tolerance vs. space, and there are ways to work around
-  limited product codes.
+  between UPC-A and UPC-E is the number of possible product codes vs. space, and
+  not say fault tolerance vs. space, and there are ways to work around limited
+  product codes.
 
 - **Fill a required niche better than anything else**: I might get burned for
   this, but I'd say JavaScript isn't at all as bad as some might say it is. We
@@ -161,16 +161,16 @@ egrep, fgrep, rgrep}`. Among other benefits, this may make it easier to
   applets](https://en.wikipedia.org/wiki/Java_applet)?
   [WebAssembly](https://en.wikipedia.org/wiki/WebAssembly) might be the only
   native alternative to JavaScript for rich content these days, and even then
-  it's impractical for most basic JS tasks, which may comprise the vast
-  majority of the open Internet.
+  it's impractical for most basic JS tasks, which may comprise the vast majority
+  of the open Internet.
 
-  For something to age well, people have to _need_ it. Only the code that
-  ships matters, and without people needing it, nobody _cares_ about what
-  you've shipped. There's two positives from this. When you're first starting
-  off, you enjoy a great deal of flexibility in implementation, and when
-  you're big, you can dump loads of money into making something "bad" usable.
-  JavaScript happens to satisfy a multi-billion dollar "niche". So I reckon
-  we'll see ES60 or something ridiculous 50 years from now.
+  For something to age well, people have to _need_ it. Only the code that ships
+  matters, and without people needing it, nobody _cares_ about what you've
+  shipped. There's two positives from this. When you're first starting off, you
+  enjoy a great deal of flexibility in implementation, and when you're big, you
+  can dump loads of money into making something "bad" usable. JavaScript happens
+  to satisfy a multi-billion dollar "niche". So I reckon we'll see ES60 or
+  something ridiculous 50 years from now.
 
   You know, after writing this, maybe I should have referred to the [Intel
   8086](https://en.wikipedia.org/wiki/Intel_8086) and [the x86

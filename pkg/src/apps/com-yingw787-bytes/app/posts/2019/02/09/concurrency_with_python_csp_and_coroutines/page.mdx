@@ -1,0 +1,362 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-02-09",
+  title: "Concurrency with Python: CSP and Coroutines",
+  description: "Concurrency with Python: CSP and Coroutines",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [**Concurrency with Python: CSP and
+  Coroutines**](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+## Overview
+
+The concept of [communicating sequential processes, or
+CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes), is
+similar to the notion of [actor
+models](/posts/2019/02/02/concurrency_with_python_actor_models), but brings
+added utility to contemporary concurrency challenges. Both of these concurrency
+models leverage message passing, but whereas actors pass messages between
+containers of state, the CSP model passes messages between
+[_channels_](<https://en.wikipedia.org/wiki/Channel_(programming)>), a form of
+synchronization and communication between
+[_coroutines_](https://en.wikipedia.org/wiki/Coroutine) or coroutine-like
+processes.
+
+Russ Cox has [a great writeup about the history of
+CSP](https://swtch.com/~rsc/thread/).
+
+This mode of concurrency addresses a number of difficulties with implementing
+concurrency in production:
+
+- **Efficiently abstracting away dependencies on underlying hardware**: Blocking
+  operations on physical hardware, like CPU or I/O, are very expensive.
+  Designing an entire virtual machine to efficiently abstract away the hardware
+  reality (e.g. [Erlang
+  processes](http://erlang.org/doc/reference_manual/processes.html) on the [BEAM
+  VM](<https://en.wikipedia.org/wiki/BEAM_(Erlang_virtual_machine)>)) is even
+  more expensive. Finding a happy medium where the code sticks close to the
+  hardware, but also abstracts away blocking actions away from hardware
+  primitives with low implementation costs, is important in order to maintain
+  performance and simplicity. CSP provides this by multiplexing and scheduling
+  coroutines on top of a CPU thread pool, establishing a many to many
+  relationship between language threads/processes and hardware
+  threads/processes. Since the scheduler is just a state machine, it can be
+  compiled into a binary and loaded anywhere without the need for complex
+  configuration.
+
+  For example, A `golang` coroutine, or "goroutine", can be as cheap as a few
+  kilobytes of memory to spin up. The [`golang`
+  FAQ](https://golang.org/doc/faq#goroutines) mentions an average overhead of
+  three CPU instructions per goroutine. This improves the cost/benefit analysis
+  for organizations considering CSP over [threading and
+  locking](/posts/2019/01/12/concurrency_with_python_threads_and_locks/) or
+  another concurrency model where and when performance matters.
+
+- **Increasing user adoption**: The focus on channels, rather than application
+  code, not only provides an easier way for new programmers to wrap their head
+  around the language and the concurrency model in a two-step process, but also
+  reduces the pain of transitioning legacy code written in the language to use
+  the favored concurrency model during the ["make it work, make it right, make
+  it fast" phases](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast). The
+  actor model forces language users to containerize and break up their state to
+  fit the concurrency model from the very beginning, which is a jarring shift
+  from, say, object-oriented programming. The ability of a scheduler to simply
+  pause a coroutine if it blocks, and resume executing the coroutine after it
+  unblocks and a machine thread is made available, gives back control of
+  application state in source code to the user. This allows for unbounded state
+  mutation within a particular coroutine (as long as state is scoped within the
+  coroutine), which is a more familiar concept to many programmers than
+  packaging state in messages, and better models stateful, sequential problems.
+
+You may not want to use CSP if:
+
+- **Coroutines need to share lots of data across channels**: [Ravelin shared
+  some information on `golang`
+  channels](https://syslog.ravelin.com/so-just-how-fast-are-channels-anyway-4c156a407e45)
+  that indicated sharing data between goroutines across channels was expensive
+  in comparison to keeping data within a set goroutine. CSP channels are also
+  inherently synchronous. Throughput is likely much better if CPU-bound tasks
+  were kept within the goroutine, and goroutines communicated to resources
+  through I/O.
+
+  Sylvain Wallez also wrote [a great blog post on `golang`'s
+  failings](https://bluxte.net/musings/2018/04/10/go-good-bad-ugly/#go-ignored-advances-in-modern-language-design)
+  that described, among other things, the difficulty of sharing data structures
+  and memory across channels when the data structures `golang` provides are not
+  concurrency-first (e.g. mutable, non-atomic), which may result in non-trivial
+  debugging overhead.
+
+The most popular example of CSP in a programming language at the moment is
+[**`golang`**](https://github.com/golang/go), whose concurrency model is
+designed around a derivative of Hoare's CSP process calculus and implements
+channels as first-class citizens.
+
+You can see the CSP scheduler implemented in
+[**`golang/src/runtime/proc.go`**](https://golang.org/src/runtime/proc.go).
+
+Paul Butcher discusses CSP in the context of Clojure's
+[**`core.async`**](https://github.com/clojure/core.async), which is CSP as a
+library. Rich Hickey describes `core.async` in [this Clojure release
+article](https://clojure.org/news/2013/06/28/clojure-clore-async-channels).
+
+## Python CSP Libraries
+
+Python does not natively support CSP or channels as first-class citizens.
+However, a number of small academic projects have provided a base layer from
+which a CSP framework could arise:
+
+- [**`mpi4py`**](https://bitbucket.org/mpi4py/mpi4py): Python bindings for the
+  `C/C++`-based [Message Passing Interface, or
+  MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface). A number of
+  other frameworks supporting Python bindings for MPI exist as well, including
+  native bindings from
+  [Boost](https://www.boost.org/doc/libs/1_35_0/doc/html/mpi/python.html).
+  Research has been done in [constructing a CSP abstraction layer on top of
+  MPI](https://ieeexplore.ieee.org/document/4054886), but it doesn't look like
+  it is production-ready, at least from reading [one
+  reference](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.605.4350&rep=rep1&type=pdf).
+
+- [**`python-csp`**](https://github.com/futurecore/python-csp): A library that
+  attempts to implement a CSP [process
+  calculus](https://en.wikipedia.org/wiki/Process_calculus) by leveraging
+  [operator overloading](https://en.wikipedia.org/wiki/Operator_overloading),
+  built on top of `multiprocessing`.
+
+  For example, in order to parallelize multiple `CSPProcess` objects,
+  `python-csp` overrides floor division for `CSPProcess` objects with the `Par`
+  object:
+
+  ```python
+  def __floordiv__(self, proclist):
+      """
+      Run this process in parallel with a list of others.
+      """
+      par = Par(self, *list(proclist))
+      par.start()
+  ```
+
+  This gives rise to the example listed in [the documentation about parallel
+  processes](https://python-csp.readthedocs.io/en/latest/tutorial/part02/tutorial2.html#parallel-processes):
+
+  ```python
+  >>> @process
+  ... def foo(n):
+  ... # Function
+  ...
+  >>> foo(100) // (foo(200), foo(300))
+  # Output
+  <Par(Par-5, initial)>
+  >>>
+  ```
+
+  Not recommended in production due to a lack of continued development, a lack
+  of feature stability, incomplete documentation, and no description of common
+  ways `python-csp` may fail (no description of the error model).
+
+- [**`pycsp`**](https://github.com/runefriborg/pycsp): A CSP framework with some
+  extensions based on
+  [π-calculus](https://en.wikipedia.org/wiki/%CE%A0-calculus). From a cursory
+  inspection, this framework appears to be well-documented and built out, with
+  plenty of examples to inspect and run. One major downside, shared with other
+  concurrency libraries built on top of Python, is the lack of user adoption
+  shown in the number of outstanding issues and average time for issue
+  resolution.
+
+## Python CSP Primitives
+
+Unlike other concurrency models, which suffer from a lack of Pythonic
+foundations, implementing a CSP process calculus could be done pythonically
+through the use of Python's native and various coroutines and coroutine
+libraries.
+
+### Python's `async` Library
+
+Python's development of coroutines began with realizing how generator
+expressions, combined with the `yield from` and `.send()` keywords, results in
+the same inversion of control that allows for separate tasks to be concurrently
+scheduled. Abu Ashraf Masnun wrote a great [blog post on this evolutionary
+process](http://masnun.com/2015/11/13/python-generators-coroutines-native-coroutines-and-async-await.html).
+
+Truly native coroutines, separate from generator coroutines, with specifically
+targeted `async/await` syntax, asynchronous context management, and standard
+library support in `inspect` and `sys` (among other features), came with
+implementation of [PEP 492](https://www.python.org/dev/peps/pep-0492/) in Python
+3.5.x.
+
+Many libraries are racing to take advantage of this native support, a
+demonstration of how acceptance of a model of programming in the Python standard
+library drastically and effectively increases user adoption.
+
+### Stackless Python, `greenlet`, and `gevent`
+
+[Stackless Python](https://github.com/stackless-dev/stackless) is a fork of
+CPython that supports additional concurrency primitives. The ones relevant to
+the discusson on CSP include
+[tasklets](https://github.com/stackless-dev/stackless/wiki/Tasklets) and
+[channels](https://github.com/stackless-dev/stackless/wiki/Channels). Both of
+these map well to CSP's ideas of coroutines and channels.
+
+[**`greenlet`**](https://greenlet.readthedocs.io/en/latest/) is an evolution of
+Stackless Python's idea of tasklets, except that scheduling and other control
+flow primitives are handled within user code. Tasklets are a form of
+[microthread](https://en.wikipedia.org/wiki/Microthread), whereas greenlets are
+a form of coroutine. Guido discusses the difference between the two in [a
+mailing list
+archive](https://mail.python.org/pipermail/python-dev/2000-November/010617.html):
+
+> Microthreads are "almost real" threads, with round-robin scheduling. What
+> makes them attractive to some is the fact that **they don't use operating
+> system resources**: there's no OS-level stack or kernel process table entry
+> associated with them. This also accounts for their biggest weakness: **when a
+> microthread is suspended for I/O, _all_ microthreads are suspended**. In
+> limited contexts, such as a network server, this can be solved by an approach
+> similar to that in Gordon's SelectDispatcher. (It would be a titanic effort to
+> do this for every potentially blocking I/O operation, and it probably wouldn't
+> work well with C extensions.)
+
+[**`gevent`**](http://www.gevent.org/) combines the `greenlet` library with the
+[**`libev`**](http://software.schmorp.de/pkg/libev.html) event loop library, and
+provides Python bindings. Some interesting Python libraries, such as
+[**`locust`**](https://github.com/locustio/locust) (an HTTP load testing
+framework), and [**`gunicorn`**](https://gunicorn.org/) (a web server
+framework), are built on top of `gevent`.
+
+## Experimental / In-Progress CSP Initiatives
+
+A handful of experimental, Python-specific concurrency initiatives are in the
+works. If they make it to a stable release point, they may one day form the
+foundations for CSP in Python (among other types of concurrency models).
+
+### Sub-interpreters
+
+[Eric Snow](https://github.com/ericsnowcurrently) opened [PEP
+525](https://www.python.org/dev/peps/pep-0525/) describing an initiative to
+utilize subinterpreters within a main Python interpreter, where the global scope
+of all of Python, including the C extensions API, would be moved one level down
+in the Python process space. This may help Python natively support an
+orchestration layer within the language, instead of using a third-party
+orchestration tool to coordinate multiple distinct Python services. Eric
+explicitly [mentions CSP](https://www.python.org/dev/peps/pep-0554/#concurrency)
+as an inspiration for how subinterpreters may communicate with one another:
+
+> Concurrency is a challenging area of software development. Decades of research
+> and practice have led to a wide variety of concurrency models, each with
+> different goals. Most center on correctness and usability.
+
+> One class of concurrency models focuses on isolated threads of execution that
+> interoperate through some message passing scheme. A notable example is
+> Communicating Sequential Processes (CSP) (upon which Go's concurrency is
+> roughly based). The isolation inherent to subinterpreters makes them
+> well-suited to this approach.
+
+### `pypy`
+
+[**`pypy`**](https://pypy.org/) is an evolution of Stackless Python, that
+combines pluggable [garbage
+collectors](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>),
+a [just-in-time
+compiler](https://en.wikipedia.org/wiki/Just-in-time_compilation), and
+compatibility with most existing CPython code, along with greenlets, in order to
+make native Python more performant. `pypy` implements greenlets on top of a
+["continulet"](http://doc.pypy.org/en/latest/stackless.html#continulet), which
+is further implemented on top of a
+["stacklet"](http://doc.pypy.org/en/latest/stackless.html#stacklets). As far as
+I can tell, this effort is to make context switching composable and
+deterministic.
+
+## A Concurrent Sieve of Erathostenes with `pycsp`
+
+The [Sieve of Erathostenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+is a popular computer science problem that calculates the prime numbers in a
+bounded sequence by labeling all multiples of an existing prime.
+
+`golang` implements [a neat algorithm to compute sequential primes using
+channels](https://golang.org/s/prime-sieve); this example is runnable within the
+`golang` playground. The general gist of the algorithm is to have one channel
+create a stream of sequentially increasing values, and daisy chain other
+channels to the stream to drop values that are multiples. The outputs of the
+daisy chain are the prime numbers in the sequence. However, as [Stian Eikeland
+notes in his blog post on the same topic using Clojure's
+`core.async`](http://blog.eikeland.se/2014/06/30/csp-prime-sieve/), and as [this
+Hacker News discussion](https://news.ycombinator.com/item?id=4799837) posits,
+this concurrency demonstration is mostly academic, as it is not very performant
+due to every prime being touched by every channel before the maximum of its
+prime factorization is reached.
+
+`pycsp` has a version of this sieve implementation hosted on its website, but
+testing the provided algorithm on a development version of `pycsp` checked out
+at **`HEAD/fb9e32fd8aa88a33acce40d31aafcfe6693f0fff`** fails to run. After
+manually patching socket handling such that type `bytes` was explicitly set:
+
+```python
+# pycsp/pycsp/parallel/ossocket.py:30
+def _get_interface_ip(ifname):
+    s = socket.socket(
+        socket.AF_INET,
+        socket.SOCK_DGRAM
+    )
+    ip = socket.inet_ntoa(fcntl.ioctl(
+            s.fileno(),
+            0x8915,  # SIOCGIFADDR
+            # NOTE: Line below was originally
+            # `struct.pack(
+            #    '256s',
+            #    ifname[:15]
+            # )`.
+            struct.pack(
+                '256s',
+                bytes(ifname[:15], 'utf-8')
+            )
+        )[20:24])
+    s.close()
+    return ip
+```
+
+The example, as posted [here](/documents/2019/02/09/Sieve.py), successfully logs
+primes between 2 and 2000 to stdout.
+
+## Conclusion
+
+Python has non-trivial limitations when it comes to natively implementing CSP.
+This [`golang` Google Groups
+discussion](https://groups.google.com/forum/#!topic/golang-nuts/Onswx7FpdxY) is
+rather eye-opening in terms of exposing how differently `golang` and Python
+prioritize inter-process communication in syntax and typing. At the same time,
+the flexible nature of CSP lends itself to easier implementation on a language
+that does not natively support it, as compared to other concurrency models.
+While CSP in Python is still an academic discussion, a stable release of Python
+sub-interpreters or a production-ready CSP on `async` Python library may make
+discussions about CSP-like concurrency in production Python environments
+worthwhile.

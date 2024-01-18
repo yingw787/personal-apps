@@ -136,17 +136,17 @@ I was going to describe the step-by-step process of how I arrived at this
 solution, but I felt maybe I can highlight the key points instead and let
 Docker's documentation handle the rest:
 
-- **`Dockerfile` describes the base image and tag for the core environment,
-  and has an entrypoint in order to execute runtime contexts on a container
-  basis in addition to an image basis.**
+- **`Dockerfile` describes the base image and tag for the core environment, and
+  has an entrypoint in order to execute runtime contexts on a container basis in
+  addition to an image basis.**
 
-- **`entrypoint.sh` keeps the container running, and provides an environment
-  to add additional commands.**
+- **`entrypoint.sh` keeps the container running, and provides an environment to
+  add additional commands.**
 
-- **`run.sh` sets up the `docker build` and `docker run` process, and
-  overwrites any older containers that might have the same container name.
-  Tracing this file should result in absolute paths for the two core
-  dependencies that are required on the host.**
+- **`run.sh` sets up the `docker build` and `docker run` process, and overwrites
+  any older containers that might have the same container name. Tracing this
+  file should result in absolute paths for the two core dependencies that are
+  required on the host.**
 
 ---
 
@@ -161,35 +161,34 @@ Docker's documentation handle the rest:
   need to in order to get your MVP working.
 
   I personally find this process much better than having to bend a tutorial to
-  suit a simplistic ops process. For example, many "build an app" tutorials
-  use SQLite instead of PostgreSQL, which makes it difficult for me to apply
-  some of those teachings to PostgreSQL, since it's an entirely different SQL
-  ecosystem. Why not start off with something like this, and add PostgreSQL
-  instead?
+  suit a simplistic ops process. For example, many "build an app" tutorials use
+  SQLite instead of PostgreSQL, which makes it difficult for me to apply some of
+  those teachings to PostgreSQL, since it's an entirely different SQL ecosystem.
+  Why not start off with something like this, and add PostgreSQL instead?
 
 - If you add as much logic to the `Dockerfile` proper, as opposed to
-  `entrypoint.sh`, Docker will automatically cache the build process to make
-  it quite fast. The build process will also be reproducible, and logs will
-  appear in stdout that you can pipe to a persisted `log.txt` file or similar.
+  `entrypoint.sh`, Docker will automatically cache the build process to make it
+  quite fast. The build process will also be reproducible, and logs will appear
+  in stdout that you can pipe to a persisted `log.txt` file or similar.
 
-- You can hot-modify files in directories in shared Docker volumes from the
-  host -- that is, the changes will appear in a live-running Docker context
-  without needing to do any kind of manual refresh operation. So I can write a
-  test in directory `tests/` (shared Docker volume) in Visual Studio Code
-  (with my specially-tuned configuration) on my host, and inside my Docker
-  context, run `python manage.py test` and see an additional test passing or
-  failing. This effectively removes my incentive to learn
+- You can hot-modify files in directories in shared Docker volumes from the host
+  -- that is, the changes will appear in a live-running Docker context without
+  needing to do any kind of manual refresh operation. So I can write a test in
+  directory `tests/` (shared Docker volume) in Visual Studio Code (with my
+  specially-tuned configuration) on my host, and inside my Docker context, run
+  `python manage.py test` and see an additional test passing or failing. This
+  effectively removes my incentive to learn
   [Vagrant](https://www.vagrantup.com/), another framework to make development
   frameworks easy to use.
 
 - This workflow makes it easy to build out systems that could be readily
   deployable. This minimizes time-to-ship, which for MVPs may be crucial to
-  shortening user feedback loops. I'm currently looking at AWS Elastic
-  Beanstalk (EB), which I believe runs on AWS Elastic Container Service (ECS),
-  because I can't directly use AWS Relational Database Service (RDS) due to
-  lack of support for a critical PostgreSQL extension. If I can reference an
-  EC2 instance to act as a database (which I think I should), it will make
-  deploying this project so much easier.
+  shortening user feedback loops. I'm currently looking at AWS Elastic Beanstalk
+  (EB), which I believe runs on AWS Elastic Container Service (ECS), because I
+  can't directly use AWS Relational Database Service (RDS) due to lack of
+  support for a critical PostgreSQL extension. If I can reference an EC2
+  instance to act as a database (which I think I should), it will make deploying
+  this project so much easier.
 
 ### Cons
 
@@ -201,19 +200,18 @@ Docker's documentation handle the rest:
   once complexity reaches a certain point (e.g. I want to move away from a
   monolithic stack, and add scale-out for my backend, or add high availability
   for my database). Then you can run a container with `flask run` as the core
-  process, which will enable container orchestration tools to better
-  understand what I'm actually trying to do.
+  process, which will enable container orchestration tools to better understand
+  what I'm actually trying to do.
 
 - Docker can be quirky at times. For example, when I first started off using
   Docker, I didn't know that every build cache layer remains more or less
   independent of each other; therefore, a live process during the Docker build
-  process isn't possible (e.g. `RUN service postgresql start` will not result
-  in a live database process running), and can only change a persisted
-  resource (since resources can be shared across processes, which helps
-  parallelize the build workload). So if you want to say alter a PostgreSQL
-  password, you need to `&&` a bunch of commands together, to start the server
-  and change the persisted password, all in one step. This can result in
-  inefficient workloads.
+  process isn't possible (e.g. `RUN service postgresql start` will not result in
+  a live database process running), and can only change a persisted resource
+  (since resources can be shared across processes, which helps parallelize the
+  build workload). So if you want to say alter a PostgreSQL password, you need
+  to `&&` a bunch of commands together, to start the server and change the
+  persisted password, all in one step. This can result in inefficient workloads.
 
 - `entrypoint.sh` does not generate any kind of logs to the host stdout.
   `stdout` is captured by `docker run`, which captures the container's stdout.
@@ -222,25 +220,25 @@ Docker's documentation handle the rest:
   stdout for Python processes requires source code mutation using the `sys`
   library.
 
-- I'm not sure if FreeBSD or OpenBSD have the notion of containers, and
-  whether containers are tightly coupled to Linux. But I don't think you can
-  do `docker pull freebsd`. I checked the FreeBSD website and apparently
-  Docker support there is broken. This means if you go with Docker to lock
-  down your dependencies, it may not be portable across operating systems, and
-  you may to reproduce your ops / build infra work.
+- I'm not sure if FreeBSD or OpenBSD have the notion of containers, and whether
+  containers are tightly coupled to Linux. But I don't think you can do `docker
+pull freebsd`. I checked the FreeBSD website and apparently Docker support
+  there is broken. This means if you go with Docker to lock down your
+  dependencies, it may not be portable across operating systems, and you may to
+  reproduce your ops / build infra work.
 
-  I really want to move my project to FreeBSD after everything is said and
-  done. I've heard such good things. Hacker News user
-  [**`livueta`**](https://news.ycombinator.com/user?id=livueta) talked
-  favorably about FreeBSD in response to [one query I
+  I really want to move my project to FreeBSD after everything is said and done.
+  I've heard such good things. Hacker News user
+  [**`livueta`**](https://news.ycombinator.com/user?id=livueta) talked favorably
+  about FreeBSD in response to [one query I
   had](https://news.ycombinator.com/item?id=22270136):
 
   > Probably fits your requirements. One interesting thing to remember about
   > FreeBSD is that a lot of commercial users of it use it as a base for
-  > enterprise appliances (think storage arrays, proxies, DPI boxes, etc).
-  > This means that the project as a whole is fairly beholden to these users,
-  > who provide a nice chunk of the project's funding and many of its
-  > professional committers.
+  > enterprise appliances (think storage arrays, proxies, DPI boxes, etc). This
+  > means that the project as a whole is fairly beholden to these users, who
+  > provide a nice chunk of the project's funding and many of its professional
+  > committers.
   >
   > As a result, the project is less focused on desktop use cases and free
   > software/security at any cost ideology than on a) not breaking all the
@@ -248,23 +246,23 @@ Docker's documentation handle the rest:
   > stability enhancements.
   >
   > So, yeah, if you want a performant network stack and a consolidated
-  > kernel/userland that values stability (both in the "years of uptime" and
-  > the no "hey guys, we're jumping to systemd!" senses of the word) FreeBSD
-  > is a good option. As a bonus, FreeBSD's manpages are really really nice
-  > and give you basically everything you need to get down and do some serious
-  > systems programming or box-tuning. Go check out `man 7 tuning`.
+  > kernel/userland that values stability (both in the "years of uptime" and the
+  > no "hey guys, we're jumping to systemd!" senses of the word) FreeBSD is a
+  > good option. As a bonus, FreeBSD's manpages are really really nice and give
+  > you basically everything you need to get down and do some serious systems
+  > programming or box-tuning. Go check out `man 7 tuning`.
   >
   > Anecdotally, during my years as a sysadmin I ran a bunch of FreeBSD boxes
   > alongside a bunch of Linux boxes - similar hardware, similar tasks. The
-  > FreeBSD boxes would routinely run for literal years without a hiccup,
-  > while we never got a similar level of stability from any other OS.
+  > FreeBSD boxes would routinely run for literal years without a hiccup, while
+  > we never got a similar level of stability from any other OS.
 
   This limitation isn't a deal-breaker for me. I would hope that the project
   looks like a set of sourced dependencies (or otherwise an offline-first
   package archive), that I could package as RPM or `.deb` files, that I could
   then deploy in a handful of lines using `sudo dpkg -i $PKG_NAME` or similar.
-  Having a build process that could generate those assets for me should make
-  it trivial to support FreeBSD.
+  Having a build process that could generate those assets for me should make it
+  trivial to support FreeBSD.
 
 ---
 

@@ -1,0 +1,442 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-26",
+  title: "Concurrency with Python: Separating Identity From State",
+  description: "Concurrency with Python: Separating Identity From State",
+  categories: ["Python", "Concurrency", "Clojure"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [**Concurrency with Python: Separating Identity From
+  State**](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+> **δὶς ἐς τὸν αὐτὸν ποταμὸν οὐκ ἂν ἐμβαίης.**
+
+> **You could not step twice into the same river, for other waters are ever
+> flowing onto you.**
+>
+> [Heraclitus, in Plato's
+> _"Cratylus"_](https://en.wikiquote.org/wiki/Heraclitus)
+
+## Overview
+
+In ["Seven Concurrency Models in Seven
+Weeks"](https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks),
+Paul Butcher forks off the [previous chapter's focus on functional
+programming](/posts/2019/01/19/concurrency_with_python_functional_programming)
+to discuss the benefits of [Clojure](https://clojure.org/), a
+[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>) implemented
+on the [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine), in detail. In
+doing so, he bases an entire concurrency model on a key design aspect of
+Clojure: the ability for Clojure's types to separate _identity_ from _state_.
+
+Clojure has an informative and enlightening section within its design philosophy
+about [how it approaches state](https://clojure.org/about/state). In particular,
+[Rich Hickey, the author of
+Clojure](https://github.com/tallesl/Rich-Hickey-fanclub), states (emphasis
+added):
+
+> **_Identities_** are mental tools we use to superimpose continuity on a world
+> which is constantly, functionally, creating new **_values_** of itself.
+
+Please refer to the [community Clojure documentation on concurrency and
+parallelism](http://clojure-doc.org/articles/language/concurrency_and_parallelism.html)
+for information on how to take advantage of concurrency constructs in Clojure.
+
+## Properties of Concurrency-aware State
+
+One way programming languages implement proper [concurrency
+control](https://en.wikipedia.org/wiki/Concurrency_control) is by adhering to a
+set of integrity guarantees. As [Edsger Dijkstra once said, testing only shows
+the presence, not the absence of
+bugs](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1969.PDF). Guarantees
+are much more useful than testing for reliably reducing error spaces. The ones
+that matter to separating identity from state include, but are not limited to:
+
+### Atomicity / Linearizability
+
+[Atomicity](https://en.wikipedia.org/wiki/Linearizability) is the ability to
+restrict the possibility of different state mutations to the set that are both
+valid and serializable. This is useful when objects may be referenced and
+manipulated by multiple concurrently running threads, as for any given atomic
+object, every thread sees every other thread execute exactly one operation, and
+obtains the context of when it is safe to interrupt a thread (i.e. not when an
+atomic operation is currently taking place).
+
+Atomic operations are oftentimes natively supported in modern hardware, such as
+the [compare-and-swap](https://en.wikipedia.org/wiki/Compare-and-swap) operation
+implemented as [CMPXCHG in x86
+assembly](https://c9x.me/x86/html/file_module_x86_id_41.html). This means given
+good interop between hardware and software, you may be able to propagate
+hardware-level atomic guarantees to the software level, given an intelligent
+enough compiler.
+
+Atomicity helps separate identity and state because it guarantees state will
+always be valid. Either any stateful updates to the identity will succeed and
+all threads will eventually see it, or the update will fail, _any intermediate
+state will be rolled back by the language itself_, and the original identity
+will remain unaltered. This transaction-like semantic enables you to maintain
+multiple references to state within the identity at different points in time,
+without worrying that state will become invalid and your reads/writes become
+torn and your data corrupted.
+
+Without atomicity, concurrency models are much harder to work with, because
+without specification guarantees, the source belies and highly depends upon the
+underlying implementation of the language. For example, in Java running on
+32-bit JVMs, `long` value assignment is not an atomic operation, as [this Stack
+Overflow answer explains](https://stackoverflow.com/a/17481326). It also
+mentions how 64-bit JVMs do not suffer this issue as larger register sizes allow
+for atomic assignments, which indicates debugging such an issue tightly couples
+workflows to specific deployment environments, which partially defeats the
+purpose of the virtual machine. In Python, [A. Jesse Jiryu Davis explains how
+the Python swap operation explodes into multiple bytecode instructions,
+resulting in race condition failures when testing a new build of
+`pymongo`](https://emptysqua.re/blog/pythons-swap-is-not-atomic/). From these
+examples, we can see how while each bytecode instruction is atomic, the many to
+many relationships between source and bytecode necessitates explicit atomic
+guarantees at the source level.
+
+In Python, you may use the
+[**`dis`**](https://docs.python.org/3/library/dis.html) module to see how source
+breaks down into bytecode. For example, there is no notable difference between
+`int` and `long` types, as the
+[**`LOAD_GLOBAL`**](https://docs.python.org/3/library/dis.html#opcode-LOAD_GLOBAL)
+opcode loads both types in a single bytecode operation:
+
+```python
+username@hostid:~$ ipython
+Python 3.7.1 (default, Dec 14 2018, 13:28:58)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: def myfunc1():
+   ...:     x = int(1)
+   ...:
+
+In [2]: import dis
+
+In [3]: dis.dis(myfunc1)
+  2           0 LOAD_GLOBAL              0 (int)
+              2 LOAD_CONST               1 (1)
+              4 CALL_FUNCTION            1
+              6 STORE_FAST               0 (x)
+              8 LOAD_CONST               0 (None)
+             10 RETURN_VALUE
+
+In [4]: def myfunc2():
+   ...:     x = long(1)
+   ...:
+
+In [5]: dis.dis(myfunc2)
+  2           0 LOAD_GLOBAL              0 (long)
+              2 LOAD_CONST               1 (1)
+              4 CALL_FUNCTION            1
+              6 STORE_FAST               0 (x)
+              8 LOAD_CONST               0 (None)
+             10 RETURN_VALUE
+```
+
+This is because Python `int` types are object definitions, as [detailed in this
+Stack Overflow answer](https://stackoverflow.com/a/10365639), and not strictly
+primitives. In general though, do not rely on the atomicity of Python bytecode
+sequences. As [Russell Smith detailed in a great blog
+post](http://blog.qqrs.us/blog/2016/05/01/which-python-operations-are-atomic/),
+bytecode atomicity from source may be highly dependent on implementation details
+of the specific Python distribution used, rather than at the specification
+level.
+
+(As an aside, the Python virtual machine may render incorrect results for
+whether the process is running as 32-bit or 64-bit, necessitating special
+checking of `sys.maxsize` instead of `platform.architecture()` as [this Stack
+Overflow answer mentions](https://stackoverflow.com/a/1842699).)
+
+This issue is also why immutable types are not retrofitted to newer versions of
+Python. As [Guido mentioned when rejecting PEP-416 to add an immutable dict type
+definition to the set of Python native
+types](https://www.python.org/dev/peps/pep-0416/), there is no guarantee that
+the bytecode can be made to be atomic, and hence object immutability with
+regards to thread safety is not guaranteed by the interpreter.
+
+In addition, Python makes atomicity difficult by defining [operator overloading
+behavior](https://docs.python.org/3/reference/datamodel.html#special-method-names),
+which brings atomic control of object definitions to the application level,
+where atomicity may be harder to correctly implement and verify.
+
+As an alternative to Python's extensive suite of atomic accessors to mutable
+state, like [locks and
+semaphores](/posts/2019/01/12/concurrency_with_python_threads_and_locks),
+[Google's Python style
+guide](http://google.github.io/styleguide/pyguide.html#218-threading) recommends
+the usage of the [**`queue`**](https://docs.python.org/3/library/queue.html)
+class to pass state across threads and guarantee thread safety. Python's
+documentation explicitly assures the developer that the `queue` module
+automatically takes care of thread synchronization. Hence, you could treat
+method accesses to `Queue` objects to be atomic, as other threads cannot
+interrupt those operations due to underlying synchronization primitives. [Eli
+Bendersky wrote a great blog post on how to apply this pattern of queues and
+worker threads, and define atomic behavior in worker threads at the application
+level](https://eli.thegreenplace.net/2011/12/27/python-threads-communication-and-stopping).
+
+### Persistence / Durability
+
+Persistence, at least with respect to data structures, refers to the ability to
+preserve prior states upon mutation. As [this Stack Overflow answer
+explains](https://stackoverflow.com/a/12550660), persistence is an _interface_,
+while immutability is an _implementation_; all persistent data structures appear
+immutable to the application developer, but not all immutable data structures
+trace state mutations over time.
+
+To see what this means visually, we can open up a
+[Leiningen](https://leiningen.org/) REPL session and see how Clojure implements
+[persistent data
+structures](https://en.wikipedia.org/wiki/Persistent_data_structure).
+
+```bash
+username@hostid:~$ lein repl
+nREPL server started on port 56980 on host 127.0.0.1 - nrepl://127.0.0.1:56980
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.8.0
+Java HotSpot(TM) 64-Bit Server VM 1.8.0_131-b11
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+user=>
+```
+
+_(All code and visualization examples in this specific section come from
+Butcher's book, and all credit for these examples go to him. I don't think I can
+explain it better.)_
+
+If you create a list called `listv1`, with elements `[1, 2, 3]`:
+
+```clojure
+user=> (def listv1 (list 1 2 3))
+#'user/listv1
+user=> listv1
+(1 2 3)
+```
+
+This is how it's referred to in memory:
+
+```viz-dot
+digraph foo {
+        rankdir=LR;
+        node [shape=record];
+        listv1 [label="{ <data> listv1 }", fontname="courier", style=rounded]
+        a [label="{ <data> 1 | <ref>  }", width=1]
+        b [label="{ <data> 2 | <ref>  }", width=1];
+        c [label="{ <data> 3 }", width=0.5];
+        a:ref:c -> b:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        b:ref:c -> c:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        listv1:ref:listv1 -> a:data [arrowhead=vee]
+}
+```
+
+If you modified this list using the
+[**`cons`**](https://clojuredocs.org/clojure.core/cons) function:
+
+```clojure
+user=> (def listv2 (cons 4 listv1))
+#'user/listv2
+user=> listv2
+(4 1 2 3)
+```
+
+The underlying memory representation of the data structure would become:
+
+```viz-dot
+digraph foo {
+        rankdir=LR;
+        node [shape=record];
+        listv1 [label="{ <data> listv1 }", fontname="courier", style=rounded]
+        listv2 [label="{ <data> listv2 }", fontname="courier", style="rounded,bold"]
+        a [label="{ <data> 1 | <ref>  }", width=1]
+        b [label="{ <data> 2 | <ref>  }", width=1];
+        c [label="{ <data> 3 }", width=0.5];
+        d [label="{ <data> 4 | <ref> }", width=1, style=bold]
+        a:ref:c -> b:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        b:ref:c -> c:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        d:ref:d -> a:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, headport=nsw]
+        listv1:ref:listv1 -> a:data [arrowhead=vee, headport=nnw]
+        listv2:ref:listv2 -> d:data [arrowhead=vee]
+}
+```
+
+If you modified it further by using yet another variable assignment and the
+[**`rest`**](https://clojuredocs.org/clojure.core/rest) function:
+
+```clojure
+user=> (def listv3 (cons 5 (rest listv1)))
+#'user/listv3
+user=> listv3
+(5 2 3)
+```
+
+The underlying memory representation updates to:
+
+```viz-dot
+digraph foo {
+        rankdir=LR;
+        node [shape=record];
+        listv1 [label="{ <data> listv1 }", fontname="courier", style=rounded]
+        listv2 [label="{ <data> listv2 }", fontname="courier", style=rounded]
+        listv3 [label="{ <data> listv3 }", fontname="courier", style="rounded,bold"]
+        a [label="{ <data> 1 | <ref>  }", width=1]
+        b [label="{ <data> 2 | <ref>  }", width=1];
+        c [label="{ <data> 3 }", width=0.5];
+        d [label="{ <data> 4 | <ref> }", width=1]
+        e [label="{ <data> 5 | <ref> }", width=1, style="bold"]
+        a:ref:c -> b:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, headport=nnw];
+        b:ref:c -> c:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+        d:ref:d -> a:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, headport=nsw]
+        e:ref:e -> b:data [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false, headport=nnw]
+        listv1:ref:listv1 -> a:data [arrowhead=vee, headport=nnw]
+        listv2:ref:listv2 -> d:data [arrowhead=vee]
+        listv3:ref:listv3 -> e:data [arrowhead=vee]
+}
+```
+
+Note how Clojure data structures are not creating a deep copy in memory for
+every list, but rather appends nodes to a tree and preserves a functional
+interface by maintaining multiple references. Clojure only creates a full copy
+of a list if the tail of the list is not common. This property relaxation allows
+Clojure to save some time and memory.
+
+You can also see the beauty of separating identity and state. The variables
+referencing the individual lists are the states of the data structure identity,
+and the state can be mutated without changing the identity. If you have an
+outdated reference to the identity (e.g. reassignment of variable name
+`listv1`), you don't encounter a race condition, where if you time it wrong, the
+result is completely invalid. You just get imperfect state (e.g. an outdated
+reference to `listv1` while `listv1` is undergoing reassignment), which can be
+refreshed by retrying the request. This makes concurrency with data structures
+much safer to work with and reason about, and can only take place if your
+programming framework does not complect identity and state.
+
+There are academic implementations of persistent data structures in Python, such
+as [**`pyrsistent`**](https://github.com/tobgu/pyrsistent) or
+[**`pyrthon`**](https://github.com/tobgu/pyrthon/), but after inspecting the
+source code for each, it does not appear the libraries take care to ensure
+thread safety through synchronization or atomicity (e.g. using compound
+operations like `+=` or indexing directly into mutable `dict` types without
+locking), and use immutable constructs like list comprehensions. This implies
+the persistent interface of the library may break when multiple threads are used
+to access shared persistent state, and cannot complect persistence and
+immutability, meaning you cannot take advantage of these properties with regards
+to concurrency, as you may in Clojure. The difficulty again resides in using
+language primitives that do not support persistence as top-level guarantees.
+
+## Transactional References and Software Transactional Memory
+
+[The Clojure documentation on transactional
+references](https://clojure.org/reference/refs) lists another way to safely and
+concurrently modify mutable state. Transactional references leverage [software
+transactional
+memory](https://en.wikipedia.org/wiki/Software_transactional_memory), where
+writes are staged and verified before committing. This approach removes the need
+for developers to implement fine-grained locking, resulting in simpler and more
+intuitive concurrency control at the application layer. Clojure implements STM
+using [multi-version concurrency
+control](https://en.wikipedia.org/wiki/Multiversion_concurrency_control) and
+[snapshot isolation](https://en.wikipedia.org/wiki/Snapshot_isolation), which
+keep multiple copies of the same identity at different points in time, in order
+for requests at a particular point in time to see the database at the same point
+in time, in order to prevent [write skew
+errors](https://en.wikipedia.org/wiki/Transitive_data_skew).
+
+While promising, STM hasn't taken off for a number of reasons. [Cașcaval et al.
+discuss the limitations of STM in the ACM after implementing transactional
+memory for IBM AIX](https://queue.acm.org/detail.cfm?id=1454466); they mention
+the lack of determinism in debugging due to lack of idempotency during
+transaction abortion/retry cycles, the need for transactional memory paradigms
+to access non-transactional data and break strong atomicity, and performance
+penalties at low degrees of parallelism due to indexing and validating multiple
+snapshots, all of which prevent serious adoption of STM.
+
+---
+
+The most serious effort I've seen in Python relating to STM is
+[**`pypy-stm`**](http://doc.pypy.org/en/latest/stm.html), a branch of
+[**`pypy`**](http://doc.pypy.org/en/latest/) that removes the global interpreter
+lock entirely. While the spec is not completely implemented (as noted in the
+documentation), one of the most interesting sections is
+[**`transaction.atomic`**](http://doc.pypy.org/en/latest/stm.html#atomic-sections),
+which when used within a context manager, allows you to define long-running
+transactions (sections of Python code that will execute without releasing the
+GIL).
+
+This distribution of `pypy` is far from production-ready. In particular, there
+are no consistent stable/nightly builds, only one distribution/architecture
+combination (64-bit Linux) is supported, the documentation is incomplete and
+outdated, [returns on investment are fairly low as TM is still an open research
+topic](https://pypy.org/tmdonate2.html), and building the source yourself
+requires, among other things, a special build of `gcc`. Given these
+difficulties, I can say transactional memory in Python is not currently
+practical (which is absolutely not a reflection of the core dev's efforts).
+
+## Conclusion
+
+Unlike other concurrency paradigms, there is really no way to retrofit property
+adherence onto a language specification. It has to be baked into the language
+design from the outset. In this sense, Clojure, a spec-first and
+concurrency-first language, has several advantages that Python does not and
+likely will never have. Clojure also has the benefit of the JVM ecosystem, which
+some may underestimate in size and significance; one only needs to look at the
+[OpenJDK census](https://openjdk.java.net/census), recognize that many if not
+most of these hundreds of maintainers are paid six figures to work on OpenJDK
+during their day jobs, and compare it with `pypy-stm`'s \<5 primary maintainers,
+to realize the difference in scale of efforts and intellectual network and
+compounding abilities.
+
+Perhaps the best way in order to use Python in a properties-conscious manner may
+be to write your own plugins and checkers for
+[**`pylint`**](https://www.pylint.org/) or another [static
+analysis](https://en.wikipedia.org/wiki/Static_program_analysis) tool. For
+example, if you [write a `pylint`
+checker](http://pylint.pycqa.org/en/stable/how_tos/custom_checkers.html#write-a-checker)
+to avoid the use of compound operations like `+=` and validated them in your
+CI/CD pipeline, you could restrict yourself to a subset of Python's
+functionality that respects the higher-level principles important to your
+application's fundamental design assumptions. You could always explicitly opt-in
+to the feature by commenting `#pylint: disable=specific-rule` and having the
+opt-in documented during code search. Of course, this assumes a _deep_
+understanding of Python, a stable deployment environment with low dimensionality
+deltas (e.g. not many new dependencies and C extensions), and a willingness to
+bear the additional operational expenses.
+
+**(Correction on 05/20/2019)**: The original version of this blog post
+misspelled Rich Hickey's name as "Rich Hickley"; this has been updated.

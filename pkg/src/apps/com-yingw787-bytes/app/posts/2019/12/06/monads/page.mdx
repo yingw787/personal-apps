@@ -149,8 +149,8 @@ ZeroDivisionError: division by zero
 ```
 
 If you want your method to play nice with others, you really can't just raise a
-`ZeroDivisionError` and halt execution whenever you get a "bad" input, and
-panic for help from the user. For one thing, there may not be a human user-agent
+`ZeroDivisionError` and halt execution whenever you get a "bad" input, and panic
+for help from the user. For one thing, there may not be a human user-agent
 available, if the code exists as part of an automated service. If your service
 fails, this may cause the rest of the service stack to start failing, and force
 all affected developers to comb through logs and such to find the root cause.
@@ -592,41 +592,39 @@ with monads, I can think of the following:
   monadic division is a monadic type. _How do we use it when our language is
   object-oriented?_ Short answer is, you don't. Longer answer is, you don't
   because you would need to mutate all method definitions you wish to use as
-  part of monadic pipelines to accept monadic types _only_, which may result
-  in a Cambrian explosion of types across your project. Either all methods and
-  types are monadic in a way the underlying language isn't built to handle, or
-  a heterogeneous mix occurs where some methods accept some monadic types and
-  some methods do not, which is impossible to maintain. This impediment is
+  part of monadic pipelines to accept monadic types _only_, which may result in
+  a Cambrian explosion of types across your project. Either all methods and
+  types are monadic in a way the underlying language isn't built to handle, or a
+  heterogeneous mix occurs where some methods accept some monadic types and some
+  methods do not, which is impossible to maintain. This impediment is
   disqualifying for production software.
 
   Haskell is primarily a _type-oriented language_. You can create types in
-  Haskell pretty much as easily as you can create objects in Python.
-  Arbitrarily creating types in an object-oriented language like Python is
-  akin to creating objects (state containers) in Haskell. You just don't do
-  it.
+  Haskell pretty much as easily as you can create objects in Python. Arbitrarily
+  creating types in an object-oriented language like Python is akin to creating
+  objects (state containers) in Haskell. You just don't do it.
 
-  This goes back to a larger discussion about property assurances in
-  languages, which I briefly touched on when I reviewed [variables that
-  complect identity and
-  state](/posts/2019/01/26/concurrency_with_python_identity_and_state) and how
-  designing variables at that granularity is highly dependent on a cooperating
-  language specification.
+  This goes back to a larger discussion about property assurances in languages,
+  which I briefly touched on when I reviewed [variables that complect identity
+  and state](/posts/2019/01/26/concurrency_with_python_identity_and_state) and
+  how designing variables at that granularity is highly dependent on a
+  cooperating language specification.
 
-- **Powerful abstractions may prevent scalability**: Like it or not, most of
-  the production software world works on paradigms predating that of the
-  computer science world rediscovering monads. Having a powerful programming
-  language can tightly couple your team of developers to the source code, and
-  that's bad for business. This isn't cynicism; even healthy companies
-  experience churn, and have to watch their bus factors, and have to hire
-  junior developers as their labor funnel becomes longer and broader. Great
-  production software is highly replaceable, and highly replaceable source
-  code is defined at the interface contract layer, not by its error model.
+- **Powerful abstractions may prevent scalability**: Like it or not, most of the
+  production software world works on paradigms predating that of the computer
+  science world rediscovering monads. Having a powerful programming language can
+  tightly couple your team of developers to the source code, and that's bad for
+  business. This isn't cynicism; even healthy companies experience churn, and
+  have to watch their bus factors, and have to hire junior developers as their
+  labor funnel becomes longer and broader. Great production software is highly
+  replaceable, and highly replaceable source code is defined at the interface
+  contract layer, not by its error model.
 
-  You may be surprised as I was to learn powerful abstractions don't
-  necessarily result in performance penalties. Haskell does have an FFI, which
-  is receiving a lot of attention in the Haskell 2020 specification RFC, and
-  the [Glasgow Haskell Compiler](https://www.aosabook.org/en/ghc.html) has the
-  ability to target C, LLVM IR, and native assembly.
+  You may be surprised as I was to learn powerful abstractions don't necessarily
+  result in performance penalties. Haskell does have an FFI, which is receiving
+  a lot of attention in the Haskell 2020 specification RFC, and the [Glasgow
+  Haskell Compiler](https://www.aosabook.org/en/ghc.html) has the ability to
+  target C, LLVM IR, and native assembly.
 
 This doesn't mean monads are completely useless, or learning about monads is
 completely meaningless. The UNIX philosophy of building services that are great
