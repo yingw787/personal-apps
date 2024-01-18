@@ -1,0 +1,190 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-01-13",
+  title: "Writing Software to Last 50 Years",
+  description: "Writing Software to Last 50 Years",
+  categories: ["Properties"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+[**Discussion on
+`lobste.rs`**](https://lobste.rs/s/nt9kfo/writing_software_last_50_years)
+
+[**Discussion on Hacker News**](https://news.ycombinator.com/item?id=22042186)
+
+---
+
+**(Correction on 01/13/2020)**: Original version of this post mentioned that
+"GNU `grep` ships as a standalone executable".
+[**`lobste.rs`**](https://lobste.rs) user
+[**`aufziehvogel`**](https://lobste.rs/u/aufziehvogel) pointed out that GNU
+`grep` is actually a set of dynamically linked libraries, which both he and I
+verified through `ldd`:
+
+```bash
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 19.10
+Release:        19.10
+Codename:       eoan
+$ ldd /usr/bin/grep
+        linux-vdso.so.1 (0x00007fffb6bfe000)
+        libpcre.so.3 => /lib/x86_64-linux-gnu/libpcre.so.3 (0x00007f7e078e8000)
+        libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f7e078e2000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7e076f1000)
+        libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f7e076ce000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007f7e079a5000)
+```
+
+Changed to say "a set of dynamically linked libraries, with a handful of
+references in `/usr/bin` as `{grep, egrep, fgrep, rgrep}`".
+
+**(Correction on 01/13/2020)**: Original version of this post mentioned "GNU
+`grep`". [**`lobste.rs`**](https://lobste.rs) user
+[**`zge`**](https://lobste.rs/u/zge) pointed out that while `grep` was released
+1974, _GNU_ `grep` is much newer, being released during 1992, according to the
+[authors file on
+gnu.org](http://git.savannah.gnu.org/cgit/grep.git/tree/AUTHORS). Changed 2
+instances of "GNU `grep`" to "`grep`".
+
+---
+
+> **Society grows great when old men plant trees whose shade they know they
+> shall never sit in.**
+>
+> Greek Proverb
+
+You know what's crazy? [`grep`](https://www.gnu.org/software/grep/) was released
+45 years ago. _45 years_. To put that into perspective, I Googled (or rather,
+used DuckDuckGo) "headlines 1974", and apparently people were talking about,
+among other things, Richard Nixon's resignation, Patty Hearst's kidnapping, and
+Frank Sinatra's performance at Madison Square Garden.
+
+I hate being the guy to say "the 90s started 30 years ago", so let's reframe
+this discussion to avoid talking about how old we are. I've found that I love
+old things, particularly _old tech_.
+
+---
+
+My family's first new car (in fact, probably my _lineage's_ first new car) is
+a 2000 Honda Accord, that we still drive 20 years later. When I was growing up,
+my dad never failed to point out the new cars and say how hard it was to change
+the timing belt, or change the oil, or realign the tires, or some other
+maintenance nightmare a random coworker might have shared in passing, all of
+which he does himself. I remember during the Great Recession, when Pontiac went
+out of business, a whole bunch of new Pontiacs were driving around because the
+dealerships had fire sales. If I think about it, I don't see too many Pontiacs
+these days, and those cars were a decade newer than my dad's. I still see the
+occasional 2000 Honda Accord.
+
+If I had to quantify this feeling, I might say it's a longing for _freedom_.
+That which you choose, you own, you maintain, and you defend lends you your
+dignity and your identity. There's this [great
+article](http://www.startribune.com/for-tech-weary-midwest-farmers-40-year-old-tractors-now-a-hot-commodity/566737082/)
+about farmers purchasing 40 year old John Deere tractors because newer tractors
+require a subscription service to maintain them, and because the service could
+have a 2 week long maintenance backlog, your crops could go bad if you didn't
+harvest them at the right time. I'm sure the economics makes purchasing these
+old tractors common sense. Lower prices and lower operational costs mean higher
+profit, after all. But I'm sure the feeling of fear and humiliation of relying
+on something you can't fix so you can feed your family engenders a strong
+emotional attachment and appreciation for independence. At least, that's how I
+would feel, and I [don't think I'm alone](https://repair.org).
+
+When something is old, when it stands the test of time, it's a testament to the
+care and love and thought a craftsman put into it. It's a legacy, like a tree
+you plant for your kids. It's progress too! It feels us feel proud to be human,
+more than just apes constantly reinventing the wheel. Like maybe if we can stack
+one stone on another without the pile falling over, we could go places. I think
+those are all good reasons to get out of bed in the morning.
+
+---
+
+So now that I've explained _why_ I'm so invested in makings things that last,
+how exactly _do_ we make tech that ages well?
+
+To me, tech that ages well:
+
+- **stays simple in important ways**: `grep` ships as a set of dynamically
+  linked libraries, with a handful of references in `/usr/bin` as `{grep,
+egrep, fgrep, rgrep}`. Among other benefits, this may make it easier to
+  instrument, to deploy and to permission. It also has an tightly scoped
+  interface contract, with UNIX-based stdin/stdout/stderr, which means any
+  programming language with shell compatibility can access it.
+
+- **gets better with changing requirements**: Antifragile systems become
+  stronger when faced with adversity. I love the concept of antifragility as
+  an improvement over mere resiliency, and I'm looking forward to adding it to
+  my common vernacular.
+
+  The humble [barcode](https://en.wikipedia.org/wiki/Universal_Product_Code),
+  first used in 1974 to scan a pack of chewing gum, takes up minimal packaging
+  surface area, can be printed / faxed / scanned without losing fidelity, and
+  remains tolerant to manufacturing defects using error correction codes,
+  suboptimal scanning orientations using odd/even parity, and technology
+  changes like OSes or encodings by defining your own encoding associativity.
+
+  This is all already pretty great, but the nice part about starting with a
+  sparse encoding is that you can compress it. For smaller packages, and given
+  tighter manufacturing tolerance guarantees, you can take a UPC-A barcode and
+  physically shrink it into a UPC-E barcode by removing certain digits:
+
+  [upc](/images/2020/01/13/50years_1.png)
+
+  These are the same barcode, and yet one has maybe half the surface area of
+  the other one. I can see how this can be helpful. You might also notice that
+  the images aren't scaled properly and suffer from significant artifacting,
+  but that if you were to scan them, they'd probably still generate the proper
+  product code. You could say this is a strict improvement, as the tradeoff
+  between UPC-A and UPC-E is the number of possible product codes vs. space,
+  and not say fault tolerance vs. space, and there are ways to work around
+  limited product codes.
+
+- **Fill a required niche better than anything else**: I might get burned for
+  this, but I'd say JavaScript isn't at all as bad as some might say it is. We
+  all like to [poke fun at it](https://www.destroyallsoftware.com/talks/wat),
+  mostly because of its properties or lack thereof, but then we consider the
+  alternatives for client-side applications. [Adobe
+  Flash](https://en.wikipedia.org/wiki/Adobe_Flash_Player)? [Microsoft
+  Silverlight](https://en.wikipedia.org/wiki/Microsoft_Silverlight)? [Java
+  applets](https://en.wikipedia.org/wiki/Java_applet)?
+  [WebAssembly](https://en.wikipedia.org/wiki/WebAssembly) might be the only
+  native alternative to JavaScript for rich content these days, and even then
+  it's impractical for most basic JS tasks, which may comprise the vast
+  majority of the open Internet.
+
+  For something to age well, people have to _need_ it. Only the code that
+  ships matters, and without people needing it, nobody _cares_ about what
+  you've shipped. There's two positives from this. When you're first starting
+  off, you enjoy a great deal of flexibility in implementation, and when
+  you're big, you can dump loads of money into making something "bad" usable.
+  JavaScript happens to satisfy a multi-billion dollar "niche". So I reckon
+  we'll see ES60 or something ridiculous 50 years from now.
+
+  You know, after writing this, maybe I should have referred to the [Intel
+  8086](https://en.wikipedia.org/wiki/Intel_8086) and [the x86
+  ISA](https://en.wikipedia.org/wiki/X86) as an example of something that's
+  sticky. Oh well.
+
+---
+
+I may or may not be working on some personal projects this year that I intend on
+using for myself. One thing I _know_ I can't do for my personal projects is
+constantly dedicate time to working on it after I've "shipped". I want to build
+something once, and ideally use it for the rest of my life (or maybe 20-50 years
+to start off) without having to worry about having to update something or other
+or risk losing something important down the line. So thinking about what
+properties makes software age well is helpful for me in terms of deciding what
+fundamental technologies (e.g. SQL or REST) I want to incorporate into a system
+design, and perhaps as equally important, what things I'm willing to trade away.
