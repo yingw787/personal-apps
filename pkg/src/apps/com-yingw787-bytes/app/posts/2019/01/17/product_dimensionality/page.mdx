@@ -1,0 +1,346 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-17",
+  title: "Product Dimensionality",
+  description: "Product Dimensionality",
+  categories: ["Product Management"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+> **"The bigger the interface, the weaker the abstraction."**
+>
+> [Go Proverbs](https://go-proverbs.github.io/)
+
+Today I wanted to introduce, or perhaps re-introduce, a nice way to think about
+client-side abstractions.
+
+While I don't believe in a "right" and "wrong" way of writing code, I think it's
+fair to say that for a given set of requirements, you can establish a total
+ordering for "desirability" over a distribution of possible known solutions, and
+the primary problem in software is how to evolve your solution given an evolving
+set of requirements. My current experience teaches me that there is no hardship
+quite like persistent state. Luckily, I've mostly worked on client-side
+applications, and the nice thing about client-side applications is there isn't
+really any need to preserve state and hence any true complexity. Even so, I've
+found myself slogging through developing features at work, and I've been
+thinking about whether the abstraction I'm using is suitable for the use case at
+hand.
+
+I'm building an ETL client, and generally my issue requests fall into three
+buckets:
+
+- **Supporting a new format**: This generally involves supporting various type
+  definitions for different data formats and converting between type definitions
+  in as lossless a manner as possible.
+
+- **Adding a feature flag**: Usually, to allow users to override default
+  behaviors of the tool to tailor results to their specific requirements.
+
+- **Making sure it works**: I didn't fully cover one or both of the above cases,
+  and a use case in production resulted in undefined or unexpected behavior.
+
+In practice, it's a bit more complex than this, but the nature of the game is
+unchanged. So, what's hard about this? Why should I find myself slogging through
+developing new features?
+
+---
+
+To convey this conundrum, I want to introduce the term _product dimensionality_.
+It's something I made up; I couldn't find anything on this online, and it's not
+to be confused with [the curse of
+dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality) or
+[dimensionality
+reduction](https://en.wikipedia.org/wiki/Dimensionality_reduction). I'll define
+it as "how similar your solutions to new requirements are to older
+requirements". So a highly dimensional product integrates multiple similar
+solutions, and a low dimensional product integrates multiple dissimilar
+solutions.
+
+When I worked as a full-stack developer, I generally could not anticipate what
+the next feature request would be, and a solution to one randomly selected
+problem doesn't look like the solution to another randomly selected problem. In
+this sense,
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+applications would count as low-dimensionality products. Of course, you can
+always simplify sub-problems within this domain. For example, you can boil down
+any one view in an analytics dashboard to a particular SQL query, and then let
+the user define and save a set of SQL queries representing interesting data
+perspectives to the user as your analytics dashboard screen. However, how you
+approach designing an analytics dashboard is different from how you might
+approach implementing purchase orders, which might query third-party APIs and
+save PDFs to [BLOB](https://en.wikipedia.org/wiki/Binary_large_object) storage,
+in addition to adding SQL queries that read _and_ write, as opposed to only read
+from the database. This means that the total set of abstractions relevant to all
+full-stack developers may be rather limited. [The 12 Factor
+App](https://12factor.net/), a list of design recommendations for
+software-as-a-service applications, may be a good set of heuristics to follow,
+but it's more a manifesto than an instructional guide.
+
+As a data engineer, feature requests for this ETL client fit rather nicely
+within the three existing buckets I described previously. This means every
+feature looks pretty much like every other feature. In this sense, ETL
+applications would count as high-dimensionality products. If you have a high
+amount of automation in your story management tool, and you have a design
+abstraction you like, you could probably create a checklist to follow when
+implementing a feature request, and run automated checks in your CI/CD pipeline
+to ensure all bases are covered. You could even move your checklist to a SQL
+database, and then run SQL migrations when your request dimensions change and
+generate tickets for features to be added or updated for previously implemented
+stories. Add a type translation layer. Add a plugins interface for type
+extensions. Add CLI documentation. Add end-to-end and load tests and comparison
+logic. Rinse and repeat. The problem is that highly structured.
+
+Right?
+
+---
+
+The answer is, _sort of_. There's a number of quirks to general ETL design:
+
+- **Not all SQL is the same**: In fact, not a whole lot of it is. I believe most
+  SQL is at least up to the [SQL92
+  standard](https://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt),
+  although some data warehouses and legacy databases may have older definitions
+  of SQL. Many SQL databases also recognize portions of different SQL standards
+  for backwards compatibility reasons. This presents some problems when trying
+  to run certain SQL statements. For example, Teradata does not support `DROP
+  TABLE IF EXISTS` syntax that exists in PostgreSQL or MySQL, using a series of
+  `GOTO` statements and labels instead (community forum post
+  [here](https://community.teradata.com/t5/Database/Delete-or-Drop-a-table-if-it-already-exists/td-p/38431)).
+  Oracle also does not have `DROP TABLE IF EXISTS` syntax, preferring to run a
+  try/catch statement instead (community forum post
+  [here](https://stackoverflow.com/questions/1799128/oracle-if-table-exists)).
+  If you're trying to define batched reads from a database, the disjoint nature
+  of SQL implementations may pose an impediment.
+
+- **Not all database clients are the same**: Not every database has something as
+  nice as [**`psql`**](https://www.postgresql.org/docs/9.3/app-psql.html), a
+  multi-platform interactive terminal for PostgreSQL. Oracle has something
+  called
+  [SQL\*Plus](https://docs.oracle.com/cd/B14117_01/server.101/b12170/qstart.htm),
+  which is like `psql` but involves referencing additional `.ora` configuration
+  files for defining and listening to a particular Oracle service using Oracle
+  [TNS](https://en.wikipedia.org/wiki/Transparent_Network_Substrate). Teradata
+  has [SQL
+  Assistant](https://docs.teradata.com/reader/xrmOxQlXa0ETFi5lPxHJaQ/wk_Qhn~vCoW_YBOLipUlGA),
+  but it's Windows-only; the alternative UNIX client is [Basic Teradata Query
+  (BTEQ)](https://developer.teradata.com/sites/all/files/documentation/linked_docs/2414020A_BTEQ-Reference-13.10.pdf),
+  which as far as I can tell has no available documentation anywhere (no `man`
+  pages, no CLI help menu, and no online documentation, although Teradata can
+  email you a PDF if you're specific enough in referencing what you want).
+
+  These issues are likely why the SQL community came up with the
+  [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity) and
+  [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) standards,
+  which are simpler and more standardized ways to connect to various databases.
+  However, I believe these standards are still limited by the SQL syntax
+  supported by each SQL database.
+
+- **Feature gaps exist depending on the product use case**: For example, a
+  particular SQL database catering to various federal government agencies may
+  have specific functionality to satisfy [Federal Information Processing
+  Standards](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards).
+  Other databases with heavier relative commercial usage may not have such
+  functionality. If the company offer a database product to a federal agency,
+  data ingestion from one government database to another may need to abide by
+  FIPS regulations (depending on the size/importance of the contract/RFP). If
+  available, this will need to be implemented for the ingest stage of a
+  proof-of-concept sale if you want to chase government agencies as customers.
+
+This is a tasting menu of the fundamental limitations for an ETL tool needing to
+interface with wholly external services and the outside world. Add in the
+troubles of ingesting dirty, semi-structured data with no SQL interface at all,
+like CSVs (especially CSVs that do not follow a particular specification, like
+[RFC 4180](https://tools.ietf.org/html/rfc4180)), weird data definitions causing
+edge-case performance behavior (say, a customer defining an entire city as one
+multi-megabyte polygon in one record, resulting in a slow records/second ingest
+and triggering a slow ingest warning), the difficulties of working with legacy
+code, and other problems of translating requirements to reality, and the highly
+structured nature of the problem appears to loosen before your eyes.
+
+---
+
+The most lesson to me in appreciating product dimensionality is how it affects
+the kinds of design tradeoffs that are possible or practicable for my particular
+use case.
+
+As a full-stack software engineer, I've used [Flask](http://flask.pocoo.org/)
+and [Django](https://www.djangoproject.com/) in the past, and both come with
+particular design abstractions. Flask is literally the Wild West. This is a full
+Flask application (cut and pasted from the Flask homepage):
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+```
+
+No design abstraction whatsoever. It's great for smaller projects, and if you
+design your product with lots of native Python and clear separation between code
+and protocol, you can cut and paste your application into a different framework
+with little difficulty. On the other hand, if you are hiring somebody who claims
+they know Flask, you can only be certain they know about _this_ much Python
+(unless they demonstrate otherwise), and as every Flask application is different
+because there's no design, there's really no such thing as "Flask best
+practices".
+
+In the middle, you have something like Django, which preaches [The Zen of
+Python](https://www.python.org/dev/peps/pep-0020/). It does a lot of the work
+for you (including a _very_ nice pre-configured production dashboard), but it
+still allows you to change things around. See the difference between something
+like
+[**`cookiecutter-django`**](https://github.com/pydanny/cookiecutter-django), and
+something generated by `django-admin startproject mysite`. If you interview a
+Django developer, you probably have enough to talk about over a beer (and the
+water cooler if you hire him/her).
+
+On the far side of the spectrum, you have something like
+[**`apistar`**](https://github.com/encode/apistar), a still experimental Python
+web framework that has you _define YAML files_ to implement the
+[OpenAPI/Swagger](https://swagger.io/docs/specification/about/) standard. Cool
+to try out, good luck using it in production because implementing a REST
+endpoint that is not OpenAPI/Swagger may result in breaking the design
+encapsulation of the framework.
+
+Three examples, with three sets of design tradeoffs. You could see how in
+designing a CRUD application, you may start off with Flask since your problem
+space is so massive and your solution so ill-defined, that you want as much
+flexibility as possible when building something to satisfy the market. Later on,
+as you formalize your solution and tailor it towards a particular audience, you
+may choose to move to Django to "professionalize" your application. However, you
+may never get to the point of committing only YAML files to version control
+using `apistar` if your problem model may not be that dimensional.
+
+---
+
+[**`odo`**](https://odo.readthedocs.io/en/latest/), the open-source project that
+my project is forked off of, helpfully exposes Python APIs for integrating a
+backend into the project, which I discussed [in my series on data-driven
+testing](/posts/2018/12/03/data_driven_testing_two).
+
+I would consider `odo` to be a medium-dimensionality product. The APIs it
+exposes are not direct links to methods, but rather dispatch handlers to a given
+method handled by the arguments passed in the function signature. Guido van
+Rossum did [a blog post introducing multimethods in
+Python](https://www.artima.com/weblogs/viewpost.jsp?thread=101605), and `odo`
+leverages this knowledge through a third-party dependency called
+[**`multipledispatch`**](https://github.com/mrocklin/multipledispatch).
+
+The flexibility the medium-dimensonality abstractions `multipledispatch` and
+`odo` provided me, both in the features implemented in this abstraction and the
+ability to extend this abstraction, helped me immensely when I started off. For
+instance, if there are particular options that need to be set for a specific
+JDBC client of a SQL database, they can be done in one dispatch handler without
+affecting the others. You could add in a feature flag for that feature you wish
+to expose, list it in the feature-specific CLI documentation, and then pass the
+configuration along in `**kwargs`. Another example would be implementing direct
+path ingest using a custom-defined `path()` handler. As `odo` is a data
+transformation tool and _not_ an ETL tool, we had designed the ETL tool to
+transform to an "intermediate format" in a hub-and-spoke model to tame the graph
+nature of the framework and provide predictable results. Therefore, its typing
+schema would be more tightly bound to the intermediate format than we would like
+sometimes, and you may experience unpredictable results if your source format
+had a typing schema that didn't overlay well with this "intermediate format".
+With the "direct path" transformation, you could provide a custom-defined type
+conversion between something like a
+[shapefile](https://en.wikipedia.org/wiki/Shapefile) and a SQL database, and go
+around this problem. Finally, if there was a particular pattern noticed in how
+dispatch handlers were implemented, you could refactor the code after ensuring
+functionality was deduplicated by creating a number of utility methods. `odo`
+didn't block me from doing what was necessary to make a sale -- yet it
+accelerated development to the point where a single developer could provide for
+a large number of the company's customers at once.
+
+---
+
+Recently though, I had begun feeling jealous of tools like [Apache
+Airflow](https://airflow.apache.org/) and
+[**`intake`**](https://intake.readthedocs.io/en/latest/), that are very
+configuration-driven when viewed by the end user. Why?
+
+I think the problem's root starts at _addressing a high-dimensonality problem
+with a medium-dimensionality abstraction_. While `odo` was wonderful in getting
+my feet wet in the field of data engineering, I do think it's still very
+code-heavy, and I blame the notion of using an abstraction that is simply too
+loose for the task at hand. You need to write a lot of code in order to ensure a
+new feature is supported, and writing code generates technical debt and costs
+time and effort, as well as opportunity costs for other, perhaps more fruitful
+initiatives. The abstraction isn't powerful enough on a day-to-day development
+basis.
+
+It has other costs, too:
+
+- **I can't guarantee how new features should be integrated to downstream
+  dependencies**: There's no predictable schema; I have to manually ensure that
+  the CHANGELOG is up to date, send out emails, or walk over to somebody's desk
+  if they have problems. That's because every new feature flag I create has a
+  made up name. I fear comparisons to
+  [Oracle](https://news.ycombinator.com/item?id=18442941), where this ETL tool
+  will dissolve into an indecipherable mess of feature flags and macros that
+  override each other. It's difficult, if not impossible, to scale development
+  in this fashion. If the end user could validate which features are available
+  programatically, this wouldn't be a problem, and while I do have a Python API
+  ideally mimicing a thin client on top of the core ETL logic, in practice it
+  remains unused because many services are not Python-based. Instead, we start
+  from the root of `bash` compatibility instead. As in, they generate and send
+  `bash` commands to my tool, which parses the `bash` for arguments.
+
+- **Type conversions are opaque**: Oftentimes, they're hidden behind a
+  dependency, and there's no authoritative typing paradigm in the project
+  itself, and any type conversion errors have to be patched on an ongoing basis.
+  This means the typing system is more a patchwork quilt than a well-thought out
+  tapestry. This is immensely frustrating because lossy type conversions will
+  lose some data permanently, and are some of the easiest problems to fix. Even
+  if you define many types that are used once, it's a lot better than relying on
+  many different client that version differently from you and each other. It
+  also means you're relegated to a non-source-of-truth role (like analytics),
+  where it doesn't matter as much if some data is lost, and _blocks_ you from
+  offering your tool for OLTP workloads.
+
+- **Feature migrations are manual, and feature integrity is questionable**: For
+  example, let's say you wanted to migrate a current logging/analytics stack
+  into this project. You'd need to _manually hook into_ every ingest path in
+  order to ensure successful data pass-through into said logging/analytics. This
+  opens up a wide field for basic manual errors, where the developer can
+  fat-finger something without thinking about it, and the error would not show
+  up until runtime. Other features, like setting a default batch size to read a
+  certain number of records at once, or graceful failure where any batch's
+  ingestion failure wouldn't affect any other batch, would also need to be
+  ported manually. This means given a number of features, and a number of
+  ingest/export paths, the dimensionality of the problem grows exponentially,
+  and would soon exceed my ability to tame it.
+
+There are some abstractions that I can implement that address some of these
+above issues. One is ensuring a clear separation between the request layer (the
+type of transformation to apply), and the data layer (the actual moving of data
+from one location to another). This is done by leveraging [Apache
+Spark](https://spark.apache.org/), and the use of its lazily evaluated
+dataframes and its ability to spill to disk upon memory overload. It's not
+perfect -- a lot of issues occur with JVM configuration management -- but it's
+alot better than mixing requests and data together in a Python-native tool.
+
+Any other abstractions, such as defining a set of immutable, transactional
+pipelines from the client up, or using a configuration file with strictly
+defined schemas instead of a feature flag, might be implemented as shims on the
+grandfathered legacy functions. It's still possible to use `odo` in this sense,
+and would get around the problem of having the perfect be the enemy of the good.
+But it would take a good amount of additional work to implement, validate, and
+sell.
+
+---
+
+If you are starting off on a new project, definitely think about how dimensional
+your problem model is, and whether your product's dimensionality matches that of
+the problem. It may save you a lot of time and energy down the line.
