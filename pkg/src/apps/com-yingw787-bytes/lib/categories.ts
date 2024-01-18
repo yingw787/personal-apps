@@ -13,3 +13,13 @@ export const getCategoriesByNumArticles = async () => {
 
   return categoryCounts;
 };
+
+export const getArticlesByCategoryName = async (categoryName: string) => {
+  const articles = await getAllPosts();
+
+  const filteredArticles = _.filter(articles, (article) =>
+    _.includes(article.categories.map(_.toLower), categoryName),
+  );
+
+  return filteredArticles;
+};
