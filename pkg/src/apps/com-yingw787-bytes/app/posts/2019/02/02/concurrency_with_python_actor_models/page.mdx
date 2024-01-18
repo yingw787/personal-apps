@@ -1,0 +1,459 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-02-02",
+  title: "Concurrency with Python: Actor Models",
+  description: "Concurrency with Python: Actor Models",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [**Concurrency with Python: Actor
+  Models**](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+## Overview
+
+[Actors](https://en.wikipedia.org/wiki/Actor_model) are containers of state
+communicating with each other via [message
+passing](https://en.wikipedia.org/wiki/Message_passing). Based on a received
+message, actors can choose to:
+
+- Send messages to other actors
+- Create new actors
+- Alter how it treats new messages it receives
+
+And that's it! State exists, yet remains encapsulated, explicit, and observable,
+among other benefits.
+
+Actors are my favorite concurrency model, since they don't just make [simple
+things easy](https://www.infoq.com/presentations/Simple-Made-Easy), but
+[beautiful](https://news.ycombinator.com/item?id=19707092) as well. Like
+[separating identity from
+state](/posts/2019/01/26/concurrency_with_python_identity_and_state), the
+concurrency advantages of using actors stem from the property guarantees baked
+into actor implementations, which form an unassuming yet unassailable moat in
+terms of concurrency model adoption.
+
+I also love actor models for a number of other reasons as well:
+
+- **They're distributed-first**: Every actor communicates with the external
+  world using messages. In this case, actors define "the external world" as
+  _everything beyond itself_. With no global state to worry about, actors fit
+  well in systems with arbitrarily variable [logical
+  topologies](https://en.wikipedia.org/wiki/Logical_topology).
+
+  This may be a valuable trait in the era of Internet-scale companies, as a
+  reduced dependency on other hardware/software frameworks and models empowers
+  you to better [commoditize your
+  complements](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/).
+
+- **They're fault-tolerant**: Since actors have the ability to spawn new actors
+  upon receiving a particular message, they have the ability to handle each
+  other's exceptions and re-spawn crashed processes. This lends itself very well
+  to inter-process supervision. [Erlang's OTP
+  framework](https://en.wikipedia.org/wiki/Open_Telecom_Platform) formalizes
+  this concept using [supervision
+  trees](http://erlang.org/doc/design_principles/des_princ.html), and Erlang
+  formalizes supervision in its ["let-it-crash" design
+  philosophy](http://wiki.c2.com/?LetItCrash).
+
+  Fault-tolerant languages and frameworks, combined with [system
+  redundancy](<https://en.wikipedia.org/wiki/Redundancy_(engineering)>), can
+  result in absurdly high system uptimes. Joe Armstrong famously quoted that
+  Erlang-based systems can have up to [99.9999999% uptime, although 99.999%
+  uptime may be a more commonly expected
+  figure](https://stackoverflow.com/a/8427032). By contrast, [AWS SLAs set a
+  threshold of 99.99% availability for AWS services in a specific availability
+  zone before service credits are
+  distributed](https://aws.amazon.com/compute/sla/). Strong guarantees about
+  fault tolerance greatly reduce operational expenditures in production,
+  reducing financial and liability pressures on businesses and technical teams.
+
+You may not want to use actor model concurrency if:
+
+- **Your business logic is inherently sequential**: Lengthy and long-lived
+  dependency chains may not support actors very well, because handling logic
+  outside the individual actor (e.g. with multi-stage transactions) is not the
+  actor model's strong suit.
+
+- **You have an existing codebase that does not use actor models**:
+  Interoperability between actor-model based frameworks and object-oriented
+  frameworks may require an additional interface, like a message queue, if the
+  system design and consequences like workload profile are to remain clear.
+  Hence, actor-model based systems may be best implemented as a discrete
+  service, and may otherwise induce a choice between object-oriented programming
+  and actor-model programming.
+
+- **You're focused on optimizing your system**: Rich Hickey mentions in the
+  [Clojure spec about state](https://clojure.org/about/state) that since actors
+  make so few assumptions about the world, the concurrency model is fairly
+  inflexible to optimization. One example he gives is how actors cannot exploit
+  being in the same process, e.g. by having multiple threads share the same
+  immutable data structure. In this sense, actor models may be best used in
+  arenas where any penalties due to lack of optimization can be amortized, such
+  as in a data request generation layer, where you may piece together a request
+  for data before flushing the request through
+  [**`cffi`**](https://cffi.readthedocs.io/en/latest/).
+
+## Actor Models in Python
+
+There's a number of different ways you can apply actors in Python:
+
+- [**`pykka`**](http://www.pykka.org/en/latest/): A partial port of
+  [**`akka`**](https://akka.io/). Not recommended because actor
+  supervision/linking and communicating with actors through network are not
+  supported, messages are mutable, and a lack of continued development.
+
+- [**`thespian`**](https://thespianpy.com/): A well-maintained, fully featured
+  actor library, that runs on Linux. The downsides of this library may include a
+  lack of actor-based tooling like [OTP
+  libraries](http://erlang.org/doc/applications.html), a non-intuitive error
+  model, and a lack of user adoption within the Python community.
+
+- [**`erlport`**](http://erlport.org/docs/python.html): Erlang-based
+  interoperablity library to call Python code using Erlang's [native implemented
+  functions, or NIFs](http://erlang.org/doc/tutorial/nif.html). The actors are
+  specified on the Erlang side, and hence remains outside the scope of this blog
+  post.
+
+- A bespoke implementation of threadless actors can be done [using
+  monads](http://www.valuedlessons.com/2008/01/monads-in-python-with-nice-syntax.html).
+  This is not recommended because many of the actor model primitives require
+  implementation, and do not take advantage of Python's concurrent libraries.
+
+This tutorial uses `thespian`.
+
+### Message Passing
+
+Credit to [the `thespian` documentation](https://thespianpy.com/doc/) for
+inspiring many of these examples.
+
+#### Receiving Messages
+
+To create an actor, define an actor using `thespian.actors.Actor`:
+
+```python
+from thespian.actors import Actor
+
+class Hello(Actor):
+    def receiveMessage(self, message, sender):
+        self.send(sender, "Hello, World!")
+```
+
+Then, create an instance of `thespian.actors.ActorSystem` and pipe a message to
+your actor:
+
+```python
+from thespian.actors import ActorSystem
+
+hello = ActorSystem().createActor(Hello)
+print(ActorSystem().ask(hello, 'hi', 1))
+```
+
+You should see:
+
+```python
+Hello, World!
+```
+
+Printed to the console.
+
+#### Linking Processes
+
+Actors communicate with other actors via messages. For example, the "hello"
+actor can be updated to create a "your_name" actor to print "Hello $YOUR_NAME":
+
+```python
+from thespian.actors import Actor
+
+class Hello(Actor):
+    def receiveMessage(self, message, sender):
+        if message.startswith("Hello! My name is"):
+            your_name = self.createActor(YourName)
+            your_name_msg = (sender, "Hello, ", message)
+            self.send(your_name, your_name_msg)
+
+class YourName(Actor):
+    def receiveMessage(self, message, sender):
+        if isinstance(message, tuple):
+            orig_sender, pre_hello, orig_message = message
+            orig_name = orig_message.lstrip("Hello! My name is ")
+            self.send(orig_sender, pre_hello + orig_name)
+```
+
+These two actors result in the following output in the IPython REPL:
+
+```python
+In [2]: from thespian.actors import ActorSystem
+
+In [3]: ActorSystem()
+Out[3]: <thespian.actors.ActorSystem at 0x7f74aae54160>
+
+In [4]: hello = ActorSystem().createActor(Hello)
+
+In [5]: ActorSystem().ask(hello, "Hello! My name is Ying")
+Out[5]: 'Hello, Ying'
+```
+
+`thespian` also supports special system messages of type
+`thespian.actors.ActorSystemMessage`. One of these may be
+`thespian.actors.ActorExitRequest`. This can be used in order to make your actor
+system idempotent under happy path conditions:
+
+```python
+from thespian.actors import Actor
+from thespian.actors import ActorExitRequest
+
+class Hello(Actor):
+    def receiveMessage(self, message, sender):
+        # Filter out `ChildExitedRequest` system messages.
+        if (
+            isinstance(message, str) and
+            message.startswith("Hello! My name is")
+        ):
+            your_name = self.createActor(YourName)
+            your_name_msg = (sender, "Hello, ", message)
+            self.send(your_name, your_name_msg)
+            # Terminate own process.
+            self.send(self.myAddress, ActorExitRequest())
+
+class YourName(Actor):
+    def receiveMessage(self, message, sender):
+        if isinstance(message, tuple):
+            orig_sender, pre_hello, orig_message = message
+            orig_name = orig_message.lstrip("Hello! My name is ")
+            self.send(orig_sender, pre_hello + orig_name)
+            # Terminate own process.
+            self.send(self.myAddress, ActorExitRequest())
+
+if __name__=='__main__':
+    from thespian.actors import ActorSystem
+    system = ActorSystem()
+    hello = system.createActor(Hello)
+    print(system.ask(hello, "Hello! My name is Ying"))
+    # Shutdown ActorSystem instance.
+    system.shutdown()
+```
+
+It's easy to see how properties like idempotency or atomicity, while not
+intrinsic to actor-model based programming, can be easily implemented within an
+actor-model based system, since there is only one interface, `receiveMessage()`,
+communicating with the outside world.
+
+#### Stateful Actors
+
+Since actors are containers of state, they can change their response based on
+both the messages received as well as their internal state. For example, an
+actor-based counter may look something like this:
+
+```python
+from thespian.actors import Actor
+
+class Counter(Actor):
+    def __init__(self, *args, **kwargs):
+        self.count = 0
+        super().__init__(*args, **kwargs)
+
+    def receiveMessage(self, message, sender):
+        if (
+            isinstance(message, str) and
+            message == "What's my count?"
+        ):
+            msg = "Your count is " + str(self.count)
+            self.count += 1
+            self.send(sender, msg)
+```
+
+Querying a freshly instantiated `Counter` actor instance may look something like
+this:
+
+```python
+In [3]: from thespian.actors import ActorSystem
+
+In [4]: counter = ActorSystem().createActor(Counter)
+
+In [5]: ActorSystem().ask(counter, "What's my count?")
+Out[5]: 'Your count is 0'
+
+In [6]: ActorSystem().ask(counter, "What's my count?")
+Out[6]: 'Your count is 1'
+
+In [7]: ActorSystem().ask(counter, "What's my count?")
+Out[7]: 'Your count is 2'
+```
+
+We send the same message but get a different response each time, because the
+actor keeps track of its state. At the same time, the state is only made visible
+to the external world through messages. State mutation takes place entirely
+within the actor, which means any other messages querying actor state will
+buffer until the mutation is complete, or fails and rolls back. _Incomplete and
+invalid state is never exposed to the world outside the actor instance_.
+
+Alan Kay mentioned this in a [mailing list
+message](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en) as
+his definition of object-oriented programming:
+
+> OOP to me means only messaging, local retention, and protection and hiding of
+> state-process, and extreme late-binding of all things.
+
+#### Effective Parallelization
+
+`thespian`'s model of concurrency lies in the use of different
+`thespian.actors.ActorSystem` implementations.
+
+The naive `thespian.actors.ActorSystem` is not fully concurrent, as it utilizes
+`thespian.system.simpleSystemBase`:
+
+```python
+In [6]: ActorSystem()._systemBase
+Out[6]: <thespian.system.simpleSystemBase.ActorSystemBase at 0x10474bc88>
+```
+
+All actors registered with this system run on a single thread, with [reentrant
+locks](https://docs.python.org/3/library/threading.html#rlock-objects) blocking
+access from other actors from sending or receiving messages. This can be seen in
+`simpleSystemBase.ActorSystemBase.ask`, the method to send a message to an
+actor:
+
+```python
+def ask(self, anActor, msg, timeout):
+    self._realizeWakeups()
+    sender = self.actorRegistry['System:ExternalRequester']
+    with self._private_lock: # Instance of threading.RLock
+        self._pendingSends.append(PendingSend(
+            sender.address,
+            msg,
+            anActor
+        ))
+    return self.listen(timeout)
+```
+
+In order to use something a bit more parallel, and for deploying on general
+Python environments, try using
+`thespian.actors.ActorSystem('multiprocQueueBase')`:
+
+```python
+In [1]: from thespian.actors import ActorSystem
+
+In [2]: ActorSystem('multiprocQueueBase')._systemBase
+Out[2]: <thespian.system.multiprocQueueBase.ActorSystemBase at 0x109fcbfd0>
+```
+
+If you wish to use `multiprocTCPBase` or `multiprocUDPBase`, use Linux as the
+[Python **`socket`** module](https://docs.python.org/3/library/socket.html)
+method calls for `gethostname()` and `getaddrinfo()` is broken on macOS, as
+detailed by [BPO-29705](https://docs.python.org/3/library/socket.html) and
+[BPO-35164](https://bugs.python.org/issue35164).
+
+An easy way to get started with a fully-fledged Python environment on Debian is
+to use Docker and
+[**`continuumio/anaconda3:latest`**](https://github.com/ContinuumIO/docker-images/blob/master/anaconda3/debian/Dockerfile)
+as a virtualization layer. You can create this environment in Docker by running:
+
+```bash
+docker pull continuumio/anaconda3
+docker run -i -d continuumio/anaconda3:latest
+docker exec -it $CONTAINER_NAME bash
+```
+
+Also note that [Windows 10 Home does not come with a
+hypervisor](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v),
+which blocks installation of Docker. Consider blowing away Windows and using
+Linux on bare metal.
+
+Note that actor systems besides the base may create processes that persist
+outside the orchestrating Python process. Use the base `ActorSystem()`
+instantiation, as opposed to `ActorSystem('multiprocTCPBase')`, for best
+results. In order to shutdown actor systems from an orchestrating process, wrap
+`ActorSystem().shutdown()` in a [**`try/except/finally`**
+clause](https://docs.python.org/3/tutorial/errors.html#defining-clean-up-actions).
+
+Aside from these concerns, the beauty of the actor model shines through. _It
+doesn't care about the concurrency model_. You can swap out the concurrency
+model by swapping out the underlying `ActorSystem()` implementation, and as long
+as it implements `.ask()` properly, the actor will be able to communicate with
+the system. If the actor cannot handle a message for some reason, it will simply
+buffer in a mailbox for the actor to handle later. Hence, asynchronicity comes
+out of the box with actors.
+
+### Reactive Design Patterns
+
+Like object-oriented programming, actor models also have their own design
+patterns. Where object-oriented programming may have object-oriented design
+patterns, such as those described in the ["Gang of Four" book on design
+patterns](https://blog.yingw787.com/posts/2017/11/22/design_patterns/),
+actor-model based programming has reactive design patterns, some of which are
+described in ["Reactive Design Patterns", available
+online](https://www.reactivedesignpatterns.com/categories.html).
+
+Some of these include:
+
+- **The Error/Kernel Pattern**: Within a supervision tree, keep actions with
+  higher failure probabilities in the leaf/child nodes, and keep important
+  application state and actions in parent nodes. One benefit of this practice is
+  that leaf nodes can be much more cheaply restarted than parent nodes, which
+  keeps more of the application running at all times.
+
+- **The Let-It-Crash Pattern**: Significantly trim down the failure model by
+  delegating failure handling to a supervisor process rather than handling it
+  within a process. One way this pattern may help software engineers is in
+  reducing technical debt by rendering some compatibility layers wholly
+  unnecessary.
+
+- **The Circuit Breaker Pattern**: Isolate failures from component to component
+  by wrapping them in monitoring and handling logic to avoid calls likely to
+  result in timeouts or high latencies. This prevents failures from propagating
+  throughout an entire system, and localizes errors for easier troubleshooting.
+
+## Conclusion
+
+Actor models are a highly flexible and robust programming model if used and
+implemented correctly. If your programming language supports state, you can
+implement actor models and actor-based frameworks and libraries.
+
+The biggest downside of actor models is in the need to think and practice at
+scale even when there is no scale to worry about. Actor libraries and frameworks
+built on on object-oriented programming languages appear contrived, deviant, and
+unnecessary to programmers when the problems actors solve aren't readily
+apparent.
+
+This problem is made more difficult when actors are so powerful, people and
+organizations [hide the fact they use it as a competitive
+advantage](https://twitter.com/joeerl/status/1104298407231922176). Thankfully,
+with the birth of newer actor-model based languages like
+[Elixir](https://elixir-lang.org/), and seriously successful business cases of
+actor models like
+[WhatsApp](https://www.wired.com/2015/09/whatsapp-serves-900-million-users-50-engineers/),
+actors are getting a lot more attention and consideration in enterprise use.
+
+**(Correction on 05/20/2019)**: The original version of this blog post
+misspelled Rich Hickey's name as "Rich Hickley"; this has been updated.

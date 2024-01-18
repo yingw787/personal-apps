@@ -251,7 +251,7 @@ safer and transportable than using `bash`.
 
 - In your `Makefile`, create the `run` target. This `run` target is nice because
   it lifts the command line arguments and inserts them directly into the `docker
-  run` command, while still enabling things like `--net=host` for unifying the
+run` command, while still enabling things like `--net=host` for unifying the
   Docker network with my system network (ensuring `localhost` on Docker is
   `localhost` on system), connecting the Docker volumes together, and passing in
   any other flags (like passing in the aws config / credentials directory for
