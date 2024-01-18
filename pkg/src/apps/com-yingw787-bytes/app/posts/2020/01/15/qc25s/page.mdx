@@ -1,0 +1,174 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-01-15",
+  title: "What my QC25s taught me about designing long-lasting interfaces",
+  description:
+    "What my QC25s taught me about designing long-lasting interfaces",
+  categories: ["Properties"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+**I'm not paid or otherwise incentivized by Bose. Bose just knocked this one
+specific product out of the park for my use cases, and I'm grateful for their
+hard work.**
+
+**(Correction on 01/16/2020)**: Original version of this post described a
+variety of integrated features with newer headphones.
+[**`lobste.rs`**](https://lobste.rs) user
+[**`jelly`**](https://lobste.rs/u/jelly) pointed out that you can replace the
+ear cushions on the Bose QC35s and listen to audio via headphone jack. In
+addition, the Bose 700s are also headphone jack compatible. I updated one
+paragraph to be more specific with product/feature associations.
+
+---
+
+[I don't like new stuff](/posts/2020/01/13/50years). Occasionally though, I buy
+the new thing that's well worth it. Let me tell you about my Bose QuietComfort
+25s and how they taught me how wonderful well-designed interfaces can be.
+
+---
+
+It's 2015, and either I'll find a way to get some peace and quiet at home, or
+I'll throw my roommate out the 2nd floor window and go to jail. So as a poor
+college student, I decided to splurge on some nice new headphones. I got the
+QC25s, Bose's flagship headphones product at the time.
+
+The core features of the QC25s are:
+
+- Over-ear cushions
+
+- AAA battery for noise cancellation
+
+- 3.5mm headphone jack
+
+I didn't think much of this feature list at the time. It worked.
+
+Some months passed, and as my fears of leaving my super-expensive headphones on
+the library desk for randos to steal subsided as newer headphones came onto the
+market, I realized the ear cushions were wearing out mighty quick. They're made
+up of this weak, two-layered, fake leather stuff that just started
+disintegrating. They also started fraying and popping open along a seam,
+exposing the foam interior.
+
+I started looking for new headphones, and since I was still a college student at
+the time, I was dismayed at the possibility of my headphones wearing out so
+soon and having to spend hundreds of dollars on new stuff. So imagine my joy
+when I found Bose sold _official replacement ear cushions_. They're $35 and have
+2.5/5 stars (bad), and cheaper than a new pair of headphones (good). So I bought
+a pair, popped off the old ear cushions, and popped in the new ear cushions.
+Just like new!
+
+After college, I also started traveling more regularly by airplane, since with
+an income I could afford to fly back home more often. Planes are loud, and basic
+economy seats are very loud (and very cheap). The nice thing about jet engine
+noise is its uniformity, so it's pretty trivial for active noise cancellation to
+attenuate it and make the trip quite pleasant. My problem is since I use noise
+cancelling often, the battery would die at inopportune times, and I'd have no
+idea when to change out the battery. One day, the battery died at the airport. I
+was so mad, I bought an overpriced 8-pack of AAA batteries from an airport gift
+shop and just crammed it into my headphones case. To my delight, the case
+comfortably held 8 batteries at a time! So now I always travel with 8 new AAA
+batteries. Can't die on me now!
+
+I started going to the gym, and having wired earbuds while exercising is not a
+good idea for your outer ear canal. So I bought some wireless earbuds, and they
+were so great, I wanted a set of over-ear Bluetooth headphones to wear while
+walking down the street. I started looking for a new pair of headphones, and on
+a whim searched for a Bluetooth to 2.5mm adapter. To my amazement, a company
+called Bolle & Raven made a Bluetooth adapter _specifically for the QC25s_, as
+in _a PCB / antenna that conforms to the QC25s' shape_. I immediately bought
+one, plugged it in, synced it to my phone, and voila! A pair of
+Bluetooth-capable headphones! I stuffed it into my headphones case.
+
+The ear cushions wore out again. Bought a new pair and replaced it. I got black
+this time, instead of the default beige. My headphones are now uniquely
+identifiable.
+
+The default QC25 audio/mic cable died. Went to the Bose store and got a free
+replacement cable, which is audio only. I think it might have been the rep's
+personal one, but I'm not sure. Great customer service.
+
+I recently bought a new Lenovo ThinkPad P1 two months ago, and I booted Ubuntu
+alongside Windows 10 Professional for Workstations. I messed up Windows Boot
+Manager, making my Windows partition unusable. Then I realized my internal
+microphone didn't work on a call with a friend when running Ubuntu. A quick
+search on DuckDuckGo revealed Dolby Audio doesn't make open-source drivers for
+its hardware. How would I do interviews or video chat people? Luckily, the 3.5mm
+laptop jack was mic-capable. So I looked for a boom microphone, and sure enough,
+I found one compatible with the QC25s. Tried it out a few days ago. Worked like
+a charm, so I stuffed it into my headphones case too.
+
+The internal mic does work. Dolby isn't evil like that. The light means the mic
+is actively disabled. Ubuntu is great at setting sane defaults to prevent audio
+feedback. I am less smart than I think I am.
+
+---
+
+Every time I use these headphones, I just think of how lucky I was to find them.
+I look at my friends and coworkers, who got the Bose QC35s with the integrated
+battery, or the Bose 700s with integrated ear cushions and integrated voice
+assistants, or Sony or Sennheiser whatevers, and I feel sorry for them.
+
+I don't need to remember to wait to charge my batteries before a flight, or
+worry about battery degradation, and crack my case open and void the warranty,
+or pay out the nose for a service repair or special OEM battery, to get my noise
+cancellation. I recycle my batteries at the local Home Depot, so it should be
+eco-friendly. It's decently cheap. As I'm looking now, a 100-pack of
+AmazonBasics 1.5V AAA alkaline batteries costs $17.84 USD. That's good for at
+least two to three years, if not many more.
+
+I can connect my headphones to my IBM ThinkPad T42 from 2003, which I hope to
+turn into my master reference laptop someday (since 32-bit systems are more or
+less "done"), through the 3.5mm headphone jack and not have to worry about
+Bluetooth driver compatibility issues. I can probably boot Ubuntu into console
+mode and play audio files via the terminal, and listen via 3.5mm. I don't think
+I could do that with Bluetooth.
+
+When I wanted Bluetooth support, it's a matter of protocol translation. Given an
+able and willing customer base, it was technically and financially feasible for
+a company to create and sell an adapter to me. When Apple got rid of the 3.5mm
+headphone jack when I migrated from an iPhone 5S to an iPhone 7, that Bluetooth
+adapter meant I could listen to my daily meditation practice without having to
+buy and carry around an extra special Lightning dongle. There was talk and drama
+last year of Apple ditching Lightning altogether for USB-C. I didn't care,
+because I know $NEW_APPLE_THING should support Bluetooth.
+
+If Dolby had turned evil and had locked their internal microphone at the
+firmware or hardware level to only work with Windows and their proprietary
+drivers, which in a world of DRM'ed coffee machines I wouldn't have second
+guessed, I wouldn't have been afraid of that either. I got a 3.5mm mic output,
+and I think that should be visible to any motherboard. I think it's just...metal
+leads underneath. I don't see how you could prevent access to it without raising
+questions from the rest of the supply chain.
+
+I don't even have to worry about my headphones looking old. I can get new ear
+cushions whenever I want to. Probably scrub the inner band with shampoo too,
+it's quite filthy.
+
+Interfaces made my QC25s last. I love my QC25s because of that. In a world where
+the only constant is change, my headphones can go where I go. I hope I can pass
+these headphones down to my children as a family heirloom. If I became a
+millionaire, I'd be willing to pay thousands of dollars for those damn ear
+cushions just so Bose would find supporting spare QC25 parts for the long term
+financially worthwhile.
+
+---
+
+I may or may not be working on some personal projects this year that I intend on
+using for myself. Making software that remains scoped yet relevant to
+third-party services means choosing a set of well-defined, well-documented, and
+{forwards, backwards}-compatible interfaces. Do it right, and I may avoid the
+scope creep, correctness and performance issues from combinatorial state
+explosions, and maintenance overhead that befall many other projects. We'll see
+whether it'll happen, and if it does, whether I can do my job as well as Bose's
+engineers.
