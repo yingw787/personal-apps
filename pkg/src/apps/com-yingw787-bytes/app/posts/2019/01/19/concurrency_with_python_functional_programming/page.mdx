@@ -1,0 +1,519 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-19",
+  title: "Concurrency with Python: Functional Programming",
+  description: "Concurrency with Python: Functional Programming",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [**Concurrency with Python: Functional
+  Programming**](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+# Overview
+
+In contrast to [the threading/locking concurrency model I described
+previously](/posts/2019/01/12/concurrency_with_python_threads_and_locks), the
+functional concurrency model abstracts most if not all hardware primitives out
+of the application picture. No mutable state, and no [side
+effects](<https://en.wikipedia.org/wiki/Side_effect_(computer_science)>), can
+exist in [(pure) functional
+programming](https://en.wikipedia.org/wiki/Purely_functional_programming) --
+even though [the Von Neumann
+architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture), that all
+contemporary, commercially useful computer microarchitectures are based on,
+literally composes [finite state
+machines](https://en.wikipedia.org/wiki/Finite-state_machine) that remain wholly
+stateful. This is possible because after compilation, all program instructions
+and variables are stored in memory, and all functions become [CPU
+branches](<https://en.wikipedia.org/wiki/Branch_(computer_science)>), regardless
+of what design paradigms a high-level programming language specifies. In this
+sense, a functional language and [its corresponding
+toolchain](https://en.wikipedia.org/wiki/Toolchain) act as a declarative
+[shim](<https://en.wikipedia.org/wiki/Shim_(computing)>) for the imperative
+reality.
+
+Out of all the concurrency models I have covered or likely will cover in this
+series, functional programming is my favorite, for a number of reasons:
+
+- **Fewer lines of code written**: The code required for effective [declarative
+  programming](https://en.wikipedia.org/wiki/Declarative_programming), where you
+  describe what you want the program to do, generally involves a subset of the
+  code required for [imperative
+  programming](https://en.wikipedia.org/wiki/Imperative_programming), where you
+  describe both what you want your program to do _and how your program should do
+  it_. This loose upper bound implies that, other things equal, you will likely
+  write less code, which leads to benefits like less [technical
+  debt](https://en.wikipedia.org/wiki/Technical_debt), higher development
+  velocity, and correspondingly wider options when it comes to development
+  prioritization and business direction.
+
+- **Independent upstream evolution**: Since you don't micromanage your program,
+  the maintainers of your dependencies can make optimizations underneath the
+  hood without requiring you to change your application code. Hence, you may be
+  able to capture a large swath of performance benefits by simply updating your
+  dependencies, with no code changes required. For example, one reason why SQL
+  has a large moat in terms of query language adoption is because of the amount
+  of work poured into [SQL query
+  optimization](https://en.wikipedia.org/wiki/Query_optimization). This is
+  possible because SQL is a declarative interface, and SQL engines and SQL
+  application code can evolve separately. The fact that SQL is more or less
+  [standards-compliant (SQL92 standards document snapshot
+  here)](https://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt) as well
+  simply accelerates this fact as more people and companies can invest and
+  partake in the benefits and as the client-side interface evolves with version
+  independence and backwards compatibility in mind.
+
+- **Better testing confidence**: Gary Bernhardt gave a great presentation called
+  ["Functional Core, Imperative
+  Shell"](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell),
+  where your entire testing suite involved writing unit tests for your
+  "functional soup" of business logic, with a small number of regressions to
+  test third-party connections. If you design your application to formalize the
+  state from your interfaces using a
+  [facade](https://en.wikipedia.org/wiki/Facade_pattern), you may be able to
+  parallelize your regression suite from the facade down (in Python, using
+  something like
+  [**`pytest-xdist`**](https://docs.pytest.org/en/3.0.0/xdist.html)), resulting
+  in huge performance gains for [black-box
+  testing](https://en.wikipedia.org/wiki/Black-box_testing). You could also
+  achieve high alignment between your regression suite and your end-to-end test
+  suite (which you cannot parallelize due to the unknown concurrency models used
+  by your dependencies). However, such benefits may become brittle if your
+  toolchain cannot enforce state checks.
+
+  The stateful alternative to this in practice is to define a large number of
+  end-to-end tests and pray for correct behavior in production, as unit tests
+  only end up calcifying your source code and slow you down when fixing
+  inevitable bugs when writing code the first time around (though unit tests are
+  much more useful when refactoring existing code). I detailed one way to make
+  your life easier in this reality by cheaply creating end-to-end tests in my
+  series on [data-driven testing](/posts/2018/11/07/data_driven_testing), but
+  even so, it doesn't change the nature of the game.
+
+- **An ability to design software towards property satisfaction**: Functional
+  languages are [referentially
+  transparent](https://en.wikipedia.org/wiki/Referential_transparency), which
+  makes it easy to design [large-scale, composable
+  systems](<https://en.wikipedia.org/wiki/Function_composition_(computer_science)#Large-scale_composition>).
+
+  Pure functional languages also make it easier to reason about an entire system
+  using principles of
+  [compositionality](https://en.wikipedia.org/wiki/Denotational_semantics#Compositionality),
+  a subset of [denotational
+  semantics](https://en.wikipedia.org/wiki/Denotational_semantics), which is a
+  category of
+  [semantics](<https://en.wikipedia.org/wiki/Semantics_(computer_science)>). One
+  benefit that may be nice about such high-level systems abstractions is you can
+  reason about the safety, security, and correctness of your program using
+  mathematical proofs. This is the field of [operational
+  semantics](https://en.wikipedia.org/wiki/Operational_semantics).
+
+  Honestly, I mostly care about things like referential transparency and the
+  ability to define [rewrite
+  systems](https://en.wikipedia.org/wiki/Rewrite_system), for tangible benefits
+  like [lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation), ease of
+  refactoring, dependency visibility, and ease of parallelization. The other
+  mathematical properties of functional programming are pretty deep rabbit holes
+  that I don't have too much experience in at the moment. They may also be a
+  little [ivory-tower](https://en.wikipedia.org/wiki/Ivory_tower) for my taste,
+  and most companies will likely not care nor need to care about them.
+
+  As an aside, I believe [imandra.ai](https://www.imandra.ai/) is one company
+  built around the ethical governance around algorithms (not paid by them, just
+  thought it was cool). This feature may grow more important as technology usage
+  achieves saturation in some markets
+  ([HFT](https://en.wikipedia.org/wiki/High-frequency_trading) comes to mind),
+  companies try ethically riskier strategies in order to pick high-hanging
+  fruit, and company executives need to justify their behavior in concrete terms
+  to potential regulators and the general public. Having publicly available
+  theoretical proofs of algorithms used in production may be one way in order to
+  assuage ethical concerns in the future while also masking any competitive
+  advantages in a commoditized,
+  [red-ocean](https://en.wikipedia.org/wiki/Blue_Ocean_Strategy#Blue_ocean_vs._red_ocean)
+  market. I think that's pretty neat.
+
+- **An ability to naturally evolve application software towards [dataflow-first
+  programming](https://en.wikipedia.org/wiki/Dataflow_programming)**: In
+  data-intensive applications, it's helpful to separate the control flow from
+  the data the application processes. Designing your request layer using
+  functional principles helps in ensuring your application is implicitly
+  parallelizable as state is scoped and isolated within functions, which allow
+  the underlying execution engine to re-order things without worrying about
+  dependencies. This may help in reducing or eliminating CPU bound restrictions
+  with less mental overhead.
+
+  For more information about designing data-intensive applications, see [my book
+  review on "Designing Data-Intensive Applications", by Martin
+  Kleppmann](https://blog.yingw787.com/posts/2019/03/01/designing_data_intensive_applications/),
+  and [buy the book](https://dataintensive.net/).
+
+In a philosophical sense, functional programming allows us to abstract our
+thinking away from reality and our mortal coil. This [great Stack Overflow
+post](https://stackoverflow.com/questions/48674498/does-functional-programming-reduce-the-von-neumann-bottleneck)
+describes [John Backus's](https://en.wikipedia.org/wiki/John_Backus) perspective
+towards imperative programming and its ties to [the von Neumann bottleneck
+between the CPU and
+memory](https://en.wikipedia.org/wiki/Von_Neumann_architecture#Von_Neumann_bottleneck)
+(quote from post with emphasis reposted here for ease of access):
+
+> Not only is this tube a literal bottleneck for the data traffic of a problem,
+> but, more importantly, **it is an intellectual bottleneck that has kept us
+> tied to word-at-a-time thinking** instead of encouraging us to think in terms
+> of the larger conceptual units of the task at hand. Thus programming is
+> basically planning and detailing the enormous traffic of words through the von
+> Neumann bottleneck, and much of that traffic concerns not significant data
+> itself but where to find it.
+
+# Python and Functional Programming
+
+Python is an impure functional programming language. The Python specification,
+and all its implementations, are tightly coupled to [Von Neumann
+primitives](https://en.wikipedia.org/wiki/Von_Neumann_programming_languages).
+Guido may say Python remains a wholly object-oriented language as functions are
+merely first-class objects, as I described in a prior blog post about [Python
+functions in
+practice](https://blog.yingw787.com/posts/2018/05/08/python_functions_in_practice/).
+
+In particular, specific design decisions may lead to Python not being a great
+language for using serious functional programming in:
+
+- **Exclusive usage of heap memory**: All memory within a Python process is
+  allocated on a private heap created for that specific Python process, as
+  described in [Python's documentation on memory
+  management](https://docs.python.org/3/c-api/memory.html). This is likely due
+  to how Python is an
+  [interpreted](https://en.wikipedia.org/wiki/Interpreted_language) and
+  [dynamically
+  typed](https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information)
+  language, where variable types are determined and variable references are
+  assigned at runtime. All of this likely preclude statically determining memory
+  allocation for Python variables, which preclude any usage of stack memory.
+
+  This means that functional best-practices, like usage of recursive functions,
+  may not perform as well in Python as it might in some compiled langages, since
+  you are allocating the [call
+  stack](https://en.wikipedia.org/wiki/Call_stack#Stack_and_frame_pointers) on
+  heap memory, and you cannot simply collapse the stack with a pointer
+  restoration. [Nikhil Marathe did a great writeup on Python and native code
+  interop with respect to crash
+  reporting](http://nikhilism.com/post/2018/python-call-stack/), which if I
+  understood it correctly, mentioned how the CPython call stack is a doubly
+  linked list of
+  [**`PyThreadState`**](https://docs.python.org/3/c-api/init.html#c.PyThreadState)
+  structs, which is dynamically allocated on heap memory (C typedef
+  [here](https://github.com/python/cpython/blob/8b9dbc017a190d13f717e714630d620adb7c7ac2/Include/cpython/pystate.h#L52)):
+
+  ```c
+  typedef struct _ts {
+  /* See Python/ceval.c for comments explaining most fields */
+
+  struct _ts *prev;
+  struct _ts *next;
+  PyInterpreterState *interp;
+
+  struct _frame *frame;
+  	...
+  unsigned long thread_id; /* Thread id where this tstate was created */
+  	...
+  } PyThreadState;
+  ```
+
+  Hence, stack overflow errors in Python are not based on restrictions within
+  stack memory (which use [physical
+  memory](https://en.wikibooks.org/wiki/Operating_System_Design/Physical_Memory)
+  addresses), but rather a configurable variable called
+  [**`_PyRuntime.ceval.recursion_limit`**](https://github.com/python/cpython/blob/027b09c5a13aac9e14a3b43bb385298d549c3833/Python/ceval.c#L547).
+  Guido states in his blog post that by default, Python will tolerate [1000
+  recursions](http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html)
+  before the Python interpreter will throw a `RuntimeError` (py2.x) or
+  `RecursionError` (py3.x). However, this limit can be reset using the method
+  [**`sys.setrecursionlimit`**](https://github.com/python/cpython/blob/34ef64fe5947bd7e1b075c785fc1125c4e600cd4/Python/sysmodule.c#L746).
+
+  While recursion limits may not be the same as stack overflows, I'm guessing
+  this feature tamps down on the number of stack overflow errors in production.
+  I think you can still get stack overflow errors, though they look slightly
+  different (I ran into an issue that looked similar to [this error in a Django
+  application, reported on Stack
+  Overflow](https://stackoverflow.com/questions/47246769/django-fatal-python-error-cannot-recover-from-stack-overflow-process-finished)).
+
+  I would think other implementations of the Python specification would behave
+  the same way in this regards as CPython, due to the interpreted nature of the
+  language. [Cython](https://cython.org/) may behave differently, due to the
+  compiled nature of Python C extensions.
+
+- **Lack of tail recursion elimination**: Python deliberately does not implement
+  [tail recursion elimination](https://en.wikipedia.org/wiki/Tail_call), where
+  the existing execution context and stack frame is overridden with the results
+  of the tail call (last procedure executed in a function) if the tail call is
+  recursive, in order to save memory from having to append similar stack frames
+  together. From Guido's blog posts on [tail recursion
+  elimination](http://neopythonic.blogspot.com/2009/04/tail-recursion-elimination.html),
+  and [follow-up to the heated discussion
+  afterwards](http://python-history.blogspot.com/2009/04/origins-of-pythons-functional-features.html),
+  Python does not implement this because it destroys the existing stack frame
+  resulting in incomplete stack traces, and because it would give programmers a
+  reason to use recursion more often in application code, which would tie
+  application code to a specific Python implementation's internals and preclude
+  greater [source code
+  portability](https://en.wikipedia.org/wiki/Software_portability#Source_code_portability).
+  It is not
+  ["Pythonic"](https://blog.startifact.com/posts/older/what-is-pythonic.html).
+
+- **Pass object reference by value**: [Robert Heaton wrote a great blog
+  post](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
+  explaining how Python was neither [pass by
+  reference](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_reference)
+  nor [pass by
+  value](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_value), but
+  rather _"pass object reference by value"_. To clarify this statement, he gave
+  the following code sample (that I punched into an
+  [IPython](https://ipython.org/) shell here for clarity and inline evaluation):
+
+  ```python
+  (python3.7) host:~ username$ ipython
+  # ...
+
+  In [1]: def reassign(thing):
+  ...:     thing = [0, 1]
+  ...:
+
+  In [2]: thing = [0]
+
+  In [3]: reassign(thing)
+
+  In [4]: thing
+  Out[4]: [0]
+
+  In [5]: def append(thing):
+  ...:     thing.append(1)
+  ...:
+
+  In [6]: thing = [0]
+
+  In [7]: append(thing)
+
+  In [8]: thing
+  Out[8]: [0, 1]
+  ```
+
+  If the object reference is redefined within the function, the object becomes
+  scoped within the function. However, if the object value is mutated within the
+  function while keeping the object reference intact, the object remains scoped
+  outside the function (and can be of any scope, including global scope).
+
+  I've found this idiosyncratic evaluation strategy to be extremely annoying in
+  practice. Not only does struct scoping depend on your application code, but
+  given how [Python evaluates default function arguments once, Python will
+  continually mutate your default arguments in any function defintion for the
+  life of the
+  process](https://docs.python-guide.org/writing/gotchas/#mutable-default-arguments).
+  This "pass object reference by value" notion naturally leads to tight coupling
+  across functions in your Python application, and reduces your ability to
+  leverage function composition.
+
+# Functional Things You Can Do In Python
+
+Even with its drawbacks in regards to "doing things the functional way", Python
+provides enough functional utilities to optimize certain code snippets with
+functional bits. Here are some useful, Pythonic code snippets you can use in
+Python to see functional programming in action:
+
+## List Comprehensions and Generator Expressions
+
+[List
+comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
+expose the data within a list at a top level during struct creation, and make
+you apply a single transformation to the entire list. It makes your dataflow
+extremely visible, which is a good first step when transitioning from an
+object-oriented paradigm to a functional paradigm. It also makes you think twice
+before doing things like use [conditional
+statements](<https://en.wikipedia.org/wiki/Conditional_(computer_programming)>),
+since transforming all the data at once makes you think more about the
+similarities in the data, rather than the differences.
+
+While writing this blog post, I was pleasantly surprised to discover that list
+comprehensions were not [syntactic
+sugar](https://en.wikipedia.org/wiki/Syntactic_sugar) around loops, but rather
+optimized at the bytecode level to cut out unnecessary internal method calls.
+[Ashwini Chaudhary wrote a great Stack Overflow answer to this very
+question](https://stackoverflow.com/questions/30096351/are-list-comprehensions-syntactic-sugar-for-listgenerator-expression-in-pyth),
+by using the [**`dis`**](https://docs.python.org/3/library/dis.html) module in a
+low-level deep dive.
+
+[Generator
+expressions](https://docs.python.org/3/reference/expressions.html#generator-expressions)
+can be thought of as the lazily evaluated analogue to list comprehensions. The
+two work very well together. Oftentimes when I am debugging a generator
+expression, I replace it inline with a list comprehension before adding `import
+ipdb; ipdb.set_trace()` to examine the generated data, correct my statements,
+and reinsert the generator.
+
+Guido talks about list comprehensions and generator expressions at length, and
+how best to use them in [this blog
+post](http://python-history.blogspot.com/2010/06/from-list-comprehensions-to-generator.html).
+
+## Python Functional Libraries
+
+The Python standard library has a large number of [built-in
+functions](https://docs.python.org/3/library/functions.html), with a subset of
+common functional programming paradigms included like `all()`, `any()`, `map()`,
+`sum()`, and `zip()`. I've found these functions work well and remain idiomatic
+when combined with list comprehensions, as you can port any datashape altering
+transform (i.e. reducers) to outside the comprehension.
+
+I first experienced the wonders of functional programming in JavaScript using
+[**`lodash`**](https://lodash.com/), and as it turns out, Python experienced
+something similar with a library called
+[**`toolz`**](https://toolz.readthedocs.io/en/latest), that extends the
+paradigms of libraries like `itertools` and `functools`, and also [supports
+extending multi-process, parallelizing libraries in
+Python](https://toolz.readthedocs.io/en/latest/parallelism.html).
+
+## Other Functional Optimizations
+
+### Trampolining
+
+[Trampolining](<https://en.wikipedia.org/wiki/Trampoline_(computing)>), in
+high-level programming, is a way to avoid growing your call stack by defining an
+identity function that captures all control transfers of an otherwise recursive
+problem. This "thunk" function is then passed into a looping function
+(trampoline); this way, the thunk function does not recurse. [Jake Tauber wrote
+a great blog post about defining a trampolined factorial function in
+Python](http://jtauber.com/blog/2008/03/30/thunks,_trampolines_and_continuation_passing/).
+
+I've never done this and would not recommend doing this in Python beyond as an
+academic exercise, both due to the lack of tail call optimization in Python and
+the latent but very real possibility that your fellow developers would need to
+think quite hard about how and why you are implementing application-side tail
+recursion elimination.
+
+### Currying
+
+[Currying](https://en.wikipedia.org/wiki/Currying) is a form of incremental
+binding of function arguments, lazily, iteratively and dynamically defining ever
+more specialized functions given the _n_-ary function signature passed in at the
+top level. I think of currying as the functional analogue to the object-oriented
+way of [method chaining](https://en.wikipedia.org/wiki/Method_chaining) on an
+object instance (if only the methods were dynamically defined). [Trilarion wrote
+a great Stack Overflow answer as to why you may want to use currying in
+Python](https://stackoverflow.com/a/24884068).
+
+Again, I also don't know how Pythonic this is. I would prefer to accept default
+parameters in the function signature instead.
+
+### Monoids, Monads, and Category Theory
+
+I don't think I can explain monads as nicely as others as of this moment, and I
+currently have no background in monads, so I will provide links instead.
+
+[Nikolay Grozev wrote a great blog post detailing how monads can reduce glue
+code required in imperative
+languages](https://nikgrozev.com/2013/12/10/monads-in-15-minutes/), and he
+referenced [this helpful blog post on multiple monads implemented in
+Python](http://www.valuedlessons.com/2008/01/monads-in-python-with-nice-syntax.html).
+
+I really don't think using monads in Python is a good idea, for the same reason
+you shouldn't start a company in Lisp: _it's too powerful_. [This Hacker News
+post on "The Programming Language
+Conundrum"](https://news.ycombinator.com/item?id=19529007) explains how this
+power makes it very hard to scale out development teams, since it tightly
+couples brains and your (effective) language re-specifications. In addition, I
+don't think I fully understand how monads fail, and until then, I'd rather write
+simple code that fails nicely. They are mysterious and cool to me, though, and I
+would like to understand them better.
+
+---
+
+This is merely a small sample of the different kinds of patterns functional
+programming exposes you to. Plenty more are visible online, such as on [Jeremy
+Gibbon's blog (although the examples may not be written in
+Python)](https://patternsinfp.wordpress.com).
+
+# So Where's the Parallelization?
+
+The nice thing about pure functions is you can easily pass them into
+[**`multiprocessing.Pool.map`**](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.map),
+where the Python internals handle the task-level execution (and even the
+chunking of your data if you want). Since pure functions certainly don't
+interact with the threading model explicitly, and since Python assumes a single
+thread of execution otherwise, you can be pretty sure that pure functions mapped
+over data using `multiprocessing.Pool.map` will not encounter issues like
+deadlock or race conditions.
+
+One thing to keep in mind with using `multiprocessing.Pool` is that child
+processes instantiated within the process pool are always daemonic. Since Python
+daemonic processes cannot have children, you cannot nest `Pool` and pooled
+processes, resulting in a fairly flat and explicit multiprocess model. See [this
+Stack Overflow answer on the same
+question](https://stackoverflow.com/a/28491804), and the [initialization of a
+Pool
+object](https://github.com/python/cpython/blob/e42b705188271da108de42b55d9344642170aa2b/Lib/multiprocessing/pool.py#L182),
+to see how worker threads behave in a process pool.
+
+In addition, I don't think Python has any built-in [parallel
+reducers](<https://en.wikipedia.org/wiki/Reduce_(parallel_pattern)>) like
+[Clojure's
+**`reducers/fold`**](https://clojuredocs.org/clojure.core.reducers/fold). The
+closest thing may be something like
+[**`toolz.sandbox.parallel.fold`**](https://toolz.readthedocs.io/en/latest/api.html#toolz.sandbox.parallel.fold).
+You could also implement your own parallel reducers, like [this Stack Overflow
+answer](https://stackoverflow.com/a/51162284), but you will need to manually
+keep in mind the interactions your method has within the overall call graph of
+your application, and it may be expensive to maintain in production.
+
+I don't think anybody's made any serious libraries around parallelizing
+functional work in pure Python because of the global interpreter lock. Much of
+the highly used numeric processing libraries like `pandas` and `numpy`, which
+allow for pure functional transforms, are written in Cython, which allows
+release of the GIL and effective parallelism.
+
+# Conclusion
+
+If you imagine programming languages along an [adoption
+funnel](https://en.wikipedia.org/wiki/Purchase_funnel), with the axis being how
+"functional" they are, Python would remain at the widest portion of that funnel.
+It's not very functional, but it gives object-oriented programmers the
+opportunity to use functional programming and easily demonstrate its utility
+through provable benefits, which gives organizations the courage to dive deeper
+into the functional world.
+
+Personally, I'm quite hopeful that the majority of benefits of functional
+programming can come out even in an object-oriented language with functional
+primitives like Python, and that organizations are well-positioned to capture
+that engineering surplus (although I don't have the requisite experience to make
+that claim authoritative).
+
+To learn more about effectively parallel functional patterns (implemented in
+Clojure), check out [“Seven Concurrency Models in Seven Weeks”, by Paul
+Butcher](https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks).
