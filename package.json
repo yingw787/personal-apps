@@ -60,6 +60,7 @@
     "embla-carousel-react": "^8.0.0-rc19",
     "gpt3-tokenizer": "^1.1.5",
     "humanparser": "^2.7.0",
+    "image-size": "^1.1.1",
     "libphonenumber-js": "^1.10.47",
     "lodash": "^4.17.21",
     "lucide-react": "^0.309.0",
