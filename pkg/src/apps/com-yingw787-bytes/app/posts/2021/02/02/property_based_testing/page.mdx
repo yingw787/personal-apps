@@ -253,10 +253,10 @@ this case, that method becomes an oracle and you can apply the equal-by-value
 constraint between the original and refactored methods as a property to test
 against.
 
-There's other tactics, like metamorphic testing or hyperproperties, that I
-won't get into here (because I honestly don't understand them yet), but one
-great resource besides the `hypothesis` documentation and the blogs / talks
-given by the `hypothesis` core devs is [Hillel Wayne's
+There's other tactics, like metamorphic testing or hyperproperties, that I won't
+get into here (because I honestly don't understand them yet), but one great
+resource besides the `hypothesis` documentation and the blogs / talks given by
+the `hypothesis` core devs is [Hillel Wayne's
 blog](https://www.hillelwayne.com).
 
 ## Working through some real-world problems
@@ -328,8 +328,8 @@ down:
 - `(?=.*[a-z])` matches all lowercase alphabetical letters.
 - `(?=.*[A-Z])` matches all uppercase alphabetical letters.
 - `(?=.*[!@#$%^&*])` matches all special characters.
-- `{8,}` matches if and only if the length of the sample text is greater than
-  or equal to 8 characters.
+- `{8,}` matches if and only if the length of the sample text is greater than or
+  equal to 8 characters.
 
 If you run
 `st.from_regex(r"(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]){8,}").example()`

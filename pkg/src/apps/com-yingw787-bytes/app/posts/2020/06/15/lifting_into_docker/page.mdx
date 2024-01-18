@@ -81,8 +81,8 @@ Let's walk through a project to see what I mean.
   └── Makefile
   ```
 
-- In your `Dockerfile`, add your base Docker image reference, labels, and
-  other build arguments:
+- In your `Dockerfile`, add your base Docker image reference, labels, and other
+  build arguments:
 
   ```docker
   FROM debian:buster-20200514
@@ -94,8 +94,7 @@ Let's walk through a project to see what I mean.
 
 - In your `Dockerfile`, update package archives and download `curl`. Note that
   updating package archives does not update system dependencies, and the
-  container should still mirror the base image until dependencies are
-  upgraded.
+  container should still mirror the base image until dependencies are upgraded.
 
   ```docker
   # Get package lists, important for getting 'curl' and such.
@@ -190,18 +189,17 @@ order to consistently pass in CLI arguments for `docker run`. It's also a bit
 safer and transportable than using `bash`.
 
 - In your `Makefile`, declare your enviroment variables. I'm declaring
-  `AWS_PROFILE` for (omitted) CloudFormation lifecycle management,
-  `APP_VERSION` for defining the Docker image version as the commit hash,
-  `GIT_REPO_ROOT` to define the absolute path to the `git` repository root (I
-  don't like relative paths), `DOCKER_IMAGE_NAME` for `docker` image name,
-  `HUGO_PORT` to define which port on `localhost` I should expose this
-  container on, and `USERID` / `GROUPID` to run the Docker container as a
-  specific user and group (in order to keep directory resources under the same
-  user/group to avoid `sudo`).
+  `AWS_PROFILE` for (omitted) CloudFormation lifecycle management, `APP_VERSION`
+  for defining the Docker image version as the commit hash, `GIT_REPO_ROOT` to
+  define the absolute path to the `git` repository root (I don't like relative
+  paths), `DOCKER_IMAGE_NAME` for `docker` image name, `HUGO_PORT` to define
+  which port on `localhost` I should expose this container on, and `USERID` /
+  `GROUPID` to run the Docker container as a specific user and group (in order
+  to keep directory resources under the same user/group to avoid `sudo`).
 
   `.PHONY` enforces a `make` target runs irrespective of the filesystem state.
-  See [this Stack Overflow answer](https://stackoverflow.com/a/2145605) for
-  more details.
+  See [this Stack Overflow answer](https://stackoverflow.com/a/2145605) for more
+  details.
 
   ```make
   #!/usr/bin/env make
@@ -220,15 +218,15 @@ safer and transportable than using `bash`.
   ```
 
 - In your `Makefile`, add a `setup` target in order to setup your repository
-  after first cloning it. I'm downloading the `hugo` theme I need (if it
-  doesn't exist), and installing `hugo` modules required by the `hugo` theme
-  in order to run properly. Note how when I'm running `git clone` in the
-  second step, I'm referencing the destination directory as
-  _`/app/themes/docuapi`_, and not _`${GIT_REPO_ROOT}/themes/docuapi`_,
-  because `/app` is my Docker container working directory `${WORKDIR}`. I'm
-  downloading the dependency _within my Docker context_, even though through
-  the usage of `-v $(GIT_REPO_ROOT):/app` it will still appear on my local
-  directory, _as though I had cloned to my local system_.
+  after first cloning it. I'm downloading the `hugo` theme I need (if it doesn't
+  exist), and installing `hugo` modules required by the `hugo` theme in order to
+  run properly. Note how when I'm running `git clone` in the second step, I'm
+  referencing the destination directory as _`/app/themes/docuapi`_, and not
+  _`${GIT_REPO_ROOT}/themes/docuapi`_, because `/app` is my Docker container
+  working directory `${WORKDIR}`. I'm downloading the dependency _within my
+  Docker context_, even though through the usage of `-v $(GIT_REPO_ROOT):/app`
+  it will still appear on my local directory, _as though I had cloned to my
+  local system_.
 
   ```make
   # Use the custom fork, for styling purposes.
@@ -251,15 +249,14 @@ safer and transportable than using `bash`.
           hugo mod get -u
   ```
 
-- In your `Makefile`, create the `run` target. This `run` target is nice
-  because it lifts the command line arguments and inserts them directly into
-  the `docker run` command, while still enabling things like `--net=host` for
-  unifying the Docker network with my system network (ensuring `localhost` on
-  Docker is `localhost` on system), connecting the Docker volumes together,
-  and passing in any other flags (like passing in the aws config / credentials
-  directory for usage of `awscli` within my Docker context using my system
-  secrets) that I need in order to require as few dependencies on my system as
-  possible.
+- In your `Makefile`, create the `run` target. This `run` target is nice because
+  it lifts the command line arguments and inserts them directly into the `docker
+  run` command, while still enabling things like `--net=host` for unifying the
+  Docker network with my system network (ensuring `localhost` on Docker is
+  `localhost` on system), connecting the Docker volumes together, and passing in
+  any other flags (like passing in the aws config / credentials directory for
+  usage of `awscli` within my Docker context using my system secrets) that I
+  need in order to require as few dependencies on my system as possible.
 
   ```make
   # From: https://stackoverflow.com/a/14061796
@@ -282,13 +279,12 @@ safer and transportable than using `bash`.
           $(RUN_ARGS)
   ```
 
-- Add various other targets you may need to commonly reference. I templated
-  out the `hugo server` command because I run `hugo server` often. This
-  involves the usage of recursive `make` within the same file, which might not
-  be the best way of doing things; would love to hear of a better way.
-  Commands passed in here should be wrapped in double quotes, otherwise they
-  might be interpreted as part of the `make` command instead of passed
-  wholesale.
+- Add various other targets you may need to commonly reference. I templated out
+  the `hugo server` command because I run `hugo server` often. This involves the
+  usage of recursive `make` within the same file, which might not be the best
+  way of doing things; would love to hear of a better way. Commands passed in
+  here should be wrapped in double quotes, otherwise they might be interpreted
+  as part of the `make` command instead of passed wholesale.
 
   ```make
   start: setup
