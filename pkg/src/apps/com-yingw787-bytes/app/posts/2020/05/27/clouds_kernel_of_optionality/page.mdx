@@ -1,0 +1,28 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-05-27",
+  title:
+    "The Cloud's Kernel of Optionality",
+  description:
+    "The Cloud's Kernel of Optionality",
+  categories: ["DevOps", "AWS", "Snippets"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+I wrote an article for [Built In's Expert Contributor
+Network](https://builtin.com/expert-contributors) and published my second post,
+on the cloud's kernel of optionality. This post discusses my perspective towards
+building tech stacks that can migrate easily between different cloud providers.
+
+You can see the post
+[here](https://builtin.com/cloud-computing/clouds-kernel-optionality).
