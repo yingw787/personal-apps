@@ -1,0 +1,110 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-03-08",
+  title: "Changelog Evolution",
+  description: "Changelog Evolution",
+  categories: ["Product Management"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+> **"If you can't measure it, you can't improve it."**
+>
+> [Peter Drucker](https://en.wikipedia.org/wiki/Peter_Drucker)
+
+**(Update 03/17/2019)**: As I am currently writing this, I am quite behind on my
+seven-part series on concurrency models in Python, as begun in [this post back
+in January](/posts/2019/01/11/concurrency_with_python_why). If I have mentioned
+this to you in person as something I wanted to do and to check my blog for
+updates, I apologize for the lack of progress on this front. It is still on my
+roadmap. Ideally, I'll finish it up before [PyCon
+2019](https://us.pycon.org/2019/), and posts will be updated out of order
+(posted after this for their original due dates in January and February). Newer
+posts will be created after this one.
+
+---
+
+I had discovered [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+shortly before joining my current company, and I was impressed by its arguments
+for why you should keep and maintain a good changelog. That need became ever
+more visible in my current role, where until very recently, there wasn't a
+dedicated product manager for our small team. If I didn't maintain a changelog,
+I'd make it more difficult for myself to inform internal customers, prospective
+additions to the team, or stakeholders about the work done on this project, and
+I'd lose a lot of the hard-earned knowledge to the void forever, with all the
+consequent and compounding problems that result from lossy communications. So I
+decided to maintain a changelog and see how it would help my development
+workflow, and if I could glean any insights from it after maintaining it for a
+while.
+
+---
+
+### Lessons Learned
+
+- **Migrations of unstructured data are nigh impossible**: You may notice that
+  the current "Keep a Changelog" points have _Deprecated_, _Fixed_,
+  _Security_, _Unreleased_, and _[YANKED]_ bullets. I think an older version
+  of the site had only the "[ADDED] [CHANGED] [REMOVED]" bullets that I use
+  here. I think the new bullets are an improvement, as a higher granularity of
+  metrics may mean better-formed KPIs. I continued to use the old schema
+  because using different schemas in the same changelog may be confusing to
+  newcomers, because I don't expect my tool to deal with security issues
+  within enterprise environments, and because a manual re-write of a changelog
+  is at the very bottom of a literal mountain of feature requests, bugs, and
+  other issues I have on my plate.
+
+- **Granularity varied but trended higher over time**: When I first started
+  off, I oftentimes just listed what happened, and didn't add much detail
+  (e.g. `[ADDED] Dependency 'py4j'.`). Later on, I described _why_ I was doing
+  something (e.g. `[ADDED] Dependency 'pyjks' to convert OpenSSL-generated
+public keys into Java truststores.`). I think this definitely helps in
+  jogging my memory and detail why any particular action is important, and
+  helps to automatically build the shared understanding when communicating the
+  vision of a product.
+
+- **There's not enough information about what changes apply to a particular
+  release**: This is rectified in the newer release of our product, but for
+  this release, I only keep the major/minor version numbers, and not the build
+  versions or the patch versions. This means at a glance of the changelog, you
+  can't tell which features are available for a particular release. In
+  practice, I use [GitLens](https://gitlens.amod.io/) and `git blame` to
+  identify what changes are applicable between which releases, and more
+  frequently the pull requests for a recent feature (which I make sure to
+  always have the full changelog updates before merging). Oftentimes, since
+  I've been working on this by myself for more than a year, I can do a simple
+  mental recall if somebody has a question. This obviously isn't scalable;
+  hence the new changes to be implemented.
+
+- **I do wish there were more [REMOVED] updates**: At this point, I have made
+  174 [ADDED], 141 [CHANGED], and only **14 [REMOVED]** updates to the
+  project. I have found when I needed to remove some features, I do it in one
+  fell swoop, and it's because I had slowly added functionality to make all
+  that code irrelevant. Still, there's a lot of legacy code left in the
+  product, and porting over functionality to new paradigms I've recently
+  learned or implemented is slow going. I think we have a good balance between
+  developer velocity and supporting customers, but without additional
+  developers to give a real second opinion, that hypothesis remains untested.
+  Deprecations are also unheard of in this product, and would be a highly
+  welcome addition to my development workflows.
+
+---
+
+All in all, I've found maintaining a changelog to be highly worth it. It's
+pretty much the only document that I constantly update and remember to update
+(design documents, flight rules, etc. become outdated at a brisk pace), I love
+the portability and independence it gives from deployment platforms (no GitHub
+releases and form-filling on web apps), and it's great for giving a birds-eye
+view of what I have done.
+
+**(Correction on 2019/05/11)**: The above mentioned changelog was originally
+made available as part of this blog post. Due to a misunderstanding, it has been
+taken down.
