@@ -1,0 +1,250 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-02-16",
+  title: "Concurrency with Python: Hardware-Based Parallelism",
+  description: "Concurrency with Python: Hardware-Based Parallelism",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [**Concurrency with Python: Hardware-Based
+  Parallelism**](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+## Overview
+
+If there is one concurrency model that makes Python [one of the dominant
+programming languages of today](https://www.tiobe.com/tiobe-index/python/), it's
+[hardware-based
+parallelism](https://en.wikipedia.org/wiki/Parallel_computing#Hardware).
+Python's [C/C++ API](https://docs.python.org/3/c-api/index.html), backed by [an
+extensive integration
+tutorial](https://docs.python.org/3/extending/extending.html), transforms Python
+from a general-purpose scripting language into a data orchestration language.
+This, combined with the superlinearly increasing value prop differentiation
+between companies that sanctify data and those that do not, make Python and its
+ecosystem very much worth investing in.
+
+Python excels with hardware-based parallelism for a number of reasons:
+
+- **A complementary development model**: Python as a language is rather
+  simple. Many design decisions around the language (such as the lack of tail
+  recursion elimination, mentioned in [the discussion on functional
+  programming](/posts/2019/01/19/concurrency_with_python_functional_programming))
+  keep writing and debugging Python code as simple, quick, and painless as
+  possible.
+
+  In contrast, many low-level, high-performance libraries are quite
+  complicated. For example, Michael Lehn wrote a great [Stack Overflow
+  answer](https://stackoverflow.com/a/11421344) on how
+  [**BLAS**](http://www.netlib.org/blas/) implementations take advantage of
+  CPU microarchitectural optimizations by segmenting functions based on their
+  inputs (vector-vector, matrix-vector, matrix-matrix), and rewriting
+  functions from scratch instead of composing them from lower-level functions
+  by using specialized CPU instructions when possible.
+
+  Python composes these low-level libraries to eliminate this tradeoff between
+  application performance and development velocity. Stable code susceptible to
+  performance bottlenecks can be rewritten in a lower-level language and
+  represented as a Python library. Python glue code ties these libraries
+  together, keeping most errors in Python and easily patchable. Low-level
+  libraries can also have their own library bindings between each other, which
+  reduces the need to propagate control flow to Python for
+  performance-sensitive work while still separating concerns.
+
+- **The GIL as a forcing function**: Removing the GIL from CPython is not
+  possible without decreasing performance or correctness. This [`pypy` blog
+  post](https://morepypy.blogspot.com/2017/08/lets-remove-global-interpreter-lock.html)
+  aptly explains why. It's easier to simply work around the GIL rather than to
+  try and remove it entirely, and amortize the costs of spending time in
+  Python-land instead of reducing the cost of time spent in Python-land.
+  Hence, the GIL acts as a forcing function for the Python community to find
+  other ways to increase performance, which may unify/increase investment into
+  the C/C++ API and the interfacing ecosystem around hardware-based
+  parallelism.
+
+There are a number of serious downsides to applying hardware-based parallelism
+as a concurrency model, which should be carefully considered before deploying
+hardware-accelerated Python to production:
+
+- **Speedups may be marginal and difficult to measure**: For [embarassingly
+  parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel) problems
+  (like deep learning), or problems with dedicated hardware instructions,
+  hardware-based parallelism makes sense since there are fewer resource
+  bounds. For example, on some graphics-oriented GPU microbenchmarks, such as
+  [**`GPU_4Polygon`**](https://github.com/OlegKonings/GPU_4Polygon) or
+  [**`CUDA_brute_triangle`**](https://github.com/OlegKonings/CUDA_brute_triangle),
+  you may see speedups well within two orders of magnitude. However, this may
+  not extrapolate to your specific workload. For example, [Robert Crovella on
+  NVIDIA DevTalk discusses how speedups of more than 5x may be
+  suspicious](https://devtalk.nvidia.com/default/topic/945987/cuda-programming-and-performance/what-is-maximum-speed-up-that-can-be-obtained-with-gpu-/post/4909734/#4909734)
+  for CPU-bound or memory-bound work, likely because production workloads have
+  different resource bounds over time that reduce hardware resource
+  utilization.
+
+  Comparing speedups between different hardware targets is also difficult;
+  parameter tuning and/or source rewrites generate process differences for
+  different hardware targets. Benchmarks may also be made political if
+  sales/revenue of hardware vendors are at stake. For example, [The Inquirer
+  published a dissension between NVIDIA and
+  Intel](https://www.theinquirer.net/inquirer/news/3076239/nvidia-vs-intel-gpu-cpu-benchmarks),
+  detailing the need to consider price and energy usage in addition to
+  performance for a holistic judgment about the "right" solution for machine
+  learning.
+
+- **Lack of portability**: Relying on bare-metal primitives ties any dependent
+  Python code to the hardware target. Hence, porting across heterogeneous
+  deployment environments is no longer a trivial matter as the code may depend
+  on specific operating systems or hardware architectures.
+
+  Sometimes the code is portable, but workload behavior unexpectedly changes
+  depending on the available hardware. One deployment of
+  [**`hypothesis`**](https://hypothesis.readthedocs.io/) I made for an open
+  source project caused an unexpected slowdown during CI/CD testing, likely
+  because the virtual machine the CI/CD worker was deployed on top of lacked
+  access to hardware-based cryptographic acceleration, causing significant
+  slowdowns during integration testing and a misalignment in technical
+  expectations within the development team.
+
+  Finally, the lack of portability precludes easy horizontal scaling, absent
+  higher-level tooling and infrastructure. This reduces effective
+  commoditization of complements and possibly contributes to hardware price
+  increases. Adrian Rosebrock quoted the [NVIDIA DIGITS
+  DevBox](https://developer.nvidia.com/devbox), a highly capable piece of
+  equipment used for professional deep learning, [at around
+  $15,000](https://www.pyimagesearch.com/2016/06/06/hands-on-with-the-nvidia-digits-devbox-for-deep-learning/).
+  This is a steal in comparison to doing the same work with cloud-based GPUs.
+
+- **The state of Linux device drivers**: Artem Tashkinov wrote a [great blog
+  post on the difficulties of working with
+  Linux](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html).
+  One primary difficulty raised is Linux GPU device driver compatibility, and
+  how NVIDIA oftentimes patches around its own API specification. Since CUDA
+  is the only commercially viable GPGPU library, this may have outstanding
+  effects on GPGPU use cases.
+
+- **Difficult API development**: Performance relies on ensuring as much
+  processing occurs within the lower-level code without interruption. Hence,
+  performance may be made more efficient and predictable to build a massive
+  request and flush it at once through `ffi` than it is to piece together
+  multiple Python API requests and having to continually move between Python
+  and its low-level bindings. This may make it more difficult to design
+  explainable, stable, and simple APIs. The method
+  [**`pandas.read_csv()`**](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)
+  may act as a weak signal in this regard; its function signature has _48_
+  optional parameters.
+
+  For Python's
+  [**`async/await`**](https://docs.python.org/3/library/asyncio-task.html)
+  feature in particular, one limiting factor around `async/await` adoption by
+  Python libraries leveraging the C/C++ API is the lack of portability of
+  Python's
+  [**`get_event_loop()`**](https://docs.python.org/3/library/asyncio-eventloop.html)
+  feature to the C API. [This Python mailing list response by Yury
+  Selivanov](https://mail.python.org/pipermail/python-ideas/2015-April/033133.html)
+  should still be relevant today. Without endorsed `async/await` bridging code
+  conventions, Python libraries around I/O-bound tasks needed to re-implement
+  major functionality from older libraries, resulting in partial ecosystem
+  fragmentation.
+
+## Forms of Hardware
+
+### SIMD/MIMD
+
+[Single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/SIMD)
+is a hardware paradigm where atomic CPU instructions process on multiple chunks
+of data in parallel. Some compilations of `numpy` can apply SIMD to `numpy` data
+structures via [vectorization](https://en.wikipedia.org/wiki/Array_programming)
+and
+[**`numpy.vectorize()`**](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vectorize.html#numpy.vectorize).
+This may be possible via Intel's
+[SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) and
+[AVX](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions) extensions, and
+[Intel's special compilation of
+Python](https://software.intel.com/en-us/distribution-for-python).
+
+SIMD can be further composed in hardware architectures to become [multiple
+instructions, multiple data](https://en.wikipedia.org/wiki/MIMD), where multiple
+processors execute SIMD instructions.
+
+SIMD enforces [lockstep](<https://en.wikipedia.org/wiki/Lockstep_(computing)>)
+where each chunk of data must be processed at the same time as other data
+chunks. Strictly speaking, this means SIMD is parallel but not concurrent;
+asynchronicity is not possible with SIMD.
+
+### SIMT/GPGPUs
+
+[Single instruction, multiple threads
+(SIMT)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_threads) is
+an execution model where single instructions execute on data passing through
+threads in multiple discrete processors, as opposed to SIMD lanes within a
+single processor.
+[GPGPUs](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
+leverage SIMT to process large quantities of data with many simple processors.
+
+One interesting aspect of GPU architectures is that the [instruction set
+architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture) varies
+significantly between generations of GPUs, as [noted in this NVIDIA DevTalk
+comment
+thread](https://devtalk.nvidia.com/default/topic/470452/cuda-programming-and-performance/document-about-nvidia-gpu-native-instruction-set-/post/3345460/#3345460).
+This contrasts heavily with CPUs, which strongly prioritize [binary-code
+compatibility](https://en.wikipedia.org/wiki/Binary-code_compatibility) and ISA
+stability. Hence, software targeting GPUs leverage a high-level library such as
+CUDA that can abstract away targeting multiple GPU generations. This may imply
+software compiled for GPU targets may particularly benefit from [concolic
+testing](https://en.wikipedia.org/wiki/Concolic_testing).
+[**`angr`**](https://github.com/angr/angr) is one Python-based concolic testing
+framework, while
+[GKLEE](http://www.cs.utah.edu/~ligd/publications/GKLEE-PPoPP12.pdf) is a
+concolic testing tool targeted towards GPUs.
+
+### ASICs
+
+[Application-specific integrated
+circuits](https://en.wikipedia.org/wiki/Application-specific_integrated_circuit)
+optimize for a specific workload, granting benefits like performance speedups or
+cost reductions compared to other hardware acceleration targets at the cost of
+vendor lock-in. Major ASIC developments, such as
+[TPUs](https://en.wikipedia.org/wiki/Tensor_processing_unit), have evolved from
+GPU-based workloads, where additional performance met benefit/cost thresholds.
+
+## Conclusion
+
+Python's ability to leverage hardware-based parallelism, and the resultant
+development of highly performant and composable libraries, is a big reason
+behind its relevance today and why user adoption is "sticky". However, it makes
+deploying and reproducing the benefits gained from hardware-based parallelism
+difficult. This problem already presents itself as a realized business
+opportunity. For example, [h2o.ai](https://www.h2o.ai/) eases the process of
+Jupyter notebook deployment, which removes the last-mile blockers between data
+science and business impact. As long as Python's lower-level bindings exist,
+Python can be made performant.
