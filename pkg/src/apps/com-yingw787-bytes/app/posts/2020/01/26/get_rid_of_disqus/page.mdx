@@ -1,0 +1,44 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-01-26",
+  title: "Getting Rid of Disqus",
+  description: "Getting Rid of Disqus",
+  categories: ["Others"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+(This is more of a meta post, so I haven't updated folks who have subscribed to
+my email list.)
+
+I just found out yesterday that Disqus was *inserting advertisements into the
+comments sections of my blogs*. I hadn't noticed since I use [uBlock
+Origin](https://github.com/gorhill/uBlock/) by default on desktop Firefox. I'm
+also not sure whether I have recently reached a threshold of viewers, and now
+fit some threshold of monetization. In any case, on Saturday, January 25th, 2020
+at 11:54PM Eastern Time, I took [this full-window desktop
+screenshot](/images/2020/01/26/screenshot.png) using [Firefox
+Screenshots](https://screenshots.firefox.com/).
+
+My sincere apologies to everybody reading this blog. I find this behavior from
+Disqus to be a massive betrayal of trust. This blog has not been monetized and
+never will be. Beyond monetization, the advertisements served by Disqus do not
+align at all with this blog's purpose of technical education. Your trust in my
+work here is my highest priority.
+
+I typically do not make changes to this site that would break backwards
+compatibility, but I have disabled comments for the entire site until further
+notice. This change has taken effect Sunday, January 26th, at 12:21AM Eastern
+Time. I will take some time to find a suitable FOSS replacement, but if none is
+found, I will post backlinks to discussions I start on
+[Lobste.rs](https://lobste.rs) and [Hacker News](https://news.ycombinator.com)
+on every post instead.
