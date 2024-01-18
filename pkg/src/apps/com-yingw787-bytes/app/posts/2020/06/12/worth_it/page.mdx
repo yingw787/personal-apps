@@ -1,0 +1,29 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-06-12",
+  title:
+    'The Services that makes the Cloud Worth It',
+  description:
+    'The Services that makes the Cloud Worth It',
+  categories: ["DevOps", "AWS", "Snippets"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+I wrote an article for [Built In's Expert Contributor
+Network](https://builtin.com/expert-contributors) and published my third post,
+on services I've found that make the cloud worth it. This post discusses some
+cloud-native services I think are worth using if restrictions on optionality
+between clouds are relaxed.
+
+You can see the post
+[here](https://builtin.com/cloud-computing/services-make-cloud-worth-it).

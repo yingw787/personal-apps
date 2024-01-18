@@ -3,6 +3,7 @@ export interface Article {
   description: string;
   author: string;
   date: string;
+  categories: string[];
 }
 
 export interface ArticleWithSlug extends Article {

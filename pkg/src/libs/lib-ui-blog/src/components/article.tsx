@@ -49,4 +49,4 @@ export const FullArticle = ({ article }: FullArticleProps) => {
       </Card.Eyebrow>
     </article>
   );
-}
+};
