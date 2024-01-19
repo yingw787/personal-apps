@@ -1,0 +1,375 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-10",
+  title: "#snippets: Generating randomized test data in PostGIS",
+  description: "#snippets: Generating randomized test data in PostGIS",
+  categories: ["Testing", "PostGIS", "Snippets"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+Recently, I needed to generate some amount of randomized test data in PostGIS to
+test the GIS-specific parts of my ETL application. Now, I could take a shapefile
+from online and ingest that into PostGIS via the [`shp2pgsql` helper
+script](https://manpages.debian.org/stretch/postgis/shp2pgsql.1.en.html), which
+I did do, but at the time I began this exercise I worried that the natively
+generated PostGIS data wasn't stored as hex-encoded WKBs (spoiler alert...it
+was). Hence, I wanted a native test generation script, something built for
+PostGIS. In addition, I wanted something pseudo-random, something I could
+reproducibly generate.
+
+I ended up deciding to write some scripts in
+[PL/pgSQL](https://en.wikipedia.org/wiki/PL/pgSQL); mainly because it was
+designed _for_ PostgreSQL and was about as close to source truth in test data
+generation as I could think of. No worries about data loss or changes to
+intrepretability through some inperfect data transformation. I didn't find too
+much high-quality information on how to do this out of the gate, so I thought to
+add the few SQL snippets I created on the site. I hope you find this useful.
+
+All you should need in order to run these snippets is a PostgreSQL database
+installation running on your machine instance, with the PostGIS extension
+installed. Instructions should be fairly accessible online.
+
+The only code snippet you need to run these SQL files should be something like:
+
+```bash
+#!/usr/env/bash
+
+# Supply the password as an environment variable, as otherwise psql becomes
+# difficult to script.
+# Pipe results printed with -a/--echo-all to a log file (optional)
+PGPASSWORD=mypassword $(which psql) \
+    -d $MY_DATABASE \
+    -a \
+    -f /path/to/file.sql \
+    | tee log.txt
+```
+
+---
+
+### Generate 1000 pseudo-random POINT geometries with a prepended SERIAL PRIMARY KEY column
+
+```sql
+-- Spin up or register the PostgreSQL PostGIS extension within the PostgreSQL
+-- database if you have not done so already. Skip if done.
+CREATE EXTENSION IF NOT EXISTS postgis;
+
+CREATE OR REPLACE FUNCTION generate_random_point()
+    RETURNS GEOMETRY AS
+$func$
+DECLARE
+    -- x is variation in longitude, while y is variation in latitude.
+    -- In order to generate quality test data, limit the scope to the surface
+    -- of the world: -90/90 from North to South poles, and -180/180 for
+    -- wrap-around coverage. Thanks to coworkers for this information.
+    x_min INTEGER := -90;
+    x_max INTEGER := 90;
+    y_min INTEGER := -180;
+    y_max INTEGER := 180;
+    -- Use the WGS84 coordinate system, referenced by spatial reference ID
+    -- (SRID) 4326.
+    srid INTEGER := 4326;
+BEGIN
+    RETURN (
+        ST_SetSRID(
+            ST_MakePoint(
+                random()*(x_max - x_min) + x_min,
+                random()*(y_max - y_min) + y_min
+            ),
+            srid
+        )
+    );
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+CREATE OR REPLACE FUNCTION generate_random_points()
+    RETURNS VOID AS
+$func$
+DECLARE
+    -- Change this as needed to suit your test dataset size requirements.
+    num_records INTEGER := 1000;
+BEGIN
+    -- Hardcode a seed to generate reproducible results.
+    SET seed TO 0.5;
+
+    -- Prepending a column to an existing table using ALTER TABLE is not
+    -- possible. Store the data in a temporary table, then generate the final
+    -- table from the temporary table.
+    DROP TABLE IF EXISTS temp_postgis_points_random;
+    -- Name column 'geom_points', as otherwise default column name will be
+    -- the name of the function, i.e. 'generate_random_point'.
+    CREATE TABLE temp_postgis_points_random (geom_points)
+    AS SELECT generate_random_point();
+
+    -- As table schema is created from function generate_random_point() and
+    -- populated with one record already, loop num_records - 1 to create a
+    -- total of num_records records.
+    FOR idx IN 1 .. num_records - 1 LOOP
+        INSERT INTO temp_postgis_points_random SELECT generate_random_point();
+    END LOOP;
+
+    DROP TABLE IF EXISTS postgis_points_random;
+    CREATE TABLE postgis_points_random (
+        record_id SERIAL PRIMARY KEY,
+        geom_points GEOMETRY
+    );
+    INSERT INTO postgis_points_random (geom_points)
+    SELECT geom_points FROM temp_postgis_points_random;
+
+    DROP TABLE temp_postgis_points_random;
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+SELECT generate_random_points();
+```
+
+### Generate 1000 pseudo-random POLYGON geometries with a prepended SERIAL PRIMARY KEY column
+
+```sql
+CREATE EXTENSION IF NOT EXISTS postgis;
+
+-- Function mostly copied from generate_random_point().
+CREATE OR REPLACE FUNCTION generate_random_quasicentroid()
+    RETURNS geometry AS
+$func$
+DECLARE
+    -- Points are declared between -70/70 degrees on the Y-axis, and -180/180
+    -- degrees on the X-axis, to allow room for creation of polygons and
+    -- rendering on WMS (avoid cutoff in polar areas).
+    x_min INTEGER := -180;
+    x_max INTEGER := 180;
+    y_min INTEGER := -70;
+    y_max INTEGER := 70;
+    srid INTEGER := 4326;
+BEGIN
+    RETURN (
+        ST_SetSRID(
+            ST_MakePoint(
+                random()*(x_max - x_min) + x_min,
+                random()*(y_max - y_min) + y_min
+            ),
+            srid
+        )
+    );
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+-- This function creates a polygon from a set of randomly defined angles, and
+-- randomly defined distances from a quasicentroid along that angle.
+CREATE OR REPLACE FUNCTION generate_random_polygon(
+    quasicentroid geometry
+)
+    RETURNS geometry AS
+$func$
+DECLARE
+    idx INTEGER;
+    nodes geometry[];
+    angle FLOAT;
+    starting_angle FLOAT;
+    distance FLOAT;
+    max_distance FLOAT := 1;
+BEGIN
+    -- NOTE: Do NOT wrap parentheses around fraction! 'plpgsql' will not
+    -- understand this query and will round down to 0.
+    starting_angle := random()*1/3*PI();
+    angle := starting_angle;
+    -- Set a maximum of 20 vertices for a polygon
+    FOR idx IN 1 .. 20 LOOP
+        distance := random() * max_distance;
+        SELECT array_append(
+            nodes,
+            ST_Translate(
+                quasicentroid,
+                sin(angle)*distance,
+                cos(angle)*distance
+            )
+        ) INTO nodes;
+        -- NOTE: Do NOT wrap parentheses around fraction! 'plpgsql' will not
+        -- understand the query and will round down to 0.
+        angle := angle + random()*2/3*PI();
+        IF angle > 2 * PI() THEN EXIT; END IF;
+    END LOOP;
+    -- Close the polygon
+    SELECT array_append(
+        nodes,
+        nodes[1]
+    ) INTO nodes;
+    RETURN ST_MakePolygon(
+        ST_MakeLine(
+            nodes
+        )
+    );
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+CREATE OR REPLACE FUNCTION generate_random_polygons()
+    RETURNS void AS
+$func$
+DECLARE
+    num_records INTEGER := 1000;
+    quasicentroid geometry;
+BEGIN
+    -- NOTE: Setting a seed to generate reproducible results.
+    SET seed TO 0.5;
+    DROP TABLE IF EXISTS temp_postgis_polygons_random;
+    -- Table name is 'temp_postgis_polygons_random'.
+    -- Column name containing PostGIS data is called 'geom_polygons'.
+    quasicentroid := generate_random_quasicentroid();
+    CREATE TABLE temp_postgis_polygons_random (geom_polygons)
+    AS SELECT generate_random_polygon(quasicentroid);
+
+    -- Populate the table with number of records denoted in 'num_records'.
+    FOR idx IN 1 .. num_records - 1 LOOP
+        quasicentroid := generate_random_quasicentroid();
+        INSERT INTO temp_postgis_polygons_random
+        SELECT generate_random_polygon(quasicentroid);
+    END LOOP;
+
+    -- Create final table with column definitions.
+    DROP TABLE IF EXISTS postgis_polygons_random;
+    CREATE TABLE postgis_polygons_random (
+        record_id SERIAL PRIMARY KEY,
+        geom_polygons geometry
+    );
+    INSERT INTO postgis_polygons_random (geom_polygons)
+    SELECT geom_polygons FROM temp_postgis_polygons_random;
+
+    DROP TABLE temp_postgis_polygons_random;
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+SELECT generate_random_polygons();
+```
+
+### Generate 1000 psuedo-random LINESTRING geometries with a prepended SERIAL PRIMARY KEY column
+
+```sql
+CREATE EXTENSION IF NOT EXISTS postgis;
+
+-- This function is copied over from 'postgis_create_points.sql'.
+CREATE OR REPLACE FUNCTION generate_random_point()
+    RETURNS geometry AS
+$func$
+DECLARE
+    -- Points should be declared between -90/90 degrees on the Y-axis, and
+    -- -180/180 degrees on the X-axis, in order to render WMS representations
+    -- correctly.
+    x_min INTEGER := -180;
+    x_max INTEGER := 180;
+    y_min INTEGER := -90;
+    y_max INTEGER := 90;
+    srid INTEGER := 4326;
+BEGIN
+    RETURN (
+        ST_SetSRID(
+            ST_MakePoint(
+                random()*(x_max - x_min) + x_min,
+                random()*(y_max - y_min) + y_min
+            ),
+            srid
+        )
+    );
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+-- This function creates a linestring out of a randomly defined set of POINT
+-- geometries.
+CREATE OR REPLACE FUNCTION generate_random_linestring()
+    RETURNS geometry AS
+$func$
+DECLARE
+    nodes geometry[];
+    minimum_number_of_nodes INTEGER := 2;
+    maximum_number_of_nodes INTEGER := 20;
+    number_of_nodes INTEGER;
+BEGIN
+    number_of_nodes = (
+        random()*(maximum_number_of_nodes-minimum_number_of_nodes
+    ) + minimum_number_of_nodes)::INTEGER;
+    FOR idx IN 1 .. number_of_nodes LOOP
+        SELECT array_append(
+            nodes,
+            generate_random_point()
+        ) INTO nodes;
+    END LOOP;
+    -- Close the polygon
+    RETURN ST_MakeLine(
+        nodes
+    );
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+CREATE OR REPLACE FUNCTION generate_random_linestrings()
+    RETURNS void AS
+$func$
+DECLARE
+    num_records INTEGER := 1000;
+BEGIN
+    -- NOTE: Setting a seed to generate reproducible results.
+    SET seed TO 0.5;
+    -- Generate a temporary table to store geometry data.
+    DROP TABLE IF EXISTS temp_postgis_linestrings_random;
+    -- Column name containing PostGIS data is called 'geom_linestrings'.
+    CREATE TABLE temp_postgis_linestrings_random (geom_linestrings)
+    AS SELECT generate_random_linestring();
+
+    -- Populate the table with number of records denoted in 'num_records'.
+    FOR idx IN 1 .. num_records - 1 LOOP
+        INSERT INTO temp_postgis_linestrings_random
+        SELECT generate_random_linestring();
+    END LOOP;
+
+    -- Create final table with column definitions.
+    DROP TABLE IF EXISTS postgis_linestrings_random;
+    CREATE TABLE postgis_linestrings_random (
+        record_id SERIAL PRIMARY KEY,
+        geom_linestrings geometry
+    );
+    INSERT INTO postgis_linestrings_random (geom_linestrings)
+    SELECT geom_linestrings FROM temp_postgis_linestrings_random;
+
+    DROP TABLE temp_postgis_linestrings_random;
+END;
+$func$
+LANGUAGE 'plpgsql' VOLATILE;
+
+SELECT generate_random_linestrings();
+```
+
+---
+
+A few caveats to these scripts:
+
+- When I ran these scripts I got different randomized data, indicating that I
+  may not have initialized the seed correctly or at the correct location, or
+  other seeds are set by internal functions. This realization came from
+  transient failures of certain regressions I was running.
+
+- Additional PostGIS types exist, as mentioned in this [reference
+  manual](https://postgis.net/docs/reference.html); notably, I left out
+  multipart geometries like `MULTIPOINT`, `MULTIPOLYGON`, and `MULTILINESTRING`.
+  However, I figured this should be fairly easy to generate given the templates
+  above.
+
+- Currently, the SQL script to generate `LINESTRING` geometries does not limit
+  the coordinates of the POINT geometry set to a bounding box; hence, many
+  `LINESTRING` geometries criss-cross the globe, which is evident in a WMS
+  representation of the data.
+
+Suggestions welcome!
