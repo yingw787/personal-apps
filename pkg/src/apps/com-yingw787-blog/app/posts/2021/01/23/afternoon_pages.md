@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Kitteh falls asleep drinking milk.
 
@@ -27,7 +27,7 @@ Kitteh falls asleep drinking milk.
 
 Ahhhhhhh
 
-__________
+---
 
 So, Biden's inauguration was this past Wednesday and I honestly feel worse than
 I did than when Trump was president. Not because Biden is worse than Trump, but

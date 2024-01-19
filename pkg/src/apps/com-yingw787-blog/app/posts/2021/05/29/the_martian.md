@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Martian\", by Andy Weir"
+title: 'Book Review: "The Martian", by Andy Weir'
 date: "2021-05-29T19:20:58-04:00"
 draft: false
 ---

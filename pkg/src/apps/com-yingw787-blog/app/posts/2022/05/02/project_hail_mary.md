@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Project Hail Mary\", by Andy Weir"
+title: 'Book Review: "Project Hail Mary", by Andy Weir'
 date: "2022-05-07T16:22:46-04:00"
 draft: false
 ---

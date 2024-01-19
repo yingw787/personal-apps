@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look at this precious, precious lil' baby!
 
@@ -27,7 +27,7 @@ Look at this precious, precious lil' baby!
 
 He's singing the song of his people.
 
-__________
+---
 
 So we're starting Q2 of the writer's salon, and as I reflect back on this
 quarter, I guess I just feel a little empty, like the gas tank is a bit empty. I

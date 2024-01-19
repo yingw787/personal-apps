@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 So many things swirling in my head right now. I went to Trader Joe's for the
 first time in a while, and I'm glad I went in the morning, because the line for

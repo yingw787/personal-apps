@@ -14,7 +14,7 @@ The Year In Review:
 - [Year In Review: Resolutions](/posts/2022/12/31/year_in_review_resolutions)
 - [Year In Review: Sleep](/posts/2022/12/31/year_in_review_sleep)
 
-__________
+---
 
 I haven't really been keeping track of my fitness calendar like in previous
 years. It's mostly a consistency thing, coupled with the knowledge I haven't
@@ -32,9 +32,10 @@ Originally during my New Year's Resolutions I had set a goal for myself to meet
 some powerlifting PRs. I made good progress during the year on those, and I'm
 excited to present some results.
 
-__________
+---
 
 Bench:
+
 - 2022 New Year's Resolution: **429 pounds x 1 rep**
 - 2022 year-end deadlift PR: **315 pounds x 1 rep**
 - Proof:
@@ -44,6 +45,7 @@ Bench:
 <br/>
 
 Squat:
+
 - 2022 New Year's Resolution: **371 pounds x 1 rep**
 - 2022 year-end squat PR: **198 pounds x 5 reps** -> **estimated 215 pounds x 1
   rep**
@@ -54,6 +56,7 @@ Squat:
 <br/>
 
 Bench:
+
 - 2022 New Year's Resolution: **281 pounds x 1 rep**
 - 2022 year-end bench PR: **165 pounds x 1 rep**
 - Proof:
@@ -62,7 +65,7 @@ Bench:
 
 <br/>
 
-__________
+---
 
 Some observations:
 
@@ -100,7 +103,7 @@ So what's changed:
   friends (I come for a week during Thanksgiving and Christmas). So I signed up
   for Anytime Fitness down the street. The gym owner charges $40 cash for the
   week. The relatively high price, combined with having nothing really to do,
-  means I go very often, sometimes 4 or 5 times a week. That *really*
+  means I go very often, sometimes 4 or 5 times a week. That _really_
   kickstarted my gym routine when I went back home.
 
   Also my parents are good cooks, and they eat very very healthy. I shouldn't

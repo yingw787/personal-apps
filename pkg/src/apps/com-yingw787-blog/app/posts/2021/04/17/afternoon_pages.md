@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Kitten belly rubs!
 
@@ -25,10 +25,9 @@ Kitten belly rubs!
 <br/>
 <br/>
 
-
 I think another life this kitten would make a good swimmer. Don't you?
 
-__________
+---
 
 Hmm, another week of not writing morning pages. I'm getting rather bad at this.
 I've been thinking about work a great deal. Not necessarily doing the work,
@@ -40,7 +39,7 @@ I'm almost through Season 1 of "The Crown". It's not bad, but I'm worried about
 how much time I'm spending watching TV shows and movies, rather than reading
 books like I used to. I need to strike a balance between the two.
 
-Today, I decided to hell with it, I'm going to work on *something* and then let
+Today, I decided to hell with it, I'm going to work on _something_ and then let
 that momentum carry me through the rest of the day. This happens to be the
 morning pages.
 

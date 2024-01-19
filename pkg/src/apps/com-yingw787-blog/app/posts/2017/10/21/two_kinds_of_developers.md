@@ -21,9 +21,9 @@ and his boss:
 
 ![Sigh multiplied by 10](/img/posts/2017/10/21/two_kinds_of_developers_2.png)
 
-To be fair, he *did* directly copy my (regression, not unit) test. That was my mistake, indicating that unit tests would be appropriate for a regression. I *was* freaking out that he in particular did not have working tests though, because he had already submitted the same code that broke the entire repository. My response to this comment was to say to my team lead and director, *please forward all their tickets to me for this repository so that I can do them properly and they can be fired*. It was a very weird sense of calm. No, they weren't fired.
+To be fair, he _did_ directly copy my (regression, not unit) test. That was my mistake, indicating that unit tests would be appropriate for a regression. I _was_ freaking out that he in particular did not have working tests though, because he had already submitted the same code that broke the entire repository. My response to this comment was to say to my team lead and director, _please forward all their tickets to me for this repository so that I can do them properly and they can be fired_. It was a very weird sense of calm. No, they weren't fired.
 
-In addition, if they had done a `git blame` on the repository, they will have noted that the 360+ unit tests that *were* written for the business logic in that repository *was* written by me. So their boast to create a ticket to make unit tests fell quite flat.
+In addition, if they had done a `git blame` on the repository, they will have noted that the 360+ unit tests that _were_ written for the business logic in that repository _was_ written by me. So their boast to create a ticket to make unit tests fell quite flat.
 
 Then there's the way they treat other people, like our QA team when they refactored one entire page without any unit tests (ensuring that the number of possible bugs is at least the combination of 2^N, with N being the number of statements changed):
 
@@ -33,7 +33,7 @@ This is when one of the incompetent decided to copy and paste code from elsewher
 
 ![yo Bethesda](/img/posts/2017/10/21/two_kinds_of_developers_4.png)
 
-My team lead appears to be at his breaking point. For example, a few days ago one incompetent's incompetent team lead asked him to get a pull request reviewed *in the next 4 minutes*. It was *absolutely urgent* that this code change be merged into our development branch, when we had *two releases to make over the next two days*. Remember, each of our releases is massive, and as we have little to no test coverage in most of our repositories, no regressions, and no continuous integration, it usually takes about a week in order for code to be properly deployed (if properly is the right word to use). There were already bugs caused by the incompetent and the competent's hands were tied with the bleeding in Bethesda:
+My team lead appears to be at his breaking point. For example, a few days ago one incompetent's incompetent team lead asked him to get a pull request reviewed _in the next 4 minutes_. It was _absolutely urgent_ that this code change be merged into our development branch, when we had _two releases to make over the next two days_. Remember, each of our releases is massive, and as we have little to no test coverage in most of our repositories, no regressions, and no continuous integration, it usually takes about a week in order for code to be properly deployed (if properly is the right word to use). There were already bugs caused by the incompetent and the competent's hands were tied with the bleeding in Bethesda:
 
 ![ahh](/img/posts/2017/10/21/two_kinds_of_developers_7.png)
 
@@ -43,7 +43,7 @@ So on a pull request one incompetent made with no forethought, afterthought, or 
 
 ![ahhhh](/img/posts/2017/10/21/two_kinds_of_developers_8.png)
 
-___
+---
 
 Long story short, I have found it impossible to respect incompetent software engineers, and awful people in general, to any working degree. I think my colleagues would agree with me (the competent ones of course). For example, on one bugfix pull request that was "auto-approved" and merged in:
 
@@ -63,7 +63,7 @@ You know why Darth Vader beats all the rebel scum? He's competent at his job.
 
 Thankfully, since my move to the data science team, I've not had to deal with the shit our satellite office spews on a daily basis, or do much interaction with them in any capacity, as our work or lack thereof is more or less unrelated. So my lightsaber remains sheathed.
 
-___
+---
 
 Let's talk about the competent software engineers, and data scientists, that I now work alongside. It's a much happier story.
 
@@ -174,7 +174,7 @@ def method():
 
 Yes, there's another return statement and that is kinda iffy, but readability isn't significantly impacted and the method runs faster. So yea.
 
-___
+---
 
 After a few pull requests just full of refactoring, the data scientists began to see the improvement and welcomed the changes. The pull requests they submit now can follow the look and feel of the code and be correct and readable on the first pass. It's like the process of crystallization; you don't need to put in extra work to keep building it properly because the molecules know where to go. We even have a process of adding code that doesn't involve code being slung over the wall.
 

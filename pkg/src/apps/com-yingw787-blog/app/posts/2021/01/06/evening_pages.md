@@ -14,11 +14,11 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 No funny picture today. Just don't want to go on Reddit and find one.
 
-__________
+---
 
 I thought maybe I'd be writing this out of anger, but I think I'm actually calm
 now.

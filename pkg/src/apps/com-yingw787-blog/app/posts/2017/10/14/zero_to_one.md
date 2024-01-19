@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Zero to One: Notes on Startups, or How to Build the Future\", by Peter Thiel and Blake Masters"
+title: 'Book Review: "Zero to One: Notes on Startups, or How to Build the Future", by Peter Thiel and Blake Masters'
 date: "2017-10-14T13:33:38-04:00"
 draft: false
 ---

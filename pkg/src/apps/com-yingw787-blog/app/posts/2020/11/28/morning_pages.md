@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Some doggos are just copy machines for more doggos :smile:
 
@@ -22,7 +22,7 @@ Some doggos are just copy machines for more doggos :smile:
 
 Such copy. Much wow.
 
-__________
+---
 
 Yesterday, I walked all the way over to the writer's salon, for the first time
 in around six months or so. There's a cute sign on the outside now! Nobody was

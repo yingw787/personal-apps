@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I'm not sure when the last time I laid down in a large puddle was.
 
@@ -28,7 +28,7 @@ I'm not sure when the last time I laid down in a large puddle was.
 
 Maybe that's why we like doggos; they're like permanent kids.
 
-__________
+---
 
 I think I started coughing again yesterday, and after talking to parents,
 decided that maybe it's not the best idea for them to drive over this weekend to
@@ -40,7 +40,7 @@ done is done, and now the important thing is making sure I don't remain sick
 real; what got me up this morning is a nightmare (like any other nightmare) only
 this time it's a positive COVID test. Testing is absolute shit here in the
 States, I paid $120 and have to wait maybe a week or so after submitting a
-sample in order to get *one* test; otherwise you have to own a car to go through
+sample in order to get _one_ test; otherwise you have to own a car to go through
 one of the drive-through stations or wait in line with a bunch of possibly
 COVID-positive people rubbing against you for hours to use the free clinic
 (which might reject you anyway if they discover you have a job and aren't poor

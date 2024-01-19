@@ -33,7 +33,7 @@ awareness cells, if that's a thing in the human body.
 
 I noticed myself scratching at my face because it was so dry and itchy from the
 cold weather as of late, and of course everyone knows scratching at your face
-because of a problem just creates more problems. So I decided to buy *something*
+because of a problem just creates more problems. So I decided to buy _something_
 that will make my face not itchy anymore.
 
 I go over to Trader Joe's (now my favorite store), and I pick out a travel-size

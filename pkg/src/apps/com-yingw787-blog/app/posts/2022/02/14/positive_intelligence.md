@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Positive Intelligence: Why Only 20% of Teams and Individuals Achieve Their True Potential, And How You Can Achieve Yours\", by Shirzad Chamine"
+title: 'Book Review: "Positive Intelligence: Why Only 20% of Teams and Individuals Achieve Their True Potential, And How You Can Achieve Yours", by Shirzad Chamine'
 date: "2022-02-14T14:12:11-05:00"
 draft: false
 ---

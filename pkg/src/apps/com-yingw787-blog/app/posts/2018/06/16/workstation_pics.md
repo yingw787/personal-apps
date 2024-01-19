@@ -13,7 +13,7 @@ picture (or two) to show you guys. Without further ado:
 ![Clean](/img/posts/2018/06/16/workstation_pics_1.jpg)
 
 Obviously, this is way too clean to be my workstation. So here's an actual
-picture after *everything* has been set up:
+picture after _everything_ has been set up:
 
 ![Actual](/img/posts/2018/06/16/workstation_pics_2.jpg)
 
@@ -60,7 +60,7 @@ Some notes:
 I'm really happy with my setup right now. Ideally it will remain this way for
 the next ten years, or longer.
 
-__________
+---
 
 A great big shout-out to [Fully](https://www.fully.com/), where I got my [Jarvis
 electric sit-stand

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"House M.D.\", by David Shore"
+title: 'TV Show Review: "House M.D.", by David Shore'
 date: "2021-03-04T08:55:18-05:00"
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 I think I'm getting the hang of what it means to watch TV. And by watch TV I
 mean purchase a DVD boxed set or watch the show online somehow.
 
-Huh, has it been *8 months* since I started watching House? That just seems
+Huh, has it been _8 months_ since I started watching House? That just seems
 crazy. Then again, 8 seasons of 45-minute episodes just is hard to crunch, and
 balancing that with work and watching in the evenings instead of watching on my
 time-off from contracting means each show is spread out over more days.

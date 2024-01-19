@@ -14,7 +14,7 @@ lifting weights), work has been busy and stressful at times, and I've just not
 had a whole lot in the tank. It's good to come back and write out portions of
 life, though. I need to do it more often.
 
-_________
+---
 
 One of my really close friends from college and her SO came by D.C. recently for
 a vacation, and chose to call on me! I was really happy, and we managed to spend
@@ -45,14 +45,14 @@ because I cleaned my apartment for the first time in four months (!!) just for
 this occasion. I don't think I do a whole lot of stuff for myself, but I do try
 and be the best I can be for my friends. Sort of. In some ways.
 
-_________
+---
 
 On Wednesday evening, I went over to their hotel room at Hyatt Centric Arlington
 and we planned out when to meet up for the next day or so. It was pretty nice
 hanging out, just like in college. Traded a lot of stories around what residency
 is supposed to be like. Ate a lot of pecans.
 
-_________
+---
 
 Thursday morning, we headed out of Arlington over to Tyson's Corner to get some
 brunch from Founding Farmers. I think it's the first time I've ever eaten there.
@@ -90,13 +90,13 @@ rare) with fresh squash and side salad, and blackened catfish with stone ground
 grits and roasted sweet potato, for three people. I'm like "this is prep for the
 hike tomorrow, eating this giant steak".
 
-_________
+---
 
 Friday was the big kahuna! We packed up and went hiking over at Old Rag. Old Rag
 is a 9-mile, 3,200 feet hike. We spent around 6 hours or so hiking around 3,000
 feet and 6 miles, turning back 3 miles in because we didn't want to slip off
 this one section, and the treads of our shoes just weren't sufficient. It was
-also raining very lightly, and we did *not* want to be on a section of the
+also raining very lightly, and we did _not_ want to be on a section of the
 mountain that was slippery during the daytime if and when it started to rain.
 
 This is the furthest area we pushed into; the summit is so close, yet so far
@@ -110,7 +110,7 @@ Eventually, we made it to Element Front Royal and got some more steak, gumbo,
 roasted potatoes, and green beans. I'm like "this is reward for the hike today,
 eating this giant steak".
 
-_________
+---
 
 On Saturday, we hiked a short trail to the base of a totally unrelated mountain,
 and saw a good number of peacocks (fancy chickens), pheasants (rich people

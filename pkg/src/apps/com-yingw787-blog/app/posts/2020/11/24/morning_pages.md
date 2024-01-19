@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Woooooo Washingtonian!
 
@@ -37,12 +37,12 @@ You know I just remembered this week contained Turkey Day...so let's think of
 this as preserving chickens by eating turkeys and ignore the drumsticks in my
 hands.
 
-__________
+---
 
 So I picked up some Trader Joe's kettle-brewed concentrated green and white tea,
 a gallon of it. And I drank half of it yesterday. I drank about half a gallon of
 tea in 30 minutes. Very watery, did not know why I wasn't really feeling awake.
-Today I woke up and I was *wired*. I'm like
+Today I woke up and I was _wired_. I'm like
 idontwanttostayinbedbecausethennothinghappensiwannagetupandjumparound kind of
 wired. I think this kind of destabilizer (if you can call it that) is useful in
 some cases, like trying to wake up early or resetting my schedule. But overall I

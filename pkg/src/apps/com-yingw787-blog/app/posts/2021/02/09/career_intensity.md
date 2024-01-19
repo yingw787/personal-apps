@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Career Intensity: Business Strategy for Workplace Warriors and Entrepreneurs\", by David V. Lorenzo"
+title: 'Book Review: "Career Intensity: Business Strategy for Workplace Warriors and Entrepreneurs", by David V. Lorenzo'
 date: "2021-02-09T21:20:39-05:00"
 draft: false
 ---

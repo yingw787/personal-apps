@@ -20,7 +20,7 @@ for the future.
 
 So without further ado, let's talk about some of these things.
 
-__________
+---
 
 ##### Low-level compute
 
@@ -44,7 +44,7 @@ __________
 - What may be more important than Moore's Law is its relevance in a plethora of
   possible performance bottlenecks. Peter Norvig released [a set of timings for
   operations on a PC](http://norvig.com/21-days.html#answers). As you can see,
-  these numbers vary by multiple *orders of magnitude*. The business
+  these numbers vary by multiple _orders of magnitude_. The business
   ramifications are immense. For example, the difference between fetching from
   main memory and fetching from disk is about three orders of magnitude. This
   difference alone may explain the rise of [in-memory database
@@ -79,7 +79,7 @@ __________
   was single thread, single process, but the database required a lot of memory,
   and they were both striped together on multiple EC2 instances.
 
-_________
+---
 
 ##### Data
 
@@ -95,13 +95,13 @@ _________
   siloing and intra-company politics to a minimum, and develop interdisciplinary
   insights.
 
-- People *hate* moving their data around, much more than they hate changing
+- People _hate_ moving their data around, much more than they hate changing
   applications. Think about it: isn't it fairly easy to change your email
   client, or your calendar client, if you can set up email forwarding and export
   your calendars? At the same time, isn't it hard to convince your friends to
   switch from Facebook or WhatsApp because not only can you not easily export
   your data, but you need to convince your friends (and their friends, and so
-  on) to export their data as well? Data is a *huge* moat for large businesses,
+  on) to export their data as well? Data is a _huge_ moat for large businesses,
   and something they can easily design a winning strategem around. Just take a
   look at [Justin O'Beirne's article on Google Maps vs. Apple
   Maps](https://www.justinobeirne.com/google-maps-moat).
@@ -114,7 +114,7 @@ _________
   company, as it determines how fast a company can develop features, develop
   insights, and scale to new markets and customers. That's one big reason why
   companies are glazing over NoSQL and moving to SQL solutions, specifically
-  distributed NewSQL solutions. Data integrity is a must at *any* scale.
+  distributed NewSQL solutions. Data integrity is a must at _any_ scale.
 
 - Because data tends to favor those who have it, smaller companies come into
   data-driven industries with an inherent disadvantage. That's why it's
@@ -128,7 +128,7 @@ _________
   re-use their profile information across multiple sites, lowering the barrier
   to usage to two or three clicks.
 
-_________
+---
 
 ##### Service and Deployment Models
 
@@ -158,6 +158,6 @@ _________
   doesn't actually affect your deployment pipeline, and keeps your options open
   in terms of development velocity and direction.
 
-_________
+---
 
 I hope you've found some of these insights useful!

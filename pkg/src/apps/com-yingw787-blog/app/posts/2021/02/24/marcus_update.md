@@ -76,7 +76,7 @@ Whew.
 
 Now Imma whoop some ass.
 
-__________
+---
 
 Just kidding, I'm not much of an ass-whooper. I'm just going to withdraw all my
 funds and cut ties with Marcus completely. In any case, I started off with

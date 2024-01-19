@@ -11,7 +11,7 @@ I had lunch with our company's CEO the other day and I relayed the story of one 
 
 The CEO, who has no understanding or desire to understand software engineering or software engineering management (and who tells me as much), asked me, "So why did it take 110 hours in order to build out this feature?". It was a great question and I couldn't think of a good explanation in layman's terms (I think I said something along the lines of "Our codebase is bad and it takes a lot of time to work around a bad codebase"), so I'm going to give it another shot here.
 
-___
+---
 
 What does `$ 1 + 1  $` equal? That's right, it equals `$ 2 $`. Simple enough.
 
@@ -23,7 +23,7 @@ What does `$ 1 + 0.5 * (n)^2 $` equal? You wouldn't be able to figure it out - u
 
 Don't forget to pick me up some sushi. I love sushi.
 
-___
+---
 
 Point being is, there are multiple ways to write a function in order to deliver the same answer. There are simple ways and there are complicated ways. There are ways to write that function with possible side effects. There are even wrong ways to write it, but sometimes appear correct because a broken clock is right twice a day. The same goes for code.
 

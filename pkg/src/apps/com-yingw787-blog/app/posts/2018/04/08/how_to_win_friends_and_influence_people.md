@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"How to Win Friends and Influence People: The Only Book You Need to Lead You to Success\", by Dale Carnegie"
+title: 'Book Review: "How to Win Friends and Influence People: The Only Book You Need to Lead You to Success", by Dale Carnegie'
 date: "2018-04-08T17:35:59-04:00"
 draft: false
 ---

@@ -15,7 +15,7 @@ The Year In Review:
 - [**Year In Review:
   Sleep**](/posts/2021/12/31/year_in_review_sleep)
 
-__________
+---
 
 Of all the metrics I've tracked over this year, besides todo lists and
 hourly journaling, sleep logging is the one I've been able to maintain over

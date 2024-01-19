@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Catto wants food.
 
@@ -27,7 +27,7 @@ Catto wants food.
 
 FEED THE CATTO
 
-__________
+---
 
 21,000 troops is now 25,000, and apparently 14 states have activated the
 National Guard in order to protect their state capitols ahead of the anticipated

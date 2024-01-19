@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"It Doesn't Have to be Crazy at Work\", by Jason Fried and David Heinemeier Hansson"
+title: 'Book Review: "It Doesn''t Have to be Crazy at Work", by Jason Fried and David Heinemeier Hansson'
 date: "2020-02-14T14:27:41-05:00"
 draft: false
 ---
@@ -26,23 +26,23 @@ opposite.
 
 Jason and David pointed out three things I thought could use more mentioning:
 
--   **Leadership is fraught.** You'll never get your reports to completely trust
-    you, because of the imbalanced power dynamics. Accept that. Your every word,
-    even a recommendation, trickles down as a command. Accept that too.
-    Leadership isn't about seeing eye to eye on everything, it's about how best
-    to build alignment and move forward. I find these truths hard and cold, but
-    they're truths nonetheless, and the faster one adapts to them, the better a
-    leader they can be.
+- **Leadership is fraught.** You'll never get your reports to completely trust
+  you, because of the imbalanced power dynamics. Accept that. Your every word,
+  even a recommendation, trickles down as a command. Accept that too.
+  Leadership isn't about seeing eye to eye on everything, it's about how best
+  to build alignment and move forward. I find these truths hard and cold, but
+  they're truths nonetheless, and the faster one adapts to them, the better a
+  leader they can be.
 
--   **Mentally reframing certain challenges helps to build the culture you
-    want.** "Whatever it takes" becomes less so when you find you don't have a
-    blank check to spend or unlimited time to execute, and asking that question
-    "what is my resource allocation" makes the constraints come into view (which
-    helps in linearizing priorities). Adding "do nothing" to the list of options
-    puts the possibility that doing something might make things worse.
+- **Mentally reframing certain challenges helps to build the culture you
+  want.** "Whatever it takes" becomes less so when you find you don't have a
+  blank check to spend or unlimited time to execute, and asking that question
+  "what is my resource allocation" makes the constraints come into view (which
+  helps in linearizing priorities). Adding "do nothing" to the list of options
+  puts the possibility that doing something might make things worse.
 
--   **Change and stability are mindsets.** Jason and David explicitly say that
-    their practice of "calm" works for them because they've tried other ways to
-    do things. That resonated with me, as a guy who always does things the hard
-    way, and it makes me feel good that I'm not entirely alone in this way of
-    thinking. Iterate until you feel good. Then rest.
+- **Change and stability are mindsets.** Jason and David explicitly say that
+  their practice of "calm" works for them because they've tried other ways to
+  do things. That resonated with me, as a guy who always does things the hard
+  way, and it makes me feel good that I'm not entirely alone in this way of
+  thinking. Iterate until you feel good. Then rest.

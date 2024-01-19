@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 A polite squirrel.
 
@@ -21,7 +21,7 @@ A polite squirrel.
 
 Should give him a hat and $20.
 
-__________
+---
 
 I just filed my taxes for self-employment income and wages and
 interest/dividends and all that. Man, that took a while. I'm not sure if it's

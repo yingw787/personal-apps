@@ -22,7 +22,7 @@ times](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times). So I
 wanted to remember some of the biggest lessons I've learned along the way that
 keep me centered and bring me comfort.
 
-__________
+---
 
 ## **It's not where you go, it's who you go with**
 
@@ -42,11 +42,11 @@ You can't ever ground yourself in your expectations for the future, because the
 future changes and you don't control it. Ground yourself in the future and you
 ground yourself in something you can't ever trust or understand.
 
-But having somebody you really love makes the destination *irrelevant*. Why does
+But having somebody you really love makes the destination _irrelevant_. Why does
 it really matter where life takes you, if you're comfortable wherever you are?
 Love provides that comfort, because home is where the heart is.
 
-__________
+---
 
 I'm still kind of disappointed in this explanation, so I'll copy a YouTube
 comment that inspired this lesson:
@@ -82,7 +82,7 @@ comment that inspired this lesson:
 > That's the meaning of this riddle and that's what I got out of it.
 >
 > If you take this one step further, you'll realize that the train not only
-> stands for life's journey, but also for destiny. The train *has* a set
+> stands for life's journey, but also for destiny. The train _has_ a set
 > destination. That's what it means when they say "You know where you hope the
 > train will take you." but the riddle adds "but you can never be sure."
 >
@@ -111,9 +111,9 @@ Most problems, fortunately, are quite mutable. You can create a solution that
 reverses it. Even if you can't, it's not really a big deal, because you never
 cared deeply about it one way or another.
 
-There are a few problems that aren't like that. Those form regret. *I wish I
-could go back and change things*, where you have both *change things* and *I
-wish*. Regret sears itself into identity, and identity influences our actions
+There are a few problems that aren't like that. Those form regret. _I wish I
+could go back and change things_, where you have both _change things_ and _I
+wish_. Regret sears itself into identity, and identity influences our actions
 later on.
 
 I don't really think I can understate how important this is, but it's highly
@@ -123,7 +123,7 @@ mistakes. Make the mistake that your future self can live with.
 ## **Failing is underrated**
 
 I think this is closely related to the prior point, especially if you made
-mistakes you regret. You look in the mirror and see a failure? *Accept it*.
+mistakes you regret. You look in the mirror and see a failure? _Accept it_.
 Accept failure gracefully, and it can help you accept the truth, no matter how
 bitter or cold that truth is.
 
@@ -132,5 +132,5 @@ have plenty of calluses on their bodies, successful people in white-collar
 trades have plenty of calluses on their souls. Yeah, it means we relinquish some
 of the innocence and joy of childhood and places rocks in our rucks that we have
 to tiredly carry for the rest of our lives, but in a hard world, it's also a
-marker of growth, experience, and maturity. It's *real*, in a way that pure
+marker of growth, experience, and maturity. It's _real_, in a way that pure
 innocence isn't. I personally think I need more calluses.

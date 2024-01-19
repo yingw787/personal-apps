@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 Heeheehee he looks so done!
 
@@ -20,7 +20,7 @@ Heeheehee he looks so done!
 
 Not sure if I want to be Mr. Brown Dog or Mr. Beige Puppy.
 
-__________
+---
 
 Oh man. Today is like my first day off in...how long has it been? Not quite
 sure. I've kind of been afraid to take a day off because our team is so small,
@@ -48,5 +48,5 @@ an issue. But it's up to me to trim it. So. Yeah. Need to try doing that today.
 
 I think today I'm feeling rather exhausted for whatever reason. It might be the
 buildup in fatigue, or it could be since today is a day off, my body is like
-*it's okay, you can rest now* and my entire skeleton groans and sags. Hopefully
+_it's okay, you can rest now_ and my entire skeleton groans and sags. Hopefully
 it's not like that.

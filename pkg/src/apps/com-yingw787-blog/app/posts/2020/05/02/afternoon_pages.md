@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Agh, don't have any cute baby/puppy/kitten pictures today. But I have been
 watching "The Office"! It's really nice. Finished "Business School" (S3E16) just

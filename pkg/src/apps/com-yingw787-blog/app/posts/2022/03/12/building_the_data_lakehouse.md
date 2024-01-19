@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Building the Data Lakehouse\", by Bill Inmon"
+title: 'Book Review: "Building the Data Lakehouse", by Bill Inmon'
 date: "2022-03-12T10:21:08-05:00"
 draft: false
 ---

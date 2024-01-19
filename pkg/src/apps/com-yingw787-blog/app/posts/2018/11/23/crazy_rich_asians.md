@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Crazy Rich Asians\", by Kevin Kwan"
+title: 'Book Review: "Crazy Rich Asians", by Kevin Kwan'
 date: "2018-11-23T19:28:54-05:00"
 draft: false
 ---
@@ -48,5 +48,5 @@ Leong, the nurse on the island during Amarita's bachelorette party. There's also
 no death or murder, which is a nice plus. I had thought initially this was a
 rewrite of "The Great Gatsby", talking about rich people and rich people
 problems, and it is in a way; but the last-mile problem of making it relatable
-to today's audiences, and communicating *the* emotionally healthy way to deal
+to today's audiences, and communicating _the_ emotionally healthy way to deal
 with such stressors, makes this book infinitely more valuable.

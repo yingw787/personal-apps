@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Subtle Art of Not Giving a Fuck\", by Mark Manson"
+title: 'Book Review: "The Subtle Art of Not Giving a Fuck", by Mark Manson'
 date: "2019-10-30T11:40:04-04:00"
 draft: false
 ---

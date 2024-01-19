@@ -13,14 +13,14 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I think two kittens might be better than one. Especially if they're hugging each
 other.
 
 ![friendship](/img/posts/2020/04/15/morning_pages.jpg)
 
-__________
+---
 
 I don't feel too shabby this morning. I finished reading that DevOps book I've
 been thinking was blocking my path to actually shipping some sort of backend for

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Enemy at the Gates: The Battle for Stalingrad\""
+title: 'Book Review: "Enemy at the Gates: The Battle for Stalingrad"'
 date: "2019-03-22T00:13:32-04:00"
 draft: false
 ---
@@ -57,57 +57,57 @@ I was mildly surprised to notice just how much Hitler's character traits
 betrayed the fact he didn't deserve the chancellorship of Germany (and like many
 dictators failed upwards):
 
--   **High arrogance**: Hermann Goering promised Hitler that the Luftwaffe can
-    fly in 200+ tons of supplies into the *Kessel* (Stalingrad pocket) every day
-    to keep the Sixth Army supplied until relief forces broke through. Hitler
-    believed Goering's boasts without question. Previously, Sixth Army had 750+
-    tons of supplies provided via railroad for an optimal operational tempo.
-    After Soviet anti-aircraft batteries had been entrenched and the Red Air
-    Force seized air superiority, the Luftwaffe suffered more than four hundred
-    transport planes shot down. In the end, only about 80 tons of supplies came
-    into Pitomnik airfield every day to feed, fuel, and arm 250,000 troops. When
-    the last Junkers supply plane landed at Pitomnik Airfield (Sixth Army
-    airbase in the *Kessel*), the Nazi airport handlers didn't even have the
-    physical strength to lift the supplies off the plane, and the plane left
-    Pitomnik with a full load.
+- **High arrogance**: Hermann Goering promised Hitler that the Luftwaffe can
+  fly in 200+ tons of supplies into the _Kessel_ (Stalingrad pocket) every day
+  to keep the Sixth Army supplied until relief forces broke through. Hitler
+  believed Goering's boasts without question. Previously, Sixth Army had 750+
+  tons of supplies provided via railroad for an optimal operational tempo.
+  After Soviet anti-aircraft batteries had been entrenched and the Red Air
+  Force seized air superiority, the Luftwaffe suffered more than four hundred
+  transport planes shot down. In the end, only about 80 tons of supplies came
+  into Pitomnik airfield every day to feed, fuel, and arm 250,000 troops. When
+  the last Junkers supply plane landed at Pitomnik Airfield (Sixth Army
+  airbase in the _Kessel_), the Nazi airport handlers didn't even have the
+  physical strength to lift the supplies off the plane, and the plane left
+  Pitomnik with a full load.
 
--   **Goal shifting**: Hitler originally ordered Sixth Army to remain in
-    Stalingrad, denying Paulus "freedom of action", because of Goering's promise
-    as stated above. Afterwards, Sixth Army was ordered to remain put in order
-    to tie down seven Soviet armies that would otherwise lead the drive to cut
-    off other Nazi armies in the Caucasus. Then, after Sixth Army officers
-    protested that Sixth Army could no longer provide any useful resistance in
-    case Soviet armies peeled off guarding the Stalingrad pocket anyways, Sixth
-    Army was ordered to die for ideological reasons (in order words, Goebbels'
-    propaganda and benefit).
+- **Goal shifting**: Hitler originally ordered Sixth Army to remain in
+  Stalingrad, denying Paulus "freedom of action", because of Goering's promise
+  as stated above. Afterwards, Sixth Army was ordered to remain put in order
+  to tie down seven Soviet armies that would otherwise lead the drive to cut
+  off other Nazi armies in the Caucasus. Then, after Sixth Army officers
+  protested that Sixth Army could no longer provide any useful resistance in
+  case Soviet armies peeled off guarding the Stalingrad pocket anyways, Sixth
+  Army was ordered to die for ideological reasons (in order words, Goebbels'
+  propaganda and benefit).
 
--   **Supreme pettiness and intellectual laziness**: Hitler and General Albert
-    Jodl got into a screaming match September 7th, 1942 about the overextension of
-    Nazi supply lines, poor communications, and exposed flanks. Hitler then
-    proceeded to eat the rest of his meals without including his generals,
-    eventually leading to an irreparable divide between the Nazi
-    commander-in-chief and OKW (the Wehrmacht high command) regarding military
-    strategy.
+- **Supreme pettiness and intellectual laziness**: Hitler and General Albert
+  Jodl got into a screaming match September 7th, 1942 about the overextension of
+  Nazi supply lines, poor communications, and exposed flanks. Hitler then
+  proceeded to eat the rest of his meals without including his generals,
+  eventually leading to an irreparable divide between the Nazi
+  commander-in-chief and OKW (the Wehrmacht high command) regarding military
+  strategy.
 
--   **Indecision and cowardice**: In the beginning of the battle, Hitler ordered
-    Fourth Army towards the Baku oil fields, leaving Sixth Army to attack
-    Stalingrad alone. Then he ordered Fourth Army to join the fight after a few
-    hours, leaving both armies uncoordinated and crossing each other. Paulus
-    also had to wait for Hitler's orders to close the pincer movement destroying
-    the Soviet 62th Army, which allowed tens of thousands of Soviet troops to
-    withdraw into the city and conduct urban warfare, nullifying much of the
-    Nazi's tactical advantage in blitzkrieg and field warfare. This is similar
-    to the Nazi strategic failings at Dunkirk and D-Day on the Western Front.
+- **Indecision and cowardice**: In the beginning of the battle, Hitler ordered
+  Fourth Army towards the Baku oil fields, leaving Sixth Army to attack
+  Stalingrad alone. Then he ordered Fourth Army to join the fight after a few
+  hours, leaving both armies uncoordinated and crossing each other. Paulus
+  also had to wait for Hitler's orders to close the pincer movement destroying
+  the Soviet 62th Army, which allowed tens of thousands of Soviet troops to
+  withdraw into the city and conduct urban warfare, nullifying much of the
+  Nazi's tactical advantage in blitzkrieg and field warfare. This is similar
+  to the Nazi strategic failings at Dunkirk and D-Day on the Western Front.
 
-    At the end of the siege, Sixth Army aide Captain Winrich Behr pointedly asked
-    Hitler whether "it may count on...support within the next fourty-eight hours".
-    Hitler smiled and said he would talk it over with his advisers. That support
-    never came.
+  At the end of the siege, Sixth Army aide Captain Winrich Behr pointedly asked
+  Hitler whether "it may count on...support within the next fourty-eight hours".
+  Hitler smiled and said he would talk it over with his advisers. That support
+  never came.
 
--   **Disdain towards the weak**: When Hitler's train crossed a troop train full
-    of wounded Nazis, the Nazis all gathered next to the window to see their
-    Fuhrer. When Hitler noticed, he "angrily ordered the curtains shut, leaving
-    the wounded to be reminded of their predicament".
+- **Disdain towards the weak**: When Hitler's train crossed a troop train full
+  of wounded Nazis, the Nazis all gathered next to the window to see their
+  Fuhrer. When Hitler noticed, he "angrily ordered the curtains shut, leaving
+  the wounded to be reminded of their predicament".
 
 I definitely got the impression Fredrich Paulus is a "good person" (the kind I
 described in my [blog post making the case against good
@@ -121,6 +121,6 @@ The top quote reminded me of something Donald Trump would say. I was saddened by
 that; history really does rhyme. Don't get me wrong. Donald Trump is also not
 Adolf Hitler (much less competent and less megalomaniacal). I just hope the
 power brokers in the U.S. who think they can handle/control a POTUS remember how
-the [Junkers](https://en.wikipedia.org/wiki/Junker_(Prussia)) thought the same
+the [Junkers](<https://en.wikipedia.org/wiki/Junker_(Prussia)>) thought the same
 thing about Hitler, and annihilated themselves and their country. I really don't
 want to go down that path.

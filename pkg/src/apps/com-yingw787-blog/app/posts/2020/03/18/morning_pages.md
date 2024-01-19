@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 Last night I was pretty worried about what to do in the situation where both my
 parents died. They picked up my little brother from college and he's in

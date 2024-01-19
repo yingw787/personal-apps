@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hey look, it's Indiana Ruff!
 
@@ -21,7 +21,7 @@ Hey look, it's Indiana Ruff!
 
 He's off to search for buried treasure!
 
-__________
+---
 
 So the Super Bowl was this past weekend, and it looks like Tom Brady won another
 title. I was walking down to D.C. in order to check out what it was like there,

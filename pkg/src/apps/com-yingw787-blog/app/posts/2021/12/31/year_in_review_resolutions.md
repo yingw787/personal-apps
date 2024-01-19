@@ -16,7 +16,7 @@ The Year In Review:
 - [Year In Review:
   Sleep](/posts/2021/12/31/year_in_review_sleep)
 
-__________
+---
 
 The days are long, but the years are short! Unlike last year, I think this year
 kind of flew by. I definitely forgot about my [New Year's

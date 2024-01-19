@@ -14,21 +14,22 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I'm going back to the previous format where I post a blurb and then a blurbie
 (cute animal) since I don't like how I can only crop the Monsters Inc. reference
 by second.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/posts/2020/11/14/afternoon_pages.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
 Puppies: Just represent! Pull!
 
-__________
+---
 
 Yeah this format is so much better.
 

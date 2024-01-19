@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 A big baby!
 
@@ -26,7 +26,7 @@ A big baby!
 <br/>
 <br/>
 
-__________
+---
 
 This morning I'm feeling strangely warm. I think yesterday was a pretty good
 day, all things considered, and I think I managed to change the dynamic enough

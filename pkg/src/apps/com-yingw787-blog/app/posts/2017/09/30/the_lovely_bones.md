@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Lovely Bones\", by Alice Sebold"
+title: 'Book Review: "The Lovely Bones", by Alice Sebold'
 date: "2017-09-30T12:11:03-04:00"
 draft: false
 ---
@@ -17,7 +17,7 @@ The passage of time is painfully noted by both Susie and the world she left behi
 
 "The Lovely Bones" isn't a fairy tale, but it does impart some useful lessons for all of us. Susie's killer is never caught and brought to justice (although his death, captured in the last few pages of the book, is rather fitting). But everyone lives with the decisions they make, from the killer making the choice to take a life, to Susie's mom abandoning her family and fleeing to California, to Ruth trying to convince the world that the dead "are the oxygen we breathe" (pg. 325). Susie's visions of the world, and her efforts to come back into the lives of the people she misses so dearly, show us that Heaven in Susie's world is what you wish it to be.
 
-____
+---
 
 Like this book review? It was inspired by those of [Sam Anderson of the New York Times](https://www.nytimes.com/by/sam-anderson).
 

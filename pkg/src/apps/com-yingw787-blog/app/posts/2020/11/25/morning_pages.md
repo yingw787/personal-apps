@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Panda eating bamboo!
 
@@ -28,7 +28,7 @@ Panda eating bamboo!
 
 Kind of reminds me of eating ice cream.
 
-__________
+---
 
 So a day after drinking a half gallon of concentrated brewed tea, I drank
 another half gallon of concentrated brewed tea. So I'm up and at 'em again

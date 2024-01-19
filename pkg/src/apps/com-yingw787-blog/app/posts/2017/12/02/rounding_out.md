@@ -7,7 +7,7 @@ date: "2017-12-02T18:03:38-05:00"
 draft: false
 ---
 
-Yesterday, I had lunch with Bill Cronin, SVP of Sales and Marketing at the company I work at. He's awesome: super competent, calm, humble, smart and getting smarter, all the bases. I wanted to get to know him better because I wanted to understand all aspects of a business, especially sales and marketing. Without sales and marketing, a company doesn't *exist*. I feel like more software engineers could and should appreciate that.
+Yesterday, I had lunch with Bill Cronin, SVP of Sales and Marketing at the company I work at. He's awesome: super competent, calm, humble, smart and getting smarter, all the bases. I wanted to get to know him better because I wanted to understand all aspects of a business, especially sales and marketing. Without sales and marketing, a company doesn't _exist_. I feel like more software engineers could and should appreciate that.
 
 One thing that I learned in my lunch with Bill is the "Land and Expand" model of corporate development. In a [blue-ocean environment](http://www.corporatestrategy.com/red-ocean-vs-blue-ocean/), the marketing team's job is to land the initial customer, because the customer doesn't know we exist. It doesn't matter how large the initial order is; the job is to get the customer through the door. This is done by creating general awareness of the product through social media and information through blog posts, YouTube videos, PDF guides on materials and processes, or Google AdWords, then piping those interested to our site, making a quote, and placing an order with us. Ideally, by the time they are at that point, they will like the product enough to advocate for it.
 

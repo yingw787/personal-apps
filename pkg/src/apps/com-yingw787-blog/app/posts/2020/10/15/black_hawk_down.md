@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Black Hawk Down: A Story of Modern War\", by Mark Bowden"
+title: 'Book Review: "Black Hawk Down: A Story of Modern War", by Mark Bowden'
 date: "2020-10-15T03:26:09Z"
 draft: false
 ---

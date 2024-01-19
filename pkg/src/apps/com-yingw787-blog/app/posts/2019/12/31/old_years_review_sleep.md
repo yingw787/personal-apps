@@ -32,7 +32,7 @@ did.
 Here's the machine-readable data dump of my sleep log,
 [here](/misc/posts/2019/12/31/sleep.csv).
 
-__________
+---
 
 I'm just eyeballing this, but it appears to me that there's much greater
 variation in terms of the time I wake up and get up every day. I don't think

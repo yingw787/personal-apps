@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 His head is so big!!
 
@@ -24,7 +24,7 @@ I think this is why cats are so cute. They're just the right proportions. I
 guess when you select for cuteness over multiple generations, you get a big
 bundle of cute.
 
-__________
+---
 
 The $LAZR investment is shaving some amount of time off my lifespan, because a
 few days ago it was -$1300 and today it's +$1300. It just swings wildly back and
@@ -56,7 +56,7 @@ financial value of stocks as principal (plus maybe a bit of a cash buffer, like
 
 The ghost of $ZM looms. IT LOOMS.
 
-__________
+---
 
 Sigh. So I think I mentioned this before, but I'm planning on staying in D.C. by
 myself for both Christmas and New Year's. I didn't feel comfortable asking my

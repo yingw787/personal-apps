@@ -59,8 +59,8 @@ So biased, in fact, he reminded me of [another rather biased
 judge](https://en.wikipedia.org/wiki/Roland_Freisler). Maybe she was worried
 that her sentence may be overturned on appeal. However, given the specter of
 state charges, the clear 40-year long progression of the politicization of the
-judicial system, and the fact that the prior judge had issued a sentence *lower
-than that requested by the defense counsel*, she might have risked a re-trial or
+judicial system, and the fact that the prior judge had issued a sentence _lower
+than that requested by the defense counsel_, she might have risked a re-trial or
 a Presidential pardon and followed the maximum sentencing guidelines with little
 worry that any legal precedents were broken on her end. Instead, she chose to
 follow the rules to the letter.
@@ -76,27 +76,27 @@ long-standing problem. And although the likelihood for advice being followed is
 bleak, I do think there's a way for "good people" to come out on top, after all
 of this.
 
-__________
+---
 
 So what makes a "good person"? Here's three characteristics:
 
--   **They're fundamentally disinterested in power**: This is all forms of
-    power. Both [soft power](https://en.wikipedia.org/wiki/Soft_power), and the
-    "if you can shoot the rich guy at any time and take his money, you're as
-    rich as him" kind of power.
+- **They're fundamentally disinterested in power**: This is all forms of
+  power. Both [soft power](https://en.wikipedia.org/wiki/Soft_power), and the
+  "if you can shoot the rich guy at any time and take his money, you're as
+  rich as him" kind of power.
 
--   **They trust in the system**: Following from the first point, they readily
-    accept the limitations of the society they exist in, and hence do not pay
-    enough attention to what *is* (publicly declared information), what *might
-    be* (undeclared information or information that may not exist), and what
-    *isn't* (information that has changed since they last checked and isn't true
-    anymore).
+- **They trust in the system**: Following from the first point, they readily
+  accept the limitations of the society they exist in, and hence do not pay
+  enough attention to what _is_ (publicly declared information), what _might
+  be_ (undeclared information or information that may not exist), and what
+  _isn't_ (information that has changed since they last checked and isn't true
+  anymore).
 
--   **They're very rules-based**: If something exceeds their boundaries, you can
-    count on them to step back. They not only find some things far enough
-    outside their code of ethics to be reprehensible, they sometimes have a hard
-    time imagining somebody optimizing for such an outcome, and hence believe it
-    cannot happen.
+- **They're very rules-based**: If something exceeds their boundaries, you can
+  count on them to step back. They not only find some things far enough
+  outside their code of ethics to be reprehensible, they sometimes have a hard
+  time imagining somebody optimizing for such an outcome, and hence believe it
+  cannot happen.
 
 These are the kinds of people your mother and father likely would have taught
 you to become. The kind of people who come out on top in a Disney movie, the
@@ -106,7 +106,7 @@ grandchildren, who are accepting of their limitations, and who fear God.
 
 In our world, all too often, they're the people who lose.
 
-__________
+---
 
 So why would I say they lose? Why is it so dangerous to be a "good person"?
 
@@ -172,43 +172,43 @@ to this effort). But I think the American investment banker had some good points
 that weren't mentioned by this parable. Take the following situations; what would
 you do if:
 
--   [**The President of Mexico launches an attack against a drug cartel in his
-    home province to curry favor with his voter base, splintering and dispersing
-    the cartels and beginning the Mexican Drug
-    War**](https://en.wikipedia.org/wiki/Mexican_Drug_War#Presidency_of_Vicente_Fox):
-    While you remain vulnerable if you are rich or powerful as you present a
-    more visible target, our Mexican fisherman -- who is fundamentally
-    interested in power -- is *completely at the mercy of both sides*, the drug
-    cartels looking for protection money, and the corrupted, underpaid police
-    officers who want bribes. The wealthy and powerful can pay off ransoms until
-    they secure exit visas for their families, effectively parrying off attacks
-    by ablating their wealth instead of their health or physical safety.
+- [**The President of Mexico launches an attack against a drug cartel in his
+  home province to curry favor with his voter base, splintering and dispersing
+  the cartels and beginning the Mexican Drug
+  War**](https://en.wikipedia.org/wiki/Mexican_Drug_War#Presidency_of_Vicente_Fox):
+  While you remain vulnerable if you are rich or powerful as you present a
+  more visible target, our Mexican fisherman -- who is fundamentally
+  interested in power -- is _completely at the mercy of both sides_, the drug
+  cartels looking for protection money, and the corrupted, underpaid police
+  officers who want bribes. The wealthy and powerful can pay off ransoms until
+  they secure exit visas for their families, effectively parrying off attacks
+  by ablating their wealth instead of their health or physical safety.
 
--   [**Your child is diagnosed with leukemia, requiring treatment in Mexico
-    City**](https://www.cancer.org/cancer/leukemia-in-children.html): From some
-    cursory searches, it looks like Mexico provides universal healthcare to its
-    citizens at both a federal and state level. However, if you have a larger
-    family and no other source of income besides fishing, you may need to
-    continue supporting your family over seeing your child. If you had an
-    independent source of income, you could afford to take months or years off
-    to support your child. And of course, depending on whether budget cuts are
-    on the horizon, and who the government hires for public policy
-    consultations, the very notion of having free or subsidized healthcare
-    available for granted may come into question. This demonstrates a heavy
-    *reliance on the system*.
+- [**Your child is diagnosed with leukemia, requiring treatment in Mexico
+  City**](https://www.cancer.org/cancer/leukemia-in-children.html): From some
+  cursory searches, it looks like Mexico provides universal healthcare to its
+  citizens at both a federal and state level. However, if you have a larger
+  family and no other source of income besides fishing, you may need to
+  continue supporting your family over seeing your child. If you had an
+  independent source of income, you could afford to take months or years off
+  to support your child. And of course, depending on whether budget cuts are
+  on the horizon, and who the government hires for public policy
+  consultations, the very notion of having free or subsidized healthcare
+  available for granted may come into question. This demonstrates a heavy
+  _reliance on the system_.
 
--   [**A corrupt judge sentences you, an innocent person, to a harsh sentence
-    for profit**](https://en.wikipedia.org/wiki/Kids_for_cash_scandal): Would
-    you respect a ruling if it seemed harsh? If you don't respect it in a
-    respectful way, such as appeal, you may be bled dry financially and
-    emotionally, while still remaining at somebody else's mercy (or lack
-    thereof). To not respect it in a disrespectful way is to break the rules --
-    and obviously, *you can't have that*.
+- [**A corrupt judge sentences you, an innocent person, to a harsh sentence
+  for profit**](https://en.wikipedia.org/wiki/Kids_for_cash_scandal): Would
+  you respect a ruling if it seemed harsh? If you don't respect it in a
+  respectful way, such as appeal, you may be bled dry financially and
+  emotionally, while still remaining at somebody else's mercy (or lack
+  thereof). To not respect it in a disrespectful way is to break the rules --
+  and obviously, _you can't have that_.
 
 Of course, parables are made to be broken, and there remain counterpoints to
 these points. However, they would still require knowledge of "how to play the
-game", which fits into my point. Sometimes, *it's not enough to be good, or
-right*. There's enough problems in the world that don't respect goodness or
+game", which fits into my point. Sometimes, _it's not enough to be good, or
+right_. There's enough problems in the world that don't respect goodness or
 rightness, and those problems can only be addressed by the logic of power.
 Possessing power gives you choices.
 
@@ -220,62 +220,62 @@ executable.
 Hence, some of the bitter lessons that too few people learn in time come into
 view:
 
--   **There are no absolutes**: When it comes to any science, particlarly the
-    social sciences, hypotheses are never perfectly true. In fact, it only takes
-    one case disproving it to collapse the whole model. And even if they are
-    partially true, that truth may change over time. If you have healthcare, you
-    might not be covered for a given condition due to a clause you passed over.
-    And if you have healthcare passed in law, that doesn't mean the government
-    will execute well in providing it, maliciously or otherwise. *You can't
-    build certainties on uncertainties*. Oftentimes, "good people" do just this.
+- **There are no absolutes**: When it comes to any science, particlarly the
+  social sciences, hypotheses are never perfectly true. In fact, it only takes
+  one case disproving it to collapse the whole model. And even if they are
+  partially true, that truth may change over time. If you have healthcare, you
+  might not be covered for a given condition due to a clause you passed over.
+  And if you have healthcare passed in law, that doesn't mean the government
+  will execute well in providing it, maliciously or otherwise. _You can't
+  build certainties on uncertainties_. Oftentimes, "good people" do just this.
 
--   **What is given, can be taken away**: If your safety, health, or wealth
-    exists at the mercy of somebody else, and they decide that the status quo no
-    longer benefits them, you're not safe, healthy, or wealthy anymore. "Good
-    people" will assume that because they had the power to demand and receive
-    such services before, they will continue to receive such services *ad
-    infinitum* without further demanding it.
+- **What is given, can be taken away**: If your safety, health, or wealth
+  exists at the mercy of somebody else, and they decide that the status quo no
+  longer benefits them, you're not safe, healthy, or wealthy anymore. "Good
+  people" will assume that because they had the power to demand and receive
+  such services before, they will continue to receive such services _ad
+  infinitum_ without further demanding it.
 
 In short, "good people" build very low congruency between "their problems" and
 "their fault". It results in mindsets of helplessness, resentment, and
 suffering. Life in such a world is no fun. It's toxic, embarrassing, and
 unproductive.
 
-__________
+---
 
 So, as long as the wolves live amongst us, what are some things you can do?
 
--   **Consistently pay for high-quality information**: You can only really trust
-    what you pay, and information is the most easily corruptible resource, since
-    your judgments may vary widely on how much of the full truth it contains. If
-    you pay your sources, they're incentivized to not lose out on your
-    business/income in the future, and (ideally) provide competitive services,
-    meaning at least against smaller-sized players, any dearth of information
-    will impact everybody and not just you. What you do not know about, you
-    cannot protect against.
+- **Consistently pay for high-quality information**: You can only really trust
+  what you pay, and information is the most easily corruptible resource, since
+  your judgments may vary widely on how much of the full truth it contains. If
+  you pay your sources, they're incentivized to not lose out on your
+  business/income in the future, and (ideally) provide competitive services,
+  meaning at least against smaller-sized players, any dearth of information
+  will impact everybody and not just you. What you do not know about, you
+  cannot protect against.
 
--   **Accept liberally and emit conservatively**: Be able to accept a wide
-    breadth of opinions and actions without resorting to breaking the rules. Do
-    not give people a reason to single you out and target you, unless you desire
-    to die on a particular hill (which may be important).
+- **Accept liberally and emit conservatively**: Be able to accept a wide
+  breadth of opinions and actions without resorting to breaking the rules. Do
+  not give people a reason to single you out and target you, unless you desire
+  to die on a particular hill (which may be important).
 
--   **Practice proportional response to threats**: Power cannot exist where it
-    is not practiced or demonstrated, and will disappear if it is not exercised;
-    this is the same principle of "if you can and you don't, can you really
-    *can*?". Yet power also disappears if it is used too often or too harshly;
-    since most sources of power are derived, they require replenishment from
-    other centers of power, which is often slow and not guaranteed. In this
-    situation, harbor your resources, pay attention to and evaluate threats on a
-    continual basis, and be wary of dying on any particular hill. Proportional
-    response is one of the strategems used to execute this plan; prevent threat
-    escalation and multiplication, divert and dissuade potential threats away
-    from attacking you, and grant you time to formulate your next play vs.
-    acting on a series of knee-jerk reactions that may cost you greatly.
+- **Practice proportional response to threats**: Power cannot exist where it
+  is not practiced or demonstrated, and will disappear if it is not exercised;
+  this is the same principle of "if you can and you don't, can you really
+  _can_?". Yet power also disappears if it is used too often or too harshly;
+  since most sources of power are derived, they require replenishment from
+  other centers of power, which is often slow and not guaranteed. In this
+  situation, harbor your resources, pay attention to and evaluate threats on a
+  continual basis, and be wary of dying on any particular hill. Proportional
+  response is one of the strategems used to execute this plan; prevent threat
+  escalation and multiplication, divert and dissuade potential threats away
+  from attacking you, and grant you time to formulate your next play vs.
+  acting on a series of knee-jerk reactions that may cost you greatly.
 
-__________
+---
 
 I know off the bat that most people won't see this post, or hear any of this
-kind of advice from anybody. And you know what? *That's ok*. In fact, maybe
+kind of advice from anybody. And you know what? _That's ok_. In fact, maybe
 better than okay; a world where everybody lives in their own castle is not too
 much fun either, and accepting this bleak reality as the only possible due to
 the limits of each person are fallacial, as a better world from all our efforts

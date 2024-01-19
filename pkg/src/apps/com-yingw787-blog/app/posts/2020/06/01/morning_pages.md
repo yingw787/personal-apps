@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I cut my own hair yesterday!! And it doesn't look half bad!!
 
@@ -51,7 +51,7 @@ independence!
 Maybe next time, I'll try something fancier, like a fade or something. [This
 video seems pretty cool](https://www.youtube.com/watch?v=aKbzbQQEylY).
 
-__________
+---
 
 Today I feel mildly burnt out. I think the haircutting thing was pretty
 stressful, because you can't uncut hair and because there were a good number of

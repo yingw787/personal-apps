@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Educated: A Memoir\", by Tara Westover"
+title: 'Book Review: "Educated: A Memoir", by Tara Westover'
 date: "2018-12-29T12:42:17-05:00"
 draft: false
 ---
@@ -19,7 +19,7 @@ symptoms of bipolar disorder and a mother with an untreated brain injury. Yet
 her story of escaping that world to get a Ph.D from Cambridge may be the
 survival story of all.
 
-__________
+---
 
 Before reading this book, whenever I heard of kids having difficulty to get an
 education, I imagined something like these children in rural China:
@@ -36,7 +36,7 @@ And yet these kids have what Tara didn't: a facts-based reality with supportive
 parents who realized they didn't know everything, and that the outside world
 knew more.
 
-__________
+---
 
 Tara's father owned a junkyard, and her mother peddled essential oils. Both
 avoided dependence on an outside world they believed to be fallen and would end
@@ -46,14 +46,14 @@ true birthday is unknown even to her, and she did not receive a formal education
 until college.
 
 How do you learn when the reality you knew isn't real? When there is no
-foundation to set your building blocks? The answer is *with extreme difficulty*.
+foundation to set your building blocks? The answer is _with extreme difficulty_.
 By buying algebra books, getting trigonometry tutoring from a friend, and daring
 to apply to scholarships, Tara got into BYU, then Cambridge, then Harvard.
 
 Even with these setbacks, the true difficulty Tara presents in her memoir is her
 difficulty in creating lasting, meaningful relationships with people on the
 "outside" while also preserving her relationship to her parents, her siblings
-who had listened to them, and her past -- her *home*. Her ignorance of the
+who had listened to them, and her past -- her _home_. Her ignorance of the
 Holocaust helped cost her her one friendly acquaintance in a junior-level art
 class, and her abysmally poor hygiene habits made working relationships with her
 roommates impossible. When she made progress in any of those fields, her parents
@@ -61,7 +61,7 @@ shrunk further away, berating her for accepting socialist nonsense and
 retreating from God. Eventually, these ties became too great to bear, and Tara
 broke off relations with much of her family during her Harvard fellowship.
 
-__________
+---
 
 Tara's story makes me wonder about whether people like her merely escape her
 past, or whether it's possible to form a bridge between two worlds. From Tara's

@@ -9,21 +9,21 @@ draft: false
 
 The Year In Review:
 
--   [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
--   [**Year In Review: Fitness**](/posts/2020/12/31/old_years_resolutions_fitness)
--   [Year in Review:
-    Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
--   [Year In Review:
-    Resolutions](/posts/2020/12/31/old_years_resolutions_review)
--   [Year In Review:
-    Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+- [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+- [**Year In Review: Fitness**](/posts/2020/12/31/old_years_resolutions_fitness)
+- [Year in Review:
+  Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [Year In Review:
+  Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+- [Year In Review:
+  Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
 
-__________
+---
 
 [**GitHub repository
 (PRIVATE)**](https://github.com/yingw787/fitness-calendar.yingw787.com)
 
-__________
+---
 
 So this year was a unique one in terms of exercise. Not just in the stay-at-home
 orders, which means no more gym (not that I was going to the gym regularly

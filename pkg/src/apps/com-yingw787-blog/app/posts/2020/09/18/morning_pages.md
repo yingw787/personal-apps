@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I thought maybe today I'll take a detour from just cute animals to funny
 animals. Apparently this Bison is created using deep learning:
@@ -27,7 +27,7 @@ happened. Whatever you want to believe, it's 2020.
 On that note, I should pick up deep learning because I want my own animal
 combinations. This is just too good to pass up.
 
-__________
+---
 
 I feel a little sad that I'm pretty much leaving myself out of social
 get-togethers at the moment. I pretty much distrust completely the re-opening

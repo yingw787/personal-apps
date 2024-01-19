@@ -14,9 +14,9 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
-It's my birthday today! :tada: To celebrate, here's a cute picture *and* a cute
+It's my birthday today! :tada: To celebrate, here's a cute picture _and_ a cute
 video!
 
 Here's a really cute kitten:
@@ -33,7 +33,7 @@ And a little boy reading to a cat:
 <br/>
 <br/>
 
-__________
+---
 
 I think the protests have popped back up, heard [somebody murdered somebody else
 with police

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Seven Concurrency Models in Seven Weeks: When Threads Unravel\", by Paul Butcher"
+title: 'Book Review: "Seven Concurrency Models in Seven Weeks: When Threads Unravel", by Paul Butcher'
 date: "2019-01-26T23:11:59-05:00"
 draft: false
 ---

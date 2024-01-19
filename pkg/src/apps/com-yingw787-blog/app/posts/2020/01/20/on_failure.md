@@ -30,7 +30,7 @@ people have pointed that out. For the longest time I've prided myself as one of
 > this quality in big companies, but you need it in a startup.
 
 Maybe I'm going through a bit of an identity crisis, or maybe crisis has been my
-identity all these years, but I don't know if I want this anymore, this *drive*
+identity all these years, but I don't know if I want this anymore, this _drive_
 I've worked years and years to attain. You might not figure it if you met me on
 the street, but I don't think of myself as successful, and I haven't for many,
 many years. It's simply not part of my identity.
@@ -74,24 +74,24 @@ include seeing work as a form of escape, are much more ["kernel-space" than
 "user-space"](https://en.wikipedia.org/wiki/User_space). They're much more
 difficult to change. Not only are childhood traits far more deeply ingrained,
 but they're oftentimes invisible. Those traits have been with us longer than
-we've possessed a fully-formed logical side. *Our logic develops around our
-illogicity*.
+we've possessed a fully-formed logical side. _Our logic develops around our
+illogicity_.
 
-__________
+---
 
 By the time I started high school, I've historically hit enough edge cases in
 life where I came to expect the worst scenario out of a spectrum of possible
 scenarios. That, combined with insecurity about going from a not-excellent
 primary school in Canada to a magnet high school in the U.S., resulted in an
-innate pessimism, deep-seated anger issues, and a *serious* axe to grind. That
+innate pessimism, deep-seated anger issues, and a _serious_ axe to grind. That
 saying, "youth is wasted on the young"? That wasn't going to be me. So I worked
 to escape my problems.
 
 I got what I worked for. I got the grades and GPA, honor roll, and state-level
 awards. I got into college. Most importantly, I'm fortunate enough to have
-*choice* in where I want to go in my life. *Choice is wealth*. And yet, if
+_choice_ in where I want to go in my life. _Choice is wealth_. And yet, if
 you've just walked the beaten path faster than others, and you think departing
-from that path imparts a cost, *how much choice do you really have*?
+from that path imparts a cost, _how much choice do you really have_?
 
 ## $RACHEL
 
@@ -133,7 +133,7 @@ would never be hers and she would never be mine.
 
 Great, so that's a wrap. Now it's a simple matter of letting her go.
 
-__________
+---
 
 I cried myself to sleep almost every day for the first three years of college. I
 became terrified of falling asleep because when I closed my eyes I saw her. A
@@ -152,9 +152,9 @@ lot like firewood. Somehow, I chose a prison. The harder I worked, and the more
 I tried to forget about $RACHEL, the more the feeling intensified, and the more
 underlined the past becomes. It's like a fire that can never go out, even if you
 dump an ocean of water on top of it. It's like blood you can never wash off.
-*And for some reason, I chose this*. It's partially why I didn't go into
+_And for some reason, I chose this_. It's partially why I didn't go into
 investment banking and high finance, and became a software engineer instead. I
-*knew* I cared about more than just money, so I wanted to keep my options open,
+_knew_ I cared about more than just money, so I wanted to keep my options open,
 since there are intense software engineering jobs and laid-back software
 engineering jobs.
 
@@ -181,7 +181,7 @@ I'm so grateful that $RACHEL stepped into my life. Wanting her taught me so much
 about how to become the man I wanted to become. I'd much rather keep the lessons
 (and the innate understanding over their importance, internalized through pain)
 rather be ignorant and probably realize this later on in life when there's more
-at stake. There *are* much worse fates, like those discussed in ["Regrets of the
+at stake. There _are_ much worse fates, like those discussed in ["Regrets of the
 Dying"](/five_regrets), where this would fit in as "I wish I had the courage to
 express my feelings".
 
@@ -218,7 +218,7 @@ rooted to my present-day identity.
   I could go back, I would burn down all my studies and my extracurricluars in
   high school, just to spend five minutes with her at my side. Not only because
   I ended up burning it all down anyways and switching to a completely different
-  field, but because without the "why" of studying, it kind of *is* all firewood.
+  field, but because without the "why" of studying, it kind of _is_ all firewood.
 
   I think that's why it's important to ask for what you want. If you want a
   higher salary, you should ask for it instead of being grumpy at work, or study
@@ -312,7 +312,7 @@ News](https://news.ycombinator.com/item?id=21615904):
 
 People disagreed with me, but somehow I don't think I'm wrong.
 
-__________
+---
 
 In the end, after you've taken care of your heart, you can truly figure out what
 you enjoy when your thinking side is attuned to your feeling side. That's what

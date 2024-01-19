@@ -9,21 +9,21 @@ draft: false
 
 The Year In Review:
 
--   [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
--   [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
--   [Year in Review:
-    Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
--   [Year In Review:
-    Resolutions](/posts/2020/12/31/old_years_resolutions_review)
--   [**Year In Review:
-    Sleep**](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+- [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+- [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
+- [Year in Review:
+  Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [Year In Review:
+  Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+- [**Year In Review:
+  Sleep**](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
 
-__________
+---
 
 [**GitHub repository
 (PRIVATE)**](https://github.com/yingw787/sleep-log.yingw787.com)
 
-__________
+---
 
 I've continued to track my sleep on and off the course of this year, and now I'm
 going to do a review of how my sleep patterns have shaped up. All in all, I
@@ -35,7 +35,7 @@ let the past be and worry about the future. So let's just try to understand it.
 
 ![sleeplog](/img/posts/2020/12/31/sleep-log.png)
 
-__________
+---
 
 I created the above chart by entering in times to go to bed, fall asleep, wake
 up, and get out of bed over the course of the year in a Google sheet, then
@@ -55,7 +55,7 @@ Some interesting things to note:
   From around midnight to around 2:00AM. I should hope to correct this and get
   back to around 12:00AM time-to-bed.
 
-__________
+---
 
 Update:
 

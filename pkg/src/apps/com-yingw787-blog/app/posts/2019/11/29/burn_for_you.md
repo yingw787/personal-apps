@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Burn For You\", by J.T. Geissinger"
+title: 'Book Review: "Burn For You", by J.T. Geissinger'
 date: "2019-11-29T11:18:45-05:00"
 draft: false
 ---
@@ -11,9 +11,9 @@ draft: false
 > alternate universe where a psychotic billionaire is trying to convince me to
 > enter into a sham marriage, give up five years of my life, and forego the
 > possibility of actually falling in love and sharing a future with someone.
-> Someone *who loves me for who I am*, not what I can do for him. Do you really
+> Someone _who loves me for who I am_, not what I can do for him. Do you really
 > think any amount of money could convince me to do something so -- so --
-> *wrong*?**
+> _wrong_?**
 >
 > From "Burn For You", by J.T. Geissinger (pg. 143)
 

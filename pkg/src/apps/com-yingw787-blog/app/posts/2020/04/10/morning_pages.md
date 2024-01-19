@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This kitty is judging me for coming to Morning Pages late again.
 
@@ -37,7 +37,7 @@ or to do chores and have to bump into every virus-laden thing outside. Because
 now the ground is virus.
 
 April has been really beautiful around these parts. Apparently Michigan is
-snowing and hailing for some reason, but D.C. has been *fineee*. This is almost
+snowing and hailing for some reason, but D.C. has been _fineee_. This is almost
 better than California weather. I'm not complaining about the pollen this time
 around, because my windows are sealed shut to allow the furnance to run to burn
 out my sore throat and cough, so I just get sunshine and flowers and green

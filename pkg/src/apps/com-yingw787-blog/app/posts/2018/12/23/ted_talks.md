@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"TED Talks: The Official TED Guide to Public Speaking\", by Chris Anderson"
+title: 'Book Review: "TED Talks: The Official TED Guide to Public Speaking", by Chris Anderson'
 date: "2018-12-23T22:12:14-05:00"
 draft: false
 ---
@@ -25,27 +25,27 @@ well, and it all shows in the book's quality.
 
 I got a few interesting takeaways:
 
--   **Always focus on the idea:** You can focus on presentation format, talk
-    structure, scripting and memorizing and practicing, but at the end of the
-    day, if you don't have an *idea worth sharing*, you're a talking head.
-    Audiences can forgive momentary lapses in memory, technical difficulties
-    driving your talk off course, dress codes, and other perceived slights if
-    there's a central idea, well communicated, with a definitive, widespread
-    impact.
+- **Always focus on the idea:** You can focus on presentation format, talk
+  structure, scripting and memorizing and practicing, but at the end of the
+  day, if you don't have an _idea worth sharing_, you're a talking head.
+  Audiences can forgive momentary lapses in memory, technical difficulties
+  driving your talk off course, dress codes, and other perceived slights if
+  there's a central idea, well communicated, with a definitive, widespread
+  impact.
 
--   **Knowledge can't be pushed into a brain. It has to be pulled in:** This
-    means using vernacular your audience understands to form mental building
-    blocks, rehearsing in front of test audiences resembling your audience, and
-    weaving an emotional connection between your audience and your idea (from
-    curiosity/priming, revelation/reason, etc.). Your audience has a default
-    emotional wall; you must lower it for the knowledge you wish to transfer to
-    become important and prioritized in their minds.
+- **Knowledge can't be pushed into a brain. It has to be pulled in:** This
+  means using vernacular your audience understands to form mental building
+  blocks, rehearsing in front of test audiences resembling your audience, and
+  weaving an emotional connection between your audience and your idea (from
+  curiosity/priming, revelation/reason, etc.). Your audience has a default
+  emotional wall; you must lower it for the knowledge you wish to transfer to
+  become important and prioritized in their minds.
 
--   **You will only cover as much ground as you can dive into in sufficient
-    depth to be compelling:** Bring new and different insights to the table
-    require going in depth. Bringing the talk around a single in-depth idea
-    (e.g. bacteria hunt in packs, we have a psycological immune system) gives
-    the audience a bigger reward for diving in.
+- **You will only cover as much ground as you can dive into in sufficient
+  depth to be compelling:** Bring new and different insights to the table
+  require going in depth. Bringing the talk around a single in-depth idea
+  (e.g. bacteria hunt in packs, we have a psycological immune system) gives
+  the audience a bigger reward for diving in.
 
 Public speaking is a skill rarely mastered or practiced yet richly rewarded. All
 multi-person human achievements have taken leadership and inspiration. If you

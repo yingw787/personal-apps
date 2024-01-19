@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I think today, I became addicted (or re-addicted really) to this video [on this
 BBC weatherman playing
@@ -34,9 +34,9 @@ MP3 player! That's so cool.
 
 **(End update 08/16/2020)**
 
-__________
+---
 
-It's been an...*exciting*...few days recently. I thought [George Floyd
+It's been an..._exciting_...few days recently. I thought [George Floyd
 died](https://en.wikipedia.org/wiki/Death_of_George_Floyd) last week, and I mean
 I guess I would be correct because today's Sunday, but like then I thought he
 died last, last week. Nope, just last Monday. I thought [Ahmaud's
@@ -64,7 +64,7 @@ right now. I mean seriously, I listened to my pastor's address on this matter,
 and he's great on most topics (which is why I go to his church), but this
 message seriously pissed me off.
 
-*It was so milquetoast, it was enraging.* The most aggressive thing he said was
+_It was so milquetoast, it was enraging._ The most aggressive thing he said was
 "God condemns injustice". I don't remember if he mentioned Floyd's death as
 unnecessary or cruel. Come to think of it, I don't remember if he addressed the
 peaceful protests earlier this year. Maybe I have a bad memory (I do really have
@@ -80,10 +80,10 @@ involved, and that they'll only do so if it inconveniences them and even then
 only to the extent that the inconvenience is lifted from their conscience.
 
 Well, now the gloves are off. The truth is, in any struggle for rights and
-freedoms, *there are no referees and there aren't any rules*. In fact, *it's
+freedoms, _there are no referees and there aren't any rules_. In fact, _it's
 quite dangerous to not be involved -- the less you're involved, the less power
 you have, the less you matter, and the more vulnerable you are to all factions,
-police, anarchists, doesn't matter*. So when I see [videos of innocent civilians
+police, anarchists, doesn't matter_. So when I see [videos of innocent civilians
 shot on their
 porches](https://minnesota.cbslocal.com/video/4571653-video-appears-to-show-law-enforcement-shooting-paint-rounds-at-citizens-on-their-porch/),
 or [journalists deliberately being shot at by rubber bullets, something that

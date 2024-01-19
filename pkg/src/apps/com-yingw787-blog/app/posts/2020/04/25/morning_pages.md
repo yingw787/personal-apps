@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Ahhhhhhhhh
 
 ![babies and kittens](/img/posts/2020/04/25/morning_pages.jpg)
 
-__________
+---
 
 So I went to my first virtual speed dating event yesterday! It was an
 interesting experience. If you are rejected, it's much better to be rejected in

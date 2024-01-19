@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 I'm getting kind of unnerved and unhinged at the lack of progress I'm making on
 my project. It's been two whole months since I've committed to starting, and
@@ -44,7 +44,7 @@ more or less from the other side. I just can't imagine that happening though,
 everything seems really bleak and dark somehow.
 
 Maybe I just didn't get a good night's sleep last night. Yesterday was the first
-night I slept without my phone in, well, *years*, and relied on IFTTT and my
+night I slept without my phone in, well, _years_, and relied on IFTTT and my
 Google Home in order to record my sleep log. Maybe it's the weather and how it
 keeps raining, which I should be happy about because it hopefully means less
 viruses on surfaces outside and in the air. Maybe it's because I ran out of that

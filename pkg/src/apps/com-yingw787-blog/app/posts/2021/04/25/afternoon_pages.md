@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 It's a lean-to!
 
@@ -27,14 +27,14 @@ It's a lean-to!
 
 A very furry, warm lean-to.
 
-__________
+---
 
 So I get a bunch of scam calls from India somehow, they're really annoying, and
 I really wished that I stopped getting them.
 
 ![](/img/posts/2021/04/25/afternoon_pages.png)
 
-This isn't what I meant. This is very much *not* what I meant.
+This isn't what I meant. This is very much _not_ what I meant.
 
 I think given the fractured nature of the response to COVID (still), and the
 fact that the cat is out of the bag, we'll probably need booster shots for the

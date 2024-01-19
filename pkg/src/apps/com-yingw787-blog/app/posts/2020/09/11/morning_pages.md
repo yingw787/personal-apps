@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 So I have one serious and one funny picture/video for y'all today. Here's a
 doggo working the old Ground Zero site, since today is September 11th and bad
@@ -33,7 +33,7 @@ bowl of treats for how he completed a human-grade challenge:
 <br/>
 <br/>
 
-__________
+---
 
 I think fall is really starting to kick in. I'm starting to get chills and
 sneezing all the time when I'm going to bed and I think it's because there's not

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"How To Not Die Alone: The Surprising Science That Will Help You Find Love\", by Logan Ury"
+title: 'Book Review: "How To Not Die Alone: The Surprising Science That Will Help You Find Love", by Logan Ury'
 date: "2021-12-28T20:40:38-05:00"
 draft: false
 ---

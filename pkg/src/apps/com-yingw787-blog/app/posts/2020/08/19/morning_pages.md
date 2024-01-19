@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Now who doesn't like a golden retriever?
 
 ![puppers](/img/posts/2020/08/19/morning_pages.jpg)
 
-__________
+---
 
 I think the summer fever has broken. Today has been much more chilly than I
 remember just last week being. I need to wear actual pants and a jacket if I'm

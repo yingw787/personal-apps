@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 This is me this morning:
 
@@ -26,7 +26,7 @@ This is me this morning:
 
 This is usually me pretty much every morning. LOL
 
-__________
+---
 
 Sad to say but I think now backfilling reports and journals and all the other
 stuff I usually did on a day-to-day basis is pretty much the fact of life at the

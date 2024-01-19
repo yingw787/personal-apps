@@ -30,7 +30,7 @@ The Joel Test is more than 17 years old, as I'm writing this post. I thought to 
 
 **1. Do you use source control?**
 
-If the company you're interviewing at passes zip files via email to each other with an email subject being a timestamp, or something crazy like that, *run*. Don't walk, *run*. That is not a serious company. These days, tools like `git` are commonplace and expected. You're pretty much expected to have a version control system with continuous integration (a point I will get to later), so this question is not that relevant anymore.
+If the company you're interviewing at passes zip files via email to each other with an email subject being a timestamp, or something crazy like that, _run_. Don't walk, _run_. That is not a serious company. These days, tools like `git` are commonplace and expected. You're pretty much expected to have a version control system with continuous integration (a point I will get to later), so this question is not that relevant anymore.
 
 **REMOVE**
 
@@ -66,7 +66,7 @@ The gist of this question is whether developers or somebody writes down a bug an
 
 **5. Do you fix bugs before writing new code?**
 
-This is *so* important. Literally. Without doing this, your software can't scale because you don't know if functionality is working or breaking because of new features or an existing bug. If your software can't scale, your company is fucked. Absolutely, positively make sure that this answer is a yes.
+This is _so_ important. Literally. Without doing this, your software can't scale because you don't know if functionality is working or breaking because of new features or an existing bug. If your software can't scale, your company is fucked. Absolutely, positively make sure that this answer is a yes.
 
 **LEAVE AS IS**
 
@@ -74,7 +74,7 @@ This is *so* important. Literally. Without doing this, your software can't scale
 
 **6. Do you have an up-to-date schedule?**
 
-I'm not exactly sure how schedules are made (honestly, we did a mix of waterfall and Agile before, and now we don't do either), but this question is pretty important too. Software is highly intangible, but you *can* plan out your process and you *can* make it better. I would update the text:
+I'm not exactly sure how schedules are made (honestly, we did a mix of waterfall and Agile before, and now we don't do either), but this question is pretty important too. Software is highly intangible, but you _can_ plan out your process and you _can_ make it better. I would update the text:
 
 **CHANGE TO: "How do you guys schedule new features or a new project, and how do you update your schedule over time?"**
 
@@ -106,7 +106,7 @@ This is things like using MacBook Pros vs. something you found in the garbage, o
 
 **10. Do you have testers?**
 
-So so *so* important. Software engineers should be expected to write and run unit, functional, and integration tests. But without testers (manual and otherwise), there's no feedback loop to check and improve your product's conceptual integrity.
+So so _so_ important. Software engineers should be expected to write and run unit, functional, and integration tests. But without testers (manual and otherwise), there's no feedback loop to check and improve your product's conceptual integrity.
 
 **LEAVE AS IS**
 
@@ -145,12 +145,12 @@ I would add some of my own personal favorites:
 
 1. How important is recruiting and onboarding here?
 
-Great companies make recruiting *their number one priority*. Not two, not three, but *one*. Bad software engineers will cost a company its future. Great software engineers will expand and accelerate it. It will be at least somewhat obvious during the interview process, because great companies have their own internal recruiters, practical but difficult coding problems, and engineers devoted to the task. Great companies also have a clear onboarding schedule, with prompt orientations, helpful codelabs, and friendly mentors.
+Great companies make recruiting _their number one priority_. Not two, not three, but _one_. Bad software engineers will cost a company its future. Great software engineers will expand and accelerate it. It will be at least somewhat obvious during the interview process, because great companies have their own internal recruiters, practical but difficult coding problems, and engineers devoted to the task. Great companies also have a clear onboarding schedule, with prompt orientations, helpful codelabs, and friendly mentors.
 
 2. What coding standards do you follow?
 
 Great companies will use linting, such as ESLint for JavaScript and PyLint for Python, and make them as strict as possible in order to have the most consistent code. Great companies will also have a clear code review process where checks not caught by tests or linting will be caught by other developers before changes are merged into wherever they need to go.
 
-___
+---
 
-These are just suggestions, but strongly recommended ones. A good company *will* score 11 or 12 on the Joel Test. A bad company may score as low as 3. Knowing what to look for in a company may save you years of pain.
+These are just suggestions, but strongly recommended ones. A good company _will_ score 11 or 12 on the Joel Test. A bad company may score as low as 3. Knowing what to look for in a company may save you years of pain.

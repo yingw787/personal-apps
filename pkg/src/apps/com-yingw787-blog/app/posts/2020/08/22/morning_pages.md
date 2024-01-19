@@ -14,14 +14,14 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I wish there was a party parrot like the one in Slack, but I don't think the
 GitHub flavored Markdown supports it, so here's a parrot:
 
 :parrot:
 
-and a *true* party parrot:
+and a _true_ party parrot:
 
 <!-- https://stackoverflow.com/a/26276254 -->
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
@@ -31,7 +31,7 @@ and a *true* party parrot:
 <br/>
 <br/>
 
-__________
+---
 
 I'm not quite sure what TV show I'll watch next, or when I'll start watching it,
 or whether I really want to keep watching TV. I think when I asked for
@@ -39,7 +39,7 @@ recommendations for shows, he brought up Brooklyn Nine-Nine, 30 Rock, and Veep.
 That's a lot of airtime, airtime that I might spend better going outside or
 reading books or doing other stuff. I do think it's a good fallback in case I
 get sucked down a YouTube binge though. A TV show binge is finite; a YouTube
-binge is eternal. It's nice to know that I'm not *too* attached to any one TV
+binge is eternal. It's nice to know that I'm not _too_ attached to any one TV
 show, and that I enjoy watching it and that it's something I'm learned to look
 forward to at the end of the day. Now that I have that in my back pocket, I
 should probably look for other things to do with my time. Like stretching, I

@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone\", by Satya Nadella"
+title: 'Book Review: "Hit Refresh: The Quest to Rediscover Microsoft''s Soul and Imagine a Better Future for Everyone", by Satya Nadella'
 date: "2017-11-18T13:41:39-05:00"
 draft: false
 ---
@@ -17,7 +17,7 @@ draft: false
 >
 > From "Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone" (HarperCollins, 2017, Page 7), by Satya Nadella
 
-Satya Nadella, Microsoft's third CEO, had an interesting problem when taking on the job: *"Now what?"* He had this problem because Microsoft's mission as defined by Bill Gates and Paul Allen was to place a computer in every household, which was a pipe dream back when Microsoft was founded in 1975, and Microsoft and others pretty much fulfilled that mission by the time Satya became CEO in 2014. His book, "Hit Refresh", gives readers insight into his desire to evolve Microsoft into a humbler, more empathic company.
+Satya Nadella, Microsoft's third CEO, had an interesting problem when taking on the job: _"Now what?"_ He had this problem because Microsoft's mission as defined by Bill Gates and Paul Allen was to place a computer in every household, which was a pipe dream back when Microsoft was founded in 1975, and Microsoft and others pretty much fulfilled that mission by the time Satya became CEO in 2014. His book, "Hit Refresh", gives readers insight into his desire to evolve Microsoft into a humbler, more empathic company.
 
 Satya introduces this desire early on in his book, talking about his first interactions with empathy at Microsoft while interviewing with Richard Tait, and discussing in depth his son Zain, who suffered from utero asphyxiation and resultant cerebral palsy and needs constant care. By doing so, Satya conveys that empathy isn't just a professional trait, but a highly personal one as well.
 

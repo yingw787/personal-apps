@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 So um. Yeah. I did not get much sleep yesterday.
 
@@ -31,9 +31,9 @@ help out lil bro DC. I'm pretty happy I pay my VA state taxes.
 
 O.O But also we need statehood for D.C. O.O
 
-***STATEHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOODDDDDDDDDDDDDDDDDDDDDD***
+**_STATEHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOODDDDDDDDDDDDDDDDDDDDDD_**
 
-__________
+---
 
 So I slept a bit later than I would have liked because news addiction
 (apparently alot of the rioters were staying at hotels in Arlington, so maybe a

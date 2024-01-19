@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Stealthy!
 
@@ -22,7 +22,7 @@ Stealthy!
 
 Hidden kitten mittens. I like the way that sounds and I like the way that reads.
 
-__________
+---
 
 I think it's the Fourth of July this weekend. Apparently it's a long weekend for
 most people. I don't think I'm doing anything personally, only special thing

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look at this baby non-conformist!
 
@@ -21,7 +21,7 @@ Look at this baby non-conformist!
 
 Gotta start them early if you want them to break the mold.
 
-__________
+---
 
 I have to say, Linux support for battery / CPU / memory management out of the
 box could use some improvement. I'm at 11 GB of RAM used up just by running
@@ -29,7 +29,7 @@ Firefox. This is crazy! I'm really glad I got my RAM when I did. Now I just have
 to listen to my annoying fan.
 
 I went to go get some voter registration papers in the city because I have no
-printer, and to put it mildly, everything's just *mildly* apocalyptic. Every
+printer, and to put it mildly, everything's just _mildly_ apocalyptic. Every
 restaurant is saying how they deliver here, I didn't know Verizon had steel
 shutters in one of the wealthiest hoods in the region, and the government
 building is almost deserted and only populated by homeless people (who were very
@@ -43,7 +43,7 @@ in a [post office that might not exist by
 October](https://www.cbsnews.com/news/united-states-postal-service-post-office-money-october-coronavirus-pandemic/),
 for a [Congress that might also not exist by
 November](https://www.cbsnews.com/news/trump-threatens-to-adjourn-congress-it-would-be-unprecedented/).
-For all those who think "no it can't happen", remember, *it's just a flu* :wink:
+For all those who think "no it can't happen", remember, _it's just a flu_ :wink:
 
 If I had to describe why I would do this, I guess it's because I see this as my
 job. I became a citizen, didn't just get it, so I see this as just another item

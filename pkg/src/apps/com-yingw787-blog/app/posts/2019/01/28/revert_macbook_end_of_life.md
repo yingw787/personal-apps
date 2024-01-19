@@ -14,11 +14,11 @@ after a week, got so sick of it I returned it today.
 I got a completely specced-out Dell Precision 5530. It had all the bells and
 whistles:
 
--   CPU: i9-8950HK
--   OS: Ubuntu Linux 18.04 (modified Dell OEM version)
--   GPU: NVIDIA Quadro P2000 w/ 4GB GDDR5
--   Memory: 32GB DDR4-2666MHz
--   Disk: 256GB NVMe PCIe Class 40 SSD + Additional 2TB HDD
+- CPU: i9-8950HK
+- OS: Ubuntu Linux 18.04 (modified Dell OEM version)
+- GPU: NVIDIA Quadro P2000 w/ 4GB GDDR5
+- Memory: 32GB DDR4-2666MHz
+- Disk: 256GB NVMe PCIe Class 40 SSD + Additional 2TB HDD
 
 All in this gorgeous package:
 
@@ -28,7 +28,7 @@ AMAZING, right?
 
 Kind of. But in the end, not enough.
 
-__________
+---
 
 So I purchased this computer after a great deal of hesitation. The price was the
 primary consideration for me, and the lack of "actual" failures in my current
@@ -37,8 +37,8 @@ uninstall my NVIDIA drivers in my desktop due to a faulty apt upgrade and my GUI
 went into a login loop that didn't stop until I uninstalled said drivers in
 recovery mode and reverted to [nouveau](https://nouveau.freedesktop.org/wiki/).
 
-So I'm thinking, *"I have all this stuff and it isn't enough? Why am I
-purchasing this?"*
+So I'm thinking, _"I have all this stuff and it isn't enough? Why am I
+purchasing this?"_
 
 Then the Dell Small Business discount dropped off by 5% and I begged the Dell
 customer representative if he could restore the discount. He did and I purchased
@@ -72,7 +72,7 @@ extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gph
 and [gnome-chrome-shell](https://github.com/GNOME/chrome-gnome-shell). This
 meant I could use the [Dash to Dock
 extension](https://extensions.gnome.org/extension/307/dash-to-dock/), and with
-that Linux resembled macOS but in a *way* better way.
+that Linux resembled macOS but in a _way_ better way.
 
 ![ooh2](/img/posts/2019/01/28/revert_macbook_end_of_life_2.jpg)
 
@@ -118,7 +118,7 @@ paying more or out the nose will result in a better experience.
 TL;DR the new laptop is just not relevant to me. It also sucks more than my
 current computer.
 
-__________
+---
 
 When I returned it, I was afraid of spilling coffee or something on my old
 computer immediately afterwards and ruining it. I guess my brain just doesn't
@@ -130,7 +130,7 @@ eBay or something (hey, maybe USB-C will actually be a thing, and dongles will
 not be). Ideally I will become good enough at Linux and lightweight distros to
 get something like an [IBM ThinkPad
 T20](https://en.wikipedia.org/wiki/IBM_ThinkPad_T20_series), which in part of my
-mind is what *real* software engineers use (like Linus Torvalds, who apparently
+mind is what _real_ software engineers use (like Linus Torvalds, who apparently
 compiles Linux on a 2GB notebook).
 
 I'm terrified that the golden age of laptops has already ended, and with Apple's

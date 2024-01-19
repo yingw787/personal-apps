@@ -13,7 +13,7 @@ A short while after that, I see another colleague using something similar, and w
 
 So I tried to install `fish` and `zsh` on my machine. It failed. I have a bunch of `bash` scripts that I run on startup, and those break because :tada: they're not POSIX-compliant! This isn't just my system, it's also for a bunch of helper scripts that I wrote for our repositories as well. So I went ahead and tried to find out how to avoid this.
 
-___
+---
 
 So apparently, there's this thing called POSIX. I Googled it and found this [Stack Overflow post](https://stackoverflow.com/questions/1780599/i-never-really-understood-what-is-posix) which describes in detail what POSIX is. It's an API. Of course it's an API. As far as I can tell, it's meant to increase interoperability between different types of \*nix systems, like Linux and macOS. That's why when you go to the shell in both of these systems, it looks super familiar. That's also why Windows, which is not POSIX-compliant at all, looks so freaking alien.
 

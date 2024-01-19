@@ -30,7 +30,7 @@ established. There were a number of issues with doing things this way:
 about [frustration management](/posts/2019/11/18/frustration_management), but
 the app keeps crashing and losing my data, and doesn't handle backend migrations
 very well at all (e.g. some habits just get disconnected and don't work).
-Lately, they also implemented a *very* significant and disorienting UI change,
+Lately, they also implemented a _very_ significant and disorienting UI change,
 which (IMHO) significantly decreased UX likability.
 
 I can't handle this bullshit, especially for something as critical-path to my
@@ -64,13 +64,13 @@ into the [TinyDevCRM](https://tinydevcrm.com) project I'm building early next
 year.
 
 **<span style="color:red">Minimize the amount of time I regret spending (DOES
-NOT MEET EXPECTATIONS)</span>**: I regretted spending probably the *vast*
+NOT MEET EXPECTATIONS)</span>**: I regretted spending probably the _vast_
 majority of time this year. It **SUCKED**.
 
 Things improved now that I decided to take a breather from career stuff (my
 problems are now solely my fault, hooray!!), but it's not certain that this
 wouldn't happen in the future when I return to the labor force. I need to do
-*something* in order to pace myself, because life truly is a marathon and not a
+_something_ in order to pace myself, because life truly is a marathon and not a
 sprint.
 
 **The "hard" resolutions**:
@@ -78,7 +78,7 @@ sprint.
 **<span style="color:green">Go on a date, tackling the fear of emotional
 rejection (MEETS EXPECTATIONS)</span>**: I actually went on 5 dates this year
 with three different people, in a 1 / 1 / 3 split. First date was pretty kooky.
-I took her to a *really* fancy French restaurant (where I was also kind of
+I took her to a _really_ fancy French restaurant (where I was also kind of
 rewarding myself for having gone on a date at all), and went off the rails
 sideways. I learned that first dates generally shouldn't be done at fancy French
 restaurants. Second date was at a bubble tea shop. Third date at a very nice
@@ -99,8 +99,8 @@ Sunday, didn't practice, and missed going. So. That was fun.
 
 Honestly, I don't know how much direct correlation there is between running half
 marathons and becoming less fat. I think a better approach to this is to
-exercise in smaller amounts, *consistently*, and to eat healthy food
-*consistently*. If that gets me 80% of the way there I think I would make that
+exercise in smaller amounts, _consistently_, and to eat healthy food
+_consistently_. If that gets me 80% of the way there I think I would make that
 tradeoff. Ultimately though, it has to be something I enjoy doing.
 
 **<span style="color:orange">Become really good at making dumplings, and make a

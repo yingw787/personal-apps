@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This rabbit is a tad more responsible than I am:
 
@@ -25,14 +25,14 @@ This rabbit is a tad more responsible than I am:
 <br/>
 <br/>
 
-__________
+---
 
 This weekend was pretty depressing. I was pretty sure the police or the military
 would begin using live rounds on protesters, and [I think there were plans to do
 so](https://www.cbsnews.com/news/trump-demanded-10000-active-duty-troops-deploy-to-streets-in-heated-oval-office-meeting/),
 but apparently the military refused to play along. So I guess [like the start of
 the Syrian Civil
-War](https://en.wikipedia.org/wiki/Timeline_of_the_Syrian_Civil_War_(January%E2%80%93April_2011)),
+War](<https://en.wikipedia.org/wiki/Timeline_of_the_Syrian_Civil_War_(January%E2%80%93April_2011)>),
 the President will be forced to fly in loyalist mercenaries like
 [Wagner](https://en.wikipedia.org/wiki/Wagner_Group) or
 [Blackwater](https://en.wikipedia.org/wiki/Academi), if he wants to start his
@@ -51,7 +51,7 @@ haven't even hit the second (and most likely third) waves of the pandemic yet.
 Not to mention the previous civil war trope the President keeps pushing for.
 Plenty of opportunity for chaos to rear its head.
 
-During this time, I would *really* like to remain functional in my own personal
+During this time, I would _really_ like to remain functional in my own personal
 duties and responsibilities. I mean, the whole point of me working by myself is
 so that during difficult times, I would be able to keep the lights on over my
 head, instead of trusting and relying on others to do so for me. I am failing in

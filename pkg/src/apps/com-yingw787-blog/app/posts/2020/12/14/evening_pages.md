@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Hmm, something new!
 
@@ -22,7 +22,7 @@ Hmm, something new!
 
 Bouncy little man.
 
-__________
+---
 
 So my investment in $LAZR is not doing so hot. Went up to $1500 gain, didn't
 sell. Went down to $750 loss, still not selling. I think I'm gonna wait until I

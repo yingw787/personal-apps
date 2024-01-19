@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Kitty is discovering his feetsies!
 
@@ -25,7 +25,7 @@ Kitty is discovering his feetsies!
 <br/>
 <br/>
 
-__________
+---
 
 Ohhhhhh my God. I haven't done any moving, or cleaning, all weekend. I think
 it's because I was sick yesterday with something and didn't get a whole lot of

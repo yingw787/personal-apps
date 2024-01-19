@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I thought this was a kitten stealing a sock.
 
@@ -27,7 +27,7 @@ I thought this was a kitten stealing a sock.
 
 I was wrong. This is a puppy stealing a sock. A very cute and fluffy puppy.
 
-__________
+---
 
 It is very cold outside these past few days. I don't think I've gone outside all
 that much. Apparently, there's ice, icy rain, and snow supposedly all this week.

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Dog snuggling puppy.
 
@@ -27,7 +27,7 @@ Dog snuggling puppy.
 
 That's some PTSD in those eyes right there. Probably lack of sleep.
 
-__________
+---
 
 I biked over to the writer's salon with full equipment and met up with people
 for the first time since the pandemic began! Hugely irresponsible, but I felt

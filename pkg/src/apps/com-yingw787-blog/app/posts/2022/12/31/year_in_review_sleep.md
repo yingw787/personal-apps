@@ -14,7 +14,7 @@ The Year In Review:
 - [Year In Review: Resolutions](/posts/2022/12/31/year_in_review_resolutions)
 - [**Year In Review: Sleep**](/posts/2022/12/31/year_in_review_sleep)
 
-__________
+---
 
 So I haven't really been using my sleep log either! It's pretty intensive and I
 haven't set up the IFTTT to Google Sheets connector yet, it just goes into email
@@ -24,7 +24,7 @@ Script](https://github.com/JKybett/GoogleFitBit), but I'm at the point where if
 I get the information I want, I'm okay with not looking to optimize further (and
 if it's not actually optimal, okay with starting over).
 
-__________
+---
 
 So what does FitBit say?
 
@@ -104,7 +104,7 @@ your long-term sleep.
 
 Me: **7% (no ideal range given)**
 
-__________
+---
 
 Overall, I think I'm okay with how much sleep I'm getting. I could go to bed
 earlier and be a morning riser, but at this point in my life I might be more of

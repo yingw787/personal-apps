@@ -15,17 +15,17 @@ You know that guy from the first "That Happened" post? He completely shattered t
 
 Apparently, we had a problem with users entering in weak passwords, and we needed some password validation. This guy was tasked to work on that. Most people write a couple rules, or use a `npm` package, or at worst use an Ajax call to a CDN somewhere to verify their password. Not this guy.
 
-Nope, this guy *checked in the entire English dictionary* in order to ensure that the password wasn't just an English word. Really. I'm not making this up. Here's the statistics on contributions in our main repository (he's currently #1):
+Nope, this guy _checked in the entire English dictionary_ in order to ensure that the password wasn't just an English word. Really. I'm not making this up. Here's the statistics on contributions in our main repository (he's currently #1):
 
 ![Really.](/img/posts/2017/10/15/that_happened_part_2_1.png)
 
-*1.9 million additions. 1.4 million deletions. In 50 commits.* I think he added and removed that dictionary (represented as a .txt file) several times as he was fine-tuning which words he wanted to keep or remove. It also includes a bunch of random number sequences (like `1234`) that are considered not secure passwords.
+_1.9 million additions. 1.4 million deletions. In 50 commits._ I think he added and removed that dictionary (represented as a .txt file) several times as he was fine-tuning which words he wanted to keep or remove. It also includes a bunch of random number sequences (like `1234`) that are considered not secure passwords.
 
 By contrast, #2 I believe checked in a copy of jQuery, but he was a raw college grad with no professional software engineering experience who explicitly made it clear to upper management that his code was a prototype and was not ready to see production. #1 has, ostensibly, ten years of experience in professional software development.
 
 His justification for this code was that if GitHub went down, the password validation would continue to work. Little does he know that we don't deploy on production from a GitHub server, so it doesn't matter at all for production if GitHub is down or not. He probably also doesn't know that we have an effective SLA of one-nine reliability, so even if we used GitHub or a third-party service for some reason, they'll probably be up more than we are.
 
-And you know what? I bet he isn't checking if said English words aren't *substrings within the password* either. And that some English words, such as "Euclidean" for example, might not be terribly bad passwords, while some not-English character sequences, such as "qwerty", might be pretty bad passwords. And that if we wanted to internationalize our codebase (which is impossible already) and follow this precedent, we would need to add a dictionary *for every language we wanted to support*. And that every time the user updates the state of the password he or she wants to use during user registration, that updated password state has to be evaluated *against the entire .txt file all over again*.
+And you know what? I bet he isn't checking if said English words aren't _substrings within the password_ either. And that some English words, such as "Euclidean" for example, might not be terribly bad passwords, while some not-English character sequences, such as "qwerty", might be pretty bad passwords. And that if we wanted to internationalize our codebase (which is impossible already) and follow this precedent, we would need to add a dictionary _for every language we wanted to support_. And that every time the user updates the state of the password he or she wants to use during user registration, that updated password state has to be evaluated _against the entire .txt file all over again_.
 
 It's okay though. Just use the largest EC2 instance AWS provides and users won't notice the latency. /s
 

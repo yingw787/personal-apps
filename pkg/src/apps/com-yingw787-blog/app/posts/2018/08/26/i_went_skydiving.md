@@ -46,7 +46,7 @@ thought that was a good enough reason to do something. Since it was 2 hours
 away, and I didn't know what my schedule would be like after going there, I
 decided to book a rental car from Enterprise too.
 
-__________
+---
 
 # My Day
 
@@ -60,7 +60,7 @@ before, I could go whenever I want.
 I was wrong. Around 10:45AM or so I eventually make it over to the rental car
 store, where Nick at the front desk says that not only did I lose my reservation
 because I came over an hour and a half late and they didn't have a car waiting
-for me, they were swamped with customers and they didn't have *any* car for me.
+for me, they were swamped with customers and they didn't have _any_ car for me.
 It was okay, though. After another hour or so, and after a great deal of extra
 effort on the part of Enterprise's staff, they got a bunch of cars from another
 branch and I made my way to the garage. I found myself staring at a Hyundai
@@ -86,7 +86,7 @@ down towards the dropzone. That in itself was amazing. I don't think I've seen
 parachuters in real life before.
 
 I asked for directions from a nice lady and I walked into the hangar. It was
-*packed*. There had to have been at several hundred skydivers there. There was a
+_packed_. There had to have been at several hundred skydivers there. There was a
 Twin Otter, a larger cargo plane of some sort, and a helicopter, just non-stop
 ferrying people to the air and coming back down. I discovered that the [Big O
 Boogie 2018](http://www.skydiveorange.com/event/big-o-boogie-2/) was going on,
@@ -132,7 +132,7 @@ walking around with injuries). Dan said since it was mostly competitive
 skydiving, people do stupid tricks and sometimes twist their ankles or
 something, but nothing major.
 
-__________
+---
 
 # The Jump
 
@@ -148,7 +148,7 @@ plane's maintainers.
 
 There's two gray carpet benches along the inside of the plane, as well as some
 empty space. The door remaining open while we were taxiing, and I asked Dan
-whether there *was* a door. Sure enough, there was, made out of plexiglas, and
+whether there _was_ a door. Sure enough, there was, made out of plexiglas, and
 the skydivers pulled it down right before we took off.
 
 Taking off is very much like taking off in a commercial jet. Except you only
@@ -162,7 +162,7 @@ on chunks of farmland.
 There were puffs of cloud around and I asked Dan whether he preferred diving
 with clouds or without clouds. He said it depends on whether you want to see the
 furthest, in which case no clouds is best, or whether you want to dive through
-the clouds and experience the *whoosh*. Clouds look different when you are
+the clouds and experience the _whoosh_. Clouds look different when you are
 flying through it, as they all blend together into one layer. That we flew over.
 
 I checked my altimeter. 5,000 feet. 10,000 feet. 14,000 feet. I had the analog
@@ -175,7 +175,7 @@ tongues out, made a hand gesture of some sort, and jumped out.
 
 I was gauging my fear the entire ride up. Right when I stumped over to the door,
 feet between Dan's feet, I did a mental check. I asked somebody out last week.
-She said no. This was ***much*** less stressful.
+She said no. This was **_much_** less stressful.
 
 Maybe I got over my fear. Maybe I don't care for my own life anymore. Maybe
 since I was strapped in I was thinking that if anything happened at this
@@ -186,8 +186,8 @@ hardest thing I've done in my life. That might be telling friends I had
 depression, or doing my lead climb certification and falling 80 feet from a rock
 ledge.
 
-That was the jump. Then came turning around and seeing the plane leave me. "*Oh
-God the plane is leaving*". Then I remembered my training and arched my hips
+That was the jump. Then came turning around and seeing the plane leave me. "_Oh
+God the plane is leaving_". Then I remembered my training and arched my hips
 back and dug my feet into Dan's ass, as he said. Kind of, I didn't do it very
 well. My senses were overwhelmed, you had air rushing past your head and through
 your ears, your brain is firing signals to tell you how stupid a person you are
@@ -207,8 +207,8 @@ airport right below us. You couldn't get that view in a glider or from a
 skyscraper. You could only get it jumping out of an airplane.
 
 I asked Dan to do a spin. I pulled both my arms up and pulled down on the side I
-wanted to spin towards. I pulled down on my left. ***OH MY GOD THAT WAS
-TERRIFYING***. The most terrifying part of the entire trip. It was like if you
+wanted to spin towards. I pulled down on my left. **_OH MY GOD THAT WAS
+TERRIFYING_**. The most terrifying part of the entire trip. It was like if you
 were skiing down one of those dual black diamond slopes, but even steeper. My
 stomach came into my mouth.
 
@@ -238,7 +238,7 @@ just me. The burger was nice.
 I drove home and got back around 9, whereupon I promptly ate the rest of my
 bananas and bread, filed away habits in my habit app, and went to bed.
 
-__________
+---
 
 All in all, the experience was amazing. If I had to do it again, I think I would
 tweak some things about my adventure:

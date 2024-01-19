@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The 48 Laws of Power\", by Robert Greene"
+title: 'Book Review: "The 48 Laws of Power", by Robert Greene'
 date: "2017-12-29T20:45:30-05:00"
 draft: false
 ---

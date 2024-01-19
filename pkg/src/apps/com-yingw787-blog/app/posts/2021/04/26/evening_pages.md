@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Oh look, it's a hoodie!
 
@@ -21,7 +21,7 @@ Oh look, it's a hoodie!
 
 A hoodie made out of your own skin. How convenient.
 
-__________
+---
 
 Today was uneventful. I did manage to chat with a friend until the early hours
 of the morning, which meant that I was less rested today than on a comparable

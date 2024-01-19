@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Difficult Conversations: How to Discuss What Matters\", by Douglas Stone, Bruce Patton, and Sheila Heen"
+title: 'Book Review: "Difficult Conversations: How to Discuss What Matters", by Douglas Stone, Bruce Patton, and Sheila Heen'
 date: "2019-12-28T00:03:45-05:00"
 draft: false
 ---

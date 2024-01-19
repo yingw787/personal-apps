@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Puppies!
 
@@ -27,7 +27,7 @@ Puppies!
 
 Puppieeeeeeee
 
-__________
+---
 
 I think now I'm in the food-binge phase of the pandemic. Like I can't think of
 anything else except food. Which is weird, because I have food at home, and I'm

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"The Crown\" Season 1, by Peter Morgan"
+title: 'TV Show Review: "The Crown" Season 1, by Peter Morgan'
 date: "2021-04-18T20:32:02-04:00"
 draft: false
 ---
@@ -23,7 +23,7 @@ playing a distinct second fiddle, and Churchill's eventful (but not as eventful)
 second term as prime minister all revolve around the Queen and getting her ready
 to stand by herself.
 
-It's hard to believe, but the British Empire's greatest extent happened *after*
+It's hard to believe, but the British Empire's greatest extent happened _after_
 World War I. So all of decolonization (besides successful breakaway states like
 the U.S.) happened pretty much during the 20th century, which is basically half
 ruled by the Queen (and this Queen specifically). So it's kind of interesting to

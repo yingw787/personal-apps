@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Bill of Rights, with Writings that formed its Foundation\", by Applewood Books"
+title: 'Book Review: "The Bill of Rights, with Writings that formed its Foundation", by Applewood Books'
 date: "2021-02-06T08:52:43-05:00"
 draft: false
 ---

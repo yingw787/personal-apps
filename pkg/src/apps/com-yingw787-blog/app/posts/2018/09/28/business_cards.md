@@ -30,7 +30,7 @@ synchronous methods of communication willy-nilly.
 
 I tried to think of something witty to say as my personal statement. I settled
 on "I Do Things, Sometimes". I think this accurately captures what I do. It's
-not precise, but it *is* accurate.
+not precise, but it _is_ accurate.
 
 Pricing for business cards is kind of messed up. For \$7.99, you can get 100;
 for \$8.99, you get 200, and for \$9.99, you get 500. Economies of scale and all

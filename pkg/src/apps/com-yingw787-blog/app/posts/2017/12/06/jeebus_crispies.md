@@ -11,7 +11,7 @@ Yesterday was my one-year anniversary with the company I work at. [English Dicti
 
 ![lol](/img/posts/2017/12/04/lol_2.png)
 
-I included an example in my blog of [how to respond to a pull request](/posts/2017/11/18/pull_requests). I would say this is an example of how *not* to respond to a pull request. Same dealio, different person.
+I included an example in my blog of [how to respond to a pull request](/posts/2017/11/18/pull_requests). I would say this is an example of how _not_ to respond to a pull request. Same dealio, different person.
 
 According to management, it's just as bad to not recommend an outdated PEP8 standard (hard-wrapping 80 characters per line) as to send the above as a direct message. So I will be in a meeting tomorrow.
 

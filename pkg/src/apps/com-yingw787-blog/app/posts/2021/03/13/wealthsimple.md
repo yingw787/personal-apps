@@ -12,11 +12,11 @@ lately. After taking all my money from [Marcus by Goldman
 Sachs](/posts/2021/02/24/marcus_update/) and running all the way back to Schwab,
 I get this gem of an email from WealthSimple:
 
->  We are reaching out today to provide you with an important update regarding
->  your Wealthsimple investment accounts. We would like to inform you that after
->  careful consideration, we have made the decision to no longer provide
->  investment advisory services in the US and will be transferring all existing
->  accounts to Betterment over the coming months.
+> We are reaching out today to provide you with an important update regarding
+> your Wealthsimple investment accounts. We would like to inform you that after
+> careful consideration, we have made the decision to no longer provide
+> investment advisory services in the US and will be transferring all existing
+> accounts to Betterment over the coming months.
 
 ![wtf](/img/posts/2021/03/13/wtf.gif)
 

@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 Look baby! Here's a baby!
 
@@ -26,7 +26,7 @@ Look baby! Here's a baby!
 
 This is how it starts :heart:
 
-_______
+---
 
 So today I woke up super early for whatever reason. It might have something to
 do with the half gallon of concentrated brewed tea I drank yesterday afternoon.

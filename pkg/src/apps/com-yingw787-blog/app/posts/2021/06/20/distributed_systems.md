@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services\", by Brendan Burns"
+title: 'Book Review: "Designing Distributed Systems: Patterns and Paradigms for Scalable, Reliable Services", by Brendan Burns'
 date: "2021-06-20T20:43:27-04:00"
 draft: false
 ---

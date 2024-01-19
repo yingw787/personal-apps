@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Leaders Eat Last: Why Some Teams Pull Together and Others Don't\", by Simon Sinek"
+title: 'Book Review: "Leaders Eat Last: Why Some Teams Pull Together and Others Don''t", by Simon Sinek'
 date: "2021-12-26T18:53:13-05:00"
 draft: false
 ---
@@ -29,7 +29,8 @@ fundamentally solid terms.
 
 It's also relevant since the data engineering team at my company has scaled from
 just me to myself + mid-level FTE + junior-level FTE + manager + product manager
-+ 5 software contractors, and I'm the only senior IC among them. We also have
+
+- 5 software contractors, and I'm the only senior IC among them. We also have
   plans to create an engineering division for data by end of next year. Scaling
   a team and a division isn't something I've done before, and so I think it's
   pertintent to read books on effective leadership.

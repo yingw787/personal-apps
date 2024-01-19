@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 <!-- https://stackoverflow.com/a/26276254 -->
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
@@ -23,7 +23,7 @@ __________
 <br/>
 <br/>
 
-__________
+---
 
 Man! The first time writing here in a while! It's a month or so since my last
 evening pages (and since then most blog posts have been backfilled and not

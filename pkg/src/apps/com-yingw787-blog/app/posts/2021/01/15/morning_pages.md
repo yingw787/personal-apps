@@ -13,18 +13,18 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 No cute picture today.
 
-__________
+---
 
 There's 21,000 troops in Washington D.C. for the inauguration and the entire
 city is locked down with military and police requesting I.Ds in order to get in
 and out of the city. And I'm sitting here wondering whether 21,000 troops are
-enough. My thought process being, *I want 50,000 troops because if 20,000 troops
+enough. My thought process being, _I want 50,000 troops because if 20,000 troops
 defect then there's another 30,000 troops to secure the capital against
-defectors and far-right extremists*. But maybe that's just my paranoid side, if
+defectors and far-right extremists_. But maybe that's just my paranoid side, if
 you take the Capitol mob from last week (I think around 4-5k people) and the
 current security presence here, there's a 4:1 advantage for the defense, which
 should be good because you should really have a 3:1 advantage for the side that

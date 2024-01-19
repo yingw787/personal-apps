@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Hooray-oomph-ray!
 
 ![hooray](/img/posts/2020/08/15/morning_pages.jpg)
 
-__________
+---
 
 I slept really late last night; usually I go to sleep around 1AM or so (which is
 already really late when I wake up for work), but last night I slept around

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Reason I Jump\", by Naoki Higashida"
+title: 'Book Review: "The Reason I Jump", by Naoki Higashida'
 date: "2021-01-24T17:03:19-05:00"
 draft: false
 ---

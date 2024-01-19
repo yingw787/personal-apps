@@ -24,7 +24,7 @@ enough to nuke D.C. and not expect a response with an incoming administration.
 If it happens though, I should be well within the blast radius so hopefully
 that'll be a quick death. So meh. Celebration time!
 
-__________
+---
 
 I think today I was reminded of "Wildflowers" by Tom Petty, the song played when
 Ann Perkins left Pawnee, Indiana in "Parks and Rec".

@@ -6,6 +6,7 @@ title: "Common pitfalls in software development (that I've encountered)"
 date: "2017-06-07T23:13:48-04:00"
 draft: false
 ---
+
 I've just finished reading "The Pragmatic Programmer" by Andy Hunt and Dave Thomas, and it's probably the best book on software development that I've read so far. Maybe I prefer language-agnostic software development books. Maybe I like the examples. Maybe I just like the prose. Regardless, I think this is a keeper and one I'll be flipping through every so often.
 
 This sparked some thinking into what things it doesn't recommend that I've seen in production code.
@@ -20,7 +21,7 @@ This sparked some thinking into what things it doesn't recommend that I've seen 
 
 - **Having your models automatically saving to your db**
 
-  This is a tricky one to figure out at first, but *only a method that calls an object constructor should save the object to the database*. One time, I needed to build out a full object in order to create tests against that object. However, calling some methods on that object caused the object to be saved to the database. I don't think those tests were fully built out.
+  This is a tricky one to figure out at first, but _only a method that calls an object constructor should save the object to the database_. One time, I needed to build out a full object in order to create tests against that object. However, calling some methods on that object caused the object to be saved to the database. I don't think those tests were fully built out.
 
   Having explicit saves also means that you can have more scalable backends, as the backend server itself does not store or mutate state.
 

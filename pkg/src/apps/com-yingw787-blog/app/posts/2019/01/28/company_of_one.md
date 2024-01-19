@@ -2,18 +2,18 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Company of One\", by Paul Jarvis"
+title: 'Book Review: "Company of One", by Paul Jarvis'
 date: "2019-01-28T20:33:52-05:00"
 draft: false
 ---
 
->   **The temple construction company had survived countless political crises,
->   two atomic detonations, and even a period when the Japanese government set
->   out to eradicate Buddhism from Japan completely. But ironically, what they
->   couldn't survive was the cost of rapid growth. Their downfall was putting
->   growth above stability and profit.**
+> **The temple construction company had survived countless political crises,
+> two atomic detonations, and even a period when the Japanese government set
+> out to eradicate Buddhism from Japan completely. But ironically, what they
+> couldn't survive was the cost of rapid growth. Their downfall was putting
+> growth above stability and profit.**
 >
->   - Paul Jarvis, describing the company Kongō Gumi and its acquisition in 2006
+> - Paul Jarvis, describing the company Kongō Gumi and its acquisition in 2006
 
 It really shouldn't be an argument that focusing on profit and sustainability
 should be more important than growth for a company -- and yet here we are. Paul

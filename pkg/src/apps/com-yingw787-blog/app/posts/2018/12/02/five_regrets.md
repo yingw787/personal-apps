@@ -14,7 +14,7 @@ I think if there's one dominant feeling I have for this year, it's regret. I
 thought I would do so much more than I actually did. It's not necessarily what I
 wanted to do anymore, like when I was younger. It's that the quality of time I'm
 spending throughout the day doesn't meet my expectations. I'm spending way, way,
-*way* too much time doing things I don't enjoy, and not only does that cost me
+_way_ too much time doing things I don't enjoy, and not only does that cost me
 the time to do things I would actually enjoy, it eats into my heart and prevents
 me from enjoying things that I otherwise normally would.
 

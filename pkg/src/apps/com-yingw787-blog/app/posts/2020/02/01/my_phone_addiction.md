@@ -26,7 +26,7 @@ get an iPhone 7 because he wanted an iPhone 7 and the family plan was cheaper.
 
 <br/>
 
-Yes. You read that right. The teenager / college guy *who's a Luddite*.
+Yes. You read that right. The teenager / college guy _who's a Luddite_.
 
 <br/>
 
@@ -34,7 +34,7 @@ One thing led to another, and now I'm pretty addicted to my iPhone. It's bad.
 According to the [Screen Time](https://support.apple.com/en-us/HT208982) feature
 Apple helpfully releases in order to help you control certain compulsive
 behaviors, Last week (Sunday, January 26th to Saturday, February 1st), I spent
-an average of *6 hours and 12 minutes* using my iPhone *every day*. That's in
+an average of _6 hours and 12 minutes_ using my iPhone _every day_. That's in
 addition to time I spent on my laptop. On the weekends, I can spend something
 like 9 to 12 hours on my phone.
 
@@ -56,11 +56,11 @@ Safe"](https://www.thekitchensafe.com/). It's a stout plastic box with a timer
 and an electronic locking mechanism with no recourse, for $60. Wowza! I went
 ahead and purchased one.
 
-__________
+---
 
 The first time I used it was today. I locked my phone up for 12 hours.
 
-I *felt* that withdrawal syndrome. I couldn't do anything, especially after I
+I _felt_ that withdrawal syndrome. I couldn't do anything, especially after I
 activated all the blockers on my laptop and couldn't access anything fun. I
 pretty much just stayed in bed all day being miserable.
 
@@ -69,7 +69,7 @@ survive without my phone. It's ridiculous to think that I couldn't.
 
 Then I realized I had a commitment at 6PM. My phone was locked up until 10:30PM.
 
-__________
+---
 
 Okay, so.
 
@@ -95,7 +95,7 @@ Yeah, it rained so my notepad got wet and rumply. Also apparently Home Depot
 only takes CFLs and DeWalt-style integrated batteries for e-recycling, so I
 still need to recycle my e-waste.
 
-__________
+---
 
 I think I'll continue to use my Kitchen Safe. I really like how the withdrawal
 syndrome proved to me that I had a problem. Next time though, I might set it for

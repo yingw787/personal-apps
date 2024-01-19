@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"When Breath Becomes Air\", by Paul Kalanithi"
+title: 'Book Review: "When Breath Becomes Air", by Paul Kalanithi'
 date: "2021-01-16T01:40:56-05:00"
 draft: false
 ---

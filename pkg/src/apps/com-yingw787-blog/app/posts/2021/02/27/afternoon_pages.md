@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hah, catto is drowning in chimken.
 
@@ -28,7 +28,7 @@ Hah, catto is drowning in chimken.
 You know if I keep this babytalk up I won't actually know what the names for
 certain things are anymore.
 
-__________
+---
 
 This week went by as a blur. I'm not quite sure why but time seemed to move
 faster. I think it might be because of all the meetings I'm in, and the level of

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hey hey a Disney princess!
 
@@ -22,7 +22,7 @@ Hey hey a Disney princess!
 I think these pictures give me (an old-timer) some real happiness. Maybe I will
 get to pet a deer in the wild sometime and not get West Nile or something.
 
-__________
+---
 
 You know, I didn't actually feel it early on, but now I am feeling the workload
 at work increase some. It's probably because we're exponentially growing, and

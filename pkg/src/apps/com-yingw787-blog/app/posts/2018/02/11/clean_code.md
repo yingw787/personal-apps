@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Clean Code: A Handbook of Agile Software Craftsmanship\", by Robert C. Martin"
+title: 'Book Review: "Clean Code: A Handbook of Agile Software Craftsmanship", by Robert C. Martin'
 date: "2018-02-11T16:17:25-05:00"
 draft: false
 ---

@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book review: \"All the Light We Cannot See\", by Anthony Doerr"
+title: 'Book review: "All the Light We Cannot See", by Anthony Doerr'
 date: "2017-09-15T22:54:50-04:00"
 draft: false
 ---
@@ -37,12 +37,10 @@ The little boy rushes to save the guy with the radio transmitter, and the little
 
 The girl takes the diamond her father gave her and tosses it in the sea, because it already made her blind and who needs that shit in their life, and lives a life at the natural history museum. Eventually, a mother and son stop by to see her; it's the little boy's sister, and she gives her some of the little girl's stuff. They embrace.
 
-
-********
+---
 
 This story didn't strike me as a particularly happy story, but one rather reflective of the nature of war, pain, and beauty. It takes one incident, which only takes a day during a war where days kind of mix together, and speaks of the lives of all the people involved, their pasts, and their futures. Like a Gordian knot, their fates are horribly tied together, as if the Norns of old suffered some kind of stroke and messed up. The only way to untie it is to cut some threads, and while some live, many others die.
 
-********
+---
 
-
-This review is completely unedited and is in all probability quite horrible. I aim to write 1000 words per week, gain efforts to find people to review my posts, and improve in an effort to better my writing skills (necessary for good communications as a software engineer, a possible future manager, and a human being). At the moment, getting *a* review out on time is the priority.
+This review is completely unedited and is in all probability quite horrible. I aim to write 1000 words per week, gain efforts to find people to review my posts, and improve in an effort to better my writing skills (necessary for good communications as a software engineer, a possible future manager, and a human being). At the moment, getting _a_ review out on time is the priority.

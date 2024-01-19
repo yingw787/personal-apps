@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"How to be a Friend\", by Marcus Tullius Cicero"
+title: 'Book Review: "How to be a Friend", by Marcus Tullius Cicero'
 date: "2020-01-05T22:59:32-05:00"
 draft: false
 ---

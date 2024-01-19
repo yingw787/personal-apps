@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Constitution of the United States of America\", by Applewood Books"
+title: 'Book Review: "The Constitution of the United States of America", by Applewood Books'
 date: "2021-02-06T08:52:25-05:00"
 draft: false
 ---

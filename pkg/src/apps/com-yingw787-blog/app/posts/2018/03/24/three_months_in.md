@@ -21,7 +21,7 @@ So, what's happened this year?
 
 - I bought a lifetime subscription to [Plex](https://www.plex.tv/), and a 3-year subscription to [NordVPN](https://nordvpn.com/). After I set up automated indexing of movies, I'll be able to build a NAS, sync movies, and watch them on any device I have.
 
-- My old company is on the verge of collapse. I've been getting drinks (bubble tea) with my old coworkers, and I am *so* glad I got out when I did. This is close to the third exodus, and every time twice the number of people have left (2, 4, 8). I think this will be the last exodus, though. There's nobody left to leave. Very entertaining to hear, though.
+- My old company is on the verge of collapse. I've been getting drinks (bubble tea) with my old coworkers, and I am _so_ glad I got out when I did. This is close to the third exodus, and every time twice the number of people have left (2, 4, 8). I think this will be the last exodus, though. There's nobody left to leave. Very entertaining to hear, though.
 
 So what hasn't happened this year?
 

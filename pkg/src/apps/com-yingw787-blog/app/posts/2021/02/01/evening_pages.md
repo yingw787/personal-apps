@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Apparently these are the first polar bear cubs born at the Detroit Zoo since
 2004! That was...17 years ago...
@@ -28,7 +28,7 @@ Apparently these are the first polar bear cubs born at the Detroit Zoo since
 
 Oh God I'm old. Also these bears are really cute.
 
-__________
+---
 
 I need to stop working on this and start working on my presentation for
 property-based testing on Thursday. LOL

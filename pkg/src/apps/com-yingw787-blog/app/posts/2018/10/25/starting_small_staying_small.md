@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Start Small, Stay Small: A Developer's Guide to Launching a Startup\", by Rob Walling"
+title: 'Book Review: "Start Small, Stay Small: A Developer''s Guide to Launching a Startup", by Rob Walling'
 date: "2018-10-25T08:20:32-04:00"
 draft: false
 ---
@@ -13,7 +13,7 @@ person I've found to be anywhere as helpful might be Gary Bernhardt and his
 [Destroy All Software](https://www.destroyallsoftware.com/screencasts) set of
 screencasts.
 
-The striking thing about this book is just how much it does *not* focus on
+The striking thing about this book is just how much it does _not_ focus on
 computer software. As the book is focused towards software engineers who wish to
 be entrepreneurs, it assumes you know software and want to learn about the other
 aspects of starting a company, such as the importance of product management and

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I don't think I can add a picture of a baby burrito, without adding a picture of
 a purrito. It'd just be unfair.
@@ -39,7 +39,7 @@ They're not actually shaking their booties, they're simulating rain so that
 earthworms can pop out of the ground, so they can eat. But you gotta admit, they
 have style.
 
-__________
+---
 
 This weekend was alright. I watched "The Office" until about the middle of
 Season 2, and it's been great so far. Also got a good deal of writing hours in

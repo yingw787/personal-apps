@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Wherever You Go, There You Are\", by Jon Kabat-Zinn"
+title: 'Book Review: "Wherever You Go, There You Are", by Jon Kabat-Zinn'
 date: "2018-01-20T20:01:28-05:00"
 draft: false
 ---

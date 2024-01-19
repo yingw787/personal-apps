@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hey look the roles are reversed!
 
@@ -27,7 +27,7 @@ Hey look the roles are reversed!
 
 Also such a patient pupper.
 
-__________
+---
 
 So this is a funny snippet from the acquittal of our beloved POTUS45. One U.S.
 senator from his party voted to convict him and his state party is not happy.
@@ -39,7 +39,7 @@ article](https://www.nytimes.com/2021/02/17/opinion/trump-mconnell-republicans.h
 Wanted to make sure that I for one think not convicting people who have commited
 crimes because they're popular is not a good idea. But we'll see in four years.
 
-__________
+---
 
 I'm taking three days off of work. I think it'll be useful in order to have that
 time to pack up my things + index them, clean the apartment + repair any damage,

@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Hmm, I do cute animal videos a lot of the time, maybe it's nice to do some cute
 human videos.
@@ -44,7 +44,7 @@ your own discretion):
 Kinda wanted to jot down the videos before I forgot, but both videos made me
 smile/laugh.
 
-__________
+---
 
 I committed to doing a technical presentation due in less than a week, so...I
 should work on that at some point. It's 2 hours long, so it'll be a lott of

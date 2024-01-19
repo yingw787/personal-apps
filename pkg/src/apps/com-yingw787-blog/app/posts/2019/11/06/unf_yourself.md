@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Unfuck Yourself\", by Gary John Bishop"
+title: 'Book Review: "Unfuck Yourself", by Gary John Bishop'
 date: "2019-11-06T22:44:36-05:00"
 draft: false
 ---

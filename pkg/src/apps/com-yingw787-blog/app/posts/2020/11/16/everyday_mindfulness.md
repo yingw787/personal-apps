@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Everyday Mindfulness: 108 Simple Practices to Empower Yourself and Transform Your Life\", by Melissa Steginus"
+title: 'Book Review: "Everyday Mindfulness: 108 Simple Practices to Empower Yourself and Transform Your Life", by Melissa Steginus'
 date: "2020-11-16T21:04:32-05:00"
 draft: false
 ---
@@ -13,7 +13,7 @@ generously reached out and shipped a copy to me. You can get a copy of the book
 by TCK Publishing [here](https://www.tckpublishing.com/). You can find more
 works by Melisssa Steginus [here](https://melissasteginus.com/).
 
-__________
+---
 
 I mostly skimmed through this book, but Melissa's work reminded me heavily of
 ["Be Happy"](/posts/2017/12/17/be_happy), where the author lists out a bunch of

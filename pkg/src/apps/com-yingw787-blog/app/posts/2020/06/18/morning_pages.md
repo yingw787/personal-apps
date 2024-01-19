@@ -13,16 +13,16 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 He's standing up!
 
 ![standing](/img/posts/2020/06/18/morning_pages.jpg)
 
-__________
+---
 
 Oh man, it's been a full week since I've gone to morning writes. Last week was
-pretty crazy. I started running out of food near the end, *ish* not really, but
+pretty crazy. I started running out of food near the end, _ish_ not really, but
 I had to eat the same stuff over and over again and even doing that cratered my
 productivity and I'm only just now getting over it.
 

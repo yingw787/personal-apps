@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Ah, to be as carefree as this baby again:
 
@@ -21,7 +21,7 @@ Ah, to be as carefree as this baby again:
 
 That would be nice.
 
-__________
+---
 
 I think today would be the second quarter of this year, and I should be thinking
 of a new topic to write about for my writer's group. I have one thing I want to

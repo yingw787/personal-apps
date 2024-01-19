@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Catto is tired.
 
@@ -27,7 +27,7 @@ Catto is tired.
 
 Or maybe catto is just full from eating dinner. I'm not sure.
 
-__________
+---
 
 I think 25,000 troops is the number going into the inauguration. And honestly
 it's probably enough. Either it's enough or it's not enough, and we'll find out

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hehe. Wiggling cats.
 
@@ -27,7 +27,7 @@ Hehe. Wiggling cats.
 
 Hehe. Hehehe.
 
-__________
+---
 
 So yesterday was not a fun day at all. I think for whatever reason I was so
 exhausted I couldn't work. Work computer also started to just shutdown for

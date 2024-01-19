@@ -15,7 +15,7 @@ The overarching goal for the teams competing was to come up with a solution to b
 
 The hackathon itself was well appointed, very different than the university hackathons that I attended in college. We were based out of the [National Union Building](https://www.nationalunionbuilding.com/); there was Secret Service next door for an event at the Marriott because important people were probably there. We got actual food instead of just pizza. Turns out, if you're an actual company and you need to come up with some game-changing ideas or get self-motivated hires or what have you, a hackathon counts as a relatively cheap affair.
 
-In the end, we were able to come up with an API, and both a V1 and V2 frontend. I did most of the work, because as it turned out, the data was *fake* and *random*. There were 17-year-olds who spent \$4000 per month, and Panda Express transactions that were \$300. It's okay; at the office, Yuan and Dwipam do all the important work, and I do everything else.
+In the end, we were able to come up with an API, and both a V1 and V2 frontend. I did most of the work, because as it turned out, the data was _fake_ and _random_. There were 17-year-olds who spent \$4000 per month, and Panda Express transactions that were \$300. It's okay; at the office, Yuan and Dwipam do all the important work, and I do everything else.
 
 The API can be found live [here](api-capital-one-yingw787-1.herokuapp.com). I used primarily Flask, `flask_restful`, and PyMongo, and designed the API to be as stateless as possible. As it turns out, it's difficult to have a completely stateless backend if you are using NoSQL. REST endpoints in particular don't map nicely to documents, and some finagling needs to take place in order for you to not return the whole document. Either that or I'm not using the right queries; right now I'm only using `find($QUERY)`.
 
@@ -69,9 +69,9 @@ Just to prove I'm not lying and it actually worked:
 
 ![API 2](/img/posts/2017/11/07/capital_one_hackathon_2.png)
 
-___
+---
 
-The first front-end can be found live [here](https://app-capital-one-yingw787-1.herokuapp.com/). It's built primarily using `create-react-app`. There's a fake auth panel that actually appends the account ID and customer ID (defaulted to the first ones) to a query string, which is pulled off the next page and sent to the backend through `axios` and delivered as a promise. I used promises because I'm familiar with them and because updating state with promises is *really* easy in React (once you get the hang of it). I followed [this folder structure](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed) in order to scale my project. The big thing here was that I forgot Bootstrap. Very big deal in a hackathon. Hey, I hadn't written any front-end code for a few months, I'm a bit rusty.
+The first front-end can be found live [here](https://app-capital-one-yingw787-1.herokuapp.com/). It's built primarily using `create-react-app`. There's a fake auth panel that actually appends the account ID and customer ID (defaulted to the first ones) to a query string, which is pulled off the next page and sent to the backend through `axios` and delivered as a promise. I used promises because I'm familiar with them and because updating state with promises is _really_ easy in React (once you get the hang of it). I followed [this folder structure](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed) in order to scale my project. The big thing here was that I forgot Bootstrap. Very big deal in a hackathon. Hey, I hadn't written any front-end code for a few months, I'm a bit rusty.
 
 It doesn't do much, pretty much just confirms that my API is hittable. I was like "I need something better than this to show at demo time". So I went ahead and tried to build out another front-end, because thin clients are cheap and you should throw one away (especially if it's crap).
 
@@ -83,7 +83,7 @@ It doesn't do much, pretty much just confirms that my API is hittable. I was lik
 
 Use Bootstrap. Please.
 
-___
+---
 
 There's this company called [Creative Tim](https://www.creative-tim.com/) that gives away free UI templates. There's this dashboard template I found on there that was pretty good, so I decided to download it and boot it up. It worked like a charm. Then I ripped out everything that was irrelevant and pasted in some hardcoded data. Because it's a hackathon. This was the result:
 
@@ -104,7 +104,8 @@ as a bonus, it's also mobile-friendly:
 ![APP2 5](/img/posts/2017/11/07/capital_one_hackathon_10.png)
 
 This site is live [here](app-capital-one-yingw787-2.herokuapp.com).
-___
+
+---
 
 This post would not be complete without some open source repositories, so here you go:
 
@@ -114,6 +115,6 @@ V1 APP: https://gitlab.com/yingw787/capital-one-hackathon-frontend-1
 
 V2 APP: https://gitlab.com/yingw787/capital-one-hackathon-frontend-2
 
-___
+---
 
 So, there you have it. I'll write up a post-mortem and debriefing we did as a team in a separate post.

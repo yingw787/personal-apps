@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Declaration of Independence, with Short Biographies of its Signers\", by Applewood Books"
+title: 'Book Review: "The Declaration of Independence, with Short Biographies of its Signers", by Applewood Books'
 date: "2021-01-24T17:31:05-05:00"
 draft: false
 ---
@@ -20,7 +20,7 @@ still apply today. That's just the nature of power.
 For example, look at this curated subset of complaints in the Declaration
 compared to modern events:
 
-__________
+---
 
 > **He has refused his Assent to Laws, the most wholesome and necessary for the
 > public good.**
@@ -34,7 +34,7 @@ __________
 > billions of dollars for a border wall with Mexico. They did agree to a new
 > round of weekend talks between staff members and White House officials."
 
-__________
+---
 
 > **He has abdicated Government here, by declaring us out of his Protection and
 > waging War against us.**
@@ -49,7 +49,7 @@ __________
 > Democratic states, that they could blame those governors, and that would be an
 > effective political strategy,” said the expert."
 
-__________
+---
 
 > **He has plundered our seas, ravaged our Coasts, burnet our towns, and
 > destroyed the lives of our people.**
@@ -61,7 +61,8 @@ __________
 > since 1967. Two weeks earlier, before closures of businesses swept across vast
 > swaths of the country, the number stood at 211,000, close to a half-century
 > low."
-__________
+
+---
 
 > **He has excited domestic insurrections amongst us, and has endeavoured to
 > bring on the inhabitants of our frontiers, the merciless Indian Savages, whose
@@ -77,7 +78,7 @@ __________
 > democracy and keep Democrat Joe Biden from replacing Trump in the White
 > House."
 
-__________
+---
 
 At least for me, this is pretty bad, like being under two concurrent curfews
 during a pandemic, a coup, and a possible government shutdown all at the same

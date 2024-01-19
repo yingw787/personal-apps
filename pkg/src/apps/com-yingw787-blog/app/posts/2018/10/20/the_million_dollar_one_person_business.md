@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Million-Dollar One-Person Business\", by Elaine Pofeldt"
+title: 'Book Review: "The Million-Dollar One-Person Business", by Elaine Pofeldt'
 date: "2018-10-20T00:35:41-04:00"
 draft: false
 ---

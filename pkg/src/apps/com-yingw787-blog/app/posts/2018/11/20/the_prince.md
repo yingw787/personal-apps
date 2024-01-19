@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Prince\", by Niccolo Machiavelli"
+title: 'Book Review: "The Prince", by Niccolo Machiavelli'
 date: "2018-11-20T08:20:32-04:00"
 draft: false
 ---

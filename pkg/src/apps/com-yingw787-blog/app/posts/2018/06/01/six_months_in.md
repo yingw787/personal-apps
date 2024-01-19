@@ -7,7 +7,7 @@ date: "2018-06-01T22:50:00-04:00"
 draft: false
 ---
 
-I *definitely* cannot believe that that it's June. It feels like I just started
+I _definitely_ cannot believe that that it's June. It feels like I just started
 my current job and I'm still afraid of pollen.
 
 I like these quarterly updates. It definitely makes sure I get grounded to a
@@ -23,7 +23,7 @@ What's cooking?
 - My project at work chugs along. There are fits and starts here and there
   because I've been iterating my process and trying to get it right. I've gotten
   most of the kinks out, I think, and very soon I can start on that hockey stick
-  development curve that makes a project *go*. Refactoring will be a pain, but
+  development curve that makes a project _go_. Refactoring will be a pain, but
   after implementing the initial feature set that will make it "complete", I
   should have time to focus on making it truly great. Ideally, I'll be able to
   open source it (or publish it on GitHub, since it already ships with an MIT
@@ -72,8 +72,8 @@ What hasn't happened this year?
 - ...that date I promised myself I'll go on. Now I'm a bit concerned. Like alarm
   bells concerned. I'm not afraid of talking to girls, and I don't think I have
   enough shame or fear of rejection left to ask people out on dates (out of
-  general self-apathy and desperation), but I just don't put myself out *there*,
-  wherever *there* is. Dating apps are not for me. I need to trust and be
+  general self-apathy and desperation), but I just don't put myself out _there_,
+  wherever _there_ is. Dating apps are not for me. I need to trust and be
   comfortable around other people now before I allow myself even the modicum of
   romance. We'll see where this goes. I don't have a roadmap.
 
@@ -95,7 +95,7 @@ What hasn't happened this year?
   been underneath. Maybe I should try out Toastmasters or something.
 
 - I still haven't learned ukelele. It's probably gone out of tune. Again. The
-  fiscal conservative in me is going absolutely nuts. Why the *hell* did I buy a
+  fiscal conservative in me is going absolutely nuts. Why the _hell_ did I buy a
   ukelele if it's just going to sit there?! I need to add this to Productive,
   and get a stand for it instead of having it pile on my desk.
 

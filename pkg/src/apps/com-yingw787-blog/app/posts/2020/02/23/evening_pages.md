@@ -14,9 +14,9 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
-Today's been quite the productive day. I managed to work out one *extremely*
+Today's been quite the productive day. I managed to work out one _extremely_
 tricky bug that I finally figured out after like two weeks, I published [a blog
 post on wanting](/posts/2020/03/23/wanted), and I reviewed [Sococo, a
 collaborative virtual office](https://www.sococo.com/), for organizing an event.
@@ -32,8 +32,8 @@ during the next recession".
 
 Turns out, this stock is doing just fine. As of tonight, \$ZM closed around
 \$159.56, with a market cap of \$44.1B and a (pretty high) P/E ratio of
-1,865.54. No doubt, the price will continue rising, because *literally the
-entire world* runs on Zoom now, and I'm guessing a whole bunch of companies will
+1,865.54. No doubt, the price will continue rising, because _literally the
+entire world_ runs on Zoom now, and I'm guessing a whole bunch of companies will
 be locked into its platform. Andddd it's too expensive for me to purchase
 because I'm on sabbatical and have no income. So hooray for my awesome decision
 making skills. Then again, this is probably one of the lesser expected
@@ -41,7 +41,7 @@ recessionary event out there; the whole thing happened in a matter of weeks with
 no forewarning from any economic indicators. People had to shut down because
 otherwise they'll die.
 
-I'm kind of pissed off that [U.S. Senator Kelly Loeffler purchased *Citrix*
+I'm kind of pissed off that [U.S. Senator Kelly Loeffler purchased _Citrix_
 stock after getting the senators-only coronavirus
 briefing](https://www.thedailybeast.com/sen-kelly-loeffler-dumped-millions-in-stock-after-coronavirus-briefing).
 I'm like really? Citrix?? I would have immediately bought more Zoom stock. And

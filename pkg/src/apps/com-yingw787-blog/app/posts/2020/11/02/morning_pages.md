@@ -10,24 +10,26 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 Ahhhhhh puppies sleeping together!
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/posts/2020/11/02/morning_pages.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
 So adorable! Wish everybody could be like this. Reminds me of preschool naptime.
 
-__________
+---
 
 Hmm, trying to think about anything else to talk about besides the election or
 the upcoming civil war. My time management practices are pretty bad. I have the

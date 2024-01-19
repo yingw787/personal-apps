@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 I created a writing sample and shared it with a friend, and the question arose
 as to how to protect certain routes from premature viewing. I took a look at

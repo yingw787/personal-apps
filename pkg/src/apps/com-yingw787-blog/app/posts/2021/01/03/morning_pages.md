@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Such a happy catto!
 
 ![happay](/img/posts/2021/01/03/morning_pages.jpg)
 
-__________
+---
 
 Crazy to think that this is the first morning pages of the year. I would reallly
 like to get a "I survived 2020" T-shirt, I think they're on sale right now. But

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I have so many cute pictures and videos, I've been stockpiling them for this
 day. Alright here we go.
@@ -52,7 +52,7 @@ And a pupper and a butterfly!
 
 Aren't these the best gems you've seen all week?
 
-__________
+---
 
 Not sure if I've mentioned this anywhere, but I keep copying and pasting
 `https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic`. Now that redirects

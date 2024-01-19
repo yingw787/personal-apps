@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"In the Shadows of the Net: Breaking Free of Compulsive Online Sexual Behavior\", by Carnes, Delmonico, Griffin et. al."
+title: 'Book Review: "In the Shadows of the Net: Breaking Free of Compulsive Online Sexual Behavior", by Carnes, Delmonico, Griffin et. al.'
 date: "2020-08-18T12:15:19-04:00"
 draft: false
 ---

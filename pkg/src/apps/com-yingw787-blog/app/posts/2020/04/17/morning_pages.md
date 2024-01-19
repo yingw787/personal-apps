@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I don't know what this little guy wants, but whatever it is, I'll give it to
 him:
@@ -25,7 +25,7 @@ yesterday. I can deploy a PostgreSQL instance to Amazon Web Services, in a
 container, onto an AWS EC2 instance, with a persistent bind-mounted EBS volume,
 with EC2 autoscaling groups and rolling deployments. Yeah I could have worked
 through the tutorial AWS published on this topic in a day or two, but after
-reading through *Docker on AWS* I have a much stronger grasp of the topic and
+reading through _Docker on AWS_ I have a much stronger grasp of the topic and
 why it's important. I also have agency in automating deploying everything by
 myself now, too. I'm pretty happy with this result.
 

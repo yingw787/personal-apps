@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I remember reading once that happiness is butterflies. Apparently a 3 year old
 or something said that. Wiser than me.
@@ -33,7 +33,7 @@ Also not sure whether Reddit is now only providing 240p video for export or
 something, but video quality seems to have declined. Man if they keep this up I
 might have to go somewhere else to find my cute animal pictures and videos.
 
-__________
+---
 
 I don't think anything was as grueling as doing all that manual data entry over
 this past long weekend. It was long in hours spent and long in hours perceived.

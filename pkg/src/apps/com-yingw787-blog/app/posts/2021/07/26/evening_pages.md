@@ -12,18 +12,18 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is back
 on...sigh...but the Morning Poppins group is still going strong! So here's some
 of my brief thoughts.
 
-__________
+---
 
 No cute animal pictures today!
 
-__________
+---
 
 I've been on a purchasing spree this past week or so, since my mental health day
 that I took last Wednesday. What did I purchase. Oh yes. I got a new knife and
 honing steel, a new helmet, a new pair of running shoes, and I think that's it
 in terms of splurges.
 
-It was *expensive*. Was it worth it...? I think so. Let's take a look at some of
+It was _expensive_. Was it worth it...? I think so. Let's take a look at some of
 the equipment upgrades I got.
 
 First, my helmet. I actually ran into a tree with my bike helmet last last
@@ -54,7 +54,7 @@ around \$170. You can kind of see the difference:
 
 ![knifes](/img/posts/2021/07/26/evening_pages_3.jpg)
 
-When you cut with it, you can *definitely* feel the difference. The new knife
+When you cut with it, you can _definitely_ feel the difference. The new knife
 glides. It's pretty crazy. I had walked into Crate and Barrel wanting to get a
 cheap chef's knife, you know, like a starter knife. But if I'm going to use one
 knife for the next ten years...like I feel like I'm going to do...then I might

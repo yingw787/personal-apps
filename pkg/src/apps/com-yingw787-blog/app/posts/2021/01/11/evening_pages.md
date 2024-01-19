@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 The most adorable video I've seen all year.
 
@@ -25,7 +25,7 @@ The most adorable video I've seen all year.
 <br/>
 <br/>
 
-__________
+---
 
 I think this weekend was a good amount of decompressing and processing from the
 week before. It was a lot. Gonna be fine enough just for the attacks on the 17th

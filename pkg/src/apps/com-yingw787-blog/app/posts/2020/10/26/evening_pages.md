@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I wonder if cats ever get tired of a move-y toy like this head scratcher.
 
@@ -28,7 +28,7 @@ I wonder if cats ever get tired of a move-y toy like this head scratcher.
 
 I wouldn't, if I was a cat.
 
-__________
+---
 
 Oh my God I exercised today and found out I can't get through seven minutes of
 exercise without running out of breath. I think I've been out of shape before,

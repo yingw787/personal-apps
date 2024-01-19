@@ -23,7 +23,7 @@ It was a very quiet lunch.
 
 That was eons ago, back in 2019.
 
-__________
+---
 
 I think I've mentioned some of my racial experiences on this blog before, but I
 don't think I've ever really forcefully spoken out for things like "murder is
@@ -56,7 +56,7 @@ My fantasy is if I do get sent off to the camps, whatever camps they may be,
 I'll have the time to sell my apartment and all my belongings to one of my
 friends (who is white and female) for $420.69. Just go out on a meme, you know.
 
-__________
+---
 
 I'm actually a bit torn in terms of being discriminated against. On one hand, I
 do think it helps to look other minorities in the face. After watching innocent
@@ -68,7 +68,7 @@ of the American experience.
 On the other hand, I really hope I don't get beaten over the head with a
 baseball bat. That would suck.
 
-__________
+---
 
 Now that it's starting to happen to people with my eye shape and skin color, I
 feel like it's time to not sit it out. It was always a farcical belief that

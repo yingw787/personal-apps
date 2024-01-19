@@ -28,263 +28,263 @@ today.
 
 Here's what I learned about how to best make use of conference time:
 
--   **You absolutely don't have to go to everything listed on the schedule**: I
-    came on the first day believing that I could just go to a tutorial. Turns
-    out they're \$150 a pop, and require pre-registration, and they were all
-    sold out. I was terrified that I would have wasted an entire day just
-    milling about on the convention floor and doing nothing.
+- **You absolutely don't have to go to everything listed on the schedule**: I
+  came on the first day believing that I could just go to a tutorial. Turns
+  out they're \$150 a pop, and require pre-registration, and they were all
+  sold out. I was terrified that I would have wasted an entire day just
+  milling about on the convention floor and doing nothing.
 
-    I needn't have worried. I randomly walked up to [Curtis
-    Maloney](https://github.com/funkybob), and we just started talking about
-    random things; he was demonstrating a toy [compression
-    algorithm](https://en.wikipedia.org/wiki/Lossless_compression) he was
-    building, and the principles behind [arithmetic
-    coding](https://en.wikipedia.org/wiki/Arithmetic_coding). I also got to meet
-    [Amber Brown](https://github.com/hawkowl), as well as [Russell
-    Keith-Magee](https://github.com/freakboy3742). The Python language summit
-    was also this first day, and many of the core CPython developers were there
-    to discuss the future of the language. Guido van Rossum himself stopped by
-    and we got a picture:
+  I needn't have worried. I randomly walked up to [Curtis
+  Maloney](https://github.com/funkybob), and we just started talking about
+  random things; he was demonstrating a toy [compression
+  algorithm](https://en.wikipedia.org/wiki/Lossless_compression) he was
+  building, and the principles behind [arithmetic
+  coding](https://en.wikipedia.org/wiki/Arithmetic_coding). I also got to meet
+  [Amber Brown](https://github.com/hawkowl), as well as [Russell
+  Keith-Magee](https://github.com/freakboy3742). The Python language summit
+  was also this first day, and many of the core CPython developers were there
+  to discuss the future of the language. Guido van Rossum himself stopped by
+  and we got a picture:
 
-    ![picwithguido](/img/posts/2019/05/11/my_first_pycon.jpg)
+  ![picwithguido](/img/posts/2019/05/11/my_first_pycon.jpg)
 
-    I also got to meet [Toshio Kuratomi](https://github.com/abadger), as well as
-    [Barry Warsaw](https://github.com/warsaw); together, we got dinner with the
-    Instagram/Facebook team at PyCon, including [Carl
-    Meyer](https://github.com/carljm) and [Jennifer
-    Taylor](https://github.com/dragonminded), where I got to be a fly on the
-    wall for a *very* interesting discussion about Python at scale. This was all
-    completely random! And everybody's super nice!
+  I also got to meet [Toshio Kuratomi](https://github.com/abadger), as well as
+  [Barry Warsaw](https://github.com/warsaw); together, we got dinner with the
+  Instagram/Facebook team at PyCon, including [Carl
+  Meyer](https://github.com/carljm) and [Jennifer
+  Taylor](https://github.com/dragonminded), where I got to be a fly on the
+  wall for a _very_ interesting discussion about Python at scale. This was all
+  completely random! And everybody's super nice!
 
-    I should also say that the conference talks are published on YouTube
-    (materials and documentation are released on a speaker-by-speaker basis);
-    for example, this year's talks are published
-    [here](https://www.youtube.com/channel/UCxs2IIVXaEHHA4BtTiWZ2mQ). This
-    definitely impacted what I chose to do during the conference by making it
-    less painful to not attend a particular talk and look for other things at
-    the conference.
+  I should also say that the conference talks are published on YouTube
+  (materials and documentation are released on a speaker-by-speaker basis);
+  for example, this year's talks are published
+  [here](https://www.youtube.com/channel/UCxs2IIVXaEHHA4BtTiWZ2mQ). This
+  definitely impacted what I chose to do during the conference by making it
+  less painful to not attend a particular talk and look for other things at
+  the conference.
 
--   **Definitely check out the various Open Spaces hosted during the body of the
-    conference**: This ties into my previous point of not planning out
-    everything prior to the conference. Open Spaces are decided by people who
-    just show up at the conference, and schedules are filled out with pen on
-    index card. Many times, these are run by speakers who want to do discussions
-    on their talks in small groups, or talks by speakers who didn't get a slot
-    this time around for one reason or another, or just FOSS project leaders
-    giving status reports. I went to three and a half open spaces; one on
-    CPython profiling and performance by [Itamar
-    Turner-Trauring](https://github.com/itamarst), one on the Python
-    [**`cryptography`**](https://cryptography.io/en/latest/) by [Alex
-    Gaynor](https://github.com/alex) and [Paul
-    Kehrer](https://github.com/reaperhulk), one on [the Recurse
-    Center](https://www.recurse.com/) by [Allison
-    Kaptur](https://github.com/akaptur) and [Elizabeth
-    Sander](https://github.com/elsander) et al., and the tail end of one on
-    Python at Netflix by [Matthew Seal](https://github.com/MSeal).
+- **Definitely check out the various Open Spaces hosted during the body of the
+  conference**: This ties into my previous point of not planning out
+  everything prior to the conference. Open Spaces are decided by people who
+  just show up at the conference, and schedules are filled out with pen on
+  index card. Many times, these are run by speakers who want to do discussions
+  on their talks in small groups, or talks by speakers who didn't get a slot
+  this time around for one reason or another, or just FOSS project leaders
+  giving status reports. I went to three and a half open spaces; one on
+  CPython profiling and performance by [Itamar
+  Turner-Trauring](https://github.com/itamarst), one on the Python
+  [**`cryptography`**](https://cryptography.io/en/latest/) by [Alex
+  Gaynor](https://github.com/alex) and [Paul
+  Kehrer](https://github.com/reaperhulk), one on [the Recurse
+  Center](https://www.recurse.com/) by [Allison
+  Kaptur](https://github.com/akaptur) and [Elizabeth
+  Sander](https://github.com/elsander) et al., and the tail end of one on
+  Python at Netflix by [Matthew Seal](https://github.com/MSeal).
 
--   **Volunteer!** I was session chair for three sessions; my job was to hold up
-    signs indicating time for the speaker and to moderate Q&A sessions if
-    necessary. It was nice to give back to the conference. It was also a good
-    way to meet the speakers and have something to talk about in a follow-up
-    email. PyCon offers many different ways in order to volunteer, so there
-    should be something for everybody.
+- **Volunteer!** I was session chair for three sessions; my job was to hold up
+  signs indicating time for the speaker and to moderate Q&A sessions if
+  necessary. It was nice to give back to the conference. It was also a good
+  way to meet the speakers and have something to talk about in a follow-up
+  email. PyCon offers many different ways in order to volunteer, so there
+  should be something for everybody.
 
--   **Go to talks by speaker, not topic**: Good speakers can make a *meh* topic
-    extremely interesting. Mediocre speakers can make a good topic very *meh*. I
-    missed a talk on API evolution by [A. Jesse Jiryu
-    Davis](https://github.com/ajdavis) to listen to another talk at the same
-    time. It did not go the way I thought it would; it was the only time during
-    the conference I saw people streaming out the door in the middle of the
-    talk.
+- **Go to talks by speaker, not topic**: Good speakers can make a _meh_ topic
+  extremely interesting. Mediocre speakers can make a good topic very _meh_. I
+  missed a talk on API evolution by [A. Jesse Jiryu
+  Davis](https://github.com/ajdavis) to listen to another talk at the same
+  time. It did not go the way I thought it would; it was the only time during
+  the conference I saw people streaming out the door in the middle of the
+  talk.
 
-    On the other hand, some talks are filled, with people banging on the doors
-    to get in. [Raymond Hettinger](https://github.com/raymondh) gave a talk on
-    [solvers in Python](https://us.pycon.org/2019/schedule/presentation/149/). I
-    was walking with a guy to the room. He went to the bathroom. I walked into
-    the room. It was packed, people were beginning to line up against the walls.
-    The session chairs and runners were telling people to leave; due to
-    liability reasons PyCon couldn't have more people in the room than the fire
-    code specified. Some people waved to indicate an open seat. I went there and
-    sat down. *Damn*, I thought. *That dude's still in the bathroom*.
+  On the other hand, some talks are filled, with people banging on the doors
+  to get in. [Raymond Hettinger](https://github.com/raymondh) gave a talk on
+  [solvers in Python](https://us.pycon.org/2019/schedule/presentation/149/). I
+  was walking with a guy to the room. He went to the bathroom. I walked into
+  the room. It was packed, people were beginning to line up against the walls.
+  The session chairs and runners were telling people to leave; due to
+  liability reasons PyCon couldn't have more people in the room than the fire
+  code specified. Some people waved to indicate an open seat. I went there and
+  sat down. _Damn_, I thought. _That dude's still in the bathroom_.
 
-    While PyCon doesn't have hard and fast registration for conference talks,
-    there are a few rules of thumb you can follow to determine which speakers
-    are the most popular. At a convention center, there are a number of
-    differently-sized conference rooms, at differing distances from the main
-    entrance. The talks in the beginning of the conference (e.g. morning on
-    opening day), in the biggest rooms, with recognizable names, are generally
-    going to be good talks. Talks scheduled during those times in small rooms
-    far away from everything else are less likely to be as good.
+  While PyCon doesn't have hard and fast registration for conference talks,
+  there are a few rules of thumb you can follow to determine which speakers
+  are the most popular. At a convention center, there are a number of
+  differently-sized conference rooms, at differing distances from the main
+  entrance. The talks in the beginning of the conference (e.g. morning on
+  opening day), in the biggest rooms, with recognizable names, are generally
+  going to be good talks. Talks scheduled during those times in small rooms
+  far away from everything else are less likely to be as good.
 
--   **Use Twitter**: I always thought Twitter was a complete garbage fire; when
-    I purged my social media accounts, Twitter was the first to go. Parts of it
-    probably are garbage fires, but a lot of tech people still use it to keep in
-    touch with their network. By contrast, LinkedIn didn't have a whole lot of
-    usage, probably because many people there were advanced enough in their
-    careers to just reach out to their network for a job, and because LinkedIn
-    has *so many* third-party recruiters sending unsolicited requests. On
-    Twitter, it's also much easier to put your personal brand first and
-    foremost, and much easier to just "get connected" there and then since you
-    can follow anybody without their consent.
+- **Use Twitter**: I always thought Twitter was a complete garbage fire; when
+  I purged my social media accounts, Twitter was the first to go. Parts of it
+  probably are garbage fires, but a lot of tech people still use it to keep in
+  touch with their network. By contrast, LinkedIn didn't have a whole lot of
+  usage, probably because many people there were advanced enough in their
+  careers to just reach out to their network for a job, and because LinkedIn
+  has _so many_ third-party recruiters sending unsolicited requests. On
+  Twitter, it's also much easier to put your personal brand first and
+  foremost, and much easier to just "get connected" there and then since you
+  can follow anybody without their consent.
 
-    My modus operandi was to collect business cards and then follow up with
-    email and LinkedIn requests afterwards, but it took a lot of time and energy
-    to do so, and I'm not sure how valuable it is in comparison to a Twitter
-    feed. On the other hand, it's much less likely that LinkedIn will fill your
-    inbox with too many ads, and if you have somebody's email, they will
-    generally respond to a request as opposed to something thrown on Twitter,
-    you have initial context as to how you got in touch with somebody, and
-    people may appreciate you're deliberate about constructing a relationship.
-    Also, if you don't use social media regularly, other people may find it less
-    valuable to follow you since there's no interesting content posted on a
-    regular basis.
+  My modus operandi was to collect business cards and then follow up with
+  email and LinkedIn requests afterwards, but it took a lot of time and energy
+  to do so, and I'm not sure how valuable it is in comparison to a Twitter
+  feed. On the other hand, it's much less likely that LinkedIn will fill your
+  inbox with too many ads, and if you have somebody's email, they will
+  generally respond to a request as opposed to something thrown on Twitter,
+  you have initial context as to how you got in touch with somebody, and
+  people may appreciate you're deliberate about constructing a relationship.
+  Also, if you don't use social media regularly, other people may find it less
+  valuable to follow you since there's no interesting content posted on a
+  regular basis.
 
-    I opened a Twitter account. I locked myself out after the first five minutes
-    accidentally. I have gotten quite old.
+  I opened a Twitter account. I locked myself out after the first five minutes
+  accidentally. I have gotten quite old.
 
-    Honestly the most valuable social media network for developers these days
-    may be GitHub.
+  Honestly the most valuable social media network for developers these days
+  may be GitHub.
 
--   **Try out a bunch of different open source projects**: I knew nothing about
-    open-source contributions when I first came to PyCon, and the experience I
-    had during the development sprints there was fairly encouraging. My goal was
-    to ship something during the four days I had.
+- **Try out a bunch of different open source projects**: I knew nothing about
+  open-source contributions when I first came to PyCon, and the experience I
+  had during the development sprints there was fairly encouraging. My goal was
+  to ship something during the four days I had.
 
-    (As a strong disclaimer, this is my experience after working professionally
-    with Python for 2.5 years, and should not be interpreted as a benchmark to
-    measure people's contributions by. If you do get this much done or more,
-    props to you, and if you don't, it's ok, nobody bites! I'm also kind of just
-    writing this as a log of what I physically did).
+  (As a strong disclaimer, this is my experience after working professionally
+  with Python for 2.5 years, and should not be interpreted as a benchmark to
+  measure people's contributions by. If you do get this much done or more,
+  props to you, and if you don't, it's ok, nobody bites! I'm also kind of just
+  writing this as a log of what I physically did).
 
-    The first project I went to was the [BeeWare
-    project](https://github.com/beeware/), which is led by a number of former
-    Django core developers like Russell. I went to BeeWare instead of another
-    project explicitly because the BeeWare community is extremely friendly to
-    beginners (everybody who merges a pull request gets a challenge coin, and
-    everybody in the room claps for them), and because the BeeWare project is
-    still experimental meaning newcomers have more opportunity to make
-    meaningful feature merges. I merged in a documentation fix the first day,
-    and then I merged in the ability to select and open multiple folders on
-    [`toga-cocoa`](https://github.com/beeware/toga). This led to an interesting
-    interface design; [Nehar Arora](https://github.com/nehararora) mentioned how
-    file and folder selection used the same endpoints in macOS, while in Gtk
-    different endpoints were used, necessitating a change in in top-level
-    interface for opening multiple folders after discussion with the BeeWare
-    core developers.
+  The first project I went to was the [BeeWare
+  project](https://github.com/beeware/), which is led by a number of former
+  Django core developers like Russell. I went to BeeWare instead of another
+  project explicitly because the BeeWare community is extremely friendly to
+  beginners (everybody who merges a pull request gets a challenge coin, and
+  everybody in the room claps for them), and because the BeeWare project is
+  still experimental meaning newcomers have more opportunity to make
+  meaningful feature merges. I merged in a documentation fix the first day,
+  and then I merged in the ability to select and open multiple folders on
+  [`toga-cocoa`](https://github.com/beeware/toga). This led to an interesting
+  interface design; [Nehar Arora](https://github.com/nehararora) mentioned how
+  file and folder selection used the same endpoints in macOS, while in Gtk
+  different endpoints were used, necessitating a change in in top-level
+  interface for opening multiple folders after discussion with the BeeWare
+  core developers.
 
-    The next project I took a look at was
-    [**`securedrop`**](https://github.com/freedomofpress/securedrop), an
-    electronic dead drop for whistleblowers. I merged in a new ability to
-    leverage property-based testing with
-    [**`hypothesis`**](https://hypothesis.readthedocs.io), which I thought could
-    help the team find any bugs more cheaply. After talking to [Zac
-    Hatfield-Dodds](https://github.com/Zac-HD), I added in a test for ensuring
-    encrypting and decrypting strings was working properly. Since this leveraged
-    primarily well-tested cryptography code such as
-    [**`python-gnupg`**](https://bitbucket.org/vinay.sajip/python-gnupg), I
-    didn't find any bugs. The tests also took a lot longer to run on the CI
-    pipeline than on my local machine (1 minute vs. 400 milliseconds), which Zac
-    said could be due to the lack of support for cryptographic hardware on the
-    CI virtual machines. Since hypothesis runs about a hundred tests for every
-    stub created, this incurred a non-trivial penalty. Finally, since securedrop
-    (wisely, IMHO) mostly glues together well-tested third-party libraries,
-    there wasn't a whole lot to test with regards to unit tests. The vast
-    majority of tests were in the integration test suite. Since `hypothesis` is
-    best at running unit tests, I had to lift the deadline for execution in
-    order to avoid the test stub from timing out. Otherwise, it was a pleasant
-    experience. The securedrop team is very nice, and since everybody was there
-    in the room, changes were merged in quickly.
+  The next project I took a look at was
+  [**`securedrop`**](https://github.com/freedomofpress/securedrop), an
+  electronic dead drop for whistleblowers. I merged in a new ability to
+  leverage property-based testing with
+  [**`hypothesis`**](https://hypothesis.readthedocs.io), which I thought could
+  help the team find any bugs more cheaply. After talking to [Zac
+  Hatfield-Dodds](https://github.com/Zac-HD), I added in a test for ensuring
+  encrypting and decrypting strings was working properly. Since this leveraged
+  primarily well-tested cryptography code such as
+  [**`python-gnupg`**](https://bitbucket.org/vinay.sajip/python-gnupg), I
+  didn't find any bugs. The tests also took a lot longer to run on the CI
+  pipeline than on my local machine (1 minute vs. 400 milliseconds), which Zac
+  said could be due to the lack of support for cryptographic hardware on the
+  CI virtual machines. Since hypothesis runs about a hundred tests for every
+  stub created, this incurred a non-trivial penalty. Finally, since securedrop
+  (wisely, IMHO) mostly glues together well-tested third-party libraries,
+  there wasn't a whole lot to test with regards to unit tests. The vast
+  majority of tests were in the integration test suite. Since `hypothesis` is
+  best at running unit tests, I had to lift the deadline for execution in
+  order to avoid the test stub from timing out. Otherwise, it was a pleasant
+  experience. The securedrop team is very nice, and since everybody was there
+  in the room, changes were merged in quickly.
 
-    The last project I took a look at was CPython itself. That was a far more
-    bureaucratic process than the prior two projects. I went ahead and addressed
-    a documentation issue opened in `bugs.python.org`, but a core developer came
-    in and said the underlying issue was unnecessary, and closed my pull
-    request. That was mildly upsetting, since I would have liked to merge in a
-    change to CPython and become a CPython contributor, but his reasoning was
-    sound. Then I took a look at
-    [BPO-36850](https://bugs.python.org/issue36850), which fundamentally was an
-    issue with copying over extended attributes and permissions from files on
-    network filesystems, and which errors could be ignored without data loss.
-    There is a pull request open addressing the underlying issue
-    [here](https://github.com/python/cpython/pull/8601), but it hasn't been
-    merged in yet for over six months. No response from PR owner, who also
-    happened to be the module owner. Then the clock ran out. I asked other
-    developers how CPython would test something like connecting and copying
-    files from a network filesystem, and there weren't many great answers.
-    CPython uses a patchwork of free CI pipelines from multiple providers, and I
-    don't think there would be any money in setting up an NFS or CIFS client
-    just for testing. We could have added unit tests mocking the new ignored
-    error, but it would give low visibility into how the connection would
-    actually play out, and so we didn't add the test.
+  The last project I took a look at was CPython itself. That was a far more
+  bureaucratic process than the prior two projects. I went ahead and addressed
+  a documentation issue opened in `bugs.python.org`, but a core developer came
+  in and said the underlying issue was unnecessary, and closed my pull
+  request. That was mildly upsetting, since I would have liked to merge in a
+  change to CPython and become a CPython contributor, but his reasoning was
+  sound. Then I took a look at
+  [BPO-36850](https://bugs.python.org/issue36850), which fundamentally was an
+  issue with copying over extended attributes and permissions from files on
+  network filesystems, and which errors could be ignored without data loss.
+  There is a pull request open addressing the underlying issue
+  [here](https://github.com/python/cpython/pull/8601), but it hasn't been
+  merged in yet for over six months. No response from PR owner, who also
+  happened to be the module owner. Then the clock ran out. I asked other
+  developers how CPython would test something like connecting and copying
+  files from a network filesystem, and there weren't many great answers.
+  CPython uses a patchwork of free CI pipelines from multiple providers, and I
+  don't think there would be any money in setting up an NFS or CIFS client
+  just for testing. We could have added unit tests mocking the new ignored
+  error, but it would give low visibility into how the connection would
+  actually play out, and so we didn't add the test.
 
-    It's pretty insane just how few CPython developers are working on CPython
-    full-time: 1 guy (who works at Red Hat). Others are part-time contributors
-    whose companies are generous enough to donate 1 day per week for an employee
-    to add code, and others just contribute in their free time. BPO, the issue
-    tracker, is also pretty archaic. I think if they switched from Mercurial to
-    Git, and used a self-hosted version of GitLab, they may get a lot of good
-    features to reduce issue management overhead.
+  It's pretty insane just how few CPython developers are working on CPython
+  full-time: 1 guy (who works at Red Hat). Others are part-time contributors
+  whose companies are generous enough to donate 1 day per week for an employee
+  to add code, and others just contribute in their free time. BPO, the issue
+  tracker, is also pretty archaic. I think if they switched from Mercurial to
+  Git, and used a self-hosted version of GitLab, they may get a lot of good
+  features to reduce issue management overhead.
 
-    The good things about open-source is that it's very easy to meet extremely
-    smart people, and easy to earn their respect, which is huge for building up
-    social capital. The bad thing about open-source is that it's hard to
-    maintain the discipline for establishing and executing best practices, since
-    the projects are far more resource-constrained than I could have imagined.
+  The good things about open-source is that it's very easy to meet extremely
+  smart people, and easy to earn their respect, which is huge for building up
+  social capital. The bad thing about open-source is that it's hard to
+  maintain the discipline for establishing and executing best practices, since
+  the projects are far more resource-constrained than I could have imagined.
 
-    This was like a tasting menu for what different projects are like, and what
-    different contribution policies and pipelines are like. You can always do
-    serious contributions after introductions and orientations are done
-    together!
+  This was like a tasting menu for what different projects are like, and what
+  different contribution policies and pipelines are like. You can always do
+  serious contributions after introductions and orientations are done
+  together!
 
--   **Things are expensive**: I stayed with two friends in the area, and saved
-    quite a bit on hotel costs, but since I didn't know how safe Cleveland was
-    at night, and since I was time-constrained in the morning to get to the
-    convention center on time, I took a lot of Lyft. And there aren't enough
-    Lyfts and traffic in the area in order to use Lyft Line, the carpooling
-    service. Yea, killed my budget planning for the month. I talked to a Lyft
-    driver and he said he only got half of my fee; Lyft took the other half.
+- **Things are expensive**: I stayed with two friends in the area, and saved
+  quite a bit on hotel costs, but since I didn't know how safe Cleveland was
+  at night, and since I was time-constrained in the morning to get to the
+  convention center on time, I took a lot of Lyft. And there aren't enough
+  Lyfts and traffic in the area in order to use Lyft Line, the carpooling
+  service. Yea, killed my budget planning for the month. I talked to a Lyft
+  driver and he said he only got half of my fee; Lyft took the other half.
 
-    I think next time, I will try and take Lyft for the first few days, in order
-    to find a driver I like. If I like a driver, I might just offer them my fee
-    directly, in exchange for driving to/from the same locations. That way, the
-    driver can get more money, and I may be able to negotiate to pay less total.
-    The problem is of course coordination and availability, but it shouldn't be
-    a problem since Lyft is always there.
+  I think next time, I will try and take Lyft for the first few days, in order
+  to find a driver I like. If I like a driver, I might just offer them my fee
+  directly, in exchange for driving to/from the same locations. That way, the
+  driver can get more money, and I may be able to negotiate to pay less total.
+  The problem is of course coordination and availability, but it shouldn't be
+  a problem since Lyft is always there.
 
-    Food and beverage is apparently insanely expensive. I was talking to [Kushal
-    Das](https://github.com/kushaldas) and he said every day of the development
-    sprints, PyCon spends \$2000 on coffee *in the first hour*, and \$6000 for
-    the day. PyCon spends *\$35,000* on just coffee during the duration of the
-    conference. This is because the coffee has to come from the convention
-    center, which has one vendor (StarBucks), meaning no competition; if outside
-    coffee was allowed this cost could be cut by half. This is after the Python
-    Software Foundation negotiates with cities and convention venues to lower
-    the cost of hosting the event, resulting in the convention center having to
-    nickel-and-dime the Python Software Foundation (PSF) to try and recoup
-    costs. Without money, it's a lot harder to make everybody happy. PSF has no
-    money because Python is not a pay-to-play project. Apparently, other open
-    source foundations, like the Linux Foundation, get corporate money to
-    include their pet features into the project, affecting the technical
-    direction of the project, and for Python, that could kill the contributor
-    base.
+  Food and beverage is apparently insanely expensive. I was talking to [Kushal
+  Das](https://github.com/kushaldas) and he said every day of the development
+  sprints, PyCon spends \$2000 on coffee _in the first hour_, and \$6000 for
+  the day. PyCon spends _\$35,000_ on just coffee during the duration of the
+  conference. This is because the coffee has to come from the convention
+  center, which has one vendor (StarBucks), meaning no competition; if outside
+  coffee was allowed this cost could be cut by half. This is after the Python
+  Software Foundation negotiates with cities and convention venues to lower
+  the cost of hosting the event, resulting in the convention center having to
+  nickel-and-dime the Python Software Foundation (PSF) to try and recoup
+  costs. Without money, it's a lot harder to make everybody happy. PSF has no
+  money because Python is not a pay-to-play project. Apparently, other open
+  source foundations, like the Linux Foundation, get corporate money to
+  include their pet features into the project, affecting the technical
+  direction of the project, and for Python, that could kill the contributor
+  base.
 
-    I signed up to be a PSF financial contributor at PyCon for \$20/mo., and I
-    think it'd be great if returning PyCon members had the option to pay the
-    difference for their PyCon tickets between early-bird and regular pricing in
-    order to supply grants to people of lesser means and underrepresented
-    minorities to attend the conference.
+  I signed up to be a PSF financial contributor at PyCon for \$20/mo., and I
+  think it'd be great if returning PyCon members had the option to pay the
+  difference for their PyCon tickets between early-bird and regular pricing in
+  order to supply grants to people of lesser means and underrepresented
+  minorities to attend the conference.
 
--   **The corporate tutorials are pretty good**: Tying into my previous point,
-    because of a strong separation between corporations and PSF, there's a
-    stronger focus during the corporate tutorials (which are free to attend) on
-    useful things to learn about Python in production, rather than pushing a
-    marketing product such as a corporate API. Capital One hosted an absolutely
-    smashing tutorial on Python performance, represented by [Steven
-    Lott](https://github.com/slott56) and [Gil
-    Forsyth](https://github.com/gforsyth), which I think had a lot of value and
-    didn't have really anything in terms of Capital One branding/marketing.
+- **The corporate tutorials are pretty good**: Tying into my previous point,
+  because of a strong separation between corporations and PSF, there's a
+  stronger focus during the corporate tutorials (which are free to attend) on
+  useful things to learn about Python in production, rather than pushing a
+  marketing product such as a corporate API. Capital One hosted an absolutely
+  smashing tutorial on Python performance, represented by [Steven
+  Lott](https://github.com/slott56) and [Gil
+  Forsyth](https://github.com/gforsyth), which I think had a lot of value and
+  didn't have really anything in terms of Capital One branding/marketing.
 
-    (Capital One also paid for coffee during the development sprints after PyCon
-    ran out in the first hour, so :clap: :clap: :clap: to them there)
+  (Capital One also paid for coffee during the development sprints after PyCon
+  ran out in the first hour, so :clap: :clap: :clap: to them there)
 
--   **Don't fly United Basic Economy**: Don't. Just don't.
+- **Don't fly United Basic Economy**: Don't. Just don't.

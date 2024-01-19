@@ -6,6 +6,7 @@ title: "Moving to Hugo"
 date: "2017-08-01T23:23:53-04:00"
 draft: false
 ---
+
 Well, it's been quite some time since I last posted here. I've found that my velocity in learning new things over these past few weeks has decreased rather dramatically. Some issues of note:
 
 - Software team at work has been effectively decapitated and at eight months in, I am the senior onsite web software engineer by time spent at the company (others are either focused on data science and computational geometry, or have been promoted to team lead). Growth is slowing and revenue is flatlining, and either no changes are being made to address this issue or those changes are not effective. Shifting expenditures of time and energy by me are drawing away from personal projects.

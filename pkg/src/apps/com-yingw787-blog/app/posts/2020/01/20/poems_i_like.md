@@ -37,7 +37,7 @@ draft: false
 
 > "Do Not Stand At My Grave And Weep", by Mary Elizabeth Frye
 
-__________
+---
 
 **WE ARE NOT NOW THAT STRENGTH**
 
@@ -57,7 +57,7 @@ __________
 
 > "Ulysses", by Alfred, Lord Tennyson
 
-__________
+---
 
 **DO NOT GO GENTLE INTO THAT GOOD NIGHT**
 
@@ -67,7 +67,7 @@ __________
 
 > "Do Not Go Gentle Into That Good Night", by Dylan Marlais Thomas
 
-__________
+---
 
 **TO MY HUSBAND**
 

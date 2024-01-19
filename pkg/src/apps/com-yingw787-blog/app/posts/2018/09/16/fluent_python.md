@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Fluent Python\", by Luciano Ramalho"
+title: 'Book Review: "Fluent Python", by Luciano Ramalho'
 date: "2018-09-16T18:35:58-04:00"
 draft: false
 ---

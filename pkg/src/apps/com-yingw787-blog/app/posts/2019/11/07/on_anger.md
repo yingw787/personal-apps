@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"How to Keep Your Cool: An Ancient Guide to Anger Management\", by Seneca (Selected, translated, and introduced by James Romm)"
+title: 'Book Review: "How to Keep Your Cool: An Ancient Guide to Anger Management", by Seneca (Selected, translated, and introduced by James Romm)'
 date: "2019-11-07T13:39:11-05:00"
 draft: false
 ---

@@ -14,7 +14,7 @@ The Year In Review:
 - [Year In Review: Resolutions](/posts/2021/12/31/year_in_review_resolutions)
 - [Year In Review: Sleep](/posts/2020/12/31/year_in_review_sleep_schedule)
 
-__________
+---
 
 My gratitude journal practice has definitely fallen off a cliff this year. This
 is pretty much what I've been able to get down this year that's of material
@@ -41,7 +41,7 @@ It seems like:
   joy to my everyday life. Food is also the flip side of working out, so now
   that I'm powerlifting I need to focus on food intake anyways.
 
-__________
+---
 
 I started the year in review for my gratitude journal because I thought it would
 be helpful for me to close the loop on understanding where I am emotionally over

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Blue Ocean Strategy\", by W. Chan Kim and Renee Mauborgne "
+title: 'Book Review: "Blue Ocean Strategy", by W. Chan Kim and Renee Mauborgne '
 date: "2019-04-27T13:17:25-04:00"
 draft: false
 ---
@@ -21,25 +21,25 @@ probably less relevant.
 
 Some pointers I got from this book:
 
--   **Building alignment is extremely important**: Alignment is hard to do.
-    Organizational processes need to be fair, transparent, and empathetic for
-    people and departments to invest in change. This is made harder if there is
-    already momentum towards retaining the status quo.
+- **Building alignment is extremely important**: Alignment is hard to do.
+  Organizational processes need to be fair, transparent, and empathetic for
+  people and departments to invest in change. This is made harder if there is
+  already momentum towards retaining the status quo.
 
--   **Not all innovation requires capital expenditures**: Sometimes, it's
-    recombining different pieces of already existing value propositions;
-    sometimes, it's changing the target audience. Chan and Mauborgne give the
-    example of Cirque du Soleil as a blue ocean innovator in the circus space
-    that executes well along these axes. In fact, Cirque du Soleil cut out a lot
-    of traditional circus performers and focused on a few key acts, allowing
-    them to get the top-of-market talent for those specific niches.
+- **Not all innovation requires capital expenditures**: Sometimes, it's
+  recombining different pieces of already existing value propositions;
+  sometimes, it's changing the target audience. Chan and Mauborgne give the
+  example of Cirque du Soleil as a blue ocean innovator in the circus space
+  that executes well along these axes. In fact, Cirque du Soleil cut out a lot
+  of traditional circus performers and focused on a few key acts, allowing
+  them to get the top-of-market talent for those specific niches.
 
--   **Continually pre-fetch information and use it to constantly look for new
-    opportunities**: No organization responsible for putting food on somebody's
-    table should be resting on their laurels. Understand what the market is like
-    out there and what has changed since the last time you made an evaluation.
-    Pan for gold nuggets of information, and use them to infuse existing blue
-    oceans with better value propositions or create new blue oceans entirely.
+- **Continually pre-fetch information and use it to constantly look for new
+  opportunities**: No organization responsible for putting food on somebody's
+  table should be resting on their laurels. Understand what the market is like
+  out there and what has changed since the last time you made an evaluation.
+  Pan for gold nuggets of information, and use them to infuse existing blue
+  oceans with better value propositions or create new blue oceans entirely.
 
 This is one of those books where it's better to have it and not need it rather
 than need it and not have it. I might refer to this text occasionally, but I

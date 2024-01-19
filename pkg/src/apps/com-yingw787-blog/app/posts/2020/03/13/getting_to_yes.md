@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Getting to Yes: Negotiating Agreement Without Giving In\" (Revised Edition), by Roger Fisher, William Ury, and Bruce Patton"
+title: 'Book Review: "Getting to Yes: Negotiating Agreement Without Giving In" (Revised Edition), by Roger Fisher, William Ury, and Bruce Patton'
 date: "2020-03-13T21:12:59-04:00"
 draft: false
 ---
@@ -25,8 +25,8 @@ highlights a roadmap to get there.
 The authors made three very good points in the book that I'd like to highlight:
 
 - **Everyone is a negotiator, all the time.** When a grocery store says that the
-  price of a can of beans is $1.50, what they're really saying is, $1.50 *take
-  it or leave it*. It's largely a cultural assumption that some things are
+  price of a can of beans is $1.50, what they're really saying is, $1.50 _take
+  it or leave it_. It's largely a cultural assumption that some things are
   negotiable and some things aren't, whereas the truth is everything is
   negotiable to some degree. Going back to the grocery store example, I remember
   when a cashier waived the price of some bananas, because I (politely and not

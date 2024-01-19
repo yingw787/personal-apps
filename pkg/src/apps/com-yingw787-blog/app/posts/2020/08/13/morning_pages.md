@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 A ferret mom proudly showing off her babies (or trying to get her human to take
 care of them for her because babies are exhausting):
@@ -27,7 +27,7 @@ care of them for her because babies are exhausting):
 <br/>
 <br/>
 
-__________
+---
 
 I finished watching Season 4 of "Parks and Rec" yesterday! I actually had this
 coding assignment for an interview application, and I finished it early because

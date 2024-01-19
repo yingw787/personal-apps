@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Roooooo!
 
@@ -21,7 +21,7 @@ Roooooo!
 
 Man I wish I could stretch like that.
 
-__________
+---
 
 This week I think I'm pacing myself a lot better. I'm still working relatively
 hard, but I'm giving myself some breathing room and I think I'm a good deal

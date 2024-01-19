@@ -14,7 +14,7 @@ The Year In Review:
 - [**Year In Review: Resolutions**](/posts/2022/12/31/year_in_review_resolutions)
 - [Year In Review: Sleep](/posts/2022/12/31/year_in_review_sleep)
 
-__________
+---
 
 Wow, where did the year go?? I feel like I was just staring at a clock that had
 freely spinning hour and minute hands! It's crazy. I'm almost 29, which is
@@ -30,8 +30,8 @@ amount:
   Plato was asking who I was (making the most of it LOL).
 
 - I started fostering a cat after my birthday (her name is Kate and she's the
- sweetest thing **EVER**), and after some initial things to work out, we're
- doing okay.
+  sweetest thing **EVER**), and after some initial things to work out, we're
+  doing okay.
 
 - I took my first vacation longer than a week since I graduated, by going to LA
   and Hawaii with two good friends (Maui was absolutely **GORGEOUS**, and
@@ -39,7 +39,7 @@ amount:
 
 I also got into audiobooks! I always fall asleep while driving so my friend in
 North Carolina recommended audiobooks as a way to stay awake. I think the key
-takeaway from audiobooks is they're so easy to *reread* to truly solidify my
+takeaway from audiobooks is they're so easy to _reread_ to truly solidify my
 understanding. I've listened to "The Confidence Gap" around five or six times
 through already, and I think I might do the same for "Atomic Habits".
 
@@ -62,7 +62,7 @@ all. I think I'll continue to listen to audiobooks in the new year, but that's
 neither here or there, so why don't we get right to the New Year's Resolutions
 and how we did.
 
-__________
+---
 
 - **<span style="color:red">Visit a foreign country (DOES NOT MEET
   EXPECTATIONS)</span>**

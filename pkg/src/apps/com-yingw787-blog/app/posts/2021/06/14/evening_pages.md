@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 Oh man. A month's worth of cute pictures and cute videos. Here's 4!!
 
@@ -50,7 +50,7 @@ These babies are crawling all over mom!
 
 And this little guy likes to twist and squeak!
 
-__________
+---
 
 There's been some changes since the last time I wrote here. I did manage to
 attend a software conference, kind of. I'm going to personal training now,

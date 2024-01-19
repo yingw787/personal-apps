@@ -24,11 +24,11 @@ then.
 Then I realized that I haven't published a lot of the side projects, or done a
 lot of the stuff that I told myself I would do in my [New Year's
 Resolutions](/posts/2018/01/01/new_years_resolutions). I've been in the
-workforce for two years, and what *do* I have to show for it? How can I convince
+workforce for two years, and what _do_ I have to show for it? How can I convince
 people from my currently exposed work that I deserve further external
 investment?
 
-And the answer is, *I can't*. There's *a lot* of software engineers for the
+And the answer is, _I can't_. There's _a lot_ of software engineers for the
 number of slots being filled, and a lot of those angling for a position either
 have a **solid** track record of contributing to open source projects, [making
 operating systems](https://github.com/phil-opp/blog_os), [filing RCE
@@ -45,41 +45,41 @@ expanded here), and ended up getting burned on the first thing I pick up. I
 haven't even gone on a date -- ever -- and that was the first priority I made
 for myself this year.
 
-___________
+---
 
 This isn't a pity party. It's not like anybody shows up.
 
 Seriously though, I think I've had enough failures in my life where I'm not
 deathly afraid of doing things. I [skydive](/posts/2018/08/26/i_went_skydiving).
-I ask people out. I *can* do these things. But I don't make failing a regular
+I ask people out. I _can_ do these things. But I don't make failing a regular
 occurrence. And I think [that might be what's
 missing](https://www.businessinsider.com/spanx-founder-sara-blakely-redefine-failure-2016-10).
 
 I need to fail more often so that:
 
--   **I can overcome my [impostor
-    syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)**: How do you
-    identify your limits? When you start failing. I haven't been pushing my
-    limits, and that just makes me paranoid that I'm "falling behind everyone
-    else because they're all studying". If I started failing more, I would have
-    found out how limited my abilities been, and addressed them with discrete
-    actionables.
+- **I can overcome my [impostor
+  syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)**: How do you
+  identify your limits? When you start failing. I haven't been pushing my
+  limits, and that just makes me paranoid that I'm "falling behind everyone
+  else because they're all studying". If I started failing more, I would have
+  found out how limited my abilities been, and addressed them with discrete
+  actionables.
 
--   **I can shorten my [grief
-    cycle](https://en.wikipedia.org/wiki/K%C3%BCbler-Ross_model)**: It's still
-    painful when I fail and takes a week in order to go through (denial -->
-    anger --> bargaining --> depression --> acceptance) of whatever I failed at.
-    If I ever hope to push really hard in some direction (which is the only way
-    to do great things), it has to not hurt while pushing.
+- **I can shorten my [grief
+  cycle](https://en.wikipedia.org/wiki/K%C3%BCbler-Ross_model)**: It's still
+  painful when I fail and takes a week in order to go through (denial -->
+  anger --> bargaining --> depression --> acceptance) of whatever I failed at.
+  If I ever hope to push really hard in some direction (which is the only way
+  to do great things), it has to not hurt while pushing.
 
--   **Ensure that I can trust my mind**: I remember when I suffered through
-    depression, I could not trust my brain to make the right decision. That
-    paralyzed my decision making and crippled my ability to generate results. If
-    my brain tells me, "you're doing great", how can I believe it? The proof has
-    to be in the pudding. I also have to make failure a regular part of my life
-    so that if I start pushing myself in the future, I can differentiate between
-    regular failure and "I am pushing myself too hard and I will start breaking
-    down again" kind of failure.
+- **Ensure that I can trust my mind**: I remember when I suffered through
+  depression, I could not trust my brain to make the right decision. That
+  paralyzed my decision making and crippled my ability to generate results. If
+  my brain tells me, "you're doing great", how can I believe it? The proof has
+  to be in the pudding. I also have to make failure a regular part of my life
+  so that if I start pushing myself in the future, I can differentiate between
+  regular failure and "I am pushing myself too hard and I will start breaking
+  down again" kind of failure.
 
 I added to my [productivity tracker](https://www.apalon.com/productive.html) the
 weekly habit "What have you tried to fail at this week?" in order to remind

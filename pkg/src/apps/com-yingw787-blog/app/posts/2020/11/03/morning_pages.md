@@ -10,12 +10,13 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 Well, the day is here. It feels like the anti-Christmas, you know? Like you have
 a bunch of presents like clean water and fresh food and the ability to walk from

@@ -14,11 +14,11 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 This week was the first week I forgot to submit my Pioneer weekly update on
 time. At least, that's the email I woke up to. Pretty concerning because most
-people probably need less than *9 weeks* in order to get somewhere. I managed to
+people probably need less than _9 weeks_ in order to get somewhere. I managed to
 submit something and keep my progress, but it was spooky that I could lose
 progress.
 

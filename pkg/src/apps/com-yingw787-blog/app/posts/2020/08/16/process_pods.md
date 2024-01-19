@@ -11,7 +11,7 @@ This is my first "Process Pods" session, where we gather to reflect on the
 "challenging, messy, and rewarding parts of the writing process". This session
 is focused around getting thoughts onto the page.
 
-__________
+---
 
 > The journey from the head to hand is perilous and lined with bodies. It is the
 > road on which nearly everyone who wants to write — and many of the people who
@@ -21,7 +21,7 @@ __________
 >
 > Ann Patchett, "The Getaway Car: A Practical Memoir About Writing and Life"
 
-__________
+---
 
 What do I want to get out of today from "Process Pods"?
 

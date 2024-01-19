@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Hands-On Scala: Learn the Scala Language in a Practical, Project-Based Way\", by Li Haoyi"
+title: 'Book Review: "Hands-On Scala: Learn the Scala Language in a Practical, Project-Based Way", by Li Haoyi'
 date: "2021-02-21T01:35:42-05:00"
 draft: false
 ---

@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Kitties and tops!
 
@@ -26,7 +26,7 @@ Kitties and tops!
 <br/>
 <br/>
 
-__________
+---
 
 So yesterday, I think I watched more than an entire season of "Parks and Rec",
 Season 3 and part of season 4. It's pretty wild because I think most people do

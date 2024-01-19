@@ -14,7 +14,7 @@ The Year In Review:
 - [Year In Review: Resolutions](/posts/2021/12/31/year_in_review_resolutions)
 - [Year In Review: Sleep](/posts/2020/12/31/year_in_review_sleep_schedule)
 
-__________
+---
 
 I think this year has been a bit better in terms of fitness. I think my high
 school level, walking 9 miles or biking 50 mile days side of myself, might not

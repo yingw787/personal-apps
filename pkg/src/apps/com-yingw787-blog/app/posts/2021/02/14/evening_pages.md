@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 There was a picture of a bird kicking another bird off a ledge that I saw that
 was pretty cool, but then it got taken down for some reason and I don't want to
 find another picture. Hey who knows, maybe it'll get restored.
 
-__________
+---
 
 I made steak and broccoli for dinner today!
 

@@ -21,7 +21,7 @@ kings never regained their kingdoms. But while one king died in obscurity and
 shame surrounded by bitter former mandarins, the other was eventually welcomed
 home by tens of thousands of, if not loyal subjects, devoted admirers.
 
-__________
+---
 
 ![king peter](/img/posts/2020/06/15/two_kings_2.jpg)
 
@@ -43,7 +43,7 @@ The party ended shortly afterwards. The Nazi invasion of the Soviet Union also
 targeted Yugoslavia. Within two weeks, the government surrendered, and the
 country was carved up by the Axis.
 
-Here, Peter makes a huge mistake. *He flees.* Notwithstanding that Yugoslavia
+Here, Peter makes a huge mistake. _He flees._ Notwithstanding that Yugoslavia
 had only formed in 1918 and never fought a major conflict with another country
 as a multi-ethnic union, Yugoslavia also didn't exist as part of "the West" and
 "the West" didn't see Yugoslavia as "one of them". We know this because Winston
@@ -63,11 +63,11 @@ up and shot by the thousands, if not starving. By contrast, Queen Elizabeth the
 Queen Mother remarked that she was glad Buckingham Palace was bombed, because
 then she could look the East End in the face.
 
-Only then, did Peter realize *since he didn't bring his army with him, he
-couldn't contribute to the war effort*. With no contribution, the Allies start
+Only then, did Peter realize _since he didn't bring his army with him, he
+couldn't contribute to the war effort_. With no contribution, the Allies start
 ignoring him, because war is stressful enough as it is. So Peter starts looking
 for "his army" back home. He finds them in the
-[Chetniks](https://en.wikipedia.org/wiki/Chetniks), a *Serbian* movement within
+[Chetniks](https://en.wikipedia.org/wiki/Chetniks), a _Serbian_ movement within
 Yugoslavia. Peter thinks they're freeing the whole country and restoring him to
 the throne. He's wrong, but we'll get to that.
 
@@ -84,7 +84,7 @@ politician". Turns out, he is a politician, because you can't be prime minister
 and not be a politician. He's just a bad one. So that's nice.
 
 Back to the Chetniks. The Nazis aren't nice people, and they start killing a
-hundred civilians for every Nazi killed...*and the Chetniks back down* --
+hundred civilians for every Nazi killed..._and the Chetniks back down_ --
 because they want to limit civilian casualties. So they waited for the Allies to
 land in Yugoslavia and liberate them, which never happened. Instead, the
 Yugoslav Partisans led by a guy named Tito took up the slack, while the Chetnik
@@ -97,9 +97,9 @@ and the United States, because pissing off the country that's sheltering you
 from the Nazis is a great idea. That idea failed too, and now the U.K and the
 U.S. began thinking about supporting Tito.
 
-So what does Peter do to rectify the situation? *He marries a woman*, which
-wouldn't have been a problem, except *Serbian culture did not look kindly on
-leaders marrying during a national emergency*. So Peter ended up pissing off the
+So what does Peter do to rectify the situation? _He marries a woman_, which
+wouldn't have been a problem, except _Serbian culture did not look kindly on
+leaders marrying during a national emergency_. So Peter ended up pissing off the
 Serbs, the last faction that might have had him as a leader.
 
 After the war, the Soviet Union hated him, the British hated him, the Americans
@@ -114,7 +114,7 @@ foreign land.
 
 That was depressing just to type up.
 
-__________
+---
 
 ![king michael](/img/posts/2020/06/15/two_kings_1.jpg)
 
@@ -125,7 +125,7 @@ dealing with fascists and Nazis. [Ion
 Antonescu](https://en.wikipedia.org/wiki/Ion_Antonescu), the fascist prime
 minister, likes Hitler and thinks invading Russia is a good idea. It isn't, and
 when the Soviets come to Romania's doorstep looking for blood, Michael coups
-Ion and hands him over to the Soviets. This was *extremely* risky for Michael;
+Ion and hands him over to the Soviets. This was _extremely_ risky for Michael;
 Miklos Horthy of Hungary tried the same thing and the Nazis [kidnapped his son
 for execution](https://en.wikipedia.org/wiki/Mikl%C3%B3s_Horthy). By some
 estimates, Michael's actions could have shortened World War II in Europe by six
@@ -140,7 +140,7 @@ After the collapse of the Soviet Union, Michael returned to Romania. Speaking
 from a hotel balcony after denied a podium, he attracted over one million people
 who came to see him.
 
-Michael *chose* not to reassert his authority over the throne, and instead went
+Michael _chose_ not to reassert his authority over the throne, and instead went
 on diplomatic missions on behalf of Romania's new democratic republic, lobbying
 NATO and the EU for admission. Romania is now part of both organizations.
 
@@ -148,7 +148,7 @@ When King Michael died, he was transported from Switzerland to Romania on a
 large train, seen off by some of the largest funeral crowds in modern Romanian
 history, and buried with full state honors.
 
-__________
+---
 
 The Biblical [Book of Kings](https://en.wikipedia.org/wiki/Books_of_Kings) is a
 sinusoidal roller-coaster of (bad times make strong men) -> (strong men make

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"And The Mountains Echoed\", by Khaled Hosseini"
+title: 'Book Review: "And The Mountains Echoed", by Khaled Hosseini'
 date: "2021-01-18T10:41:40-05:00"
 draft: false
 ---

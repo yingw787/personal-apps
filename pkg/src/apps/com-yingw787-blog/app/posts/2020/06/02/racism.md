@@ -15,7 +15,7 @@ Please feel free to share with others at your discretion. If you have any
 questions / comments / concerns, feel free to email `me@yingw787.com`, and time
 / energy permitting, I'll get back to you.
 
-__________
+---
 
 So I went on a walk today from my apartment over to the Georgetown neighborhood,
 and this was the scene:
@@ -26,8 +26,8 @@ One lonely police car, guarding a bunch of boarded up stores. Mind you,
 Georgetown is one of the more affluent, pasty-white neighborhoods in D.C., but
 anybody can enjoy a fresh, cold ice cream cone from the Haagen-Dazs on M Street.
 So I don't think most people, from any racial or socioeconomic background, are
-genuinely *happy* with this situation right now. The peaceful protests, the
-separate riots and lootings, *and* the heavy-handed police and military response
+genuinely _happy_ with this situation right now. The peaceful protests, the
+separate riots and lootings, _and_ the heavy-handed police and military response
 drag many innocent bystanders into a conversation most are uncomfortable having.
 
 So now that we're having it, whether we like it or not, I think it's a great
@@ -35,15 +35,15 @@ time for me to add to that discussion on my own terms. I hope my words can help
 people heal, appreciate the things that are really important in life, and spark
 introspection in a time of questioning.
 
-__________
+---
 
 I'm a logical, methodical person at my core, who for many years, didn't believe
 in the power of the heart, the spirit, or the soul. I wanted to be a machine,
 and not feel anything. To my past self, emotions seemed like an artifact of our
 baser selves, a reminder from when we climbed down from the trees, an anchor
 preventing us from reaching a higher level on the [Kardashev
-scale](https://en.wikipedia.org/wiki/Kardashev_scale). *If only we could let go
-of our feelings, we could achieve so much more.*
+scale](https://en.wikipedia.org/wiki/Kardashev_scale). _If only we could let go
+of our feelings, we could achieve so much more._
 
 But neglecting emotions doesn't magically remove them, it just nurtures them in
 an unhealthy manner. For example, my practical success cost me my perspective.
@@ -77,15 +77,15 @@ with my own eyes. It wasn't easy at all, took years, and remains a work in
 progress, but I'm reasonably happy with where I am now and how far I've come. I
 think you can count that as personal growth.
 
-__________
+---
 
 Here's three lessons I've realized in my "racism rollback" journey that I'd like
 to share:
 
 **You remember everything, because it's worth remembering.** I've only recently
 forgotten enough to remember what's important. How many of us have remembered a
-smile from a crush, a compliment from a close friend, years and years *and
-years* after we've forgotten what exactly was on page 23 of that AP U.S. History
+smile from a crush, a compliment from a close friend, years and years _and
+years_ after we've forgotten what exactly was on page 23 of that AP U.S. History
 textbook or how to implement a Taylor series or that new feature we shipped? So
 it is with racism, except less fun. When I think back to those moments when I
 hurt people, I realize how the saying "people will forget what you do, but they
@@ -130,14 +130,14 @@ Homs, Syria after a few years of civil war:
 ![homs](/img/posts/2020/06/02/racism_2.jpg)
 
 All for what? A joke you took too far and can't take back? A distraction from
-other problems in your life? Some past trauma that triggers you? It's *still*
+other problems in your life? Some past trauma that triggers you? It's _still_
 not worth it. I've been (nonviolently) robbed multiple times, some by black
 people, and the police don't care, and now I shrug and smile when I look back
 because it's fine. Life's not fair, and sometimes bad things happen to good
 people. That's how bad I've found not letting go and becoming a loser is. Never
 be a loser.
 
-__________
+---
 
 I have this shtick where I always do things the hard way, and while it's painful
 at times, I have a much better understanding of why things are the way that they

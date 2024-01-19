@@ -14,15 +14,15 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Look at these nuggets!!
 
 ![nuggets](/img/posts/2020/10/09/evening_pages.png)
 
-__________
+---
 
-Well the President didn't die (which to be clear is a *good* thing), so I'm glad
+Well the President didn't die (which to be clear is a _good_ thing), so I'm glad
 I'm not a betting man. On the other hand, one of my watermelons literally
 distintegrated on the floor into a gigantic puddle of sugar water, and my
 slippers at home are extremely sticky, so I guess that's fate's way of telling

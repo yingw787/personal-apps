@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"The Crown\" Season 2, by Peter Morgan"
+title: 'TV Show Review: "The Crown" Season 2, by Peter Morgan'
 date: "2021-04-23T20:31:38-04:00"
 draft: false
 ---

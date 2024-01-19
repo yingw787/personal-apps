@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Entrepreneur's Guide to Keeping Your Shit Together\", by Sherry Walling"
+title: 'Book Review: "The Entrepreneur''s Guide to Keeping Your Shit Together", by Sherry Walling'
 date: "2019-12-15T16:45:11-05:00"
 draft: false
 ---

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Ender's Game\" by Orson Scott Card"
+title: 'Book Review: "Ender''s Game" by Orson Scott Card'
 date: "2019-01-08T23:33:26-05:00"
 draft: false
 ---
@@ -16,7 +16,7 @@ draft: false
 
 As a referenced text in the [Marine Commandant's Professional Reading
 List](https://www.marines.mil/News/Messages/Messages-Display/Article/1184470/revision-of-the-commandants-professional-reading-list/),
-it's ironic how the central premise of "Ender's Game" is how Ender *doesn't*
+it's ironic how the central premise of "Ender's Game" is how Ender _doesn't_
 want to hurt anybody. Again and again, after his countless enemies lie dead at
 his feet, Ender always wonders why they chose to attack in the first place.
 Ender's tragedy is how power itself invites response, and how true power over

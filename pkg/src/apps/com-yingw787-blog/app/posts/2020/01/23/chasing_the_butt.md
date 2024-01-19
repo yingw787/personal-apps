@@ -10,7 +10,7 @@ draft: false
 I think every time I try to avoid accepting a hard truth, I become less well
 off.
 
-__________
+---
 
 I found myself going to the gym today. I haven't gone in a while, felt
 lethargic and needed energy to work, and am paying $40 / month for a facility
@@ -34,7 +34,7 @@ Then something funny happened. I started running faster.
 > Thinking brain: (sigh)
 
 Now, before, I probably would have told feeling brain to shut up and stop ogling
-people at the gym because it's not nice. Then I started *really* thinking. I'm
+people at the gym because it's not nice. Then I started _really_ thinking. I'm
 not motivated to run by listening to music, music's more of a distracting thing
 for me. I haven't listened to podcasts in a while and haven't felt the need to.
 I would watch the TV programs, but the TVs are old and static-y, and a lot of
@@ -42,7 +42,7 @@ times it's content that's not interesting, like 24-hour media bullshit or
 basketball. Even then, it's interrupted by ads. What the hell does get me onto
 the treadmill and start working out?
 
-I couldn't come up with a good answer...besides *chasing dat ass*. Then I
+I couldn't come up with a good answer...besides _chasing dat ass_. Then I
 started thinking about the consequences of not going to the gym. It's burning a
 hole in my pocket, money that I could spend elsewhere, and I'm not exactly
 rolling in money. I don't like how I look and I think I probably could use the
@@ -62,7 +62,7 @@ possible for me to get there no matter how I try. I'm not going to get a frontal
 lobotomy, and I have to learn to love myself. Accepting this truth is the first
 step towards a better future.
 
-__________
+---
 
 I ran three miles chasing dat ass. Then I start cooling down and walking, and
 see the girl on the treadmill to my left staring at me.

@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I didn't realize some people were using quarantine to become Disney princesses,
 but apparently they are:
@@ -27,7 +27,7 @@ but apparently they are:
 <br/>
 <br/>
 
-__________
+---
 
 I don't think I've mentioned my dad's gardening habit on my blog before, and I
 think it might be an interesting topic of discussion. I think so far my dad

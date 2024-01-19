@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I think this cake is pretty cute:
 
 ![cute cake](/img/posts/2020/04/13/morning_pages.jpg)
 
-__________
+---
 
 Well, this weekend was pretty catastrophic. I think I got up @ 9:45PM on
 Saturday, and 7:00PM ish on Sunday. I think this is a thing now. I can't

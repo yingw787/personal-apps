@@ -9,12 +9,12 @@ draft: false
 
 New Year's Resolutions:
 
--   [2018 New Year's Resolutions](/posts/2018/01/01/new_years_resolutions)
--   [2019 New Year's Resolutions](/posts/2019/01/01/new_years_resolutions)
--   [2020 New Year's Resolutions](/posts/2020/01/01/new_years_resolutions)
--   [**2021 New Year's Resolutions**](/posts/2021/01/01/new_years_resolutions)
+- [2018 New Year's Resolutions](/posts/2018/01/01/new_years_resolutions)
+- [2019 New Year's Resolutions](/posts/2019/01/01/new_years_resolutions)
+- [2020 New Year's Resolutions](/posts/2020/01/01/new_years_resolutions)
+- [**2021 New Year's Resolutions**](/posts/2021/01/01/new_years_resolutions)
 
-__________
+---
 
 Woohooooooo! 2021! Last year was pretty good for me, and pretty awful for alot
 of other people. Hopefully 2021 will be pretty good for me, and pretty good for
@@ -76,7 +76,7 @@ as reach goals. Or just toss it into a bucket.
   to buy a specific set of groceries to make a particular recipe and leaving the
   leftovers out for too long).
 
-__________
+---
 
 These all sound like work of some sort, so I'll break here with this sentence
 before continuing.
@@ -105,11 +105,11 @@ before continuing.
   of myself so usually I have to re-activate Facebook and get some old ones. But
   I'm afraid when I go to deactivate Facebook, I'll fat-finger something
   eventually and permanently delete my account instead of deactivating it. I
-  need to export my photos out (and ***make damn sure those photos are usable,
-  cough cough Google Accounts backup***) and load them into a personal photo
+  need to export my photos out (and **_make damn sure those photos are usable,
+  cough cough Google Accounts backup_**) and load them into a personal photo
   gallery from S3.
 
-  *Cough* habit tracker, digital Rolodex, password auto-rotation tool. I'm still
+  _Cough_ habit tracker, digital Rolodex, password auto-rotation tool. I'm still
   salty over all of these not being finished last year.
 
 - **Ship personal software to production, with payments**: In previous years I

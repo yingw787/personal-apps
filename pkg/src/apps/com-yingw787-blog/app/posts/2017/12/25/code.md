@@ -2,14 +2,14 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Code: The Hidden Languages of Computer Hardware and Software\", by Charles Petzold"
+title: 'Book Review: "Code: The Hidden Languages of Computer Hardware and Software", by Charles Petzold'
 date: "2017-12-25T22:43:54-05:00"
 draft: false
 ---
 
 > **"I also hope that you might recognize the computer to be one of the crowning achievements of twentieth century technology and appreciate it as a beautiful thing in itself without metaphors and similes getting in the way."**
 >
-> Charles Petzold. From "Code: The Hidden Languages of Computer Hardware and Software" (Microsoft Press, 2000, Page *v*), by Charles Petzold.
+> Charles Petzold. From "Code: The Hidden Languages of Computer Hardware and Software" (Microsoft Press, 2000, Page _v_), by Charles Petzold.
 
 Merry Christmas, everybody. I hope you all had an enjoyable day. If you're not too busy, or if you have a computer architecture or digital systems textbook you want a good companion to, you might consider this pick-me-up. It's extremely rich in detail and covers how to build a computer from the ground up.
 

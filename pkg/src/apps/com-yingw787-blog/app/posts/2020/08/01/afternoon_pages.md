@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 This is fine.
 
 ![rainy](/img/posts/2020/08/01/afternoon_pages.png)
 
-__________
+---
 
 Apparently it's supposed to rain for three days here. I don't check the weather
 usually, and most of the time back in Virginia I carry an umbrella, so usually

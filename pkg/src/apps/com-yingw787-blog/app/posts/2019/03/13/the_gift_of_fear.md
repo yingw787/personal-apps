@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Gift of Fear\", by Gavin de Becker"
+title: 'Book Review: "The Gift of Fear", by Gavin de Becker'
 date: "2019-03-13T23:41:40-04:00"
 draft: false
 ---
@@ -40,24 +40,24 @@ profiles of people hurting other people. In the process, he goes over how their
 victims behaved in each situation. In doing so, he details fear at its most
 effective:
 
--   **Fear is a gut feeling**: By all means, don't ignore your intuition because
-    of perceived social pressures. If your gut tells you to do something, you
-    should do it. Better to be non-conformist and alive than comformist and
-    dead. If somebody is being too nice, be forceful and say no.
+- **Fear is a gut feeling**: By all means, don't ignore your intuition because
+  of perceived social pressures. If your gut tells you to do something, you
+  should do it. Better to be non-conformist and alive than comformist and
+  dead. If somebody is being too nice, be forceful and say no.
 
--   **Fear energizes; it does not paralyze**: If you ever find yourself in a
-    high-stakes situation, your System 1 (spinal cord) will likely tell you what
-    to do. It's like an out-of-body experience. I felt it the first time I was
-    robbed. You are kind of just along for the ride. Somehow that evening I
-    slept like a baby, because nobody will break into a house that has busted
-    locks and no valuables.
+- **Fear energizes; it does not paralyze**: If you ever find yourself in a
+  high-stakes situation, your System 1 (spinal cord) will likely tell you what
+  to do. It's like an out-of-body experience. I felt it the first time I was
+  robbed. You are kind of just along for the ride. Somehow that evening I
+  slept like a baby, because nobody will break into a house that has busted
+  locks and no valuables.
 
--   **Fear should be rare**: You shouldn't live in a constant state of anxiety
-    or worry, because it dampens the signal of fear when you need it the most
-    and cost you everything. If you are feeling anxious or fearful, it is likely
-    because of some persistent factor in your life (you don't like your job, you
-    don't like living in a particular place, a problem with friends, etc.). Get
-    out of that situation so that your fear can shine you when you need it.
+- **Fear should be rare**: You shouldn't live in a constant state of anxiety
+  or worry, because it dampens the signal of fear when you need it the most
+  and cost you everything. If you are feeling anxious or fearful, it is likely
+  because of some persistent factor in your life (you don't like your job, you
+  don't like living in a particular place, a problem with friends, etc.). Get
+  out of that situation so that your fear can shine you when you need it.
 
 This is a pretty bad explanation of how this book went, but I thought it was
 worth the buy for the information I got out. You should get the book yourself in

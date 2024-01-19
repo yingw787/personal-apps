@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Man's Search For Meaning\", by Viktor E. Frankl"
+title: 'Book Review: "Man''s Search For Meaning", by Viktor E. Frankl'
 date: "2018-11-24T22:49:35-05:00"
 draft: false
 ---
@@ -12,13 +12,13 @@ draft: false
 > **Friedrich Nietzsche**
 
 This quote aptly describes Frankl's "autobibliotherapy", or his story of how his
-time spent in *four* Nazi concentration camps helped sharpen his
+time spent in _four_ Nazi concentration camps helped sharpen his
 psychotherapeutic techniques. Frankl, who turned down an American visa offer
 before the war started to be with his elderly parents, forced himself to live by
 thinking of reuniting with his pregnant wife (who died in the camps) and
 lecturing on surviving the camps after the war was over. With those techniques
 (and quite a bit of luck and guile), he survived and went on to pioneer the
-technique of *logotherapy*, or the idea that people are driven to find some
+technique of _logotherapy_, or the idea that people are driven to find some
 meaning or purpose in life.
 
 As a meditation practitioner, I can really see how his experiences lend credence

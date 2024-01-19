@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Ahhhhh a puppy trying to bark but purring instead!!
 
@@ -27,7 +27,7 @@ Ahhhhh a puppy trying to bark but purring instead!!
 
 This is probably the most adorable video I've seen in a while.
 
-__________
+---
 
 Ohh nooo `$ICLN` why have you forsaken me
 

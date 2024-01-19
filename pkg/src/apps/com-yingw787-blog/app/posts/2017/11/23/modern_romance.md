@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Modern Romance\", by Aziz Ansari"
+title: 'Book Review: "Modern Romance", by Aziz Ansari'
 date: "2017-11-23T22:24:35-05:00"
 draft: false
 ---

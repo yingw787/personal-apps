@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 It's a puppy-making machine!
 
@@ -26,7 +26,7 @@ It's a puppy-making machine!
 
 This ended up being a lot more wholesome than I had originally anticipated.
 
-__________
+---
 
 Damn. The last time I went to morning pages was two months ago.
 

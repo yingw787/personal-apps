@@ -10,12 +10,13 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 Well, that was stressful and anti-climatic.
 
@@ -31,9 +32,9 @@ federal government to decrease.
 The craziest stories from yesterday were the delays in counting ballots due to
 the small things. Like, apparently Georgia is in play right now (...?!!) and the
 polling station in Atlanta had to stop counting for a while in the morning
-because a water pipe burst. I'm sitting here thinking, *I really hope this
+because a water pipe burst. I'm sitting here thinking, _I really hope this
 doesn't change anything because if we start a civil war because of a pipe burst
-that'd be the dumbest way to die in human history*. Luckily, I think I'm just
+that'd be the dumbest way to die in human history_. Luckily, I think I'm just
 being a bit dramatic. People are kind of just waiting around for the results,
 and nobody really wants to fire the cannon into Fort Sumter this time around
 because it didn't work out.

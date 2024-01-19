@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This kitten is waking up!
 
@@ -27,7 +27,7 @@ This kitten is waking up!
 
 I guess it's time for me to wake up too.
 
-__________
+---
 
 So I gave the presentation yesterday, and it was very meh. Turns out, preparing
 minimally results in me sucking at what I know. I also published the blog post

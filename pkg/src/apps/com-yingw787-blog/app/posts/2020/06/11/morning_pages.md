@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Peekaboo!
 
 ![peekaboo](/img/posts/2020/06/11/morning_pages.jpg)
 
-__________
+---
 
 I'm not quite sure if I'm the most obtuse person on this planet, but yesterday I
 found out that not only did I not know my friends were engaged, not only did I
@@ -36,7 +36,7 @@ of touch with people to this degree is a good sign of social skills.
 
 It's disappointing, but ¯\\_(ツ)_/¯ what can I do, you know.
 
-__________
+---
 
 Life does seem to be returning to normal, to some degree. It's surprising
 because the pandemic is still going off (or really taking off again), and we

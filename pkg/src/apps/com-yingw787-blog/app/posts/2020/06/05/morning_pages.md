@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 If I fits, I sits:
 
@@ -21,7 +21,7 @@ If I fits, I sits:
 
 This is why people make pockets, it's for our pocket kittens.
 
-__________
+---
 
 It's raining pretty heavily in Arlington, and there's a flash flood warning in
 effect. It's kind of the perfect backdrop for the situation we're all in. Even

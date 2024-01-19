@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Oh man, there was this one picture on Reddit (and I was trying to find it) that
 had a picture of a piece of paper on the wall, and it said "I love you. I don't
@@ -26,7 +26,7 @@ because it lasts:
 
 ![snowman](/img/posts/2020/09/17/morning_pages.jpg)
 
-__________
+---
 
 I think this week was the first time I went outside my neighborhood. I'm not
 exactly cringing in the corner of my apartment like Osama Bin Laden, but I

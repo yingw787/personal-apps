@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Different species, same feels.
 
@@ -21,7 +21,7 @@ Different species, same feels.
 
 Don't they just look comfortable!
 
-__________
+---
 
 It's the 1-year anniversary of COVID-19!
 

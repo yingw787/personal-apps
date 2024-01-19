@@ -134,11 +134,11 @@ money at 0% interest so I can cover the down payment. That way, I don't need to
 sell any stock, because if I did, I'd need to pay income tax because I haven't
 held my stocks for a year.
 
-__________
+---
 
 Honestly, I wanted to just pay off my mortgage in 2-3 years and be done with it.
 Like, 15 years...? Do you know how much shit goes down in 15 years? 15 years ago
-was ***February 2006.*** The Great Recession hadn't happened. Nor did the
+was **_February 2006._** The Great Recession hadn't happened. Nor did the
 coronavirus and the current recession. Nor most effects of climate change. Nor
 all the political instability. I don't know if the U.S. is going to be around in
 15 years, let alone be there to accept my final mortgage payment. On the other
@@ -157,7 +157,7 @@ Maybe I'll pay down my mortgage like a madman for a year, and then when its less
 a terrifying abyss and more a cutesy little sum accruing a little bit of
 interest, pay it off leisurely.
 
-__________
+---
 
 Hmm. What upgrades to make to the place. Honestly I like it. I might replace
 appliances as they break, like the washer/dryer I'd probably replace with the

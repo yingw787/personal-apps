@@ -7,19 +7,19 @@ date: "2017-10-27T00:14:26-04:00"
 draft: true
 ---
 
-This past week, I was pulled away from refactoring our pricing algorithms in order to work on improving the logging infrastructure for our primary repositories. Our logging broke during the Hiroshima incident where we nuked and rebuilt our entire infrastructure over one weekend, and it was so bad in the first place that we were unable to reproduce bugs in production (where, you know, they *actually matter*). My team lead and the director of engineering called me over and told me if I was fine with this. Pricing was mostly "done" at this stage, but improving logging would mean not only diving back into our morass of a primary codebase but also working with the same shits at our satellite office who keep mucking up everything good.
+This past week, I was pulled away from refactoring our pricing algorithms in order to work on improving the logging infrastructure for our primary repositories. Our logging broke during the Hiroshima incident where we nuked and rebuilt our entire infrastructure over one weekend, and it was so bad in the first place that we were unable to reproduce bugs in production (where, you know, they _actually matter_). My team lead and the director of engineering called me over and told me if I was fine with this. Pricing was mostly "done" at this stage, but improving logging would mean not only diving back into our morass of a primary codebase but also working with the same shits at our satellite office who keep mucking up everything good.
 
 Then I was like, I have a duty to perform. Considering that I'm the \#3 onsite web developer by length of stay at this company, there's nobody else I can or should throw this to. Everybody's bleeding, might as well get a piece of it. So I said yes.
 
 I prefaced a conversation with the director that the people who built out our logging infrastructure are gone and I'm not really sure how it works. Then I asked him what he wanted in terms of logging implementation. He replied, "That's for you to figure out." I asked him what were the specifications I needed to meet. He replied, "It's pretty open-ended."
 
-I asked the director, point blank, "*So not only do I don't know what I don't know, you're telling me that you don't know what you want?*"
+I asked the director, point blank, "_So not only do I don't know what I don't know, you're telling me that you don't know what you want?_"
 
 The director replied, "That's correct."
 
-*I'm not even a full year into professional software development at this point. Remember that, guys.*
+_I'm not even a full year into professional software development at this point. Remember that, guys._
 
-___
+---
 
 It's okay though. Remember that pricing algorithms stuff I keep yapping about? I had exactly one story about that. The title of the story was "Pricing Microservice", and the full description was, "Our pricing is slow. Build a microservice to make it faster". You could say I've done this before.
 
@@ -27,7 +27,7 @@ Farewell, pricing. It was good while it lasted.
 
 ![Beautiful](/img/posts/2017/10/27/designing_your_own_requirements_1.gif)
 
-___
+---
 
 I wanted to talk a little about how to construct requirements if you do not have any idea about where to start. First off, if you find yourself in this position, consider yourself extremely lucky. Many software engineers have to meet a set of arbitrary, stupid requirements that they can't talk their management out of, so the fact that management trusts me (or you) to successfully execute such a task without guidance is something to appreciate.
 
@@ -37,4 +37,4 @@ I wanted to talk a little about how to construct requirements if you do not have
 
 - **Break the task down into stages.** I can't go from 0 to 1 in one step, so my first job would be to restore the basic functionality we had before the Hiroshima incident. Then, I will take one endpoint and add logging to it at a time, until my vision is complete.
 
-Lookee here! A set of requirements! Now you can *write those down for future reference*, and get coding! :smile:
+Lookee here! A set of requirements! Now you can _write those down for future reference_, and get coding! :smile:

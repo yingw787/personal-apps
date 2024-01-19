@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Rework\", by Jason Fried and David Heinemeier Hansson"
+title: 'Book Review: "Rework", by Jason Fried and David Heinemeier Hansson'
 date: "2018-04-04T21:28:16-04:00"
 draft: false
 ---

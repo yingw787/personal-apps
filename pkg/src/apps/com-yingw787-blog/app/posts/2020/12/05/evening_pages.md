@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I was going to post a video on a mom cat dragging an almost-adult kitten around,
 but I found this baby deer video and I'll go with this instead.
@@ -29,7 +29,7 @@ but I found this baby deer video and I'll go with this instead.
 
 Ahhhhhhhhhhh
 
-__________
+---
 
 Today's the first time I've been back to the writer's salon in six months or so.
 I don't remember the last time I've been here. It's kind of crazy. I saw our

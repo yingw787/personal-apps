@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 So the most interesting thing about this cat isn't actually the cat (IMHO) but
 that its name is Linux.
@@ -28,7 +28,7 @@ that its name is Linux.
 
 And the guy uses Debian!!
 
-__________
+---
 
 Check out me singing into my fancy microphone setup for the first time!
 
@@ -48,7 +48,7 @@ lot of ways but it's mine and I sing on the toilet and I like it.
 
 Probably oversharing.
 
-__________
+---
 
 In other news, I got a really really fancy Dell docking station! It's a model
 WD19TB which costs around $300 even on Amazon. Originally, I had a $40 dock from

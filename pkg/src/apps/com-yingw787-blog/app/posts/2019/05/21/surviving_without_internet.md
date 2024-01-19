@@ -39,7 +39,7 @@ anything except use the recovery mode shell.
 So I decided Internet probably wasn't the healthiest thing for me. And I agreed
 with the guy. The cutoff date was March 11th, 2019.
 
-__________
+---
 
 The first days were super tough. I went through a weeks-long Internet withdrawal
 phase where I kept checking my phone and realizing that I don't have an Internet
@@ -48,12 +48,12 @@ connection.
 By the way, I should also mention I share a 2GB/mo. cellular plan with my dad.
 So I get 1GB of data per month total.
 
-**iPhone**: *Do you want to turn on data to see YouTube? With 4G, there's little
+**iPhone**: _Do you want to turn on data to see YouTube? With 4G, there's little
 buffering, and I'll transfer data at super high resolution before you even get
-to press a button to tune it down. It'll be at least tens of megs before-*
+to press a button to tune it down. It'll be at least tens of megs before-_
 
-**Me**: *I need to check weather, and sync my notes, and do otherwise important
-things, so no. But that does sound really nice.* :cry:
+**Me**: _I need to check weather, and sync my notes, and do otherwise important
+things, so no. But that does sound really nice._ :cry:
 
 At first, I just visited websites like Hacker News. After pinging them on my
 laptop, looking at the network request in Chrome DevTools, and realizing that
@@ -70,7 +70,7 @@ This took about two weeks or so, and by the time I finished, I got over the
 worst parts of my anxiety of not having Internet at home. This, plus a buttload
 of coffee and bubble tea and free Wi-Fi, got me through to the end.
 
-__________
+---
 
 I thought my friends and acquaintances would be more supportive of me taking on
 the big bad Comcast. They weren't. They unanimously thought I was insane. I
@@ -91,79 +91,79 @@ of the way of those important things.
 
 I got through with a number of different techniques:
 
--   **Finding small-overhead websites**: Stay far away from wikis that are not
-    Wikipedia. Stay far away from websites with autoplaying videos. Say yes to
-    programming blogs that are self-hosted. Say yes to programming documentation
-    sites. Say yes to hosted files with defined sizes.
+- **Finding small-overhead websites**: Stay far away from wikis that are not
+  Wikipedia. Stay far away from websites with autoplaying videos. Say yes to
+  programming blogs that are self-hosted. Say yes to programming documentation
+  sites. Say yes to hosted files with defined sizes.
 
--   **Using `youtube-dl` to watch YouTube videos offline**:
-    [**`youtube-dl`**](https://github.com/rg3/youtube-dl) downloads YouTube
-    videos into .mp4 format on your local filesystem. It's also nice because all
-    state on disk is realized and useful; if the process crashes, you can spin
-    up the process again and it will find the incomplete file and continue
-    streaming the video. It's great. More people should use it. At the end, I
-    used it to download hours-long game movies of walkthroughs and cutscenes.
+- **Using `youtube-dl` to watch YouTube videos offline**:
+  [**`youtube-dl`**](https://github.com/rg3/youtube-dl) downloads YouTube
+  videos into .mp4 format on your local filesystem. It's also nice because all
+  state on disk is realized and useful; if the process crashes, you can spin
+  up the process again and it will find the incomplete file and continue
+  streaming the video. It's great. More people should use it. At the end, I
+  used it to download hours-long game movies of walkthroughs and cutscenes.
 
--   **Saving articles for offline access using Pocket**: Not a huge part of the
-    deal, but if I really want to read something and I don't have cellular,
-    downloading a website using Pocket is pretty easy with the iOS app.
+- **Saving articles for offline access using Pocket**: Not a huge part of the
+  deal, but if I really want to read something and I don't have cellular,
+  downloading a website using Pocket is pretty easy with the iOS app.
 
-__________
+---
 
 On May 20th, 2019, I finally surrendered to the mighty Comcast and called
 Comcast to reattach my Internet. So what finally did me in?
 
--   **Public Wi-Fi was spotty**: I get 100% packet transmission on my home
-    Wi-Fi connection. On public networks, this is more like 80%; on crowded
-    public or private networks, this is more like 60%. This means unstable
-    long-term connections. My VPN was really unhappy.
+- **Public Wi-Fi was spotty**: I get 100% packet transmission on my home
+  Wi-Fi connection. On public networks, this is more like 80%; on crowded
+  public or private networks, this is more like 60%. This means unstable
+  long-term connections. My VPN was really unhappy.
 
--   **Library hours are crap**: Seriously, the Arlington Public Library system
-    needs a lot more investment. They close at 5PM. How the hell do they expect
-    adults to check out books during the weekday if the library closes at 5PM??
-    Also, the bathrooms really smell, and I'm saying this as somebody who had a
-    really bad elementary school janitor.
+- **Library hours are crap**: Seriously, the Arlington Public Library system
+  needs a lot more investment. They close at 5PM. How the hell do they expect
+  adults to check out books during the weekday if the library closes at 5PM??
+  Also, the bathrooms really smell, and I'm saying this as somebody who had a
+  really bad elementary school janitor.
 
--   **Sometimes you do need peace and quiet**: Deep work is really hard in a
-    coffee shop, where other people are chatting and there's not really any
-    personal space available.
+- **Sometimes you do need peace and quiet**: Deep work is really hard in a
+  coffee shop, where other people are chatting and there's not really any
+  personal space available.
 
--   **Holy hell coffee/tea is expensive**: About \$4-5 a cup, and some places
-    don't even have refills. It's far more expensive than a basic Comcast
-    connection.
+- **Holy hell coffee/tea is expensive**: About \$4-5 a cup, and some places
+  don't even have refills. It's far more expensive than a basic Comcast
+  connection.
 
--   **Also coffee at night is a bad idea**: I'm still a little wired as I'm
-    typing this.
+- **Also coffee at night is a bad idea**: I'm still a little wired as I'm
+  typing this.
 
--   **I'm a night owl**: I work really late or so on personal professional
-    development stuff sometimes, later than the 10PM most coffee shops close at
-    around this area.
+- **I'm a night owl**: I work really late or so on personal professional
+  development stuff sometimes, later than the 10PM most coffee shops close at
+  around this area.
 
 The actual call to Comcast went something like this:
 
-**Comcast Man**: *I have a plan for \$79.99/mo. It comes with-*
+**Comcast Man**: _I have a plan for \$79.99/mo. It comes with-_
 
-**Me**: *Can't do that. Lower.*
+**Me**: _Can't do that. Lower._
 
-**Comcast Man**: *Uh. I have a plan for \$64.99/mo...*
+**Comcast Man**: _Uh. I have a plan for \$64.99/mo..._
 
-**Me**: *Nope. Lower.*
+**Me**: _Nope. Lower._
 
-**Comcast Man**: *I have a plan for \$39.99/mo.?*
+**Comcast Man**: _I have a plan for \$39.99/mo.?_
 
-**Me**: *Lower.*
+**Me**: _Lower._
 
-**Comcast Man**: *I have a plan for \$34.99/mo.*
+**Comcast Man**: _I have a plan for \$34.99/mo._
 
-**Me**: *Lower.*
+**Me**: _Lower._
 
-**Comcast Man**: *Okay fine I have a plan for \$29.99/mo.*
+**Comcast Man**: _Okay fine I have a plan for \$29.99/mo._
 
-**Me**: *Yes please!*
+**Me**: _Yes please!_
 
 Honestly, I think Comcast has been nothing but terrific throughout this whole
 process. I'm probably one of their more difficult customers, the guy who keeps
-yelling [*"MOLON LABE"*](https://en.wikipedia.org/wiki/Molon_labe) over the
+yelling [_"MOLON LABE"_](https://en.wikipedia.org/wiki/Molon_labe) over the
 phone at a guy who may or may not have an available plan in front of him and has
 to follow a script. From my pre-Comcast days, the stories adults told about
 Comcast had made me think they're the spawn of Satan. Nowadays, I think they're

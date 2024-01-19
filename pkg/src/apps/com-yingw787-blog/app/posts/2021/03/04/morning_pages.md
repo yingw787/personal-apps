@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hehehehe two for oneeeee!
 
@@ -22,7 +22,7 @@ Hehehehe two for oneeeee!
 I think the moderators of `r/aww` have been linking to other subreddits; this
 one was `r/purrito` for all kitten burritos.
 
-__________
+---
 
 So these last few days have been busy! I'm in the final stages of closing the
 apartment and making sure that I don't fuck anything up by responding promptly

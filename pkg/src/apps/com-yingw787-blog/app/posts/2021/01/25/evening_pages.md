@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hey hey humans can be cute too! Just look at these two guys and this granny!
 
@@ -27,7 +27,7 @@ Hey hey humans can be cute too! Just look at these two guys and this granny!
 
 She's going faster than I walk nowadays. Crazy.
 
-__________
+---
 
 It's a very Kafkaesque atmosphere here in D.C. To provide some context, [this
 Twitter post](https://twitter.com/dgleick/status/1348058618684440577) is hella
@@ -62,7 +62,7 @@ everything else is fine. I feel like I have the same look in my eyes.
 Dunno if it'll wear off anytime soon. Be nice if it did. I have a feeling this
 will be me for most all 2021.
 
-__________
+---
 
 Anyways. It's getting colder around here for some reason. We're expecting some
 sleet and probably ice rain. I forgot about it because I have the short-term

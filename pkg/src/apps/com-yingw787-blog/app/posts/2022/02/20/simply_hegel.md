@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Simply Hegel\", by Robert L. Wicks"
+title: 'Book Review: "Simply Hegel", by Robert L. Wicks'
 date: "2022-02-20T21:41:26-05:00"
 draft: false
 ---

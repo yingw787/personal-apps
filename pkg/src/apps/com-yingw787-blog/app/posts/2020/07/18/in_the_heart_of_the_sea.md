@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"In the Heart of the Sea: The Tragedy of the Whaleship Essex\", by Nathaniel Philbrick"
+title: 'Book Review: "In the Heart of the Sea: The Tragedy of the Whaleship Essex", by Nathaniel Philbrick'
 date: "2020-07-18T16:10:09-04:00"
 draft: false
 ---

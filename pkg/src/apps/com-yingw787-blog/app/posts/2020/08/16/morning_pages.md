@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I sleep now fren.
 
@@ -26,7 +26,7 @@ I sleep now fren.
 <br/>
 <br/>
 
-__________
+---
 
 I spent part of yesterday thinking about how much I like the toilet in my
 parent's basement bathroom. My apartment in Arlington was built (I think) in the

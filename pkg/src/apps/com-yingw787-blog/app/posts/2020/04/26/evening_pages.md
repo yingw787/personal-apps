@@ -13,14 +13,15 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This little one is going somewhere:
 
 ![kitten with suitcase](/img/posts/2020/04/26/morning_pages.png)
 
 I sure hope he has fun!
-__________
+
+---
 
 So today was pretty shit. Honestly my weekends have been pretty shit in general,
 for like the past two months. Not sure whether it's the change in schedule, or

@@ -23,8 +23,8 @@ help it.
 Not to worry, though. My MacBook Pro still has many years of service left, in
 part due to some applications that simply don't exist on Linux (QuickTime!
 [Timing](https://timingapp.com/)! iPhone backups on iTunes!), because of how
-much useful space is left on the internal SSDs, and because it's just a *damn
-good computer*. And even if it didn't, I'm never going to sell or give away this
+much useful space is left on the internal SSDs, and because it's just a _damn
+good computer_. And even if it didn't, I'm never going to sell or give away this
 computer; I got it before college and it's an emotional connection to my
 childhood :blush:
 
@@ -38,28 +38,28 @@ software side there's only so much I can do (and on macOS, too).
 
 What have I learned from my laptop and workstation?
 
--   **High-quality laptops last much longer**: There's just more runway before
-    they become obsolete, if they ever become obsolete that is. Worst comes to
-    worst, you could overwrite everything with a minimal Linux installation, use
-    the CLI exclusively, and return to a blazing fast machine.
+- **High-quality laptops last much longer**: There's just more runway before
+  they become obsolete, if they ever become obsolete that is. Worst comes to
+  worst, you could overwrite everything with a minimal Linux installation, use
+  the CLI exclusively, and return to a blazing fast machine.
 
--   **High-quality laptops are so much more fun to use**: Yeah, the price of
-    several cheap laptops, replaced over several years, is probably around the
-    same as one really good laptop -- and comes with the benefit of the same
-    risks spread out over more hardware (coffee spill? get a new laptop). But
-    they're so much less fun to use. The hardware sucks, the drivers suck, and
-    you spend your time fighting against the machine, losing precious emotional
-    and mental energy as well as your time.
+- **High-quality laptops are so much more fun to use**: Yeah, the price of
+  several cheap laptops, replaced over several years, is probably around the
+  same as one really good laptop -- and comes with the benefit of the same
+  risks spread out over more hardware (coffee spill? get a new laptop). But
+  they're so much less fun to use. The hardware sucks, the drivers suck, and
+  you spend your time fighting against the machine, losing precious emotional
+  and mental energy as well as your time.
 
--   **Desktop workstations are no substitute for a good laptop**: Dynamic DNS
-    and SSH tunneling are great things, but you can't ever *assume* that a
-    particular network will be available when you need it. And that means
-    resources available on a desktop machine, such as a discrete NVIDIA GPU, may
-    not be remotely available on a dependable basis. I tried setting up dynamic
-    DNS using Route 53, and it worked until my IPv4 address changed and
-    everything broke, making my machine unusable from home in Michigan. The
-    other course is to use a virtual machine from a cloud provider, but they're
-    not as powerful and they are much more ephemeral.
+- **Desktop workstations are no substitute for a good laptop**: Dynamic DNS
+  and SSH tunneling are great things, but you can't ever _assume_ that a
+  particular network will be available when you need it. And that means
+  resources available on a desktop machine, such as a discrete NVIDIA GPU, may
+  not be remotely available on a dependable basis. I tried setting up dynamic
+  DNS using Route 53, and it worked until my IPv4 address changed and
+  everything broke, making my machine unusable from home in Michigan. The
+  other course is to use a virtual machine from a cloud provider, but they're
+  not as powerful and they are much more ephemeral.
 
 So. Purchase a powerful laptop it is. I've followed [Project
 Sputnik](https://www.dell.com/support/article/us/en/04/sln310507/ubuntu-based-developer-and-engineering-systems-project-sputnik-?lang=en)

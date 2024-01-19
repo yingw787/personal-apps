@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"User Story Mapping\" by Jeff Patton"
+title: 'Book Review: "User Story Mapping" by Jeff Patton'
 date: "2019-01-06T03:02:04-05:00"
 draft: false
 ---
@@ -15,30 +15,30 @@ of Agile development straight from the horse's mouth, and after reading it I got
 a good number of insights into how Agile development is supposed to work. Here's
 what I learned:
 
-**Stories are meant to spark conversations**: In other words, *get off JIRA*!
-One point Jeff keeps pushing over and over again is the notion of *shared
-understanding* between stakeholders, customers, and engineering/product. There
+**Stories are meant to spark conversations**: In other words, _get off JIRA_!
+One point Jeff keeps pushing over and over again is the notion of _shared
+understanding_ between stakeholders, customers, and engineering/product. There
 is no amount of documentation you could write that would increase the amount of
 shared understanding, because a) requirements change all the time, and b)
 documents always have some degree of interpretability to them. Story mapping is
-also a complement to story management tooling; you need to do it *in addition to
-JIRA*, because at least some stakeholders likely won't use said tool and because
+also a complement to story management tooling; you need to do it _in addition to
+JIRA_, because at least some stakeholders likely won't use said tool and because
 it's easier to have conversations in front of a wall of Post-It Notes instead
 of, say, on Slack or email. Optimize your Agile process for shared
 understanding and the amount of interprocess communication happening, not clean
 backlogs.
 
-**Software and business results are two different things**: You should *cheer*
+**Software and business results are two different things**: You should _cheer_
 when you find out a piece of software doesn't need to be written, because the
 less software you write (while still making the customer happy), the more
 impactful your organization is. Too many engineers think that if they don't
 build something, they don't matter. This is kind of true, until you remind them
-(us) that *all code is technical debt* and introduces risk for development
+(us) that _all code is technical debt_ and introduces risk for development
 velocity slowdowns, decreased shared understanding, bugs and unintended
 behavior, and all the other fun stuff that happens from code merely existing.
 
 **Lazy evaluation is your friend**: Break down requirements on an as-needed
-basis; stories that are further away should *NOT* be broken down into individual
+basis; stories that are further away should _NOT_ be broken down into individual
 tasks, because there's a good chance those specific tasks will change in the
 future, or the story will be thrown away entirely.
 
@@ -47,11 +47,11 @@ shipped iteratively**: Iteratively develop existing features, and incrementally
 develop new features. Iterative development provides business value at every
 step of the process, which shortens build/measure/learn cycles and makes
 software development estimation times more accurate, while incremental
-development ensures the organization keeps its eye on the ball and how *all* the
+development ensures the organization keeps its eye on the ball and how _all_ the
 features combine to create the user experience.
 
-At the end of the day, it's about *structuring your organization so that
-***everybody cares*** about the customer* -- also called [Conway's
+At the end of the day, it's about \*structuring your organization so that
+**_everybody cares_** about the customer\* -- also called [Conway's
 Law](https://en.wikipedia.org/wiki/Conway%27s_law), or "don't hate the player,
 hate the game". I learned a lot from this book (and a lot more stuff I didn't
 cover, like the specifics of building story maps and opportunity maps). If

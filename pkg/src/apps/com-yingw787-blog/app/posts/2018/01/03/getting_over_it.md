@@ -7,7 +7,6 @@ date: "2018-01-03T11:17:13-05:00"
 draft: false
 ---
 
-
 > **A game I made**
 >
 > **For a certain kind of person**
@@ -32,7 +31,7 @@ Here's a nice video that demonstrates how frustrating the game is, without (much
 
 I don't think I could find a completely clean video that also demonstrates how difficult the game is.
 
-___
+---
 
 I'm not a huge fan of video games these days. I think it's likely because I had a lot of progress in video games back in fourth grade, and I lost all that progress when my PlayStation 2 disappeared. Nowadays I have a hard time justifying to myself the time and expense for video games. I also stare at a screen for long periods of time already, as a developer. Nowadays I mainly read books for fun.
 

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Unbroken\", by Laura Hillenbrand"
+title: 'Book Review: "Unbroken", by Laura Hillenbrand'
 date: "2021-04-24T21:29:59-04:00"
 draft: false
 ---

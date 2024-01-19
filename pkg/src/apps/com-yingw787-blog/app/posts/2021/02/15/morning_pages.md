@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This video was so good I downloaded it onto my phone just to make sure I would
 have a copy in case the Reddit mods got rid of it for some reason. He's so smol!
@@ -26,7 +26,7 @@ have a copy in case the Reddit mods got rid of it for some reason. He's so smol!
 <br/>
 <br/>
 
-__________
+---
 
 Today I woke up after maybe 3 and a half hours of sleep. Not sure if I'm going
 to crash later today, but decided to get up and be productive instead of

@@ -6,9 +6,11 @@ title: "Beginning Traveltile"
 date: "2017-05-29T23:09:46-04:00"
 draft: false
 ---
+
 So I'm redoing a project I tried to do last year but kinda failed at: Traveltile. It's an application I wanted to find, document, and share my travels with other people, and for other people to document and share them with me.
 
 I wanted to do this because:
+
 1. There's no great travel builder experience out there for cheap travelers, like for people taking a grad trip. Try and find one that's good (Airbnb might have one but I think it came out after I started building my thing last year)
 2. We all want to visit the same locations, but we each go on the same trip once. Lots of planning, but no incentive to save or share these plans.
 3. I'm lazy and didn't want to plan my own travel itinerary, so I wanted a computer to do it for me.
@@ -22,6 +24,7 @@ I kinda succeeded last year with getting a front-end mockup up and running with 
 3. Limited mastery of React (the one thing I was doing); not to mention a whole bunch of other stuff applications need, such as some form of analytics, payments (if you want to eat), monitoring/logging, etc.
 
 Right now, the plan looks something like:
+
 - traveltile.yingw787.com: Statically built HTML/CSS/JS landing page, built with Hugo and modified hugo-elate-theme, optimized for mobile. Still some hiccups but otherwise it looks alright.
 - app.traveltile.yingw787.com: React front-end for Traveltile, built with multiple staging environments, authentication, etc. Shouldn't encounter any terribly big problems there, besides the API endpoint part.
 - api.traveltile.yingw787.com: Django back-end for Traveltile. I have no idea how to back-end, and this will require a decent amount of skill to pull off. I think I'll need to work through a number of tutorials in order to see how to effectively build and deploy this.

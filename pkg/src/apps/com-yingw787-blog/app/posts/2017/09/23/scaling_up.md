@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Scaling Up: How a Few Companies Make It...and Why the Rest Don't\", by Verne Harnish"
+title: 'Book Review: "Scaling Up: How a Few Companies Make It...and Why the Rest Don''t", by Verne Harnish'
 date: "2017-09-23T20:15:59-04:00"
 draft: false
 ---
@@ -17,8 +17,8 @@ Anybody can start a business, but only a few can scale one. With that truth in
 mind, "Scaling Up" provides not only valuable information about how to scale a
 business, but also creates a framework and common vernacular to support it.
 
-The book breaks up scaling a business into four major sections, *People*,
-*Strategy*, *Execution*, and *Cash*. With an innumerable number of keywords and
+The book breaks up scaling a business into four major sections, _People_,
+_Strategy_, _Execution_, and _Cash_. With an innumerable number of keywords and
 charts to guide you along your journey, the author goes ahead and describes how
 designing a process for a business creates reliable and repeatable (not to
 mention desirable) results.
@@ -33,7 +33,7 @@ true as well. The smartest people I have met in my life have not been persuaded
 by gloss and glory but instead incorporate the knowledge of other people's
 experiences into their own.
 
-____
+---
 
 Like this book review? It was inspired by those of [Sam Anderson of the New York
 Times](https://www.nytimes.com/by/sam-anderson).

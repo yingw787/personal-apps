@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"FM 21-76 Survival\", by U.S. Army"
+title: 'Book Review: "FM 21-76 Survival", by U.S. Army'
 date: "2018-12-04T22:39:16-05:00"
 draft: false
 ---
@@ -46,7 +46,7 @@ want to practice what this book preaches:
 
 - **Actually go out and practice these techniques**: Hunting trips, or multi-day
   camping trips with minimal gear, should be a decent, crude substitute for
-  actual survival. The *big* difference is the desperation and the emotional
+  actual survival. The _big_ difference is the desperation and the emotional
   distress, which will definitely make a huge impact on your physical
   performance in the field. Keeping your mental cache warm with knowledge of how
   to build a fire with flint and steel, how to gut, butcher, and preserve meat,
@@ -72,7 +72,7 @@ want to practice what this book preaches:
   the size you want (though the manual recommends many small fires vs. one large
   fire).
 
-Now, keep in mind that this book is about *survival*, not *evacuation*. Of
+Now, keep in mind that this book is about _survival_, not _evacuation_. Of
 course you should pack a [disaster kit](https://www.ready.gov/build-a-kit) for
 the occasional disaster you need to evacuate from. The difference between
 survival and evacuation is whether there's a civilization to come back to. The

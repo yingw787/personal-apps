@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 <!-- https://stackoverflow.com/a/26276254 -->
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
@@ -26,7 +26,7 @@ __________
 
 Hooman is mine.
 
-__________
+---
 
 The elections are certified! Cat's in the bag, bag's in the river. Hopefully
 I'll never have to even think about politics like this again. I know I just

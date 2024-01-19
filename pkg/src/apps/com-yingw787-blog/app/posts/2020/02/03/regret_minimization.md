@@ -18,67 +18,67 @@ disentangle my thoughts.
 I think trying to minimize regret at the cost of everything else has led to
 several suboptimal life trends and practices in my life:
 
--   My general approach to problems is to take a hammer, and whack continuously
-    at the problem until either the problem breaks or the hammer does. That's
-    why I like simple hammers, because simple hammers in my mind associate to
-    hammers that won't break. In some situations, that might work well. I did
-    end up playing board games with a friend because I'm willing to walk one and
-    a half hours to his house. I am able to read gigantic books that others
-    might not read through all the way.
+- My general approach to problems is to take a hammer, and whack continuously
+  at the problem until either the problem breaks or the hammer does. That's
+  why I like simple hammers, because simple hammers in my mind associate to
+  hammers that won't break. In some situations, that might work well. I did
+  end up playing board games with a friend because I'm willing to walk one and
+  a half hours to his house. I am able to read gigantic books that others
+  might not read through all the way.
 
-    However, some problems simply require a scalpel and not a hammer. Some
-    problems require a much more complex understanding, and if you don't
-    appreciate that understanding, you fail really hard when coming up with a
-    solution. You can't just use one tool in order to solve everything.
+  However, some problems simply require a scalpel and not a hammer. Some
+  problems require a much more complex understanding, and if you don't
+  appreciate that understanding, you fail really hard when coming up with a
+  solution. You can't just use one tool in order to solve everything.
 
-    For example, you can't program or scale your way into attaining somebody's
-    love and affection. In fact, besides being yourself and not being an
-    arrogant douche and maybe dressing a bit better and going to the gym and
-    having some hobbies (okay yes that's a lot), there's no real way to get
-    somebody to love you.
+  For example, you can't program or scale your way into attaining somebody's
+  love and affection. In fact, besides being yourself and not being an
+  arrogant douche and maybe dressing a bit better and going to the gym and
+  having some hobbies (okay yes that's a lot), there's no real way to get
+  somebody to love you.
 
-    There's impostor syndrome too. I don't think you can address impostor
-    syndrome by reading X books a year, or publishing Y posts on a blog, or
-    being the core developer and maintainer for Z popular projects. The solution
-    to impostor syndrome may come from self-acceptance, but it certainly does
-    not come from working harder.
+  There's impostor syndrome too. I don't think you can address impostor
+  syndrome by reading X books a year, or publishing Y posts on a blog, or
+  being the core developer and maintainer for Z popular projects. The solution
+  to impostor syndrome may come from self-acceptance, but it certainly does
+  not come from working harder.
 
--   I've grown to **hate** the problems in my life, because of the pain they
-    cause or I think they might cause. What I really want is to absolutely
-    *crush* the problems I have, to have such an overwhelming superiority that
-    nobody on either "side" has any doubts about who would win. I always
-    imagined it as a D-Day like scenario. I want to have my problems wake up in
-    the morning, look out over the English Channel and see the armada I've built
-    up to deal with them, and go "welp gg" and throw their hands up.
+- I've grown to **hate** the problems in my life, because of the pain they
+  cause or I think they might cause. What I really want is to absolutely
+  _crush_ the problems I have, to have such an overwhelming superiority that
+  nobody on either "side" has any doubts about who would win. I always
+  imagined it as a D-Day like scenario. I want to have my problems wake up in
+  the morning, look out over the English Channel and see the armada I've built
+  up to deal with them, and go "welp gg" and throw their hands up.
 
-    Problems don't work that way though. At some level, your problems are a part
-    of you. Crushing that part of yourself means you might lose another part
-    that's useful. I used to do art for five years, and I probably have lost a
-    good deal of creativity because I optimized for being methodical. Maybe that
-    part fights back automatically, and then it's less of a D-Day situation than
-    a civil war. What used to be 100% turns into 51% - 49% = 2%. Imagine being
-    2% of the person you used to be, let alone 110% and growing. That's kind of
-    how I feel about many results. When I fight myself, I'm always the loser.
+  Problems don't work that way though. At some level, your problems are a part
+  of you. Crushing that part of yourself means you might lose another part
+  that's useful. I used to do art for five years, and I probably have lost a
+  good deal of creativity because I optimized for being methodical. Maybe that
+  part fights back automatically, and then it's less of a D-Day situation than
+  a civil war. What used to be 100% turns into 51% - 49% = 2%. Imagine being
+  2% of the person you used to be, let alone 110% and growing. That's kind of
+  how I feel about many results. When I fight myself, I'm always the loser.
 
-    Then there's the cost of building up to that solution, which is far more
-    painstaking, problematic, and expensive than building a solution that works
-    "good enough". What else could you have been doing with your time and
-    energy? That's probably how I found it easier to accept the pain of regret,
-    than to create a "final" solution that can deal with the problem once and
-    never again. That leads to masochism in many respects. I find it easier to
-    go all gopher and start digging my way through the Earth rather than stick
-    my neck up for just a moment. I find it easier to learn Haskell than to
-    accept "bad" code (?).
+  Then there's the cost of building up to that solution, which is far more
+  painstaking, problematic, and expensive than building a solution that works
+  "good enough". What else could you have been doing with your time and
+  energy? That's probably how I found it easier to accept the pain of regret,
+  than to create a "final" solution that can deal with the problem once and
+  never again. That leads to masochism in many respects. I find it easier to
+  go all gopher and start digging my way through the Earth rather than stick
+  my neck up for just a moment. I find it easier to learn Haskell than to
+  accept "bad" code (?).
 
--   I realize minimizing regret oftentimes leads to a victimhood complex. The
-    notion that I'm trying to steer as far away from what I fear as possible
-    implies that there is something to fear, and a concrete, observable display
-    of that fear, real or not, getting to me and affecting my decision making.
-    In the past, I've often complained about how bad things are, how I wish
-    things were different, most times almost without realizing it. WHen you're
-    preparing for something bad to happen to you, and nothing happens, you
-    almost wish something bad happens to you because then you get to say you
-    were right.
+- I realize minimizing regret oftentimes leads to a victimhood complex. The
+  notion that I'm trying to steer as far away from what I fear as possible
+  implies that there is something to fear, and a concrete, observable display
+  of that fear, real or not, getting to me and affecting my decision making.
+  In the past, I've often complained about how bad things are, how I wish
+  things were different, most times almost without realizing it. WHen you're
+  preparing for something bad to happen to you, and nothing happens, you
+  almost wish something bad happens to you because then you get to say you
+  were right.
 
 Most of all, when I've minimized regret, I realize every time that the real
 regret is not embracing the situation. When you build a bunker and live in it,
@@ -122,7 +122,7 @@ I'm terrified of being that guy. That guy who (still) can't lose ten pounds but
 can gain fifteen. The guy who's too afraid to say "I love you" to his
 significant other. The guy who takes the easy way out.
 
-__________
+---
 
 So I have ["The Five Regrets of the Dying"](/five_regrets) as the only post on
 my blog that I've pinned. I figure that if I have to have a hill that I'm going
@@ -130,21 +130,21 @@ to die on, I should choose those hills carefully. I choose these five hills. I
 don't think it's necessarily a mistake to minimize regret. It's about properly
 identifying the right regrets to minimize.
 
-I think given how I *always* choose the hard way of doing things, and how I've
+I think given how I _always_ choose the hard way of doing things, and how I've
 found success at doing something is doing that something and not failing, seeing
 how others define "failure" when there's nothing to lose by doing so is highly
 informative.
 
-*I wish I had the courage to live a life true to myself, not the life others
-expected of me.*
+_I wish I had the courage to live a life true to myself, not the life others
+expected of me._
 
-*I wish I hadn't worked so hard.*
+_I wish I hadn't worked so hard._
 
-*I wish I had the courage to express my feelings.*
+_I wish I had the courage to express my feelings._
 
-*I wish I had stayed in touch with my friends.*
+_I wish I had stayed in touch with my friends._
 
-*I wish that I had let myself be happier.*
+_I wish that I had let myself be happier._
 
 I think these, more than anything else, should serve as the "master
 backpressures" to keep in the back of my mind. If there's a pressure to act in a
@@ -158,7 +158,7 @@ corners in making software rather than properly structuring systems to make them
 complete. The guy who would rather go to bed than stay up and entertain his kids
 or meet up with friends.
 
-The hard thing about hard things is that most of the times, *they're easy*. At
+The hard thing about hard things is that most of the times, _they're easy_. At
 least for me, I think working 60 hours a week is easy if you're facing marital
 troubles or if your kids don't like you.
 

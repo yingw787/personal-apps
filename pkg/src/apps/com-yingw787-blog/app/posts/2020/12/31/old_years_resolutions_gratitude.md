@@ -9,21 +9,21 @@ draft: false
 
 The Year In Review:
 
--   [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
--   [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
--   [**Year in Review:
-    Gratitude**](/posts/2020/12/31/old_years_resolutions_gratitude)
--   [Year In Review:
-    Resolutions](/posts/2020/12/31/old_years_resolutions_review)
--   [Year In Review:
-    Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+- [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+- [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
+- [**Year in Review:
+  Gratitude**](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [Year In Review:
+  Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+- [Year In Review:
+  Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
 
-__________
+---
 
 [**GitHub repository
 (PRIVATE)**](https://github.com/yingw787/gratitude-journal.yingw787.com)
 
-__________
+---
 
 I think this is a new review I'd like to start this year and keep going through
 subsequent years. At a time where negativity surrounds us, it's important to
@@ -79,7 +79,7 @@ what my brain is primed to do or reach towards for emotional comfort, which
 helps inform some of the priorities for next year's New Year's Resolutions and
 how likely I am to accomplish them.
 
-__________
+---
 
 Update:
 

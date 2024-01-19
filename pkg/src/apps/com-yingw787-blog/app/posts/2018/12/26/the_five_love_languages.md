@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Five Love Languages: The Secret to Love that Lasts\", by Gary Chapman"
+title: 'Book Review: "The Five Love Languages: The Secret to Love that Lasts", by Gary Chapman'
 date: "2018-12-26T11:56:50-05:00"
 draft: false
 ---
@@ -25,15 +25,15 @@ and dialect will help shore up your emotional security.
 There was a little quiz at the end of the book to self-assess your favorite love
 languages and I thought I should share what my score was:
 
--   Words of Affirmation: 5
+- Words of Affirmation: 5
 
--   Quality Time: 8
+- Quality Time: 8
 
--   Receiving Gifts: 4
+- Receiving Gifts: 4
 
--   Acts of Service: 5
+- Acts of Service: 5
 
--   Physical Touch: 8
+- Physical Touch: 8
 
 I think this is a pretty accurate picture. I really like physical touch (like
 back rubs or massages or touches on the shoulder) and spending quality time,

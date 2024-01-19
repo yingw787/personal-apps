@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Behold! The infamous cross-dog:
 
 ![cross-dog](/video/posts/2020/08/09/morning_pages.mp4)
 
-__________
+---
 
 So last night I had a dream where somehow I lived in the future and I got four
 freeze-dried white kittens. Then I poured some water on top of them and then

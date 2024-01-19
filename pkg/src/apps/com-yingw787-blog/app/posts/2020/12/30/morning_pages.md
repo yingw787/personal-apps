@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Apparently this is a momma cat and her kitten! But they'll always be kitties to
 us hoomans.
@@ -23,7 +23,7 @@ us hoomans.
 
 adorbs.
 
-__________
+---
 
 I wonder if anybody else experiences these, but I think a few times now I've had
 these weird dreams where something happens or somebody says something, and then
@@ -41,7 +41,7 @@ probably forward propagated from that. The acquaintance's significant other was
 recorded on "TV" (in the dream) the phrase "everything you love can definitely
 die". So I hope I don't hear that phrase for the next few months.
 
-__________
+---
 
 So I'm working on digitizing one tranche of my financial ledger, and holy hell
 is it a slog. I don't get how people do data entry tasks for a living, it's so

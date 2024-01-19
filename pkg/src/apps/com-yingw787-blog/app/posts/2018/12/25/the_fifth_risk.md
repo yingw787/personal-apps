@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Fifth Risk\", by Michael Lewis"
+title: 'Book Review: "The Fifth Risk", by Michael Lewis'
 date: "2018-12-25T16:14:34-05:00"
 draft: false
 ---

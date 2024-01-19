@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Obstacle is the Way: The Timeless Art of Turning Trials into Triumph\", by Ryan Holiday"
+title: 'Book Review: "The Obstacle is the Way: The Timeless Art of Turning Trials into Triumph", by Ryan Holiday'
 date: "2021-05-09T04:03:19-05:00"
 draft: false
 ---

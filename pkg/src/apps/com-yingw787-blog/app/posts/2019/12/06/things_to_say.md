@@ -41,8 +41,8 @@ internalized.
 
 I get really mad about things sometimes. Some days I also feel blue. I became a
 software engineer in part because I like having concrete solutions and tractable
-problems. You have a problem, it *can be fixed in the first place*, *the fix is
-doable*, and when you apply a solution, *the problem stays fixed* (there may be
+problems. You have a problem, it _can be fixed in the first place_, _the fix is
+doable_, and when you apply a solution, _the problem stays fixed_ (there may be
 new problems, but that's a different concern, different because you can
 identify them as arising only after you've fixed the previous problem).
 
@@ -72,7 +72,7 @@ to getting people to listen to you and do what you want. The vast majority of
 jobs are implementation efforts, and all successful implementation efforts are
 multi-person achievements.
 
-__________
+---
 
 Anyways, before I go off the deep end. One friend and mentor I admire practices
 some verbal cues to effectively commit the brain to positive thinking, and I'd
@@ -80,73 +80,73 @@ like to share them here. My understanding is you vomit the phrase in front of
 somebody else and then have to come up with something to say before the pause
 becomes too long and they think you're weird. Here are some examples:
 
--   **"I'm really curious, ..."**: Use this if somebody said something just
-    batshit insane. This helps frame the conversation as one where you are
-    seeking to learn and not force a conflict when you're choking on your sushi,
-    which could result in regret. It also internally engenders humility,
-    curiosity, and resourcefulness. The other person can take the prompt and
-    elaborate more with context, or repeat themselves to confirm the batshit
-    insanity for the record.
+- **"I'm really curious, ..."**: Use this if somebody said something just
+  batshit insane. This helps frame the conversation as one where you are
+  seeking to learn and not force a conflict when you're choking on your sushi,
+  which could result in regret. It also internally engenders humility,
+  curiosity, and resourcefulness. The other person can take the prompt and
+  elaborate more with context, or repeat themselves to confirm the batshit
+  insanity for the record.
 
-    If you can't think of anything to say afterwards, because the thing they
-    said just struck you dumb, you can append the sane default **"... could you
-    elaborate on that statement?"**. Pretty safe, all things considered.
+  If you can't think of anything to say afterwards, because the thing they
+  said just struck you dumb, you can append the sane default **"... could you
+  elaborate on that statement?"**. Pretty safe, all things considered.
 
--   **"I'd love to ..."**: Adopt this phrase if you're really not looking
-    forward to doing something. Tossing this out onto the floor will force you
-    to say something positive about the thing you're hating, and that forces you
-    to think something positive about the thing you're hating. For example, if
-    you're not looking forward to working with a dick, you can append the phrase
-    **"... work with you to ..."** and that will make you think of why it's
-    important to succeed at working with this dick (like **"... understand this
-    component so that I can independently iterate on it so we can get this
-    shipped and move on."**).
+- **"I'd love to ..."**: Adopt this phrase if you're really not looking
+  forward to doing something. Tossing this out onto the floor will force you
+  to say something positive about the thing you're hating, and that forces you
+  to think something positive about the thing you're hating. For example, if
+  you're not looking forward to working with a dick, you can append the phrase
+  **"... work with you to ..."** and that will make you think of why it's
+  important to succeed at working with this dick (like **"... understand this
+  component so that I can independently iterate on it so we can get this
+  shipped and move on."**).
 
--   **"I'm really {grateful|fortunate} that ..."**: Practice this phrase if
-    you're feeling blue or seeing red and you think your sadness or anger will
-    tinge what you say next. Saying this forces you to find something to be
-    grateful for about the topic at hand. The benefit is you can keep the
-    gratitude after you've said the statement :upside_down_face:
+- **"I'm really {grateful|fortunate} that ..."**: Practice this phrase if
+  you're feeling blue or seeing red and you think your sadness or anger will
+  tinge what you say next. Saying this forces you to find something to be
+  grateful for about the topic at hand. The benefit is you can keep the
+  gratitude after you've said the statement :upside_down_face:
 
-    If you need more time to think about something you're grateful or fortunate
-    for, you can append the statement **"... I have the opportunity to ..."**
-    and keep frantically searching up the tree of relevant events until you find
-    something to be grateful for (e.g. **".. work with you to find a solution to
-    this problem"** is pretty non-committal, communicates intention to find and
-    build alignment, and defuses any standing tension. It might be weird to just
-    say this out of context, so please substitute your own sane default here.)
+  If you need more time to think about something you're grateful or fortunate
+  for, you can append the statement **"... I have the opportunity to ..."**
+  and keep frantically searching up the tree of relevant events until you find
+  something to be grateful for (e.g. **".. work with you to find a solution to
+  this problem"** is pretty non-committal, communicates intention to find and
+  build alignment, and defuses any standing tension. It might be weird to just
+  say this out of context, so please substitute your own sane default here.)
 
--   **"The truth is, ..."**: Apply this phrase if your emotions cloud the
-    definition between truth and hyperbole. In the heat of the moment, things
-    may (usually) seem worse than they really are, and forcing yourself to state
-    hard truths without the hyperbole gives the impression that you're grounded
-    and pragmatic, which makes it easier for everybody to rally around you and
-    build alignment around your vision.
+- **"The truth is, ..."**: Apply this phrase if your emotions cloud the
+  definition between truth and hyperbole. In the heat of the moment, things
+  may (usually) seem worse than they really are, and forcing yourself to state
+  hard truths without the hyperbole gives the impression that you're grounded
+  and pragmatic, which makes it easier for everybody to rally around you and
+  build alignment around your vision.
 
-__________
+---
 
 Some phrases I explicitly wouldn't use are:
 
--   **"I {feel|think} that ..."**: Generally, if you are asserting something,
-    you should assertively state it and refrain from saying this entirely
-    Otherwise, others may think you're proposing something that you might not
-    fully support yourself, which is generally a precursor to them getting
-    thrown under the bus if they committed and it didn't work out
-    :slightly_smiling_face: :bus: :upside_down_face:
+- **"I {feel|think} that ..."**: Generally, if you are asserting something,
+  you should assertively state it and refrain from saying this entirely
+  Otherwise, others may think you're proposing something that you might not
+  fully support yourself, which is generally a precursor to them getting
+  thrown under the bus if they committed and it didn't work out
+  :slightly_smiling_face: :bus: :upside_down_face:
 
-    If you're not fully comfortable with doing something, you should explicitly
-    state you're not comfortable, then explictly state why you are doing that
-    action in the first place, what other options you have considered and ruled
-    out and why, and what observables (actionables or deliverables) you expect
-    from executing on that action. Better to resolve a maybe to a right or wrong
-    decision, and iterate on your own heuristics if you're wrong.
+  If you're not fully comfortable with doing something, you should explicitly
+  state you're not comfortable, then explictly state why you are doing that
+  action in the first place, what other options you have considered and ruled
+  out and why, and what observables (actionables or deliverables) you expect
+  from executing on that action. Better to resolve a maybe to a right or wrong
+  decision, and iterate on your own heuristics if you're wrong.
 
--   **"But ...**: This helps set up a conflict. Replace with the conjunction
-    **"And so ..."** in order to bridge between, instead of wall off, what they
-    said and what you are following up with (which doesn't need to change by
-    switching conjunctions).
+- **"But ...**: This helps set up a conflict. Replace with the conjunction
+  **"And so ..."** in order to bridge between, instead of wall off, what they
+  said and what you are following up with (which doesn't need to change by
+  switching conjunctions).
 
-__________
+---
 
 Sometimes, things won't turn out to be okay, and that's fine (or it isn't fine,
 and wasn't fine to begin with, and now you're unhappy on top of it not being

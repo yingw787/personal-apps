@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Owl being a catto. Owlurrito.
 
@@ -27,7 +27,7 @@ Owl being a catto. Owlurrito.
 
 I don't think that works out too well. But owl cute.
 
-__________
+---
 
 Hmm, what's on my mind today. Not a whole lot, honestly. I'm not sure what
 exactly I did today. Time does seem like it's passing more quickly, especially

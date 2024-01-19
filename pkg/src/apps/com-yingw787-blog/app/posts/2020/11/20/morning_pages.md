@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 What a noble sphinx! Dog's cool too.
 
 ![sphinx](/img/posts/2020/11/20/morning_pages.webp)
 
-__________
+---
 
 I think with the first fall frosts (which came pretty late this year, didn't
 drop below the 70s until mid-November), I think I'm slowly starting to realize

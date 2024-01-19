@@ -6,6 +6,7 @@ title: "My first post"
 date: "2017-04-05T23:16:17-04:00"
 draft: false
 ---
+
 <pre>
   <code class="language-python">
   print "Hello World!"
@@ -19,19 +20,19 @@ I thought about going with a static website generator such as Hugo or Jekyll, bu
 Current capabilities (4-5-2017):
 
 - Support for:
-    - Markdown!! (via markdown-it)
-    - Syntax highlighting for code blocks (via markdown-it-prism)
-    - Images (via file-loader and webpack)
-    - File upload and fetching (via axios)
-    - Basic routing (via react-router)
+  - Markdown!! (via markdown-it)
+  - Syntax highlighting for code blocks (via markdown-it-prism)
+  - Images (via file-loader and webpack)
+  - File upload and fetching (via axios)
+  - Basic routing (via react-router)
 
 Remaining TODOs:
 
 - Add in working support (no console errors) for:
-    - UML diagrams or equivalent via markdown-it-mermaid or js-sequence-diagrams
-    - TeX support w/ KaTeX via markdown-it-katex
-    - Disqus comment forums or equivalent
-    - Google Analytics integrations and SEO optimization
+  - UML diagrams or equivalent via markdown-it-mermaid or js-sequence-diagrams
+  - TeX support w/ KaTeX via markdown-it-katex
+  - Disqus comment forums or equivalent
+  - Google Analytics integrations and SEO optimization
 - Generate easily usable deployment pipeline with npm or bash scripts
 - YAML or TOML base configs to go with each markdown blog post, because having metadata to organize by is nice at any meaningful scale
 - Webpack code splitting with `react-router`

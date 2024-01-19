@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I have a giant thing of mini potatoes and I'm looking to cook them. Apparently,
 boiling things in water + baking soda, then putting them into an oven, is a
@@ -23,13 +23,13 @@ or [this one on oven-baked chicken
 wings](https://thecookful.com/bake-chicken-wings-crispy/), involve the use of
 some form of baking powder or baking soda. Which is interesting.
 
-__________
+---
 
 I don't know what to do about my weekends anymore, but I can't really relax or
 work during those days. Apparently, I just lay on my bed and watch my phone for
 the whole day, or my computer if I don't have my phone available. I think it's a
 combination of multiple things. I'm stressed out about my project and I want to
-get it done, and I'm *still* a good deals away from that. I put a lot of
+get it done, and I'm _still_ a good deals away from that. I put a lot of
 emotional investment into this project, and I'm scared that if it goes down a
 lot of that investment goes down as well. And I'm tired from the week in general
 and I guess I'm subconsciously figuring if I'm going to run out of steam, I

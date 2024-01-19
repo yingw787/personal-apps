@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Last Lecture\", by Randy Pausch"
+title: 'Book Review: "The Last Lecture", by Randy Pausch'
 date: "2018-11-26T22:13:55-05:00"
 draft: false
 ---
@@ -15,36 +15,36 @@ Pausch's comes across as more authentic and relatable, since for him it is a
 personal journey. There were a number of takeaways from the book I found
 valuable:
 
--   **Live the life you want.** Pausch mentions how he and his spouse Jai may
-    not have taken as many vacations when they did if he had more time. This
-    point reminded me of the ["financial independence, retire early", or
-    FIRE](https://twocents.lifehacker.com/the-basics-of-fire-financial-independence-and-early-re-1820129768),
-    and their constant admonitions to *first* live the life you want before
-    trying to develop the capital and cash flow to support it, since you only
-    live each day once, and you don't want to find out years later that you
-    never got to live your life. I can't speak for others, but one distinct
-    problem that I currently have is that *I don't know what life I want for
-    myself*, and that prevents me from living the life I want (as I want
-    everything and nothing at the same time).
+- **Live the life you want.** Pausch mentions how he and his spouse Jai may
+  not have taken as many vacations when they did if he had more time. This
+  point reminded me of the ["financial independence, retire early", or
+  FIRE](https://twocents.lifehacker.com/the-basics-of-fire-financial-independence-and-early-re-1820129768),
+  and their constant admonitions to _first_ live the life you want before
+  trying to develop the capital and cash flow to support it, since you only
+  live each day once, and you don't want to find out years later that you
+  never got to live your life. I can't speak for others, but one distinct
+  problem that I currently have is that _I don't know what life I want for
+  myself_, and that prevents me from living the life I want (as I want
+  everything and nothing at the same time).
 
--   **Create sharp memories.** Pausch had three young children at the time of
-    his death, and he wanted to impart some memories into their minds, where
-    memories may be fuzzy. As his oldest son liked marine life, he took him to
-    swim with dolphins. Swimming with dolphins, especially as a young child, is
-    an unforgettable experience, and hopefully somewhere in that memory will be
-    his dad. I think this is pretty great advice for everybody, to think of what
-    types of memories we wish to create.
+- **Create sharp memories.** Pausch had three young children at the time of
+  his death, and he wanted to impart some memories into their minds, where
+  memories may be fuzzy. As his oldest son liked marine life, he took him to
+  swim with dolphins. Swimming with dolphins, especially as a young child, is
+  an unforgettable experience, and hopefully somewhere in that memory will be
+  his dad. I think this is pretty great advice for everybody, to think of what
+  types of memories we wish to create.
 
--   **Think of the positives.** As a STEM professor, Pausch mentioned being
-    highly analytical about his terminal diagnosis, even counting the number of
-    cancer tumors on his liver. To me it was either that or it was perhaps an
-    out-of-body experience to know you are about to die. Even so, Pausch lived
-    with great dignity, with others (including a police officer who stopped him
-    for speeding) to comment on how vitally he lived his last days.
+- **Think of the positives.** As a STEM professor, Pausch mentioned being
+  highly analytical about his terminal diagnosis, even counting the number of
+  cancer tumors on his liver. To me it was either that or it was perhaps an
+  out-of-body experience to know you are about to die. Even so, Pausch lived
+  with great dignity, with others (including a police officer who stopped him
+  for speeding) to comment on how vitally he lived his last days.
 
-    Many of us hear about how when somebody we love dies, a part of us goes with
-    him. One well-wisher mentioned how the Indian spiritual leader Krishnamurti
-    spun this statement around, saying part of us goes to accompany them, so
-    that they will not be alone. This reassuring, optimistic nature is
-    constantly present in the book; Pausch provides this father figure very well
-    in this book for his kids.
+  Many of us hear about how when somebody we love dies, a part of us goes with
+  him. One well-wisher mentioned how the Indian spiritual leader Krishnamurti
+  spun this statement around, saying part of us goes to accompany them, so
+  that they will not be alone. This reassuring, optimistic nature is
+  constantly present in the book; Pausch provides this father figure very well
+  in this book for his kids.

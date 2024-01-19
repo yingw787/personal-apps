@@ -11,17 +11,17 @@ I think I'm going to start jotting down weekly updates. My personal progress isn
 
 I'm thinking:
 
-  - One reading-related (book reviews)
+- One reading-related (book reviews)
 
-  - How many days I meditated (according to Calm)
+- How many days I meditated (according to Calm)
 
-  - How many days I exercised (according to Sworkit/agenda)
+- How many days I exercised (according to Sworkit/agenda)
 
-  - How productive I was (according to Timing)
+- How productive I was (according to Timing)
 
-  - (If applicable) one fitness-related
+- (If applicable) one fitness-related
 
-  - (If applicable) one coding-related
+- (If applicable) one coding-related
 
 Out of all the motivational shticks I've seen, one has stuck with me:
 

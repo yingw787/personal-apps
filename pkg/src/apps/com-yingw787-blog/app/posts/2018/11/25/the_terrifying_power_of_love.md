@@ -12,9 +12,9 @@ draft: false
 >
 > **Professor Quirrell, in "Harry Potter and the Philosopher's Stone"**
 
-When I first read this sentence years ago, I thought, *of course the bad guy
+When I first read this sentence years ago, I thought, _of course the bad guy
 would say this. This is the only way to rationalize his actions. Since he loses,
-he must be wrong.* To my kid brain, the fact that the author wrote in the
+he must be wrong._ To my kid brain, the fact that the author wrote in the
 villian's demise played into my belief into the simple, black-and-white world
 part of us all yearn for: that there is a good side and a bad side, with good
 people winning and bad people losing. Of course this is the way it is. Of course
@@ -26,7 +26,7 @@ many shades of gray, with the barrier between the two disappearing underneath.
 If you aren't ready for this change, like me, you may wonder why if hatred has
 not disappeared, whether there is a place -- maybe even a useful place -- in it
 in our world and for ourselves. Not a renunciation of good or good acts, but an
-*equitable balance* in our hearts between the two.
+_equitable balance_ in our hearts between the two.
 
 There is not. Not even close. Not even in the sense that hatred corrupts and can
 never be part of a balance, but that love beats hate up, down, and sideways for
@@ -34,7 +34,7 @@ Sunday brunch. Since it isn't, we should merely content ourselves with
 understanding hatred (where it comes from, how it manifests, and how to stop
 it), and otherwise purge it from our hearts.
 
-__________
+---
 
 I had a number of rough drafts around this topic, but I don't think I had a
 convincing way to express the difference -- and the gulf -- between love and
@@ -76,7 +76,7 @@ expensive](https://aeon.co/ideas/what-did-hannah-arendt-really-mean-by-the-banal
 > of her image, and that my mental conversation with her would have been just as
 > vivid and just as satisfying.
 
-__________
+---
 
 Love is terrifyingly powerful because it exists even in the greatest darkness.
 Where hatred is motivated by greed, rebellion, sadism, or any other external

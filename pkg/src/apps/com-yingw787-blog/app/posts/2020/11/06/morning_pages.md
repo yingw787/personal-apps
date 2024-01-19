@@ -10,20 +10,21 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 If Satan could make a year. One year. Just one.
 
-What's more exciting than Florida in 2000?  A Florida-type scenario in 2020 with
+What's more exciting than Florida in 2000? A Florida-type scenario in 2020 with
 not Florida, but Wisconsin, Michigan, Nevada, Arizona, Georgia, North Carolina,
 and Pennsylvania. Where we have to pick between Joe Biden, a guy we already got
-and who was...alright...vs. a guy who's killed ***at least a quarter million
-people*** (and probably a third of a million) just in the past year.
+and who was...alright...vs. a guy who's killed **_at least a quarter million
+people_** (and probably a third of a million) just in the past year.
 
 Yes. We are having trouble deciding between these two. This week's been some
 slow form of extra torture. This can't be how we die. This would be the
@@ -54,7 +55,7 @@ Some situations I think are arising around the country:
 >
 > Revolutionary: THE REVOLUTION STARTS NOW!!!
 
-__________
+---
 
 > Trump Supporter: [Give us the election results and we'll burn your polling
 > station to the ground.](https://www.youtube.com/watch?v=6nqQVwQ1STs)
@@ -66,6 +67,6 @@ __________
 
 ![angry](/img/posts/2020/11/06/morning_pages_2.jpg)
 
-__________
+---
 
 Just...just drink some cider. Cider is good.

@@ -2,19 +2,19 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Black Swan\", by Nassim Nicholas Taleb"
+title: 'Book Review: "The Black Swan", by Nassim Nicholas Taleb'
 date: "2020-04-09T00:00:01-04:00"
 draft: false
 ---
 
 The Incerto Series:
 
--   [**The Black Swan**](/posts/2020/04/09/the_black_swan)
--   [Antifragile](/posts/2020/05/06/antifragile)
--   [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
--   [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
+- [**The Black Swan**](/posts/2020/04/09/the_black_swan)
+- [Antifragile](/posts/2020/05/06/antifragile)
+- [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
+- [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
 
-__________
+---
 
 In 400 or so pages, Professor Taleb shatters your worldview and rebuilds it with
 "The Black Swan", or a book describing the significant impact of highly
@@ -42,8 +42,8 @@ Two things I learned from reading this book were:
   (street smart) and Dr. John (book smart). When asked what the probability of a
   coin landing tails up if it landed on heads 49 times already, Dr. John
   immediately exclaimed "50%" because probabilities are separate from each
-  other, while Fat Tony said "<1%" because *he assumes the coin is rigged to
-  land heads*. Dr. John used a probability model that would completely break if
+  other, while Fat Tony said "<1%" because _he assumes the coin is rigged to
+  land heads_. Dr. John used a probability model that would completely break if
   the (unspoken) assumption of a fair game was relaxed. Don't be like Dr. John.
   Be like Fat Tony, and apply credibility factors to your assumptions.
 

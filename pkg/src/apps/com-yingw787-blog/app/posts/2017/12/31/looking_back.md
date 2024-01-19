@@ -11,14 +11,14 @@ This has been quite the year, in terms of milestones and the stage of life I am 
 
 To date, I have:
 
-  - Spent my first full year working at a software company
-  - Have garnered a great deal of skill as a software engineer, including continuing mastery of Python, JavaScript, and mongoDB, as well as scheduling and estimating features, UI/UX design, devops, research engineering and data science, and problem scoping and optimization knowledge
-  - Spent my first full year living apart from both home and school (super scary at first, later on not as scary)
-  - Generated my first **$30,000** in savings
-  - Read **36** books, not including ebooks or research papers, with plans to read many more
-  - Finished **7** Udemy online courses, and working on an eighth at the time of writing, which has provided me with skills in Ruby on Rails, React and React Native, e-commerce on Shopify, and Django REST Framework
-  - Started my personal website and began regularly publishing on my blog
-  - Learned how to make friends in real life and develop a more confident personality
+- Spent my first full year working at a software company
+- Have garnered a great deal of skill as a software engineer, including continuing mastery of Python, JavaScript, and mongoDB, as well as scheduling and estimating features, UI/UX design, devops, research engineering and data science, and problem scoping and optimization knowledge
+- Spent my first full year living apart from both home and school (super scary at first, later on not as scary)
+- Generated my first **$30,000** in savings
+- Read **36** books, not including ebooks or research papers, with plans to read many more
+- Finished **7** Udemy online courses, and working on an eighth at the time of writing, which has provided me with skills in Ruby on Rails, React and React Native, e-commerce on Shopify, and Django REST Framework
+- Started my personal website and began regularly publishing on my blog
+- Learned how to make friends in real life and develop a more confident personality
 
 It's not a bad start. Even though I don't feel it right now, I know it is indeed leagues ahead of where I was a year ago. Working at the company I'm working at right now has probably been the biggest confidence booster and the best learning experience I have had so far (due to both the good and the bad things).
 

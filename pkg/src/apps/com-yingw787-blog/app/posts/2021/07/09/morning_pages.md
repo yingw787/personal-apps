@@ -12,7 +12,7 @@ pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
 much over for me, but the Morning Poppins group is still going strong (I think).
 So here's some of my brief thoughts.
 
-__________
+---
 
 Look at me!!
 
@@ -20,7 +20,7 @@ Look at me!!
 
 Look at all these pictures of me too!!
 
-__________
+---
 
 Oh man oh man oh man. I almost passed out twice yesterday during personal
 training and I'm not quite sure why. I went over there, and we were doing these

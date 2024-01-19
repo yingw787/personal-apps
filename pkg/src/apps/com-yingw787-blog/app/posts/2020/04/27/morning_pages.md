@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Me this morning:
 
 ![sleepy](/img/posts/2020/04/27/morning_pages.jpg)
 
-__________
+---
 
 Today I feel...tepid, and worried (no difference there). I do wonder whether
 there's an end to this apprehension. It's like taking a leap of faith, and

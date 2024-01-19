@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Hehehe, I got the kittie.
 
@@ -21,7 +21,7 @@ Hehehe, I got the kittie.
 
 I got the kittie.
 
-__________
+---
 
 I don't think I've been writing a whole lot recently. Last week was a bit hard.
 I was working, or at least thinking about working, until pretty late into the
@@ -48,7 +48,7 @@ terrified are quiet blood clots that will get me when I'm 30 or something.
 
 I don't know. Maybe I should have listened to my parents. They're pretty
 anti-vaxx in general, and my mom sending over YouTube comments and New York Post
-articles did nothing to make me feel better, but they *were* right about the
+articles did nothing to make me feel better, but they _were_ right about the
 coronavirus being something to worry about months before everybody else started
 freaking out, and maybe they're right about this too.
 

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"The Good Place\", by Mike Schur"
+title: 'TV Show Review: "The Good Place", by Mike Schur'
 date: "2021-05-16T19:23:06-04:00"
 draft: false
 ---

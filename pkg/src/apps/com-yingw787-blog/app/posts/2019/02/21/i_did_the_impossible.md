@@ -18,50 +18,50 @@ in the future, and it will likely be the primary stock I own.
 
 By all measures, it's a good stock for me to own over the long term, because:
 
--   Its general scale relative to the market; its primary (and really only
-    serious) competitor is Verizon, and Verizon is big enough to [purchase the
-    head of the
-    FCC](https://www.opensecrets.org/revolving/rev_summary.php?id=78736). In a
-    highly regulated market with high moats, this regulatory capture means
-    predictable profits for incumbents.
+- Its general scale relative to the market; its primary (and really only
+  serious) competitor is Verizon, and Verizon is big enough to [purchase the
+  head of the
+  FCC](https://www.opensecrets.org/revolving/rev_summary.php?id=78736). In a
+  highly regulated market with high moats, this regulatory capture means
+  predictable profits for incumbents.
 
--   A long history of not just paying dividends, but increasing dividends over
-    time. [The Sure Dividend
-    Newsletter](https://www.suredividend.com/subscribe/) is a great resource for
-    learning more about dividend investing. I'd rather keep the dividends than
-    paying it out to my index fund manager when purchasing an index fund. In
-    addition, [market capture by index
-    funds](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30AD689509AAD62F5B677E916C28C4B6/S1469356917000064a.pdf/div-class-title-hidden-power-of-the-big-three-passive-index-funds-re-concentration-of-corporate-ownership-and-new-financial-risk-a-href-fns01-ref-type-fn-a-div.pdf)
-    have their own dangers, and as more people invest in index funds (a very
-    good thing), the reward to risk ratio increases, making totally stable
-    purchases financially attractive. Also if I invest and hold a certain
-    amount, I can beat the expense ratio of index funds (this purchase cost
-    around 0.25%, beating the common index fund expense ratio of 0.5%) I enjoy
-    walking the path less traveled.
+- A long history of not just paying dividends, but increasing dividends over
+  time. [The Sure Dividend
+  Newsletter](https://www.suredividend.com/subscribe/) is a great resource for
+  learning more about dividend investing. I'd rather keep the dividends than
+  paying it out to my index fund manager when purchasing an index fund. In
+  addition, [market capture by index
+  funds](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/30AD689509AAD62F5B677E916C28C4B6/S1469356917000064a.pdf/div-class-title-hidden-power-of-the-big-three-passive-index-funds-re-concentration-of-corporate-ownership-and-new-financial-risk-a-href-fns01-ref-type-fn-a-div.pdf)
+  have their own dangers, and as more people invest in index funds (a very
+  good thing), the reward to risk ratio increases, making totally stable
+  purchases financially attractive. Also if I invest and hold a certain
+  amount, I can beat the expense ratio of index funds (this purchase cost
+  around 0.25%, beating the common index fund expense ratio of 0.5%) I enjoy
+  walking the path less traveled.
 
--   Specifically for me, some understanding of the underlying technological
-    reality. I know and appreciate that telephone lines are synchronous communications
-    networks. This means every call is guaranteed a set amount of bandwidth
-    along the entire network for the duration of the call by every service along
-    the route. This leads to higher call quality in comparison to VoIP (Voice
-    over Internet Protocol), as TCP is anychronous and packets that arrive late
-    are useless to real-time systems, and UDP drops packets; both lead to
-    silence and static, which affects call quality. This is something inherent
-    to the Internet and cannot be fixed. Telecom network's synchronous nature
-    also means feature rollouts take place on a network scale, because every
-    service along the route needs to support the increased bandwidth. This
-    forces massive upfront capital expenditures and a long-term rollout
-    schedule, which is good for building moats and ensuring product stability.
-    It also means the kind of [creative
-    destruction](https://en.wikipedia.org/wiki/Creative_destruction) seen in
-    other fields of tech are less likely in this field.
+- Specifically for me, some understanding of the underlying technological
+  reality. I know and appreciate that telephone lines are synchronous communications
+  networks. This means every call is guaranteed a set amount of bandwidth
+  along the entire network for the duration of the call by every service along
+  the route. This leads to higher call quality in comparison to VoIP (Voice
+  over Internet Protocol), as TCP is anychronous and packets that arrive late
+  are useless to real-time systems, and UDP drops packets; both lead to
+  silence and static, which affects call quality. This is something inherent
+  to the Internet and cannot be fixed. Telecom network's synchronous nature
+  also means feature rollouts take place on a network scale, because every
+  service along the route needs to support the increased bandwidth. This
+  forces massive upfront capital expenditures and a long-term rollout
+  schedule, which is good for building moats and ensuring product stability.
+  It also means the kind of [creative
+  destruction](https://en.wikipedia.org/wiki/Creative_destruction) seen in
+  other fields of tech are less likely in this field.
 
-So, if all of these are great reasons to invest in AT&T, *why didn't I do it
-sooner*?
+So, if all of these are great reasons to invest in AT&T, _why didn't I do it
+sooner_?
 
 It's quite simple. I worked at AT&T and **hated it**.
 
-__________
+---
 
 The gist of what happened was there was a large hubbub between which network
 switch provider we would use, Cisco or Arista. A vice president up high dawdled
@@ -91,12 +91,12 @@ risk-minimizing fashion. Many people at AT&T were supportive of my career, and I
 appreciate it now. But it did leave severe mental scarring, and taught me that
 risk-minimizing has its own risks.
 
-__________
+---
 
 Which leads us to the present day. So I have some money in my bank account, and
 I don't know what to do with it. I know that inflation will eat up the monetary
 value if I keep it in a low-interest savings account. I could also be [robbed
-again](/posts/2018/10/23/i_got_robbed_for_the_fifth_time) and *not* get a
+again](/posts/2018/10/23/i_got_robbed_for_the_fifth_time) and _not_ get a
 temporary credit back. Minimizing risk by storing my money in a digital mattress
 will certainly result in the certain risk of depreciation of some sort, either
 gradual or sudden.
@@ -113,7 +113,7 @@ So.
 
 What to do.
 
-__________
+---
 
 I try and break down the reasons for not buying AT&T. It's not a great company?
 Sure it isn't -- but good companies to invest in are not good companies to work
@@ -127,7 +127,7 @@ Google in its very own Stalingrad). Am I surrendering to cynicism, that I tried
 to change the system and in the end the system changed me? A little, okay maybe
 a lot, but I live to fight another day, and that means I still get to choose the
 hill I wish to die on. I shouldn't take that for granted; I'm not abandoning all
-my morals (e.g. I will *never* invest in a fossil fuels company) and my
+my morals (e.g. I will _never_ invest in a fossil fuels company) and my
 increased financial leverage may help turn the tide on issues I do care about.
 In the end though, all this reasoning felt like rationalizations.
 
@@ -136,13 +136,13 @@ Intelligence"](/posts/2018/12/28/on_emotional_intelligence) about a CEO who lost
 everything, all because he couldn't regulate his emotions:
 
 > **[An Wang](https://en.wikipedia.org/wiki/An_Wang) chose to create a proprietary
-operating system despite the fact that the IBM PC was clearly becoming the
-dominant standard in the industry. This blunder, which contributed to [Wang
-Laboratories](https://en.wikipedia.org/wiki/Wang_Laboratories)'s demise a few
-years later, was heavily influenced by An Wang's dislike of IBM. He believed he
-had been cheated by IBM over a new technology he had invented early in his
-career. These feelings made him reject a software platform linked to an IBM
-product even though the platform was provided by a third party, Microsoft.**
+> operating system despite the fact that the IBM PC was clearly becoming the
+> dominant standard in the industry. This blunder, which contributed to [Wang
+> Laboratories](https://en.wikipedia.org/wiki/Wang_Laboratories)'s demise a few
+> years later, was heavily influenced by An Wang's dislike of IBM. He believed he
+> had been cheated by IBM over a new technology he had invented early in his
+> career. These feelings made him reject a software platform linked to an IBM
+> product even though the platform was provided by a third party, Microsoft.**
 
 > "On Emotional Intelligence", Page 63
 

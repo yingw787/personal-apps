@@ -25,7 +25,7 @@ reboot my computer, or switch to Firefox :joy:). There's also my ongoing concern
 about the future of macOS. With Apple's focus on optimizing revenues and
 operations as well as combining the macOS and iOS teams together, I'm not sure
 there's a clear vision for where macOS is going to go. To me, it will always be
-better than Windows (*your computer is restarting to download updates*), but
+better than Windows (_your computer is restarting to download updates_), but
 [adding in watchOS for a Touch
 Bar](https://www.theverge.com/2016/10/28/13454052/apple-macbook-pro-touch-bar-apple-watch-features),
 and [requiring people to buy a dock for an entire side of a computer if they
@@ -45,14 +45,14 @@ everybody in San Francisco I think, use macOS, but that's something that never
 sees the light of day as production software.
 
 I personally am ambivalent to Linux, but I embrace the circumstances. It has
-*first-class* command line support, it's free, and if you throw a good enough
+_first-class_ command line support, it's free, and if you throw a good enough
 GNOME skin on it, it's even pretty. Then there's the nightmares. This one time,
 I had trouble adjusting DPI and resolution for the old external monitor I had at
 work because of some driver weirdness. I asked one of our Engineering VPs for
 help, and he tried showing me some Linux scripts that would totally do the job.
 Bless that man, I don't want to know how long it took to get his development
 environment to look sane again. My manager is currently running into kernel
-panics and has to SSH into her laptop from *another laptop* in order to do her
+panics and has to SSH into her laptop from _another laptop_ in order to do her
 work. And `grub` menus look tiny on a 4K monitor, so we paid more money to have
 a worse experience using `grub`. That being said, my development machine runs
 Ubuntu, and since I've developed a habit for narrowing the gap between
@@ -60,7 +60,7 @@ development and production environments, I've gone all in on Ubuntu.
 
 So. Time for a new PC.
 
-_________
+---
 
 First, I thought I would try to build my PC from scratch. That failed miserably.
 I picked out a parts list on PCPartPicker, and made sure that it was compatible.
@@ -101,7 +101,7 @@ dual-monitor VESA mount.
 I'm going all in on a home office -- a big deal for a guy who has three plastic
 tables, two chairs, no sofa, and no TV.
 
-__________
+---
 
 So, what do I get for spending $1200+ on upgrading my computer setup? I'll
 answer that with what I want to get out of this machine:
@@ -116,7 +116,7 @@ answer that with what I want to get out of this machine:
 - A file/media/backup server after it has been completely and utterly exhausted
   for workstation purposes
 
-__________
+---
 
 My standing desk is partially here, and when the table surface itself comes on
 Monday, I can assemble the whole shebang and take pics afterwards to post here.

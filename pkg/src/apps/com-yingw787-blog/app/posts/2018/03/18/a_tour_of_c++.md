@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"A Tour of C++\", by Bjarne Stroustrup"
+title: 'Book Review: "A Tour of C++", by Bjarne Stroustrup'
 date: "2018-03-18T19:41:28-04:00"
 draft: false
 ---
@@ -13,7 +13,7 @@ Calling "A Tour of C++" a tour may be disingenuous. The book is jam-packed full 
 
 A number of interesting things the author notes in the book include:
 
-- "C++ is *not* just C with additional features on top. C and C++ diverged quite early on, and while the two languages influence each other strongly today, they are not immediately compatible and best practices do differ significantly. You can't just take a C program and compile it as C++, and call it a day, if you want to have a good day.
+- "C++ is _not_ just C with additional features on top. C and C++ diverged quite early on, and while the two languages influence each other strongly today, they are not immediately compatible and best practices do differ significantly. You can't just take a C program and compile it as C++, and call it a day, if you want to have a good day.
 
 - C++ is not designed by committee or by a programming savant; it was designed according to the requirements at multiple points in time. Hence, while C++ is decently flexible and wholly relevant, there does not appear to be a unifying design philosophy exposed to the user of C++. There's multiple ways to do things, with some better than others. With the added complexity of being a lower level language, this looks to mean a large amount of intellectual overhead.
 

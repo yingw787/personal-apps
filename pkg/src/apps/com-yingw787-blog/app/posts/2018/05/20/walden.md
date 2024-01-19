@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Walden\", by Henry David Thoreau"
+title: 'Book Review: "Walden", by Henry David Thoreau'
 date: "2018-05-20T15:08:44-04:00"
 draft: false
 ---
@@ -11,7 +11,7 @@ draft: false
 >
 > Henry David Thoreau, asked on his deathbed whether he had made his peace with God
 
-Not everybody goes into the woods, builds a small hut, and lives there for two years -- so we can safely say that Henry David Thoreau was a special person. "Walden", a product of that time, is a special perspective into Thoreau's mind. "Walden" details very much how Thoreau saw *his* world, and guides us in how we should see ours.
+Not everybody goes into the woods, builds a small hut, and lives there for two years -- so we can safely say that Henry David Thoreau was a special person. "Walden", a product of that time, is a special perspective into Thoreau's mind. "Walden" details very much how Thoreau saw _his_ world, and guides us in how we should see ours.
 
 You can immediately tell that Thoreau lived in a different time. It's not just that he spells Hindus "Hindoos" and Eskimos (Inuit) "Esquimaux", but the weaving of an enlightened prose that, despite its verbosity, drives deeply into your thoughts. It was also a time where you could build a shed for less than one hundred U.S. dollars, when proprietors cut blocks of ice out of Walden to sell at market for refrigeration, and you could directly drink out of wells and lakes without worrying too much about chemicals, microplastics, and general human taint. A simpler time, if you will.
 

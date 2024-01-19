@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 So I found a picture of a really shiny golden horse, and I had to add it:
 
@@ -23,7 +23,7 @@ Apparently you can find them in Turkmenistan. I don't know if I'll be visiting
 Turkmenistan anytime soon, but if I was, seeing these horsies would be at the
 top of my bucket list.
 
-__________
+---
 
 So the condo closed yesterday (sellers accepted my offer), and now I'm under
 contract in order to deliver around $200,000 over 15 years. Ideally, I'd like to

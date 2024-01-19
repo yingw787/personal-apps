@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Tiny Changes, Remarkable Results; Atomic Habits, An Easy & Proven Way to Build Good Habits and Break Bad Habits\", by James Clear"
+title: 'Book Review: "Tiny Changes, Remarkable Results; Atomic Habits, An Easy & Proven Way to Build Good Habits and Break Bad Habits", by James Clear'
 date: "2020-07-28T21:46:36-04:00"
 draft: false
 ---
@@ -27,7 +27,7 @@ draft: false
 >
 > **The soft and supple will prevail.**
 >
-> - *道德經 (Tao Te Ching)*, by 老子 (Lao Tzu)
+> - _道德經 (Tao Te Ching)_, by 老子 (Lao Tzu)
 
 Learning about habits isn't anything new to me, but what impressed me about
 Clear's book is how well it ties together emotion and identity with a variety of

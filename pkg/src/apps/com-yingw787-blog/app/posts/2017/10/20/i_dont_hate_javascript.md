@@ -15,7 +15,7 @@ I asked him why we were building our very own ShittyJenkins(TM), considering tha
 
 Jenkins is free. And open source. I'm not sure if management has internalized that we, a company with twenty developers, still have no continuous integration after three years of being in business.
 
-___
+---
 
 Back to the technical stuff. I asked him how he built it. He used [Vue.js](https://vuejs.org/) for the front-end and [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) in order to live-stream his local terminal output to a window within the application. It's really cool to see in action, especially with the local terminal window open and the build process running side-by-side.
 
@@ -37,19 +37,19 @@ For example, a problem that we routinely run into is Angular saying:
 
 `10 $digest() iterations reached. Aborting!`
 
-This issue happens because Angular updates its state through watchers in *digest cycles*, which as I understand it ways to update the state of the application. You can manually trigger the digest cycle to run using `\$scope.$apply()` or `\$scope.$digest()` or Angular triggers it when you include an `ng-*` directive to an HTML tag or when you add `\$scope.$watch` to something. I recently fixed a bug where a function was invoked within a directive. That function will get called an infinite number of times, precisely because Angular doesn't know what the state of the return value should be. Angular then detects the error and aborts the digest cycle, which means if the state gets updated again (this time intentionally), the change may not be reflected.
+This issue happens because Angular updates its state through watchers in _digest cycles_, which as I understand it ways to update the state of the application. You can manually trigger the digest cycle to run using `\$scope.$apply()` or `\$scope.$digest()` or Angular triggers it when you include an `ng-*` directive to an HTML tag or when you add `\$scope.$watch` to something. I recently fixed a bug where a function was invoked within a directive. That function will get called an infinite number of times, precisely because Angular doesn't know what the state of the return value should be. Angular then detects the error and aborts the digest cycle, which means if the state gets updated again (this time intentionally), the change may not be reflected.
 
 In React, every JSX component has a `render` function, that details how this component will be rendered. Every component has a `this.state` variable and `this.setState` method, which is the only approved method to update the state of the component. You can hook into the lifecycle of the component using lifecycle hooks (duh) like `componentWillMount()` and `componentDidMount()`. So if you have a promise, you don't need callbacks anymore. All you need to do is update the state variable with the desired returned data, and React will handle the update for you.
 
-The million-dollar question is, *if you made a buggy feature three months ago that causes this digest cycle abortion, can you still find it easily, and if you don't work here anymore, can somebody else find it easily?* Hence React. And good coding standards, like a directive-first philosophy.
+The million-dollar question is, _if you made a buggy feature three months ago that causes this digest cycle abortion, can you still find it easily, and if you don't work here anymore, can somebody else find it easily?_ Hence React. And good coding standards, like a directive-first philosophy.
 
-There are significant trade-offs to using a framework versus a language. One is because you're stuck with a framework when you pick it. The whole issue with React's BSD+Patents fiasco that cost them [Automattic's usage](https://ma.tt/2017/09/on-react-and-wordpress/) before they finally relented and went with the [MIT license](https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/), shows that frameworks, especially frameworks needed by everybody developed by super-benevolent-no-really companies, are still quite fickle. And you're stuck with not just a language (JavaScript at that), but a framework as well, and I sure hope both place nice together with any other dependencies that you may have because if you don't, then you have an N-legged race where you can't update something because something else needs to be updated. Commence throwing out everything anybody has made and re-invent the wheel. I can see why all the X-to-JavaScript languages, DSLs like Jinja or Mustache or Twig, and WebAssembly and Web Components (or GASP! *Flash*) are if not popular, then alive somewhere.
+There are significant trade-offs to using a framework versus a language. One is because you're stuck with a framework when you pick it. The whole issue with React's BSD+Patents fiasco that cost them [Automattic's usage](https://ma.tt/2017/09/on-react-and-wordpress/) before they finally relented and went with the [MIT license](https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/), shows that frameworks, especially frameworks needed by everybody developed by super-benevolent-no-really companies, are still quite fickle. And you're stuck with not just a language (JavaScript at that), but a framework as well, and I sure hope both place nice together with any other dependencies that you may have because if you don't, then you have an N-legged race where you can't update something because something else needs to be updated. Commence throwing out everything anybody has made and re-invent the wheel. I can see why all the X-to-JavaScript languages, DSLs like Jinja or Mustache or Twig, and WebAssembly and Web Components (or GASP! _Flash_) are if not popular, then alive somewhere.
 
 ![JavaScript in a nutshell](/img/posts/2017/10/20/i_dont_hate_javascript_1.gif)
 
 I saw this on Medium today and I had to have this picture.
 
-___
+---
 
 This is maybe why I want to do more back-end work than front-end work nowadays, and am comfortably building something in Python 90% of the time. It's gratifying at first to see something pop up visually when you make something in JavaScript. It's difficult, perhaps mortifyingly so, to build something serious and maintain and upgrade it through the ages.
 

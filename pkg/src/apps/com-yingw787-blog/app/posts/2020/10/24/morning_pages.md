@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 The King of Kings!
 
@@ -22,7 +22,7 @@ The King of Kings!
 
 <sup><sup>Hope this isn't blasphemy but this kitten is so cute</sup></sup>
 
-__________
+---
 
 I'm thinking about buying an apartment. Not for my own personal use, but as an
 investment property. I'm not sure how my ideas for a profitable software venture

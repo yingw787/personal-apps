@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Heheh, dog baby.
 
@@ -28,7 +28,7 @@ Heheh, dog baby.
 On a serious note, that looks comfortable and I want one. I was going to say
 just the bed, but if the dog comes with he will get tummy rubs.
 
-__________
+---
 
 I got two 3-roll sushi combos from a local sushi takeout joint. Yup, 6 rolls, 3
 salmon rolls with avocado and 3 tuna rolls with avocado, and 2 miso soups. I ate

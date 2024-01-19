@@ -38,29 +38,29 @@ paying interest on who you were.
 
 So some things I want myself to internalize:
 
--   **Tackle the one thing you fear the most**: Literally just hammer at it
-    until it becomes not scary anymore. I think this is a good approach for a
-    number of things. Getting over my fear of heights was a big one. Getting
-    over my fear of not being able to complete things is another. The one I'm
-    working on right now is not being wanted, or not being useful to other
-    people (as I've learned, a dangerous position to be in). If you have no
-    fears left, does that mean you're happy? Maybe; all that would really be
-    left is the fear of being unhappy.
+- **Tackle the one thing you fear the most**: Literally just hammer at it
+  until it becomes not scary anymore. I think this is a good approach for a
+  number of things. Getting over my fear of heights was a big one. Getting
+  over my fear of not being able to complete things is another. The one I'm
+  working on right now is not being wanted, or not being useful to other
+  people (as I've learned, a dangerous position to be in). If you have no
+  fears left, does that mean you're happy? Maybe; all that would really be
+  left is the fear of being unhappy.
 
--   **Once you build a habit, don't ever break it**: Better to scream into a
-    pillow in the morning than to give up and play on the phone, and lose the
-    first ten minutes, or three hours of your day, and break the habit of always
-    getting up on time. Good place to levy existing fears to keep these in
-    check.
+- **Once you build a habit, don't ever break it**: Better to scream into a
+  pillow in the morning than to give up and play on the phone, and lose the
+  first ten minutes, or three hours of your day, and break the habit of always
+  getting up on time. Good place to levy existing fears to keep these in
+  check.
 
-    -   **Brushing teeth**: *Brush your teeth in the evening if you want to keep
-        your teeth. Brush your teeth in the morning if you want to keep your
-        friends*.
+  - **Brushing teeth**: _Brush your teeth in the evening if you want to keep
+    your teeth. Brush your teeth in the morning if you want to keep your
+    friends_.
 
-    -   **Exercising**: *One day you will do the last push-up, the last sit-up,
-        the last run that you will ever do in your entire life. Wouldn't you
-        rather know when that would be by doing more, rather than being afraid
-        of the unknown*?
+  - **Exercising**: _One day you will do the last push-up, the last sit-up,
+    the last run that you will ever do in your entire life. Wouldn't you
+    rather know when that would be by doing more, rather than being afraid
+    of the unknown_?
 
-    -   **Sleep**: *Never stay up late to do something you wouldn't get up early
-        for*.
+  - **Sleep**: _Never stay up late to do something you wouldn't get up early
+    for_.

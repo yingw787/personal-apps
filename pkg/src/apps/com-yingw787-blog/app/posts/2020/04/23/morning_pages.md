@@ -13,20 +13,20 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Folks, there's a cuteness market on the interwebs whether we like it or not.
 Some days are just cuter than others. I think I need a savings strategy for
 cuteness, to put into my cuteness bank, to tide myself over during times where
 there aren't as many cute pictures and videos.
 
-Today's not that day though! Here are *two* videos and a picture!
+Today's not that day though! Here are _two_ videos and a picture!
 
 Look at these two little guys! Time don't mean nothing to them:
 
 ![time](/img/posts/2020/04/23/morning_pages_1.jpg)
 
-Time *does* mean something to these little ones though, they're taking the time
+Time _does_ mean something to these little ones though, they're taking the time
 to nap:
 
 <!-- https://stackoverflow.com/a/26276254 -->
@@ -47,7 +47,7 @@ And look at this cute little baby Earth!! Ahhhhhhhh
 <br/>
 <br/>
 
-__________
+---
 
 I woke up at 6:15AM today. After sleeping at 2:00AM. And I'm wide awake, because
 I had a horrible nightmare. I worked for `$MEGACORP_NAME` and I "surrendered my
@@ -61,8 +61,8 @@ going through. I guess I'm firmly a
 like having the freedom to shoot myself in the foot because it gives me more
 freedom. I have managed to shoot myself in the foot many times. Wouldn't give up
 my freedom. I guess that is why, after two months of working on TinyDev, I'm
-still working on it, going down to *defining my own VPCs and subnets, and quite
-possibly my own routing tables, DHCP options, ACLs, and CIDR blocks*, because I
+still working on it, going down to _defining my own VPCs and subnets, and quite
+possibly my own routing tables, DHCP options, ACLs, and CIDR blocks_, because I
 can't imagine granting control of something like that to somebody else.
 
 TinyDev is a dashboard slapped onto a database. It's not meant to be hard. But
@@ -71,7 +71,7 @@ shipped this app on Netlify for a volunteer COVID-19 thing in two hours. I
 think...I think I just ship quickly when I don't care as much, as bad as that
 sounds.
 
-I mean, how can you *not know things*? There's no excuse, you're a sentient
+I mean, how can you _not know things_? There's no excuse, you're a sentient
 human being. Yet if you got a pre-frontal lobotomy and relied purely on primal
 instincts, you might be better off.
 

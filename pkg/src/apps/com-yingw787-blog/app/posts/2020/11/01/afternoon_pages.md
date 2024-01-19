@@ -10,12 +10,13 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 I have a hand sanitizer problem, where I'm terrified of not having enough, and
 now I have maybe ten bottles of hand sanitizer and a gallon jug of hand
@@ -35,7 +36,7 @@ the middle of Arlington, because they're sick of staying indoors and have never
 experienced suffering and aren't used to it. I mean, good for them I guess, but
 I feel like enduring suffering is a useful trait to a degree.
 
-__________
+---
 
 So it's election week (and maybe civil war month, because every month has a
 theme in 2020), so maybe I should talk or vent a bit about my political beliefs.
@@ -77,9 +78,9 @@ give $1.3 million and finish the bridge construction in a matter of months. You
 can't do it too often because letting spies of rival countries scope out your
 town and surrounding military installations might be a tad treasonous and
 because international parties are bundles of policies like gulags and famine and
-genocide you may or may not support, but I see this story and I'm like *wow,
+genocide you may or may not support, but I see this story and I'm like _wow,
 they got their bridge. What an effective way to get stuff done. Fear is the
-ultimate motivator.* If you're sick of a bridge not being built or a road
+ultimate motivator._ If you're sick of a bridge not being built or a road
 sucking too hard, maybe lobby the People's Republic of China to add your local
 road to [the Belt and Road
 initiative](https://en.wikipedia.org/wiki/Belt_and_Road_Initiative) or

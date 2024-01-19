@@ -9,21 +9,21 @@ draft: false
 
 The Year In Review:
 
--   [**Year In Review: Finances**](/posts/2020/12/31/old_years_resolutions_finances)
--   [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
--   [Year in Review:
-    Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
--   [Year In Review:
-    Resolutions](/posts/2020/12/31/old_years_resolutions_review)
--   [Year In Review:
-    Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+- [**Year In Review: Finances**](/posts/2020/12/31/old_years_resolutions_finances)
+- [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
+- [Year in Review:
+  Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [Year In Review:
+  Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+- [Year In Review:
+  Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
 
-__________
+---
 
 [**GitHub repository
 (PRIVATE)**](https://github.com/yingw787/financial-ledger.yingw787.com)
 
-__________
+---
 
 So I've been filling in pretty much every transaction I've done since I first
 started working (December 2016, four years ago). I've used this old Google
@@ -57,39 +57,39 @@ into a spreadsheet, and I still haven't yet data munging for the plentiful
 fat-fingering mistakes I'm sure to have made (I've caught three already) and
 file transforms (because `psql` ingests CSVs in a very strict manner).
 
-__________
+---
 
 Here's some of the things I've noticed about my spending, just from punching in
 the data:
 
--   **I do a good amount of repeatable spending**: Like, to the point where I
-    can identify "miscellaneous spending" of $15.70 to be my monthly Allstate
-    renter's insurance (in case my landlord's apartment burns down with all my
-    stuff in it). I think this fits in with my understanding of myself as a
-    creature of habit.
+- **I do a good amount of repeatable spending**: Like, to the point where I
+  can identify "miscellaneous spending" of $15.70 to be my monthly Allstate
+  renter's insurance (in case my landlord's apartment burns down with all my
+  stuff in it). I think this fits in with my understanding of myself as a
+  creature of habit.
 
--   **My spending has increased over the years**: I think I've tried to avoid
-    falling into the trap of increasing incomes -> increasing spending as best
-    as I can. So many of the major expenditures others have made, I haven't (I
-    haven't purchased a car or a home or anything that might require a loan). I
-    have spent more money on Amazon purchases and food. I'm extremely skeptical
-    of purchasing something with a loan, unless it's stock or something on
-    margin because my money is in a separate bank account.
+- **My spending has increased over the years**: I think I've tried to avoid
+  falling into the trap of increasing incomes -> increasing spending as best
+  as I can. So many of the major expenditures others have made, I haven't (I
+  haven't purchased a car or a home or anything that might require a loan). I
+  have spent more money on Amazon purchases and food. I'm extremely skeptical
+  of purchasing something with a loan, unless it's stock or something on
+  margin because my money is in a separate bank account.
 
--   **It's a mistake to think that cash is king**: Cash is more like trash. Own
-    assets (things that make money for you), don't just stuff it in a bank
-    account and hope interest payments cover inflation (they don't and they
-    haven't since quantitative easing and lowering of fed funds rate and such
-    back in '08-09). I'm trying out a bimodal approach to investing now, with a
-    (should be) safe-ish approach of fixed income securities and blue-chip
-    stocks / mutual funds through WealthSimple (which keeps me investing even
-    though I'm not doing anything), and really really risky stocks that I think
-    have a good chance of making it because of my field (so tech stocks and
-    stuff). Also green energy stocks, because governments around the world are
-    starting to order people to purchase green cars and green energy and
-    government orders are pretty stable.
+- **It's a mistake to think that cash is king**: Cash is more like trash. Own
+  assets (things that make money for you), don't just stuff it in a bank
+  account and hope interest payments cover inflation (they don't and they
+  haven't since quantitative easing and lowering of fed funds rate and such
+  back in '08-09). I'm trying out a bimodal approach to investing now, with a
+  (should be) safe-ish approach of fixed income securities and blue-chip
+  stocks / mutual funds through WealthSimple (which keeps me investing even
+  though I'm not doing anything), and really really risky stocks that I think
+  have a good chance of making it because of my field (so tech stocks and
+  stuff). Also green energy stocks, because governments around the world are
+  starting to order people to purchase green cars and green energy and
+  government orders are pretty stable.
 
-__________
+---
 
 So I used [Metabase](https://www.metabase.com/) in order to tabulate these
 finances, and here's some of the interesting SQL queries I've run and some of

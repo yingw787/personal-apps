@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Since it's been a little while, wanted to add in more cute videos and photos.
 Here's a pupper shaking and rolling over.
@@ -30,7 +30,7 @@ Here's a little boy holding a bunch of kittens:
 <br/>
 <br/>
 
-__________
+---
 
 Man, I haven't written here in a while. That's pretty crazy.
 

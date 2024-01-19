@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Designing Your Life: How to Build a Well-Lived, Joyful Life\", by Bill Burnett and Dave Evans"
+title: 'Book Review: "Designing Your Life: How to Build a Well-Lived, Joyful Life", by Bill Burnett and Dave Evans'
 date: "2019-12-22T19:17:59-05:00"
 draft: false
 ---
