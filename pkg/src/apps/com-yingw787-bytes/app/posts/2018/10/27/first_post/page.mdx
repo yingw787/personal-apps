@@ -1,0 +1,21 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-10-27",
+  title: "First Post",
+  description: "First Post",
+  categories: ["Others"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+It's great to be online! This site will be where my software engineering,
+product management, and (wan|en)trepreneurship material will go.
