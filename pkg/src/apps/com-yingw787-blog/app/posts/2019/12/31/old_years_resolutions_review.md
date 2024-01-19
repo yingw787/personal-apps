@@ -1,0 +1,158 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Year in Review: Resolutions"
+date: "2019-12-31T00:11:40-05:00"
+draft: false
+---
+
+At the beginning of this year, I made a set of [New Year's
+Resolutions](/posts/2019/01/01/new_years_resolutions) that I thought were
+achieveable and meaningful. So let's take a stroll down memory lane and see how
+I did!
+
+(I'm using this weird paragraph format instead of the list format because I
+recently upgraded to a newer version of [**`hugo`**](https://gohugo.io), the
+static website generator tool, and some of the markdown parsing is quite
+different.)
+
+**The "soft" resolutions**:
+
+**<span style="color:orange">Establish more feedback loops for all the
+activities I want to get better at (PARTIALLY MEETS EXPECTATIONS)</span>**: So I
+used this app called [Productive](http://productiveapp.io/) and it worked pretty
+well for the most part in keeping me on track in terms of what habits I should
+be doing every single day, which formed most of the feedback loop mechanisms I
+established. There were a number of issues with doing things this way:
+
+**Technical issues with the app itself**: I talked about this in my blog post
+about [frustration management](/posts/2019/11/18/frustration_management), but
+the app keeps crashing and losing my data, and doesn't handle backend migrations
+very well at all (e.g. some habits just get disconnected and don't work).
+Lately, they also implemented a *very* significant and disorienting UI change,
+which (IMHO) significantly decreased UX likability.
+
+I can't handle this bullshit, especially for something as critical-path to my
+daily productivity as habit tracking.
+
+**The feedback loops are very forgiving**: I like how forgiving they are in the
+beginning, and how you are able to add settings on, but I do wish there was a
+hard expiry sometimes between morning / afternoon / evening habits. I do morning
+habits in the evening sometimes, and sometimes I do habits the next day, which
+isn't great for my productivity. I guess I am cheating myself, but I kind of
+wish the app would help push me towards a healthier approach, even through tough
+love.
+
+**Sometimes I just don't give a shit**: This is probably the biggest problem;
+some of the feedback loops I have I don't have a strong connection to. I got
+started with habit tracking because of [that
+robbery](/posts/2018/10/23/i_got_robbed_for_the_fifth_time), which pissed me off
+to no end, and I keep track of my journals because of how much they helped me
+climb out of a hole back in college. In contrast, I don't like myself w.r.t. how
+much I exercise, but it's hard to form up the habit to do so, especially since
+you lose progress the more infrequently you execute and therefore doesn't
+compound nicely.
+
+In order to improve, I first need to maintain an emotional connection to the
+habits I actively track, so that I do them mindfully instead of mindless
+obligation.
+
+It might also help if I had a habit tracker that I could build my own
+requirements for. I'm actively planning on having something out for this tied
+into the [TinyDevCRM](https://tinydevcrm.com) project I'm building early next
+year.
+
+**<span style="color:red">Minimize the amount of time I regret spending (DOES
+NOT MEET EXPECTATIONS)</span>**: I regretted spending probably the *vast*
+majority of time this year. It **SUCKED**.
+
+Things improved now that I decided to take a breather from career stuff (my
+problems are now solely my fault, hooray!!), but it's not certain that this
+wouldn't happen in the future when I return to the labor force. I need to do
+*something* in order to pace myself, because life truly is a marathon and not a
+sprint.
+
+**The "hard" resolutions**:
+
+**<span style="color:green">Go on a date, tackling the fear of emotional
+rejection (MEETS EXPECTATIONS)</span>**: I actually went on 5 dates this year
+with three different people, in a 1 / 1 / 3 split. First date was pretty kooky.
+I took her to a *really* fancy French restaurant (where I was also kind of
+rewarding myself for having gone on a date at all), and went off the rails
+sideways. I learned that first dates generally shouldn't be done at fancy French
+restaurants. Second date was at a bubble tea shop. Third date at a very nice
+homey coffee bar that a friend recommended, and fourth and fifth dates at
+fancier restaurants.
+
+Ultimately, none of these panned out for me. My heart just wasn't in it, and I
+didn't really know at the time whether I was going to relocate geographically.
+The first two conversations were also kind of sideways and the third through
+fifth didn't kick off since we didn't share a lot of the same interests. But I
+feel better about asking people out (and getting rejected and ghosted along the
+way), so that's a pretty big positive.
+
+**<span style="color:red">Run one half marathon in the summer, tackling the fear
+of being fat and resultant decreased mortality (DOES NOT MEET
+EXPECTATIONS)</span>**: I signed up for a half marathon that started on 7AM on a
+Sunday, didn't practice, and missed going. So. That was fun.
+
+Honestly, I don't know how much direct correlation there is between running half
+marathons and becoming less fat. I think a better approach to this is to
+exercise in smaller amounts, *consistently*, and to eat healthy food
+*consistently*. If that gets me 80% of the way there I think I would make that
+tradeoff. Ultimately though, it has to be something I enjoy doing.
+
+**<span style="color:orange">Become really good at making dumplings, and make a
+lot of dumplings, targeting the fear of being incompetent in home
+economics (PARTIALLY MEETS EXPECTATIONS)</span>**: I only made dumplings early
+on in the year, at a friend's place where he very graciously lent out his space
+so we could make dumplings together. We used my parent's recipe, and the result
+is as follows:
+
+![dumplings](/img/posts/2019/12/31/old_years_resolutions_review_1.jpg)
+
+We used ground pork purchased from Trader Joe's instead of mincing the pork from
+pork belly ourselves as my parents did. We worked together in parallel quite
+well on different tasks involved in making the dumpling filling (mincing the
+ginger / garlic / onions / celery, deveining the celery, aerating the dumpling
+filling, etc.). This would be too much work for one person, given how we four
+spent about six hours making enough dumplings for half a week.
+
+One severe bottleneck was how dry the pre-made dumpling skins were; coming
+straight out the package, they were extremely brittle and we could not fill up
+each dumpling to satisfaction. Next time we will create our own dumpling skins
+using freshly-made dough; it should be fairly simple and straightforward
+compared to the stuffing, and if there is excess dough we can create noodles
+from them. It is also easier to repair self-made dumpling skins since the dough
+is so fresh; if it dries out, just add water and re-mix.
+
+Our folding skills were satisfactory, in particular because these dumplings were
+steamed rather than boiled assisting in retaining the integrity of the dumpling,
+but they could use improvement.
+
+Now that I know I can make dumplings, I'm looking forward to making more next
+year.
+
+**<span style="color:red">Lay the groundwork for and begin executing a plan for
+financial independence, targeting the fear of running the rat race for the rest
+of my life (DOES NOT MEET EXPECTATIONS)</span>**: I don't actually have a plan
+around how this will work. I think a set of heuristics may work better instead.
+
+**<span style="color:green">Go to PyCon 2019, tackling my fear of intellectual
+incompetence (MEETS EXPECTATIONS)</span>**: So I [went to PyCon, and it was a
+blast](/posts/2019/05/11/my_first_pycon). What I liked most about PyCon was
+meeting all those great people, and seeing the variety of products that were on
+display for software engineers. I'll definitely see if I can go to PyCon 2020,
+especially since it is closer to where I'm based.
+
+All in all, I think the feelings-based approach to resolutions went a lot better
+than a set of arbitrary objectives. Since I actually cared about most of these
+(or thought I cared about most of these), I went out and did them. Some of them
+I didn't really care about, and they might be things I need to care about or
+they might be things that are disposable.
+
+I also read **19** books this year, [categorized here](/categories/books)! It's
+a good deal less since I spent a lot of time earlier this year working on my
+technical blog (and then got out of the habit of reading books regularly), but
+still a good number. Let's see whether I can bump that back up to the 30s.

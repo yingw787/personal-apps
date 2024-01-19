@@ -1,0 +1,50 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"The Constitution of the United States of America\", by Applewood Books"
+date: "2021-02-06T08:52:25-05:00"
+draft: false
+---
+
+> What do you think of Western civilization?
+>
+> Mahatma Gandhi: I think it would be a good idea.
+
+So I bought a copy of the Constitution along with the Bill of Rights, and the
+Declaration of Independence, and I'm telling you, reading it in 2021 is just so
+depressing. I don't know what I expected, but I thought we would follow most of
+it. I don't think we do that anymore, actually. It's crazy to think that this
+document was written on animal skin by a bunch of slave-owning, wooden-teethed,
+white wig-wearing folks who seceded from their nation, and yet they're leaps and
+bounds wiser than we are. Then again, maybe they're the only ones who could.
+
+I mean, just look at these clauses from the Constitution:
+
+> The President shall, at stated times, receive for his services, a
+> compensation, which shall neither be increased nor diminished during the
+> period for which he shall have been elected, and he shall not receive within
+> that period any emolument from the United States, or any of them.
+
+oof.
+
+> The President, Vice President and all civil officers of the United States,
+> shall be removed from office on impeachment for, and conviction of, treason,
+> bribery, or other high crimes and misdemeanors.
+
+oof.
+
+> Nor shall private property be taken for public use, without just compensation.
+
+oof.
+
+> Excessive bail shall not be required, nor execessive fines imposed, nor cruel
+> and unusual punishments inflicted.
+
+oof.
+
+> No person shall be a Senator or Representative in Congress...shall have
+> engaged in insurrection or rebellion against the same, or given aid and
+> comfort to the enemies thereof.
+
+oof.

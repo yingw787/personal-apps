@@ -1,0 +1,52 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: July 4th, 2021"
+date: "2021-07-04T08:42:34-04:00"
+draft: false
+---
+
+The [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
+much over for me, but the Morning Poppins group is still going strong (I think).
+So here's some of my brief thoughts.
+
+__________
+
+This is me this morning:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/07/04/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+This is usually me pretty much every morning. LOL
+
+__________
+
+Sad to say but I think now backfilling reports and journals and all the other
+stuff I usually did on a day-to-day basis is pretty much the fact of life at the
+moment. I am pretty happy that I'm sticking with the routine in general, and
+finding a good, solid safety net to fall into, but I need to get back into the
+habit of writing a little bit every day.
+
+Oh by the way Happy 4th!!! Imma re-use this flag picture because I think it's
+cool:
+
+![us](/img/posts/2020/11/08/flag.jpg)
+
+What's been new recently. This weekend's surprisingly busy. On Friday I went to
+get shabu shabu with a friend I haven't seen in one and a half years. Then
+yesterday I went to play board games for three hours with the board games club
+that I haven't seen in a year or so. Today, I'm going to tour a gym and meet up
+with a friend for coffee and celebrate him being hired (because I referred him
+to my place and he got hired) before heading over to a BBQ, and tomorrow I'm
+going to a second date with a person and rowing on the Potomac. It's
+surprisingly packed for a weekend, which is pretty cray-cray because my weekends
+are usually not this busy. I'm pretty thankful to see old friends and get to do
+more of the activities that I usually did before the pandemic. It is a breath of
+fresh air.

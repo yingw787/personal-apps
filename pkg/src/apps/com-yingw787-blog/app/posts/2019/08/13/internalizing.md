@@ -1,0 +1,66 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Internalizing Things"
+date: "2019-08-13T19:55:59-04:00"
+draft: false
+---
+
+I was at an [Indie Hackers](https://www.indiehackers.com) Meetup in Washington,
+D.C. last September, where I met two indie founders. One of them mentioned how
+he wished he had my foresight at my age and started a company then.
+
+It's almost September of the next year. I'm amazed at how time flies. I
+literally thought it was a few months ago since I went, until I double checked
+my email by reading this blog post. And guess who still doesn't have a company
+yet?
+
+This process has permeated my life. People give me the best advice, and I smile
+and nod and let it drift off to the ground. I'm amazed at how much I know ("get
+out of bed right when you wake up", "wake up and sleep at strict times", "eat
+50% greens, 25% protein, 25% carbs", "build up growth habits so that you can
+become 1% better without thinking about it", "put your best foot forward"), and
+how little I believe in it (and myself) enough to apply it in my life. Before
+long, that advice has become stale, and since people see I don't take the advice
+to heart, they stop giving it to me entirely.
+
+What's sad is how old we've become. I'm almost 25, halfway to 30, and feeling
+like my life has already slipped between my fingers. And I'm not even comparing
+myself to other people (which is always something guaranteed to make you
+disappointed in yourself), but rather just to the version of me that could have
+been better. So many dumb decisions. So many regrets.
+
+You can't dwell on the past, sure. But the past does help determine who you are
+and what you will become. Who you associate yourself with, what you do during
+the day, what choices you make. You can always change; but you can never stop
+paying interest on who you were.
+
+So some things I want myself to internalize:
+
+-   **Tackle the one thing you fear the most**: Literally just hammer at it
+    until it becomes not scary anymore. I think this is a good approach for a
+    number of things. Getting over my fear of heights was a big one. Getting
+    over my fear of not being able to complete things is another. The one I'm
+    working on right now is not being wanted, or not being useful to other
+    people (as I've learned, a dangerous position to be in). If you have no
+    fears left, does that mean you're happy? Maybe; all that would really be
+    left is the fear of being unhappy.
+
+-   **Once you build a habit, don't ever break it**: Better to scream into a
+    pillow in the morning than to give up and play on the phone, and lose the
+    first ten minutes, or three hours of your day, and break the habit of always
+    getting up on time. Good place to levy existing fears to keep these in
+    check.
+
+    -   **Brushing teeth**: *Brush your teeth in the evening if you want to keep
+        your teeth. Brush your teeth in the morning if you want to keep your
+        friends*.
+
+    -   **Exercising**: *One day you will do the last push-up, the last sit-up,
+        the last run that you will ever do in your entire life. Wouldn't you
+        rather know when that would be by doing more, rather than being afraid
+        of the unknown*?
+
+    -   **Sleep**: *Never stay up late to do something you wouldn't get up early
+        for*.

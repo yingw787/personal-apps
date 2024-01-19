@@ -1,0 +1,31 @@
+---
+authors: ["yingwang"]
+categories:
+  - Personal
+title: "Looking Back at 2017"
+date: "2017-12-31T21:18:40-05:00"
+draft: false
+---
+
+This has been quite the year, in terms of milestones and the stage of life I am currently at.
+
+To date, I have:
+
+  - Spent my first full year working at a software company
+  - Have garnered a great deal of skill as a software engineer, including continuing mastery of Python, JavaScript, and mongoDB, as well as scheduling and estimating features, UI/UX design, devops, research engineering and data science, and problem scoping and optimization knowledge
+  - Spent my first full year living apart from both home and school (super scary at first, later on not as scary)
+  - Generated my first **$30,000** in savings
+  - Read **36** books, not including ebooks or research papers, with plans to read many more
+  - Finished **7** Udemy online courses, and working on an eighth at the time of writing, which has provided me with skills in Ruby on Rails, React and React Native, e-commerce on Shopify, and Django REST Framework
+  - Started my personal website and began regularly publishing on my blog
+  - Learned how to make friends in real life and develop a more confident personality
+
+It's not a bad start. Even though I don't feel it right now, I know it is indeed leagues ahead of where I was a year ago. Working at the company I'm working at right now has probably been the biggest confidence booster and the best learning experience I have had so far (due to both the good and the bad things).
+
+![woot](/img/posts/2017/12/31/looking_back_1.jpg)
+
+This was at the Capital One Hackathon on November 4th to 5th; I'm holding the pink laptop. I didn't know the photographer was taking the picture, but I thought it made me look nice and would be a good way to remember the year :sweat_smile:
+
+There are plenty of things I want to do in the New Year, though. I will detail them in a post tomorrow as my New Year's Resolutions :smile:
+
+**(Addition on 2017/12/31)**: In the picture, my hackathon teammates Dwipam Katariya and Yuan Chen are to my right (I'm showing something to them).

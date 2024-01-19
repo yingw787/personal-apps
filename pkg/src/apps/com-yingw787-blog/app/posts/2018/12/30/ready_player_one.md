@@ -1,0 +1,46 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"Ready Player One\", by Ernest Cline"
+date: "2018-12-30T16:54:28-05:00"
+draft: false
+---
+
+> I created the OASIS because I never felt at home in the real world. I didn't
+> know how to connect with the people there. I was afraid, for all my life.
+> Right up until I knew it was ending. That was when I realized, as terrifying
+> and painful as reality can be, it's also the only place where you can find
+> true happiness. Because reality is **real**.
+>
+> **James Donovan Halliday**
+
+I think this was one of the few books where I watched the movie adaptation
+first. While Spielberg weaves an exciting narrative faithful to the book's arc,
+there's enough creative license taken where the book has a life of its own. Once
+you get sucked into it, you can't put it down.
+
+To describe the plot in a few short words: the protagonist, Wade Watts, lives in
+quite the dump of a world, and his one chance of getting out is winning the race
+for an Easter Egg inside a worldwide video game, made by an extremely wealthy
+hermit, that many people thought didn't exist.
+
+The book puts slightly different weights on the importance of particular
+characters. Spielberg emphasized the relationship between Perzival and Art3mis,
+but in the novel Art3mis is more of a tertiary protagonist, with much more
+weight placed on Aech, Og, and the protagonist himself. Corporations are also
+more murder-y, and the shroud the book places on IOI and its actions from Wade's
+perspective give it another layer of sinister appeal. Only part of one challenge
+survives from the book's translation to the movie, making Spielberg's rendition
+all the more amazing.
+
+I didn't find too many deep quotes in the book as most of the detail focused on
+constructing the visual imagery, but the one above resounded with me. I've also
+noticed people have various escapes from real life, from fairly harmless things
+like video games to more harmful ones like various addictions to dangerous
+substances. Life sucks sometimes and sometimes we're too weak to confront it.
+But it's also the only place where things are true, where our problems and our
+solutions and our feelings stick. We can't change reality as much as we can't
+change the past.
+
+Quite the jewel of a lesson.

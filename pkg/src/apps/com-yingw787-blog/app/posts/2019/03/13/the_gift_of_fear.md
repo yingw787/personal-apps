@@ -1,0 +1,64 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"The Gift of Fear\", by Gavin de Becker"
+date: "2019-03-13T23:41:40-04:00"
+draft: false
+---
+
+> **I prefer to stand up, roll this log over, and see what crawls out.**
+>
+> Jeffrey P. Bezos, in ["No thank you, Mr.
+> Pecker"](https://medium.com/@jeffreypbezos/no-thank-you-mr-pecker-146e3922310f)
+
+I first heard of Gavin de Becker when Jeff Bezos, the CEO of Amazon and owner of
+the Washington Post, referenced de Becker in the above blog post regarding [The
+National Enquirer's attempted extortion of
+Bezos](https://apnews.com/b8122770a15d43b88dfdcd9655912134). Apparently, this
+decision was spurred by de Becker's recommendation that American Media Inc., the
+National Enquirer's parent company, would not expect this play, and given the
+hilarity of [AMI investigating
+itself](https://www.nbcnews.com/news/all/ami-investigate-bezos-extortion-allegation-says-it-acted-lawfully-n969276)
+and (I'm guessing) eating its own young in the process without destroying enough
+evidence to prevent de Becker from tracing the source to suffer the wrath of one
+of the richest men in the world, it seems to have worked. As an additional
+bonus, David Pecker (AMI's CEO) may have violated a prior plea deal to not
+commit crimes and may be [exposed to federal
+charges](https://pagesix.com/2019/02/08/blackmail-scandal-could-leave-enquirer-boss-pecker-facing-federal-charges/).
+A result so beautiful it brings tears to my eyes.
+
+I had also heard that Mr. de Becker had published a book, and decided to check
+it out when I went to [Politics and Prose](https://www.politics-prose.com/) to
+listen to [Cal Newport's talk on digital
+minimalism](https://www.politics-prose.com/event/book/cal-newport-digital-minimalism-choosing-focused-life-in-noisy-world).
+As it turned out, they did carry a copy, and I purchased it in support of my
+local bookstore (sorry Mr. Bezos).
+
+Mr. de Becker proceeds through the book to break down a number of psychological
+profiles of people hurting other people. In the process, he goes over how their
+victims behaved in each situation. In doing so, he details fear at its most
+effective:
+
+-   **Fear is a gut feeling**: By all means, don't ignore your intuition because
+    of perceived social pressures. If your gut tells you to do something, you
+    should do it. Better to be non-conformist and alive than comformist and
+    dead. If somebody is being too nice, be forceful and say no.
+
+-   **Fear energizes; it does not paralyze**: If you ever find yourself in a
+    high-stakes situation, your System 1 (spinal cord) will likely tell you what
+    to do. It's like an out-of-body experience. I felt it the first time I was
+    robbed. You are kind of just along for the ride. Somehow that evening I
+    slept like a baby, because nobody will break into a house that has busted
+    locks and no valuables.
+
+-   **Fear should be rare**: You shouldn't live in a constant state of anxiety
+    or worry, because it dampens the signal of fear when you need it the most
+    and cost you everything. If you are feeling anxious or fearful, it is likely
+    because of some persistent factor in your life (you don't like your job, you
+    don't like living in a particular place, a problem with friends, etc.). Get
+    out of that situation so that your fear can shine you when you need it.
+
+This is a pretty bad explanation of how this book went, but I thought it was
+worth the buy for the information I got out. You should get the book yourself in
+order to learn more.

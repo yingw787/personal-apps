@@ -1,0 +1,44 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "POACHED EGGS"
+date: "2021-01-06T23:20:45-05:00"
+draft: false
+---
+
+So I've been continuously tuning my poached eggs recipe, as per [my previously
+unlinked cooking website](https://cooking.yingw787.com), and apparently one of
+them turned out PERFECT!! I'm so happy I could cry.
+
+Here they are!!
+
+![1](/img/posts/2021/01/06/poached_eggs_1.jpg)
+
+![2](/img/posts/2021/01/06/poached_eggs_2.jpg)
+
+![3](/img/posts/2021/01/06/poached_eggs_3.jpg)
+
+![4](/img/posts/2021/01/06/poached_eggs_4.jpg)
+
+![5](/img/posts/2021/01/06/poached_eggs_5.jpg)
+
+![6](/img/posts/2021/01/06/poached_eggs_6.jpg)
+
+![7](/img/posts/2021/01/06/poached_eggs_7.jpg)
+
+![8](/img/posts/2021/01/06/poached_eggs_8.jpg)
+
+![9](/img/posts/2021/01/06/poached_eggs_9.jpg)
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/01/06/poached_eggs.mov" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+POACHED EGGS!!!
+
+Also my voice sounds very weird.

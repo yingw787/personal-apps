@@ -1,0 +1,14 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"Do Fish Drink Water? Puzzling and Improbable Questions and Answers\", by Bill McLain"
+date: "2018-04-23T23:04:33-04:00"
+draft: false
+---
+
+Before there was Google, there was Bill McLain. Bill was the webmaster of Xerox, and he gained a reputation for answering any question (*any* question) within 24 hours. This book is a collection of some of his most memorable questions and conversations.
+
+I bought this book because I thought it was funny; it was a good deal more than that. I remember walking into the Barnes and Noble in Bethesda a few months ago and laughing at the cover. I did a quick price check on Amazon and lo and behold, it was cheaper, so I got it. This book isn't just a collection of trivia facts (it is), but also a snapshot of the Internet and the world at the turn of the millenium. I did not realize it was published in 1999, and there's references to using AltaVista and Lycos (Google is ranked first though), and "searching around the Internet until you find the appropriate link". I realized then that Bill's Internet wasn't a bunch of walled gardens glued together by shitty ISPs (net neutrality ended today, by the way), but rather a truly wild Wild West where people were free to explore the large but still plausibly finite number of links. A webmaster of Xerox was important in that world, as hard as it is to believe today. I wonder what it would be like, answering a request for a transmission for a guy on Diego Garcia. Must be fun.
+
+For me, this book was a walk down a memory lane I never really knew. I really liked the innocence and the obvious fun the author had both answering these questions and writing this book. Definitely get this book if you like short stories and trivia.

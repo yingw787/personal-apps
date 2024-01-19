@@ -1,0 +1,115 @@
+---
+authors: ["yingwang"]
+categories:
+  - Personal
+title: "Six Months In"
+date: "2018-06-01T22:50:00-04:00"
+draft: false
+---
+
+I *definitely* cannot believe that that it's June. It feels like I just started
+my current job and I'm still afraid of pollen.
+
+I like these quarterly updates. It definitely makes sure I get grounded to a
+sense of time, before time makes me an old man.
+
+What's cooking?
+
+- I'm a regular at my company now. My direct manager is pretty awesome and I am
+  very lucky to have her. She has both a high IQ and EQ, which are two traits
+  much rarer in practice than I thought, and something that I can more fully
+  appreciate.
+
+- My project at work chugs along. There are fits and starts here and there
+  because I've been iterating my process and trying to get it right. I've gotten
+  most of the kinks out, I think, and very soon I can start on that hockey stick
+  development curve that makes a project *go*. Refactoring will be a pain, but
+  after implementing the initial feature set that will make it "complete", I
+  should have time to focus on making it truly great. Ideally, I'll be able to
+  open source it (or publish it on GitHub, since it already ships with an MIT
+  license) by the next major software suite release in September of this year
+  sometime. I am definitely learning how to be an effective individual
+  contributor.
+
+- I'm starting to publish on my company's blog! Hopefully I'll publish a
+  featured article once a month, and cross-syndicate on my blog and the company
+  blog. Maybe I can be the
+  [Hazardish](https://www.youtube.com/channel/UCRxBkZbx2ogxBjvTEV3R6EQ) of the
+  technical blogging community.
+
+- I almost have one year's worth of liquid savings! I will likely store away
+  that whole amount in some account (maybe with my current bank, maybe with
+  another bank) so that I am not tempted to touch it. Then, I think I will
+  either save another year's worth of cash in order to bootstrap my own thing,
+  or I will begin investing again (either index funds or dividend funds). Or
+  both, I don't know.
+
+- I am paying better attention to [the habits that build
+  habits](https://zenhabits.net/habitses/). Without tracking my habits, they
+  fall through. That included going to the gym, cooking every day, and coding
+  every day. So, I bought this app called
+  [Productive](http://productiveapp.io/), that kind of mirrors what Calm had
+  been doing for me. Instead of having a meditation session, you can add in
+  different habits, and it will remind you to do them, set alarms, keep streaks,
+  and display analytics. It's $7 for three or four months, and I think it's
+  worth it so far. I've lost about 15 to 20 pounds over the past month, going
+  from 185 to 165-170, which was unexpected. The UX is a bit unfamiliar, and
+  there's some custom functionality that I would prefer it have, but unless I
+  build out my own habits app and CMS, I don't have a good comeback.
+
+- I bought a PC at home, and am building out my workstation. It should be
+  finished very soon, and I'll complete a writeup about that.
+
+- I am walking. A lot. Arlington is supposedly [the fittest city in
+  America](https://www.washingtonian.com/2018/05/14/arlington-is-the-fittest-city-in-america/),
+  and you can definitely tell people like running, biking, stand-up
+  paddleboarding, and otherwise doing sports. I miss the sunlight. My grandma
+  commented on how pasty my skin is, and I'm afraid of losing hair. So the bike
+  is in the bike garage and I walk 20 minutes to work.
+
+What hasn't happened this year?
+
+- ...that date I promised myself I'll go on. Now I'm a bit concerned. Like alarm
+  bells concerned. I'm not afraid of talking to girls, and I don't think I have
+  enough shame or fear of rejection left to ask people out on dates (out of
+  general self-apathy and desperation), but I just don't put myself out *there*,
+  wherever *there* is. Dating apps are not for me. I need to trust and be
+  comfortable around other people now before I allow myself even the modicum of
+  romance. We'll see where this goes. I don't have a roadmap.
+
+- I also don't have too many friends nowadays, and I feel the loneliness. I'm
+  like an emperor penguin alone in Antarctica. Most of my friend-interactions
+  last year came from my last company. Two things are different now. One, this
+  is a normal company where employees respect one another and see a future,
+  which means that relationships at work prioritize the corporation. Two, most
+  of my coworkers are much older than I am (mid-thirties is on the young side),
+  and while I really appreciate the maturity at work, they have responsibilities
+  and cannot "hang out" afterwards. I don't think I can do hanging out every
+  day, but once a week would be nice. I think this is where the running club
+  I've been going to on again, off again will come into play.
+
+- The lack of verbal communications and thinking on my feet on a regular basis
+  has definitely impacted me in a negative way. I have difficulty forming
+  sentences, and elucidating my scattered thoughts. It's likely a result of me
+  working on a siloed, independent project. It could also be who I've always
+  been underneath. Maybe I should try out Toastmasters or something.
+
+- I still haven't learned ukelele. It's probably gone out of tune. Again. The
+  fiscal conservative in me is going absolutely nuts. Why the *hell* did I buy a
+  ukelele if it's just going to sit there?! I need to add this to Productive,
+  and get a stand for it instead of having it pile on my desk.
+
+- I am being a bit more deliberate about my cooking (I baked my own bread last
+  weekend because I was afraid of the bread-cake in the store), but it still
+  needs work. Maybe make a new dish from a recipe a week?
+
+Adding my New Year's Resolutions list to Productive, and keeping track of
+everything, is going to be much more difficult than I thought. That being said,
+things aren't bad. I know and appreciate that I'm much luckier than the vast
+majority of people in this world, and I am grateful. I just need to make the
+most of it.
+
+**(Correction on 2018/06/09)**: A prior version of this post described my
+manager as "physically and emotionally intelligent". This is changed to "high IQ
+and EQ" after some discussion with a friend as "physical intelligence" may be
+ambiguous.

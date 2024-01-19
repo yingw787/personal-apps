@@ -1,0 +1,36 @@
+---
+authors: ["yingwang"]
+categories:
+  - Personal
+title: "Weekly Updates"
+date: "2018-04-05T23:41:12-04:00"
+draft: false
+---
+
+I think I'm going to start jotting down weekly updates. My personal progress isn't where I want it to be, and maybe publishing every weekend on three to five things I did that week to make myself better would be helpful in keeping track of my progress throughout the year.
+
+I'm thinking:
+
+  - One reading-related (book reviews)
+
+  - How many days I meditated (according to Calm)
+
+  - How many days I exercised (according to Sworkit/agenda)
+
+  - How productive I was (according to Timing)
+
+  - (If applicable) one fitness-related
+
+  - (If applicable) one coding-related
+
+Out of all the motivational shticks I've seen, one has stuck with me:
+
+$$ 1.01^{365} = 37.78 $$
+
+$$ 0.99^{365} = 0.03 $$
+
+I want that 1%.
+
+Also, this is my one year anniversary on this blog. [This was my first post](/posts/2017/04/05/first_post). Damn.
+
+**(Correction on 2018/04/06)**: A prior version of this post had zeroes as results for the above equations. These have been corrected.

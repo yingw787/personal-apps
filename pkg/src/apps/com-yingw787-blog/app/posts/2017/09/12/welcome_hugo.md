@@ -1,0 +1,37 @@
+---
+authors: ["yingwang"]
+categories:
+  - Others
+tags:
+  - blog
+title: "Welcome Hugo!"
+date: "2017-09-12T22:34:05-04:00"
+draft: false
+---
+
+Porting to Hugo is successful.
+
+```python
+print "Hello World!"
+```
+
+```viz-dot
+    digraph g {
+    node[shape="circle" , label="", width=0.2, height=0.2]
+    l1[xlabel="v\(s\)"]
+    l21[xlabel="a", width=0.1, height=0.1 , style=filled]
+    l22[width=0.1, height=0.1, style=filled]
+    l31[xlabel="v\(s'\)"]
+
+    l1 -> l21
+    l1 -> l22
+    l21 -> l31 [xlabel="r"]
+    l21 -> l32
+    l22 -> l33
+    l22 -> l34
+    }
+```
+
+`$ v_\pi(s) = \sum_{a \in \mathcal{A}} \pi(a|s) q_\pi(s,a)  $`
+
+Some stuff still needs porting over, but it's functional. And much more sane than the prior routing schema. It's really slow, I don't get why the Posts route isn't highlighted, and the design is meh (and I didn't make it), but whatever. It's a good place to write and I think that's what I cared about in the first place.

@@ -1,0 +1,75 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: June 14th, 2021"
+date: "2021-06-14T20:25:51-04:00"
+draft: false
+---
+
+The [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
+much over for me, but the Morning Poppins group is still going strong (I think).
+So here's some of my brief thoughts.
+
+__________
+
+Oh man. A month's worth of cute pictures and cute videos. Here's 4!!
+
+![elephant](/img/posts/2021/06/14/evening_pages.png)
+
+Look at the baby!! He (or she) made a bouquet of flowers!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/06/14/evening_pages_1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+This baby loveeessss magic!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/06/14/evening_pages_2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+These babies are crawling all over mom!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/06/14/evening_pages_3.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+And this little guy likes to twist and squeak!
+
+__________
+
+There's been some changes since the last time I wrote here. I did manage to
+attend a software conference, kind of. I'm going to personal training now,
+because I'm fat and I'm finally doing something about it. I cleaned my apartment
+top to bottom for the first time in a long time. And I got two bookshelves in
+order to put all my books and stuff on!
+
+Life's not bad. Work is still pretty great, and now I have some folks in order
+to help me out with certain things. I did schedule a trip to Dallas in middle of
+October to go see a close friend, so that's pretty cool. And I think I'm going
+to try and do more things this year. Travel and live a little on the side.
+
+I think today, I'm feeling kind of stress. I went on a date on Sunday and
+honestly the person just stressed me out completely. It's a bit hard to trace my
+nutrition and ensuring it's in a healthy range. Nothing that I didn't know; my
+personal trainer mentioned that nutrition was the hardest part. I still have a
+pretty not-great relationship with food that I need to correct. And I still feel
+a little trapped because I don't have a car. All tractable problems to an
+extent. So yeah, that's what's up right now.
+
+I'm seeing whether I can write a little bit more, and maybe get back into
+reading. I'm still watching too much YouTube.

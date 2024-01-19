@@ -1,0 +1,50 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: October 9th, 2020"
+date: "2020-10-09T23:49:51Z"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+Look at these nuggets!!
+
+![nuggets](/img/posts/2020/10/09/evening_pages.png)
+
+__________
+
+Well the President didn't die (which to be clear is a *good* thing), so I'm glad
+I'm not a betting man. On the other hand, one of my watermelons literally
+distintegrated on the floor into a gigantic puddle of sugar water, and my
+slippers at home are extremely sticky, so I guess that's fate's way of telling
+me if I go looking for bad news it'll find me first.
+
+In good news this week, today is the 2nd Saloniversary, and we're having a small
+virtual party in honor of that. We're spending some time writing and the two
+prompts we can choose from are "How have you changed this past year?" and "What
+is a memory that will forever make you laugh out loud?"
+
+Hmm, for the latter, I'd say watching "The Office", especially the early scenes.
+Laughter is the best medicine, and it was really funny to laugh at a
+dysfunctional office environment rather than internally screaming in one.
+
+I think for the former, I've had to find some source of peace from within. I
+think I've always relied on external stimuli for how I'm supposed to feel, and
+that just doesn't work in 2020, but I think I've found that watching TV
+(especially comedies) is a pretty relaxing way to spend time, and finding ways
+in order to relax and make things and laugh is really important just over the
+long term to reduce my cortisol levels. This year's also been weird in terms of
+time, but I think it's hammered home how the days are long but the years are
+short. Time feels pretty weird nowadays, but it always goes forward and you only
+have so much, and that's why it's so important to keep track of where it's
+going. This year's brought my hourly journal, and morning pages, and learning to
+make my own popcorn on a stovetop. So you know what? Things aren't that bad.

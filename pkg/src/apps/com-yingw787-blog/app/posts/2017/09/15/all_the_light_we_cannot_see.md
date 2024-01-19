@@ -1,0 +1,48 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: "Book review: \"All the Light We Cannot See\", by Anthony Doerr"
+date: "2017-09-15T22:54:50-04:00"
+draft: false
+---
+
+I've been trying to adjust my diet of books recently from totally non-fiction and work related to a mixture of non-fiction and fiction. One reason is because it's super boring in order to read work-related material all day, and another is because I'm just not comfortable reading fiction and getting out of my comfort zone is something I need to do more.
+
+Also, apparently one difference between an A-level executive and a B/C-level executive is in how much information they are able to take in and process, and one way to judge this is by reading. The threshold between an A-level and a B/C-level is 26 books per year, just shy of 1 book every 2 weeks.
+
+Apparently, the Bethesda, MD branch of Barnes and Noble is closing down in a month, and I went in to take a look around. I felt bad for the city in general because the library here sucks (it's one floor and really old), as they were likely counting on wealthier residents buying books for their own private libraries instead. It's easy to see why. The Barnes and Noble is smack dab in the city center, three floors stacked high with books of all shapes and colors and audiences. I do hope the city understands now that you shouldn't rely on a corporation to take care of you. They're renovating the library. I hope it becomes nice.
+
+I was scouting around in the "Clearance" section, and I came across a book called "Can Fish Drink Water?". I started laughing so hard people were probably looking at me. I thought it might be good to buy a book here, but I was afraid I'd be getting a bad deal because books are generally cheaper on Amazon. As it turns out, it was CHEAPER here than on Amazon, a full \$2 off an \$8 asking price. So I found a copy that was not worn and carried it around, looking for more deals.
+
+Then there was the "Best Sellers" section, and you could tell that these books were not going to be discounted. One of them was called "All The Light We Cannot See", a New York Times Bestseller for two and a half years, and a Pulitzer Prize winner. The price was the same as Amazon, and it was EXPENSIVE (\$17.00). I decided to get it anyways because my lack of patronage for things probably makes the world a worse place to live in.
+
+Onto the review:
+
+### Synopsis (WARNING: spoilers ahead):
+
+The book starts before WWII, during the rise of the Nazis. A little girl begins to lose her eyesight to an unknown disease, and her father, a locksmith at the natural history museum in Paris, wonders whether the diamond he's entrusted with keeping safe is actually cursed. A little boy who lives in an orphanage in the Ruhr valley tinkers with radios, and by doing so hears the outside world and Hitler's plans to crush it.
+
+Eventually, the Nazis invade France, and the little girl is forced to flee with her father, who is tasked with keeping the diamond safe. Their plans go awry when the guy they're supposed to meet up with flees to London and burns his own house down, and they instead meet up with the little girl's great-uncle, who has shell shock from fighting in WWI and never leaves his house in St. Malo.
+
+The little boy impresses a local Gauleiter, who sends him to a technical school for the Wehrmacht. He then impresses the professor there with his skills, who then tasks him with building a secret project involving radios. As it turns out, it's a radio triangulation set, and they use it to great effect against partisans on the Eastern Front. The little boy feels really bad for killing starving people who can't fight back.
+
+The girl's dad is informed he needs to return to Paris to return the diamond. He is promptly arrested, sent to a concentration camp, and dies. The girl becomes part of the resistance, delivering messages to her great-uncle, who transmits them on a radio across France (he has a very powerful radio transmitter). Food becomes scarce, the Allies begin preparing for D-Day, and people are tense.
+
+The boy is tasked with hunting down partisans in France, including some guy with a really powerful radio transmitter, and is removed from the Eastern Front to France with his platoon. On the way there, D-Day happens, and some members of his platoon are pulled off to fight the Americans and get killed. He soldiers on, and manages to locate the house, which has a gigantic T-antenna bolted to the side. Unfortunately, when he goes back to tell his team, he gets hit by a naval artillery shell, which traps him and his platoon leader in a lot of rubble.
+
+They start to have trouble breathing and run out of food and water. Luckily, the boy was able to repair the radio receiver, and they receive transmissions from that guy they're hunting. As it turns out, that guy they're hunting is the same guy who the little boy in the orphanage listened to in the dark days. And the music he's playing gives the platoon leader enough strength to throw a grenade in the confined space to blow a hole in the caved-in wall and get out.
+
+The little boy rushes to save the guy with the radio transmitter, and the little girl, because she says she is going to die. She says that because some Nazi weirdo really likes diamonds, especially the cursed one borne by the father, who left it with his daughter before he left. He found her and now he's skulking near the edge of her bed, trying to find a way into the attic. The little boy comes by, sees the weirdo, and shoots him. He then calls out to her and escorts her to the Americans, surrendering himself along the way. He then suffers hallucinations from all the shit he's had to go through in his life (and probably the pail of toxic waste he drank while caved in in order to stay hydrated), gets up, walks outside, and steps on a landmine.
+
+The girl takes the diamond her father gave her and tosses it in the sea, because it already made her blind and who needs that shit in their life, and lives a life at the natural history museum. Eventually, a mother and son stop by to see her; it's the little boy's sister, and she gives her some of the little girl's stuff. They embrace.
+
+
+********
+
+This story didn't strike me as a particularly happy story, but one rather reflective of the nature of war, pain, and beauty. It takes one incident, which only takes a day during a war where days kind of mix together, and speaks of the lives of all the people involved, their pasts, and their futures. Like a Gordian knot, their fates are horribly tied together, as if the Norns of old suffered some kind of stroke and messed up. The only way to untie it is to cut some threads, and while some live, many others die.
+
+********
+
+
+This review is completely unedited and is in all probability quite horrible. I aim to write 1000 words per week, gain efforts to find people to review my posts, and improve in an effort to better my writing skills (necessary for good communications as a software engineer, a possible future manager, and a human being). At the moment, getting *a* review out on time is the priority.

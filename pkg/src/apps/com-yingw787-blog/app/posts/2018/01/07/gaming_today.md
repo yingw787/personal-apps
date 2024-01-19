@@ -1,0 +1,50 @@
+---
+authors: ["yingwang"]
+categories:
+  - Personal
+title: "Gaming Today"
+date: "2018-01-07T23:06:25-05:00"
+draft: false
+---
+
+> **To live is to suffer. To survive is to find meaning in the suffering.**
+>
+> Friedrich Nietzsche
+
+So I bought my first video game in about three years today. Guess what it was? "Getting Over It with Bennett Foddy".
+
+You might be wondering why I did this, considering I described this game in [my previous post](/posts/2018/01/03/getting_over_it), and it wasn't a pretty description. I didn't buy it for a pretty reason. I bought this game because I believed it offered more than the usual run-of-the-mill video game, or more than the usual rage games out there. I bought this game because I wanted to truly test myself.
+
+___
+
+A little while ago, I realized I am not too shabby at *some* video games, and knowing this didn't comfort me. I was looking for something else.
+
+So this past Christmas break, and during some of the weeks prior, I played this free online game called [Airmash](https://airma.sh). You can be a bomber, a heavy fighter, a light fighter, a chopper, and a stealth fighter. Here's some screenshots of me being at the top:
+
+![blerp](/img/posts/2018/01/07/gaming_today_1.png)
+
+![dherp](/img/posts/2018/01/07/gaming_today_1_2.png)
+
+![cherp](/img/posts/2018/01/07/gaming_today_2.png)
+
+![berp](/img/posts/2018/01/07/gaming_today_2_2.png)
+
+![werp](/img/posts/2018/01/07/gaming_today_3.png)
+
+Is it terribly difficult to win? Not really, given the right circumstances. The number of players should be fairly small, the amount of engagement with enemies should be fairly minimal, and engagement with enemies should be short and complete with victory. For example, in the fighter on the bottom, you have the ability to fly twice as fast. I used this ability to fly into a swarm of twirling enemy fighters, land some hits, and come out of the other side. In the bomber, you have the ability to deflect enemy missiles and send missiles of your own that are slower and more powerful. I used these abilities to draw out individual enemies from a swarm and destroy them one by one. I don't think I ever placed with the chopper; it was too difficult to control for me (though some people were able to).
+
+If you think this sounds rather Machiavellian for a simple MMO, then I agree with you. I blocked the domain in my `/etc/hosts` file because I played too much and because I don't have the ability to turn off that side of my personality while engaging in an adversarial optimization problem (for lack of a better term).
+
+In any case, after I established what my gaming principles were and began racking up wins, the game soon became rather tedious and monotonic. There's a certain set of actions you can do, a certain set of reactions most players give, and a fixed environment. The only thing I was really doing was making other people sad/mad because I played to win. I wasn't learning anything new. The atrophy became normalized, and I realized it had to stop.
+
+"Getting Over It" is pretty much the exact opposite of Airmash. You play by yourself, the obstacles are numerous and difficult, the controls are difficult to use, it has no achievements besides the ending, and progress often moves in a nonlinear (cyclic) fashion.
+
+___
+
+I bought this game because I didn't want a quick win, I wanted a (possibly insurmountable) challenge. I wanted to see how I would deal with frustration, with rage, with the loss of spilled milk, and with the absurdity of trying to get a man stuck in a cauldron up a mountain using only a hammer.
+
+I had a lot of problems as a kid, that stretched pretty much through my college years; I wanted to put an end to that. I used to curse frequently and have temper tantrums and panic attacks when I didn't finish a game, I had a late assignment, or faced a negative reaction from a friend. This year has been a learning exercise for me -- because that was the only way I could have survived. My coping skills have improved significantly, if only by watching how others cope with an insurmountable object in their path. This is key to future success, especially if I find myself managing people in the future. The key to good management is to have healthy trust dynamics with the people you are managing, in that you can express problems to the other party without having any kind of emotional backlash or other consequences. You shouldn't need to curse, and you really shouldn't even need to raise your voice. I think I would fail that today. So I want to build up that skill.
+
+I'd say that my reaction to "Getting Over It" is much more mature than I had anticipated. I recently fell down from the slides all the way back to the beginning. I wasn't even mad. I just thought to myself, *if you haven't fallen down the slides to the beginning, you really haven't played this game*. It was rather serene. Then I quit the game and tried to get back to work, remembering to come back to it later.
+
+Have I finished the game? No. I think I will have to wait until I can have chunks of time devoted to it (in hours), which I just don't have right now. I can say that I think I'm on the right path. If only because the only way out is up.

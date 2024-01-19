@@ -1,0 +1,62 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: August 21st, 2020"
+date: "2020-08-21T08:40:44-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+Licky licky!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/08/21/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+__________
+
+I finished binge watching "Parks and Rec" yesterday (or really this morning)! I
+have to say, I'm really digging binge watching TV shows, I never knew it could
+be this fun. Or really maybe I could, because the average American watches
+something like five hours of television...? The problem is that now I can't
+watch these shows for the first time again...! Which really sucks, because I'm
+always just a little terrified that the next TV show I watch will suck,
+especially at the end. "Parks and Rec" is great (and I'll probably have a TV
+show review posted by end of this weekend), but I don't think the cult following
+is as big as say "The Office". I wonder if there are other Office-like
+mockmentaries, I think that's kind of my sweet spot. Seems like a healthy
+addiction if there ever was one.
+
+Otherwise I guess I can read through the Scala and formal reasoning books I have
+at a quicker pace, probably need to do so anyways for work and stuff.
+
+Speaking of TV shows (and today's topic of speechwriting w.r.t. the DNC speech),
+there was this one TV miniseries recorded in the 1980s about what a bloodless
+coup of the U.S. by the Soviet Union would look like. It's called
+["Amerika"](https://en.wikipedia.org/wiki/Amerika_(miniseries)) and I do say it
+looks freakishly realistic given how reality has played out. Some nice snippets
+include Congress getting massacred, the country broken up into different
+occupational zones, and the abandoning of American ideals by the citizenry
+leading to those who wish to restore the United States being called "libtards"
+and such. Because that's totally not the future.
+
+This is why I prefer to stick to "The Office" and "Parks and Rec" and such,
+happy positive TV shows because then I'd have something healthy to look forward
+to. Maybe some guys would want to be Andy, or Ben, I think I'd like to be Gary
+Gergich and live in a pastel-colored house eating bacon and eggs every morning
+and having a hug train with a wife and daughters before going to work and be
+positive and upbeat no matter what the world throws at me. That sounds pretty
+awful nice right about now.

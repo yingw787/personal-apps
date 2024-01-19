@@ -1,0 +1,175 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Year in Review: Resolutions"
+date: "2022-12-31T00:00:00-05:00"
+draft: false
+---
+
+The Year In Review:
+
+- [Year In Review: Finances](/posts/2022/12/31/year_in_review_finances)
+- [Year In Review: Fitness](/posts/2022/12/31/year_in_review_fitness)
+- [**Year In Review: Resolutions**](/posts/2022/12/31/year_in_review_resolutions)
+- [Year In Review: Sleep](/posts/2022/12/31/year_in_review_sleep)
+
+__________
+
+Wow, where did the year go?? I feel like I was just staring at a clock that had
+freely spinning hour and minute hands! It's crazy. I'm almost 29, which is
+almost 30.
+
+If there was a theme for this year, it's probably relaxation and reflection. I
+don't think I grew much professionally at all, but personally I grew a good
+amount:
+
+- I took part in [PlatoHQ](https://www.platohq.com/) at work, which is a
+  networking and mentoring opportunity with engineering and product leaders. I
+  took 40 calls in maybe six months, to the point where apparently the CEO of
+  Plato was asking who I was (making the most of it LOL).
+
+- I started fostering a cat after my birthday (her name is Kate and she's the
+ sweetest thing **EVER**), and after some initial things to work out, we're
+ doing okay.
+
+- I took my first vacation longer than a week since I graduated, by going to LA
+  and Hawaii with two good friends (Maui was absolutely **GORGEOUS**, and
+  Waikiki **OMG**).
+
+I also got into audiobooks! I always fall asleep while driving so my friend in
+North Carolina recommended audiobooks as a way to stay awake. I think the key
+takeaway from audiobooks is they're so easy to *reread* to truly solidify my
+understanding. I've listened to "The Confidence Gap" around five or six times
+through already, and I think I might do the same for "Atomic Habits".
+
+Here's the full list of audiobooks I've listened to in 2022:
+
+- "A Promised Land", by Barack Obama
+- "Greenlights", by Matthew McConaughey
+- "The Practice of Groundedness", by Brad Stulberg
+- "Young Rich Widows", by Kimberly Belle et al.
+- "Project Hail Mary", by Andy Weir
+- "Promise Me, Dad", by Joe Biden
+- "Dune", by Frank Herbert
+- "Matterhorn", by Karl Marlantes
+- "The Confidence Gap", by Russ Harris et al.
+- "Start Small, Stay Small", by Rob Walling (a reread from previous years)
+- "Atomic Habits", by James Clear (a reread from previous years)
+
+That's not including the list of books I've read through, which isn't much if at
+all. I think I'll continue to listen to audiobooks in the new year, but that's
+neither here or there, so why don't we get right to the New Year's Resolutions
+and how we did.
+
+__________
+
+- **<span style="color:red">Visit a foreign country (DOES NOT MEET
+  EXPECTATIONS)</span>**
+
+  This ended up not being a huge priority for me, so it's okay I didn't visit a
+  foreign country. I think the world is still looking to get over COVID, and
+  given how it might be year 3 out of 5, it might still be raging for a little
+  while longer. Going to Hawaii for two weeks, and being able to see Jon in
+  Dallas early this year and visiting Los Angeles for the first time more than
+  made up for it.
+
+- **<span style="color:green">Look for a significant other (MEETS
+  EXPECTATIONS)</span>**
+
+  I ended up doing it this year, I got a girlfriend! We broke up like a month
+  after we became exclusive, but I learned to kiss without a YouTube tutorial,
+  learned to lean on somebody, and enjoyed quality time together, all trappings
+  of a relationship. I told my parents about her a month in and they DID NOT
+  like her at all (mostly around appearance), and did their best to try and
+  break us up. I kept them away but became overly afraid and clingy and a
+  doormat and that did me in; people can smell desperation. Also, she cared
+  deeply about things I didn't care about, and I cared about things she didn't
+  care about, so it might have been for the best anyways. Next time, I might
+  wait 6 months before mentioning anything.
+
+  The breakup itself was simple, but not easy. It took around 5 minutes and I
+  had to pay $8 in parking (we broke up at the National Portrait Gallery and I
+  parked at Gallery Place :expressionless:). I thought I'd never get over it,
+  but surprisingly enough the really heavy part took around 2 days (made sure to
+  get out of the house, do chores, and meet friends), there was a long tail of 2
+  months of sadness, and now I think I'm okay. It's a world of change from
+  before, and I think the key difference is I didn't hold a torch or cling to
+  some pedestal for this person. It's _quite literally_ just another numbers
+  game, like investing when the market's down or job searching or anything like
+  that.
+
+  Now that I am better established, I think I'll tolerate less bullshit in
+  dating. For example, now I get spooked now if people have a mean or sad streak
+  in them, or if they respond to my prompts in one-word answers. I'll also have
+  to work to be less of a doormat, and confront my partner about things I don't
+  like in frank, explicit communication. For example, my ex used to dump her
+  worries about passing the bar on me, and then when she passed the bar like I
+  said she would, she celebrated with her friends and told me that she just
+  wanted to forget about it. I felt it was unfair but didn't say anything
+  because I didn't want to rock the boat. Now I'm like if they're gonna leave if
+  you're a doormat anyways, _why hold back_? And the great thing about emotional
+  journeys (vs. intellectual journeys) is that lessons learned are oftentimes
+  _very quickly_ internalized, so I shouldn't have to write this down in a
+  notepad to remember to do this.
+
+  I'm not sure whether I'll be pushing on this front in terms of writing up a
+  New Year's Resolution, but I'll probably be pushing on this front every day,
+  even if I don't expect to have or make time for a relationship due to working
+  on a side hustle. If I do so consistently and maintain my mental psyche while
+  doing so, I should be able to get into another quality relationship by the end
+  of this year. It'll probably take around 3-4 more quality relationships before
+  I find the person who I might marry. It takes a lot of time and a lot of
+  patience.
+
+  In any case, this was by and large the final frontier of regular stuff I
+  haven't cracked, and I cracked it. It doesn't seem so terrifying anymore, and
+  that's exactly what I wanted to get out of this. So woohoo!
+
+- **<span style="color:orange">Work towards goals in powerlifting (PARTIALLY
+  MEETS EXPECTATIONS)</span>**
+
+  You can read and watch all about it in [my other blog post on
+  fitness](/posts/2022/12/31/year_in_review_fitness), but I got pretty far in
+  just a few months and then just stopped growing at all for another half year.
+  I need to be _consistent_, around not just showing up on time to personal
+  training (something I've struggled with), but also showing up for myself in
+  going to the gym by myself twice a week and eating right _consistently_.
+
+  I have the tools and I know what it's like to be in a flow state when it comes
+  to fitness, I just need to be consistent about it. That's probably the hardest
+  part. The good news is, I know enough about getting into a flow state for
+  fitness where I can reduce the amount of willpower or motivation I need to get
+  back into the flow if I'm ever out. Honestly, my body gets that same itching
+  sensation if I don't go to the gym often enough (like when I see a mountain I
+  haven't climbed yet) where I'm less worried about breaking my flow state.
+
+- **<span style="color:red">Get 10 customers for side hustle (DOES NOT MEET
+  EXPECTATIONS)</span>**
+
+  Though not for lack of trying. At the beginning of this year, I asked a friend
+  from work to try and help me out by hopping on a call every week and seeing
+  how things are going on my startup. I let him down, and didn't ship anything.
+  Fast forward to a few months in and I got into YC startup school, and got some
+  matches for startup founders, and got to YC interview stage (!!). I committed
+  to one and didn't really do a whole lot because I was in a relationship and
+  didn't make the startup a priority. I asked to leave after my cofounder put up
+  a challenge, and now I'm back at square one. Now I'm chatting with a
+  now-friend who's starting his second company, and looking to make decent
+  progress on a weekly basis by running some mom tests and creating Figma
+  designs.
+
+  I think honestly I work better solo. I just have an incredibly hard time
+  trusting a partner and knowing what to expect, that I'd almost feel more
+  comfortable just doing it myself. Of course, that means actually, you know,
+  _doing_ it instead of just talking or strategizing about doing it. I have been
+  able to write some code, such as [a BigQuery dialect for
+  `sqlglot`](https://github.com/tobymao/sqlglot/pull/204), but haven't been able
+  to write apps or systems quite yet.
+
+  That's the thing, knowing what to do at any particular moment, especially
+  given huge time constraints if I'm not going to leave my current job (which
+  I'm currently clinging onto in the face of economic recession).
+
+  I'll be carrying this forward for next year, I think starting my own
+  revenue-generating app is the new final frontier for me.

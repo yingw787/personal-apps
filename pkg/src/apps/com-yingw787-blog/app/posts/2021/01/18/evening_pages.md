@@ -1,0 +1,54 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: January 18th, 2021"
+date: "2021-01-18T20:33:39-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+__________
+
+Catto is tired.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/01/18/evening_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+Or maybe catto is just full from eating dinner. I'm not sure.
+
+__________
+
+I think 25,000 troops is the number going into the inauguration. And honestly
+it's probably enough. Either it's enough or it's not enough, and we'll find out
+in a few days. To be honest, if 25,000 troops aren't enough it's probably
+because of some new-fangled technology, like those small assassin drone swarm
+munitions or some area effect weapon like an EMP or a WMD like a suitcase nuke.
+Eh, whatever.
+
+Still expecting a 9/11-style attack later this year. Should remember to join
+Arlington CERT.
+
+In positive news, I wiped down my floor in my bedroom for the first time in like
+two months. I think I've probably been shedding more skin cells or something,
+but it took like two Swiffer wipes and 5 Clorox wipes in order to wipe down all
+the surfaces in my bedroom. To be fair, I was wiping down areas I usually don't
+wipe, like underneath my radiator, hence the Clorox wipes. I should use them
+more sparingly because apparently Clorox wipes don't exist anymore. I still need
+to wipe down my living room, kitchen, and bathroom this evening, but I lie down
+in my bed and breathe the air and it just feels so much cleaner. And no more
+dust bunnies!
+
+Otherwise, been lying on my bed and relaxing a good deal. I think this weekend
+was good. Not sure if this is work/life balance, but I do feel more refreshed
+for the week ahead.

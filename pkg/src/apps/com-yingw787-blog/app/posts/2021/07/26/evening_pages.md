@@ -1,0 +1,82 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: July 26th, 2021"
+date: "2021-07-26T20:28:08-04:00"
+draft: false
+---
+
+The [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is back
+on...sigh...but the Morning Poppins group is still going strong! So here's some
+of my brief thoughts.
+
+__________
+
+No cute animal pictures today!
+
+__________
+
+I've been on a purchasing spree this past week or so, since my mental health day
+that I took last Wednesday. What did I purchase. Oh yes. I got a new knife and
+honing steel, a new helmet, a new pair of running shoes, and I think that's it
+in terms of splurges.
+
+It was *expensive*. Was it worth it...? I think so. Let's take a look at some of
+the equipment upgrades I got.
+
+First, my helmet. I actually ran into a tree with my bike helmet last last
+Sunday, so I probably should be replacing it anyways...if not for the fact that
+I've had the same helmet probably for the past fifteen years or so (the
+manufacturer says Raleigh helmets and they look to sell online in the UK and
+Canada), the inner MIPS band (if MIPS was a thing for low-tier helmets back in
+the day) had long fallen off, and the steel implant keeping the band as part of
+the helmet had partially rusted through, probably from my sweat.
+
+My new helmet is a Bontrager Rally WaveCel Mountain Bike Helmet, and it looks to
+be a big upgrade. Here's a side by side comparison:
+
+![old](/img/posts/2021/07/26/evening_pages_2.jpg)
+
+![new](/img/posts/2021/07/26/evening_pages_1.jpg)
+
+The new helmet was \$150, but I didn't really want to cheap out on helmet gear.
+Because I rely on my brain and stuff.
+
+I also got a new chef's knife!
+
+My old knife is a plastic utility knife of some sort. It's not bad, to be
+honest. I mean, it cuts stuff.
+
+My new knife is a Wusthof Classic Ikon extra wide 6'' chef's knife. It cost
+around \$170. You can kind of see the difference:
+
+![knifes](/img/posts/2021/07/26/evening_pages_3.jpg)
+
+When you cut with it, you can *definitely* feel the difference. The new knife
+glides. It's pretty crazy. I had walked into Crate and Barrel wanting to get a
+cheap chef's knife, you know, like a starter knife. But if I'm going to use one
+knife for the next ten years...like I feel like I'm going to do...then I might
+as well have the better knife. I think the main difference is that it's forged
+steel and not stamped steel, so it "holds the edge better", and the tang is
+curved to fit your hand, vs. being a piece of straight metal.
+
+I also bought a new pair of shoes, the Brooks Ghost in gray for \$120, but that
+was a replacement set for my existing shoes, which had lost of the tread and
+developed a one inch hole in the side after three years of hard usage. So
+there's no side by side comparison because I threw out the old shoes. Oh by the
+way. Do not wash your shoes in the washing machine. Hand wash them instead.
+Unless they're three years old and you're thinking about throwing them out
+anyways because the dust during hiking is just that bad, then do as I do.
+
+Hopefully this is a one time in three years kind of thing. I was thinking about
+upgrading my 5-year-old iPhone 7...because my battery lasts for about an hour
+now and the latest iOS doesn't really run properly on it anymore, but I think I
+might get a battery replacement and hold out for another two years or so.
+
+I do think one of the nice things about having your own income is being able to
+buy nicer things for yourself. Not all the time, like I'm doing right now, but
+occasionally when you do need an upgrade, and moreso when you use it all the
+time and moreso on top of that when it's your health and safety on the line. So.
+Yeah maybe do do as I do.

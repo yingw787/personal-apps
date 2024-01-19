@@ -1,0 +1,51 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Year in Review: Gratitude"
+date: "2021-12-31T12:44:30-05:00"
+draft: false
+---
+
+The Year In Review:
+
+- [Year In Review: Fitness](/posts/2021/12/31/year_in_review_fitness)
+- [**Year in Review: Gratitude**](/posts/2021/12/31/year_in_review_gratitude)
+- [Year In Review: Resolutions](/posts/2021/12/31/year_in_review_resolutions)
+- [Year In Review: Sleep](/posts/2020/12/31/year_in_review_sleep_schedule)
+
+__________
+
+My gratitude journal practice has definitely fallen off a cliff this year. This
+is pretty much what I've been able to get down this year that's of material
+meaning:
+
+![wordcloud](/img/posts/2021/12/31/wordcloud.png)
+
+It seems like:
+
+- **I derive a lot of utility from doing things**: I notice verbs like "talked",
+  "watched", and "ate" being big things I'm grateful for. I think this generally
+  lines up with how I think I derive gratitude. I like doing things, doing
+  things makes me happy. I infinitely prefer experiences and memories over gifts
+  and possessions.
+
+- **I like trying new things**: I can't miss the "first time" sign smack dab in
+  the middle of the screen. I've tried a ton of new stuff over the course of
+  this year, and I think I'm most excited when things are new and I have all the
+  space in the world to explore.
+
+- **Food is huge for happiness**: I love good food. I've been watching my budget
+  kind of balloon out of control because of buying and trying new food, and I'm
+  honestly kind of over minimizing costs on food because it just brings so much
+  joy to my everyday life. Food is also the flip side of working out, so now
+  that I'm powerlifting I need to focus on food intake anyways.
+
+__________
+
+I started the year in review for my gratitude journal because I thought it would
+be helpful for me to close the loop on understanding where I am emotionally over
+the course of the year. I think given my ability to maintain therapy sessions
+over this year, as well as relieving stress by going to the gym and
+powerlifting, I might deprecate this gratitude journal for now, and rely on
+tracking gratitude practice alongside my hourly journal instead.

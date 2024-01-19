@@ -1,0 +1,26 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"The Entrepreneur's Guide to Keeping Your Shit Together\", by Sherry Walling"
+date: "2019-12-15T16:45:11-05:00"
+draft: false
+---
+
+> **"All the magic I have known, I've had to make myself."**
+>
+> Shel Silverstein
+
+I think Sherry does a great job in speaking to entrepreneurs about mental
+health in general, and mental health in the context of consistent, persistent
+stressors (like starting and running a company). For me at least, it sometimes
+feels like a constant battle to keep my head above water, and I'm not even
+running a company. But I do think there's freedom in choosing our problems. In
+the end, that's what freedom is for, to discover which problems you'd rather
+face, and the ones you do shape your identity.
+
+I don't think I have too much to say here. What's said in this book is said many
+times over. The hard part (for me) is internalizing advice, and Sherry's
+position as both a business owner and a licensed doctor may make it easier to
+trust her advice on psychology, just as a verifiable authority on the subject.
+That may make all the difference.

@@ -1,0 +1,16 @@
+---
+authors: ["yingwang"]
+categories:
+  - Others
+title: "Snow"
+date: "2017-12-24T23:13:14-05:00"
+draft: false
+---
+
+Today I went outside and walked around in the snow while it was snowing. Hard to believe that it's been two years since it seriously snowed in my part of Michigan. I found myself trying to enjoy this snowstorm like it'll be the last one I'll ever see. Who knows? It might just be.
+
+I still found myself rating the snow. It was mostly dry and powdery, without the clumpiness that would make a good snowball. Kind of like the artificial crushed ice snow at indoor ski resorts. For the record, good snow is wet and sticky, and instantly forms a snowball in your hand. Even if you're wearing a glove.
+
+I do think that it's warmer while it's snowing than when it has stopped snowing. My friend from elementary school proposed this, saying that when the snow hits the ground it begins to melt, absorbing heat from the surrounding environment. I didn't feel too chilly walking around outside. It might also be because I was wearing thick boots and a thick two-layered winter coat, and holding an umbrella to keep the snow off my head.
+
+I don't really know where I'm going with this. I walked a mile in the snow and it's probably the most exciting thing that I've done today. Oh yeah, I also bought a boxed set of Donald Knuth's "The Art of Computer Programming: Volumes 1-4a" that will be at my apartment, and some wireless earbuds for running at home and that I will give to my dad when I head back. So there's that. Hopefully I'll get the chance to take a look through Knuth - right after all those other books I bought.

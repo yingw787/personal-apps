@@ -1,0 +1,35 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: May 23rd, 2020"
+date: "2020-05-23T08:49:19-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+__________
+
+I had a really nice chat with a bunch of old college friends yesterday evening
+for a friend's birthday. It's really cool to see where everybody is, and where
+everybody's going. It's also a great reminder to see what no matter what, life
+goes on, and it doesn't really wait for anybody. One friend is going grad
+school. Another is getting married. A third graduated from medical school and is
+heading into residency.
+
+Me? I'm sitting at home eating frozen mango pieces out of a mixing bowl. So
+there's that, I guess. How *am* I progressing during this whole pandemic shtick?
+Maybe it's just fine being safe, but I guess since I'm doing all this on my own
+paid time, I should expect more of myself.
+
+__________
+
+I'm so close to having an initial version of my project ready. There's still so
+much application-level code I need to deal with, but I can taste the success in
+my mouth. It's honestly a bit infuriating I missed my own deadline, and it's a
+pretty big red flag with respect to how much actually needs to get done.

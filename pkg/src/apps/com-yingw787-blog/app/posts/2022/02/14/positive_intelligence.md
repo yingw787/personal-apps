@@ -1,0 +1,47 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"Positive Intelligence: Why Only 20% of Teams and Individuals Achieve Their True Potential, And How You Can Achieve Yours\", by Shirzad Chamine"
+date: "2022-02-14T14:12:11-05:00"
+draft: false
+---
+
+> An old grandfather was teaching his grandson about life:
+>
+> “A fight is going on inside me,” he said to the boy.
+>
+> “It is a terrible fight and it is between two wolves. One is evil–he is anger,
+> envy, sorrow, regret, greed, arrogance, self-pity, guilt, resentment,
+> inferiority, lies, false pride, superiority, and ego.”
+>
+> He continued, “The other is good – he is joy, peace, love, hope, serenity,
+> humility, kindness, empathy, generosity, truth, compassion, and faith. The
+> same fight is going on inside you–and inside every other person, too.”
+>
+> The grandson thought about it for a minute and then asked his grandfather:
+> “Which wolf will win?”
+>
+> The grandfather simply replied, “The one you feed.”
+
+I picked up this book from a life coaching trial the company I currently work
+for booked me on. I think the dude recommended this book as a good example to
+practice positive thinking. I don't think I lack it, but I think I've been
+pushing myself to think positively without really understanding why or how. I
+mean, I don't want to be sad and miserable, but I think emotions are a bit more
+complex than that.
+
+I think Shirzad lays it out pretty nicely in his book here. You have a number of
+different "saboteurs", or ways of negative thinking. The biggest among these is
+the Judge, who forces a different negative reaction from you based on the type
+of person you are. You need to practice positive thinking in order to reduce the
+power of those "saboteurs" and reach towards your "Sage", who practices positive
+thinking and turns problems and fears into gifts and opportunities.
+
+I really like the sheer number of case studies he's put out. It showcases how
+
+These are my saboteurs, from taking the test on Shirzad's website:
+
+![results](/img/posts/2022/02/14/results.png)
+
+Looks about right to me hehe.

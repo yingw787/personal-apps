@@ -1,0 +1,43 @@
+---
+author: ["yingwang"]
+categories:
+  - Television
+title: "TV Show Review: \"House M.D.\", by David Shore"
+date: "2021-03-04T08:55:18-05:00"
+draft: false
+---
+
+I think I'm getting the hang of what it means to watch TV. And by watch TV I
+mean purchase a DVD boxed set or watch the show online somehow.
+
+Huh, has it been *8 months* since I started watching House? That just seems
+crazy. Then again, 8 seasons of 45-minute episodes just is hard to crunch, and
+balancing that with work and watching in the evenings instead of watching on my
+time-off from contracting means each show is spread out over more days.
+
+I think House is actually the first TV show where I decided to get a DVD boxed
+set because of how painful watching the show online was. Before I think I just
+watched shows using those free online streaming websites, but for House it was
+super annoying (like there were these popup ads that led you to these scam
+places or whatever, and you had to go into developer tools and delete them in
+order to see the video, and then sometimes the video wouldn't stream or would
+buffer because reasons). I got a $100 gift card from a failed job application to
+this one place because I did a take-home assignment, and I used it to buy the
+House DVD boxed set, which cost around $100 exactly. It's actually really really
+nice to have the DVD boxed set.
+
+House is a pretty dark, Ayn Randian type of show where the protagonist is a huge
+jerk but everybody is nice to him and everything turns out the way he wants it
+somehow. He does fail here and there, but it's extremely rare. You can kind of
+see the progression of the character, especially as Hugh Laurie begins aging and
+turning from brown to gray hair and his hairline recedes. You can also see
+nearer the end, how House rapidly declines from his years of drug abuse and
+friend abuse. It's rather mesmerizing to watch.
+
+I kind of wish there was a British version of this show, so it focused less on
+the drama part and more on the DDx part. I liked trolling med school friends
+with questions they might not have the answer to. On an unrelated note, I got
+some medical school textbooks I need to work through. It's Harrison's reference
+books, gottem before that large second spike in infections and before I knew
+whether we would have sane government again, and I need to work through that as
+soon as I finish reading through my Bible.

@@ -1,0 +1,100 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"The Jefferson Bible\", by Thomas Jefferson"
+date: "2020-05-27T00:00:00-04:00"
+draft: false
+---
+
+> **I walk through the valley of the shadow of death, and I am not afraid, for
+> The Lord thy God walks with me.**
+>
+> Psalms 23:4
+
+I'm a Christian, technically speaking. Technically speaking, because I have a
+hard time going to church, reading the Bible, and "toeing the party line" on
+\***checks notes**\* pretty much everything. I very much enjoy dancing to the
+beat of my own drum, and that's about as much as I want to say on that subject
+publicly without unnecessarily offending people.
+
+Nevertheless, I like negotiating on principle, and I think there's substantial
+value sometimes in having a more-or-less air-based basis of absolute faith
+(where you flip a light switch in your brain and simply choose to believe in
+something regardless of what facts are out there), and value in believing in
+something that lasts. I've found that the truth doesn't care one jot about my
+feelings, and I retreat to faith for finding emotional comfort. I've also found
+I need some direction for "mental energy", and dumping it off a cliff seems
+appropriate. Rephrased, "everybody worships something", which I've found to be
+true, and I'd like to exercise that truth in a healthy way. I don't think this
+is Pascal's bargain, that would make me an agnostic. I've made my choice, and
+after all, isn't the act of choosing what makes us human?
+
+There are some logistical challenges with this, though. I don't like the Bible.
+
+(\***cue angry screeching noises**\*)
+
+More specifically, I don't like how long and dry it is. I've tried reading
+through the whole thing from cover to cover, once, and made it to the middle of
+the Book of Psalms. The Book of Job was extremely dry, besides the beginning
+three paragraphs and ending three paragraphs, and it kind of did me in.
+
+Apparently, Thomas Jefferson had this problem too, which is why he made his own
+Bible. He cut and pasted sections of Jesus's teachings only from the King James
+Version (KJV) into a new book. No Old Testament (which I've heard is already
+fulfilled anyways), no miracles, just words straight from the horse's mouth.
+
+I finished reading it, and it's quite fascinating.
+
+__________
+
+So Jesus talks *a ton* about money and personal finances. Like a furious amount.
+It's not all what you might expect, either. Sure, there's the passages about
+giving up everything and following him and stuff. But in his parables, he also
+talks about...inequality and unfairness:
+
+> For I say unto you, That unto every one which hath shall be given, and from
+> him that hath not, even that he hath shall be taken away from him.
+>
+> Jefferson Bible 11:68
+
+It's not just once, either.
+
+> For unto every one that hath shall be given, and he shall have abundance; but
+> from him that hath not shall be taken away even that which he hath.
+>
+> Jefferson Bible 14:29
+
+It might be about faith, and how faith is rewarded. Maybe it's the same story
+repeated twice, because different apostles wrote about much of the same stuff,
+but it's a striking passage either way. There's also stories of preparedness,
+like the 5 wise guests and 5 foolish guests with the oil lamps, that give you a
+bit of pause when you analyze the traditional and traditional-contrarian
+viewpoint of Jesus. You really do have to look at all his teachings right to
+each other to get that kind of context, which you would get in-person but can't
+get if there's a bunch of other stuff in between.
+
+There's a bunch of other stuff you can see. Pilate being the weak-willed
+politician who does the easy thing instead of the right thing, the corruption of
+faith into a drive for wealth and power by the few, the hope for change through
+action, (e.g. the woman nagging the corrupt judge into granting a fair
+judgement), the importance of heart in making decisions (camel eye of needle
+rich person vs. Zacchaeus who was welcomed by Jesus despite *only* giving away
+half of his wealth), all of it just as revelant today as it was two thousand
+years ago. You can kind of understand Jefferson's philosophy too, why he wanted
+the United States to be a pastoral, agrarian state instead of an industrialized,
+moneyed great power. It's really an amazing read.
+
+__________
+
+I kind of wish there was a New International Version (NIV) translation of the
+Jefferson Bible, maybe with the additional tips found in study bibles. It would
+make reading it a good deal easier. Maybe I should go make it.
+
+I wonder if they make cut-outs of other religious books like the Koran or the
+Talmud that distill passages without imparting any kind of historiography. I'd
+buy those.
+
+Even if you're not Christian, I recommend giving this book a read. It's probably
+less than ten pages of 8.5'' x 11'', singly spaced, and the knowledge derivation
+rate is pretty high IMHO.

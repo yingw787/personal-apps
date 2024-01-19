@@ -1,0 +1,29 @@
+---
+author: ["yingwang"]
+categories:
+  - Television
+title: "TV Show Review: \"The Crown\" Season 2, by Peter Morgan"
+date: "2021-04-23T20:31:38-04:00"
+draft: false
+---
+
+I think TV shows typically deteriorate because they get approved one season at a
+time, and depending on how the show is going, things can go downhill really,
+really quickly. Spiderman 3 from the Sam Raimi series is one such example. "Game
+of Thrones" Season 8 is another. Usually it's some conflict with the editor or
+producer and the writer and possibly the cast.
+
+I don't think "The Crown" Season 2 suffers from this problem. Either that or I'm
+a really easy person to please, and I am, or it's both. There's some of the same
+level of conflict and drama compared to the first season, but now it's mostly
+revolving around things like infidelity and self-inflicted drama (e.g. the Suez
+Crisis).
+
+There's one good episode around the Duke of Windsor and how much of a traitorous
+piece of shit he was (he handed to the Nazis the Allied defence plan of the
+Continent which is partially why France fell), but otherwise it was pretty dull.
+I think you can tell it's an Americanized version of a British thing. The
+British are masters of understatement (of which I would like to become a pupil),
+and Americans like drama, so it's dramatically revealing some pretty dull stuff.
+I like dull TV shows though, to be fair. Means I can watch without really
+committing.

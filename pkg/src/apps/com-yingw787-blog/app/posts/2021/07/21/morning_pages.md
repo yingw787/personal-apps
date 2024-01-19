@@ -1,0 +1,52 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: July 21st, 2021"
+date: "2021-07-21T08:39:17-04:00"
+draft: false
+---
+
+The [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic) is pretty
+much over for me, but the Morning Poppins group is still going strong (I think).
+So here's some of my brief thoughts.
+
+__________
+
+Heeheehee he looks so done!
+
+![ugh](/img/posts/2021/07/21/morning_pages.jpg)
+
+Not sure if I want to be Mr. Brown Dog or Mr. Beige Puppy.
+
+__________
+
+Oh man. Today is like my first day off in...how long has it been? Not quite
+sure. I've kind of been afraid to take a day off because our team is so small,
+but last Friday I snapped at a coworker for recommending one thing over another
+and realized that I'm not me without a vacation.
+
+I could definitely use one. This weekend was looooooong. So I didn't realize
+that Alexandria, VA was not just Old Town Alexandria but rather a fairly massive
+city, so my 7 mile commute turned out to be more like 17 miles. I was commuting
+to personal training, which focused on legs. That was on Saturday; then on
+Sunday, I went hiking up a mountain with a friend and her friend. So my legs are
+like dead and I need to recharge them somehow. I've been wanting to get a
+massage for the longest time ever, and maybe now is a good time to get one.
+
+My personal laptop isn't working right now, and so I might need to re-install
+Ubuntu on my laptop and pull down everything. It's so friggin' annoying. And the
+battery in my iPhone is dying, so I might need to replace my iPhone battery.
+That, or I could wait until this winter and heading back to my parent's place,
+and then get a new iPhone since the one I have is fairly slow.
+
+I think I also need to try some personal grooming. My shower drain keeps getting
+clogged with longer hair and it's really awful to keep pulling out of my drain
+filter. If I had shorter hair in certain places, then that wouldn't be much of
+an issue. But it's up to me to trim it. So. Yeah. Need to try doing that today.
+
+I think today I'm feeling rather exhausted for whatever reason. It might be the
+buildup in fatigue, or it could be since today is a day off, my body is like
+*it's okay, you can rest now* and my entire skeleton groans and sags. Hopefully
+it's not like that.

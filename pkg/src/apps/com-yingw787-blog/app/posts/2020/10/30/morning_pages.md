@@ -1,0 +1,47 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: October 30th, 2020"
+date: "2020-10-30T08:39:10-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+A FLUFFY COW!!
+
+![flufffyyyyy](/img/posts/2020/10/30/morning_pages.jpeg)
+
+I wonder how they maintain their coats, but this is somehow better than those
+black cows I saw over in Taiwan.
+
+__________
+
+I just realized yesterday that another week had gone by (...since last week) and
+I didn't learn the song for ukelele I promised I'd learn yet. Luckily, I managed
+to remember to ask for a week off before I start my new gig, and my manager
+graciously said yes, so I have a week where I can choose to do anything. And
+characteristically like me, I began stuffing it chock full of stuff I want to
+do, which isn't all possible within one week.
+
+I need to prioritize ukelele, so that I have something productive to reach
+towards when I'm tired or bored or otherwise not working and awake. I think
+that's one difference between that hobby and everything else. Reading books is
+nice, and watching TV shows isn't bad, but it's very much a passive hobby that
+doesn't really build hand-eye-brain coordination, and heaven knows I look at my
+computer screen enough already.
+
+I'm pretty excited to start my full-time gig. There's no lingering pits of
+dread, no feeling like I got screwed, no desire to really keep searching (and if
+I wanted to, I guess I could have), like that happened at my previous places. I
+think if I wanted to, But I feel happy here, and that's a strange feeling. It's
+a nice steady state I could get used to. I wonder if other happy people in the
+world experience this for longer periods of time.

@@ -1,0 +1,86 @@
+---
+authors: ["yingwang"]
+categories:
+  - Personal
+title: "The Terrifying Power of Love"
+date: "2018-11-24T23:18:17-05:00"
+draft: false
+---
+
+> There is no good or evil, there is only power -- and those too weak to seek
+> it.
+>
+> **Professor Quirrell, in "Harry Potter and the Philosopher's Stone"**
+
+When I first read this sentence years ago, I thought, *of course the bad guy
+would say this. This is the only way to rationalize his actions. Since he loses,
+he must be wrong.* To my kid brain, the fact that the author wrote in the
+villian's demise played into my belief into the simple, black-and-white world
+part of us all yearn for: that there is a good side and a bad side, with good
+people winning and bad people losing. Of course this is the way it is. Of course
+this is the way it should be.
+
+Everyone knows this isn't the case. You see your heroes become villians, your
+villians complete heroic tasks, and the black and white separation diffuse into
+many shades of gray, with the barrier between the two disappearing underneath.
+If you aren't ready for this change, like me, you may wonder why if hatred has
+not disappeared, whether there is a place -- maybe even a useful place -- in it
+in our world and for ourselves. Not a renunciation of good or good acts, but an
+*equitable balance* in our hearts between the two.
+
+There is not. Not even close. Not even in the sense that hatred corrupts and can
+never be part of a balance, but that love beats hate up, down, and sideways for
+Sunday brunch. Since it isn't, we should merely content ourselves with
+understanding hatred (where it comes from, how it manifests, and how to stop
+it), and otherwise purge it from our hearts.
+
+__________
+
+I had a number of rough drafts around this topic, but I don't think I had a
+convincing way to express the difference -- and the gulf -- between love and
+hate before I read [Viktor Frankl's
+autobiography](/posts/2018/11/24/mans_search_for_meaning). He makes the argument
+in a much more succinct manner than I imagined.
+
+Frankl was sent to Auschwitz with his friend, with him going one way and his
+friend (quite) another:
+
+> I inquired from prisoners who had been there for some time where my colleague
+> and friend P--- had been sent.
+>
+> "Was he sent to the left side?"
+>
+> "Yes," I replied.
+>
+> "Then you can see him there," I was told.
+>
+> "Where?" A hand pointed to the chimney a few hundred yards off, which was
+> sending a column of flame up into the grey sky of Poland. It dissolved into a
+> sinister cloud of smoke.
+>
+> "That's where your friend is, floating up to Heaven,"
+> was the answer. But I still did not understand until the truth was explained
+> to me in plain words.
+
+I don't think there are any better understood and accepted examples in this
+world of hatred than the Holocaust. [In a world where hatred is cheap and love
+is
+expensive](https://aeon.co/ideas/what-did-hannah-arendt-really-mean-by-the-banality-of-evil)
+, where dying is easy and living is hard, Frankl clung to life by clinging to love:
+
+> I did not know whether my wife was alive, and I had no means of finding
+> out...but at that moment it ceased to matter. There was no need for me to
+> know; nothing could touch the strength of my love, my thoughts, and the image
+> of my beloved. Had I known then that my wife was dead, I think that I would
+> still have given myself, undisturbed by that knowledge, to the contemplation
+> of her image, and that my mental conversation with her would have been just as
+> vivid and just as satisfying.
+
+__________
+
+Love is terrifyingly powerful because it exists even in the greatest darkness.
+Where hatred is motivated by greed, rebellion, sadism, or any other external
+factor, to love another is its own reward. No power on earth can compel love to
+behave a certain way, to think a certain way, or to grow or ebb in its strength.
+As love extinguishes hatred, hatred can only quench and temper love. To love is
+to live, and to live is the purpose of humanity.

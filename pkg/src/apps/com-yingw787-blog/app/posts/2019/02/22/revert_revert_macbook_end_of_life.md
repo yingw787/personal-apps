@@ -1,0 +1,121 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Reverting Reversion of Macbook Pro End-of-Life"
+date: "2019-02-22T21:35:41-05:00"
+draft: false
+---
+
+Remember how I decided to [not get a new laptop after
+all](/posts/2019/01/28/revert_macbook_end_of_life)?
+
+Yea, I reversed my position. Again. But this time I went down a different path.
+Instead of purchasing an uber-expensive laptop, I went ahead and got an [IBM
+Thinkpad T42](http://www.thinkwiki.org/wiki/Category:T42).
+
+![much wow](/img/posts/2019/02/22/revert_revert_macbook_end_of_life_1.jpg)
+
+It even came with its own docking station:
+
+![much wow 2](/img/posts/2019/02/22/revert_revert_macbook_end_of_life_2.jpg)
+
+Also a USB keyboard and mouse, and the really nice guy from Craigslist even
+offered me a ride back to my house, paying a $3.50 toll fee along the way. No,
+I'm not dead yet.
+
+A few differences:
+
+  - **It cost $50, cash**: A really good deal for a laptop. Much better than the
+    \$2600 I paid for the Dell. Also better than the other T42s on Craigslist
+    that cost somewhere around \$250-500. I was kind of holding out for a \$10
+    laptop, like [VWestlife's \$7.49 Thinkpad
+    T20](https://www.youtube.com/watch?v=YcEycj_50hA), but I don't think that
+    will happen. I called a number of Goodwill stores around the area, but all
+    they had were newer laptops. At this stage of the game, I think these
+    computers will become more expensive as supplies run out and they become
+    collector's items.
+
+  - **It's a bit older**: I think these computers were released in 2003. They
+    were among the last business laptops IBM made before selling the laptop
+    division to Lenovo. It runs Windows XP (quite well, IMHO) and I'm guessing
+    it doesn't have any security patches coming its way anytime soon.
+
+  - **It's in remarkably good condition**: The guy who sold it to me had it for
+    its entire lifespan, and used it to diagnose his car by way of an [OBD/2
+    port](https://en.wikipedia.org/wiki/On-board_diagnostics). He sold it
+    because now they sell handheld diagnostic tools and he got one, so he didn't
+    need the laptop anymore. I think I just need to wipe the keys and screen
+    down and maybe defragment the disk, and it'll be as good as new.
+
+A done deal. So why did I purchase such an old laptop?
+
+  - **Better resource utilitization**: I don't want to pay money for things I
+    don't need; I realized that goes for computers as well. How often am I going
+    to need multiple CPU cores wherever I go, given that most of my daily
+    workloads appear in `top` as one CPU running at any time? Do I need to spend
+    network bandwidth visiting ad-ridden websites and reading clickbait? The
+    answer is **no, of course not**. For $50, I can execute 1 billion CPU
+    instructions a second, I have 2 billion bytes of main memory, and expandable
+    disk storage. To want more is frivolous behavior.
+
+  - **Greater empathy with end users**: Most people do not use the latest and
+    greatest hardware; developers demand it for their day to day work. I can't
+    find it now, but I recall a developer using a Thinkpad T60 because it helped
+    him develop empathy with his customers, who did not use high-grade hardware.
+    At the time, I thought I could probably replicate such behavior using
+    cgroups and network throttling, but the more I thought about it, I realized
+    trying to simulate slow hardware using new hardware would be extremely
+    difficult, since there are so many components. Better to just have old
+    hardware in physical form and set a total lower bound to test against. If it
+    works here, it should work everywhere.
+
+  - **Better system design**: I can use dynamic DNS, OpenVPN, and SSH in order
+    to connect to a server and access compute resources when on the move much
+    more cheaply than lugging all that compute with me. In this sense, all
+    laptops become thin clients to unbounded compute elsewhere, which to me
+    seems like a much better design for your personal infrastructure than a set
+    of thick clients that do everything.
+
+  - **Better resilience**: If I spill my tea or coffee on my super-expensive
+    laptop and it got damaged or destroyed, I would become sad or angry. If I
+    spilled my tea on this thing, I would still be sad because I can't easily
+    get replacement parts, but it's $50. I could throw away the entire laptop
+    and not have its cost significantly impact my finances.
+
+  - **Security concerns**: Bit of a tinfoil hat here, but as computers have
+    gotten more important, the number of people looking to attack them have
+    increased. For example, [Intel Software Guard Extensions
+    (SGX)](https://en.wikipedia.org/wiki/Software_Guard_Extensions) encrypts a
+    portion of memory with a special section of the CPU so that [cold boot
+    attacks](https://en.wikipedia.org/wiki/Cold_boot_attack) don't give away
+    encryption keys. That is, don't give away to anybody except the U.S.
+    government that [plants hardware backdoors into processors at manufacture
+    time](http://theinvisiblethings.blogspot.com/2013_09_01_archive.html).
+    Apparently, the Kremlin has already [moved to electric typewriters to reduce
+    the risk of
+    leaks](https://www.telegraph.co.uk/news/worldnews/europe/russia/10173645/Kremlin-returns-to-typewriters-to-avoid-computer-leaks.html).
+    This, in addition to [news that Spectre/Meltdown are too difficult to
+    fix](https://www.i-programmer.info/news/149-security/12556-google-says-spectre-and-meltdown-are-too-difficult-to-fix.html),
+    makes me extremely wary of modern processors.
+
+    Yes, it's highly unlikely I individually would be a target of such people
+    while also not doing anything illegal, and if I was a target, I probably
+    couldn't stop such an attack if it was deliberate and sustained. Still, it
+    was made during a time where only the people in control of the security
+    apparatus and their benefactors would have computers at all in the first
+    place (reducing the likelihood they would insert a hardware exploit
+    targeting their own people), and having a simpler processor may help me more
+    easily understand how to protect it. As we migrate from a country of laws to
+    a country devoted to power, and as the laws of power are effectively
+    congruent with the laws of physics, the power we can anticipate to possess
+    in the future comes what our physical world can provide. Only the paranoid
+    survive and all that.
+
+    As an added benefit, nobody would really want to steal this computer. All
+    they would need to do is take a glance at it and drop it on the ground a few
+    meters away, because it's clearly so old they can't sell it for parts. As a
+    guy who's been robbed a number of times, knowing I have less stuff to be
+    robbed of than the next guy helps me sleep at night.
+
+    Better to have it and not need it than need it and not have it.

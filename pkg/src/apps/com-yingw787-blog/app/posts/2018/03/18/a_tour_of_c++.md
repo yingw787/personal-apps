@@ -1,0 +1,22 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"A Tour of C++\", by Bjarne Stroustrup"
+date: "2018-03-18T19:41:28-04:00"
+draft: false
+---
+
+At my new company, our core software is all written in C++. Much of this is due to performance concerns, and because CUDA, the NVIDIA GPU programming platform, primarily interfaces through C++. I thought to begin reading our C++ code, but without even a basic understanding of C++ beyond that in college, knowledge retention and transfer would be a challenge. Hence, my journey to learn C++.
+
+Calling "A Tour of C++" a tour may be disingenuous. The book is jam-packed full of information and at less than 200 pages, it took me a few weeks in order to finish, and will take me more time and re-reads in order to fully digest. I sense that as a software engineer writing Python and JavaScript in a prior life, understanding C++ will require some getting used to.
+
+A number of interesting things the author notes in the book include:
+
+- "C++ is *not* just C with additional features on top. C and C++ diverged quite early on, and while the two languages influence each other strongly today, they are not immediately compatible and best practices do differ significantly. You can't just take a C program and compile it as C++, and call it a day, if you want to have a good day.
+
+- C++ is not designed by committee or by a programming savant; it was designed according to the requirements at multiple points in time. Hence, while C++ is decently flexible and wholly relevant, there does not appear to be a unifying design philosophy exposed to the user of C++. There's multiple ways to do things, with some better than others. With the added complexity of being a lower level language, this looks to mean a large amount of intellectual overhead.
+
+- The book devotes a great deal of attention to both types and the standard library. Again, coming from languages where variables are neither strongly or strictly typed, this is a major paradigm shift. The reliance on having a large standard library, one of C++'s strengths, as part of all C++ development is a little strange to me too (Python has a standard library, but a lot of times third-party packages like `datetime` and `requests` are used in their stead).
+
+I will have a lot of learning to do if I am to become a competent C++ programmer (which I hope to be in some capacity by the time I leave my current company). If you are coming from a higher-level background, this book will almost certainly be difficult. However, if you are operating at a low level or know some prior C++, this book may help you a good deal.
