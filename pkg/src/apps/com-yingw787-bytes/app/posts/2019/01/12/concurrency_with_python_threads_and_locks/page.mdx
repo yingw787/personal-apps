@@ -1,0 +1,435 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-12",
+  title: "Concurrency with Python: Threads and Locks",
+  description: "Concurrency with Python: Threads and Locks",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [Concurrency with Python:
+  Why?](/posts/2019/01/11/concurrency_with_python_why/)
+- [**Concurrency with Python: Threads and
+  Locks**](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+# Overview
+
+Threads and locks are a software-defined formalization of the hardware
+underneath, and as such comprise the simplest possible concurrency model. It
+forms the basis of other concurrency abstractions built on top of it, so it's
+important to understand in this regards. However, it's difficult or impossible
+to build reliable, scalable systems directly on these primitives.
+
+While most every language has support for threads and locks, CPython remains
+special in its use of a [global interpreter
+lock](https://wiki.python.org/moin/GlobalInterpreterLock) that prevents threads
+from concurrently accessing shared memory, because CPython's memory management
+is not thread-safe. While blocking operations happen outside the GIL and can
+lead to performance speedups, the syscall overhead required for thread switching
+may degrade performance. This means threading in Python is primarily used for
+I/O-bound operations, instead of CPU-bound operations.
+
+(As an aside, I mention CPython because other, partial implementations of the
+Python specification, such as [Jython](http://www.jython.org/), do _not_ have a
+global interpreter lock. However, these implementations are not as widely used
+in practice because a) nobody wants to support multiple Python implementations
+unless they have to, b) they are less fully fleshed out, and c) due to the need
+[to natively support the C/C++ extensions
+API](https://docs.python.org/3/extending/building.html), the Python language
+definition is tightly coupled to C/C++ and is less a [technical
+specification](<https://en.wikipedia.org/wiki/Specification_(technical_standard)>)
+than a [reference
+implementation](https://en.wikipedia.org/wiki/Reference_implementation).
+
+Python directly supports threading through a high-level
+[**`threading`**](https://docs.python.org/3/library/threading.html) module, and
+a lower-level
+[**`_thread`**](https://docs.python.org/3/library/_thread.html#module-_thread)
+model. To get more information on how these modules work, the source code is
+[available online; **threading.py** linked
+here](https://github.com/python/cpython/blob/3.7/Lib/threading.py).
+
+---
+
+# Getting Started
+
+The quintessential single-threaded "Hello World" execution in Python is famously
+simple:
+
+```python
+print('Hello World!')
+```
+
+The multi-threaded analogue isn't too different:
+
+```python
+import threading
+import time
+
+def hello_world():
+    print(
+        'Hello from {0}'.format(
+            threading.get_ident()
+        )
+    )
+
+t1 = threading.Thread(target=hello_world)
+t2 = threading.Thread(target=hello_world)
+
+t1.start()
+t2.start()
+```
+
+During my limited amount of testing, the above script generated the result shown
+below:
+
+```bash
+(python3.7) host:~ username$ python test.py
+Hello from 123145444872192
+Hello from 123145450127360
+(python3.7) host:~ username$ python test.py
+Hello from 123145370476544
+Hello from 123145370476544
+(python3.7) host:~ username$ python test.py
+Hello from 123145409552384
+Hello from 123145414807552
+(python3.7) host:~ username$ python test.py
+Hello from 123145333612544
+Hello from 123145333612544
+```
+
+I used `get_ident()` in order to print the "thread identifier" (a magic value
+with no meaning except to disambiguate between different threads at runtime).
+You can see how in some instances, the thread identifier is different, while in
+some other cases, the thread identifier is the same. Identical thread
+identifiers do not imply work remains on the same thread, but happens because
+[Python re-uses the identifier if work does not overlap and a different thread
+identifier is not required](https://stackoverflow.com/a/50244900).
+
+# Pitfalls: Timing and Consistency
+
+If you swapped the thread identifier with the name of the thread using
+`threading.current_thread().getName()`, you might get the results in order, and
+a large reason for that may be because each thread is using the same function
+and code path, and therefore the difference in latency between each thread is
+insignificant next to the latency of the interpreter. However, this does not
+mean the in-order execution is guaranteed; here's an example from ["Python
+Programming" on
+WikiBooks](https://en.wikibooks.org/wiki/Python_Programming/Threading) where the
+creation of each thread and the execution of each thread have explicitly
+different timings:
+
+```python
+import threading
+import time
+
+class MyThread(threading.Thread):
+    def run(self):
+        print(
+            "Hello from {}!".format(
+                self.getName()
+            )
+        )
+        # Thread execution is spaced out by
+        # at least 1.0 seconds.
+        time.sleep(1)
+        print(
+            "{} finished!".format(
+                self.getName()
+            )
+        )
+
+def main():
+    for x in range(4):
+        mythread = MyThread(
+            name = "Thread-{}".format(
+                x + 1)
+            )
+        mythread.start()
+        # Thread creation is spaced out
+        # by at least 0.9 seconds.
+        time.sleep(.9)
+
+if __name__ == '__main__':
+    main()
+```
+
+This results in the following output on one sample run:
+
+```bash
+(python3.7) host:~ username$ python test.py
+Hello from Thread-1!
+Hello from Thread-2!
+Thread-1 finished!
+Hello from Thread-3!
+Thread-2 finished!
+Hello from Thread-4!
+Thread-3 finished!
+Thread-4 finished!
+```
+
+This log indicates thread creation/execution is interleaved. With increasingly
+divergent timings between thread creation and execution due to the increased
+variability of added functionality, these results will become ever more
+unpredictable. The principle remains the same, though; there are no guarantees
+for consistent behavior when using multiple threads.
+
+# Pitfalls: Accessing Shared Memory
+
+This can result in incorrect behavior when different threads access shared
+memory. You can extend this example to see a race condition when counting using
+multiple threads:
+
+```python
+import threading
+import time
+
+class Counter():
+    def __init__(self):
+        self.count = 0
+
+    def increment_until_100(self):
+        while self.count != 100:
+            print(
+                '{0} incrementing.'.format(
+                    threading.current_thread().getName()
+                )
+            )
+            self.count += 1
+            time.sleep(1)
+
+def worker(counter):
+    counter.increment_until_100()
+
+def main():
+    counter = Counter()
+    for x in range(7):
+        count_thread = threading.Thread(
+            name="Thread-{}".format(
+                x + 1
+            ),
+            args=[counter],
+            target=worker
+        )
+        count_thread.start()
+        time.sleep(.9)
+
+    print(
+        'Counter final value is {0}'.format(
+            counter.count
+        )
+    )
+
+if __name__ == '__main__':
+    main()
+```
+
+This generates on one sample run, this output:
+
+```bash
+(python3.7) host:~ username$ python test.py
+Thread-1 incrementing.
+Thread-2 incrementing.
+Thread-1 incrementing.
+Thread-3 incrementing.
+Thread-2 incrementing.
+Thread-1 incrementing.
+Thread-4 incrementing.
+Thread-3 incrementing.
+Thread-2 incrementing.
+Thread-1 incrementing.
+Thread-5 incrementing.
+Thread-4 incrementing.
+Thread-3 incrementing.
+Thread-2 incrementing.
+Thread-1 incrementing.
+Thread-6 incrementing.
+..
+Thread-2 incrementing.
+Thread-1 incrementing.
+Counter final value is 28
+Thread-7 incrementing.
+Thread-6 incrementing.
+...
+Thread-7 incrementing.
+Thread-6 incrementing.
+(python3.7) host:~ username$
+```
+
+This result varies based on the number of threads created, but you can see how
+the result of _28_ is very different from the intended value of _100_.
+~~`Counter().count` is not thread-safe, and it's demonstrated here (if you have
+a different machine than I do, you might get a different result than 28)~~
+(**Update: See correction at end of post**). If you encounter a race condition,
+the relevant section of code may be difficult to find without sufficient
+logging.
+
+# Pitfalls: Deadlocking
+
+Deadlocking occurs when two agents attempt to acquire the same area of shared
+memory, and end up blocking each other. The only solution to this when working
+with the low-level abstractions of threads and locks is to ensure you have a way
+for each agent to manage its locks correctly, or have an overall paradigm of
+lock coordination. For example, the [dining philosophers
+problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) underlines
+the importance of process synchronization. [Rosetta Code's Dining Philosophers
+solution in Python](https://rosettacode.org/wiki/Dining_philosophers#Python)
+resolves this synchronization issue by ensuring if you (an agent) cannot acquire
+both forks in good time, you release any forks you already have so that another
+agent may acquire both:
+
+```python
+def dine(self):
+    fork1, fork2 = self.forkOnLeft, self.forkOnRight
+
+    while self.running:
+        fork1.acquire(True)
+        # NOTE: Do not block the lock when attempting to acquire,
+        # in order to avoid deadlock.
+        locked = fork2.acquire(False)
+        if locked: break
+        # NOTE: If the lock acquisition is not successful, then
+        # release the lock on the first object.
+        fork1.release()
+        print '%s swaps forks' % self.name
+        fork1, fork2 = fork2, fork1
+    else:
+        return
+
+    self.dining()
+    fork2.release()
+    fork1.release()
+```
+
+This method does not exclude other methods of locking, such as [lock
+ordering](http://tutorials.jenkov.com/java-concurrency/deadlock-prevention.html#ordering),
+or system designs involving process synchronization like [producer-consumer
+models using
+semaphores](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem#Using_semaphores),
+but may be less prevalent in Python than in other languages.
+
+# Pitfalls: Alien methods and dependencies
+
+If you are going to apply multithreading in your Python application, manually
+validating and verifying thread safety and the threading model of your
+dependencies is something you must do if you wish to guarantee correctness in
+your entire stack. Some dependencies designed for enterprise-grade usage in a
+multi-service environment, such as
+[**`redis`**](https://pypi.org/project/redis/), may keep their concurrency
+models first and foremost in mind during the design phase (see [`antirez`'s
+comments regarding a multithreaded version of `redis` on Hacker
+News](https://news.ycombinator.com/item?id=19368955)). Some dependencies may
+not; I may have run into a deadlock with
+[**`boto2`**](http://boto.cloudhackers.com/en/latest/) when downloading files
+from S3 in parallel using
+[**`multiprocessing.pool.Pool`**](https://docs.python.org/3.7/library/multiprocessing.html#multiprocessing.pool.Pool),
+which necessitated a rewrite of a function. Hence, another difficulty with
+dependencies arises; they cannot be commoditized, which means if you have not
+validated _all_ your dependencies you will use in your application before
+implementing a threading model in your application, you may end up boxing
+yourself into a dead end when attempting to add a dependency for a particular
+use case to your project.
+
+# Multithreaded Logging
+
+If you do choose to go with a native threading model in Python, you may be
+pleasantly surprised to find that not only is the
+[**`logging`**](https://docs.python.org/3/library/logging.html) module
+[thread-safe by
+default](https://docs.python.org/3/library/logging.html#thread-safety), but it
+also supports logging from any particular thread or process (an example
+demonstrated [in the `logging`
+cookbook](https://docs.python.org/3/howto/logging-cookbook.html#logging-from-multiple-threads)).
+The difficulty then becomes where exceptions will likely be triggered in your
+application, how that affects your threading model, and ensuring robust logging
+around those sections of code. Adding logs to your application may present
+non-trivial latency penalties, as [`pylint` may inform you through the warning
+`logging-lazy-interpolation`](https://stackoverflow.com/questions/34619790/pylint-message-logging-format-interpolation),
+which may also present difficulties in your threading model.
+
+# `concurrent.futures`
+
+I was rather unhappily surprised when writing this post to discover the [Python
+`multiprocessing.pool.ThreadPool` implementation was never documented or tested
+because it was never finished](https://stackoverflow.com/a/46049195). It does
+appear to remain that way even in Python 3.7, as it appears [in the source code
+on the GitHub
+mirror](https://github.com/python/cpython/blob/3.7/Lib/multiprocessing/pool.py).
+
+Given the omnipresence of the global interpreter lock, and the nature of
+concurrent applications primarily parallelizing I/O-related work, it may make
+sense to leverage
+[**`concurrent.futures.Executor`**](https://docs.python.org/3.6/library/concurrent.futures.html?highlight=concurrent%20futures#concurrent.futures.Executor)
+or similar, that use the new asynchronous paradigms present in Python 3.x, as
+they are more fully-featured. I have not used this module, but I would imagine
+it would not incur a significant performance penalty in comparison to
+`multiprocessing`.
+
+# Conclusion
+
+Python has rudimentary support for threads and locks, and it may be less
+fully-featured and useful than threading and locking in another language (e.g.
+Java). Threading and locking primitives should also be best avoided when
+operating in a higher-level, interpreted language like Python. However, Python
+does present enough friendly exposure about threading and locking to give a good
+academic exercise into how threads and locks work, and present an exciting
+introduction to the world of concurrency.
+
+To learn more about threading and locking in production, check out ["Seven
+Concurrency Models in Seven Weeks", by Paul
+Butcher](https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks).
+
+---
+
+**(Correction on 2019/03/22)**: As
+[aaron_m04](https://news.ycombinator.com/user?id=aaron_m04) pointed out on the
+[Hacker News submission of this
+post](https://news.ycombinator.com/item?id=19448347) and Riccardo Campari
+pointed out below in Disqus, the issue with the race condition in the example
+"Pitfalls: Accessing Shared Memory" is not an issue with whether
+`Counter.count()` is thread safe, but rather because the child threads are never
+joined with
+[`**.join()**`](https://docs.python.org/3/library/threading.html#threading.Thread.join).
+Thanks very much to both for pointing this out to other readers and to me.
+
+One new development in Python 3.8 is the
+[`**multiprocessing.shared_memory`](https://docs.python.org/3.8/library/multiprocessing.shared_memory.html)
+library, where shared memory is implemented according to the System V shared
+memory specifications. I have not used this library, nor have I tried out Python
+3.8 (currently in development at the time of writing this), but I would assume
+this would likely be the given way to apply shared memory across Python
+processes when shared-nothing paradigms don't work for some reason.
+
+I am honestly at a loss as to why the core Python development team added this
+library recently. If somebody could post an RFC to the design document around
+this library in the comments, or perhaps ask [Davin
+Potts](https://github.com/applio) for more information, I personally would
+appreciate any clarification.

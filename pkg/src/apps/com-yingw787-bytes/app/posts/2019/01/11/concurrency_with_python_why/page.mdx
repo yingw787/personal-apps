@@ -1,0 +1,92 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-11",
+  title: "Concurrency with Python: Why?",
+  description: "Concurrency with Python: Why?",
+  categories: ["Python", "Concurrency"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+The Concurrency with Python Series:
+
+- [**Concurrency with Python:
+  Why?**](/posts/2019/01/11/concurrency_with_python_why/)
+- [Concurrency with Python: Threads and
+  Locks](/posts/2019/01/12/concurrency_with_python_threads_and_locks/)
+- [Concurrency with Python: Functional
+  Programming](/posts/2019/01/19/concurrency_with_python_functional_programming/)
+- [Concurrency with Python: Separating Identity From
+  State](/posts/2019/01/26/concurrency_with_python_identity_and_state/)
+- [Concurrency with Python: Actor
+  Models](/posts/2019/02/02/concurrency_with_python_actor_models/)
+- [Concurrency with Python: CSP and
+  Coroutines](/posts/2019/02/09/concurrency_with_python_csp_and_coroutines/)
+- [Concurrency with Python: Hardware-Based
+  Parallelism](/posts/2019/02/16/concurrency_with_python_hardware_based_parallelism/)
+- [Concurrency with Python: Data-Intensive
+  Architectures](/posts/2019/02/23/concurrency_with_python_data_intensive_architectures/)
+- [Concurrency with Python:
+  Conclusion](/posts/2019/02/24/concurrency_with_python_conclusion/)
+
+---
+
+# The Problem
+
+Recently, I found myself needing to generate a great deal of randomized data
+(e.g. a CSV file with a billion non-trivial records), in order to run
+load/performance tests to ensure data ingestion through the ETL pipelines I
+developed ran correctly from static files to the database. Now, our products are
+quite fast. Very fast, actually; you can create a gigabyte-scale CSV export from
+a [randomly generated
+table](https://www.kinetica.com/docs/feature_overview/insert_records_random_feature_overview.html)
+in seconds. So ultimately, data generation wasn't the performance bottleneck for
+me.
+
+The bottleneck was the very ETL product I created. In its current form, it's
+slow to run and slow to test. If this ETL pipeline has to be a performance
+bottleneck in our product stack, it should at least try and be efficient in its
+use of system resources. It's not really trying at the moment. Ingestion through
+the default single-threaded Python paths I wrote were very slow in comparison to
+the one-off ETL tools this pipeline is intended to replace, and while there are
+significant performance benefits to integrating
+[`pyspark`](http://spark.apache.org/docs/2.2.0/api/python/pyspark.html) as an
+acceleration layer, it's not a bulletproof solution. It's not just [calendar
+mismatches](/posts/2018/10/31/calendar_mismatches/) you need to worry about.
+Imagine debugging a deadlock that occurs in a JVM created by Python, with the
+learned knowledge that `py4j`, the Java to Python bridge used underneath
+`pyspark`, will cut off any logging output from `log4j`. You wouldn't even get
+proper logging output to get an idea of what's going on, assuming there is even
+enough logging in whatever dependencies the deadlock occurred in the first
+place. If it's a transient issue, you _could_ just restart the run as a
+workaround, but in general restarting ETL runs is expensive because you may need
+to toss a lot of data or deduplicate it, and both waste a lot of time. In
+addition, with each concurrency model introduced, your options in unifying your
+concurrency models in a workable manner are reduced. If you wanted to implement
+concurrent ETL execution runs at the top-level interface, how would you inform
+`pyspark` that a Python-based ETL run to ingest GIS-specific data (whose logic
+can't be easily ported to `pyspark`) into the same database is occurring at the
+same time? A similar issue bedevils executing regression tests in parallel. I
+don't think you can parallelize regressions if you can't guarantee thread safety
+at the interface level, which I don't think our dependencies do.
+
+I guess what I'm trying to say is I have a lot of problems, and I don't have too
+much visibility into what an _ideal_ solution would be. Because I have no
+background in understanding concurrency models -- any concurrency model, I don't
+know what I don't know in this domain.
+
+This does give me something to purse, though. Now I have a problem I can solve.
+
+I went ahead and purchased Paul Butcher's [Seven Concurrency Models in Seven
+Weeks](https://pragprog.com/book/pb7con/seven-concurrency-models-in-seven-weeks),
+and I'll try and communicate my learned understanding of each one in a series of
+blog posts.

@@ -113,7 +113,7 @@ The answer is, _sort of_. There's a number of quirks to general ETL design:
   of SQL. Many SQL databases also recognize portions of different SQL standards
   for backwards compatibility reasons. This presents some problems when trying
   to run certain SQL statements. For example, Teradata does not support `DROP
-  TABLE IF EXISTS` syntax that exists in PostgreSQL or MySQL, using a series of
+TABLE IF EXISTS` syntax that exists in PostgreSQL or MySQL, using a series of
   `GOTO` statements and labels instead (community forum post
   [here](https://community.teradata.com/t5/Database/Delete-or-Drop-a-table-if-it-already-exists/td-p/38431)).
   Oracle also does not have `DROP TABLE IF EXISTS` syntax, preferring to run a
