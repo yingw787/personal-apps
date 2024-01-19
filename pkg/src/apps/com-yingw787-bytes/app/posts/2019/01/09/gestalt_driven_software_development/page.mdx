@@ -1,0 +1,85 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2019-01-09",
+  title: "Gestalt-driven Software Development",
+  description: "Gestalt-driven Software Development",
+  categories: ["Product Management", "Engineering Management"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+> **gestalt**: Something that is made of many parts and yet is somehow more than
+> or different from the combination of its parts
+>
+> [Merriam-Webster
+> Dictionary](https://www.merriam-webster.com/dictionary/gestalt)
+
+The ability to generate outputs greater than inputs is why organizations exist,
+and organizations are how all the multi-human achievements in history are
+possible. This axiom applies to product organizations no differently. And yet,
+after a certain period of time, all organizations find themselves at a slowing
+pace; leaders and followers no longer find themselves gaining from each other's
+achievements, and it no longer makes sense to work together. Hence, the
+organization dies, the torch passes to another generation, and the cycle begins
+anew.
+
+I've found that the strongest and most effective organizations stay this effect
+as long as they can, in part due to maximizing the gestalt of the organization
+and increasing the logic of cooperation.
+
+The following tips might help spark ideas on how to increase these benefits:
+
+- **Aggressively establishing high engineering standards**: Setting standards
+  and enforcing them (e.g. through a continuous integration and delivery
+  pipeline) stops engineers from worrying about engineering aspects that don't
+  impact business value and establishes a ground truth for shared understanding
+  of the codebase. In addition, it creates a high level of social trust within
+  the organization, which helps lead to decentralized and faster decision
+  making.
+
+  Apply this principle by using linters like [pylint](https://www.pylint.org/)
+  and explictly enumerate every rule, strictly versioning all dependencies, and
+  maintaining up-to-date issue and code review templates.
+
+- **Keeping their data clean**: Clean data, easily maintained and strictly
+  regulated, accelerates business insights by deduplicating and unifying various
+  code paths utilizing that data. It also lends itself well to creating data
+  lakes within an organization, helping to break down barriers between
+  departments (e.g. HR or Sales/Marketing and Engineering or Product).
+
+  To apply this principle, establish and maintain high engineering standards for
+  data management, while also ensuring data remains easily accessible to both
+  engineers and non-engineers. A product like
+  [Airtable](https://bjoernkw.com/2014/11/09/airtable-a-true-spreadsheet-database-hybrid/)
+  would really shine in this category.
+
+- **Maximizing code reuse**: Reused code is time saved and code better tested in
+  production. Additionally, as [all code is technical
+  debt](https://blog.professorbeekums.com/all-code-is-debt/), minimizing the
+  amount of code written helps de-risk your codebase, and keeps your options
+  more open in choosing the direction of your codebase and hence your product
+  offerings as your organization grows.
+
+  Structure your code so that every functional unit is useful in general, even
+  if you work on a [monolithic
+  application](https://en.wikipedia.org/wiki/Monolithic_application) as opposed
+  to a [something more
+  modular](https://en.wikipedia.org/wiki/Modular_programming). If code cannot be
+  reused, it should remain minimal. Clients (Web frontends, CLIs, etc.) should
+  be comparatively thin, while backends and services can be comparatively
+  thicker. Keep breaking this down as appropriate (e.g. once you have formulated
+  and validated a design language, create a standardized UI component library
+  and subtree into the appropriate frontend repositories). While there are
+  exceptions to this rule, keep them few and far between, and only apply these
+  exceptions after serious peer review of the design.
+
+I hope you found these tips helpful! Leave your thoughts in the comments below.
