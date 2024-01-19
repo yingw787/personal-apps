@@ -1,0 +1,207 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-12-17",
+  title:
+    "Data-driven Testing with 'pytest', Part Four: Fungible Infrastructure",
+  description:
+    "Data-driven Testing with 'pytest', Part Four: Fungible Infrastructure",
+  categories: ["Python", "Testing"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+My [previous post](/posts/2018/12/10/data_driven_testing_three) discussed how an
+update to a testing schema opened the test harness to better capture the rest of
+the statefulness of the ETL pipeline. This post discusses how the infrastructure
+setup in the test harness evolved to capture the statefulness of each resource
+dependency.
+
+---
+
+# SSL: Where it all began
+
+The test harness worked quite well after the prior update, and I was able to
+migrate the remaining test cases to the new framework and delete the old test
+harnesses entirely. Then one day, one customer asked for SSL support, because
+they hosted all of their credentials on their own LDAP server and wanted a
+secure channel for authentication. A very reasonable ask, as credentials should
+not be passed as plain-text over network, all our services already supported SSL
+connections, and I didn't have SSL support in the tool. I thought it would take
+a few days.
+
+It ended up taking a few weeks when interspersed with other feature development.
+The difficulty arose when attempting to set the configuration in a reproducible
+manner. There's quite a few knobs to turn, and tuning them incorrectly results
+in the database being in an erroneous state. Getting the database out of the
+erroneous state took time too, as I did not back up my configuration files and
+hence had no automated rollbacks. I ended up throwing the updated feature (with
+maybe a dozen lines of code changed total) over the wall to a colleague, who
+verified it and sent it to the customer. After that, I _really_ wanted fungible
+third-party dependencies.
+
+---
+
+# Difficulties with Existing Infrastructure
+
+In the beginning, I had all my third-party dependencies (such as all the
+databases) installed on bare metal. This resulted in a not-insignificant amount
+of friction (in addition to the ones already described):
+
+- One difficulty with code, especially code representing large features or
+  changes that are constantly changing, is the risk of bugs and unintended
+  behavior. When you're writing in a language that embraces state, some of those
+  bugs relate to statefulness. For example, running the same ingest method a
+  fixed number of times to the same database will eventually result in
+  out-of-memory errors in the database, perhaps because an orphaned process
+  didn't deallocate memory correctly. So, if you're debugging a particular
+  ingest path requiring actual writes to the resource, and you didn't catch
+  _your_ bug in time, _other_ bugs may appear that interfere with proper
+  debugging of your bug. Addressing this issue without sufficient infrastructure
+  support may involve restarting the machine instance, or reinstalling the
+  database from scratch, or simply waiting for a patch to come out, among other
+  possibilities.
+
+- We (of course) support multiple versions of our product, as enterprise
+  customers maintain their own upgrade schedule and licensing agreements and
+  hence cannot upgrade immediately after we release a particular feature. I
+  hadn't been at the company long enough to work on multiple releases, but we
+  maintained a nightly branch for the next release and as one was around the
+  corner, I needed to reconcile features and test the tool against the upgraded
+  database. The longer the tool exists, the more versions it needs to support.
+  This is of course to say nothing of different operating systems (debian-based,
+  Red Hat-based, SUSE-based, etc.), architectures (x86, POWER, etc.), and other
+  build differences. We bundle our own development environments efficiently and
+  it's easy enough to get multiple clients and client dependencies up and
+  running, but if the servers are deployed on bare metal, it's impossible to
+  concurrently maintain those one-to-one client/server connections.
+
+- Sometimes, we need to see the behavior of the tool under different system
+  constraints. For example, how does restricting the amount of memory accessible
+  to the database affect ingest performance? Sometimes the system degrades
+  gracefully. Other times, the system may crash. Crashing on bare metal is not
+  fun, as it may affect other applications on your entire system (like Spotify
+  :unamused:).
+
+The takeaway from all this is to have good enough test infrastructure that can
+effectively absorb or mitigate these risks to development velocity.
+
+---
+
+# Solution: Containerization!
+
+Taking yet another page from our QA team, which had good experiences with Docker
+and containerizing our database for testing purposes, I decided to use Docker
+and bash to script the database setup with SSL enabled, and tried to make the
+infrastructure setup as simple as possible. It was also a great opportunity to
+learn more about Docker and how containerization worked.
+
+Containerization itself was not too difficult. As our database ships as a
+monothlic RPM, it was easy to create a Dockerfile based on top of the maintained
+[**`'centos'`**](https://hub.docker.com/_/centos/) Docker image, `docker cp`
+over the RPM to the container, and run `yum install -y $RPM` to deploy the
+database. The difficult SSL configuration, which blocked me from finishing the
+infrastructure for a few more weeks, was resolved with the help of a sales
+engineer who had already wrote a number of bash scripts to address this problem.
+It was literally a Hail Mary in terms of discovery and efficacy, and this post
+wouldn't be possible without his work :sweat_smile:
+
+Here's some of the other, more interesting gotchas/hacks I
+encountered/implemented:
+
+- A single Docker container is intended to run exactly one process; when that
+  process stops, the container should stop as well. As our database and
+  analytics platform was very much not one process, we needed to work around
+  this design feature. The solution I ended up with was calling `tail -f
+/dev/null` in a bash entrypoint script I copied into the Docker container and
+  executed using the Docker keyword `'ENTRYPOINT'`. This keeps _a_ foreground
+  process consistently running in the container, preventing premature shutdown.
+  Then, you can run `docker exec -it $CONTAINER_NAME bash` to go into the
+  container and manually check the health of the processes you care about (if
+  you're not binding volumes between container and host and streaming logs,
+  which is another option).
+
+- When I first worked from home after finishing up the infrastructure work, I
+  couldn't connect to the Internet from within the Docker container. I called
+  `ping 8.8.8.8` (Google DNS) and it simply read ["Connection reset by
+  peer"](https://serverfault.com/questions/769578/curl-56-recv-failure-connection-reset-by-peer-when-hitting-docker-container)
+  or ["Destination Host
+  Unreachable"](https://stackoverflow.com/questions/33780947/not-able-to-connect-to-network-inside-docker-container).
+  With some help from QA, I determined that the problem was not due to machine,
+  operating system, or code quirks. Eventually, I stumbled upon [this Stack
+  Overflow
+  post](https://stackoverflow.com/questions/38295535/network-unreachable-inside-docker-container-without-net-host-parameter)
+  that mentioned setting `"--net=host"` during `docker run`, which fixed the
+  problem. This means I can't publish aliases for the ports used by various
+  database processes in the container, which means I can't have multiple
+  databases running at the same time. At present, it's an acceptable limitation;
+  I just script the container setup and teardown synchronously and run the
+  subset of tests for each appropriate configuration.
+
+- SSL verification issues cropped up when SSL certificates did not match between
+  the client and server. There was no way to ignore the errors without code
+  changes, which were unacceptable. At first, since the original scripts to
+  enable SSL generated self-signed SSL certificates, I copied the certificates
+  from the container to the host and the client's SSL certificate store. Later,
+  I removed the certificate generation step and cached a single set of
+  self-signed SSL certificates on the client and server to ensure they always
+  matched. _Definitely_ a hack (I shouldn't even see root certificates in
+  production), but for testing that SSL is _possible_, a good enough workaround
+  for now.
+
+---
+
+# Lessons Learned
+
+I'm still very much a newbie at Docker and containerization (My test
+infrastructure is one container on one machine and likely will be for a while,
+so no `docker-compose` or Kubernetes or anything), but there's some things I
+really appreciate about going through this process:
+
+- Virtualization is pretty much the only way I've found so far to namespace
+  state and make it _completely_ fungible in a pragmatic manner. Sure, there's
+  tools to create "virtual environments" for a particular language, such as
+  [**`virtualenv`**](https://docs.python.org/3/library/venv.html) and [**`conda
+  env`**](https://conda.io/docs/user-guide/tasks/manage-environments.html) for
+Python, the JVM for Java and Java-based languages, etc., but you ever move into
+  multi-service and multi-language environments, these virtual environments are
+  just too constricted in scope. With `docker`, or other virtualization service,
+  you never have to worry about that unless you approach the limits of
+  `docker`'s capabilities, which are much further away.
+
+- Virtualization in the manner I did it is fairly cheap, in terms of total
+  resource utilization and developer upfront effort. This makes it very
+  appealing as the rate of return is amplified that much more. I can't speak to
+  actual distributed systems, or other virtualization runtimes such as
+  [**`nvidia-docker`**](https://github.com/NVIDIA/nvidia-docker), which likely
+  are more complex. I also can't speak to development setups using
+  virtualization, such as [Vagrant](https://www.vagrantup.com/), although I've
+  heard good things.
+
+---
+
+# Conclusion
+
+Infrastructure setup was the keystone in a long journey to automating testing
+for this project. Now in pull requests, I can say to the code reviewer on pull
+requests to check out this branch, build the distribution, and execute this one
+script in order to run all the tests, instead of digging all the way down into
+`site-packages` to find the tests and run them as a one-step process. Much
+simpler to understand and get started with, with corresponding benefits to
+onboarding and test coverage. With the requirements I have on my roadmap, it
+will be a while until I encounter a problem that can't be tested with the
+existing design abstracted implemented so far (e.g. an updated test case schema
+and test harness, another Docker container, etc).
+
+---
+
+Thanks for reading this four-part series! I hope you found it as informative as
+I found it a joy to write.
