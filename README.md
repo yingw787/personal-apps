@@ -28,7 +28,7 @@
     F5`):
 
 1.  Navigate to `http://localhost:5000` to see the homepage, and other ports to
-    see other apps.
+    see other apps, according to `.vscode/launch.json`.
 
 ### Development helpers
 
