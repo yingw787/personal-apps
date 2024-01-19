@@ -1,11 +1,20 @@
----
-author: ["yingwang"]
-categories:
-  - Personal
-title: "New Year's Resolutions"
-date: "2023-01-01T00:00:00-05:00"
-draft: false
----
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2023-01-01",
+  title: "New Year's Resolutions",
+  description: "New Year's Resolutions",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
 
 New Year's Resolutions:
 
