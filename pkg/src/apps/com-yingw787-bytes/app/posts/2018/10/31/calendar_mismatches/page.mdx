@@ -1,0 +1,169 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-10-31",
+  title: "#todayilearned: Julian/Georgian calendar mismatches in 'pyspark'",
+  description:
+    "#todayilearned: Julian/Georgian calendar mismatches in 'pyspark'",
+  categories: ["Python", "Java", "py4j", "TIL"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+Working in software engineering has taught me that time is an _extremely_
+difficult concept to parse effectively. There's an [entire section on date and
+time falsehoods programmers believe on
+GitHub](https://github.com/kdeldycke/awesome-falsehood#dates-and-time).
+Programmers therefore try and normalize time as much as they can; for example,
+always specify a timezone and normalize to UTC, or record milliseconds since
+[Unix epoch](https://en.wikipedia.org/wiki/Unix_time).
+
+I would like to add in my own addendum to this pile: _never assume that
+different programming languages obey the same paradigms about date and time_.
+
+---
+
+I work on an ETL tool, and it's nominally written in Python. Although Python is
+fast in terms of development time and feature turnaround, [Python's system
+performance is slow in comparison to other programming
+languages](https://stackoverflow.com/questions/3033329/why-are-python-programs-often-slower-than-the-equivalent-program-written-in-c-or),
+and optimizing for system performance requires certain workarounds. My
+workaround was to include an acceleration layer using Apache Spark and our
+[open-source Spark
+connector](https://github.com/kineticadb/kinetica-connector-spark), interfacing
+with Python using
+[`pyspark`](https://github.com/apache/spark/tree/master/python/pyspark) and
+[`py4j`](https://github.com/bartdag/py4j).
+
+There were hiccups along the way, but it worked and it was fast. Then, when I
+was executing my regression tests, I noticed something rather odd about a bit of
+data I was ingesting.
+
+I had a datetime value `'1483-12-13 23:07:26.066'`, corresponding to December
+13th, 1483. When I ingested this datetime value into our database using this new
+acceleration layer, it recorded as timestamp value `-15337453953934` (units in
+seconds since UNIX epoch).
+
+Okay...so what's the point?
+
+When I was doing per-value comparison on that record, I read the value out of
+the database using Python and compared it to the value from the original source,
+which I re-read in Python. The value in the database corresponded to the Python
+`datetime` object `datetime.datetime(1483, 12, 22, 23, 11, 24, 66000)` -
+December 22nd, 1483.
+
+It's eight days off.
+
+![wat](/images/2018/10/31/calendar_mismatches_1.jpg)
+
+I asked a colleague about this issue. He found a JIRA issue created for this
+already, [SPARK-18381](https://issues.apache.org/jira/browse/SPARK-18381). To
+spare you from reading (perhaps even more) JIRA tickets, the gist is that
+`pyspark` uses an idealized [Georgian
+calendar](https://en.wikipedia.org/wiki/Gregorian_calendar) extending all the
+way back through time, while Apache Spark respects the actual switch from the
+[Julian calendar](https://en.wikipedia.org/wiki/Julian_calendar) that took place
+around mid-October 1583.
+
+What this basically means is that if you used Python to save datetimes before
+October of 1583, and you started using Spark to save more datetimes before
+October of 1583, you would be merging two different states together which would
+corrupt your data. You would need to write or incorporate code in order to
+reconcile these two states.
+
+Here's a code sample in Python:
+
+```bash
+yingw787@yingw787-desktop:~/Projects/official/bytes.yingw787.com$ python
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+[GCC 7.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from dateutil import parser
+>>> parser.parse('1483-12-13 23:07:26.066')
+datetime.datetime(1483, 12, 13, 23, 7, 26, 66000)
+```
+
+Here's the anomaly expressed in `pyspark`:
+
+```bash
+yingw787@yingw787-desktop:~/Projects/official/bytes.yingw787.com$ pyspark
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
+[GCC 7.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+2018-11-01 23:10:33 WARN  Utils:66 - Your hostname, yingw787-desktop resolves to a loopback address: 127.0.1.1; using 192.168.0.18 instead (on interface enp3s0)
+2018-11-01 23:10:33 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+2018-11-01 23:10:34 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2018-11-01 23:10:35 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2018-11-01 23:10:35 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 2.3.2
+      /_/
+
+Using Python version 3.6.5 (default, Apr 29 2018 16:14:56)
+SparkSession available as 'spark'.
+>>> from dateutil import parser
+>>> date = parser.parse('1483-12-13 23:07:26.066').date()
+>>> spark.createDataFrame([(date,)], ('date',)).show(1)
+2018-11-01 23:10:59 WARN  ObjectStore:568 - Failed to get database global_temp, returning NoSuchObjectException
++----------+
+|      date|
++----------+
+|1483-12-04|
++----------+
+```
+
+I'm not sure why it's earlier instead of later like in the prior example. It is
+still about 8 days different, though.
+
+Note this doesn't happen in vanilla Java. Vanilla Java parses datetimes fine.
+
+```bash
+yingw787@yingw787-desktop:~/Projects/official/bytes.yingw787.com$ jshell
+|  Welcome to JShell -- Version 9-internal
+|  For an introduction type: /help intro
+
+
+-> import java.text.SimpleDateFormat;
+
+-> SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
+|  Added variable dateFormat of type SimpleDateFormat with initial value java.text.SimpleDateFormat@844650a5
+
+-> import java.util.Date;
+
+-> Date parsedDate = dateFormat.parse("1483-12-13 23:07:26.066");
+|  Added variable parsedDate of type Date with initial value Sat Dec 13 23:07:26 EST 1483
+
+-> import java.sql.Timestamp;
+
+-> Timestamp timestamp = new Timestamp(parsedDate.getTime());
+|  Added variable timestamp of type Timestamp with initial value 1483-12-13 23:07:26.066
+
+-> timestamp
+|  Variable timestamp of type Timestamp has value 1483-12-13 23:07:26.066
+```
+
+---
+
+I only noticed this anomaly because I randomly generated my test data, and as we
+don't really have any customers referencing datetimes so far back, we decided to
+ignore this particular situation. I filtered my test data so that all datetimes
+were on or after UNIX epoch, and my comparisons happily passed.
+
+This definitely counts as one of those 'unknown unknowns' that may keep people
+up at night. If you don't have high enough cardinality in your dataset to notice
+a statistically significant drift, and you didn't record which services that
+piece of data touched on its way to the database, there's really no solution I
+can think of that would fix the corrupted data after it's saved.

@@ -1,0 +1,197 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-11-07",
+  title: "Data-driven Testing with 'pytest', Part One: Requirements",
+  description: "Data-driven Testing with 'pytest', Part One: Requirements",
+  categories: ["Python", "Testing"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+# The Importance of Software Testing
+
+Why should you bother to write and maintain good tests, let alone prioritize
+them as much as source code? Software testing is important because without some
+automatic level of verification, you don't know that what you made works. Much
+more importantly, it becomes harder to add, change, or remove features without
+tests because you don't know if your changes broke something else down the line.
+Here's [Martin Fowler's take on how important tests
+are](https://martinfowler.com/bliki/SelfTestingCode.html):
+
+> Our attitude is to assume that any non-trivial code without tests is broken.
+
+To hammer this point home, I'll share an experience I had at one of my first
+jobs, where Martin Fowler's quote proved painfully true. At the time, we didn't
+really have tests, and everything seemed broken. We had a unit test suite, which
+was really more of an end-to-end test suite as each test called third-party
+services and chained together multiple chunks of business logic. The test suite
+took about 40 minutes to run, assuming it ran in the first place. We didn't have
+a continuous integration pipeline for much of the time I was there, and no thus
+no test environments to, we resorted on running them in our development
+environments. Since running the tests was not required for pushing to
+production, and because they were such a pain to run, we ended up not running
+the tests very often. Hence, the test suite was always deprecated and broken,
+and no matter how many "sweeps" we made over the test suite to fix broken tests,
+it would stop working within a week when a feature was pushed out.
+
+The subsequent consequences proved severe. Adding a new button and making it
+work properly took at least a week when it should have taken minutes, while
+minor bugs took days to resolve or simply could not be reproduced. During one
+redesign, I changed one filter, and it propagated changes to other filters in an
+unexpected manner. I was able to create a patch fixing 70% of the issue in a few
+hours, but I couldn't make a proper solution, even while pair programming with a
+senior software engineer for two days. One engineer discovered that we were
+[merging different client-side
+states](https://docs.angularjs.org/api/ng/function/angular.merge) before writing
+back to our backend resulting in corrupted data written to our database.
+
+The whole situation took a huge toll on us and the people our work impacted.
+There is no doubt in my mind that we lost customers out the bottom of our sales
+funnel because the quality of the software we wrote and shipped was so bad. We
+couldn't take pride in our work -- we continually felt bad about the :poop: we
+were creating on a daily basis. We were always stressed out about something
+breaking. We couldn't really plan large features or long roadmaps because we had
+no idea what to expect in our codebase. Personnel churn, both in software
+engineering and in the corporate divisions using our software, was unnecessarily
+high -- employees rage quit because of how slow the application ran.
+
+Software testing would have helped mitigate every one of these issues.
+
+---
+
+# Okay...So What does Comprehensive Software Testing Look Like?
+
+I resolved to see how good software tests were written and how good software
+testing paradigms were envisioned and implemented. This involved reviewing a
+goodly number of open-source projects, writeups, talks, and books.
+
+One definitive gold standard of software testing is the
+[SQLite](https://www.sqlite.org/testing.html) open-source database library,
+which proudly states,
+
+> "As of version 3.23.0 (2018-04-02), the SQLite library consists of
+> approximately 128.9 KSLOC of C code. (KSLOC means thousands of "Source Lines
+> Of Code" or, in other words, lines of code excluding blank lines and
+> comments.) By comparison, the project has 711 times as much test code and test
+> scripts - 91772.0 KSLOC."
+
+Now lines of code by itself doesn't indicate code quality one way or another --
+but it _does_ indicate how much effort is put into testing, not just in writing
+those lines of code, but making the abstractions to ensure all those tests are
+easily run and verified in a performant-enough manner.
+
+---
+
+One talk that I found super helpful was ["Functional Core, Imperative
+Shell"](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell)
+by Gary Bernhardt. He argues because every conditional statement creates at
+least two different paths, integration tests scale by \\( 2^n \\) for \\( n \\)
+conditionals, ensuring that the complexity of testing a particular unit of
+imperative business logic increases exponentially. Additionally, chaining
+together disparate portions of business logic by doing imperative things like
+passing by reference or using easy-to-bloat objects ensure that prior stated
+business logic remain extremely large and hence exceptionally hard to test.
+Thus, in order to keep your business logic testable, keep your core logic
+functional and ensure that any contact with the outside world, be it a database
+connection or a REST endpoint, be isolated as much as possible. This means
+effectively testing your application, which is a functional soup within an
+imperative shell, would involve a soup of unit tests and a shell of regression
+tests, rendering your test suite highly perfomant and comprehensive. This single
+talk convinced me of the superiority of functional programming for applications
+that do not need to be highly performant (e.g. every web application).
+
+Taking in all this guidance helped me immensely when refactoring old code and
+designing new features. When I got tasked to refactor out our pricing algorithms
+into a brand new, clean repository, I resolved to find out how best to ensure
+that tests could be written and run quickly, efficiently, and effectively. After
+flailing about with the native Python standard library
+[`unittest`](https://docs.python.org/2/library/unittest.html) module, and with
+[`nosetests`](https://nose.readthedocs.io/en/latest/), I finally settled on
+[`pytest`](https://docs.pytest.org/en/latest/) as my go-to Python testing
+framework of choice going forward. With [gated
+commits](https://en.wikipedia.org/wiki/Gated_commit) both executing tests and
+and generating [linting](https://en.wikipedia.org/wiki/Lint_%28software%29) and
+test coverage reports, I eventually got to >80% test coverage and
+
+> 90% linting score on the project. I was proud of the development velocity I
+> could support with this project, and my ability to satisfy stakeholder
+> requirements.
+
+---
+
+I touched base with an old coworker a few months after I left. Test coverage in
+my old project had gone down to 0%. After I handed the project off, it became a
+common practice to delete my old tests instead of fixing them when a test
+failed, and all the tests were now gone. Sometimes you can't help such things.
+
+---
+
+# New Situations
+
+When I came to work at my current company, I thought I would take much the same
+approach as I did as a full-stack web developer. Break up the logic into small,
+bite-size pieces, create unit tests for those bite-size pieces, and create
+regression tests for everything else. How hard could it be?
+
+There's just one problem. I'm at a database company. A high-performance database
+company. And I'm a data engineer working on an ETL tool - likely one of the most
+stateful pieces of software to ever exist.
+
+You see, when people say their full-stack application is "functional" or
+"stateless", what they're really saying is "_I_ don't write stateful code", not
+that there's no state in their stack anywhere. _Of course_ there's state in
+their stack. It's all in their database. You really can't do functional
+programming in your database unless your primary goal is reliability like
+[CouchDB](http://couchdb.apache.org) -- and our primary goal is not reliability,
+it's blazing-fast performance.
+
+The high-performance nature and its ramifications for software testing come into
+play when we look at the fundamentals of computer architecture. Every meaningful
+computer today implements the [Von Neumann
+architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture), a _finite
+state machine_. It is state moving from one point in your computer to another
+with respect to time. And a performant architecture sticks close to the
+underlying hardware representation, because that is how you remove the
+abstractions turned impediments that slow your software down. You may use
+pointers. You may pass by reference. You may even write `GOTO` statements. All
+of this, while making your database fast, makes it extremely stateful.
+
+And my job? I need to take a solid block of state and turn it into another block
+of state formatted in a different way and stored in a different location. The
+statefulness of my application is _the union of the statefulness of all my
+dependencies in all combinations of scenarios_, which if you're supporting a
+large number of data formats, is a lot of statefulness to worry about.
+
+There's other concerns that impact testing strategy beyond state. I need to
+handle all type, subtype, and property mappings between different formats, some
+of which are best accessible from non-Python based frameworks and programming
+languages. For example, [Apache ORC](https://github.com/apache/orc) has library
+bindings in Java and C++, but not Python. Optimizing feature turnaround time
+also plays a huge role in onboarding prospective customers (because we can't
+sell our advantages without them playing around with our database with their
+data, and oftentimes the way they get their data onto our database is with this
+tool I'm writing), so features need to be pushed out extremely quickly and hence
+tests must be written extremely quickly. Finally, since the tool is relatively
+new, and since I'm the only one working on it for now, there are a lot of
+unknown unknowns, and tests must be backwards-compatible against any possible
+breaking change, technical and non-technical.
+
+It's pretty different from web development testing. There's no such thing as
+"Functional Core, Imperative Shell" here. I can't get by with expecting unit
+tests to carry the majority of my burden. I can't spend a copious amount of time
+writing or maintaining tests. I likely can't even hope to cover all possible
+regressions. I need to figure out a different abstraction if I'm going to
+quickly release software with any confidence.
+
+---
+
+[Click here to read Part Two](/posts/2018/12/03/data_driven_testing_two)
