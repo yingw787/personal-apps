@@ -33,14 +33,14 @@ approach to a `make` approach w/ deployment via AWS CloudFormation. It was kind
 of a PITA, and I had put it off for years. And the thing that got me to do it?
 Being able to share this video!
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/09/04/morning_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/09/04/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 Sources:
 

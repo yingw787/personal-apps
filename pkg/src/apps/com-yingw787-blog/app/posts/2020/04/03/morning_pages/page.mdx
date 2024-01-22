@@ -27,14 +27,14 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 
 I found this uber-cute baby video that I just had to share:
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/04/03/morning_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/04/03/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 On the plus side, now I get to embed HTML5 video into my blog (instead of
 relying on YouTube)! I don't think this should present too much difference in

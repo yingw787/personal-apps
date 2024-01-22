@@ -35,14 +35,14 @@ Here's a really cute kitten:
 
 And a little boy reading to a cat:
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/08/27/morning_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/08/27/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 ---
 

@@ -3,8 +3,8 @@ import { ArticleLayout } from "@libs/blog/components/article-layout";
 export const article = {
     author: "Ying Wang",
     date: "2020-04-09",
-    title: "Book Review: "The Black Swan", by Nassim Nicholas Taleb",
-    description: "Book Review: "The Black Swan", by Nassim Nicholas Taleb",
+    title: 'Book Review: "The Black Swan", by Nassim Nicholas Taleb',
+    description: 'Book Review: "The Black Swan", by Nassim Nicholas Taleb',
     categories: ['Books'],
 };
 
@@ -32,14 +32,14 @@ improbable events. The timing couldn't be better, as the coronavirus pandemic
 and the subsequent economic cratering is quite the black swan. Just take a look
 at the trend lines for recent initial jobless claims:
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/04/09/the_black_swan.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/04/09/the_black_swan.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 There's two spikes next to each other. One spike is 3 million claims two weeks
 ago, which shattered the previous record shattered sometime in the 1980s. That
