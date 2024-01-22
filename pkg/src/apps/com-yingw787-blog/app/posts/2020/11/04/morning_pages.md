@@ -1,0 +1,48 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: November 4th, 2020"
+date: "2020-11-04T08:40:24-05:00"
+draft: false
+---
+
+My life right now.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
+    width: fill-available; max-width: 100%;" controls> <source
+    src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
+support HTML5 video. </video> <br/> <br/>
+
+---
+
+Well, that was stressful and anti-climatic.
+
+![ahh](/img/posts/2020/11/04/morning_pages.jpeg)
+
+I really should stop worrying about political stuff, it's like a car crash you
+can't look away from. What I should appreciate is how my county voted 85/15, and
+it's really nice to be able to trust your neighbors to distinguish between right
+and wrong. Or the cynic in me is right and people are voting against Trump / for
+Biden because they're government employees who don't want the size of the
+federal government to decrease.
+
+The craziest stories from yesterday were the delays in counting ballots due to
+the small things. Like, apparently Georgia is in play right now (...?!!) and the
+polling station in Atlanta had to stop counting for a while in the morning
+because a water pipe burst. I'm sitting here thinking, _I really hope this
+doesn't change anything because if we start a civil war because of a pipe burst
+that'd be the dumbest way to die in human history_. Luckily, I think I'm just
+being a bit dramatic. People are kind of just waiting around for the results,
+and nobody really wants to fire the cannon into Fort Sumter this time around
+because it didn't work out.
+
+In terms of getting back to where we were in '08, or '92, yeah that's done. This
+isn't the old America anymore, it's a new one where you can [accuse your
+opponent of trafficking children and threaten their
+lives](https://www.washingtonpost.com/nation/2020/10/17/kevin-van-ausdal-qanon-marjorie-greene-georgia/?arc404=true)
+and [cruise to victory after he
+withdraws](https://www.washingtonpost.com/nation/2020/11/04/marjorie-greene-qanon-georgia-congress-election/).
+It looks like America won't end tonight. Maybe in a few more years.

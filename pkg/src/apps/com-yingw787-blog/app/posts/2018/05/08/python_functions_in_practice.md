@@ -1,0 +1,204 @@
+---
+authors: ["yingwang"]
+categories:
+  - Featured
+  - Software
+title: "Python Functions, In Practice"
+date: "2018-05-08T22:43:39-04:00"
+draft: false
+---
+
+I have used Python for the past one and a half years. I can tell you that Python is not weird, or wonderful, but rather _weirdly wonderful_.
+
+Coming out of college, I thought I knew what “professional” code looked like. It looked like Java code. There’s objects. There’s object-oriented design patterns. Don’t use inheritance, use composition - unless you want something to not be flexible. Divide up your code into modular pieces of state (objects) that communicate to each other. Blah blah blah.
+
+Then I started using JavaScript, and discovered [Lodash](https://lodash.com). Lodash was my first experience with functional programming. At first, it was alien. It grew on me, though; not having to worry about state made it a lot easier to test code and assume that the test case matched production use cases. Lodash was my gateway drug to learning about immutable data types like [Immutable.js](https://facebook.github.io/immutable-js/), functional state stores like [Redux](https://redux.js.org/), and full-blown functional programming like [Clojure](https://clojure.org/), [Common Lisp](http://lisp-lang.org/), and [Elixir](https://elixir-lang.org/). I’m not a functional fanatic (yet), but I do love me some stateless backends.
+
+And then there’s Python.
+
+The thing about Python is, _it’s an object-oriented language_. Of course it is. Here’s literally the first two sentences of [the Python 3 data model reference](https://docs.python.org/3/reference/datamodel.html):
+
+> Objects are Python’s abstraction for data. All data in a Python program is represented by objects or by relations between objects.
+
+Wow. They’re really pushing this object-oriented thing here. Hard.
+
+So when I first used Python in production, I treated it like Java. _It’s an object-oriented language, right?_ Then, one day during code review, I stumble across something like this:
+
+```python
+x = [
+    expr(i)
+    for i
+    in iterable
+    if cond(i)
+]
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+It’s a [_list comprehension_](https://docs.python.org/3.6/tutorial/datastructures.html#list-comprehensions), Python’s answer to [lambdas](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions), `map()`, `filter()`, and `reduce()` ([not that Python doesn’t have those built in](https://docs.python.org/3/library/functions.html)). It definitely does _not_ look object-oriented. It’s downright functional. Here’s the imperative version of the above:
+
+```python
+x = []
+for i in iterable:
+  If cond(i):
+     x.append(expr(i))
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+And here’s the above in a more traditional functional statement:
+
+```python
+x = list(map(lambda i : expr(i), filter(lambda i: cond(i), iterable)))
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+Replace `iterable` with whatever iterable you want (e.g., `range(0, 10)`), `expr(i)` with whatever expression you want (e.g., `i * i`), and `cond(i)` with whatever conditional you want (e.g., `i % 2 == 0`) to test it out yourself in your Python shell.
+
+One of the senior developers said experienced Python SWEs prefer list comprehensions because they are easier to read. I knew I wasn’t one then because I could not grok that at all. After a few months though, I learned to love it.
+
+It didn’t stop there. I played around with [Flask](http://flask.pocoo.org/) and [mongoDB](https://www.mongodb.com/), and you can pretty much make a stateless application in Python (if you’re _extremely_ careful about your database design). You have [`functools`](https://docs.python.org/3/library/functools.html). You have [`operator`](https://docs.python.org/3/library/operator.html). It’s all there. And if it’s not because you’re using Python 2.x, you can use [`from __future__ import absolute_import`](https://docs.python.org/2/library/__future__.html) and then it’s all there.
+
+---
+
+Why does Python have this ability?
+
+Here’s Guido van Rossum, Python’s benevolent dictator for life (BDFL), in his own words:
+
+> I have never considered Python to be heavily influenced by functional languages, no matter what people say or think. I was much more familiar with imperative languages such as C and Algol 68 and although **I had made functions first-class objects**, I didn’t view Python as a functional programming language.
+
+Boom. **Functions are first-class objects.**
+
+...what’s a first class object?
+
+In “[Fluent Python](http://shop.oreilly.com/product/0636920032519.do)”, first class objects are defined as objects that have the following properties:
+
+Created at runtime
+Assigned to a variable or element in a data structure
+Passed as an argument to a function
+Returned as the result of a function
+
+Here’s an example:
+
+```bash
+username$ python
+Python 2.7.13 |Anaconda custom (x86_64)| (default, Sep 21 2017, 17:38:20)
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def factorial(n):
+…          ‘’’returns n!’’’
+…          return 1 if n < 2 else n * factorial(n-1)
+…
+>>> factorial(5)
+120
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+You can create a function in a console session (i.e. “runtime”).
+
+```bash
+>>> fact = []
+>>> fact.append(factorial)
+>>> fact[0](5)
+120
+>>> fact = factorial
+>>> fact(5)
+120
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+You can assign a function to a variable in a data structure. You can also just straight up assign it to a variable. You can execute it either way.
+
+```bash
+>>> def exec_factorial(factorial):
+…          ‘’’executes factorial function with n = 5’’’
+...          return factorial(5)
+...
+>>> exec_factorial(fact)
+120
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+You can pass a function into another function as an argument.
+
+```bash
+>>> def return_factorial():
+...          ‘’’returns the factorial function’’’
+...          return fact
+...
+>>> fact = return_factorial()
+>>> fact(5)
+120
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+Finally, you can return a function from a function.
+
+Additionally, other Pythonic attributes may convince you Pythons are first order functions:
+
+```bash
+>>> factorial.__doc__
+‘returns n!’
+>>> set(dir(object())).issubset(dir(factorial))
+True
+>>> factorial.__hash__()
+284087858
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+Not only does a function definition have object-like attributes, it has signature Python object attributes, like ‘\_\_doc\_\_’. You can programmatically verify that a base object’s attributes are a subset of a function’s attributes. You can even hash a function!
+
+```bash
+>>> type(factorial)
+<class ‘function’>
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+And here, we find out that function definitions are instances of the class ‘function’.
+
+Mind. Blown.
+
+---
+
+All of this makes functions in Python extremely powerful. And Python _does_ encourage this! For example, Python has native [_decorators_](https://www.python.org/dev/peps/pep-0318/), which are syntactic sugar for higher-order functions. It provides a really nice, standardized syntax for wrapping a function with other business logic, so that you can do stuff before and after said function without having to write it in a bunch of locations.
+
+Case in point, here’s an extremely basic example:
+
+```bash
+>>> def decorator(func):
+...     def wrapper(x):
+...             print("Before calling " + func.__name__)
+...             func(x)
+...             print("After calling " + func.__name__)
+...     return wrapper
+...
+>>> @decorator
+... def foo(x):
+...     print("Hi, foo has been called with " + str(x))
+...
+>>> foo('firstName lastName')
+Before calling foo
+Hi, foo has been called with firstName lastName
+After calling foo
+```
+
+<hr style="height:-100pt; visibility:hidden;" />
+
+See how you return a function that wraps another function, and all you need to invoke that wrapping is to add `@${DECORATOR_NAME}` at the function you want to wrap? It really is that simple.
+
+In practice, I use [`pytest`](https://docs.pytest.org/en/latest/) frequently as part of my day job, and the two parts of pytest I use most are two fixtures: [`pytest.fixture()`](https://docs.pytest.org/en/latest/fixture.html) and [`pytest.mark.parametrize()`](https://docs.pytest.org/en/latest/parametrize.html). Those two decorators have saved me much pain and suffering while writing comprehensive tests. Much more on that in a later post.
+
+---
+
+This quirk (or feature) of Python is mostly due to Python’s usefulness-first philosophy. Guido’s first bullet point in [his post about Python’s design philosophy](http://python-history.blogspot.com/2009/01/pythons-design-philosophy.html) is “Borrow ideas from elsewhere whenever it makes sense”. As a result of functions having all the same privileges as objects, you can apply both object-oriented patterns, functional programming patterns, or a mixture of the two, in the same language. This is powerful whether you are replacing bash scripts, constructing REST APIs, or simply gluing different services together, as I have found through personal experience.
+
+---
+
+Much thanks to “Fluent Python” for providing the technical chops of this post. If you’re a Python developer and you haven’t bought this book, go out and buy it now. It contains insights I’d never thought I’d know.

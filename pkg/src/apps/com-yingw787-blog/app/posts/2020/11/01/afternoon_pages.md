@@ -1,0 +1,90 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Afternoon Pages: November 1st, 2020"
+date: "2020-11-01T13:18:20-05:00"
+draft: false
+---
+
+My life right now.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
+    width: fill-available; max-width: 100%;" controls> <source
+    src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
+support HTML5 video. </video> <br/> <br/>
+
+---
+
+I have a hand sanitizer problem, where I'm terrified of not having enough, and
+now I have maybe ten bottles of hand sanitizer and a gallon jug of hand
+sanitizer refills. I just collect it now, even though I have more than enough
+and hand sanitizer does have an expiration date (and presumably some date past
+that where it goes bad). Maybe I should donate some hand sanitizer to the
+hospital or food bank or something.
+
+I don't like Trader Joe's hand sanitizer all that much. I don't know what's with
+the formula, but it's super sticky and smells bad. I have 8 bottles of it,
+probably because it's fully stocked because nobody else wants it. By contrast,
+the aloe vera hand sanitizer from CVS is moist, refreshing, and otherwise
+wonderful, which is why it's sold out and I can't find anymore.
+
+Meanwhile people are lined outside the block to get into bars and restaurants in
+the middle of Arlington, because they're sick of staying indoors and have never
+experienced suffering and aren't used to it. I mean, good for them I guess, but
+I feel like enduring suffering is a useful trait to a degree.
+
+---
+
+So it's election week (and maybe civil war month, because every month has a
+theme in 2020), so maybe I should talk or vent a bit about my political beliefs.
+I have this maybe unpopular opinion that you should try to vote for people from
+both parties if possible and do your research beforehand and vote for the
+candidate who best works for your interests. It's not necessarily because you
+agree with their views, but because it's important to have as many viable
+political parties in a FPTP-based voting system as possible (...so 2...), so
+that they're forced to work together, so that pundits can't put you into a safe
+voting bloc, and so that politicans can't ignore you and have to work for a
+living and do their jobs. If you can't vote for them for higher, federal office,
+maybe electing a member of the other party as the county clerk (school board or
+sheriff is too important) is safe, you know? Unless your clerk is Kim Davis and
+refuses to certify a legal marriage preventing people from gaining their tax
+benefits. Sigh, you get the point. You can't do identity politics if you want a
+better life for yourself and those you care about. You have to embrace a
+mercenary perspective, because the only constant is change and there is no peace
+in politics, only power.
+
+This year is a bit different because democracy's on the ballot, and one party
+doesn't really believe in my right to exist on this planet let alone cater to
+what I want, which really sucks because the party I have to vote for is this
+super-fragile coalition of sane people who disagree wildly on everything besides
+being sane and probably won't get anything done. I think big things in Congress
+generally take 20-50 years to become law, and I don't think we have 20 straight
+years of any party controlling enough branches to make stuff happen.
+
+I almost kinda wish that the Soviet Union was around. This lame-ass thing
+politicians get to talk up and beat up, but forced them to behave somewhat and
+not do the Karl Rove "we only need 51 votes so make policy as extreme as
+possible while securing that many" because otherwise people will turn to
+communism and we can't have that so life in the U.S. had to be reasonable. Then
+at least if you can't choose between political parties you can choose between
+different countries in order to get stuff done, like [Vulcan, West Virginia
+did](https://news.google.com/newspapers?id=0g0wAAAAIBAJ&sjid=sgUEAAAAIBAJ&pg=2235%2C462258).
+When the U.S. government refused to build a bridge for the town, they begged the
+Soviet Union to build it for them, which made the U.S. government immediately
+give $1.3 million and finish the bridge construction in a matter of months. You
+can't do it too often because letting spies of rival countries scope out your
+town and surrounding military installations might be a tad treasonous and
+because international parties are bundles of policies like gulags and famine and
+genocide you may or may not support, but I see this story and I'm like _wow,
+they got their bridge. What an effective way to get stuff done. Fear is the
+ultimate motivator._ If you're sick of a bridge not being built or a road
+sucking too hard, maybe lobby the People's Republic of China to add your local
+road to [the Belt and Road
+initiative](https://en.wikipedia.org/wiki/Belt_and_Road_Initiative) or
+something. It's probably not relevant in Arlington...because the Pentagon is ten
+minutes away and they need the roads for military stuff and everything's pretty
+good anyways...but maybe back in Michigan it could be useful. Dequindre Road
+sucks.

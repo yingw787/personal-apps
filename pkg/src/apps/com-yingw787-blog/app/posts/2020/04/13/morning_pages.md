@@ -1,0 +1,46 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 13th, 2020"
+date: "2020-04-13T10:43:06-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+I think this cake is pretty cute:
+
+![cute cake](/img/posts/2020/04/13/morning_pages.jpg)
+
+---
+
+Well, this weekend was pretty catastrophic. I think I got up @ 9:45PM on
+Saturday, and 7:00PM ish on Sunday. I think this is a thing now. I can't
+function on the weekends. I think this happened because I feel like I can't
+relax unless I actually have traction on my project, and it's been so long since
+I've touched my own project that I don't know how to relax anymore. So I don't
+really relax, I kind of just "crumple", if that makes any sense. I also find
+myself going to bed later and later, and while I remain productive in the
+evenings, I've also noticed I only really start working on tech stuff in the
+afternoon (starting around 1PM or so), vs. the 9AM start time I'm aiming for
+(and the 6:30AM target wake up time in order to get my morning chores out of the
+way). It's pretty darn hard to forgive myself and I find this whole situation
+eating into my mental health. How the hell can I bite off more than I can chew
+in this situation anyways?
+
+I ended up doing a whole bunch of reports at 1:00AM this morning, which coupled
+with the fact that being tired in the morning loses the whole day and the rainy
+weather from this morning, meant I didn't wake up in time for morning pages,
+third day in a row. This sucks, no doubt. There's really no other way to put it.
+I hate everything about this.
+
+But there's no use crying over spilled milk, and there's still the rest of the
+day to execute on. So do a good job there, and hopefully things will turn out
+fine.

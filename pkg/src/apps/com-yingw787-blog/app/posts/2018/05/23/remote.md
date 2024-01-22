@@ -1,0 +1,26 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: 'Book Review: "Remote: Office Not Required", by Jason Fried and David Heinemeier Hansson'
+date: "2018-05-23T20:41:27-04:00"
+draft: false
+---
+
+> **For all those sitting in traffic right now.**
+>
+> Jason Fried's book dedication
+
+"Remote" is a full-throated, yet fair, pitch to employers and employees alike that there's no better time to have remote working be a part of your business model.
+
+I think this book is very similar to "Rework", which I [reviewed and deeply enjoyed earlier this year](/posts/2018/04/04/rework). Large fonts, large margins, helpful graphics, and bite-size lessons hammer home the point the authors make and encourage you to finish and re-read. I feel safe to say I'd recommend any book these guys put out.
+
+Some arguments "Remote" make that I really like include:
+
+- Your software engineers will find more bugs, especially if they work in different countries and timezones. If you used Python 2 and forgot to execute `from __future__ import unicode_literals`, or if you forgot to `import tzlocal` and save your datetimes as ISO-8601 format _without a timezone_, or if you had some front-end validation logic that only checked for ten-digit phone numbers, you may gotten away with it if your users were only local to your region -- until you tried to scale your business model to another country and found your codebase lagging. If you have employees in a predominantly non-English-speaking country, they may have caught this for you, because it's native for them. You're inherently future-proofing your application because you're developing a product natural to your future customers. For more examples, check out this [great list of falsehoods programmers believe](https://github.com/kdeldycke/awesome-falsehood).
+
+- Important communications would be written down and communicated in a persistent way. I would bet money that one reason so many companies use Basecamp is because the peeps at Basecamp _dogfood Basecamp in order to survive as a company_. We all want to dogfood our applications, but unless every single person at your company is super passionate about the product and constructs a regularized routine to do so (and that's _impossible_), it doesn't happen as much as it should. I don't think that's the case for remote workers. You could hop over to a meeting room, jot down notes on some specification honing or requirements tuning, then just start implementing it without noting it in your ticket tracker. You could even ask a person questions about something following that meeting and not update the ticket at all. This can't really happen if a team is working remotely, because nobody's sitting next to each other. Everything needs to be tracked if multiple developers working on a particular feature must understand the feature. If not everything, then at least everything _important_.
+
+- As a parallel to the previous point, more attention is likely to be paid to the results of your work if you work remotely, because people track what they can measure. You can't judge people based on their times getting in and out of the office, because there is no office. You can't judge people based on what they're wearing or their body language during meetings, because you can't see them. All you really have to go off of is their work, and whatever is tracked in their issue tracker. Isn't that the ideal for a good manager anyways?
+
+Jason and David do make some good and valid counterpoints to working remotely. You need to make sure you stay emotionally and mentally healthy, which means setting your own routine, getting out of the house, not _overworking_, and exercising regularly. I know personally I rely on going to the office to help set my daily routine. You may also need to be extra-visible and extra-trustworthy to customers, who may be rightly wary of trusting a screen or prompt instead of a face. If that is no problem for you, though, remote work could be very empowering. Jason and David make this argument powerful by tying remote work's advantages to the things that really matter, like spending time with your children or having new experiences and hobbies in a different geographic location.

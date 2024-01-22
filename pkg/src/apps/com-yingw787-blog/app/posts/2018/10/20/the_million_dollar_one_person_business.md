@@ -1,0 +1,32 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: 'Book Review: "The Million-Dollar One-Person Business", by Elaine Pofeldt'
+date: "2018-10-20T00:35:41-04:00"
+draft: false
+---
+
+This book is a great introduction to the world of small, lifestyle-focused
+companies. As a software engineer, I like doing things that scale. On the other
+hand, entrepreneurs need to appreciate [doing things that don't
+scale](http://paulgraham.com/ds.html). In addition, sometimes when things don't
+scale, life is better. If you decide not to supercharge your growth with VC
+funding, you have more control of your lifestyle, your product roadmap, your
+treatment of your employees, and many other different factors that you wouldn't
+otherwise enjoy. The largest difference? A focus on profitability and
+sustainability, ensuring you aren't just another blip in some VC's portfolio.
+
+Elaine gives a great introduction to this world, focusing on case studies around
+real life one-person entrepreneurs she interviews. She also lists a good number
+of resources and points in order to follow when starting off, as well as
+different options during the lifetime of your fledgling company to take
+depending on where you see it going.
+
+If you really do wish to start a company, I would take this as a tasting menu of
+sorts (and perhaps a list of contacts to hit up on LinkedIn), and complement it
+with more resources for the particular niche you wish to reach and the resources
+you need to fill in your particular knowledge gaps. A lot of the content in this
+book, for software engineers at least, can be found on [Indie
+Hackers](https://www.indiehackers.com/) or [Starter
+Stories](https://www.starterstory.com/) nowadays.

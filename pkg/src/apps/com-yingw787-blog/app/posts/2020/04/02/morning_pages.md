@@ -1,0 +1,39 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 2nd, 2020"
+date: "2020-04-02T10:16:01-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+So yesterday, discovered that not only did my habit tracker app update (against
+my will, again), it also broke a number of habits (again), and I have to
+snapshot my habits into my notes app manually. I really hope I can release some
+sort of an MVP for TinyDev soon, because my personal need is quite urgent. I
+really can't afford to divert attention for things that keep breaking.
+
+Also missed Morning Pages two days in a row now. Not sure what it is with me and
+getting up early in the morning, but I just can't seem to do it if my phone
+isn't locked up.
+
+Otherwise, yesterday wasn't too bad. I got a lot of chores done, and I finished
+the first draft of my blog post and sent it off to a content editor for review.
+Hopefully response will be quick, but I have the material down and I think now I
+can focus on learning the material I need in order to ship my project. Here's
+hoping today's gonna be just as good.
+
+Here's Mr. Kitty:
+
+![mr. kitty](/img/posts/2020/04/02/morning_pages.jpg)
+
+Mr. Kitty knows time should be both precious and well spent. Look at Mr. Kitty.
+And be happy.

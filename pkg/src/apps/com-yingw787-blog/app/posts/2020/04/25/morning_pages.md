@@ -1,0 +1,73 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 25th, 2020"
+date: "2020-04-25T08:37:24-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+Ahhhhhhhhh
+
+![babies and kittens](/img/posts/2020/04/25/morning_pages.jpg)
+
+---
+
+So I went to my first virtual speed dating event yesterday! It was an
+interesting experience. If you are rejected, it's much better to be rejected in
+person vs. ghosting or playing the numbers game via online dating apps. It's
+$10, and probably not the most responsible use of my time, but it's something to
+do and something new to explore and try out. We'll see if I get any matches come
+Monday.
+
+I did learn that Peloton apparently is running a 90-day free trial for anybody
+that signs up before the end of April, and you don't need to have the actual
+exercise bike or anything, they do just online classes too. That's really cool!
+According to the mentioner it's an uplifting and quality experience to behold. I
+think I'll add that to my todo list.
+
+I should also make a list of favorite things! That way I don't have to come up
+with them on the spot. Though I still might, just in case my tastes change over
+time.
+
+- **Favorite movie:** The secret life of Walter Mitty
+- **Favorite TV show:** The Office
+- **Favorite singer:** Ed Sheeran
+- **Favorite food:** Steak and eggs
+- **Favorite place:** Anywhere with mountains
+- **Favorite book:** Harry Potter series
+- **Favorite hero:** Fred Rogers
+
+Not sure if I'm boring and have boring tastes, or if I'm suddenly more exciting
+than I was in my much more Luddite youth, but it is what it is and I'm not
+apologizing for it. If nice guys finish last (which I doubt), I'll be happily
+walking over the finish line sipping a lemonade. Or maybe a tea, that's better
+for your health.
+
+One thing I did notice is how some (not all, but a number) guys seemed
+pretty...boisterous...at the event, talking about rude experiences or the
+quality of the website. I try and not feel those things myself because the
+dating market is the quintessential [lemon
+market](https://en.wikipedia.org/wiki/The_Market_for_Lemons) where the bad eggs
+get left on the shelf for the longest and I'm on the market to get off the
+market. I am glad that I (feel?) much more calm than I used to. Maybe me from a
+few months (or definitely a few years) ago would have blew a gasket because of
+some minor thing. Now things just don't look to be as big anymore. Not sure why
+that is, but I think scar tissue doesn't have nerves, so :man_shrugging:
+
+I still have a good deal of work to do today. One thing I promised my
+accountability person is how my weekends are complete garbage in terms of how I
+spend my time. I think this week I finally lost any real semblance towards what
+day it is, and since I didn't finish my goals for this week, I think it's
+appropriate to work on those goals for Saturday. So, barring massive numbers of
+online shipments (like...four today) and subsequent decon procedures and
+what-not, I'll be able to accomplish those goals and then have a relaxing
+Sunday, to get ready for the rest of the week.

@@ -1,0 +1,62 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 1st, 2020"
+date: "2020-04-01T09:28:56-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of partial lockdown. To alleviate fear and
+stress, my writer's group has put together a daily "morning pages" get-together
+on Zoom in order to touch base before starting the day. Here's some of my brief
+thoughts.
+
+---
+
+My God, my habit tracker changed their UX yesterday, again. They do some simple
+things, like display the amount of time a timed habit should take, or changing
+the width of the swipe prompt. But then they also change the scroll context of
+the menu. Now, you have to scroll the entire length of the menu in order to see
+which habits you have or haven't done, and they don't auto-move to the bottom of
+the list after they're done or skipped. _And some things are broken._ Like if
+you swipe right on a portion of the menu, it might freeze and not display
+properly until you close the app and re-open it. And if you complete a task from
+the day before resulting in all tasks completed, the streak is still broken.
+
+I really don't get why they keep changing the UX. Don't they know some of us
+like the app just the way it is? Don't they have `git` flow where they can
+manage multiple releases with just security updates only? This is the whole
+reason why I wanted to build [TinyDev](https://tinydevcrm.com), and now that
+TinyDev is struggling I get another kick in the pants.
+
+I mean, it's fine for now, I have a thing where I email myself a list of habits
+to do every day, but this is plainly annoying. Might be a necessary motivator
+though.
+
+---
+
+I got a full load of groceries yesterday! Costco apparently delivers with
+Instacart, and my mom ordered $100 worth of groceries about 4 or 5 days ago. The
+delivery guy said if you need any gluten-free or restricted foods to stockpile
+them now, and I'm grateful that I can eat anything. Decontaminating groceries is
+a full two hours of work though. I'm wiping down all my bananas with Clorox, and
+very carefully disposing of any plastic wrappers before they touch the inside of
+my refrigerator. With this four week long cough and the weird feeling in my
+lungs I might have COVID-19 already and just not know it, but with this
+procedure I can demonstrate self-care and prove I live in the best of all
+possible worlds.
+
+What I should do is record the decontamination procedure from that one Michigan
+physician YouTube video into my cooking notes, and then maybe share it with the
+MicroConf Connect community.
+
+---
+
+So depressing news aside, here's another cute picture to start the day off with:
+
+![babyyyy](/img/posts/2020/04/01/morning_pages.jpg)
+
+Good morning to you too!

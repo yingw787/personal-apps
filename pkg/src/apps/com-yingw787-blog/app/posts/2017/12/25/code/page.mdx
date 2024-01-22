@@ -1,0 +1,28 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2017-12-25",
+    title: "Book Review: "Code: The Hidden Languages of Computer Hardware and Software", by Charles Petzold",
+    description: "Book Review: "Code: The Hidden Languages of Computer Hardware and Software", by Charles Petzold",
+    categories: ['Books'],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+> **"I also hope that you might recognize the computer to be one of the crowning achievements of twentieth century technology and appreciate it as a beautiful thing in itself without metaphors and similes getting in the way."**
+>
+> Charles Petzold. From "Code: The Hidden Languages of Computer Hardware and Software" (Microsoft Press, 2000, Page _v_), by Charles Petzold.
+
+Merry Christmas, everybody. I hope you all had an enjoyable day. If you're not too busy, or if you have a computer architecture or digital systems textbook you want a good companion to, you might consider this pick-me-up. It's extremely rich in detail and covers how to build a computer from the ground up.
+
+The author first discusses the very basics of computational theory, including the foundations of computer science, such as abstract algebra, math with different bases, and binary codes. The author then pieces those foundations together to build a rudimentary processor, very much like one you would see in an introductory digital systems course. They even talk about twos complement, ripple carry, oscillators and clock patterns, and D-flip-flops (a topic that I to this day still struggle with). Lastly, the author uses these more advanced components to discuss the architecture of a modern-day computer, the vast majority of elements still apply today. It's the big picture, broken down into step-by-step processes like how computer scientists originally pieced it together.
+
+This book definitely requires a decent bit of intellectual horsepower, as compared to some of the other books I brought with me. It is, however, a good deal more readable and intuitive than any computer architecture or digital systems textbook I have come across. Definitely buy if you want to learn how a computer works.

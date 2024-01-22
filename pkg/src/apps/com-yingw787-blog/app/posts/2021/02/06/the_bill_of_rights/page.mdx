@@ -1,0 +1,34 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-02-06",
+  title:
+    'Book Review: "The Bill of Rights, with Writings that formed its Foundation", by Applewood Books',
+  description:
+    'Book Review: "The Bill of Rights, with Writings that formed its Foundation", by Applewood Books',
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+I think the Constitution listed the full Bill of Rights, but this book detailed
+some additional context around the creation of the national Bill of Rights,
+including arguments posed at the Constitutional Convention, some Federalist
+Papers, and the Virginial state bill of rights, which looks rather similar to
+the federal bill of rights.
+
+I really like the high order of thought, it definitely comes through around what
+the Founding Fathers were thinking. It's pretty hard to find coherent,
+long-formed, series-based thought processes these days. I think the ones I've
+found might be massive wikis like Wikipedia, some philosophy blogs like Aeon,
+and some journalism sources like ProPublica, and if I find other ones I'll
+probably pay money for them. It'd be pretty cool to have something like the
+Federalist Papers be published again in a major newspaper.

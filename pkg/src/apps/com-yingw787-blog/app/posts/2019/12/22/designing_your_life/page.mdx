@@ -1,0 +1,29 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2019-12-22",
+    title: "Book Review: "Designing Your Life: How to Build a Well-Lived, Joyful Life", by Bill Burnett and Dave Evans",
+    description: "Book Review: "Designing Your Life: How to Build a Well-Lived, Joyful Life", by Bill Burnett and Dave Evans",
+    categories: ['Books'],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+> **"I live in the best of all possible worlds. Everything I do today, I choose
+> to do."**
+>
+> Bill's daily affirmation
+
+I got this book on the recommendation of a counselor, and it was a good read.
+What I liked most about it was the idea of mental reframing, and the idea that a
+problem is actionable while a truth is not. I don't have too much to say about
+it since this was mostly a skim-through, but there's a corresponding workbook
+that comes with it and I'm planning on working my way through that.

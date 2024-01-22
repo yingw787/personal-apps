@@ -1,0 +1,52 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: December 14th, 2020"
+date: "2020-12-14T20:14:38-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+Hmm, something new!
+
+![bouncy](/img/posts/2020/12/14/evening_pages.gif)
+
+Bouncy little man.
+
+---
+
+So my investment in $LAZR is not doing so hot. Went up to $1500 gain, didn't
+sell. Went down to $750 loss, still not selling. I think I'm gonna wait until I
+at least break even, or two years for their go-to-market strategy to play out.
+
+I think I stopped caring about that this weekend though, because I got sick. I
+think it was the stomach flu from something I ate, maybe Chinese takeout, but I
+managed to vomit a ton on Saturday just by drinking some water. It was horrible,
+and made even worse by the thought I might have COVID. Other people said it's
+probably not because I take the maximum amount of precautions I think anybody
+can realistically take, but I didn't really believe that. I don't think the
+virus cares what precautions you take if it manages to enter your system. I was
+licking salt on the hour, just checking whether my taste buds were still
+working. I also felt pretty murder-y, like I wanted to find the nearest Trump
+supporter and strangle them with my bare hands. A healthy person wants a million
+things. A sick person only wants one.
+
+One nice thing I think I did was buy $100 worth of food for my friend working on
+a COVID floor in a hospital. The restaurant even wrote little messages of "thank
+you for your support" and stuff, which my friend conveyed via Messenger. Maybe
+in my mind it was more transactional, like if I wanted a hospital bed I could
+just say I was nice to one hospital worker and they'd give me one, rather than
+just being super rich and connected. I think my friend appreciated it. I think a
+lot of times I dance to the tune of my own drum. When everybody else was out on
+the balconies cheering medical workers and stuff, I was like meh. Now everybody
+is sick of COVID and I'm pitching in. I like to think I'm an anti-aliasing
+function for good things.

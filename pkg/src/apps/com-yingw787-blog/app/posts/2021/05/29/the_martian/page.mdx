@@ -1,0 +1,39 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-05-29",
+  title: 'Book Review: "The Martian", by Andy Weir',
+  description: 'Book Review: "The Martian", by Andy Weir',
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+This book is one of the few wooks where I've watched the movie adapatation (w/
+Matt Damon), before reading the book. I found the book sitting on the shelf of
+the writer's salon last Saturday, and decided to go ahead and read it.
+
+Man, this is one of those books that you can't put down. Mark Watney, space
+botanist, gets hit by some debris after evacuating Mars during a sandstorm, and
+spends a year and a half growing and eating potatoes in his own poop (also poop
+from others). After discovering Watney alive, the entire world bands together in
+order to save him. Finally, Watney takes off from Mars and is saved by his
+crewmates, who spend an extra year and a half to get him.
+
+What I love most about this story is Mark Watney's personality, which shines
+through during the journal-based approach the book takes through most of the
+course. Sure, the hard science behind the narrating and Watney's calculations
+provide an element of realism, but by being relatable Watney makes his struggle
+our own, and that's what sucks me in.
+
+I wonder if Weir would consider a sequel, or a trilogy, it'd be cool if somebody
+else had similar survival stories, and see Watney as an old sage of some sort.
+That'd be pretty cool.

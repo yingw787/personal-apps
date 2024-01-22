@@ -1,0 +1,328 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "On Failure"
+date: "2020-01-20T18:34:36-05:00"
+draft: false
+toc: true
+---
+
+I recently went back home for the holidays, and was talking about work with a
+friend from high school, who's now a dental student. We had an interesting
+conversation about work-life balance:
+
+> Friend: When I come home from the dentistry, I turn on the TV, and turn into a
+> vegetable.
+>
+> Me, from a few short years ago: Man, that sounds so lame. Why don't you work
+> harder to get ahead?
+>
+> Me, today: That sounds so healthy. I wish I could do that.
+
+I can't relax like a normal person, like I physically can't do it. Multiple
+people have pointed that out. For the longest time I've prided myself as one of
+[Paul Graham's "animals"](http://www.paulgraham.com/start.html):
+
+> If you think about people you know, you'll find the animal test is easy to
+> apply. Call the person's image to mind and imagine the sentence "so-and-so is
+> an animal". If you laugh, they're not. You don't need or perhaps even want
+> this quality in big companies, but you need it in a startup.
+
+Maybe I'm going through a bit of an identity crisis, or maybe crisis has been my
+identity all these years, but I don't know if I want this anymore, this _drive_
+I've worked years and years to attain. You might not figure it if you met me on
+the street, but I don't think of myself as successful, and I haven't for many,
+many years. It's simply not part of my identity.
+
+Failure is. I've accepted no amount of drive can change that.
+
+So this year, as per my [New Year's
+Resolution](/posts/2020/01/01/new_years_resolutions) to "learn to love myself",
+I'm making my feelings mentionable and manageable by making this statement
+publicly accessible and in writing. I wish I could lock down individual URL
+routes with a passcode and share it with friends only, but I'm done waiting for
+things to be perfect. I want to change this part of myself now and I'm willing
+to risk doing things differently.
+
+## Background
+
+Many situations left a long-lasting impression on my personality.
+
+I had a heart condition called supraventricular tachycardia or SVT that made me
+go to the ER around 30 times in three years when I was 10-12 y/o (including 4
+instances in an ambulance). It's fixed now, but I still check the time on my
+watch frequently, because I feel like time I'm getting isn't mine to have.
+
+Our home got broken into in 7th grade. The police did nothing. It introduced a
+deep sense of insecurity by removing the safety of a physical "home", a
+resentment towards society, and a distrust of its teachings (e.g. "police are
+there to protect and serve"). Today, I leave my apartment mostly unfurnished,
+and I don't like owning things, because I figure everything I physically own
+also partially belongs to the guy who will inevitably break in and steal it.
+Five more robberies over the years reinforced this notion.
+
+I still hold my breath when entering public restrooms (even in four-star hotels)
+from a habit I picked up in first grade, when the custodian never bothered to
+clean the boy's bathroom properly and the stench made it hard to breathe.
+
+I don't think any of this is particularly unique or notable (I had a friend in
+sixth grade who'd been robbed six times by then, including one time where his
+mom had to physically beat a robber out from underneath his bed with a baseball
+bat), but I do think childhood trauma and behavioral traits, which for me
+include seeing work as a form of escape, are much more ["kernel-space" than
+"user-space"](https://en.wikipedia.org/wiki/User_space). They're much more
+difficult to change. Not only are childhood traits far more deeply ingrained,
+but they're oftentimes invisible. Those traits have been with us longer than
+we've possessed a fully-formed logical side. _Our logic develops around our
+illogicity_.
+
+---
+
+By the time I started high school, I've historically hit enough edge cases in
+life where I came to expect the worst scenario out of a spectrum of possible
+scenarios. That, combined with insecurity about going from a not-excellent
+primary school in Canada to a magnet high school in the U.S., resulted in an
+innate pessimism, deep-seated anger issues, and a _serious_ axe to grind. That
+saying, "youth is wasted on the young"? That wasn't going to be me. So I worked
+to escape my problems.
+
+I got what I worked for. I got the grades and GPA, honor roll, and state-level
+awards. I got into college. Most importantly, I'm fortunate enough to have
+_choice_ in where I want to go in my life. _Choice is wealth_. And yet, if
+you've just walked the beaten path faster than others, and you think departing
+from that path imparts a cost, _how much choice do you really have_?
+
+## $RACHEL
+
+They say [Helen of Troy](https://en.wikipedia.org/wiki/Helen_of_Troy) was the
+face that launched a thousand ships.
+
+I first saw $RACHEL December 8th, 2007, my first day of middle school and school
+in the U.S. If you ask my friends, they will say I'm not a remembering type of
+guy. I don't like to remember much these days, but I remember that day just
+fine. I remember being terrified that all middle school students in the U.S.
+study calculus, and had hurriedly tried to read through Barron's "Painless
+Algebra" before school started. I was terrified that I would need to defend
+myself against the kind of bullying that went on back home.
+
+I needn't have worried. The moment I saw her, laughing in the cafeteria with her
+friends, I thought to myself, "maybe America isn't so scary after all".
+
+We ended up going to the same high school. You would think this is the point
+where I should ask her out, go on a few dates, realize we're incompatible, and
+then break up. That's not what happened. I didn't understand this feeling, and
+that crime boss dude in "Batman Begins" nails it on the head when he says "you
+always fear what you don't understand". I also saw a tradeoff between time
+studying and prospective time chasing her. If you study and fail, you'll
+probably get something out of it. If you chase girls and fail, you'll just get a
+broken heart.
+
+And a broken heart is the worst thing that could happen to you! Right?
+
+I succeeded in tamping down my feelings for a while. Then I couldn't.
+
+I wanted to go home. Home is where the heart is.
+
+The second date seared into my mind is September 26th, 2011. I even remember the
+time and location, 2:45PM ET in the art room. I wrote $RACHEL a letter about how
+I felt about her, and sealed it into a manila envelope. I was too scared to give
+it to her myself, so I gave it to a mutual friend who promised to deliver it
+when the time is right. That's the point in space and time where I accepted I
+would never be hers and she would never be mine.
+
+Great, so that's a wrap. Now it's a simple matter of letting her go.
+
+---
+
+I cried myself to sleep almost every day for the first three years of college. I
+became terrified of falling asleep because when I closed my eyes I saw her. A
+ghost, a mental projection now, that I involuntarily placed on a pedestal, with
+that shimmering hair and that gorgeous smile. I wanted to forget her and move
+on. I didn't want to forget. I didn't want to move on. Today, I'm more of a
+night owl, because I've developed a habit of delaying going to bed.
+
+I realized that hard work didn't make me happy. I've walked halls of gold and
+marble, seen giant pallets of money moved back and forth by robotic forklifts,
+cavorted with millionaires and billionaires and future and aspiring millionaires
+and billionaires. I never wanted any of it. I wanted a quiet life with somebody
+I deeply wanted, somebody who could make me feel the same way I felt about
+$RACHEL. When I realized that, the house I've built for myself started to look a
+lot like firewood. Somehow, I chose a prison. The harder I worked, and the more
+I tried to forget about $RACHEL, the more the feeling intensified, and the more
+underlined the past becomes. It's like a fire that can never go out, even if you
+dump an ocean of water on top of it. It's like blood you can never wash off.
+_And for some reason, I chose this_. It's partially why I didn't go into
+investment banking and high finance, and became a software engineer instead. I
+_knew_ I cared about more than just money, so I wanted to keep my options open,
+since there are intense software engineering jobs and laid-back software
+engineering jobs.
+
+Okay, so go look for somebody else. Easy peasy lemon squeazy, right? Except that
+you can't compare a person with a ghost. The ghost is infalliable and
+ever-present. I could take $RACHEL the physical person and compare her with the
+ghost, and the ghost would win, because the ghost doesn't complain, doesn't get
+sad or mad, doesn't set boundaries, and isn't real. Not just that, but feeling
+like that for anybody else almost seems like a betrayal, and brings about a
+feeling of intense pain. Intense, as in I physically feel a 30-pound weight
+pressing on my heart no matter how I orient myself, and an intense burning
+sensation in my eyes, nose, and my throat. So I can't move on.
+
+I mentioned in my New Year's Resolutions this year that I hated myself, every
+fiber of my being, everything I am. I hope this explains why. Youth is wasted on
+the young.
+
+At this point, I think I should clarify some things. Absolutely none of this is
+on $RACHEL. We've probably talked for less than an hour over twelve years, and I
+only know her as one of the sweetest, kindest, most patient people I've ever
+met. I'm biased, but I honestly can't think of a time when she said or did
+anything mean to anybody. And although I would do so many things differently,
+I'm so grateful that $RACHEL stepped into my life. Wanting her taught me so much
+about how to become the man I wanted to become. I'd much rather keep the lessons
+(and the innate understanding over their importance, internalized through pain)
+rather be ignorant and probably realize this later on in life when there's more
+at stake. There _are_ much worse fates, like those discussed in ["Regrets of the
+Dying"](/five_regrets), where this would fit in as "I wish I had the courage to
+express my feelings".
+
+I wanted to do a limited post on failure, but I realized that for me, it's
+impossible to talk about failure without talking about $RACHEL. Not only do all
+the failures I've accumulated in my life pale in comparison to my failure in
+expressing my feelings in a healthy way to $RACHEL, but in some way they all
+seem connected. Not just in stateful way, where the person I am today makes my
+present-day decisions, but almost in a procedural way. Like a cornerstone of an
+arch clicking into place, there's no other failure in my life that's as deeply
+rooted to my present-day identity.
+
+## Lessons Learned
+
+- **I don't rule my feelings. If anything, they rule me. They are me.** I
+  neglected my emotional side, and thought that I could "control" it, like an
+  adversary. Not only is my emotional side not an adversary, it's more powerful
+  than my logical side. Again, we were emotional way before we were logical.
+  Without the "why" in life, the "how" is irrelevant. I read ["Everything is
+  Fucked" by Mark Manson](/posts/2019/11/01/everything_is_f_ed), who hammers
+  home this central and absolutely critical point.
+
+  I think that's why people say "do what you love" or "do what makes you happy".
+  There are healthy animals, and unhealthy animals. Healthy animals obsess over
+  their work, but they have a clear emotional boundary, which is "do I still
+  want to do this tonight", and when they don't feel it, they stop. Unhealthy
+  animals obsess over work because they're afraid. Since reasoning about fear
+  with incomplete information isn't really possible, that fear becomes
+  all-consuming. Things like relaxing don't seem okay. Then the limit is a
+  physical limit (you collapse at work or something), which is far more
+  difficult to recover from.
+
+- **The heart wants what it wants, and it's the mind's job to satisfy that.** If
+  I could go back, I would burn down all my studies and my extracurricluars in
+  high school, just to spend five minutes with her at my side. Not only because
+  I ended up burning it all down anyways and switching to a completely different
+  field, but because without the "why" of studying, it kind of _is_ all firewood.
+
+  I think that's why it's important to ask for what you want. If you want a
+  higher salary, you should ask for it instead of being grumpy at work, or study
+  harder and find a better job (of which for software engineers there is always
+  work to do). If you're mad at a friend, you should tell them you're unhappy
+  and why you're unhappy and what could be done differently to prevent such
+  unhappiness in the future, rather than break things off abruptly or be
+  irrationally unhappy in a different situation.
+
+  The heart wants what it wants, and it will get what it wants eventually. You
+  can't stop it, or at least I can't, and I'd say my mental faculties are up
+  there.
+
+- **Tackling problems head-on is the best way to find a solution.** When I
+  wanted to conquer my fear of heights, I climbed up every tall building I
+  could, culminating in jumping out of an airplane (which I'd like to point out
+  is much easier than asking somebody out). Voila, my fear of heights has
+  greatly diminished.
+
+  Avoiding something because of fear leads to suffering without purpose. It
+  doesn't do to suffer, let alone suffer without purpose. It's pointless, there
+  is no reward or recognition for doing so. So don't do it, or learn how not to
+  do it.
+
+## How I Cope With Failure Today
+
+For me, this is shaping up to be the year of ripping off Band-Aids. Ripping off
+Band-Aids hurts, but it's important to do so, and avoid building a life made up
+of chewing gum, baling wire, and duct tape. So I wanted to share things I do to
+keep myself on track.
+
+- **Relaxation is a muscle.** You use your ability to relax, or it atrophies
+  like any other muscle. I never thought I would see the day when I just
+  wouldn't relax, and now I think I might not see the day when I can relax. So
+  practice and be good at relaxing. Otherwise, relaxing will be as hard as going
+  to the gym.
+
+  Relaxing can be anything that makes you happy. If it requires a skill, then it
+  might take some willpower. I'm trying to learn the ukelele, and I've skipped
+  two weeks of studying. I have to practice self-forgiveness and envision a life
+  where I have learned how to play the ukelele to keep at it.
+
+- **Get smacked flat by a feels train.** Sometimes, you don't control how you
+  feel about something. I sometimes scream into a pillow until I'm hoarse,
+  because I'd rather have a sore throat than a sore heart. I think I can replace
+  that with crying, or maybe tweaking on a curb, because vocal cords don't last
+  if you don't treat them right.
+
+  Anything is better than a sore heart.
+
+- **Mentally GOTO to the worst-case scenario, then work your way back up the
+  stack.** I take the nightmare, and apply layerings of reasoning and
+  rationalizations to tell myself how this nightmare may or may not be unlikely,
+  so that if the nightmare happens, I'll have a mental "ladder" I can use to
+  climb out of the hole. It's honestly a bit hard to explain.
+
+## Conclusion
+
+A few months (?) ago, I made [this comment on Hacker
+News](https://news.ycombinator.com/item?id=21615904):
+
+> My take on genius is that it's akin to insanity, and for some of us, insanity
+> doesn't seem to be so insane (which itself is an insane thing to say). Nikola
+> Tesla ended his life alone, with a box of scrap parts as collateral for his
+> rent (https://www.history.com/news/9-things-you-may-not-know-about...).
+> Friedrich Nietzsche wrote "The Parable of the Madman"
+> (http://historyguide.org/europe/madman.html), and apocryphal stories indicate
+> he may have written it from his own experience.
+>
+> Beyond some point, being smart really isn't a good thing. You can't relate to
+> people. Nobody understands you. Your value structure is messed up. Parents
+> point to you and tell their children to not be like you. You live on top of a
+> cold, windy, snowy mountain while everybody else lives in a warm and fertile
+> valley. Yet you choose to live on the mountain anyways, because after you lose
+> everything, you realize that's just who you are, and there's really nothing
+> you can do about it beyond accepting it.
+>
+> And so you are insane. You don't care about being comfortable, or about being
+> paid well, or about people liking you, or having fewer problems in life, or
+> anything else that makes sense. You just care about obsessing over that
+> something.
+>
+> People always talk about genius like it's some good thing. Maybe sometimes, if
+> you obsess over something society values. But few people talk about the price
+> of genius, probably because we're taught from an early age that being smart is
+> a good thing and so few people go that far off the deep end anyways. I think
+> it should be said, especially for HN types, that there can always be too much
+> of a good thing. That it's healthy to relax, not take things so seriously,
+> have a sense of humor, and relate to other people. That a good life is worth
+> living. Because to forget that is a life lost.
+
+People disagreed with me, but somehow I don't think I'm wrong.
+
+---
+
+In the end, after you've taken care of your heart, you can truly figure out what
+you enjoy when your thinking side is attuned to your feeling side. That's what
+makes life enjoyable. For example, I enjoy learning about Haskell and having
+conversations with my friends about it:
+
+> Me: Monads are applicative functors.
+>
+> Friend: I'm not sure if you know this Ying, but most people just Google shit
+> and call themselves a full-stack developer and make six figures and have a good
+> life.
+>
+> Me: (>.>) (satisfied noises)

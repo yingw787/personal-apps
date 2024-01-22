@@ -1,0 +1,104 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Afternoon Pages: November 7th, 2020"
+date: "2020-11-07T12:50:11-05:00"
+draft: false
+---
+
+My life right now.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
+    width: fill-available; max-width: 100%;" controls> <source
+    src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
+support HTML5 video. </video> <br/> <br/>
+
+---
+
+It's nice to have a little bit of certainty.
+
+![nytimes](/img/posts/2020/11/07/morning_pages_1.jpg)
+
+Holy hell that's a large font.
+
+![youtube](/img/posts/2020/11/07/morning_pages_2.jpg)
+
+And to highlight my bad timing skills. Or Firefox being really laggy on my
+computer.
+
+---
+
+I think there's some important caveats to note:
+
+- **Without the Senate, there won't be a whole lot that'll get done.** There's
+  enough to be fixed for four year's of work, sure, but they'll just get
+  reversed with the next Donald Trump (Tom Cotton or Josh Hawley are my betting
+  favorites to continue Trumpism, and maybe go in an even more extreme
+  direction). You'll need Congress in order to pass laws that are much more
+  resilient to being chipped away.
+
+  I can't believe the ACA is still standing after all these years, but if you
+  think about it, the Fugitive Slave Act of 1850 was only repealed in 1864,
+  after the Emancipation Proclamation of 1862. It was easier to go to civil war
+  than it was to repeal that law. So maybe it shouldn't be that surprising.
+
+  I donated $100 each to Jon Ossoff and Reverend Raphael Warnock, because both
+  races are close enough to go to runoff (thank you Stacey Abrams) and those
+  races will decide control for the U.S. Senate. Mitch McConnell has already
+  declared he will blockade anything Biden does, and I don't want to hear about
+  him again for four years, so money toss. I don't know what Warnock's chances
+  are because he's a black man running against a reasonably hot blonde (even
+  though she can't even be corrupt correctly), but Ossoff seems competitive.
+  We'll see what happens.
+
+- **No presidential candidate has a mandate.** The country is almost as evenly
+  divided as it was four years ago. Races are being decided on margins of tens
+  of thousands of votes in multiple states. Philadelphia had armed miltiamen
+  patrolling near polling stations and bomb threats called in to slow the count.
+  No matter which side had won the presidency, the other would be implacably
+  hostile towards it. That doesn't bode well for the Union.
+
+  I think voting rights and urban/rural partnership initiatives could help lower
+  the temperature and create more jobs in small to mid-size cities, and I think
+  the party in power should communicate more about its initiatives. People
+  shamed President Trump for sending that letter with the one-time direct
+  payment stimulus, but honestly I thought it was refreshing to hear directly
+  from the government, even if it was a bit campaign-y. I hope Biden writes to
+  people about green jobs and stuff he's doing, because people only tune in to
+  certain sources in the media while the mail arrives for mostly everybody.
+  Great way to check whether the USPS is still working, too.
+
+- **Turnout has to be an active process.** You can't just blare out "a wildfire
+  burned down your city and the POTUS is refusing to send assistance" and expect
+  people to vote for the other party. Maybe in saner times you can, but the path
+  that works is shown in Georgia, where Abrams went door to door registering
+  hundreds of thousands of people to turn out for the vote. It's like
+  counter-insurgency operations, you can't just go in with air support, you have
+  to have boots on the ground and make sure the locals support you.
+
+Biden is in an extremely weak position coming into POTUS. He has to run a
+disparate coalition, held together by the singular hatred of the current POTUS.
+The current POTUS by contrast can call upon a cult, the unthinking greedy, and
+foreign interests in order to execute policy. There's a very real chance Biden
+will just warm the seat until a red tide comes in 2022 and 2024.
+
+I don't know what the next four years are going to bring, but I think I'd like
+to get more involved, and go to town halls and demand answers from
+representatives and stuff. I'm personally skeptical of myself wielding any sort
+of power beyond deciding what bagels to get for a meeting, but I think people
+will easily forget "the year that will never be forgotten" and it'll take people
+who remember applying consistent pressure over decades in order to effect policy
+correctly.
+
+I think we've have had precious little to celebrate on the federal front over
+the past four years. And I don't begrudge people from celebrating. But we have
+125,000 coronavirus cases yesterday, up from 80,000 last Friday, with a 50%
+positivity rate in some cities and states, and Trump cult members praying over
+election results in Nevada (that have already been written down) in front of the
+polling station. And now with Biden's victory, Democrats have lost their biggest
+(and perhaps only) reason to turn out for elections at all. So while others may
+celebrate Joe Biden's win, I'm not celebrating until the next Donald Trump
+loses. I might be waiting a while. A very very very long while.

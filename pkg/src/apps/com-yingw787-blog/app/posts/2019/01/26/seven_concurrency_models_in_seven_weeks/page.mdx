@@ -1,0 +1,61 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2019-01-26",
+    title: "Book Review: "Seven Concurrency Models in Seven Weeks: When Threads Unravel", by Paul Butcher",
+    description: "Book Review: "Seven Concurrency Models in Seven Weeks: When Threads Unravel", by Paul Butcher",
+    categories: ['Books'],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+This is probably one of the most intense books I've ever read. It may be intense
+because I intended to power through it once in one week and go through it later
+in a series on concurrency models on [Bytes by
+Ying](https://bytes.yingw787.com/) rather than methodically read it in seven
+weeks (where I might forget to continue to read this book or not want to read it
+anymore).
+
+Multicore programming was the future twenty years ago, so naturally its time is
+now. I genuinely think, unlike artificial intelligence or deep learning, a
+mastery in distributed programming and concurrent/parallel programming will
+prove to be valuable knowledge in many areas of expertise, for the sole reason
+that you really can't find a single-core processor in the
+professional/enterprise anywhere anymore. This has played out in the business
+field as well; efficiency gains from using Erlang in production allowed WhatsApp
+to [sell to Facebook for nineteen billion dollars with only fifty-five
+employees](https://pando.com/2014/02/24/whatsapp-bought-for-19-billion-what-do-its-employees-get/).
+Being able to service something like a hundred million people per employee, with
+nine nines of availability without patches, on a handful of servers, allows you
+to do that. Being efficient and smart in your allocation of resources in
+engineering just gives you so much more breathing room in business, and using a
+great concurrency model allows you to be both efficient and smart.
+
+Butcher does a great job of describing the underlying hardware restrictions and
+how they influence each concurrency model and where it should be used. He starts
+off with threads and locks, and how much mental overhead it takes in order to
+use that model effectively. He then describes alternative concurrency models and
+how to apply them within a language, under what requirements and constraints
+they are effective, and at what scale they become worthwhile.
+
+One thing I wish he had covered more was how your usage of dependencies would
+impact your concurrency model; how friendly is the development and developer
+ecosystem to the concurrency model you wish to leverage? Another thing was how
+idiot-proof is each concurrency -- that is, if you made an extremely bad hire
+and somebody was screwing up in your codebase, how would that impact your
+concurrency model?
+
+Ultimately, it boils down to this: using the right concurrency model for the
+right problem will dramatically improve release cycles for performant software,
+which will make your business and your objectives that much more attractive and
+reachable.
+
+This is absolutely a must read for any serious software engineer.

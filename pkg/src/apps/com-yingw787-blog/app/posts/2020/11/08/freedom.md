@@ -1,0 +1,111 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Ode to Freedom"
+date: "2020-11-08T00:52:25-05:00"
+draft: false
+---
+
+I went out to D.C. for the first time since this past Tuesday, and I think the
+past four years kind of just hit me like a sack of bricks. I definitely felt the
+urge to scream "WE ARE FREE" at the top of my lungs and maybe get arrested for
+insanity. Instead I stared at a Biden supporter for five seconds and then gave a
+small thumbs up, then waved at another Biden supporter who ignored me.
+
+There's some small things I'm a little worried about. [The head of the National
+Nuclear Security Administration was fired two days
+ago](https://thehill.com/policy/defense/524865-lisa-e-gordon-hagerty-resigns-as-nnsa-administrator),
+and there's 84 unaccounted for Soviet briefcase nukes that have no Permissive
+Action Links. Pretty sure it's routine for the Trump administration to kick over
+tables though, and he doesn't seem the type to plot things as big as nuking D.C.
+on his way out and succeed, and no organization or country would be insane
+enough to nuke D.C. and not expect a response with an incoming administration.
+If it happens though, I should be well within the blast radius so hopefully
+that'll be a quick death. So meh. Celebration time!
+
+---
+
+I think today I was reminded of "Wildflowers" by Tom Petty, the song played when
+Ann Perkins left Pawnee, Indiana in "Parks and Rec".
+
+<!-- https://stackoverflow.com/a/20179321/1497211 -->
+<audio style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls loop>
+  <source src="/music/posts/2020/11/08/wildflowers.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<br/>
+<br/>
+
+So much nicer than the Civil War music I listened on repeat during the past few
+months.
+
+It inspired me to maybe write a little poetry, about freedom and how nice it is
+to be masters of our own fate. Here it is.
+
+<div style="color: black; text-align: center; font-family: 'Times New Roman'; padding: 20px; width: 100%">
+O FREEDOM!
+<br/>
+HOW WE HAVE THIRSTED!
+<br/>
+THE ELIXIR OF OUR LIVES
+<br/>
+AS FRESH AS MOUNTAIN STREAMS
+<br/>
+AS LUSH AS SPRING MEADOWS
+<br/>
+WHEN OUR MOUTHS DRY
+<br/>
+ONLY YOUR TASTE QUENCHES!
+<br/>
+<br/>
+O FREEDOM!
+<br/>
+HOW WE HAVE HUNGERED!
+<br/>
+MANNA OF OUR HEARTS
+<br/>
+AS SOFT AS RIPE MANGOES
+<br/>
+AS CRISP AS ORCHARD APPLES
+<br/>
+ONLY YOUR MEAL FILLS!
+<br/>
+<br/>
+O FREEDOM!
+<br/>
+HOW WE HAVE LONGED FOR YOU
+<br/>
+HOW WE HAVE CRIED FOR YOU
+<br/>
+HOW WE HAVE RAN TO YOU
+<br/>
+AS PRECIOUS AS THE AIR WE BREATHE
+<br/>
+AS DEAR AS THE CHILDREN WE CARRY
+<br/>
+OH HOW WE CLING TO YOU NOW!
+<br/>
+<br/>
+O FREEDOM!
+<br/>
+WE WILL HONOR YOUR NAME
+<br/>
+THIS WISH OF WASHINGTON
+<br/>
+THIS LABOR OF LINCOLN
+<br/>
+WE BEAR THIS PRECIOUS GIFT
+<br/>
+WE HOLD YOUR TORCH HIGH
+<br/>
+WE PRAISE YOUR NAME
+<br/>
+AS THE BLOOD RUNS IN OUR VEINS
+<br/>
+AS OUR FLESH WALKS THIS EARTH
+<br/>
+WE WILL NEVER YOU GO!
+</div>
+
+![us](/img/posts/2020/11/08/flag.jpg)

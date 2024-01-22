@@ -1,0 +1,55 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: August 27th, 2020"
+date: "2020-08-27T08:37:37-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+It's my birthday today! :tada: To celebrate, here's a cute picture _and_ a cute
+video!
+
+Here's a really cute kitten:
+
+![kitten](/img/posts/2020/08/27/morning_pages.jpg)
+
+And a little boy reading to a cat:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/08/27/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+---
+
+I think the protests have popped back up, heard [somebody murdered somebody else
+with police
+consent](https://www.chicagotribune.com/news/breaking/ct-kenosha-wisconsin-protesters-shot-jacob-blake-20200826-2whqqtogjrcx5db5zfdkuw374y-story.html).
+In other news, [the CDC has limited testing for asymptomatic people even if they
+have been in contact with COVID infected
+patients](https://www.cnbc.com/2020/08/26/cdc-quietly-revises-coronavirus-guidance-to-downplay-importance-of-testing-for-asymptomatic-people.html),
+maybe because [Dr. Fauci was undergoing surgery during the
+meeting](https://www.msn.com/en-us/news/politics/fauci-says-he-was-under-anesthesia-when-cdc-changed-covid-19-testing-guidelines/ar-BB18p0Wp).
+I don't say this to be a drama queen, but I think the news is starting to get to
+me. Last night I dreamt I was being chased by a mob in a burning city while the
+police stood by and I forgot to wear my mask. Maybe I should keep a news diet,
+this isn't healthy.
+
+Sooooo birthday! I purchased myself a 2TB NVMe SSD drive online in order to
+bolster by existing 256GB drive, and I think my mom is making me steak for lunch
+(my mom makes some pretty bomb steaks). I might also walk around the
+neighborhood if the weather's good. I think overall, today will be a pretty good
+day.

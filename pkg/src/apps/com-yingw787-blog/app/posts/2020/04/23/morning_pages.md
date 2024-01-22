@@ -1,0 +1,82 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 23rd, 2020"
+date: "2020-04-23T07:42:01-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+Folks, there's a cuteness market on the interwebs whether we like it or not.
+Some days are just cuter than others. I think I need a savings strategy for
+cuteness, to put into my cuteness bank, to tide myself over during times where
+there aren't as many cute pictures and videos.
+
+Today's not that day though! Here are _two_ videos and a picture!
+
+Look at these two little guys! Time don't mean nothing to them:
+
+![time](/img/posts/2020/04/23/morning_pages_1.jpg)
+
+Time _does_ mean something to these little ones though, they're taking the time
+to nap:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/04/23/morning_pages_2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+And look at this cute little baby Earth!! Ahhhhhhhh
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/04/23/morning_pages_3.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+---
+
+I woke up at 6:15AM today. After sleeping at 2:00AM. And I'm wide awake, because
+I had a horrible nightmare. I worked for `$MEGACORP_NAME` and I "surrendered my
+freedom for a few extra bucks". Honestly, this was probably the most terrifying
+nightmare since I had those ones about `$RACHEL`. Maybe even a bit more so.
+
+Here's an [LWN.net comment on Linux kernel
+lockdown](https://lwn.net/Articles/818402/) that kind of describes what I'm
+going through. I guess I'm firmly a
+[deontologist](https://en.wikipedia.org/wiki/Deontological_ethics), I really
+like having the freedom to shoot myself in the foot because it gives me more
+freedom. I have managed to shoot myself in the foot many times. Wouldn't give up
+my freedom. I guess that is why, after two months of working on TinyDev, I'm
+still working on it, going down to _defining my own VPCs and subnets, and quite
+possibly my own routing tables, DHCP options, ACLs, and CIDR blocks_, because I
+can't imagine granting control of something like that to somebody else.
+
+TinyDev is a dashboard slapped onto a database. It's not meant to be hard. But
+it is. It's not like I can't do things quickly. I mean, just yesterday, I
+shipped this app on Netlify for a volunteer COVID-19 thing in two hours. I
+think...I think I just ship quickly when I don't care as much, as bad as that
+sounds.
+
+I mean, how can you _not know things_? There's no excuse, you're a sentient
+human being. Yet if you got a pre-frontal lobotomy and relied purely on primal
+instincts, you might be better off.
+
+I have a hard time reconciling this fact. Maybe it's not meant to be reconciled.
+Right now the fear is so primal I pretty much burst out of bed in a cold sweat
+and made some tea. First time all year that's happened. I guess I'll take it,
+because I've been meaning to start my day at 7:00AM ever since I started doing
+so last year (and fell out of the habit when I went home for Christmas break).

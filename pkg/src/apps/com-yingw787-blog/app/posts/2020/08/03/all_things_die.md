@@ -1,0 +1,105 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "All Things Die"
+date: "2020-08-03T00:31:29-04:00"
+draft: false
+---
+
+I recently came across [a Reddit post about certain Star Wars
+quotes](https://www.reddit.com/r/MawInstallation/comments/78yn10/post_a_quote_from_revenge_of_the_sith_and_ill/).
+I particularly resonated with this one:
+
+> Children on Tatooine tell each other of the dragons that live inside the suns;
+> smaller cousins of the sun-dragons are supposed to live inside the fusion
+> furnaces that power everything from starships to Podracers.
+>
+> But Anakin's fear is another kind of dragon. A cold kind. A dead kind.
+>
+> Not nearly dead enough.
+>
+> Not long after he became Obi-Wan's Padawan, all those years ago, a minor
+> mission had brought them to a dead system: one so immeasurably old that its
+> star had long ago turned to a frigid dwarf of hypercompacted trace metals,
+> hovering a quantum fraction of a degree above absolute zero. Anakin couldn't
+> even remember what the mission might have been, but he'd never forgotten that
+> dead star.
+>
+> It had scared him.
+>
+> "Stars can die—?"
+>
+> "It is the way of the universe, which is another manner of saying that it is
+> the will of the Force," Obi-Wan had told him. "Everything dies. In time, even
+> stars burn out. This is why Jedi form no attachments: all things pass. To hold
+> on to something— or someone—beyond its time is to set your selfish desires
+> against the Force. That is a path of misery, Anakin; the Jedi do not walk it."
+>
+> That is the kind of fear that lives inside Anakin Skywalker: the dragon of
+> that dead star. It is an ancient, cold dead voice within his heart that
+> whispers all things die…
+>
+> At night, the dead-star dragon sometimes sneaks through the cracks and crawls
+> up into his brain and chews at the inside of his skull. The dragon whispers of
+> what Anakin has lost. And what he will lose.
+>
+> The dragon reminds him, every night, of how he held his dying mother in his
+> arms, of how she had spent her last strength to say I knew you would come for
+> me, Anakin…
+>
+> The dragon reminds him, every night, that someday he will lose Obi-Wan. He
+> will lose Padme. Or they will lose him.
+>
+> All things die, Anakin Skywalker. Even stars burn out…
+>
+> ...he's already the best, and he's still getting better. But locked away
+> behind the walls of his heart, the dragon that is his fear coils and squirms
+> and hisses.
+>
+> Because his real fear, in a universe where even stars can die, is that being
+> the best will never be quite good enough.
+
+I'd say I think about death more frequently than my peers. Not everybody posts
+["The Five Regrets of the Dying"](/five_regrets) on their personal blog. I think
+ruminating about death constantly isn't curse, but rather a blessing. People in
+Bhutan [think about death five times a
+day](http://www.bbc.com/travel/story/20150408-bhutans-dark-secret-to-happiness),
+and they're reportedly one of the happier countries in the world. Investing in
+things that don't change as a life philosophy subtly acknowledges that death
+lies at the end of all paths: all people, all life, all Creation. It is in some
+ways a final truth, and to deny the truth is to deny we who live in it.
+
+I recall going to a salsa dancing meetup in D.C. a few years back, when I talked
+to a man who said he wanted to live forever. When he asked whether I wanted to
+live forever, he was surprised when I said no. I thought then, and I still think
+now, people are born into a time. Ultimately that time passes, while we remain
+inherently stuck in the past, and it's good to move on. My world is still
+somewhat reminiscent of the 90s: seeing boxy trucks drive around, walking to the
+airport gate to see off my grandparents, and eating Breyers ice cream with
+enjoyment, three things that just don't happen anymore.
+
+No, literally, Breyers had to rename their ice cream to "frozen dessert" because
+it doesn't contain enough cream to be called "ice cream".
+
+I think this is a problem, because a refusal to accept death as natural is what
+gives rise to some of our deepest anxieties. The anti-maskers and anti-vaxxers
+walking around right now probably know what the right solution is. They just
+don't want to believe it. Then on the other end of the spectrum, you have
+[billionaires transfusing blood from teenagers to stay
+young](https://www.vanityfair.com/news/2016/08/peter-thiel-wants-to-inject-himself-with-young-peoples-blood).
+It's not an intelligence issue, or even an empathy issue. It's a matter of
+perspective.
+
+If I had to explain to a five-year old who told me (s)he was afraid to die, I'd
+reply that life is a lot like a birthday cake. You don't try to save all of it
+forever, because you can't, it gets hard or moldy and you lose it anyways.
+Instead, you enjoy one small slice of it at a time. If you're having a birthday
+party, you can share slices of it with your friends and family. Eating a
+birthday cake comes naturally. So does death.
+
+It is nice to extend life to avoid getting mauled by a wild bear, or trapping
+oneself in a steam engine, or catching COVID. But we shouldn't forget that we
+shouldn't prevent the inevitable. All things die, even stars burn out. The thing
+that brings me comfort is how things aren't beautiful because they last, they're
+beautiful because it makes life worth living.

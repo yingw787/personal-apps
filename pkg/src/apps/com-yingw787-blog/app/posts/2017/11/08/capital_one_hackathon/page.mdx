@@ -1,0 +1,52 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2017-11-08",
+  title: "The Capital One Hackathon, Part II",
+  description: "The Capital One Hackathon, Part II",
+  categories: ["Software"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Here's the post-mortem that we did together as a team:
+
+#### What we did good
+
+- We did our best with the information we had. We assumed that the data would eventually present a correlation, or the AWS Kafka streaming APIs, live only during the competition, would provide useful information, or that mentors would clear up the confusion in a satisfactory manner.
+
+- When this was not the case, we were able to switch from a V1 API / V1 frontend to a hardcoded V2 frontend in short manner.
+
+- We had prepared a working API and frontend and deployed to production, and was able to maintain very low turnaround times for new features or changes between development and production.
+
+- We took the evening off to go back and sleep leaving us the next day more refreshed and ready to code during the critical moments.
+
+- We avoided the use of voice-based APIs like Alexa, as multiple failures were recorded during the demonstration from multiple teams. If we do decide to use a voice assistant, pipe in data through plaintext into Alexa APIs.
+
+#### What we did bad
+
+- We did not do great on communication. Of note, our talking points did not correlate well with our pitch deck from the start, and we did not have good plans to integrate our machine learning pipeline into our backend. Of note, it was our first time working in a team of three, and our communication, and we expect that the more we work together, the more we will improve over time. We should design APIs for the different portions of the codebase we work with, and we should map out the tasks for different plans (primary and contingency) and assign them to people beforehand. We should also communicate on what we want our final product to look like.
+
+- Our preparation could have done better. With the random data we got from the S3 bucket, we should have upgraded our awareness that data might be shit throughout the hackathon and come up with a solid plan B. If we do encounter a machine learning hackathon with no usable data again, we should generate our own dataset beforehand with the correlations we want to see. When we brainstorm, we should come up with 3 ideas, 2 for plan A and 1 (go-safe) idea for plan B in case things don't work out. We should then plan to finish 1 feature in plan A and hope to finish the other as a nice-to-have. We should aim to generate multiple machine learning models so we don't have to write all the code from scratch.
+
+- Get better clarifications from the engineers about technical questions we have before the hackathon. Dwipam asked a Capital One engineer on BeMyApp about dataset correlations, and the engineer misunderstood and started talking about the APIs instead.
+
+- Cross-pollination of disciplines would be good for team cohesion. Full-stack should learn data science and data science should lean full stack for greater flexibility of team assignments.
+
+- We practiced integrating and timing the presentation before asking for review from Capital One engineers, who subsequently offered recommendations that led to half the presentation being left out and many differences between what was desired and what was practiced. Yuan will do presentations next time, and we should talk to judges an hour before code freeze in order to get their reviews in early and integrate and time the final presentation with their thoughts in mind.
+
+- We did not spend adequate time on the frontend, which is likely the most important part of a hackathon; having a unique twist or just good design is important in catching the attention of the judges. Definitely continue to use a template for next time.
+
+- We were too optimistic about the time, and thought we could still include the coupon idea for a while into the hackathon. This divided our attention unnecessarily. Narrow the number of ideas we have during brainstorming beforehand.
+
+- We did not use Capital One APIs or any other third party APIs to provide reliable data. The first place winner, who went solo, used Google Maps and Yelp APIs in order to provide location-based transaction histories and recommendations. Using more APIs leverages other people's work and encourages you to think outside the box.
+
+- We should continue to get used to stressful situations and managing stress while still completing tasks successfully if we are to win.

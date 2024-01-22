@@ -1,0 +1,66 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-12-31",
+  title: "Year in Review: Sleep",
+  description: "Year in Review: Sleep",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+The Year In Review:
+
+- [Year In Review: Fitness](/posts/2021/12/31/year_in_review_fitness)
+- [Year in Review: Gratitude](/posts/2021/12/31/year_in_review_gratitude)
+- [Year In Review: Resolutions](/posts/2021/12/31/year_in_review_resolutions)
+- [**Year In Review:
+  Sleep**](/posts/2021/12/31/year_in_review_sleep)
+
+---
+
+Of all the metrics I've tracked over this year, besides todo lists and
+hourly journaling, sleep logging is the one I've been able to maintain over
+time. I think it's because I've been able to register my sleep using timestamps
+sent via email and IFTTT Google Home automations, which can then be backfilled
+later. By contrast, gratitude journaling or fitness logging do not have this
+level of sophistication and can only be done the moment of, or otherwise would
+be lost (and therefore, is, on an increasingly consistent basis).
+
+I've also regressed in terms of being able to load my sleep log data onto my own
+platforms, mostly because I can't get my Jupyter notebook to support printing
+times on the y-axis, and because my data needs to be cleaned up before importing
+into my app, which I haven't really used a whole lot throughout the entire year.
+
+So here's a screenshot (open in new tab to get the full resolution, it is big
+and pretty that way):
+
+[sleeplog](/img/posts/2021/12/31/sleep_log.png)
+
+I can make some observations just by looking at this data alone:
+
+- **I've gotten better about dialing forwards my sleep (the downward trend in
+  the various dots)**: At the beginning of this year, I used to sleep around
+  2-3AM. Now, I sleep around midnight. I'm getting old. Also I think I'm
+  drinking a bit more caffeine now, I had a bit of a caffeine inflection point
+  of sorts from drinking the half-liter Ito En green teas from the Wegman's at
+  Tyson's Corner, that caffeine lasts in my system a long time, and it does
+  wacky things I think. So I'm not sure if it's all a good thing.
+
+- **I've been getting a lot better about managing times getting out of bed**:
+  Before July or so, I wasn't doing personal training and therefore got up like
+  whenever, which at times was something like 6PM. Now, that would let somebody
+  else down who is explicitly expecting me, so I have to get up. And I've been
+  doing that for so long, I think it's a stable-ish habit.
+
+Overall, it's a slow but steady change towards becoming a responsible adult.
+Going forwards into next year, I think I will continue to track my sleep habits,
+because sleep, food, and hydration directly affect my ability to powerlift.

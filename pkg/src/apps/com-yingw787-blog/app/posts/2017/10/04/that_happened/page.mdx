@@ -1,0 +1,43 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2017-10-04",
+  title: "That Happened",
+  description: "That Happened",
+  categories: ["Software"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+If you're a software developer with a twisted sense of humor, you should continue reading this. So last week we moved our production applications to a new deployment infrastructure using Docker, and for most of the last week we've been fixing the functionality of our website (such as checkout, because that's important for staying in business). We got everything mostly working and this week has been uneventful.
+
+Today I told my colleague over tea, "You know what? This week hasn't been so bad".
+
+I will never say that again. I shit you not, literally an hour after I said that, one of the developers in our satellite office opened up a pull request that:
+
+- Fixed four different bugs and added a feature at the same time (his PR title was the combined ticket names of the four bugs he was fixing)
+- With the feature being a "REST" API endpoint named "`/qa-inactivity-timeout`" (I know, so RESTful)
+- And creates entirely new globals directly on the application instance
+- And sleeps for 1.1 seconds using `time.sleep`
+- And finally returns an HTML snippet as a string
+- And has no tests, of course.
+- And had unanswered comments from the day before (such as "If this route goes to production, every user can hit it")
+- And was approved with two sequential approvals from his team lead because you need two approvals to merge PRs, with no commits or comments in between (I didn't even know you could do that in GitHub)
+- And was merged at 5PM so that they left before we would track them down
+- Into our release branch which was supposed to go out today at some point (to production, don't forget that `/qa-inactivity-timeout`) and can't anymore
+
+The result? If you log in and upload a part, everybody else that hits that particular application instance gets logged out. We have multiple application instances in production that our load balancer round robins requests to, so if it went into production users around the world would have been competing to stay logged in while uploading parts.
+
+I have never heard so many expletives from my colleagues.
+
+The cherry on top was that earlier today I was trying to find out if we had any stateful API endpoints, because we have load issues and adding in more threads would help the load on our servers and we need to make sure we don't have any shared state we write to before we do that. I sent an email to our director saying I'm hard pressed to find any an hour before that happened. I talked to the exact same colleague from the beginning of this post after sending that email and he said, I shit you not, "It's really hard to make a stateful API endpoint".
+
+Good stuff.

@@ -1,0 +1,53 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-02-27",
+  title: "Afternoon Pages: February 27th, 2021",
+  description: "Afternoon Pages: February 27th, 2021",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+Hah, catto is drowning in chimken.
+
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/02/27/afternoon_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
+
+You know if I keep this babytalk up I won't actually know what the names for
+certain things are anymore.
+
+---
+
+This week went by as a blur. I'm not quite sure why but time seemed to move
+faster. I think it might be because of all the meetings I'm in, and the level of
+productivity in doing useful work dropping as a result. I do wish I had more
+time or mental energy to work on `oneitemstore`, but I don't think it's
+appropriate or useful to stress myself out about it. It'll be what it is. In the
+meantime, I think I should probably go ahead and do some work for company in
+order to make up some hours I probably should have done last week, and maybe
+even the week prior. Not sure why things are crazy. I'm still drinking my
+coffee. lol.

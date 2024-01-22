@@ -1,0 +1,103 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "My iPhone Addition"
+date: "2020-02-01T00:00:28-05:00"
+draft: false
+---
+
+I first got a phone when I left for college. It was a "dumb" phone that could
+call and send / receive texts. Technically there were other apps too, but they
+were too clunky to be useful. I remember I just texted garbage to my friends
+because I couldn't be bothered to learn how to use the ten-digit keypad, and
+hoped that they could mentally translate my gibberish into coherence.
+
+At some point in time, I got an iPhone 5, and it was a pretty big change. I had
+real "apps" that I could use. There was a "touch screen". I could use it for so
+much more than just calling and texting.
+
+That phone died when it got dunked into a hot tub. I remember shopping for
+another phone after I finally realized after some number of repairs that I'll
+just be ship of thesus-ing my phone, paying the same or higher amounts for a
+phone that wasn't reliable. I wanted to downgrade to a "dumb" phone because I
+knew I wouldn't not be able to use my phone all the time. My dad wanted me to
+get an iPhone 7 because he wanted an iPhone 7 and the family plan was cheaper.
+
+<br/>
+
+Yes. You read that right. The teenager / college guy _who's a Luddite_.
+
+<br/>
+
+One thing led to another, and now I'm pretty addicted to my iPhone. It's bad.
+According to the [Screen Time](https://support.apple.com/en-us/HT208982) feature
+Apple helpfully releases in order to help you control certain compulsive
+behaviors, Last week (Sunday, January 26th to Saturday, February 1st), I spent
+an average of _6 hours and 12 minutes_ using my iPhone _every day_. That's in
+addition to time I spent on my laptop. On the weekends, I can spend something
+like 9 to 12 hours on my phone.
+
+I'm infuriated that Apple has a "get out of jail free" option for Screen Time,
+where you can continue to work around the limits you set for yourself, and use
+up additional reserves of willpower. I'm infuriated that I need to stay in touch
+with the rest of the world to remain a functioning member of society. Most of
+all, I'm disappointed that I can't control my own impulses.
+
+A few days ago I said enough is enough, and I started looking for electronic
+safes where I can lock my phone up for a certain amount of time with no
+recourse. Some of these electronic safes were traditional "I'm afraid of a
+robber" or "I'm afraid of a fire" safes and their price points reflected that.
+They also had manual emergency keys available to be unlocked which I would have
+to get rid of somehow.
+
+Then I found this product called ["The Kitchen
+Safe"](https://www.thekitchensafe.com/). It's a stout plastic box with a timer
+and an electronic locking mechanism with no recourse, for $60. Wowza! I went
+ahead and purchased one.
+
+---
+
+The first time I used it was today. I locked my phone up for 12 hours.
+
+I _felt_ that withdrawal syndrome. I couldn't do anything, especially after I
+activated all the blockers on my laptop and couldn't access anything fun. I
+pretty much just stayed in bed all day being miserable.
+
+I think at that point, I knew I was doing something right. I should be able to
+survive without my phone. It's ridiculous to think that I couldn't.
+
+Then I realized I had a commitment at 6PM. My phone was locked up until 10:30PM.
+
+---
+
+Okay, so.
+
+No phone. Won't smash container for this commitment.
+
+Call a Lyft or an Uber? No webapp available.
+
+Call friend? Haven't signed into group chat on my laptop, and when I tried, it
+requested my phone number to send a confirmation.
+
+Call a taxi? No phone.
+
+Welp.
+
+I got out my notepad and pen, and drew the map from my house to my friend's
+house. Then I walked one and a half hours to my friend's house in order to play
+board games. It was raining and my notepad got wet, and I crossed out any PII,
+but here it is:
+
+![map](/img/posts/2020/02/01/my_phone_addiction_1.jpg)
+
+Yeah, it rained so my notepad got wet and rumply. Also apparently Home Depot
+only takes CFLs and DeWalt-style integrated batteries for e-recycling, so I
+still need to recycle my e-waste.
+
+---
+
+I think I'll continue to use my Kitchen Safe. I really like how the withdrawal
+syndrome proved to me that I had a problem. Next time though, I might set it for
+6 hours at a time, so that way I can get my phone out if I need it later in the
+day.

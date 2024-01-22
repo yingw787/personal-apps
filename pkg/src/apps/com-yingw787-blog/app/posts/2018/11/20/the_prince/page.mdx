@@ -1,0 +1,51 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2018-11-20",
+    title: "Book Review: "The Prince", by Niccolo Machiavelli",
+    description: "Book Review: "The Prince", by Niccolo Machiavelli",
+    categories: ['Books'],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+> **Real power is, I don't even want to use the word: Fear.**
+>
+> Donald Trump
+
+I've been reading "Introductions to Algorithms, Third Edition", and given how
+it's about 1200 pages long it's going to take quite a while. Since Thanksgiving
+break is this week, I decided to start interweaving some other books into my
+reading routine as I have more time. I picked up "The Prince" as it was a
+cheaper reprint on Amazon, and started reading it on the plane ride home to
+Michigan.
+
+"The Prince" is a surprisingly and delightfully short read, and I think a lot of
+what's been written about it is quite true. Machiavelli detailed to his lord
+what he would need to do in order to ensure his Princedom prospers, and it's not
+things a nice man would do. What did seem rather surprising to me was how
+similar "The Prince" was to other books I have read, such as ["The 48 Laws of
+Power", by Robert Greene](/posts/2017/12/29/laws_of_power), ["From Third World
+to First", by Lee Kwan Yew](/posts/2017/11/15/books_ive_read_this_year), and
+even "The Federalist Papers" by Alexander Hamilton, James Madison, and John Jay
+(I started reading them and haven't finished so there is no review). Machiavelli
+does not do soporifics and he does not do hysterics. He creates arguments based
+on evidence and reasoning. He appreciates the limitations of the Princedom model
+of governance and mentions, with Machiavellian jealousy, some benefits of the
+Republic model of governance, such as the arming of citizens, the sense of
+national identity, and the distributed nature of political power.
+
+Hard times make hard men. Italy in Machiavelli's time was a combustible mixture
+of fiefdoms, made more combustible by foreign interference. I see the potential
+usefulness of Machiavelli's thinking, but it does strike me as a tad desperate.
+Those who are blessed with plenty (such as us living in republics today) may
+have the benefits of thinking bigger. Those who live in our time and don't, such
+as the character in the above quote, will come across as small-minded.

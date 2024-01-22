@@ -1,0 +1,36 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 6th, 2020"
+date: "2020-04-06T10:45:06-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+Ah, to be as carefree as this baby again:
+
+![baby](/img/posts/2020/04/06/morning_pages.jpg)
+
+That would be nice.
+
+---
+
+I think today would be the second quarter of this year, and I should be thinking
+of a new topic to write about for my writer's group. I have one thing I want to
+get off my chest, and I think I'll just write about it so as to forget about it
+and move on with my life. I think it will be healthy.
+
+I think this weekend's been much better than previous weekends. I was able to
+get up and about and do some tasks. Hope this week will be better, especially
+now that I'm planning in periods of relaxation instead of just expecting myself
+to fail and then keep going along that path.
+
+Yeah, not a whole lot to say today. Let's make today worth remembering.

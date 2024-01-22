@@ -1,0 +1,111 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: December 5th, 2020"
+date: "2020-12-05T19:48:56-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+I was going to post a video on a mom cat dragging an almost-adult kitten around,
+but I found this baby deer video and I'll go with this instead.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/12/05/evening_pages_2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+Ahhhhhhhhhhh
+
+---
+
+Today's the first time I've been back to the writer's salon in six months or so.
+I don't remember the last time I've been here. It's kind of crazy. I saw our
+organizer when she passed off instructions in order to lock up the place (since
+I'm only there by myself right now), and it's like somebody coming out from the
+video screen into real life. Feels weird man.
+
+Here's a short video on what it's like here by myself:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/12/05/evening_pages.mov" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+Very nice. Very cozy. Have some coffeeshop music playing on my laptop.
+
+For dinner, I ordered some delivery from a new restaurant I'm trying called
+SeoulSpice. It was a bibimbap rice bowl, with white rice base, bulgogi + extra
+bulgogi, bean sprouts, carrots, corn, cucumber, kale, kimchi, korean radish,
+topped with sesame seeds, scallions, sesame oil, an avocado, a soft-boiled egg,
+with some creamy sriracha sauce and ginger-carrot sauce. It was really good.
+Today almost felt like a normal weekend. 2020 felt far away from the room, and
+this respite was very welcome.
+
+I think there's something about good food that's become exponentially more
+appealing around this time of year. I think early on in the pandemic, I got some
+enjoyment by doing some of the little things I deprived myself of in order to
+get that serotonin boost. Just walking around the school field for a few times
+provided me that serotonin boost, for instance, and I think my mood was
+generally pretty upbeat. Now things are a bit colder, and life feels a bit
+more...2020-ish for lack of a better term. I think here food is something I can
+keep enjoying. It's nice because it just costs money (vs. effort or time), and
+now that tradeoff makes more sense. It's nice because if I do catch COVID, I'll
+be able to notice because I won't be able to taste anything. But mostly, the
+small voice in the back of my mind, which doesn't really speak up or get
+noticed, pops up when I eat a nice steak or something and says that everything
+is going to be okay.
+
+I think one big regret I'm kind of feeling right now is missing out on the
+financial status of the market. I saved up a whole bunch of money all these
+years because I wanted to do a sabbatical and because I thought Trump would tank
+the market, kind of like Bush in '08, whereupon I can buy in. I did not expect
+that $2.3T would just go to wealthy people and circulate in M2 only; so the
+stock market didn't tank. I'm thinking it's possible hyperinflation already took
+place for certain goods, like stocks, but not others, like food, and that's
+what's masking the economic decline of this year. That got me down because I
+thought I wouldn't be able to buy in (I thought I would wait a bit before the
+"flash crash" over a few weeks this March). That and the fact that some people
+got 200,000% returns on TSLA hold options, turning $500 to $1,000,000, and
+jumping out of their current socioeconomic layer in one year. I keep thinking
+maybe if I was smart enough, that would be me and that should be me.
+
+But I also get that it's not a matter of intelligence, it's a matter of guts and
+grit, and that there will be other opportunities (apparently Trump and Mnuchin's
+trying to pull the rug from under the recovery since he didn't win, which might
+result in a recession next year, which may mean I can buy in). But I think I
+don't really care anymore. I don't have much guts around this, so I'd rather go
+with a dollar cost averaging approach anyways. So I bit the bullet, signed up
+for WealthSimple, and am now depositing some amount of money into an investment
+account every week or so. Hope that goes somewhere over the next few years, at
+least to keep up with inflation. Sigh. One key insight is how because banks
+don't have capacity for storing assets anymore, the stock market is pretty much
+the bank for wealthy people (in terms of describing ownership stakes in real
+assets), and increasing income inequality means that the government cares about
+stock market stability almost like it cares about bank stability (bailouts are
+this century's FDIc).
+
+I really wish there was some program where I could invest increasingly large
+amounts of money into the market given X number of declining days + magnitude of
+the decline. Like, if the market dropped 500 points one day, put in $500, then
+if it drops 2000 points, put in $2k in the end of that day. A logistic curve,
+pretty much; set your min/max and the shape of the curve and make sure you have
+enough cash to keep shoving in.
+
+Depressing enough thought. I think I might go work on my technical skills
+instead of talking to myself here. :smile:

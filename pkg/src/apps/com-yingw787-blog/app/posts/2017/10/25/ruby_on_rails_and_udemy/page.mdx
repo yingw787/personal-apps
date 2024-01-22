@@ -1,0 +1,40 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2017-10-25",
+  title: "My Review of Ruby on Rails (and Udemy)",
+  description: "My Review of Ruby on Rails (and Udemy)",
+  categories: ["Software"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+You know that guy who built out our Jenkins server, had it shut down and erased by management, then built out his own ShittyJenkins(TM) in order to automate deployments? If you don't know, that blog post is [here](/posts/2017/10/20/i_dont_hate_javascript).
+
+Management's shutting that down too. They want him to deploy based on manual bash commands, saying it's an "intermediate step" to continuous deployment. The only thing manual bash commands will be an intermediate step to will be him getting another job.
+
+---
+
+I just finished a course on Udemy about Ruby on Rails (if you wish to find it, it's [here](https://www.udemy.com/the-complete-ruby-on-rails-developer-course/)). I thought it would be a good time in order to talk about some of what I've learned about Ruby and Rails (especially when compared with Python and Flask / Django), and about Udemy's platform as well.
+
+First off, the course isn't taught by Rob Percival, as advertised on the course website. Never have I seen his face or heard his voice on this course before. It's all done by [Mashrur Hossain](http://www.mashrurhossain.com/). Don't get me wrong, he is a _great_ teacher. Also don't get me wrong that I think Rob Percival did absolutely nothing for this course. Rob's name lended the course a lot of credibility, and he might have helped in designing the course material or advising Mashrur informally. It does seem a bit misleading though. It's more Kaplan than Aristotle.
+
+Second, the course itself does seem to be slightly outdated. By the time I took the course, Rails already upgraded a full major revision, and that caused problems besides all the upgrades for third-party dependencies that the course depends upon. This isn't the course's fault, this is more my fault for buying it early and taking it eight months later. But one thing that would be nice would be to have a Docker container with the environment set up like the course's, so that you don't have to worry about configuration. This should be a Udemy-wide setting.
+
+---
+
+Now, onto Ruby and Rails. Ruby is a nice language to work with; there aren't too many differences I notice with Python straight off the bat, besides syntax. It does seem to be very weird that _everything_ is an object, even booleans (`TrueClass` and `FalseClass` anyone?). Python is nice because there's a fairly established way of wrapping C++ libraries (e.g. TensorFlow, OpenCV, etc.) with Python bindings, and importing it into a Python package with `pip` or `conda`; I'm guessing that Python figured this out first and had successful adoption is one major reason Python comes out ahead of Ruby.
+
+Rails is nice because you can see how every Rails application is the same. It's a _very_ convention-based framework, and most everything as I know is done through a Ruby gem or through the rails console. When you create a new model, it creates the controllers, the models, the views, and any migrations you might need. `rake db:migrate` is the only command you need in order to run all your migrations. Even the path names are set for you, and Rails will analyze variable names to see what file path it needs to search. Coming from a background in Python and Flask, where everything is set more or less explicitly and loosely, it was a jarring transition. Still, it's really cool to see happen in real life, and I can see how a Rails jobs market is more stable than, say, a Python jobs market; if you have one framework everyone knows and that framework is built using pretty much the same way (and if it doesn't work, then fought the same way), you have developers with predictable aptitude and experience.
+
+---
+
+Udemy itself is a great site. I've taken about nine Udemy courses this year, mostly for React and Redux, and the courses have been fairly good. I would say it's more if you like dipping your toes in the water regarding a subject, because there aren't any assumptions the lecturers really make. It's more Skillshare than Coursera. As long as you know that, Udemy can benefit you.

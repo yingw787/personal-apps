@@ -1,0 +1,181 @@
+---
+authors: ["jordanliu"]
+categories:
+  - Personal
+title: "There is a Magic Button"
+date: "2018-10-03T12:49:49-04:00"
+draft: false
+---
+
+This is a guest post by my friend Jordan Liu. Check out [his
+blog](https://blog.jminjie.com/) for more great content.
+
+---
+
+> There is a magic button, and if you were to push it, then from that moment on
+> nobody would experience the tingly feeling they get when they see someone
+> attractive ever again. They would still be able to recognize attractive
+> features, but that specific sensation would be lost forever.
+>
+> Do you push the button?
+
+I read this question aloud from a laminated card to the circle of people
+gathered around the snack table at a meetup in Berkeley and grabbed a handful of
+chips from the open party-sized bag.
+
+“Obviously yes”, I said after a short pause.
+
+“Why obviously?”
+
+“Because it would help solve a lot of inequality. I feel like people are often
+discriminated against for not being attractive”, I explained. “They have to work
+extra hard to get others to trust them, have worse outcomes when tried for
+crimes, and have a harder time making friends and finding romantic partners. And
+most of the world also acts like this isn’t true. They prefer the comfortable
+lie that the only thing that matters is what’s on the inside, and if your heart
+is beautiful then people will see that beauty. But I don’t think that’s really
+the case.”
+
+An older man to my right jumped in. “Is eliminating inequality a good thing in
+and of itself though? And isn’t removing the tingly feeling of seeing someone
+attractive explicitly limiting the best of us, rather than trying to bring
+others up to that level? I could see pushing a button that made everyone
+extremely attractive, but this is closer to taking away attractiveness
+altogether.”
+
+“I guess I feel like the amount of suffering that would be eased by pushing the
+button outweighs the suffering brought on by the extra work attractive people
+now have to do to be liked.”
+
+“But”, he objected, “it’s not just about suffering. I have an intuition that
+there is something uniquely valuable about that tingly feeling. Sort of like how
+humans appreciate beauty in art and music, and this is agreed upon as something
+that is specific to humans and very special. Taking that away would be like
+taking away the shiver you get when a song connects with you just the right
+way.”
+
+A girl across the table added, “would you push the button if it meant that
+nobody would ever experience the tingly feeling they get when they hear a
+beautiful voice?”
+
+This was par for the course at a meetup for readers of the philosophy blog
+SlateStarCodex. I made a mental note about how much I loved talking about
+questions like this, and the particular discussion styles that marked people who
+were especially good at it -- patterns like the ability to ask questions in
+analogous forms, and the ability to cut straight to the root of disagreements.
+
+“I guess not”, I admitted.
+
+“Is that just because you feel like the amount of inequality resulting from
+variation in voices is not as much as the amount of inequality resulting from
+variation in attractiveness?” she asked.
+
+“That would be consistent, but actually now I’m just questioning my initial
+instinct to push the first button. Maybe I wouldn’t.”
+
+The older man grabbed an Oreo. “But do you think inequality is wrong in
+principle? Let’s suppose everyone in the world starts out looking exactly as
+attractive as each other, and then one day someone is born who is 10% more
+attractive. Are we morally obligated to do everything we can to make them less
+attractive?”
+
+I frowned. “Well… not in that case, but if you add in the fact that there are
+limited resources and all of those people are in competition with each other --
+a competition in which being attractive helps you -- then I don’t think it’s a
+stretch to say that the inequality leads to unneeded suffering. Like, let’s say
+an extremely attractive woman is born who all the men then decide they want to
+compete to woo. They all end up spending all this extra energy on the
+competition that would have otherwise been spent doing important things which
+now don’t get done, so society suffers in that way, first of all. And then
+there’s competition among the women where they all want to be more attractive
+now that the benefits have been made so obvious, so they start spending their
+time trying to get men to want to woo them, so again society suffers. And then
+the world gradually sorts itself into one that is divided into stratas of
+attractiveness where life is best for those who are the most attractive. And now
+if someone is born who is 10% less attractive than the mode then they’ve been
+forced into this lower class and denied privileges they would have had if
+attractiveness didn’t matter so much.”
+
+I looked around the circle to see nods of agreement and picked up another card.
+This one read “what is your craziest sexual fantasy?”
+
+---
+
+The argument that there is something uniquely valuable about the tingly feeling
+of seeing someone attractive is interesting. It’s not unlike the feeling I get
+when I hear beautiful music, or see a beautiful painting. I wouldn’t push a
+button that got rid of those feelings. I wouldn’t push a button that stopped us
+from feeling love.
+
+Societies tend to produce a lot of art once they hit a threshold of being able
+to keep people fed and safe. Some people go so far as to say that things like
+art, music, and love are what give life meaning, that the point of modern
+society is that it gives us leisure time to do with what we please. Born of this
+school of thought is the advice that you should follow your dreams. Do something
+you’re passionate about and you’ll never work a day in your life. And
+reactionarily, the counter-advice, keep your passions separate from your job. Be
+passionate about your hobbies, but pick a job with security that you’re good at
+and that makes you money.
+
+Even so, for many of us with job security and generous wages, the allure of
+following our dreams still tinges every discussion of the future. “Where do you
+see yourself in 5 years?” I’m not sure. Either I will have followed my dreams by
+then, or I will still be doing what I’m doing, and not finding it unenjoyable,
+because how could such a cushy life ever be unenjoyable, but also markedly
+noticing that even though this isn’t bad, it still is not my passion.
+
+One friend jokes about quitting his consulting job to found a startup. Another
+travels the world, “funemployed.” One friend leaves a big tech company to pursue
+stand-up comedy. I see a video of his set on Facebook later -- he’s hilarious.
+Then I go to work and help build a product that a billion people use, with my
+teammates who are basically the smartest and most conscientious people I know.
+And at the end of the day I have a jam session with a bassist who used to play
+music professionally before deciding that having his career be music was slowly
+draining his passion for music. When I grab dinner with him later and tell him
+that in 5 years I will have tried doing music as a job he considers it for a
+moment and says, “given what I know about you, I actually think you would really
+enjoy that.” I think back to what one of my high school teachers once said about
+a career in music: “you have to love it enough to risk hating it.” I think about
+what I would be risking if I did leave my job.
+
+Passion does weird things. It can make it seem admirable to leave a well paying
+and impactful job for a cheap apartment near an arts scene. Romantic, even. If I
+tell you that a successful CEO stepped down from his position at 35, you are
+confused until I mention that he’s really passionate about charity work and
+hopes to shift his focus to doing more of that. Following your passion is kind
+of like the ultimate justification for doing anything, especially things that
+involve a lot of sacrifice. And maybe this is rightly so -- what else could
+possibly pull you away from your good-enough life to try out a
+maybe-better-but-maybe-worse alternative?
+
+Or, more realistically, it’s a maybe-better-but-probably-worse alternative. At
+least for the musicians, artists, and stand-ups. Only a tiny fraction of us ever
+achieve conventional success. Of those who are able to make a living doing what
+we love, even fewer get mega-star levels of fame. And of those who do get
+famous, many will never have as positive an impact on the world as I can have
+doing software engineering on a billion-user product. If I fix a 911 call issue,
+that’s a billion people who now have more reliable emergency services. If in
+addition to that I donate 10% of my income to effective charities, that’s 3+
+lives saved annually. Most doctors don’t save that many lives in a year, and
+their job is literally to save lives.
+
+But, of course, there are worthwhile goals other than the ones which do the most
+good. If your moral compass points another way, as Emerson would argue, you’d
+best follow that compass, because at the end of the day the only person to
+account for your life is you. So maybe the answer is, as Dan Harmon says, to
+only do it if you could spend your whole life doing it without ever “making it”,
+and you would still be happy and feel like that was a worthwhile life. But
+that’s less practical advice and more just a way to calibrate your expectations.
+If you’re doing it to get famous, you’re probably going to burn out before you
+get famous. In other words, if you really have enough passion to fuel a lifetime
+of work, Harmon says go for it. In a way, looking for a career related to your
+passion is a natural consequence of that passion itself.
+
+So let’s say you have a magic button. If you push it, then from that moment on,
+nobody will experience passion ever again. They would still be able to honestly
+evaluate their skills and appreciate well executed art, but the specific feeling
+of drive that leads people to make stupid decisions would be lost forever. They
+would finally be able to plan for their futures in realistic ways, weighing the
+low percent chance of success with the safety of a conventional career.
+
+Do you push the button?

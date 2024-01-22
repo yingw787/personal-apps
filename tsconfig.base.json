@@ -21,7 +21,8 @@
       "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
       "@libs/blog/*": ["pkg/src/libs/lib-ui-blog/src/*"],
       "@libs/mdx-components/*": ["pkg/src/libs/lib-ui-mdx-components/src/*"],
-      "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"]
+      "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"],
+      "@libs/videos/*": ["pkg/src/libs/lib-ui-videos/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

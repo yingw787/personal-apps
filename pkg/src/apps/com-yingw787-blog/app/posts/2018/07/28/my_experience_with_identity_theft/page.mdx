@@ -1,0 +1,107 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-07-28",
+  title: "My Experience with Identity Theft",
+  description: "My Experience with Identity Theft",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Sorry I haven't written too much this month. A very interesting thing happened
+which consumed much of my attention.
+
+So July 5th, I check my Chase savings account. Turns out somebody took $7,800
+out of my Chase savings account with four transactions. That's a goodly amount
+of money. The more interesting thing was that it was a straight ACH transaction,
+with no authorization on my part necessary. It bypassed my username, password,
+and SMS 2FA authorization. Because I do not give out my savings account numbers,
+I did not bother to set up alerts from when savings are transferred from and to
+my savings account, which meant that I did not know about these fraudulent
+transactions for about two days.
+
+I was not happy.
+
+So I called Chase customer support, and they were able to put a restriction on
+my savings account. Then I called Chase fraud prevention and they were able to
+freeze my savings account.
+
+Then the guy started making unauthorized ACH debit pings (those sub-dollar
+transactions to make sure that your bank account number is a valid one) against
+my checking account. So not only is my savings account compromised, so is my
+checking account. And the guy was using the exact same organization ID to make
+those ACH transactions.
+
+So I call Chase Fraud Prevention and had this conversation:
+
+> Me: Hey, so this fraudster is making ACH trial debits and credits against my
+> checking account. He is literally taking money out of my account as we speak.
+> You could catch this guy right now.
+>
+> Chase Fraud Support: We're not going to do that, but rest assured that your
+> money is safe with us.
+>
+> Me: ...alternatively, could you block the organization ID making these ACH
+> trial debits and credits? He's using the exact same one.
+>
+> Chase Fraud Support: We can't block organization IDs, we don't even know at
+> this point whether you authorized these transactions.
+>
+> Me: ...is there anything I can do to protect myself? I already submitted
+> credit freezes, an FTC complaint, and requested credit reports in the event my
+> personal information has been compromised and linked with these bank account
+> numbers.
+>
+> Chase Fraud Support: We don't handle that, that's up to you.
+
+Time to change banks. Honestly, it's not Chase's fault. It's a big bank, fraud
+happens all the time, and I'm sure the people on the other end deal with
+frazzled people like me constantly after going. That being said, this was a
+really big time sink and I don't want to do this again, and just getting my
+money back with no guarantee that this wouldn't happen again is not acceptable.
+It also would be helpful if Chase had physical branches for identity validation,
+or let me know about that [glitch that exposed customer account
+numbers](https://krebsonsecurity.com/2018/02/chase-glitch-exposed-customer-accounts/).
+
+Now I use a different bank, one where I have a physical security key to log into
+my online account, and one that has branches in my location. It also hosts
+wealthier people and is more discreet. I'm happy with it.
+
+In addition to this, I've also been getting these constant robocalls, and my
+uncertainty as to whether my email and other accounts have been compromised led
+to me changing all my private contact information. The migration, which I
+started about 2 weeks ago, took at least 4 full days, is still ongoing. I've
+also found that I'm less in control of emotions than I thought, which was almost
+more disappointing than the theft. You'd think that a guy who's been robbed four
+times would be less and less angry about it, and it might be the case, but I
+still need to work on regulating my emotions more effectively.
+
+So what changes for me going forward?
+
+1. Every financial account that I have going forward I ask for multi-factor
+   authentication with HMAC or U2F. So SMS 2FA if I can help it.
+
+2. All core email accounts are hidden away from the world, and exposed only
+   through a few secondary "burner" email addresses that forward mail through
+   POP. That way I can change emails relatively quickly. It's not great, but
+   it's better than one public email.
+
+3. I'm considering use of 1Password or another cross-platform password manager
+   (I used to rely on KeyChain for macOS, until I wasn't on macOS anymore), but
+   source of truth for passwords will be paper and pencil.
+
+4. The best form of protection is vigilance. So I added a "habit" onto my habit
+   application to check my financial accounts every day without fail.
+
+There's likely a number of steps that I can do in addition to protect myself and
+I will be very interested in such solutions going forward. I just really hope
+that I don't have to do this again.

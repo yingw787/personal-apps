@@ -1,0 +1,20 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: 'Book Review: "Clean Code: A Handbook of Agile Software Craftsmanship", by Robert C. Martin'
+date: "2018-02-11T16:17:25-05:00"
+draft: false
+---
+
+> **Writing clean code is what you must do in order to call yourself a professional. There is no reasonable excuse for doing anything less than your best.**
+>
+> Preface of "Clean Code: A Handbook of Agile Software Craftsmanship"
+
+I can honestly say that after reading "Code Complete", I doubted that any other book would be able to teach me more about writing clean code. I mean, "Code Complete" talked about strategic whitespace (things you can do when you have 900 pages worth of space). "Clean Code" thus surprised me, because it taught writing clean code in a slightly different direction.
+
+For starters, "Clean Code" doesn't presume to teach you about practices across languages. The language used is Java, and a lot of the best practices are for object-oriented languages only. This makes sense because object-oriented languages were and still are big and because there's a lot that can go wrong in object-oriented program design. It doesn't devote chapters to variable naming. It does however, discuss things like the Single Responsibility Principle, Dependency Inversion Principle, and Open Closed Principle, and gives examples of why they should be used and how to use them. Much of the material talked in-depth in "Code Complete" is condensed into one large chapter about code smells at the end of the book.
+
+What was more interesting to me than the things I expected were the things I didn't expect. For example, "Clean Code" discusses how to write clean concurrent code, devoting both a long chapter and an appendix on that topic. It also discusses refactoring with actual Java classes in Java libraries deployed to production, which is something I don't remember "Code Complete" doing. For me at least, there's definitely a lot of value remaining to be tapped by going through this book again.
+
+This book is probably richer than "Code Complete", packing the same or more material into its pages at the risk of losing the reader. Definitely recommend as a reference material to flip through a few times.
