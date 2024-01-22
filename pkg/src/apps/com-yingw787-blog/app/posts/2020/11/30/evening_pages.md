@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 A 15-minute old lamb! Ahhhhhhhhh
 
@@ -22,7 +22,7 @@ A 15-minute old lamb! Ahhhhhhhhh
 
 Might be relevant with December and Christmas and mentionings of lambs going up.
 
-__________
+---
 
 I got my Series 5 Apple Watch today! It's not a bad piece of hardware. Charging
 cable could be a bit longer. Also got a microphone set from company I work for!
@@ -30,7 +30,7 @@ It's a really nice setup, and I could definitely get used to this. I'm a little
 concerned about having a bunch of stuff...but when I look at it, I don't think I
 purchase anything I don't need in some way.
 
-I guess it could be that I *need* it because I put myself in a position to need
+I guess it could be that I _need_ it because I put myself in a position to need
 it. I have a whole bunch of stuff I purchased because I set up my home office a
 few years ago requiring a bunch of cables. I purchased a laptop that doesn't
 have a whole lot of ports. I have to purchase a USB hub in order to funnel all

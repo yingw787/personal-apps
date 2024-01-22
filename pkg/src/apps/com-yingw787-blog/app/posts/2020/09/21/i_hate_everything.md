@@ -35,7 +35,7 @@ all circle the drain of eternity. That seems quaint nowadays, and the future
 looks a good deal spicier.
 
 Maybe I'm just a little bitch and I need to man up, but I'm skeptical things are
-that simplistic. Honestly other people *do* have it worse off than I do. My
+that simplistic. Honestly other people _do_ have it worse off than I do. My
 grandparents and parents lived through WWII in China (not a cakewalk), the Great
 Leap Forward, the Cultural Revolution, Tiananmen Square, and they managed. And I
 don't think I was ever able to "man up" in the conventional sense. I think it's
@@ -58,8 +58,8 @@ now. Just add it on the pile of bad stuff that happens, you know? That and the
 concentration camp nonsense. Have a high level of pain tolerance and you can do
 anything.
 
-Now that's just the problem with this approach, it's always *can*, not *will* or
-*had*. You can't prove that winning gold at the suffering Olympics results in or
+Now that's just the problem with this approach, it's always _can_, not _will_ or
+_had_. You can't prove that winning gold at the suffering Olympics results in or
 is even correlated with a better future. That comes from hard work and focus,
 not to mention a good deal of luck. I guess that's the conflict in me when
 thinking about leaving the country and starting a new life somewhere else.
@@ -70,7 +70,7 @@ because nobody's going to care about you as much as you do, and that just
 doesn't fit with my identity structure. I don't like seeing myself as somebody
 who runs away from his problems. Maybe that's the problem I should be tackling.
 
-__________
+---
 
 Well, I think I finished my bitching and moaning for today. It does feel kinda
 nice to be able to scream into the void until my voice (or my fingertips) are

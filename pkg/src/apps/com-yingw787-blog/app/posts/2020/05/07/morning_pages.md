@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This little kitty is so brave. I wish I was as brave as this little kitty.
 
@@ -27,7 +27,7 @@ This little kitty is so brave. I wish I was as brave as this little kitty.
 
 I definitely have a penchant for videos now. I prefer videos to photos.
 
-__________
+---
 
 I think there's a key difference between make-work and work-work. I have a bunch
 of different things going on at any one time, but how many of them actually help

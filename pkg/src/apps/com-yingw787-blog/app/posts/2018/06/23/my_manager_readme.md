@@ -7,12 +7,12 @@ date: "2018-06-23T23:22:33-04:00"
 draft: false
 ---
 
-**Disclamer**: I am *not* a manager. I am a software engineer, and I am in no
+**Disclamer**: I am _not_ a manager. I am a software engineer, and I am in no
 hurry to be a manager. There's still so much I want to build! I saw
 [managerreadme.com](https://www.managerreadme.com/) while subscribed to
 [softwareleadweekly](http://softwareleadweekly.com/) and thought it was cool.
 
-**Disclaimer**: This is *not* an expression for or against companies or managers
+**Disclaimer**: This is _not_ an expression for or against companies or managers
 I am working under or have worked under in the past, but rather a document
 solely for my self-introspection and self-improvement.
 
@@ -23,7 +23,7 @@ a North Star for my hypothetical management habits.
 This is intended to be a living document and subject to change at any time
 without discrete corrections.
 
-__________
+---
 
 # Hi, I'm Ying!
 
@@ -35,7 +35,8 @@ Go ahead and take your time to meet everyone on the team, write things down, and
 ask lots of good questions. It'll take at least 3 months for us to garner the
 most basic understanding of each other, so don't stress about the little things.
 Just be your best self.
-__________
+
+---
 
 ## Tenets of My Management Philosophy
 
@@ -50,7 +51,7 @@ __________
 - I **trust people unless proven otherwise**. I find trust to be the cornerstone
   of most if not all healthy work relationships. As your manager, you should
   expect me to treat you and your trust in me as one of my top priorities,
-  *period*. You and I should both be at our happiest when I give you what you
+  _period_. You and I should both be at our happiest when I give you what you
   need to do your job and then get out of your way.
 
 - I like **treating people fairly, politely, and positively**. I much prefer
@@ -96,7 +97,7 @@ __________
   and shallow minds talk about people. You should not expect me to encourage or
   spread rumors, gossip, or innuendo. In fact, you should expect the opposite.
 
-__________
+---
 
 ## What to Expect
 
@@ -132,7 +133,7 @@ should treat working at this company as a marathon, and not a sprint.
   do not stop with repeated warnings, I may ask for your resignation.
 
 - If you know you can only work X < 40 number of hours, but you are able to
-  complete 40 hours worth of work (as estimated by the team), I *may* be able to
+  complete 40 hours worth of work (as estimated by the team), I _may_ be able to
   give you 40 hours of pay and let you take the rest of the time off depending
   on the circumstances. I strongly believe that you should have a choice between
   career improvement and work-life balance. I would only encourage this if you
@@ -148,7 +149,7 @@ should treat working at this company as a marathon, and not a sprint.
 single reasonable thing that will make or break you in my eyes. I'll give you
 plenty of heads-up if I am worried about your performance.
 
-__________
+---
 
 ## Your Week
 
@@ -165,7 +166,7 @@ __________
   priority. The meeting will continue until both you and I have addressed our
   concerns, and no longer.
 
-__________
+---
 
 ## Meeting Protocol: 1:1s
 
@@ -181,7 +182,7 @@ whole, etc. It's up to you. This is your space and your time.
 tea, meet in a conference room, or head out for a walk, just let me know what
 works best.
 
-__________
+---
 
 ## Feedback
 
@@ -195,7 +196,7 @@ expect me to treat it as above. I will ask for feedback on how I can do better
 during my 1:1s, and will continue to ask even if you don't have any feedback for
 me.
 
-__________
+---
 
 ## Meeting Protocol: Groups
 
@@ -230,7 +231,7 @@ the meeting and hand that time back to everyone.
 If it's clear a meeting will not meet its objectives, let's stop the meeting and
 determine how to finish the meeting later.
 
-__________
+---
 
 ## Forms and Priorities of Contact
 
@@ -244,7 +245,7 @@ communication (cell, in-person) for urgent requests.
 If I am traveling, I will give notice of said travel in advance. All of our
 meetings still occur albeit with time zone considerations.
 
-__________
+---
 
 ## Inspired By
 

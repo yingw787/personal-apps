@@ -1,21 +1,20 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-08-01",
-    title: "Moving to Hugo",
-    description: "Moving to Hugo",
-    categories: ['Others'],
+  author: "Ying Wang",
+  date: "2017-08-01",
+  title: "Moving to Hugo",
+  description: "Moving to Hugo",
+  categories: ["Others"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
 
 Well, it's been quite some time since I last posted here. I've found that my velocity in learning new things over these past few weeks has decreased rather dramatically. Some issues of note:

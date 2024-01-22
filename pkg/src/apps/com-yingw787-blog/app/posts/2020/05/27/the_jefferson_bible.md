@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Jefferson Bible\", by Thomas Jefferson"
+title: 'Book Review: "The Jefferson Bible", by Thomas Jefferson'
 date: "2020-05-27T00:00:00-04:00"
 draft: false
 ---
@@ -13,8 +13,7 @@ draft: false
 > Psalms 23:4
 
 I'm a Christian, technically speaking. Technically speaking, because I have a
-hard time going to church, reading the Bible, and "toeing the party line" on
-\***checks notes**\* pretty much everything. I very much enjoy dancing to the
+hard time going to church, reading the Bible, and "toeing the party line" on \***checks notes**\* pretty much everything. I very much enjoy dancing to the
 beat of my own drum, and that's about as much as I want to say on that subject
 publicly without unnecessarily offending people.
 
@@ -46,9 +45,9 @@ fulfilled anyways), no miracles, just words straight from the horse's mouth.
 
 I finished reading it, and it's quite fascinating.
 
-__________
+---
 
-So Jesus talks *a ton* about money and personal finances. Like a furious amount.
+So Jesus talks _a ton_ about money and personal finances. Like a furious amount.
 It's not all what you might expect, either. Sure, there's the passages about
 giving up everything and following him and stuff. But in his parables, he also
 talks about...inequality and unfairness:
@@ -79,13 +78,13 @@ politician who does the easy thing instead of the right thing, the corruption of
 faith into a drive for wealth and power by the few, the hope for change through
 action, (e.g. the woman nagging the corrupt judge into granting a fair
 judgement), the importance of heart in making decisions (camel eye of needle
-rich person vs. Zacchaeus who was welcomed by Jesus despite *only* giving away
+rich person vs. Zacchaeus who was welcomed by Jesus despite _only_ giving away
 half of his wealth), all of it just as revelant today as it was two thousand
 years ago. You can kind of understand Jefferson's philosophy too, why he wanted
 the United States to be a pastoral, agrarian state instead of an industrialized,
 moneyed great power. It's really an amazing read.
 
-__________
+---
 
 I kind of wish there was a New International Version (NIV) translation of the
 Jefferson Bible, maybe with the additional tips found in study bibles. It would

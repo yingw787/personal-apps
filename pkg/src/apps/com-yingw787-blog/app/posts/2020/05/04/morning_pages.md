@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Oh look, a Pokemon!
 
@@ -21,7 +21,7 @@ Oh look, a Pokemon!
 
 Really like the quality of that mask, looks professionally 3D-printed.
 
-__________
+---
 
 I think I have three layers of website blocking on my laptop:
 RescueTime/FocusTime, Leechblock as a Firefox extension, and system-level

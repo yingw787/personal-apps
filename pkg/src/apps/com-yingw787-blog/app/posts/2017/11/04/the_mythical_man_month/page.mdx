@@ -1,4 +1,3 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
@@ -10,14 +9,13 @@ export const article = {
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 I finished reading "The Mythical Man-Month, 20th Anniversary Edition", by Fred Brooks. It's amazing how much of the advice and knowledge in this book translates one-for-one to today's software engineering practices. This is because like art, software engineering is as much of a social as it is a technical affair.
 
@@ -27,14 +25,14 @@ Here are my takeaways from "The Mythical Man-Month" that I have seen in my day-t
 
 - In order to get the best code possible, you should aim to build the smallest team necessary for the task. In this way, conceptual integrity is most likely to be preserved and the fewest network effects observed.
 
-- Never neglect the quality of support duties, such as documentation or onboarding new hires. The best software engineers, ironically, want to write code that makes them as easily replaceable as possible. The best managers, not so ironically, see those software engineers as *irreplaceable*. The best companies hire people just to maintain their documentation.
+- Never neglect the quality of support duties, such as documentation or onboarding new hires. The best software engineers, ironically, want to write code that makes them as easily replaceable as possible. The best managers, not so ironically, see those software engineers as _irreplaceable_. The best companies hire people just to maintain their documentation.
 
 - Formalized requirements and schedules are key in order to make the best decision possible. A six-month project with time granted day by day lead to a far different project than a six-month project allocated in advance. One is a series of bugfixes and patches. The other should be a work of art.
 
 - The best teams formalize a set of tools to be distributed and used across the company (see Facebook for React, Google for {Tensorflow, Borg, Spanner, MapReduce}, Netflix for Chaos Monkey, etc.)
 
-- There are no ways in order to "really" measure the productivity of a software team in an actionable way. Metrics, once established, are circumvented. The *only* way in order to more or less guarantee software quality is to *ensure* that candidates that pass your hiring pipeline are excellent **AND** the onboarding transition is as seamless as possible **AND** that the requirements of their work is accurately communicated to them **AND** that those requirements are not compromised *in any way*. The man-month is a myth, and will remain so for the foreseeable future.
+- There are no ways in order to "really" measure the productivity of a software team in an actionable way. Metrics, once established, are circumvented. The _only_ way in order to more or less guarantee software quality is to _ensure_ that candidates that pass your hiring pipeline are excellent **AND** the onboarding transition is as seamless as possible **AND** that the requirements of their work is accurately communicated to them **AND** that those requirements are not compromised _in any way_. The man-month is a myth, and will remain so for the foreseeable future.
 
-- It is *extremely* difficult to guarantee that production code is 100% quality. Oftentimes, the cost is just not worth it. 90% or 95% of the way there will do just fine, and that is much more attainable.
+- It is _extremely_ difficult to guarantee that production code is 100% quality. Oftentimes, the cost is just not worth it. 90% or 95% of the way there will do just fine, and that is much more attainable.
 
 One thing I appreciated about the 20th Anniversary Edition in particular was the author's acknowledgements of his own mistakes. For example, on the subject of team communication, he eventually accepted [David Parna's](https://en.wikipedia.org/wiki/David_Parnas) assertion that information-hiding leads to a better product because of increased reliance and development of internal APIs. I have found that to be more or less true in practice; it has been much easier for me to bring other developers up to speed with my work when I build out a narrow API interface than when I develop on a highly complex one (I have not tried building my own highly complex public API, and I don't wish to find out).

@@ -14,13 +14,13 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 Look at these little guys! Aren't they just the cutest?
 
 ![baby friends](/img/posts/2020/03/29/morning_pages.jpg)
 
-__________
+---
 
 I think I've found value from this blog just writing drafts and not publishing
 them. There isn't a morning pages publication from yesterday because I was going

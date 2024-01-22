@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2019-12-31",
-    title: "Year in Review: Sleep",
-    description: "Year in Review: Sleep",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2019-12-31",
+  title: "Year in Review: Sleep",
+  description: "Year in Review: Sleep",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 So last year I did a (IMHO) comprehensive review of many metrics I had been
 tracking over the course of the entire year. I wanted to do the same thing this
@@ -39,12 +37,12 @@ did.
 
 (Please open image in new tab to see in full)
 
-![sleep](/img/posts/2019/12/31/old_years_review_sleep_1.png)
+[sleep](/img/posts/2019/12/31/old_years_review_sleep_1.png)
 
 Here's the machine-readable data dump of my sleep log,
 [here](/misc/posts/2019/12/31/sleep.csv).
 
-__________
+---
 
 I'm just eyeballing this, but it appears to me that there's much greater
 variation in terms of the time I wake up and get up every day. I don't think

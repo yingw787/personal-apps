@@ -9,7 +9,7 @@ draft: true
 
 What if I extended my sabbatical?
 
-__________
+---
 
 This question doesn't follow me around like a ghost. But it does pop into my
 head every so often. Like, if I made my sabbatical a year and some change,
@@ -52,7 +52,7 @@ great "culture fit" at a company if I got cancer, or this COVID-19 thing pretty
 strongly, which would then take away my health insurance and result in a
 lifetime of debt and inextricable physical / financial suffering.
 
-__________
+---
 
 Of course, I think I'll probably just "walk" if a company made me go back into
 the office now. But I don't think it's unreasonable for a company to make us go
@@ -83,7 +83,7 @@ to the mean. During the Plague of Justinian, people had to pay taxes for their
 dead family members, and that to finance a war overseas for the glory of the
 Byzantine emperor, not for some cure or anything benefiting people.
 
-__________
+---
 
 So I don't expect too much from other people, because frankly I don't control
 them. They are free to do as they wish. What I'm concerned about is what I'm
@@ -104,11 +104,11 @@ I'd like to be wealthy, or have multiple income sources, so that I'll never need
 to worry about health insurance. And to get that, I need capital. I need to
 accumulate capital. And I don't have any at the moment.
 
-__________
+---
 
 Not sure if I'm overly complaining, or if I'm just being dramatic, or if
 everything is kind of playing out the way I had foreseen. But I need to do
-*something* in order to change up my BATNA. I'm sick and tired of being a loser.
+_something_ in order to change up my BATNA. I'm sick and tired of being a loser.
 I'm tired, and I want things to change.
 
 But how do I get there?

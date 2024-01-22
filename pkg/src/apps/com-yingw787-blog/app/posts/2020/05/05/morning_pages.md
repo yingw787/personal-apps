@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Cute kitty video! With sound! `gfycat` on web is a much better experience than
 `gfycat` on mobile, or at least it's better with more CPU and more RAM:
@@ -26,9 +26,9 @@ Cute kitty video! With sound! `gfycat` on web is a much better experience than
 <br/>
 <br/>
 
-__________
+---
 
-So we got a prompt today, *what is your favorite or least favorite emotion*, and
+So we got a prompt today, _what is your favorite or least favorite emotion_, and
 Ali posted [this feelings wheel](http://feelingswheel.com/) where we can
 describe where we are. I think my favorite emotion is "courageous", and the
 worst emotion is "apathetic". I like being able to push deeper into things, and
@@ -52,7 +52,7 @@ I wonder if the innocence that leads to curiosity can really ever come back, or
 whether we have to craft it in a lab in the mind like some sort of Frankenstein.
 I guess we'll just never know, unless we have the courage to push forwards.
 
-__________
+---
 
 To finish off morning pages, here's a poem by [Reddit user
 u/SchnoodleDoodleDo](https://www.reddit.com/user/SchnoodleDoodleDo/) on [this

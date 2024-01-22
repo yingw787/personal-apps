@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This is delicious:
 
@@ -29,7 +29,7 @@ Well, maybe not. There's an interesting new video format called `.m3u8`, and I
 haven't really figured out how conversion to `.mp4` will work. Instead I've been
 using an online video conversion tool.
 
-__________
+---
 
 This weekend has been...uneventful I'd say. Time is definitely blending
 together, and it's difficult to concentrate on what matters. What I really

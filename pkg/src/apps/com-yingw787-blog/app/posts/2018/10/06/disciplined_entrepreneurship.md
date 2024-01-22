@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Disciplined Entrepreneurship\", by Bill Aulet"
+title: 'Book Review: "Disciplined Entrepreneurship", by Bill Aulet'
 date: "2018-10-06T01:30:18-04:00"
 draft: false
 ---
@@ -32,7 +32,7 @@ some hard numbers entrepreneurs should respect, for example:
 
   $$ \frac{LTV}{COCA} >= 3 $$
 
-- The actual COCA is usually *10-20x* initial estimates.
+- The actual COCA is usually _10-20x_ initial estimates.
 
 In addition, the book also has some great general advice:
 

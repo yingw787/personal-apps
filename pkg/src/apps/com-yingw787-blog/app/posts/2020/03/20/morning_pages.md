@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 1 million dead in Madrid by June. Apparently, that's one realistic estimate
 right now. A 100x increase in intubator orders and I'm guessing nowhere near the

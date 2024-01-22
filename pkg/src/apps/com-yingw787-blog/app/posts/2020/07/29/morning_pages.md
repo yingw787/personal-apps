@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Ahh he can climb sideways!
 
@@ -26,7 +26,7 @@ Ahh he can climb sideways!
 <br/>
 <br/>
 
-__________
+---
 
 I think this morning I'm feeling tired. I slept too late yesterday, and I woke
 up automatically, nervous around the whole starting a new job thing. I think

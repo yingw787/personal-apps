@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 ![snoot](/img/posts/2020/07/30/morning_pages.jpg)
 
 Need I say more?
 
-__________
+---
 
 Yesterday went well! I stayed productive, my coworkers are really cool, and the
 tech seems a few grades up from what I'm used to. I'm also pretty happy that I

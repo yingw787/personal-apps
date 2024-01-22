@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 So smol.
 
 ![smol](/img/posts/2020/12/26/morning_pages.webp)
 
-__________
+---
 
 Well I'm sad to say that I didn't escape 2020 intact. No, I don't think I have
 COVID. But I did dun goof up my haircut:

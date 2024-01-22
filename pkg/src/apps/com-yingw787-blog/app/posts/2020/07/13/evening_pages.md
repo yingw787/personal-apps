@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Man, it's been a while since I've written here. Hence I'm trying to find the
 cutest animal picture / video from this week, instead of just from today.
@@ -33,7 +33,7 @@ I wonder whether cat toys are made not because cats enjoy it, but because people
 do. That has to be why, I don't think I've seen a cat enjoy a cat toy more than
 a human.
 
-__________
+---
 
 I'm pretty frustrated with myself. I think I say this usually, but today and
 recently I've been feeling the heat much more. My sabbatical kind of went off
@@ -45,14 +45,14 @@ never really got started on...), to a consulting agency thing that hasn't gotten
 off the ground yet, to building out a demo SaaS that I'm having trouble with
 because I can't get a friggin' side menu bar to collapse properly.
 
-The kicker? *I haven't shipped any of these*. Besides throwing up a landing
+The kicker? _I haven't shipped any of these_. Besides throwing up a landing
 page, an email address, sending out some cold emails (that haven't gotten
-returned), and maybe doing some amount of development (plus a *lot* of devops),
+returned), and maybe doing some amount of development (plus a _lot_ of devops),
 I don't have too much to show in production since...late January.
 
 ![awkward](/img/posts/2020/07/13/evening_pages_2.jpg)
 
-__________
+---
 
 I don't think this just happened. I think one goal of mine was almost this exact
 situation, to exhaust myself against the impossibility of doing everything
@@ -80,7 +80,7 @@ a private subnet with a NAT gateway. A lot of technical gobbledygook, and what
 it means is that you're looking to spend about $50 / mo. on AWS if you want to
 "do things right" (follow generalized devops best practices). Which is far out
 of budget for me. Whereas Heroku would cost $15 / mo. and have services up and
-ready to go. *Heroku is price-competitive with AWS*, in fact Heroku is priced
+ready to go. _Heroku is price-competitive with AWS_, in fact Heroku is priced
 even better than AWS, for Internet-facing services. I don't think I could have
 believed that statement just a few months ago. The vendor lock-in isn't real, if
 you have a container. How can it not be real??
@@ -89,7 +89,7 @@ If you have a public API, and you can't use CORS in order to limit who can ping
 your API, you'll have random pings from random crawlers just trying different
 things. And who knows, maybe one day they'll get through to the admin page and
 hold your data ransom. So you need something like AWS Web Application Firewall,
-which charges $5 / mo. for *one* web ACL rule. When I see what the true cost of
+which charges $5 / mo. for _one_ web ACL rule. When I see what the true cost of
 hosting is like, it makes the value proposition for a managed service much, much
 more attractive.
 
@@ -101,7 +101,7 @@ first. So yeah, I have to write a small quantity of "good" code (the definition
 of which changes every so often), only after doing compulsive research on what
 good and bad is.
 
-__________
+---
 
 I think it's dangerous to get into a spiral of negative thinking, so what are
 some good things that came out of this sabbatical? Hmmm...
@@ -132,7 +132,7 @@ What else is nice. It's cool learning things people need. I'm much less
 terrified about finding a job this time around than I was previously. Mostly
 because I've kind of stopped giving a shit about finding the "best" job, but
 also because I know I can kind of stand my ground on some things. I've gone out,
-I've made a *little* money on my own doing some contracting, and you know what?
+I've made a _little_ money on my own doing some contracting, and you know what?
 I have a base level of self-worth, because I'm fundamentally sick of being
 stepped on. So I'm going to ask for what I want, and I'll allow myself to want
 what I want (and I don't even want all that much). I think I have a leg to stand

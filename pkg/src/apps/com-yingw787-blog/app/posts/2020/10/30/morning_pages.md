@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 A FLUFFY COW!!
 
@@ -23,7 +23,7 @@ A FLUFFY COW!!
 I wonder how they maintain their coats, but this is somehow better than those
 black cows I saw over in Taiwan.
 
-__________
+---
 
 I just realized yesterday that another week had gone by (...since last week) and
 I didn't learn the song for ukelele I promised I'd learn yet. Luckily, I managed

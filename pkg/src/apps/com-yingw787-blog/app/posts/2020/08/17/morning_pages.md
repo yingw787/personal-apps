@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I sleep again now fren.
 
@@ -26,7 +26,7 @@ I sleep again now fren.
 <br/>
 <br/>
 
-__________
+---
 
 Another week has started! I have no idea where this weekend went, but I do know
 I finished binging "Parks and Rec" Season 5! I think I'm starting to dream about

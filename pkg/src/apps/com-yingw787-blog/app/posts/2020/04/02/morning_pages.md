@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 So yesterday, discovered that not only did my habit tracker app update (against
 my will, again), it also broke a number of habits (again), and I have to

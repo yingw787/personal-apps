@@ -37,7 +37,7 @@ a la Tiananmen Square. So that's nice.
 
 ![change we can believe in](/img/posts/2020/06/27/winning_3.png)
 
-__________
+---
 
 This year isn't over, and I'm not saying things will always be bad, but I do
 think it's important to consider the future given some hard truths. I don't
@@ -49,7 +49,7 @@ coming years to Black Swan events of a more frequent and intense nature.
 How do you plan your lives around that? How do you live your life with
 confidence? I struggle with this question, even as my life passes me by.
 
-__________
+---
 
 What I've come to realize is my happiness derives from my relationship to the
 truth. For the longest time, I thought that the truth was my friend. But friends

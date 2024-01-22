@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"The Game: Penetrating the Society of Pickup Artists\", by Neil Strauss"
+title: 'Book Review: "The Game: Penetrating the Society of Pickup Artists", by Neil Strauss'
 date: "2018-06-17T10:59:40-04:00"
 draft: false
 ---
@@ -64,7 +64,7 @@ character traits:
   a relationship
 
 - The ability to lose the girl and still wake up before noon the next day
-  ___________
+  ***
 
 I don't exactly regret purchasing this book, but this is probably the least
 relevant book I've read about relationships thus far. The audience is different

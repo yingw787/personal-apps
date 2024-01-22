@@ -15,9 +15,9 @@ applies greatly to building quality products and quality businesses, which are
 two things I've been wanting to get into more. The story of Roman roads brings
 me solace that those two qualities contribute most to greatness.
 
-The thing about Roman roads is that they're *straight*. Roman roads were built
+The thing about Roman roads is that they're _straight_. Roman roads were built
 primarily for the military and the government, in order to improve logistics in
-times of war or unrest. The Romans knew *logistics wins wars*. Marching armies
+times of war or unrest. The Romans knew _logistics wins wars_. Marching armies
 take more time and energy marching around curves in formation. They're more
 susceptible to enemy attack around bends they cannot see around. Perhaps most
 crucially, slower communications implies weaker and sparser intelligence about
@@ -53,7 +53,7 @@ I hear a lot about the Romans, both from those that liked it and those that
 hated it. I don't hear much about the Sasanians at all, despite the fact that
 they accelerated the downfall of the Roman Empire.
 
-__________
+---
 
 I realized I'm not a very creative person. I'm not good at all with puzzles,
 especially puzzles where I don't have a stake in either winning or losing. I'm
@@ -79,7 +79,7 @@ the guy who will pick one deer from a herd and walk a hundred miles to go get
 that specific deer, regardless of the other deer or the other food present along
 the way.
 
-__________
+---
 
 For me, this is a big reason why I want to invest in things that don't change. I
 can be methodical only using methods and tools that don't break on me in

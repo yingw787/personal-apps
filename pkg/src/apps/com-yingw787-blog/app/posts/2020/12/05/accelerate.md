@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Accelerate: Building and Scaling High Performing Technology Organizations\", by Nichole Forsgren, Jez Humble, and Gene Kim"
+title: 'Book Review: "Accelerate: Building and Scaling High Performing Technology Organizations", by Nichole Forsgren, Jez Humble, and Gene Kim'
 date: "2020-12-05T19:16:48-05:00"
 draft: false
 ---

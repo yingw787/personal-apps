@@ -14,10 +14,10 @@ scrolled more on the page. Besides, other people have beaten that horse already.
 
 You may find my unholy lack of respect for the man disturbing, especially for
 somebody who helped make my field and career possible. That's the point. Max
-Planck was, in many of the most important things in life, ***an utter
-failure***.
+Planck was, in many of the most important things in life, **_an utter
+failure_**.
 
-__________
+---
 
 Max Planck worked hard and endured, like a good citizen. When his wife Marie
 died, Max Planck endured. When his oldest child Karl was killed in World War I
@@ -29,7 +29,7 @@ You might be thinking that this is a lot for one man to endure, and it is.
 Weaker men than Max Planck would strain and break under the stress. Problem is,
 if you don't strain and break, you start getting used to the suffering, and it
 cripples your ability to respond to bad situations, especially those of a Black
-Swan nature. You become *too* Stoic, *too* accomodating. You've survived this,
+Swan nature. You become _too_ Stoic, _too_ accomodating. You've survived this,
 so you'll survive that, right?
 
 Melvil Dewey once said "when a tree ceases to grow, it begins to rot". And so it
@@ -48,9 +48,9 @@ Germany. When the Nazis attacked Planck for teaching "Jewish science", Max
 Planck resigned his posts like they told him to.
 
 Max Planck endured, [like a good
-citizen](https://en.wikipedia.org/wiki/Boxer_(Animal_Farm)).
+citizen](<https://en.wikipedia.org/wiki/Boxer_(Animal_Farm)>).
 
-__________
+---
 
 The problem with being smart is that you surround yourself with smart people,
 oftentimes people smarter than yourself. This is a problem because smart people
@@ -69,32 +69,32 @@ So as a Hail Mary, Max Planck wrote to Hitler pleading for his son's life.
 Here's the letter, taken from [this secondary
 source](https://grahamfarmelo.com/max-planck-letter-hitler-discovered/):
 
-__________
+---
 
 ![letter](/img/posts/2020/06/13/planck.jpg)
 
 From the same secondary source, the translated letter reads:
 
->My Führer!
+> My Führer!
 >
->I am most deeply shaken by the message that my son Erwin has been sentenced to
->death by the People’s Court.
+> I am most deeply shaken by the message that my son Erwin has been sentenced to
+> death by the People’s Court.
 >
->The acknowledgement for my achievements in service of our fatherland, which
->you, my Führer, have expressed towards me in repeated and most honouring way,
->makes me confident that you will lend your ear to an imploring 87-year old.
+> The acknowledgement for my achievements in service of our fatherland, which
+> you, my Führer, have expressed towards me in repeated and most honouring way,
+> makes me confident that you will lend your ear to an imploring 87-year old.
 >
->As the gratitude of the German people for my life’s work, which has become an
->everlasting intellectual wealth of Germany, I am pleading for my son’s life.
+> As the gratitude of the German people for my life’s work, which has become an
+> everlasting intellectual wealth of Germany, I am pleading for my son’s life.
 >
->Max Planck
+> Max Planck
 
-__________
+---
 
 What was Max Planck's mistake? Besides his entire response to the Nazis, by
 pleading for his son's life on the basis of his reputation, Max Planck crossed a
-fundamental rule of power. He assumed that *because of his past accomplishments,
-he's somehow owed something by those in power he benefited*. By expending
+fundamental rule of power. He assumed that _because of his past accomplishments,
+he's somehow owed something by those in power he benefited_. By expending
 himself in his work, Planck actually gave away any negotiating lever he might
 have had. If Hitler and the Nazis were rational (a questionable assumption under
 the circumstances), they would have assumed if he's begging like this, he's
@@ -133,7 +133,7 @@ principles (Einstein on pacifism, for instance).
 
 But hey, we named a constant after Max Planck, so I'm sure that makes up for it.
 
-__________
+---
 
 I don't rag on Max Planck for shits and giggles. Rather, I see myself in him.
 Max Planck, like us, lived in interesting times, and he suffered for it by
@@ -166,7 +166,7 @@ under a need to pay protection money and explicit bribes on top of my taxes and
 all time. And everything in our world, even peace, prosperity, truth, comes to
 an end.
 
-__________
+---
 
 You might be asking why given such a nihilistic worldview, I bother getting up
 in the morning. Maybe this joke can help:
@@ -183,5 +183,5 @@ Just because something's impossible, doesn't mean it's not worth doing. Duct
 tape, baling wire, and chewing gum might not be a perfect solution to problems,
 but they do a good enough job. Every veteran programmer knows that. So that's
 why it's useful to learn how to kick cans down the road, and move mountains with
-a lonesome bucket and shovel. If staying where you are isn't an option, *and it
-isn't*, why not get up and do something about it?
+a lonesome bucket and shovel. If staying where you are isn't an option, _and it
+isn't_, why not get up and do something about it?

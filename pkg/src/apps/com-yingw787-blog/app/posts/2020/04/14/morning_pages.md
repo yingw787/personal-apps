@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look at these two! Parent and baby! So smol, so adorable.
 
@@ -21,7 +21,7 @@ Look at these two! Parent and baby! So smol, so adorable.
 
 I'll take both :smile:
 
-__________
+---
 
 You know, after this past weekend, I thought things were going to be terrible.
 Maybe it is for the world, but I've surprisingly recovered much better than I
@@ -34,7 +34,7 @@ after the storm? Who knows.
 
 Today's also good for a number of other reasons. Made steak for a second day in
 a row, along with eggs, and while it wasn't great, I learned a lot of lessons
-(overcooked it, *don't* add extra oil or you will set off the fire alarm, garlic
+(overcooked it, _don't_ add extra oil or you will set off the fire alarm, garlic
 doesn't brown it blackens and chars, cook the eggs before cooking the steak). I
 also got 64GB of RAM, which I successfully added to my laptop and which the OS
 successfully registered. Hopefully that puts an end to the Firefox issues for

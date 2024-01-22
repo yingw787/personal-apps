@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Today I'm feeling rather afraid. Afraid of what, it's hard to say, but it's not
 like there's any shortage of things to be afraid about. I think my challenge is

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This is a nice doggo.
 
@@ -28,7 +28,7 @@ This is a nice doggo.
 Apparently Reddit uploads iOS videos as `.m3u8` format, which are tricky to
 handle and to convert to `.mp4`. I like gfycat now.
 
-__________
+---
 
 It's Friday, and another week gone. Time is passing by insanely quickly for me
 and I wish I could slow it down somehow. I could use the extra time. The hourly

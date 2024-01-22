@@ -2,19 +2,19 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets\", by Nassim Nicholas Taleb"
+title: 'Book Review: "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets", by Nassim Nicholas Taleb'
 date: "2020-07-16T19:14:17-04:00"
 draft: false
 ---
 
 The Incerto Series:
 
--   [The Black Swan](/posts/2020/04/09/the_black_swan)
--   [Antifragile](/posts/2020/05/06/antifragile)
--   [**Fooled by Randomness**](/posts/2020/07/16/fooled_by_randomness)
--   [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
+- [The Black Swan](/posts/2020/04/09/the_black_swan)
+- [Antifragile](/posts/2020/05/06/antifragile)
+- [**Fooled by Randomness**](/posts/2020/07/16/fooled_by_randomness)
+- [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
 
-__________
+---
 
 ![buy/sell](/img/posts/2020/07/16/fooled_by_randomness_1.png)
 
@@ -31,35 +31,35 @@ in more situations than you may predict.
 
 There's three lessons I took away from this book:
 
--   **Events in "higher-order" matters like finance, economics, and business are
-    highly epistemic.** Professor Taleb makes much of quants who believe too
-    much in connecting economic theory with market dynamics, and who
-    consequently lost everything and got thrown out of their companies. There
-    *is* no all-encompassing economic theory -- the more complicated a theory
-    is, the more likely it'll be caught by the next Black Swan. For these kinds
-    of fields, you only know what you know, extrapolate at your own risk.
-    Therefore, always put stop losses on your bets, both in trading and in life,
-    in order to de-risk any downsides. Also, keep your theorems simple;
-    Professor Taleb recommends using a "Monte Carlo toy" in order to run
-    probabilistic simulations of any given bet.
+- **Events in "higher-order" matters like finance, economics, and business are
+  highly epistemic.** Professor Taleb makes much of quants who believe too
+  much in connecting economic theory with market dynamics, and who
+  consequently lost everything and got thrown out of their companies. There
+  _is_ no all-encompassing economic theory -- the more complicated a theory
+  is, the more likely it'll be caught by the next Black Swan. For these kinds
+  of fields, you only know what you know, extrapolate at your own risk.
+  Therefore, always put stop losses on your bets, both in trading and in life,
+  in order to de-risk any downsides. Also, keep your theorems simple;
+  Professor Taleb recommends using a "Monte Carlo toy" in order to run
+  probabilistic simulations of any given bet.
 
--   **Non-linearities remain pervasive.** On pg. 173, Professor Taleb mentions
-    building a sandcastle higher and higher, until it collapses. Ultimately,
-    this collapse can be rooted to placing one more grain of sand in the wrong
-    place, a linear action that caused a non-linear reaction. Yet the material
-    difference between that grain of sand and any other grain of sand is small,
-    if existent. Any grain of sand, including those placed previously, could
-    have caused the tower to fall. Therefore, it is impossible to know which
-    single grain of sand caused the collapse, and impossible to protect yourself
-    from said grain of sand. You could say something similar for the specific
-    trade that caused the 2008 recession, or the specific animal that caused the
-    current coronavirus pandemic.
+- **Non-linearities remain pervasive.** On pg. 173, Professor Taleb mentions
+  building a sandcastle higher and higher, until it collapses. Ultimately,
+  this collapse can be rooted to placing one more grain of sand in the wrong
+  place, a linear action that caused a non-linear reaction. Yet the material
+  difference between that grain of sand and any other grain of sand is small,
+  if existent. Any grain of sand, including those placed previously, could
+  have caused the tower to fall. Therefore, it is impossible to know which
+  single grain of sand caused the collapse, and impossible to protect yourself
+  from said grain of sand. You could say something similar for the specific
+  trade that caused the 2008 recession, or the specific animal that caused the
+  current coronavirus pandemic.
 
--   **People choose between a satisficing or maximizing outcomes.** On pg. 258,
-    Professor Taleb mentions how randomness prevents optimization (and
-    especially over-optimization), and how that forces people to slow down and
-    take things easy. He mentions how it's impossible to tell when the NYC MTA
-    arrives at a given station, so the best you can do is plan a buffer, do your
-    thing, and not worry about it. This may improve quality of life, since human
-    beings lived in highly stochastic situations for thousands of years, and a
-    satisficing approach better respects our encoded habits and instincts.
+- **People choose between a satisficing or maximizing outcomes.** On pg. 258,
+  Professor Taleb mentions how randomness prevents optimization (and
+  especially over-optimization), and how that forces people to slow down and
+  take things easy. He mentions how it's impossible to tell when the NYC MTA
+  arrives at a given station, so the best you can do is plan a buffer, do your
+  thing, and not worry about it. This may improve quality of life, since human
+  beings lived in highly stochastic situations for thousands of years, and a
+  satisficing approach better respects our encoded habits and instincts.

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"The Office\", by Greg Daniels, Ricky Gervais, Stephen Merchant et. al."
+title: 'TV Show Review: "The Office", by Greg Daniels, Ricky Gervais, Stephen Merchant et. al.'
 date: "2020-07-26T13:46:28-04:00"
 draft: false
 ---
@@ -13,14 +13,14 @@ grade school.
 
 I think I only want to watch shows that have finished because I'm terrified of
 [a huge disappointment at the very end of the show that ruins
-everything](https://en.wikipedia.org/wiki/Game_of_Thrones_(season_8)). If it's
+everything](<https://en.wikipedia.org/wiki/Game_of_Thrones_(season_8)>). If it's
 finished, and gets good reviews all the way through, and [ages like fine
 wine](https://www.eonline.com/news/956329/the-enduring-popularity-of-the-office),
 then it's a safe bet that it's a good watch. Also, no advertisements! Also
 apparently it's comforting to immerse yourself in an environment where you
 already know the ending, which makes it comforting content in uncertain times.
 
-That being said, *wow*. I can kind of get why people enjoy watching TV now.
+That being said, _wow_. I can kind of get why people enjoy watching TV now.
 Besides the addiction aspect, TV sometimes has good content, and "The Office" is
 one show where I really laughed and cried with the characters. Working in an
 office for three years made everything much funnier. It's like a healthy release
@@ -47,10 +47,10 @@ unhealthy role models for me. "Friends" I've heard has dated racial jokes, I
 think "It's Always Sunny in Philadelphia" and "Curb Your Enthusiasm" are still
 running. I'm incredibly picky.
 
-__________
+---
 
 You can watch free episodes of the office [here](https://watchtheoffice.online).
-I for one purchased the boxed DVD set and a DVD player (yes, *a DVD player*) in
+I for one purchased the boxed DVD set and a DVD player (yes, _a DVD player_) in
 order to watch it on my laptop without [needing Netflix or
 anything](https://www.cnn.com/2019/06/25/media/the-office-netflix-leaving/index.html).
 Then I can burn the videos to a USB drive, and [upscale them to 4K as

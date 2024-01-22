@@ -42,7 +42,7 @@ happiness is so unquantifiable anyways.
 found life's kind of messed up in general. I don't think I've talked to a single
 friend or acquaintance (especially in software engineering) who says they like
 all aspects of their job, even all the significant aspects. So I need to either
-reframe my concerns, do an *amor fati* thing and be grateful for everything, or
+reframe my concerns, do an _amor fati_ thing and be grateful for everything, or
 I need to be in a different position where the truths I believe are relevant.
 I'm trying to aim for the latter, because I think it's easier for me. This will
 really help towards building an
@@ -96,10 +96,10 @@ what kinds of problems and failures happen with a deeper level of commitment
 (I'm a really big believer in antifragility, and getting more and different
 kinds of problems is the only way to become more antifragile).
 
-__________
+---
 
 Yeah, I think that sums it up. I don't want to over-extend myself, and I think
-accomplishing *every single one of these and gaining more coverage* is more
+accomplishing _every single one of these and gaining more coverage_ is more
 important than having a laundry list of goals I may or may not meet.
 
 We'll see how it goes. :wine_glass:

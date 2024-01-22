@@ -14,14 +14,14 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 My God, my habit tracker changed their UX yesterday, again. They do some simple
 things, like display the amount of time a timed habit should take, or changing
 the width of the swipe prompt. But then they also change the scroll context of
 the menu. Now, you have to scroll the entire length of the menu in order to see
 which habits you have or haven't done, and they don't auto-move to the bottom of
-the list after they're done or skipped. *And some things are broken.* Like if
+the list after they're done or skipped. _And some things are broken._ Like if
 you swipe right on a portion of the menu, it might freeze and not display
 properly until you close the app and re-open it. And if you complete a task from
 the day before resulting in all tasks completed, the streak is still broken.
@@ -36,7 +36,7 @@ I mean, it's fine for now, I have a thing where I email myself a list of habits
 to do every day, but this is plainly annoying. Might be a necessary motivator
 though.
 
-__________
+---
 
 I got a full load of groceries yesterday! Costco apparently delivers with
 Instacart, and my mom ordered $100 worth of groceries about 4 or 5 days ago. The
@@ -53,7 +53,7 @@ What I should do is record the decontamination procedure from that one Michigan
 physician YouTube video into my cooking notes, and then maybe share it with the
 MicroConf Connect community.
 
-__________
+---
 
 So depressing news aside, here's another cute picture to start the day off with:
 

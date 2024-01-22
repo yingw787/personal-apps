@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Licky licky!
 
@@ -26,7 +26,7 @@ Licky licky!
 <br/>
 <br/>
 
-__________
+---
 
 I finished binge watching "Parks and Rec" yesterday (or really this morning)! I
 have to say, I'm really digging binge watching TV shows, I never knew it could
@@ -46,7 +46,7 @@ at a quicker pace, probably need to do so anyways for work and stuff.
 Speaking of TV shows (and today's topic of speechwriting w.r.t. the DNC speech),
 there was this one TV miniseries recorded in the 1980s about what a bloodless
 coup of the U.S. by the Soviet Union would look like. It's called
-["Amerika"](https://en.wikipedia.org/wiki/Amerika_(miniseries)) and I do say it
+["Amerika"](<https://en.wikipedia.org/wiki/Amerika_(miniseries)>) and I do say it
 looks freakishly realistic given how reality has played out. Some nice snippets
 include Congress getting massacred, the country broken up into different
 occupational zones, and the abandoning of American ideals by the citizenry

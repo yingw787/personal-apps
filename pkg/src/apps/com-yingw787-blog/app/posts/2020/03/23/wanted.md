@@ -17,7 +17,7 @@ draft: false
 >
 > From "Hunting Season", by Beau Taplin
 
-__________
+---
 
 I remember the moment I first saw you. December 7th, 2007, around noon. I think
 that Friday was my first day of middle school. My family had moved us all in
@@ -33,7 +33,7 @@ bullied others. Suffering begetting suffering.
 I thought this would be my lot in life. The only thing that kept me going was
 the one promise I made to myself, after a particularly bad day at school.
 
-*I will survive. I will not die here*.
+_I will survive. I will not die here_.
 
 When the time came to move, I thought my life in America would be the same as my
 life in Canada. Maybe worse. All my friends said so, to try and get me to stay.
@@ -44,10 +44,10 @@ for lost time. I remember constantly looking over my shoulder. Always on guard.
 This scared, angry little kid looking for a fight.
 
 I needn't have worried. That first day, when I saw you laughing in the cafeteria
-with your friends during lunch period, I thought to myself, "*if angels lived in
-America...maybe life here isn't so scary after all*".
+with your friends during lunch period, I thought to myself, "_if angels lived in
+America...maybe life here isn't so scary after all_".
 
-__________
+---
 
 I loved everything about you. I loved the way your hair shimmered with the
 sunshine. I loved how your face lit up with those dimples when you smiled. I
@@ -58,7 +58,7 @@ thousand words is enough.
 
 I think that's why I avoided you like the plague. You terrified me.
 
-You terrified me because *I didn't want to feel*. I wanted safety. I thought I
+You terrified me because _I didn't want to feel_. I wanted safety. I thought I
 could find safety in glory, wealth, status, the things other men respect and
 maybe fear. I thought these things would keep me and mine safe from all the
 terrors in the world. So I wouldn't hurt anymore. So I wouldn't suffer anymore.
@@ -79,7 +79,7 @@ ever hurt you, I'd never forgive myself.
 Yet you were the reason I got up in the morning. Why I looked forward to the
 next day, and the next, and the next. All the way until it was too late.
 
-__________
+---
 
 I remember the day I gave up wanting you. Officially that is, if there is such a
 thing. September 26th, 2011, 2:45PM Eastern Time in Cafcala's art room. I
@@ -102,7 +102,7 @@ terrifying thing in the world? No. There's at least one thing more terrifying
 than a broken heart. That's the heart that refuses to break. The heart that
 yearns only for ghosts.
 
-__________
+---
 
 For years, I was scared to go to sleep at night. My subconscious would just play
 the same movie, again and again. The thing I was afraid to want during the day,
@@ -144,10 +144,10 @@ quietly so as to not distrub others studying.
 
 Only now do I remember enough things to forget many, and appreciate those
 memories that remain. When everything else fades away, the only memories left,
-maybe the only memories worth remembering in the first place, are *the ones that
-make us feel*.
+maybe the only memories worth remembering in the first place, are _the ones that
+make us feel_.
 
-__________
+---
 
 I tried to move on, but it hasn't worked. I tried because my parents told me to.
 I tried because I wanted to forget. But mostly, I tried because I promised you I
@@ -169,9 +169,9 @@ I've just been doing it for so long that it's part of my identity. It's all so
 different from that feeling of wanting you. I never wanted anything else but a
 quiet life with you, and be able to earn your love and affection every day.
 
-***You. It was always you. You're all I've ever wanted from life.***
+**_You. It was always you. You're all I've ever wanted from life._**
 
-All I've ever wanted was to go home, and *home is where the heart is*. You're my
+All I've ever wanted was to go home, and _home is where the heart is_. You're my
 home, and I can't ever go back. After years of aimlessly wandering in this
 parching desert, home sounds so much like Paradise. Maybe it is, and I think
 it's my dream.
@@ -185,7 +185,7 @@ I thought that maybe when we're adults, we can talk about such childish things.
 But I should know better than say things like that. There's nothing childish
 about love and longing.
 
-__________
+---
 
 Yet, for all this imagined loss, all the internal strife and pain and suffering
 I've painted, I'm so happy you came into my life.
@@ -219,18 +219,18 @@ Who else could teach me these lessons, if I've wanted nobody else for thirteen
 years? Who else could strike those lessons home, at a time and place where the
 temple would only fall on my own head to set me straight?
 
-Don't you see? *You saved me*. Now I get happiness. Now I get sadness. I get to
+Don't you see? _You saved me_. Now I get happiness. Now I get sadness. I get to
 live in the best of all possible worlds, because of you. Where in this dark,
 lonely world would I be without you?
 
 So if you've ever felt that you couldn't change the world, I just wanted you to
 know you already changed mine.
 
-__________
+---
 
-*(I submitted ["On Failure"](/posts/2020/01/20/on_failure) as part of a
+_(I submitted ["On Failure"](/posts/2020/01/20/on_failure) as part of a
 [writer's workshop](https://www.dcwriterssalon.com) feedback session,
 specifically the section on $RACHEL, and got a favorable response. This piece
 builds on that feedback and storyline, and hopefully helps give me more of a
 sense of closure and resolution, which I'm still working on seven and a half
-years later. This is all real.)*
+years later. This is all real.)_

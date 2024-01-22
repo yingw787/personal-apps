@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Haskell Programming, From First Principles\", by Chris Allen and Julie Moronuki"
+title: 'Book Review: "Haskell Programming, From First Principles", by Chris Allen and Julie Moronuki'
 date: "2020-01-30T00:00:26-05:00"
 draft: false
 ---

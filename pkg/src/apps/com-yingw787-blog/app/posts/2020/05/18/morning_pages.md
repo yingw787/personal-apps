@@ -13,18 +13,18 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Kitty and his role model:
 
 ![role model](/img/posts/2020/05/18/morning_pages.jpg)
 
-__________
+---
 
 So it's that time of year! Comcast raised their prices on me from $29.99 a month
 to $49.99 a month. During a pandemic, when I need access to the Internet. In a
 neighborhood with one Internet service provider. I feel rather apathetic towards
-the whole thing, to be honest. Why *wouldn't* Comcast try to raise their prices?
+the whole thing, to be honest. Why _wouldn't_ Comcast try to raise their prices?
 They got me right where they want me.
 
 In better news, I think my project is coming along okay-ish. I hope to have an

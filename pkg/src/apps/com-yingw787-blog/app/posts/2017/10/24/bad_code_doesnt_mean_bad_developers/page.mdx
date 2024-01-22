@@ -1,39 +1,37 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-10-24",
-    title: "Bad code doesn't (necessarily) mean bad developers",
-    description: "Bad code doesn't (necessarily) mean bad developers",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-10-24",
+  title: "Bad code doesn't (necessarily) mean bad developers",
+  description: "Bad code doesn't (necessarily) mean bad developers",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 I believed for a long time that if you wrote bad code, that meant you were a bad software engineer, as in, bad at your craft. This was before I worked a while at my current company. Now, I still think the majority of the time, bad code is a strong indication of lack of programming chops, especially if significant code smells and shoddy design are present in the final product. Sometimes, though, it can't be helped by a developer. Bad code can also be indicative of:
 
-- **Bad requirements.** One fresh web developer wanted to begin redoing our front-end applications, and for good reason. We have this weird Jinja / Angular / jQuery mixture, where we server-side render an Angular application in Jinja that also happens to require jQuery. So we end up using none of these correctly and it's a nightmare to debug. Instead, under his leadership, we began the migration to React, and to do that, he asked for some pages to redo. Product management, none of whom have been professional software engineers, gave him a Google spreadsheet in order to design a table. No, this wasn't a spreadsheet of requirements. *The cells in the rows and columns had names about what they should be and represented the table*. There was no other design available. The table was built on time, and the data engineering behind the site was superb, but the design came from our still very old site and the lack of strong design was evident, not something you want in a UI application.
+- **Bad requirements.** One fresh web developer wanted to begin redoing our front-end applications, and for good reason. We have this weird Jinja / Angular / jQuery mixture, where we server-side render an Angular application in Jinja that also happens to require jQuery. So we end up using none of these correctly and it's a nightmare to debug. Instead, under his leadership, we began the migration to React, and to do that, he asked for some pages to redo. Product management, none of whom have been professional software engineers, gave him a Google spreadsheet in order to design a table. No, this wasn't a spreadsheet of requirements. _The cells in the rows and columns had names about what they should be and represented the table_. There was no other design available. The table was built on time, and the data engineering behind the site was superb, but the design came from our still very old site and the lack of strong design was evident, not something you want in a UI application.
 
-- **Frequently changing requirements.** I've encountered this on at least one occasion, where product management did about 20% of the specification then, and 80% as the project went along. In my case, specific requirements often pin-balled off of given values, and it wasn't merely a case of *"This button should be green, not red"*, but instead *"This feature needs to be completely overhauled"*. On one occasion, I've had to build multiple solutions for the same problem, then ask product management which one they wanted. Then, when they made up their mind over a few months, keep those solutions up to date with what was in the main development branch, in order to avoid merge conflicts.
+- **Frequently changing requirements.** I've encountered this on at least one occasion, where product management did about 20% of the specification then, and 80% as the project went along. In my case, specific requirements often pin-balled off of given values, and it wasn't merely a case of _"This button should be green, not red"_, but instead _"This feature needs to be completely overhauled"_. On one occasion, I've had to build multiple solutions for the same problem, then ask product management which one they wanted. Then, when they made up their mind over a few months, keep those solutions up to date with what was in the main development branch, in order to avoid merge conflicts.
 
-- **Lack of a long-term timeline.** On multiple occasions, when I read a feature specification or bug, I presented a number of different solutions to product management to resolve the problem or build the feature, ranging from dirty and quick to comprehensive and slow. On *every occasion*, product management has chosen the dirty and quick solution. Code quality has suffered significantly as a result of this lack of planning for the future.
+- **Lack of a long-term timeline.** On multiple occasions, when I read a feature specification or bug, I presented a number of different solutions to product management to resolve the problem or build the feature, ranging from dirty and quick to comprehensive and slow. On _every occasion_, product management has chosen the dirty and quick solution. Code quality has suffered significantly as a result of this lack of planning for the future.
 
-- **Poor planning or a lack of time.** Two of my colleagues tasked themselves with migrating our API functionality away from our existing endpoints, which were unmaintainable, over to a new definition. The project was going to be big, it had to be good, and they knew it. So imagine the look on their faces when management gave them two weeks in order to do so. *This is a software-ish company with >$10M ARR*. They finished it. It nearly killed them, but they finished it. 30,000 lines of new functionality, <10% testing coverage, done in two weeks. Then the project was wrenched from their hands and given to those "developers" in the satellite office.
+- **Poor planning or a lack of time.** Two of my colleagues tasked themselves with migrating our API functionality away from our existing endpoints, which were unmaintainable, over to a new definition. The project was going to be big, it had to be good, and they knew it. So imagine the look on their faces when management gave them two weeks in order to do so. _This is a software-ish company with >$10M ARR_. They finished it. It nearly killed them, but they finished it. 30,000 lines of new functionality, <10% testing coverage, done in two weeks. Then the project was wrenched from their hands and given to those "developers" in the satellite office.
 
-- **Poor foundational architecture.** Our entire software product was created in a matter of a few months. Our effective software architect at the time was a fresh college graduate with no prior professional software engineering experience whatsoever, paid $40,000 / year in order to create three web applications, with no reliable mentors around. For a guy in his circumstances, he did a *phenomenal* job, absolutely brilliant. However, some key issues arose from this, including the forking of third-party dependencies and dependency entanglement, both of which prevent solid upgrades in our tech stack through the years. He noted directly to the CEO that the project as-is is a prototype, and that the system would need to be re-architected if it was to enter production. This concern was ignored and the prototype rushed into production, and to this day we use it. Last I heard (from people who were there), he was fired years ago for growing a beard.
+- **Poor foundational architecture.** Our entire software product was created in a matter of a few months. Our effective software architect at the time was a fresh college graduate with no prior professional software engineering experience whatsoever, paid $40,000 / year in order to create three web applications, with no reliable mentors around. For a guy in his circumstances, he did a _phenomenal_ job, absolutely brilliant. However, some key issues arose from this, including the forking of third-party dependencies and dependency entanglement, both of which prevent solid upgrades in our tech stack through the years. He noted directly to the CEO that the project as-is is a prototype, and that the system would need to be re-architected if it was to enter production. This concern was ignored and the prototype rushed into production, and to this day we use it. Last I heard (from people who were there), he was fired years ago for growing a beard.
 
 That last part made me go:
 
-![Huh?!](/img/posts/2017/10/24/bad_code_doesnt_mean_bad_developers_1.gif)
+[Huh?!](/img/posts/2017/10/24/bad_code_doesnt_mean_bad_developers_1.gif)
 
 Picture from [this Medium post](https://medium.com/@deusexmachina667/you-fired-your-top-talent-i-hope-youre-happy-cf57c41183dd), which is also quite relevant.
 

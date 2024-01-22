@@ -22,16 +22,16 @@ data as a percentage of my take-home salary for the given pay period.
 
 A couple idiosyncracies to note about how I account for things here:
 
--   I do include bonuses as a percentage of take-home income.
+- I do include bonuses as a percentage of take-home income.
 
--   I count investing/saving as expenses.
+- I count investing/saving as expenses.
 
--   Percentages likely will not round up to 100% exactly, as I sometimes expend
-    more than I get. Over time, this rounds out (e.g. sometimes I transfer
-    savings into checking if my balance is critically low).
+- Percentages likely will not round up to 100% exactly, as I sometimes expend
+  more than I get. Over time, this rounds out (e.g. sometimes I transfer
+  savings into checking if my balance is critically low).
 
--   Sometimes, expenditures may be negative. This may be the result of a refund,
-    for example.
+- Sometimes, expenditures may be negative. This may be the result of a refund,
+  for example.
 
 All values are rounded to three significant digits.
 
@@ -558,7 +558,6 @@ All values are rounded to three significant digits.
     }
 }
 ```
-
 
 ```chart
 {
@@ -1125,39 +1124,39 @@ All values are rounded to three significant digits.
 Before we begin our analysis, I would like to add a few more numbers to these
 four charts:
 
--   I spent **$2805.66** on eating out during this calendar year. This is less
-    than the real total as some restaurants take only cash and ATM withdrawals
-    are counted as miscellaneous, and some prepared foods are purchased in
-    grocery stores, which count as buying groceries.
+- I spent **$2805.66** on eating out during this calendar year. This is less
+  than the real total as some restaurants take only cash and ATM withdrawals
+  are counted as miscellaneous, and some prepared foods are purchased in
+  grocery stores, which count as buying groceries.
 
--   My effective take-home savings rate this calendar year is **42.3%**; this is
-    excluding maxing out my 401(k) contributions, which would bump up my
-    take-home savings rate to be around **65.9%**. This is less than the **50%**
-    I ideally wanted to save (some people go beserk and save **60-75%** (with
-    401(k) maxed out I think) at great cost to quality of life), but it is much
-    better than the recommended **20%** personal savings rate. I can live the
-    life I want and be able to afford it with my one measly income stream.
+- My effective take-home savings rate this calendar year is **42.3%**; this is
+  excluding maxing out my 401(k) contributions, which would bump up my
+  take-home savings rate to be around **65.9%**. This is less than the **50%**
+  I ideally wanted to save (some people go beserk and save **60-75%** (with
+  401(k) maxed out I think) at great cost to quality of life), but it is much
+  better than the recommended **20%** personal savings rate. I can live the
+  life I want and be able to afford it with my one measly income stream.
 
-__________
+---
 
 So! What did I learn from graphing all of this?
 
--   **I definitely spend too much eating out, but I'm not going to eat myself
-    into poverty**: To the point where it brings me negligible utility. I am
-    trying to practice how to cook homemade food at home so as to reduce this
-    expenditure and burden going forward. However, it's difficult to see myself
-    eating my way into not being able to pay rent. The absolute biggest expenses
-    are rent and savings.
+- **I definitely spend too much eating out, but I'm not going to eat myself
+  into poverty**: To the point where it brings me negligible utility. I am
+  trying to practice how to cook homemade food at home so as to reduce this
+  expenditure and burden going forward. However, it's difficult to see myself
+  eating my way into not being able to pay rent. The absolute biggest expenses
+  are rent and savings.
 
--   **I am spending a healthy amount on education**: The Amazon purchases are
-    mostly all books, and many of the miscellaneous purchases are for
-    productivity tools or workstation upgrades. I think I could probably afford
-    to fly to a software conference once in a while, especially if I know I can
-    make it worth it.
+- **I am spending a healthy amount on education**: The Amazon purchases are
+  mostly all books, and many of the miscellaneous purchases are for
+  productivity tools or workstation upgrades. I think I could probably afford
+  to fly to a software conference once in a while, especially if I know I can
+  make it worth it.
 
--   **I have at least one year's worth of runway in case something terribly bad
-    happens, but I'm definitely not wealthy by any means**: As I have no other
-    liquid assets besides what's in my bank account, and since I do plan on
-    buying stocks when the recession happens late next year (if forecasts are
-    correct), I will need to plan ahead well during the first business cycle
-    downturn I will experience in my career.
+- **I have at least one year's worth of runway in case something terribly bad
+  happens, but I'm definitely not wealthy by any means**: As I have no other
+  liquid assets besides what's in my bank account, and since I do plan on
+  buying stocks when the recession happens late next year (if forecasts are
+  correct), I will need to plan ahead well during the first business cycle
+  downturn I will experience in my career.

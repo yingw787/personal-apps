@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 This video reminds me of one of those Asian cat statues you find in Asian
 restaurants and stuff. Apparently it's called a
@@ -30,7 +30,7 @@ restaurants and stuff. Apparently it's called a
 
 You know on second thought I think this cat's just doing its own thing.
 
-__________
+---
 
 I think judging from my post history, this is the first time in a month or so
 that I've gotten up on time. I don't know what made today so special, where I'd
@@ -45,6 +45,6 @@ to see friends in the morning from Morning Poppins is also something to look
 forward to. All this push and pull helped me get up. The problem is getting up
 at the same time on a routine basis long enough to build a habit.
 
-I discovered Chipotle has an app, *and* they offer both pickup and delivery from
+I discovered Chipotle has an app, _and_ they offer both pickup and delivery from
 inside the app. I feel like I should have discovered this earlier on in the
 pandemic.

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 floomph
 
@@ -21,7 +21,7 @@ floomph
 
 I can feel the comfort through the image.
 
-__________
+---
 
 I think the hardest thing about working on my software project is how little
 progress I've shown for the past three months. A quarter of a year!! And I have

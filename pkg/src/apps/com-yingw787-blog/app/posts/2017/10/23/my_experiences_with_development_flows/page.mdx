@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-10-23",
-    title: "My Experiences with Development Flows",
-    description: "My Experiences with Development Flows",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-10-23",
+  title: "My Experiences with Development Flows",
+  description: "My Experiences with Development Flows",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 > Rick: He wants to make a deal: half the codes now, half after you finish.
 >
@@ -37,13 +35,13 @@ I have used two significantly different types of development flows: trunk-based 
 
 A trunk based development workflow looks like this:
 
-![trunk-based](/img/posts/2017/10/23/my_experiences_with_development_flows_2.png)
+[trunk-based](/img/posts/2017/10/23/my_experiences_with_development_flows_2.png)
 
 The key thing to note here is that there is one branch, both for primary development, and for deployment. All changes must eventually be merged into this branch, and releases are sequential along this primary branch, meaning that if changes are merged between formal releases, those changes need to go out together. Integration happens on the separate branches, if you don't want your primary branch to suffer.
 
 A Git-based development workflow looks like this:
 
-![Git-based](/img/posts/2017/10/23/my_experiences_with_development_flows_1.png)
+[Git-based](/img/posts/2017/10/23/my_experiences_with_development_flows_1.png)
 
 Note how deployments are abstracted away from the primary development branch to a `master` branch, that should reflect a release, and whose head should reflect what is in production. Also notice how there are no direct relationships between the main development branch and `master`; development branches into separate release branches, where bugs for existing features are caught by QA and fixed separately before merging into `master`.
 

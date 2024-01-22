@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I finally got up before 11:00AM, for the first time in like two weeks! I'm
 pretty pleased with myself.

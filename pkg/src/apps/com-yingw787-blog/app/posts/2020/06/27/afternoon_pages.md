@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Ahhhhhhhhhhh his tail curls up when you pet him!!
 
@@ -28,7 +28,7 @@ Ahhhhhhhhhhh his tail curls up when you pet him!!
 
 So many adorable photos and videos, so hard to choose!
 
-__________
+---
 
 I don't think I've really written this week, or done anything else besides
 working on a greenfield project for a client. The client's been excellent, I
@@ -66,7 +66,7 @@ random crawlers came in and crashed the server. I understood that I didn't have
 too much in terms of security, but I didn't realize that without basic security
 measures, the server would become unusable.
 
-__________
+---
 
 Mostly though, I am grateful, albeit tired. I'm pretty happy with the money from
 the client, and I think I trust them to pay them on time (unlike some other

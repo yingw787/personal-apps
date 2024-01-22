@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 I think things have definitely shifted in just the past week or two
 economically. I started off this sabbatical thinking that I'll just go to June

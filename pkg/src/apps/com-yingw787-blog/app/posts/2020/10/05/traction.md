@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Traction: How any Startup can Achieve Explosive Customer Growth\", by Gabriel Weinberg and Justin Mares"
+title: 'Book Review: "Traction: How any Startup can Achieve Explosive Customer Growth", by Gabriel Weinberg and Justin Mares'
 date: "2020-10-05T19:39:05Z"
 draft: false
 ---

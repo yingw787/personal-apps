@@ -2,14 +2,14 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Deep Work\", by Cal Newport"
+title: 'Book Review: "Deep Work", by Cal Newport'
 date: "2018-10-14T15:44:30-04:00"
 draft: false
 ---
 
- > **"I'll live the focused life, because it's the best kind there is."**
- >
- > Winifred Callagher
+> **"I'll live the focused life, because it's the best kind there is."**
+>
+> Winifred Callagher
 
 I have two bookshelves at home: one large bookshelf in my living room for my
 larger reference set of books, and a much smaller bookshelf in my bedroom for
@@ -27,7 +27,7 @@ afterwards to make room for new things to memorize. During undergrad, I used to
 browse the web during the time that I was studying, and didn't do as well as I
 could or should, which are consequences I am paying to this very day. It
 happened because I told myself that I should always be studying, and that no
-time should be allocated to rest. I ignored the reality that people *will* rest
+time should be allocated to rest. I ignored the reality that people _will_ rest
 after being pushed to their limits regardless of whether their high-level,
 System 2 faculties command them to. What really ended up happening was I was
 resting while I was working, and that meant not only did my productivity go down

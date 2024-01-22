@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-10-04",
-    title: "That Happened",
-    description: "That Happened",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-10-04",
+  title: "That Happened",
+  description: "That Happened",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 If you're a software developer with a twisted sense of humor, you should continue reading this. So last week we moved our production applications to a new deployment infrastructure using Docker, and for most of the last week we've been fixing the functionality of our website (such as checkout, because that's important for staying in business). We got everything mostly working and this week has been uneventful.
 

@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Hello there.
 
 ![hello](/img/posts/2020/08/14/morning_pages.jpg)
 
-__________
+---
 
 I think I'm living in a Kafkaesque bubble. Everything in front of me says things
 are great. I have a great job, I think this week has been a long streak of great
@@ -28,7 +28,7 @@ weather, good food, quality sleep, friends available a click away, all that good
 stuff. But you wouldn't figure it out by looking at the news, or reading a
 discussion forum, or just talking with somebody one on one. Maybe things are
 really bad actually and I don't know it, or maybe the news has always been
-extremely shrill about things in order to get more ratings. And what is *up*
+extremely shrill about things in order to get more ratings. And what is _up_
 with all the Trump signs on my neighbor's lawns? I haven't seen a single Biden
 sign anywhere, and there's like 4-5 neighbors who've already put up Trump signs
 (though to be fair, Trump did start his re-election bid on his inauguration

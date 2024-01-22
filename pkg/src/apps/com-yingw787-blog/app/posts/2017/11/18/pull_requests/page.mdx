@@ -1,34 +1,33 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-11-18",
-    title: "Pull Requests, or How to Grow Professionally",
-    description: "Pull Requests, or How to Grow Professionally",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-11-18",
+  title: "Pull Requests, or How to Grow Professionally",
+  description: "Pull Requests, or How to Grow Professionally",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
 
+I am known around the office for reviewing pull requests _very thoroughly_. Here's [English Dictionary Man](/posts/2017/10/15/that_happened_part_2) confiding his fear of my reviews to my colleague:
 
-I am known around the office for reviewing pull requests *very thoroughly*. Here's [English Dictionary Man](/posts/2017/10/15/that_happened_part_2) confiding his fear of my reviews to my colleague:
+[lol](/img/posts/2017/11/18/pull_requests_1.png)
 
-![lol](/img/posts/2017/11/18/pull_requests_1.png)
-
-I wasn't denigrating anybody in that pull request. I didn't call people names or criticize them personally. I left comments like "Use ternaries to prevent nesting" and "Abstract magic strings to constants" and "Use PascalCase for class names" and "Pull logic into private helper method to avoid duplication" and "Update docstring with restructured text params", stuff like that. The number of comments might have been a bit excessive on my part, but we don't have a style guide and linting set up in the repository I was commenting in, and we were still working out the architecture, and I generally think it's better to be overly thorough than to let something through as a reviewer (*What chance does Gotham have if the good people do nothing?*).
+I wasn't denigrating anybody in that pull request. I didn't call people names or criticize them personally. I left comments like "Use ternaries to prevent nesting" and "Abstract magic strings to constants" and "Use PascalCase for class names" and "Pull logic into private helper method to avoid duplication" and "Update docstring with restructured text params", stuff like that. The number of comments might have been a bit excessive on my part, but we don't have a style guide and linting set up in the repository I was commenting in, and we were still working out the architecture, and I generally think it's better to be overly thorough than to let something through as a reviewer (_What chance does Gotham have if the good people do nothing?_).
 
 The guy I was adding the comments for, a colleague and friend of mine, took it very coolly and applied fixes where he agreed with me and replied back where he didn't, which I mostly accepted as valid arguments (should a list comprehension always be divided into multiple lines for clarity? ¯\\\_(ツ)\_/¯ ). Then, for the record, I checked off the comments I added as addressed or not, for future reference.
 
 To fear constructive criticism is to not grow professionally. Which is why English Dictionary Man is over thirty years old and still codes worse than a CompSci 101 student. Unless you want to tell me a two hundred line long method with four layers of nesting, twenty duplicate calls, and three chained dictionary gets is in any way appropriate as software IP.
-___
+
+---
 
 Yesterday one of the software engineers in the satellite office (not Dictionary Man, but self-proclaimed Programming God) finalized a pull request to create a stack trace by concatenating strings. This pull request was made in response to a prior pull request he made for exception handling on a view. That pull request was rejected three times, had one hundred comments on it, whose last commit message was simply, `"wtfever"`, and that returned exceptions thrown in production as emails to a listserv without a stack trace with the email title being "Unexpected Exception".
 

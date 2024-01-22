@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This birb is very roundo
 
 ![birb](/img/posts/2020/04/30/morning_pages.jpg)
 
-__________
+---
 
 Today I'm feeling...restless. I think yesterday didn't go so well in terms of
 productivity (and honestly many days I've spent haven't). I'm conflicted.

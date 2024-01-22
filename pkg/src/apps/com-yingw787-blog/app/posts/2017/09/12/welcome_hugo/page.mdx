@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-09-12",
-    title: "Welcome Hugo!",
-    description: "Welcome Hugo!",
-    categories: ['Others'],
+  author: "Ying Wang",
+  date: "2017-09-12",
+  title: "Welcome Hugo!",
+  description: "Welcome Hugo!",
+  categories: ["Others"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Porting to Hugo is successful.
 

@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Boys and Sex\", by Peggy Orenstein"
+title: 'Book Review: "Boys and Sex", by Peggy Orenstein'
 date: "2020-02-23T18:34:26-05:00"
 draft: false
 ---
@@ -33,9 +33,9 @@ There's a number of things Peggy mentions that I find worth reiterating:
 
 - **Most guys exaggerate their sexual experience.** I figured I knew this
   already, but Peggy provides some numbers, and it's interesting to learn what
-  exactly constitutes a "hookup" and see exactly *how* much sex guys exaggerate
+  exactly constitutes a "hookup" and see exactly _how_ much sex guys exaggerate
   (hint: it can be order of magnitude or two). I think it's important to
-  mention, because sex is a pretty private act (if it isn't, you *might* be
+  mention, because sex is a pretty private act (if it isn't, you _might_ be
   doing it wrong), and therefore [telephone
   effects](https://en.wikipedia.org/wiki/Chinese_whispers), rumors, and hearsay
   can spread like wildfire and amplify any inaccuracies that take place.
@@ -64,7 +64,7 @@ There's a number of things Peggy mentions that I find worth reiterating:
   with her about things that happened and the way they feel. Talking is nice.
   Talking makes people feel better.
 
-__________
+---
 
 Sex and the emotions that drive it are, beyond the reason why we're here
 physically, the things all people live for. Nikola Tesla, the famous inventor

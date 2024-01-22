@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 I think in addition to [r/aww](https://reddit.com/r/aww), there's also
 [r/oddlysatisfying](https://www.reddit.com/r/oddlysatisfying/), which is oddly
@@ -53,7 +53,7 @@ Okay?
 
 Okay.
 
-__________
+---
 
 So I read the rather distressing news today that [President Donald Trump is
 withholding medical supplies from Michigan because the governor is a female
@@ -90,7 +90,7 @@ efforts](https://www.usatoday.com/story/news/politics/2020/03/27/coronavirus-don
 
 Here's this story that broke today, people hoped that Democratic congressmen
 were going to negotiate controls and transparency on corporate bailouts.
-President Trump signed the bill and *immediately afterwards* [declared he will
+President Trump signed the bill and _immediately afterwards_ [declared he will
 not follow those same transparency measures he
 signed](https://www.vox.com/policy-and-politics/2020/3/28/21197995/coronavirus-stimulus-trump-inspector-general-wont-comply),
 statement
@@ -128,13 +128,13 @@ Nobody alive has dealt with anything like this. People are picking examples from
 the 1918 Spanish Flu, and to 1861-1865 Civil War. I think this situation does
 set a new precedent in U.S. history.
 
-***This is nothing compared to what's coming.*** What I'm writing here is
+**_This is nothing compared to what's coming._** What I'm writing here is
 something I've been thinking about for years, and too afraid to publicly admit
 because I think it'd be too dark and scary for others and because it'd
 negatively affect my life with little benefit. But now I'm writing it to make
 sure I think things through.
 
-__________
+---
 
 We're now very much in a "cold civil war" between at least two political parties
 and at least two geographic regions of the country. More distrubingly, the past
@@ -185,7 +185,7 @@ People compare Trump to `$FAMOUS_GERMAN_LEADER` all the time (like they compare
 every president to `$FAMOUS_GERMAN_LEADER` a la [Godwin's
 Law](https://en.wikipedia.org/wiki/Godwin%27s_law)), and so let's be reminded
 that `$FAMOUS_GERMAN_LEADER` won around 35% in 1932 to be able to enact
-emergency powers and end the Weimar Republic. What people may *not* realize is
+emergency powers and end the Weimar Republic. What people may _not_ realize is
 how in 1946, after Germany looked like this:
 
 ![dresden 1945](/img/posts/2020/03/28/morning_pages_4.jpeg)
@@ -198,41 +198,41 @@ Germany](https://ia802606.us.archive.org/25/items/publicopinionino00merr/publico
 of which Survey No. 68 stands out (pasted in full below, and on page 171 of the
 linked PDF):
 
->Report No. 68 (10 October 1947)
+> Report No. 68 (10 October 1947)
 >
->**TRENDS IN ATTITUDES TOWARD `$FAMOUS_IDEOLOGY`**
+> **TRENDS IN ATTITUDES TOWARD `$FAMOUS_IDEOLOGY`**
 >
->*Sample: unspecified number, representing a cross-section of the adults in the
->American Zone and the American and British Sectors of Berlin.*
+> _Sample: unspecified number, representing a cross-section of the adults in the
+> American Zone and the American and British Sectors of Berlin._
 >
->*Interviewing dates: between November 1945 and August 1947. (5 pp.)*
+> _Interviewing dates: between November 1945 and August 1947. (5 pp.)_
 >
->Despite fluctuations, the percentage of Germans describing `$FAMOUS_IDEOLOGY`
->as a good idea badly carried out remained at a fairly high number -- starting
->at 53 per cent in November 1945, dipping to a low of 42 per cent in July 1946,
->and rising again to 55 per cent by August 1947. Those regarding it as a bad
->idea rose from 41 per cent in November 1945 to 48 per cent in July 1946 but
->dropped once more to 35 per cent in August 1947. Another way of describing this
->trend is to say that, in the period from November 1945 to July 1946, the
->average number of people who thought `$FAMOUS_IDEOLOGY` basically a good idea
->was 48 per cent; between December 1946 and August 1947 it was 52 per cent.
+> Despite fluctuations, the percentage of Germans describing `$FAMOUS_IDEOLOGY`
+> as a good idea badly carried out remained at a fairly high number -- starting
+> at 53 per cent in November 1945, dipping to a low of 42 per cent in July 1946,
+> and rising again to 55 per cent by August 1947. Those regarding it as a bad
+> idea rose from 41 per cent in November 1945 to 48 per cent in July 1946 but
+> dropped once more to 35 per cent in August 1947. Another way of describing this
+> trend is to say that, in the period from November 1945 to July 1946, the
+> average number of people who thought `$FAMOUS_IDEOLOGY` basically a good idea
+> was 48 per cent; between December 1946 and August 1947 it was 52 per cent.
 >
->In July 1947, opinions on this issue were related to attitudes toward
->democracy, individual liberty as against economic security, and the
->responsibility of Hitler and his advisers for his acts. People who tended to
->excuse `$FAMOUS_IDEOLOGY` were most ready to pick flaws in the working of
->democracy (42%), to choose security (70%) rather than liberty (22%), and to
->throw the blame for Hitler's acts on his advisers (32%) rather than on Hitler
->himself (25%), with another 37 per cent blaming both.
+> In July 1947, opinions on this issue were related to attitudes toward
+> democracy, individual liberty as against economic security, and the
+> responsibility of Hitler and his advisers for his acts. People who tended to
+> excuse `$FAMOUS_IDEOLOGY` were most ready to pick flaws in the working of
+> democracy (42%), to choose security (70%) rather than liberty (22%), and to
+> throw the blame for Hitler's acts on his advisers (32%) rather than on Hitler
+> himself (25%), with another 37 per cent blaming both.
 >
->In August 1947, the population groups containing the largest proportions of
->persons describing `$FAMOUS_IDEOLOGY` as a good idea badly carried out were
->persons with eight years of education (60%), those under 30 (68%), Protestants
->(64%), LDP/DVP party adherents (68%). More West Berliners (62%) held this view
->than Hessians (61%), residents of Wuerttemberg-Baden (60%), and Bavarians
->(50%); Bavarians led the list of those who rejected Nazism as a bad idea (38%),
->followed by West Berliners and Hessians (33%), and residents of
->Wuerttemberg-Baden (31%).
+> In August 1947, the population groups containing the largest proportions of
+> persons describing `$FAMOUS_IDEOLOGY` as a good idea badly carried out were
+> persons with eight years of education (60%), those under 30 (68%), Protestants
+> (64%), LDP/DVP party adherents (68%). More West Berliners (62%) held this view
+> than Hessians (61%), residents of Wuerttemberg-Baden (60%), and Bavarians
+> (50%); Bavarians led the list of those who rejected Nazism as a bad idea (38%),
+> followed by West Berliners and Hessians (33%), and residents of
+> Wuerttemberg-Baden (31%).
 
 And **this is a critical piece of information**, because people naturally think
 if bad things start happening to you, to the degree of getting bombed back to
@@ -240,8 +240,7 @@ the Stone Age, you'll naturally dislike your leaders and pivot towards the
 "right" idea, and **that very much isn't the case** when voting on matters like
 identity.
 
-
-__________
+---
 
 This pandemic will pass. My friends and family in Michigan should be safe,
 because Michigan itself has vast natural resources and a solid manufacturing
@@ -266,7 +265,7 @@ unthinkable as the country falling apart happens, I will probably choose to die
 here. My life has been a bet on this country succeeding, I don't think I want to
 change that, and to be honest I'm not sure if I want to see what happens next.
 
-__________
+---
 
 **There's undeniably a strong argument to be made that the Union no longer makes
 sense for some**. I'll give you an example. I became an American citizen in high

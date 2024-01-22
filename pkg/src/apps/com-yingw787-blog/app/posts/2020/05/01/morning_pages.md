@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 This is now my new favorite cat video. I don't know how the world will top this.
 Maybe if it had sound.
@@ -28,7 +28,7 @@ Maybe if it had sound.
 
 Happiness through a screen. Who woulda thunk?
 
-__________
+---
 
 I have a hard time understanding where I need to be going. Definitely feel
 pulled in many different directions at once. I need to get up earlier. I think

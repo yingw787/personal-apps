@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-09-30",
-    title: "Software as Abstraction",
-    description: "Software as Abstraction",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-09-30",
+  title: "Software as Abstraction",
+  description: "Software as Abstraction",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Way back when, I used to think that a startup was primarily a software-first kind of deal. That is, you would make the application, pitch it to users, and then gain users that way. Lately I've been reconsidering that deal.
 

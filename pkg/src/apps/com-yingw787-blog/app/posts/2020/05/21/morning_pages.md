@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I just realized that our stay-at-home order, if not extended, will only last
 until June 10th. That's pretty amazing that we're most of the way through the
@@ -32,7 +32,7 @@ whole ["it might be over by next
 June"](https://taskandpurpose.com/news/coronavirus-vaccine-pentagon-memo) could
 be optimistic.
 
-__________
+---
 
 You know, after typing all that out, I think I should post a kitten video.
 
@@ -44,7 +44,7 @@ You know, after typing all that out, I think I should post a kitten video.
 <br/>
 <br/>
 
-__________
+---
 
 Yesterday wasn't bad! I managed to get up at a reasonable time, and work until
 2:00AM in the morning. Today's shaping up to be much the same as yesterday, and

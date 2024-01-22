@@ -10,7 +10,7 @@ draft: false
 This is a guest post by my friend Jordan Liu. Check out [his
 blog](https://blog.jminjie.com/) for more great content.
 
-__________
+---
 
 > There is a magic button, and if you were to push it, then from that moment on
 > nobody would experience the tingly feeling they get when they see someone

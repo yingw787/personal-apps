@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Kitty!
 
 ![wine glass](/img/posts/2020/06/10/afternoon_pages.jpg)
 
-__________
+---
 
 I sense my sabbatical wrapping up, and you know what the crazy thing is? No
 matter how bad this year has been for people, it hasn't been all that bad for
@@ -27,8 +27,8 @@ me, personally. Maybe that just speaks to how I live my fortressed, closeted
 life, but I would do this whole half of the year again. I like how the pandemic
 forced me to save money so I can extend my sabbatical, though to be honest I
 think it's also a reason why finding a job will be a bit more difficult. The
-other crazy thing is how no matter how bad things get, it's *still* so much
-better than how I felt last year. When I think about that, it's *insane* how
+other crazy thing is how no matter how bad things get, it's _still_ so much
+better than how I felt last year. When I think about that, it's _insane_ how
 much I'm afraid of getting another job and repeating the experience of the last
 three years. No, the fear hasn't really subsided. I haven't released anything
 yet, and therefore I can't consider my BATNA shifted. Even if I had shipped

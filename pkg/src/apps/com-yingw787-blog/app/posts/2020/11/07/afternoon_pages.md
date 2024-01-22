@@ -10,12 +10,13 @@ draft: false
 My life right now.
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available;
     width: fill-available; max-width: 100%;" controls> <source
     src="/video/general/covid.mp4" type="video/mp4"> Your browser does not
-    support HTML5 video. </video> <br/> <br/>
+support HTML5 video. </video> <br/> <br/>
 
-__________
+---
 
 It's nice to have a little bit of certainty.
 
@@ -28,7 +29,7 @@ Holy hell that's a large font.
 And to highlight my bad timing skills. Or Firefox being really laggy on my
 computer.
 
-__________
+---
 
 I think there's some important caveats to note:
 

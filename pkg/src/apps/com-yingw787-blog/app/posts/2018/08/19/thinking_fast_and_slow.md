@@ -2,7 +2,7 @@
 authors: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Thinking, Fast and Slow\", by Daniel Kahneman"
+title: 'Book Review: "Thinking, Fast and Slow", by Daniel Kahneman'
 date: "2018-08-19T17:21:58-04:00"
 draft: false
 ---

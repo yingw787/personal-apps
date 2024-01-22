@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look! Baby chickens come with cupcake skirts!
 
@@ -26,7 +26,7 @@ trees. I don't know if I just didn't pay attention to all this when I was living
 here, but the nature really is something else.
 
 I think I've found myself checking the COVID-19 ArcGIS dashboard more than
-before. I'm in disbelief that the confirmed numbers are increasing *linearly*.
+before. I'm in disbelief that the confirmed numbers are increasing _linearly_.
 To me, that just indicates how we simply don't have enough tests. I do wish we
 had a way in order to track total deaths, and compare that to the previous year,
 for a possibly more accurate number. The more it increases linearly, the more

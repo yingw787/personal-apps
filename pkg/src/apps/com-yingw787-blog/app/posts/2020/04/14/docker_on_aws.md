@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Docker on AWS\", by Justin Menga"
+title: 'Book Review: "Docker on AWS", by Justin Menga'
 date: "2020-04-14T00:00:01-04:00"
 draft: false
 ---

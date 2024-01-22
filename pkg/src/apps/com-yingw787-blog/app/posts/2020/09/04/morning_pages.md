@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 So fun fact, I had accidentally wiped my hard drive last week, and I failed to
 save any backups, so I had to set everything up from scratch. I took the
@@ -32,13 +32,14 @@ Being able to share this video!
 <br/>
 
 Sources:
-  - [Reddit](https://www.reddit.com/r/Eyebleach/comments/imasjv/a_chickens_best_friend/)
-  - [TikTok](https://www.tiktok.com/@hoest/video/6868422335377067270)
+
+- [Reddit](https://www.reddit.com/r/Eyebleach/comments/imasjv/a_chickens_best_friend/)
+- [TikTok](https://www.tiktok.com/@hoest/video/6868422335377067270)
 
 I thought it was a dog at first, then I realized it was a baby cow and then I
 had to get everything up and running again.
 
-__________
+---
 
 I think Arts, Beats, and Eats came by my neighborhood yesterday! I was going out
 for a walk and I saw a few food trucks come by. [Arts, Beats, and

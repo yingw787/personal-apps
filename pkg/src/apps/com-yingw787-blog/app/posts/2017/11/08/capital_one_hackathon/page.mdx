@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-11-08",
-    title: "The Capital One Hackathon, Part II",
-    description: "The Capital One Hackathon, Part II",
-    categories: ['Software'],
+  author: "Ying Wang",
+  date: "2017-11-08",
+  title: "The Capital One Hackathon, Part II",
+  description: "The Capital One Hackathon, Part II",
+  categories: ["Software"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Here's the post-mortem that we did together as a team:
 

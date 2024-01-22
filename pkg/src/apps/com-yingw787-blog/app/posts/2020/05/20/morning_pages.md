@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I love this music box! And the punch card that goes in! And everything else
 about this video!
@@ -26,7 +26,7 @@ about this video!
 <br/>
 <br/>
 
-__________
+---
 
 I think it's really hard to keep my sleep cycle from flopping around, and I've
 found that I definitely get more hazy in the wee hours of the morning. I'm not

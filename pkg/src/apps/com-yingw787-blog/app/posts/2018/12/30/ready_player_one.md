@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Ready Player One\", by Ernest Cline"
+title: 'Book Review: "Ready Player One", by Ernest Cline'
 date: "2018-12-30T16:54:28-05:00"
 draft: false
 ---

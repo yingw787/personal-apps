@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 When you're little and you can stretch like this:
 
@@ -22,7 +22,7 @@ When you're little and you can stretch like this:
 
 Man. Those were the days.
 
-__________
+---
 
 So apparently [President Trump is withdrawing all U.S. troops from Afghanistan
 by
@@ -39,7 +39,7 @@ disaster](https://www.youtube.com/watch?v=yjfrJzdx7DA), it will have been
 preventable.
 
 Kind of reminds me of
-[Honorius](https://en.wikipedia.org/wiki/Honorius_(emperor)) and [Roman
+[Honorius](<https://en.wikipedia.org/wiki/Honorius_(emperor)>) and [Roman
 Brittania](https://en.wikipedia.org/wiki/End_of_Roman_rule_in_Britain) being
 kicked out of the Roman Empire because of one guy. I wish we at least had an
 Augustus before our Honorius (or maybe a Nerva, Nerva seemed pretty cool).
@@ -53,7 +53,7 @@ thrown into the maelstrom. I think it speaks to a large truth: most governmental
 stuff happens at the local level, big-picture stuff is really abstract and
 people don't see it anyways. Not sure when I'd be hearing back from them though.
 
-__________
+---
 
 In other news, I think my investment (if you can call it that) into writing
 publicly is paying some amount of dividends. I'm getting a very very tiny

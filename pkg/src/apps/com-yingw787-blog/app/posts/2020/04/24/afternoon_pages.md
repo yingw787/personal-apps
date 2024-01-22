@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look at me. I am the captain now.
 
@@ -21,7 +21,7 @@ Look at me. I am the captain now.
 
 Yes you are!!
 
-__________
+---
 
 A reminder to all who need to hear it, that going 4 hours of sleep and spending
 the entire day awake isn't a great idea. Time feels quite weird, and I noticed
@@ -32,7 +32,7 @@ something to watch out for.
 
 Today I feel...normal. I guess this is kind of the new normal, and probably will
 be for me at least until the end of the year, but it feels rather eerie to have
-this sense of calm. Probably nothing to worry about, and if it is, not a *whole*
+this sense of calm. Probably nothing to worry about, and if it is, not a _whole_
 lot I can really do about it.
 
 So, cat pictures it is.

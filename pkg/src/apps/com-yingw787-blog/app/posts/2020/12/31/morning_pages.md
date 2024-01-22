@@ -14,15 +14,15 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I like this comparison.
 
 ![yzma](/img/posts/2020/12/31/morning_pages.jpg)
 
-<sup>is that my voice? is that *my* voice?? <sup>oh i guess so</sup></sup>
+<sup>is that my voice? is that _my_ voice?? <sup>oh i guess so</sup></sup>
 
-__________
+---
 
 Last day of 2020!!!!! So much to be excited about, both the year ending and
 having a fresh year coming up. I'm currently typing up a set of "year in review"
@@ -48,7 +48,7 @@ out my own spreadsheet software because I don't like the other ones I'm using.
 It's a very convoluted process for something that shouldn't be a big deal. Most
 people just say fuck it and don't record this stuff at all.
 
-__________
+---
 
 I'm not sure whether this is actually a thing, but I dream better when I fall
 into REM sleep while listening to Calm's Sleep Stories. The Calm app itself

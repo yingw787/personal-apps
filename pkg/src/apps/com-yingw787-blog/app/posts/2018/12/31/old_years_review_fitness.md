@@ -9,18 +9,18 @@ chart: true
 ---
 
 I think I drank too many organic chocolate milks after I had switched companies,
-and after realizing I was *comfortably* overweight, I opted to keep track of how
+and after realizing I was _comfortably_ overweight, I opted to keep track of how
 my weight and waist sizes were shifting throughout the year. After 9 months of
 continual tracking, here's some charts visualizing how those metrics have
 progressed over time.
 
 Some idiosyncracies:
 
--   Still working out some kinks in [Chart.js](https://chartjs.org), but the
-    title isn't appearing correctly for line charts and neither are the axis
-    labels. Apologies to all former professors.
+- Still working out some kinks in [Chart.js](https://chartjs.org), but the
+  title isn't appearing correctly for line charts and neither are the axis
+  labels. Apologies to all former professors.
 
--   Line breaks are for when I failed to record data for a particular day.
+- Line breaks are for when I failed to record data for a particular day.
 
 ```chart
 {
@@ -1321,30 +1321,30 @@ Some idiosyncracies:
 
 What insights could I glean from the data?
 
--   I know that when I did a good bit of running this summer (5 mile circuits
-    with a running club), and combined that with some accidental intermittent
-    fasting, I was able to **reduce my weight by about 5-10 lbs per month**.
-    This can be shown in the charts for June and July. It doesn't appear as
-    though going to the gym and doing strength training helps as much with
-    regards to losing weight (or maybe I'm just not trying hard enough there).
-    This seems to be a healthy expectation to set for myself; I don't think I
-    have *that* much weight left to lose before I can be considered healthy.
-    Hence, I should do more running.
+- I know that when I did a good bit of running this summer (5 mile circuits
+  with a running club), and combined that with some accidental intermittent
+  fasting, I was able to **reduce my weight by about 5-10 lbs per month**.
+  This can be shown in the charts for June and July. It doesn't appear as
+  though going to the gym and doing strength training helps as much with
+  regards to losing weight (or maybe I'm just not trying hard enough there).
+  This seems to be a healthy expectation to set for myself; I don't think I
+  have _that_ much weight left to lose before I can be considered healthy.
+  Hence, I should do more running.
 
--   Both weight and waist size data are extremely noisy when viewed on a day by
-    day basis; therefore, I should not try to measure any results until at least
-    one month has gone by, otherwise I might get false positives or false
-    negatives and skew my emotional bearing unnecessarily.
+- Both weight and waist size data are extremely noisy when viewed on a day by
+  day basis; therefore, I should not try to measure any results until at least
+  one month has gone by, otherwise I might get false positives or false
+  negatives and skew my emotional bearing unnecessarily.
 
--   Breaks, such as a week off for Thanksgiving and two weeks off for Christmas,
-    are prime times to gain weight; I think I definitely gained at least five
-    pounds during Thanksgiving break that I have yet to work off. Continue to
-    exercise and *do something* to ensure weight gain isn't a concern during
-    those off hours.
+- Breaks, such as a week off for Thanksgiving and two weeks off for Christmas,
+  are prime times to gain weight; I think I definitely gained at least five
+  pounds during Thanksgiving break that I have yet to work off. Continue to
+  exercise and _do something_ to ensure weight gain isn't a concern during
+  those off hours.
 
-__________
+---
 
-Achievements wise, **I lost *19.3lbs* since April of this year. I have also lost
+Achievements wise, \**I lost *19.3lbs\* since April of this year. I have also lost
 about 2-3 inches in waist size since the beginning of the year as well. I
 definitely think this is a good sign in terms of measuring for certain "life
 KPIs"; you optimize what you measure. I think going into next year, I will see
@@ -1352,11 +1352,11 @@ if I can measure body fat percentage more carefully, and see if that comes down
 as well.
 
 Oh, and also make the data machine-readable; I use a calendar template on Google
-Sheets to write down my data, and CSV exports from that template are *not*
+Sheets to write down my data, and CSV exports from that template are _not_
 machine-readable. Using a simple empty sheet would save any hours of painful
 data entry.
 
-__________
+---
 
 One last (and very important) data sheet I did not mention in these charts was
 my gratitude journal, a stream of consciousness consisting of what I was

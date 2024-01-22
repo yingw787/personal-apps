@@ -14,13 +14,13 @@ lockdown. To alleviate fear and stress, my writer's group has put together a
 daily "morning pages" get-together on Zoom in order to touch base before
 starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Blegh.
 
 ![blegh](/img/posts/2020/06/22/evening_pages.jpg)
 
-__________
+---
 
 I've now been home (parent's home) more than a full week, and I have to say I am
 sooooo productive when I'm at home. It's actually really nice being around other

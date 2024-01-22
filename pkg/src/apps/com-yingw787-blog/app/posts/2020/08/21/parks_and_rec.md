@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Television
-title: "TV Show Review: \"Parks and Recreation\", by Greg Daniels, Michael Schur et. al"
+title: 'TV Show Review: "Parks and Recreation", by Greg Daniels, Michael Schur et. al'
 date: "2020-08-21T00:56:37-04:00"
 draft: false
 ---

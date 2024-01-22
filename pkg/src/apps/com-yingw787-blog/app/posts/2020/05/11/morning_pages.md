@@ -13,11 +13,11 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 No cute picture today :)
 
-__________
+---
 
 I think one reason my weekends are so unproductive is I need some way in order
 to distinguish between weekends and weekdays. I'm working during the weekdays,

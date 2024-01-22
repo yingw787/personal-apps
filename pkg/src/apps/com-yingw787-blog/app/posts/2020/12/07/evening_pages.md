@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Don't you just wish they'd stay this way forever?
 
@@ -23,7 +23,7 @@ Don't you just wish they'd stay this way forever?
 Sigh. Only for a few weeks. It's okay though. They stay around forever (in our
 hearts) :heart_eyes:
 
-__________
+---
 
 So this morning I bought into a small company called Luminar Technologies. It's
 run by this guy who's younger and richer than I am (who is now a lot richer and
@@ -69,7 +69,7 @@ I bought in at around 33 and some change, so let's say 34 (very early in the
 morning). I got 125 shares. So I think today I made a bit more than $860 in
 unrealized capital gains. Maybe $1000. I don't know.
 
-This is where the stress starts again, because *the media* (bless their fucking
+This is where the stress starts again, because _the media_ (bless their fucking
 hearts) start saying "BUYBUYBUYSELLSELLSELL" and you have no idea whether to
 trust your own gut or whether to flap in the wind (pretty sure the answer is to
 trust my own gut). I almost lost it this morning and so I locked my phone and my
@@ -84,7 +84,7 @@ then watched from the sidelines mouth apage as the coronavirus pandemic + stock
 market stimulus shot the stock up to $550 (which would have covered my
 sabbatical a couple times over).
 
-So now I'm thinking, *fuck the news*, I'm just going to keep holding and if
+So now I'm thinking, _fuck the news_, I'm just going to keep holding and if
 there's no way to lock my position in this specific stock I might change brokers
 and migrate my account so that I don't have to look at this stock and how
 successful and whatnot it's doing. I'll just keep AT&T. Which currently is

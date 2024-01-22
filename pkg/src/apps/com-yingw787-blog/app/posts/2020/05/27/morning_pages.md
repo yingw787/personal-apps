@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 He's got the jiggles!
 
@@ -25,7 +25,7 @@ He's got the jiggles!
 <br/>
 <br/>
 
-__________
+---
 
 Weird, when I look back at the current frequency of coming to morning pages,
 I've liked only odd days for this week, and missed all the even days. I think it

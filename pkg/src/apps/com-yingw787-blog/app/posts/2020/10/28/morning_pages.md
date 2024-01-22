@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Kitties on a tile floor!
 
@@ -28,7 +28,7 @@ Kitties on a tile floor!
 
 Floor floofs. I like the way that sounds.
 
-__________
+---
 
 The presentation worked out rather smoothly! I thought it was going to blow up
 in my face, but I managed to get enough content out the door where I didn't

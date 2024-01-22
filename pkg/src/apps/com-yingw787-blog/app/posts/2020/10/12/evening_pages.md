@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 This is apparently the cutest bird in the world.
 
 ![bird](/img/posts/2020/10/12/evening_pages.png)
 
-__________
+---
 
 So I think I'm suffering from COVID fatigue, because even though I turned down
 offers to hang out with both coworkers (who I haven't met in person yet) and

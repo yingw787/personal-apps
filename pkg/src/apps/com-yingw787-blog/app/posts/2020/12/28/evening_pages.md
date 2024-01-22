@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 I love it when animals make carbon copies of themselves. Especially when they're
 already cute. It's like cuteness and then more cute slathered on top because
@@ -24,7 +24,7 @@ Case in point:
 
 ![smol](/img/posts/2020/12/28/evening_pages.webp)
 
-__________
+---
 
 It's the end of the year coming up, and I'm putting together a set of
 (hopefully) comprehensive datasets that detail how my year went. Hopefully, I'll

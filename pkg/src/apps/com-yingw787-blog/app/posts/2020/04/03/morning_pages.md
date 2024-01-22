@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I found this uber-cute baby video that I just had to share:
 
@@ -33,7 +33,7 @@ personal Instagram.
 
 Also it's Friday, TGIF!
 
-__________
+---
 
 Today I feel strangely calm. I've been sick for the past four weeks or so, and
 yesterday was particularly bad. I moved my bed so that I can prop myself up
@@ -54,8 +54,8 @@ So recuperation it is.
 I'm also worried about my software project. I need to keep working on some
 aspects of it to prevent them from going dark, but it's hard to do so while I'm
 spending my time learning about DevOps the entire day. I'm not sure whether I'll
-be able to just *stop reading the book* and *just learn the material I need to
-start*, because I fear I'll lose my ability to read books cover to cover (which
+be able to just _stop reading the book_ and _just learn the material I need to
+start_, because I fear I'll lose my ability to read books cover to cover (which
 in my mind also translates to shipping a software project end to end). Maybe
 it's OCD, maybe it's ADHD, maybe it's just me being crazy, but I've had bad
 experiences where I read three books and never finished any of them and resulted

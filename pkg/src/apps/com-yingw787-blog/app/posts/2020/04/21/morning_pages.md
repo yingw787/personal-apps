@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 [It's a brand new day, so come out and play, there's a world that's waiting for
 you](https://en.wikipedia.org/wiki/Timothy_Goes_to_School)
@@ -28,7 +28,7 @@ you](https://en.wikipedia.org/wiki/Timothy_Goes_to_School)
 
 This little one just opened his eyes!
 
-__________
+---
 
 I signed up for a virtual speed dating event this Friday. Apparently $10 buys
 you 10 minutes, 2 minutes each with 5 different people. I'm not sure whether the

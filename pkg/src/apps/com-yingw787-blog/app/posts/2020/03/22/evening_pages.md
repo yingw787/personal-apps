@@ -14,7 +14,7 @@ stress, my writer's group has put together a daily "morning pages" get-together
 on Zoom in order to touch base before starting the day. Here's some of my brief
 thoughts.
 
-__________
+---
 
 I missed the virtual morning standup, but I decided that won't stop me from
 posting a personal note in the evening. The show must go on.

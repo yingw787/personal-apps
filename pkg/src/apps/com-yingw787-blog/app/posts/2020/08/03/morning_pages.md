@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Puppy printer!
 
 ![puppy-printer](/img/posts/2020/08/03/morning_pages.jpg)
 
-__________
+---
 
 So today's prompt (which I woke up in time to hear) is how have my social skills
 changed during the 140+ days of quarantine. One peep went on a trip of some sort

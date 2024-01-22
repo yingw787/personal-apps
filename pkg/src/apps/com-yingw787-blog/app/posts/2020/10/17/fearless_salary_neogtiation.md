@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Fearless Salary Negotiation: A Step-by-Step Guide to Getting Paid What You're Worth\", by Josh Doody"
+title: 'Book Review: "Fearless Salary Negotiation: A Step-by-Step Guide to Getting Paid What You''re Worth", by Josh Doody'
 date: "2020-10-17T00:46:04Z"
 draft: false
 ---

@@ -13,13 +13,13 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 I like this picture. Quite a bit.
 
 ![aww](/img/posts/2020/04/28/morning_pages.jpg)
 
-__________
+---
 
 It's not a good idea to eat twelve crossiants in three days, and I don't think I
 have anybody to blame but myself. Sure, the underlying reason is because due to
@@ -50,7 +50,7 @@ Some things I learned about myself include:
   have next to no energy to do this. There's a number of reasons for this. Due
   to my phone addiction, I keep my phone locked up until 11:30PM, so that I can
   keep my phone usage to 3 hours a day (typically on the weekends, when I don't
-  lock up my phone, it can go up to *15 hours a day*. Yeah, that's right, I
+  lock up my phone, it can go up to _15 hours a day_. Yeah, that's right, I
   can't even get out of bed). I have a conversation with my parents every day,
   and because my phone is locked up and I don't have VoIP-based SMS + voice I
   have to wait until my phone is unlocked until I can call. Which puts my

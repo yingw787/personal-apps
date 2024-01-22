@@ -14,13 +14,13 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Adorrrrrableeeee
 
 ![aww](/img/posts/2020/07/27/evening_pages.jpg)
 
-__________
+---
 
 I start a new job on Wednesday! This time around, I'm trying a contract-to-hire
 agreement. A bit unconventional, but I think it might be a better way to de-risk

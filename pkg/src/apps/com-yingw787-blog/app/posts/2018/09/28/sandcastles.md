@@ -41,7 +41,7 @@ try for something a bit more complex:
 ![complex](/img/posts/2018/09/28/sandcastles_2.jpg)
 
 There's a common thread linking these two otherwise vastly different creations:
-*their impermanence*. Sooner or later, the sun will dry them out, the wind will
+_their impermanence_. Sooner or later, the sun will dry them out, the wind will
 erode their surfaces, and the waves will wash them away. Is it sad that they are
 gone and things will never be the same? Of course it is. But that's not why we
 create them. We make them because their very creation makes us happy, because we
@@ -52,7 +52,7 @@ general. It's exciting when they begin anew. It's enjoyable while it lasts. And
 when it ends, we remember the good times, the good memories, and how we made
 other people feel.
 
-__________
+---
 
 Thinking this way, along with copious breathing exercises, has helped me
 navigate a lot of the minefields through life that have sunk me in the past and

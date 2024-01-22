@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 Hear us roar!
 
@@ -22,7 +22,7 @@ Hear us roar!
 
 <sup>roar</sup>
 
-__________
+---
 
 I've been thinking about adopting a cat. Maybe it's because I'm looking to
 convert to full-time instead of working on a contract basis (which has worked

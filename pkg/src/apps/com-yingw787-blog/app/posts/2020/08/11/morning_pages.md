@@ -14,7 +14,7 @@ and stress, my writer's group has put together a daily "morning pages"
 get-together on Zoom in order to touch base before starting the day. Here's some
 of my brief thoughts.
 
-__________
+---
 
 The famous catdog goes for a walk!
 
@@ -22,7 +22,7 @@ The famous catdog goes for a walk!
 
 Maybe it should be the kittendog :)
 
-__________
+---
 
 I bit the bullet recently and purchased two different books on formal reasoning,
 "Practical TLA+" by Hillel Wayne (covering TLA+), and "Software Abstractions" by

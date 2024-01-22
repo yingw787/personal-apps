@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 Look at this baby and kitty playing together!
 
@@ -27,7 +27,7 @@ Look at this baby and kitty playing together!
 
 Looks like denim isn't just for the 90s anymore :smile:
 
-__________
+---
 
 Yesterday, I got a gigantic grocery delivery from my parents. It was like $200
 worth of stuff. Really glad I don't have to go out and buy my own groceries
@@ -55,7 +55,7 @@ finger licker, but it was an interesting experience.
 Strawberries and mushrooms I will complain about, because they perish so fast. I
 think half of them were soft and gray-ish already. Apparently mushrooms will
 dissolve as well. I wish I could get like frozen mushrooms or something. Frozen
-strawberries I have tried, but they're literally *raw* (like full-on white
+strawberries I have tried, but they're literally _raw_ (like full-on white
 unripe) and then blasted with nitrogen in order to look fresh. Strawberries are
 lies.
 

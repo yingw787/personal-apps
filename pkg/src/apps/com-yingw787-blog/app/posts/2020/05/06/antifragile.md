@@ -2,19 +2,19 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Antifragile: Things that Gain from Disorder\", by Nassim Nicholas Taleb"
+title: 'Book Review: "Antifragile: Things that Gain from Disorder", by Nassim Nicholas Taleb'
 date: "2020-05-06T12:38:41-04:00"
 draft: false
 ---
 
 The Incerto Series:
 
--   [The Black Swan](/posts/2020/04/09/the_black_swan)
--   [**Antifragile**](/posts/2020/05/06/antifragile)
--   [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
--   [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
+- [The Black Swan](/posts/2020/04/09/the_black_swan)
+- [**Antifragile**](/posts/2020/05/06/antifragile)
+- [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
+- [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
 
-__________
+---
 
 I'm a pretty fearful guy, and I think a lot of those fears stem from personal
 insecurities of one flavor or another. Yet the biggest thing I'm terrified of is

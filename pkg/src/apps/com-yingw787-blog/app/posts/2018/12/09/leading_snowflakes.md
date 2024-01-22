@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Leading Snowflakes\", by Oren Ollenbergen"
+title: 'Book Review: "Leading Snowflakes", by Oren Ollenbergen'
 date: "2018-12-09T13:16:57-05:00"
 draft: false
 ---
@@ -18,7 +18,7 @@ Weekly](http://softwareleadweekly.com/), "The Effective Engineer", and others
 touch upon. I thought I would add some heuristics that might roughly map to what
 they are saying:
 
-- **Engineering management is *not* engineering**. It is its own separate career
+- **Engineering management is _not_ engineering**. It is its own separate career
   path, let alone a set of tasks to do, and it's impossible to be an engineer
   and be an effective engineering manager at the same time. Things like tying
   engineering to business impact, ensuring communications between engineering

@@ -13,7 +13,7 @@ metro region has been in a state of lockdown. To alleviate fear and stress, my
 writer's group has put together a daily "morning pages" get-together on Zoom in
 order to touch base before starting the day. Here's some of my brief thoughts.
 
-__________
+---
 
 <div style="background-color: black; color: white; text-align: center; font-family: 'Times New Roman'; padding: 20px; width: 100%">
 IN LOVING MEMORY
@@ -27,7 +27,7 @@ IN LOVING MEMORY
 </div>
 <br>
 
-__________
+---
 
 I think this weekend I felt pretty tired. I think the news is starting to get to
 me. It's like watching a train wreck that melts your eyeballs, it hurts but you

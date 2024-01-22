@@ -2,7 +2,7 @@
 author: ["yingwang"]
 categories:
   - Books
-title: "Book Review: \"Virtual Power\", by Will Angel"
+title: 'Book Review: "Virtual Power", by Will Angel'
 date: "2020-02-16T18:59:41-05:00"
 draft: false
 ---
