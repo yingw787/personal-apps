@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
 
 export const article = {
   author: "Ying Wang",
@@ -26,14 +27,14 @@ So here's some of my brief thoughts.
 
 Look baby! Here's a baby!
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/07/11/morning_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/07/11/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 This is how it starts :heart:
 

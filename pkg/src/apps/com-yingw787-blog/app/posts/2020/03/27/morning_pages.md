@@ -134,8 +134,7 @@ yesterday, partially copied here:
 > For example, I made two Hacker News posts about the coronavirus before all
 > this happened, and both times people rose to dismiss my concerns:
 >
-> https://news.ycombinator.com/item?id=22111815
-> https://news.ycombinator.com/item?id=22453381
+> https://news.ycombinator.com/item?id=22111815 > https://news.ycombinator.com/item?id=22453381
 >
 > Now JHU CSSE is reporting 23,970 deaths and a continued exponential rise in
 > confirmed cases with no peaking in sight. We're quarantining themselves on a

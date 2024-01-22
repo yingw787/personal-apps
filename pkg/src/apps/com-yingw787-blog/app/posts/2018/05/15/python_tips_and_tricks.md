@@ -125,7 +125,7 @@ FileNotFoundError: [Errno 2] No such file or directory: './test.csv'
 
 <hr style="height:-100pt; visibility:hidden;" />
 
-This is because the directory containing 'some_shell_script.sh' does not include the file 'test.csv' -- but that's where _Python_ is looking!
+This is because the directory containing 'some*shell_script.sh' does not include the file 'test.csv' -- but that's where \_Python* is looking!
 
 So how do you solve this? Yes, you can use the `pathlib` module that comes packaged with Python 3.4+. However, I myself have never worked in an environment that supported only Python 3 yet (and yes, it's _2018_!), so the code I write must be both Python 2 and 3 compatible.
 
