@@ -1,0 +1,155 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2019-01-28",
+    title: "Reverting MacBook Pro End-Of-Life",
+    description: "Reverting MacBook Pro End-Of-Life",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+Remember when I was like [I need a new
+computer](/posts/2019/01/10/macbook_end_of_life)? I got a new computer. And
+after a week, got so sick of it I returned it today.
+
+I got a completely specced-out Dell Precision 5530. It had all the bells and
+whistles:
+
+-   CPU: i9-8950HK
+-   OS: Ubuntu Linux 18.04 (modified Dell OEM version)
+-   GPU: NVIDIA Quadro P2000 w/ 4GB GDDR5
+-   Memory: 32GB DDR4-2666MHz
+-   Disk: 256GB NVMe PCIe Class 40 SSD + Additional 2TB HDD
+
+All in this gorgeous package:
+
+![nice](/img/posts/2019/01/28/revert_macbook_end_of_life_3.jpg)
+
+AMAZING, right?
+
+Kind of. But in the end, not enough.
+
+__________
+
+So I purchased this computer after a great deal of hesitation. The price was the
+primary consideration for me, and the lack of "actual" failures in my current
+hardware also gave me pause. I wasn't using what I already had badly. I had to
+uninstall my NVIDIA drivers in my desktop due to a faulty apt upgrade and my GUI
+went into a login loop that didn't stop until I uninstalled said drivers in
+recovery mode and reverted to [nouveau](https://nouveau.freedesktop.org/wiki/).
+
+So I'm thinking, *"I have all this stuff and it isn't enough? Why am I
+purchasing this?"*
+
+Then the Dell Small Business discount dropped off by 5% and I begged the Dell
+customer representative if he could restore the discount. He did and I purchased
+it.
+
+I felt absolutely nothing purchasing that computer. It was a world away from how
+I felt about my current MacBook Pro, where I was super excited to get it. This
+new laptop? It's just a tool. And can a tool replace a baby? So I remained
+emotionally indifferent. I knew this was bad; I generally feel pretty good about
+purchasing long-lasting items that are not books, because of just how rarely I
+do so.
+
+It came. It was in a shitty cardboard box. Okay. I took a Lyft back to my
+apartment to make sure it remained safe. The driver commented how I was one of
+the few people switching away from macOS to Linux; I replied that I used Linux
+at home and at work and I might as well use it when I'm mobile too.
+
+I opened it up. The inside box was very fancy.
+
+![fancy](/img/posts/2019/01/28/revert_macbook_end_of_life_4.jpg)
+
+I set up
+[papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+and [adapta-gtk-theme](https://github.com/adapta-project/adapta-gtk-theme), and
+a [solarized dark Python
+wallpaper](https://linux.pictures/content/1-projects/200-solarized-dark-wallpaper/solarized-wallpaper-python.png).
+Ubuntu 18.04 is nice like that; all GNOME, no wierd Unity/GNOME combination. And
+the nice thing about GNOME is that you can install packages straight from the
+GNOME package archive to your computer via [Google Chrome
+extension](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=en)
+and [gnome-chrome-shell](https://github.com/GNOME/chrome-gnome-shell). This
+meant I could use the [Dash to Dock
+extension](https://extensions.gnome.org/extension/307/dash-to-dock/), and with
+that Linux resembled macOS but in a *way* better way.
+
+![ooh2](/img/posts/2019/01/28/revert_macbook_end_of_life_2.jpg)
+
+Build quality is good. No flex in the screen, hinges are good. No one-finger
+lift of the screen, and the screen overhanging the computer means that when
+placed in a laptop stand, the laptop needs to be lifted out of the stand before
+the screen can be lifted. These are fairly small complaints, though.
+
+One of the biggest issues was the NVDIA driver registration, and how the driver
+was restored during resetting of the OS to Dell factory defaults. It wasn't
+restored, it was lost.
+
+![ooh](/img/posts/2019/01/28/revert_macbook_end_of_life_1.jpg)
+
+See how the Graphics are Intel integrated graphics instead of the NVIDIA
+graphics card? Yeah, I thought it was wierd too. So I ran `sudo lscpi | grep
+NVIDIA` and nothing showed up. I ran `sudo lshw | grep NVIDIA` and it did.
+
+Dude. Uncool. That was one of the primary reasons why I installed the NVIDIA
+drivers -- to compile/run CUDA files offline.
+
+Also, my MacBook Pro must have a ghost in it or something, because it got faster
+the more I used it. I don't think it's slow, the upgrades I made to it keep it
+fairly fast, and I can't install macOS Mojave due to me RAIDing my SSDs anyways
+so I don't have to worry about upgraded OSes taking up more system resources.
+
+I also still dream of dynamic DNS over OpenVPN and securely accessing my desktop
+from my laptop. If I had that, I probably could use the time I'm not on network
+doing other things that are CPU-specific -- like everything that doesn't need a
+GPU. So really having a GPU in a laptop is kind of pointless (and not to mention
+expensive and underpowered).
+
+I'm also a little terrified of the posts on Dell forums from people screaming
+about coil whine (apparently addressed in the newer machines), and of other
+build quality issues for the XPS line (which shares a QC line with the Precision
+apparently). Apple's quality has gone down significantly since I purchased my
+laptop, but nobody else has been able to match the quality at Apple's peak. Even
+my work laptop, the [System76 Oryx Pro](https://system76.com/laptops/oryx),
+suffers from stupid issues like the monitor going into a panic mode when
+unplugging from a Dell monitor. And that one costs $3500, so it's not like
+paying more or out the nose will result in a better experience.
+
+TL;DR the new laptop is just not relevant to me. It also sucks more than my
+current computer.
+
+__________
+
+When I returned it, I was afraid of spilling coffee or something on my old
+computer immediately afterwards and ruining it. I guess my brain just doesn't
+like me. Even so, I don't think I will miss the new laptop. The next laptop I
+get probably will be a Linux laptop, and high-quality too, but probably a lot
+smaller and cheaper; only a client to my desktop. Something like the base model
+XPS 13 Developer Edition which retails for $740, or a MacBook Air on Apple or
+eBay or something (hey, maybe USB-C will actually be a thing, and dongles will
+not be). Ideally I will become good enough at Linux and lightweight distros to
+get something like an [IBM ThinkPad
+T20](https://en.wikipedia.org/wiki/IBM_ThinkPad_T20_series), which in part of my
+mind is what *real* software engineers use (like Linus Torvalds, who apparently
+compiles Linux on a 2GB notebook).
+
+I'm terrified that the golden age of laptops has already ended, and with Apple's
+current design decisions, that we the customers will never have great laptops
+again. This is of course an absurd fear; somebody has to be able to create good
+laptops, right?
+
+Right?
+
+Guys?

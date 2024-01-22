@@ -1,0 +1,281 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: March 28th, 2020"
+date: "2020-03-28T08:41:49-04:00"
+draft: true
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of partial lockdown. To alleviate fear and
+stress, my writer's group has put together a daily "morning pages" get-together
+on Zoom in order to touch base before starting the day. Here's some of my brief
+thoughts.
+
+__________
+
+I think in addition to [r/aww](https://reddit.com/r/aww), there's also
+[r/oddlysatisfying](https://www.reddit.com/r/oddlysatisfying/), which is oddly
+but also extremely satisfying. Like, look at this picture of a perfect lemon:
+
+![lemonnnn](/img/posts/2020/03/28/morning_pages.jpg)
+
+Have you seen anything as perfect in your whole life? Of course you have, I've
+been posting pictures of baby animals all week.
+
+Now onto the hard stuff. Don't read if you've already had a bad day.
+
+Okay?
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+Okay.
+
+__________
+
+So I read the rather distressing news today that [President Donald Trump is
+withholding medical supplies from Michigan because the governor is a female
+Democrat](https://wwjnewsradio.radio.com/articles/after-trump-attacks-whitmer-she-says-fed-supplies-delayed):
+
+> After President Donald Trump issued scathing comments about Michigan Gov.
+> Gretchen Whitmer, saying she's "not stepping up," and "doesn't know what's
+> going on," she told WWJ 950 the state is having trouble getting the equipment
+> they need to fight the novel coronavirus.
+>
+> "What I've gotten back is that vendors with whom we've procured contracts --
+> They're being told not to send stuff to Michigan," Whitmer said live on air.
+> "It's really concerning, I reached out to the White House last night and asked
+> for a phone call with the president, ironically at the time this stuff was
+> going on."
+
+Here's another angle around how President Trump is telling Vice President Pence
+to [not call governors who aren't 'grateful' enough for his
+efforts](https://www.usatoday.com/story/news/politics/2020/03/27/coronavirus-donald-trump-tells-pence-not-call-michigan-governor/2931251001/):
+
+> President Donald Trump said Friday he has asked Vice President Mike Pence not
+> to call governors he says have not been "appreciative" enough of his efforts
+> on coronavirus – a group of critics that included a governor he referred to
+> only by gender,
+>
+> "Don't call the woman in Michigan," Trump said at a press conference while
+> discussing Pence's work as head of the White House Coronavirus Task Force.
+>
+> That governor – Gretchen Whitmer – replied on Twitter that "right now, we all
+> need to be focused on fighting the virus, not each other."
+>
+> "I’m willing to work with anyone as long as we get the personal protective
+> equipment we need for the people of Michigan," she said.
+
+Here's this story that broke today, people hoped that Democratic congressmen
+were going to negotiate controls and transparency on corporate bailouts.
+President Trump signed the bill and *immediately afterwards* [declared he will
+not follow those same transparency measures he
+signed](https://www.vox.com/policy-and-politics/2020/3/28/21197995/coronavirus-stimulus-trump-inspector-general-wont-comply),
+statement
+[here](https://www.whitehouse.gov/briefings-statements/statement-by-the-president-38/)
+
+> ...
+>
+> But a requirement to consult with the Congress regarding executive
+> decision-making, including with respect to the President’s Article II
+> authority to oversee executive branch operations, violates the separation of
+> powers by intruding upon the President’s power and duty to supervise the
+> staffing of the executive branch under Article II, section 1 (vesting the
+> President with the “executive Power”) and Article II, section 3 (instructing
+> the President to “take Care” that the laws are faithfully executed).
+> Accordingly, my Administration will treat this provision as hortatory but not
+> mandatory.
+>
+> ...
+>
+> I do not understand, and my Administration will not treat, this provision as
+> permitting the SIGPR to issue reports to the Congress without the presidential
+> supervision required by the Take Care Clause, Article II, section 3.
+>
+> ...
+>
+> My Administration will make appropriate efforts to notify the relevant
+> committees before taking the specified actions and will accord the
+> recommendations of such committees all appropriate and serious consideration,
+> but it will not treat spending decisions as dependent on prior consultation
+> with or the approval of congressional committees.
+>
+> ...
+
+Nobody alive has dealt with anything like this. People are picking examples from
+the 1918 Spanish Flu, and to 1861-1865 Civil War. I think this situation does
+set a new precedent in U.S. history.
+
+***This is nothing compared to what's coming.*** What I'm writing here is
+something I've been thinking about for years, and too afraid to publicly admit
+because I think it'd be too dark and scary for others and because it'd
+negatively affect my life with little benefit. But now I'm writing it to make
+sure I think things through.
+
+__________
+
+We're now very much in a "cold civil war" between at least two political parties
+and at least two geographic regions of the country. More distrubingly, the past
+month presents the confluence of multiple Black Swan events (Donald Trump's
+election as the 45th President, and COVID-19 being the respiratory influenza
+with human-to-human contact, asympotatic transmission, and 1% mortality rate)
+being chained together and influencing each other.
+
+That's kind of what we've been seeing over the past 30 or so years, ever since
+the end of the Cold War and the globalization of trade and the monetization of
+the peace dividend. This was planned, and expected, by many people, politicians
+and voters alike.
+
+Something only a few (maybe prescient) people realized at the time is benefits
+of this peace dividend will go to certain sectors of the population more than
+others, certain states more than others, certain value structures more than
+others. Keep the old ways, and lose out. Keep the only constant as change, and
+swim in gold coins like Scrooge McDuck.
+
+The "greatest generation" of politicians and voters began dying off, and things
+like money and power became society's common denominator. It's transparent,
+reliable and trusted among good and bad alike, and quite immutable (not in
+inflation-adjusted terms). Peace weakens, and society became brittle. Things
+like manufacturing surge capacity and emergency management became operational
+overhead to be cut and streamlined. Peace also corrupts, because humans are
+falliable. Income inequality isn't just because some people work harder than
+others, it's also because after some point, you get to write the rules of the
+game:
+
+![bailout](/img/posts/2020/03/28/morning_pages_2.png)
+
+Now enter the first Black Swan event, Donald Trump's election. January 20th,
+2017, and still ongoing today. One thing interesting about this president is how
+constant approval and disapproval numbers are. This is a snapshot of
+[FiveThiryEight's poll
+numbers](https://projects.fivethirtyeight.com/trump-approval-ratings/). I trust
+Nate Silver and FiveThirtyEight more than other poll aggregators because they
+warned of this black swan back in 2015-2016 when giving the lowest chances of
+Hillary Clinton winning the 2016 presidential election.
+
+![polls](/img/posts/2020/03/28/morning_pages_3.png)
+
+(Sanitizing `$FAMOUS_GERMAN_LEADER` and `$FAMOUS_IDEOLOGY` to appear lower in
+SEO results and hopefully avoid being brigaded and doxxed by neo-Nazis with too
+much time on their hands)
+
+People compare Trump to `$FAMOUS_GERMAN_LEADER` all the time (like they compare
+every president to `$FAMOUS_GERMAN_LEADER` a la [Godwin's
+Law](https://en.wikipedia.org/wiki/Godwin%27s_law)), and so let's be reminded
+that `$FAMOUS_GERMAN_LEADER` won around 35% in 1932 to be able to enact
+emergency powers and end the Weimar Republic. What people may *not* realize is
+how in 1946, after Germany looked like this:
+
+![dresden 1945](/img/posts/2020/03/28/morning_pages_4.jpeg)
+
+A shockingly high proportion of Germans supported `$FAMOUS_GERMAN_LEADER` and
+$FAMOUS_IDEOLOGY. This is of course an extremely touchy topic, so I went ahead
+and looked for polls, and sure enough, here's [a collation of OMGUS surveys run
+in the American Occupied Zone in
+Germany](https://ia802606.us.archive.org/25/items/publicopinionino00merr/publicopinionino00merr.pdf),
+of which Survey No. 68 stands out (pasted in full below, and on page 171 of the
+linked PDF):
+
+>Report No. 68 (10 October 1947)
+>
+>**TRENDS IN ATTITUDES TOWARD `$FAMOUS_IDEOLOGY`**
+>
+>*Sample: unspecified number, representing a cross-section of the adults in the
+>American Zone and the American and British Sectors of Berlin.*
+>
+>*Interviewing dates: between November 1945 and August 1947. (5 pp.)*
+>
+>Despite fluctuations, the percentage of Germans describing `$FAMOUS_IDEOLOGY`
+>as a good idea badly carried out remained at a fairly high number -- starting
+>at 53 per cent in November 1945, dipping to a low of 42 per cent in July 1946,
+>and rising again to 55 per cent by August 1947. Those regarding it as a bad
+>idea rose from 41 per cent in November 1945 to 48 per cent in July 1946 but
+>dropped once more to 35 per cent in August 1947. Another way of describing this
+>trend is to say that, in the period from November 1945 to July 1946, the
+>average number of people who thought `$FAMOUS_IDEOLOGY` basically a good idea
+>was 48 per cent; between December 1946 and August 1947 it was 52 per cent.
+>
+>In July 1947, opinions on this issue were related to attitudes toward
+>democracy, individual liberty as against economic security, and the
+>responsibility of Hitler and his advisers for his acts. People who tended to
+>excuse `$FAMOUS_IDEOLOGY` were most ready to pick flaws in the working of
+>democracy (42%), to choose security (70%) rather than liberty (22%), and to
+>throw the blame for Hitler's acts on his advisers (32%) rather than on Hitler
+>himself (25%), with another 37 per cent blaming both.
+>
+>In August 1947, the population groups containing the largest proportions of
+>persons describing `$FAMOUS_IDEOLOGY` as a good idea badly carried out were
+>persons with eight years of education (60%), those under 30 (68%), Protestants
+>(64%), LDP/DVP party adherents (68%). More West Berliners (62%) held this view
+>than Hessians (61%), residents of Wuerttemberg-Baden (60%), and Bavarians
+>(50%); Bavarians led the list of those who rejected Nazism as a bad idea (38%),
+>followed by West Berliners and Hessians (33%), and residents of
+>Wuerttemberg-Baden (31%).
+
+And **this is a critical piece of information**, because people naturally think
+if bad things start happening to you, to the degree of getting bombed back to
+the Stone Age, you'll naturally dislike your leaders and pivot towards the
+"right" idea, and **that very much isn't the case** when voting on matters like
+identity.
+
+
+__________
+
+This pandemic will pass. My friends and family in Michigan should be safe,
+because Michigan itself has vast natural resources and a solid manufacturing
+base (which is partially due to President Obama's bailout of the auto industry
+back during the last recession). But now, the possibility of "enemy" agents
+hostile to state interests based on majority-based political affiliation, and
+having those agents distributed through all three branches of the federal
+government, is a very scary proposition. A nation that's been defeated by an
+enemy can rise back up, but one that crumbles from within is dead forever.
+
+To be very clear, I'm absolutely not advocating for secessionism. Besides the
+fact that secession is a treasonable offence punishable by death, I'm also a
+strong federalist and believe in the power of unity over discord. From a laws of
+power perspective, having the nuclear weapons supply chain, command authority,
+and launch / delivery facilities and vehicles fractured is a very bad thing for
+world peace. I don't think we've even found all the [suitcase
+nukes](https://en.wikipedia.org/wiki/Suitcase_nuclear_device) after the collapse
+of the Soviet Union. But I think we're going to need to sit down and talk about
+this, because events that have physically happened have forced it already, and I
+just want to be mentally prepared and to know what I believe in. If something as
+unthinkable as the country falling apart happens, I will probably choose to die
+here. My life has been a bet on this country succeeding, I don't think I want to
+change that, and to be honest I'm not sure if I want to see what happens next.
+
+__________
+
+**There's undeniably a strong argument to be made that the Union no longer makes
+sense for some**. I'll give you an example. I became an American citizen in high
+school. In college, I had my first real-world experiences meeting and
+interacting with people who came directly from other countries. In those bonds,
+I found friendship, cameraderie, and many common beliefs.
+
+Now if I ran a thought experiment, and I asked myself, who would I choose to be
+my neighbor, my friends from college, or a randomly selected person from
+Oklahoma, I might not choose the person from Oklahoma. I'd probably choose my
+friend from college. I don't think that's a huge problem. I think the randomly
+selected person from Oklahoma would also choose his or her friend from college!

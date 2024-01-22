@@ -1,0 +1,153 @@
+---
+authors: ["yingwang"]
+categories:
+  - Software
+title: "Python Tips and Tricks"
+date: "2018-05-15T00:02:31-04:00"
+draft: false
+---
+
+Over the past two years, I learned a good deal about what makes professional software engineering "professional". Among the most important lessons is "process, process, process". Make sure your features enjoy short time-to-market, your development cycle is reliable and reproducible, and your debugging cycles iterate and improve easily, and if you were going to succeed in any capacity before, you will (and if you weren't, it wasn't the developer's fault :blush:). One of the most important things to master on the path of perfecting your process is development velocity and productivity. This means using tools that boost developer performance.
+
+Python can help with that.
+
+Python is already a programming language well suited to productivity. It's interpreted. It's dynamically typed. It has a *huge* number of up-to-date libraries. These things, and other features of Python, present themselves to you when you use Python on a daily basis. But there's still even more tricks you can employ to make your development even faster.
+
+__________
+
+What if I told you there were not only multiple *versions* of Python, but also multiple *REPLs* as well? Once upon a time, both of these seemed crazy to me. How could you have multiple versions of a programming language? Then I implemented [my own version of Lisp in C](https://github.com/yingw787/c-lisp), and realized that a programming language is just an API to the machine. It's the *specification* that counts, not the code.
+
+So, what "flavors" of Python are there, exactly? You have your standard Python, CPython, which is implemented in C. Then you have [Jython](http://www.jython.org/), which is Python on the JVM; [PyPy](http://pypy.org/), which is Python with a JIT compiler instead of an interpreter; [IronPython](http://ironpython.net/), which is Python written in C# for the .NET framework, and a number of others. The only other version of Python I've heard mentioned in a production setting is [Numba](http://numba.pydata.org/), which is LLVM-optimized and can target CPUs and GPUs, but I've never worked with it (as of yet).
+
+While I don't use multiple versions of Python in production, I *very much* do use different [REPLs](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) for CPython. Alternative REPLs in Python are extremely useful because as Python is an interpreted language, how the code is typed is how the code will run, more or less (for instance, multi-part if statements are evaluated on-the-fly from left to right). One REPL I constantly use is [IPython](http://ipython.org/). IPython has several noticeable differences between the regular Python shell, including syntax highlighting, tab completion, and integrations with MATLAB and Mathematica. However, the biggest reason I use IPython is for debugging purposes. Here's the plain Python debugger:
+
+```python
+import pdb
+pdb.set_trace()
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+I've typed the above phrase about ten times in 2 years. By contrast, I've typed the following phrase hundreds, if not thousands, of times:
+
+```python
+import ipdb
+ipdb.set_trace()
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+This drops you from your Python script into not the Python shell, but the IPython shell. From here, you can do your `continue`, `next`, `step`, and `up` commands that you would expect. The *experience*, though, is *so much* nicer.
+
+Fun fact: IPython formed the basis of [Project Jupyter](http://jupyter.org/), which recently [won the ACM Software System Award](https://blog.jupyter.org/jupyter-receives-the-acm-software-system-award-d433b0dfe3a2) and is *the* tool data scientists everywhere swear by.
+
+There's also [BPython](https://bpython-interpreter.org/about.html), which focuses much more on optimizing the experience of the Python interpreter. One very nice aspect of BPython is that the docstring for the function you are trying to call appears inline in the terminal. And take a guess at how the BPython debugger is invoked in a Python script. That's right:
+
+```python
+import bpdb
+bpdb.set_trace()
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+__________
+
+Another very useful feature of Python is the [`dir()` built-in function](https://docs.python.org/3/library/functions.html#dir). `dir()` lists the attributes of an object in Python, or lists the variables present in the local scope. If you're playing around with an unfamiliar object, and you're wondering what "things" you can do with it, use `dir()`.
+
+Let's say you imported the `random` package. You can use `dir()` to find what's available to you without immediately clicking away to view the static documentation somewhere else:
+
+```bash
+>>> import random
+>>> dir(random)
+['BPF', 'LOG4', ... 'vonmisesvariate', 'weibullvariate']
+>>> random.weibullvariate()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: weibullvariate() takes exactly 3 arguments (1 given)
+>>> dir(random.weibullvariate)
+>>> ['__call__', '__class__', ..., '__doc__', ..., 'im_self']
+>>> random.weibullvariate.__doc__
+Weibull distribution.\n\n        alpha is the scale parameter and beta is the shape parameter.\n\n
+>>> random.weibullvariate(1, 2)
+1.3195979776787314
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+This is me learning that the `random` package has a `weibullvariate` method in about seven lines of code. This would be a good place to exit the shell and use BPython and its native docstring formatter.
+
+__________
+
+One last trick I would like to demonstrate is how to programmatically convert a relative path to an absolute path, while still remaining both Python 2 and Python 3 compliant.
+
+Relative paths are much easier to play around with by hand because you have to type less; but a quirk in Python trips up computers when they try to read relative paths. This is because the relative paths (at least in Python) start from the location of program execution. So if you have a shell script wrapping your Python script that you are executing somewhere else, the current location `'.'` will be where the shell script began executing, *not* where the Python script is located.
+
+Let's take an example project structure:
+
+```bash
+username@hostid:~$ tree sample_project
+.
+├── some_shell_script.sh
+└── tests
+    ├── test.csv
+    └── test.py
+
+1 directory, 3 files
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+And some example files:
+
+<hr style="height:-100pt; visibility:hidden;" />
+<p style="line-height: 0.1;">'some_shell_script.sh'</p>
+```bash
+python tests/test.py
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+<hr style="height:-100pt; visibility:hidden;" />
+<p style="line-height: 0.1;">'test.py'</p>
+```python
+open('./test.csv')
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+When you run `sh /path/to/some_shell_script.sh`, you get an error message:
+
+```bash
+username@hostid:/path/to/sample_project$ ./some_shell_script.sh
+Traceback (most recent call last):
+  File "tests/test.py", line 1, in <module>
+    open('./test.csv')
+FileNotFoundError: [Errno 2] No such file or directory: './test.csv'
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+This is because the directory containing 'some_shell_script.sh' does not include the file 'test.csv' -- but that's where *Python* is looking!
+
+So how do you solve this? Yes, you can use the `pathlib` module that comes packaged with Python 3.4+. However, I myself have never worked in an environment that supported only Python 3 yet (and yes, it's *2018*!), so the code I write must be both Python 2 and 3 compatible.
+
+Here's what I do:
+
+- I wrap the relative path I want relative from my Python file in `os.path.relpath`.
+- I grab the location of the current directory of the Python file using `os.path.dirname(__file__)`.
+- I tie the two paths together using `os.path.join`.
+- I create the absolute path from that intermediate result using `os.path.abspath`.
+
+The final result looks something like this:
+
+```python
+os.path.abspath(
+  os.path.join(
+    os.path.dirname(__file__),
+    os.path.relpath('./test.csv')
+  )
+)
+```
+<hr style="height:-100pt; visibility:hidden;" />
+
+Of course, you can always abstract the logic away into a separate method, but you need to pass in both the relative path and call the `__file__` variable in the Python file you start your relative path from.
+
+Voila! You have a programmatically generated absolute path that works in Python 2 and Python 3!
+
+__________
+
+Thanks for reading! I hope you can apply these tips and tricks to make your Python development even faster.
+
+In case you wanted to check out more about REPLs, take a look at [repl.it](https://repl.it). They have a large number of [languages](https://repl.it/languages) they support.

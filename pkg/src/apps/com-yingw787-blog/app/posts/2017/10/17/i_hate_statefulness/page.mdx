@@ -1,0 +1,83 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2017-10-17",
+    title: "I Hate Statefulness",
+    description: "I Hate Statefulness",
+    categories: ['Software'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+> Mr. Goldenford: Oh, the Smith family, minus a dad. You're patients of Dr. Wong, too?
+>
+> Beth: Temporarily. By order of the school.
+>
+> Mr. Goldenford: Me too. How long have you all been eating poop?
+>
+> Beth: (O.o)
+>
+> Morty: (O.O')
+>
+> Summer: ...we...have never...eaten poop.
+>
+> Mr. Goldenford: ...Oh me neither! Say, where did my family get off to?
+>
+> **From "Pickle Rick" (Season 3, Episode 3 of "Rick and Morty") by Justin Roiland and Dan Harmon**
+
+So today I discovered that I hate statefulness. To clarify, I had discovered multiple times throughout my short career just how much I hate statefulness (in this case, state that is not defined in a database, or alternately articulated, shoddy state management), but today I discovered it yet again.
+
+I was reviewing a pull request into our main repository that was editing some tests to mock a database call instead of using an empty database and calling it repeatedly, then resetting the state so that the next test can run. The code looked something like this:
+
+```python
+from ${pip_installed_package} import ${necessary_thing}
+
+def test_1
+  from our_package_1.subdirectory import our_file_1
+  # run test_1
+
+def test_2
+  from our_package_1.subdirectory import our_file_2
+  from our_package_2.subdirectory import our_file_3
+  # run test_2
+
+...more tests...
+```
+
+This code was checked in by my co-worker who sits next to me and who I trust to write good code and dress himself in the morning. So I kinda knew off the bat that something was funky about our codebase.
+
+I ask him what's going on, and why in the thousands of tests that were being moved in this PR there were thousands of lines of code stated to explicitly import a particular file. His reply made my brain foam up.
+
+He tried. Apparently, our legacy package `__init__`s are not straight package `__init__`s. Rather, upon calling package `__init__`, they compute some amount of temporary state. In order to have the same state available for every test, you need to re-import the file.
+
+I then ask him why don't we take the union of all the imports and put it into a [Pytest fixture](https://docs.pytest.org/en/latest/fixture.html) so that we can at least cut down on the lines of code. He replied that some combinations of our package `__init__`s do not work well with each other, throwing errors upon import. So every test needs to have a hand-tailored combination of package imports in order to work properly.
+
+I might be wrong, we might be wrong, there might be a way around this, I may be extremely stupid, but I don't think this is how Python is supposed to work.
+
+At the very least, say goodbye to PEP8 standards for the foreseeable future.
+
+(How I imagine us at a tech conference:)
+
+> My Company: Oh, it's the rest of the software development industry! How long have you all used stateful imports in Python?
+
+> Company 1: (O.o)
+
+> Company 2: (O.O')
+
+> Company 3: ...we...have never...used stateful imports in Python.
+
+> My Company: ...Oh me neither! Say, where did my team get off to?
+
+On the bright side, I pip installed `pytest-cov` and discovered that the (thankfully) isolated module I have been writing for the past few months has about 80% code coverage, and I should be quite close to finishing up the refactoring effort of our machine learning code. I am quite happy about that.
+
+**(Correction on 2017/10/18)**: After talking with my colleague, he explained the bulk imports were because if the import on one package failed on a test that was actually testing something else, the test would fail and would mislead developers into thinking that the test itself had failed, rather than the import. :cold_sweat:

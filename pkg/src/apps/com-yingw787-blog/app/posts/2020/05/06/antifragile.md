@@ -1,0 +1,59 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"Antifragile: Things that Gain from Disorder\", by Nassim Nicholas Taleb"
+date: "2020-05-06T12:38:41-04:00"
+draft: false
+---
+
+The Incerto Series:
+
+-   [The Black Swan](/posts/2020/04/09/the_black_swan)
+-   [**Antifragile**](/posts/2020/05/06/antifragile)
+-   [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
+-   [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
+
+__________
+
+I'm a pretty fearful guy, and I think a lot of those fears stem from personal
+insecurities of one flavor or another. Yet the biggest thing I'm terrified of is
+stability. I know I can't protect me and mine from the world, I can only prepare
+for it. More than anything, I want to be in tune with the chaos of the world. So
+I think "Antifragile" is a great mentality for me personally to adopt.
+
+In this book, Taleb builds on the concept of "Black Swans" to build systems that
+can become stronger from chaos, that gain from events that make fragile systems
+collapse. He mentions that in reality, antifragility is all around us in nature.
+The human body is highly redundant, and can even be antifragile, with the human
+body recognizing and killing off thousands of cancers every day. The only reason
+antifragility is increasing and ever-present in our modern-day society is
+because we've over-optimized aspects of our lives for short-term gains. This
+book argues for a reversal of that trend, and presents why.
+
+One anecdote from the book stood out to me, and it's the story of two brothers
+and two careers. One brother works a normal white-collar job, the other one
+works as a taxicab driver. The white-collar brother earns a steady paycheck,
+while the taxicab driver has earnings all over the place. Yet Taleb mentions how
+the taxicab driver, over a long period of time, earns about as much as the
+white-collar worker, while also gaining a great deal of information about the
+state of his market and ancillary information from his clients, which enable him
+to make much better decisions regarding his career like which platform to use
+and what parts of the city to frequent. So when dark days come, he's well
+prepared (unlike the white-collar worker who gets laid off "unexpectedly"), and
+when prosperous days come he makes his gains (unlike the white-collar worker who
+has to fight for a meager raise). The taxicab driver in this situation is
+antifragile.
+
+I see value in antifragility in parts of my life too. My desktop operating
+system (Linux) is not terribly great with system updates while staying up, and
+therefore every time I update / upgrade my system I have to risk my processes
+shutting down. Yet this has forced me to invest in my personal infrastructure
+much more greatly, which means if my laptop ever got stolen or broken (a Black
+Swan event), I can move to a new laptop much more easily. I feel rather good
+about the state of my life in that arena, even though to be honest I could still
+have much to improve, because getting the right principle and going from 0 to 50
+is much more difficult (and much more valuable) than going from 50-100.
+
+This is the second book in the Incerto series, and I look forward to reading the
+remaining books, "The Bed of Procrustes" and "Fooled by Randomness".

@@ -1,0 +1,26 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2017-10-22",
+    title: "Publishing with O'Reilly",
+    description: "Publishing with O'Reilly",
+    categories: ['Software'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+A few weeks ago, I went to a Meetup with DC Python, hosted by O'Reilly, to do an image processing side project. It was great, there were bagels and cream cheese, raffles for O'Reilly books, and lots of energetic people working on projects.
+
+One of the things I noted, though, were some of the free O'Reilly books. They were *thin*, like 30 pages in total or so. Then I realized, *oh yeah, I'm a software engineer*. I could write 30 pages on something.
+
+I think I will reach out to O'Reilly and see whether I could publish a book by the end of next year or something. Being a published author and knowledge expert in a particular field would be very cool indeed.

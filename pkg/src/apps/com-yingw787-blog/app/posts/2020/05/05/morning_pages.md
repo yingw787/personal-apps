@@ -1,0 +1,90 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: May 5th, 2020"
+date: "2020-05-05T08:38:07-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+__________
+
+Cute kitty video! With sound! `gfycat` on web is a much better experience than
+`gfycat` on mobile, or at least it's better with more CPU and more RAM:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/05/05/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+__________
+
+So we got a prompt today, *what is your favorite or least favorite emotion*, and
+Ali posted [this feelings wheel](http://feelingswheel.com/) where we can
+describe where we are. I think my favorite emotion is "courageous", and the
+worst emotion is "apathetic". I like being able to push deeper into things, and
+courage is what allows me to do that. Conversely, apathy is what destroys
+courage, so I see that as its opposite emotion. I'm most terrified of not
+knowing things, even after I'm halfway reading through the Incerto series, it's
+a very primal and base fear, and so I really value the ability to push through
+that fear to know more about my surroundings.
+
+I'm not quite sure if I've mentioned this yet, but I've been looking at the
+state of the world and thinking now is a good time to start a company. It's not
+really an explainable feeling, and it's not a rational one either. But I feel
+compelled that I should start a company and try really hard to be free, truly
+free. And to attain that freedom, I'll start a company, and if it fails another,
+and another, until I win, or until the chances are spent.
+
+It seems funny, the childhood days of lying in a basket and playing with mom
+like that kitten above seem rather far away. Now we have responsibilities, our
+bones aren't made of cartilege anymore, and things seem more worn and familiar.
+I wonder if the innocence that leads to curiosity can really ever come back, or
+whether we have to craft it in a lab in the mind like some sort of Frankenstein.
+I guess we'll just never know, unless we have the courage to push forwards.
+
+__________
+
+To finish off morning pages, here's a poem by [Reddit user
+u/SchnoodleDoodleDo](https://www.reddit.com/user/SchnoodleDoodleDo/) on [this
+Reddit post about a cat becoming a
+mom](https://www.reddit.com/r/aww/comments/gdg0el/a_proud_mom_cuddling_her_newborn_babies/):
+
+> ...so this is what it's all about,
+>
+> i wondered at the start...
+>
+> you stayed with me - i had no doubt
+>
+> my humans wouldn't part!
+>
+> n now, you see the family
+>
+> i've brought to you, to share
+>
+> cuz you're the ones who first loved me,
+>
+> n taught me how to care
+>
+> i'll hold them close, the best i can
+>
+> to keep them safe n calm
+>
+> n thanks to You i understand
+>
+> just how to be
+>
+> a
+>
+> Mom
+>
+> ❤️

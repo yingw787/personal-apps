@@ -1,0 +1,60 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: November 24th, 2020"
+date: "2020-11-24T08:39:02-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+Woooooo Washingtonian!
+
+![washingtonian](/img/posts/2020/11/24/morning_pages.jpg)
+
+Smack-dab center is Ali talking about Morning Poppins! Apparently people meet at
+hairdressers.
+
+Also some baby chickens!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/11/24/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+You know I just remembered this week contained Turkey Day...so let's think of
+this as preserving chickens by eating turkeys and ignore the drumsticks in my
+hands.
+
+__________
+
+So I picked up some Trader Joe's kettle-brewed concentrated green and white tea,
+a gallon of it. And I drank half of it yesterday. I drank about half a gallon of
+tea in 30 minutes. Very watery, did not know why I wasn't really feeling awake.
+Today I woke up and I was *wired*. I'm like
+idontwanttostayinbedbecausethennothinghappensiwannagetupandjumparound kind of
+wired. I think this kind of destabilizer (if you can call it that) is useful in
+some cases, like trying to wake up early or resetting my schedule. But overall I
+think it's a bad habit because it's not like I can drink this much caffeine for
+much longer and come out the other end fine. I'll take it as it comes. Just have
+to keep in mind that tasting like water does not mean it has no effect. Bottled
+tea is just a caffiene time bomb.
+
+Oh man, am I excited for a three day week! I don't think I could have picked a
+better time to convert from part-time to full-time, because all the holidays
+sprinkled throughout these last two months makes it easier to feel like I'm
+still part-time. I don't know what I'll be doing for Thanksgiving. It might be
+nice to cook something big by myself (and for myself since I'll just be
+celebrating by myself). Or maybe I'll just read my books and try some new
+restaurants. Don't think there's a wrong answer there.

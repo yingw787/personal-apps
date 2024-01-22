@@ -1,0 +1,58 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-02-05",
+  title: "Morning Pages: February 5th, 2021",
+  description: "Morning Pages: February 5th, 2021",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+This kitten is waking up!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/02/05/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+I guess it's time for me to wake up too.
+
+---
+
+So I gave the presentation yesterday, and it was very meh. Turns out, preparing
+minimally results in me sucking at what I know. I also published the blog post
+and two people unsubscribed. I'm just glad I got that out of my system. It feels
+like the sword of Damocles has dropped and didn't chop my head off entirely, so
+now I can worry about the future and make shiny new commitments instead of
+taking care of older ones.
+
+Oh yes, I think there still are older commitments I've made I need to care of.
+But nothing that's strictly embarrassing.
+
+I started working on `oneitemstore.yingw787.com`. I templated out a brand new
+`nx` repository, and started working on a `docker-compose` and Docker setup for
+running the app in development mode, containerizing the Firebase local
+emulators, and building assets and shipping them to production (whatever that
+may look like). Not sure why I'm having this craving. But hopefully it sticks
+until I ship the whole thing.

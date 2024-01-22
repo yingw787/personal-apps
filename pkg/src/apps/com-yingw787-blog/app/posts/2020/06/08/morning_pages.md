@@ -1,0 +1,64 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: June 8th, 2020"
+date: "2020-06-08T10:52:30-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+__________
+
+This rabbit is a tad more responsible than I am:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/06/08/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+__________
+
+This weekend was pretty depressing. I was pretty sure the police or the military
+would begin using live rounds on protesters, and [I think there were plans to do
+so](https://www.cbsnews.com/news/trump-demanded-10000-active-duty-troops-deploy-to-streets-in-heated-oval-office-meeting/),
+but apparently the military refused to play along. So I guess [like the start of
+the Syrian Civil
+War](https://en.wikipedia.org/wiki/Timeline_of_the_Syrian_Civil_War_(January%E2%80%93April_2011)),
+the President will be forced to fly in loyalist mercenaries like
+[Wagner](https://en.wikipedia.org/wiki/Wagner_Group) or
+[Blackwater](https://en.wikipedia.org/wiki/Academi), if he wants to start his
+own version of Tiananmen Square. God knows, there's enough people in this
+country who would [support
+that](https://www.nytimes.com/2020/06/03/opinion/tom-cotton-protests-military.html),
+without caring for the actual consequences of such actions. Things never go
+quite the way you expect. So I checked the news, hour after hour, in lieu of
+actually going to the protests myself (...because we still have a pandemic...),
+and that cratered my resolve to actually do anything productive during my
+weekend.
+
+Sigh. I think this is just the beginning, things will get worse this year. USPS
+is scheduled to collapse around September, November will be...tricky...and we
+haven't even hit the second (and most likely third) waves of the pandemic yet.
+Not to mention the previous civil war trope the President keeps pushing for.
+Plenty of opportunity for chaos to rear its head.
+
+During this time, I would *really* like to remain functional in my own personal
+duties and responsibilities. I mean, the whole point of me working by myself is
+so that during difficult times, I would be able to keep the lights on over my
+head, instead of trusting and relying on others to do so for me. I am failing in
+that regards, and I need to get back on track.
+
+I switched over my monthly donation from my community church over to St. John's
+Episcopal Church of Washington, D.C. It's not much ($10), but I like to think I
+put my money where my mouth is, and they got tear gassed while offering medical
+assistance to the wounded and injured, so I think they better uphold Christian
+ideals of suffering for the vulnerable.

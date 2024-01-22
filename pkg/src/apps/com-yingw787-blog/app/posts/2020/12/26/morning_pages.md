@@ -1,0 +1,54 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: December 26th, 2020"
+date: "2020-12-26T08:42:15-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+So smol.
+
+![smol](/img/posts/2020/12/26/morning_pages.webp)
+
+__________
+
+Well I'm sad to say that I didn't escape 2020 intact. No, I don't think I have
+COVID. But I did dun goof up my haircut:
+
+![haircut](/img/posts/2020/12/26/haircut.jpg)
+
+I was trimming my hair making some final adjustments when I noticed a few stray
+hairs near the back that needed trimming. Forgot that trimming hair where there
+is a lot of hair requires using the lifting plastic thing or whatever. Stopped
+after one buzz and then decided against a full buzz since that just isn't me,
+and I need to look okay-ish at least in the front because still have meetings
+and such.
+
+You know that? I think I'll own it for now. I'm calling this cut the 2020
+deluxe. It's a basic haircut with one giant fuckup somewhere.
+
+I'm not too worried. I've never been too attached to my hair, or cutting hair.
+It's head grass, I'm mowing my head grass and in 3-6 months it'll grow back
+enough where I won't even notice it. And I'll cut it again then! But it is
+interesting during a rather bland Christmas season.
+
+Don't know why but I was pretty sick on Christmas Day that prevented some
+traveling into the city that I wanted to do. Sitting upright, talking to a
+friend online, and feeling like I wanted to vomit (again) is not how I expected
+to spend Christmas in general. But I did manage to get a lot of sleep in the
+afternoon, which somehow did not cut into my sleep time in the evening, so I
+guess my body needed it.
+
+Kind of crazy to believe that it's Saturday now. Feels like the holidays just
+started, and work is on Monday. Eh. With how the holidays are going this year,
+work might be a reprieve.

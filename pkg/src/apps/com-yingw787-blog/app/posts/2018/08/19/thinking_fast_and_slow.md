@@ -1,0 +1,58 @@
+---
+authors: ["yingwang"]
+categories:
+  - Books
+title: "Book Review: \"Thinking, Fast and Slow\", by Daniel Kahneman"
+date: "2018-08-19T17:21:58-04:00"
+draft: false
+---
+
+Kahneman earned a Nobel Prize in Economics in 2002, and I say earned after
+reading his book, "Thinking, Fast and Slow". It's a masterpiece in understanding
+the human psyche and how behavorial psychology ties in with economics.
+
+I took a long time to read this book, in part because of [the identity theft
+issue that took up most of
+July](/posts/2018/07/28/my_experience_with_identity_theft), and in part because
+the book is a little on the dry side. Some of the key takeaways I found were:
+
+- The division of the mind between a "System 1", or the primal,
+  fast-calculating, and sometimes-wrong part of the brain, and a "System 2", the
+  sentient, slow-calculating, and facts-parsing part of the brain. "System 1" is
+  used when snap judgements need to be made (e.g. I'm the prey and that over
+  there is the predator), while "System 2" is used to calculate and reason about
+  difficult problems (e.g. how to trap a mammoth). The interactions between
+  "System 1" and "System 2" produce the combination of rationality and
+  irrationality that frustrates classical economics.
+
+- We use diagrams and graphs ("scientific evidence") to lull ourselves into
+  thinking we can confidently produce a description of a certain economic
+  behavior, but it is not always true. For example, the commonly accepted
+  intro-to-economics [law of
+  demand](https://en.wikipedia.org/wiki/Law_of_demand) states how if the price
+  of a good rises, the demand for it falls. This doesn't hold true, however, for
+  [Veblen goods](https://en.wikipedia.org/wiki/Veblen_good) like luxury
+  automobiles and [Giffen goods](https://en.wikipedia.org/wiki/Giffen_good) like
+  Irish potatoes. Since people view the price of a Veblen good as a desirable
+  trait increase their consumption upon a price increase. At the other end of
+  the scale, if the price of a Giffen good increases, those consuming it cannot
+  afford to purchase superior goods and must increase their consumption. Another
+  example with a better tie-in to behavorial economics is Kahneman explaining
+  the change in utility along an [indifference
+  curve](https://en.wikipedia.org/wiki/Indifference_curve) depends on the
+  history of how you arrived at the state you are at along the indifference
+  curve, vis-a-vis [the endowment
+  effect](https://en.wikipedia.org/wiki/Endowment_effect). To me, this was like
+  when quantum physicists tell you to throw away your understanding of classical
+  physics because it's wrong.
+
+- In the conclusion, Kahneman tells us how to avoid the fallacies and cognitive
+  minefields that come with a conscious or unconscious dependency on our "System
+  1". Some methods include the use of a wider vocabulary (e.g. as in the medical
+  field, where specific medical terms may recall symptoms, diagnoses, and
+  effects associated with that term), the use of routines (e.g. pilot pre-flight
+  checklists), and attention to statement framing or how you say things.
+
+While this book may be a tad tedious at times, it is full of new ideas that
+challenge your existing mode of thinking. Every chapter starts off the way you
+may expect and ends in a way you don't.

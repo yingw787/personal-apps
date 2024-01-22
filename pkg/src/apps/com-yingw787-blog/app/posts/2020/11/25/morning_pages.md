@@ -1,0 +1,44 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: November 25th, 2020"
+date: "2020-11-25T08:47:17-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+Panda eating bamboo!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/11/25/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+Kind of reminds me of eating ice cream.
+
+__________
+
+So a day after drinking a half gallon of concentrated brewed tea, I drank
+another half gallon of concentrated brewed tea. So I'm up and at 'em again
+today. So glad that this week's Thanksgiving. Otherwise I wouldn't be able to
+keep up this tempo without my heart exploding. Hopefully, it's a trigger to
+leading a healthier balance in life.
+
+I'm not quite sure what I'm going to do in order to celebrate Thanksgiving. It
+kind of feels weird to give thanks during this year, probably because this
+year's just so weird. But there is plentyyyy to give thanks for. Staying
+healthy. Being happy. Being alive. I've heard that a healthy person wants a
+million things, while a sick person only wants one. I'm not sure if I only want
+one thing this year, but I think my interests have narrowed quite a bit.

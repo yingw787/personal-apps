@@ -1,0 +1,48 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: August 11th, 2020"
+date: "2020-08-11T08:38:11-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+The famous catdog goes for a walk!
+
+![catdog](/img/posts/2020/08/11/morning_pages.jpg)
+
+Maybe it should be the kittendog :)
+
+__________
+
+I bit the bullet recently and purchased two different books on formal reasoning,
+"Practical TLA+" by Hillel Wayne (covering TLA+), and "Software Abstractions" by
+Daniel Jackson (which covers Alloy). I guess it's kind of weird to purchase
+these books since I don't have too much background and little interest in
+pursuing formal methods / formal reasoning professionally full-time. But I keep
+thinking about my database-backed spreadsheet for QA teams idea, and I keep
+thinking about the "rules engine" or formal model I'd be checking into the
+program as part of working on that idea, and I think investing in the future
+helps me believe I have one.
+
+I think this pandemic turned me into a T.V. aficionado. This is one thing I
+didn't expect from the pandemic. I think it's a healthy thing overall, because
+it is a form of relaxation, and it does give me some chuckles I otherwise
+wouldn't have gotten, but man I've been binging pretty hard. I'm not sure
+whether to be mad at myself for not being productive during evenings + weekends,
+or happy that I'm not being productive during evenings + weekends. I am pretty
+happy that given my newfound T.V. addiction, I stick to mockumentary office
+comedies.
+
+(By the way I love Rashida Jones!! Ann Perkins AND Karen Filippelli!! I kind of
+get celebrity worship now...which is probably not a good thing, but I think
+comes with the territory.)

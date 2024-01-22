@@ -1,0 +1,105 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2019-11-17",
+    title: "Frustration Management",
+    description: "Frustration Management",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+One of the most frustrating things I've ever had to deal with in life is losing
+my data backups, most of the time because I've forgotten my password. I'm too
+cheap in order to pay up for an iCloud subscription, and so far I've been too
+cheap to pay up for a third-party cloud backup solution, so typically I back up
+my iPhone to my MacBook Pro, and my MacBook Pro to an external drive. This is a
+bad idea, especially because as a software engineer I already know about data
+integrity/loss prevention best practices.
+
+I've mentioned my usage of this productivity app called Productive before on
+this site. I'm sure the staff building and maintaining this application are
+doing the best they can, but despite their best efforts, the app kept crashing
+for me this morning. I didn't really know what to do, so I deleted the app in
+order to try and re-download, because iOS has this weird thing where the app
+build with version downloaded fresh from the App Store differs in behavior from
+an app installed previously and upgraded through patches (likely for backwards
+compatibility reasons or such). Productive is extremely privacy-focused, and so
+ties together user data and the app's existence locally, with only iCloud
+backups available at all, and many buttons asking whether you wish to delete all
+app data. One click and all my app data got deleted, around 6,500 habits and all
+habit schemas and migrations.
+
+Okay. So there's my iPhone backup on my laptop. Except that I forgot the
+password, and after searching through the entire apartment, realized I didn't
+write down the backup password anywhere, store it in my macOS keychain, or add
+it to my password manager. Can't brute force it either, since I choose
+relatively long strings for passwords (min 8 characters). Tried all common
+passwords and they failed. So the backup didn't work. And if the password has
+failed, then all backups are invalidated and useless.
+
+Okay. So set a new password. Except you can't, unless you reset all user
+settings in your iPhone, which clears out a bunch of configuration stuff
+(including Apple Pay, Passcodes, Screen Time, etc.), in order to set a new
+password for backups. So those are now gone too.
+
+This isn't Productive's fault at all, by any means. It's mine, especially since
+this has happened before. I had a bunch of photos stored in Google Photos. After
+the identity theft incident last year, and random people trying to brute force
+my Google account, I took down my original personal email and downloaded a dump
+of my original Google account contents onto my local computer's hard drive.
+Except that I didn't download everything, so a bunch of my spreadsheets, like
+who I should stay in touch with, got lost. Then I had forgotten about the dump
+and the fact it wasn't backed up anywhere, and factory reset my desktop in order
+to get around some pesky NVIDIA driver settings. So I lost all my photos from
+high school and college, to the letter. Memories, friends, good times, they all
+just live in my mind now. So I guess I should hope I have a good long-term
+memory.
+
+__________
+
+This isn't a pity party for myself. I've already implemented certain processes
+for myself, like the usage of a password manager in the first place with
+automated password generation and 2FA/MFA support, and I should add on others,
+such as using a NAS backup with Backblaze B2 or something. I'm also probably
+going to quit Productive entirely, and switch to a platform that has native
+multi-device support and data export like Remember The Milk or Todoist. But
+getting over the feelings of loss and regret after the fact are hard, however
+simple they may be.
+
+I have learned some coping mechanisms for dealing with hard times:
+
+-   **Figure out the worst-case scenario, realize the worst case actually isn't
+    so bad, and then apply layers of reason to work your way back to something
+    more logical and less lossy**: Okay, I lost all my data over the past two or
+    three years with one fell swoop. How much worse is it going to get? What can
+    the world possibly do to hurt me more? Not much more? Yeah that sounds about
+    right. I also have X, Y, and Z, so it's not actually the worst case
+    scenario.
+
+-   **Positive self-talk and self-reinforcement**: This actually works. I
+    couldn't really do this just a few short weeks ago, but some clouds have
+    lifted and I realized that I am fortunate for a good deal. And when you can
+    look forward and see the sunlight ahead, or look up at the clouds and make
+    yourself believe that the sun exists somewhere, that surprisingly helps out
+    quite a bit. Identity is quite tied with self-perception.
+
+-   **Keeping busy**: If you lose all your memories, then you shouldn't just
+    stand there. Go out and make more happy memories, and start filling in the
+    wiped drive with new backups (and your backups password checked into a
+    password manager). Keeping busy helps keep the monsters at bay.
+
+__________
+
+All this helps undergird the importance of moving forward, of setting
+actionables and deliverables, and getting the future you want.

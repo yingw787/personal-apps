@@ -1,0 +1,147 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-01-01",
+  title: "New Year's Resolutions",
+  description: "New Year's Resolutions",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+New Year's Resolutions:
+
+- [2018 New Year's Resolutions](/posts/2018/01/01/new_years_resolutions)
+- [2019 New Year's Resolutions](/posts/2019/01/01/new_years_resolutions)
+- [2020 New Year's Resolutions](/posts/2020/01/01/new_years_resolutions)
+- [**2021 New Year's Resolutions**](/posts/2021/01/01/new_years_resolutions)
+
+---
+
+Woohooooooo! 2021! Last year was pretty good for me, and pretty awful for alot
+of other people. Hopefully 2021 will be pretty good for me, and pretty good for
+other people. Let's keep good vibes going, and change bad vibes to good vibes.
+
+I think last year's approach of "soft" vs. "hard" resolutions with just a
+grounding in feelings vs. some higher-order sense of purpose worked out a lot
+better than the year before's approach of the carrot-and-stick approach to
+resolutions (turns out alot of carrots and sticks are imaginary since I would be
+beating or feeding myself), and the one before that where I just had a whole
+bunch of hard objectives I couldn't meet. This past year, I succeeded in all the
+"soft" resolutions and failed some of the "hard" resolutions, so maybe I should
+just go for "soft" resolutions this time around, or mark all "hard" resolutions
+as reach goals. Or just toss it into a bucket.
+
+- **Do things that make me happy**: I think happiness is probably the most rare
+  and precious resource I have. I never really figured that until I didn't have
+  it, when I had to scratch and claw for every scrap of happiness in my life.
+  Now, things are better, I'm happier more often. Now, I would like to stay
+  happy most of the time, and I should aim to do things that make me happy.
+  Whether that's meeting up with a friend, or getting delivery, or joining a
+  group, or watching TV or reading a book, I need to prioritize my happiness. A
+  happy person is much more employable, can maintain state for longer, and has a
+  much more natural drive to do things because they have self-compassion and
+  self-love for themselves. Mastering this enigma, I think, is a lifelong
+  challenge, but I'm fortunate enough to say I can start now.
+
+- **Explore more**: I should be getting my e-bike at some point in time, and I
+  have money to rent a car now, so I should be able to be more flexible in terms
+  of where I can travel. Also I'm paranoid about the metro now because of the
+  pandemic, so I can't really be attached to where the metro can or can't go
+  anymore.
+
+  It'll be nice to travel and go hiking by myself. Or go visit Glenstone Art
+  Museum, or the Botanical gardens or the butterfly gardens. All easier if I
+  have a car and can plan a day trip. That would be nice.
+
+  Exploring is something I haven't really done last year, and it's something
+  that always brought me comfort as a kid. So I think doing more exploring will
+  help make me happier.
+
+- **Find another welcoming community with a productive interest**: The writer's
+  group I've joined was a lifesaver amongst lifesavers over this past year. I
+  think my emotional and mental health, and my routines, would probably be a
+  good deal worse off than if I hadn't joined and stuck with it. I'm not sure if
+  my writing's gotten much better over the course of this past year, but I
+  haven't stopped writing, which is nice.
+
+  I think it'd be cool to replicate this success by joining another group. For
+  instance, I gained thirty pounds over last year, and I think it would be nice
+  to find a fitness group to be a part of, like a small trainer's group. Or,
+  since I really enjoy eating food and I pay wayyyyy too much for food on
+  Doordash, I might be better off paying to join a foodie community where we can
+  do weekly cooks, or have a cooking coach of some sort. Or maybe knitting and
+  sewing, or a ukulele group, or something along those lines.
+
+  I think I might not be able to meet this goal if I don't get myself out of my
+  comfort zone, or if the task at hand just takes up too much time (e.g. having
+  to buy a specific set of groceries to make a particular recipe and leaving the
+  leftovers out for too long).
+
+---
+
+These all sound like work of some sort, so I'll break here with this sentence
+before continuing.
+
+- **Replace more software I use for life management with software I write
+  myself**: So this year I think Google really started tightening the screws on
+  what software works where; Google Meet only works on Chrome and not Firefox,
+  YouTube only works on Chrome and not Firefox, Google Sheets is a bit screwed
+  up on Firefox, etc.
+
+  I need to get away from Google, but I don't want to jump out of a frying pan
+  and into the fire, especially when it comes to migrating and managing my data.
+  Even FOSS software doesn't really do the trick sometimes; it's too
+  complicated, or not targeted towards me, or just plain bad. I would reallllly
+  like having software made just for me. And the only way to do that on the
+  cheap is to roll it yourself.
+
+  I think that if I had a database-backed spreadsheet application that would be
+  on-prem with backups to S3, that would unblock soooo much potential for what I
+  can do. I already have a database with database dumps synced to S3, and I
+  already know about PostgREST and PostGraphile, so really it's about building
+  out that damn frontend.
+
+  Also, photos. I try signing up for dating websites, but they always demand
+  photos to know you're not a bot and stuff. I don't take too many good photos
+  of myself so usually I have to re-activate Facebook and get some old ones. But
+  I'm afraid when I go to deactivate Facebook, I'll fat-finger something
+  eventually and permanently delete my account instead of deactivating it. I
+  need to export my photos out (and **_make damn sure those photos are usable,
+  cough cough Google Accounts backup_**) and load them into a personal photo
+  gallery from S3.
+
+  _Cough_ habit tracker, digital Rolodex, password auto-rotation tool. I'm still
+  salty over all of these not being finished last year.
+
+- **Ship personal software to production, with payments**: In previous years I
+  mostly read books on software engineering, instead of working with my hands
+  and doing it myself. That approach worked, but it's inefficient and doesn't
+  really improve my optionality. Also, from my sabbatical experience, I learned
+  that while I do love working with software, I also love making money, and
+  there's no reason why I can't do both (...I got into software because money).
+
+  So I should try to ship some software. It will be crap (because I've
+  internalized the different kind of pain of building something so perfect it'll
+  never ship, and if you ship before you're ready / ship at all it will be crap
+  because software is crap), and it'll be tiny, but it'll be mine and people can
+  pay me for it or whatever. I'm inspired by
+  [`tinyprojects`](https://tinyprojects.dev/), who [built and sold a tiny store
+  for $5k](https://tinyprojects.dev/posts/selling_a_tiny_project) and now can
+  say he's started and sold a business when trying to raise money and do other
+  things.
+
+  My $4k in AWS credits last until 2022, so I can afford to stand up things like
+  k8s or try out MLOps stuff. My workplace is also extremely generous, so I get
+  to learn on the job in the direction I want, instead of having to learn the
+  wrong thing then go home and unlearn that and learn the right thing. Those
+  should all help in terms of freedom of action, and the strategy of turning
+  intellect and time/sweat/tears into capital and passive income.

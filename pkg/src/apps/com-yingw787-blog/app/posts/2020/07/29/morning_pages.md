@@ -1,0 +1,63 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: July 29th, 2020"
+date: "2020-07-29T08:35:46-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+__________
+
+Ahh he can climb sideways!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/07/29/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+__________
+
+I think this morning I'm feeling tired. I slept too late yesterday, and I woke
+up automatically, nervous around the whole starting a new job thing. I think
+it's a healthy change, I've been slacking off way too much recently, and I think
+the job will give me some runway and some structure around my life. Maybe it's
+natural in order to work for some period of time in an office. At least, working
+feels natural to me.
+
+I think about the past few months and the amount of effort I've spent trying to
+get somewhere, anywhere really. I still need to start working on my habit
+tracker. I still need to work on getting a digital Rolodex up and running and
+populated. I still need to create a password autorotation tool (where none
+currently exists, likely because not every client has an API and because
+Bitwarden smartly doesn't expose an API for user data like that). I still need
+to create the realtime data layer for event-driven clients. And I still need to
+make my database-backed spreadsheet app. All things I need to do.
+
+I also look at all the places I've failed at. I'm looking at my jobs spreadsheet
+and realized that out of 30 or so jobs I've applied to, only one is currently
+still active in the hiring process, otherwise I've been rejected out of hand or
+ghosted without the courtesy of a response. It makes me wonder what the
+correlation is between skill and success, and whether there is any. I kind of
+always knew that where I'd end up and how well I'd do would be dependent on my
+BATNA, and that companies look more for impact rather than raw intellect, but I
+thought I'd be able to get somewhere with my sabbatical.
+
+Then I remember I'm still incredibly lucky to be where I am. The job I'm
+starting pays well and looks attractive from a skills learning standpoint. My
+coworkers seem nice and considerate. The company was polite enough to put my
+one-off requests in writing. Where else would I be able to have that kind of
+flexibility?
+
+No, I'm not bitter, I'm grateful. I have to be grateful. It's up to me to prove
+I'm worth it.

@@ -1,0 +1,32 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2017-12-06",
+    title: "Jeebus Crispies",
+    description: "Jeebus Crispies",
+    categories: ['Software'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+Yesterday was my one-year anniversary with the company I work at. [English Dictionary Man](/posts/2017/10/15/that_happened_part_2) (or is it [Stateful API Endpoint Man](/posts/2017/10/04/that_happened)) congratulated me at 9:23AM the morning:
+
+![lol](/img/posts/2017/12/04/lol_2.png)
+
+I included an example in my blog of [how to respond to a pull request](/posts/2017/11/18/pull_requests). I would say this is an example of how *not* to respond to a pull request. Same dealio, different person.
+
+According to management, it's just as bad to not recommend an outdated PEP8 standard (hard-wrapping 80 characters per line) as to send the above as a direct message. So I will be in a meeting tomorrow.
+
+If English Dictionary Man is reading this: in six months, you'll be able to write code without protest however you like.
+
+**(Correction on 2017/12/07)**: The original post said the time posted was 8AM. The time, as clearly stated in the screenshot, was 9:23AM.

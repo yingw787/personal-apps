@@ -1,0 +1,91 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Year in Review: Gratitude"
+date: "2020-12-31T00:00:00-05:00"
+draft: false
+---
+
+The Year In Review:
+
+-   [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+-   [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
+-   [**Year in Review:
+    Gratitude**](/posts/2020/12/31/old_years_resolutions_gratitude)
+-   [Year In Review:
+    Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+-   [Year In Review:
+    Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+
+__________
+
+[**GitHub repository
+(PRIVATE)**](https://github.com/yingw787/gratitude-journal.yingw787.com)
+
+__________
+
+I think this is a new review I'd like to start this year and keep going through
+subsequent years. At a time where negativity surrounds us, it's important to
+keep in mind things we're especially grateful for. So every day for this year,
+I've been keeping a gratitude journal in a Google Sheet.
+
+I'm wondering what the word cloud for this gratitude journal looks like.
+
+![wordcloud](/img/posts/2020/12/31/gratitude_journal_wordcloud.png)
+
+So from looking at this word cloud, I think there's a couple of things that kept
+me happy this year:
+
+- **Having a routine**: There's a lot of mention of "morning", "afternoon",
+  "evening" here, and I think it's because I did things for which I was grateful
+  during those times and noted the times during which I was doing them. I think
+  this habit was primarily set by using my habit tracker for most of last year,
+  where my day was broken down into "morning", "afternoon", and "evening" and I
+  had to accomplish tasks by a certain time period. I think being able to
+  regulate habits is something I no longer take for granted. For me, it's
+  important to stick to a routine in order to function properly, and a lot of
+  times this year I failed in doing that. So, when I manage to get back on my
+  feet after a bout of bleugh, I've marked it in my gratitude journal.
+
+- **Eating good food**: Oh my God. So much food. A lot of good food too. I think
+  this year I gained around 30 lbs, mostly from eating at my parent's place and
+  not being able to work it off, which is hella not great. But during stressful
+  times, and when you can't see friends / do events around other people / etc. I
+  think I subconsciously turned to food as a form of pleasure and relief /
+  respite. I think this is an important point because I've always prided myself
+  on living the simple life, or trying to not enjoy materialistic pleasures in
+  the hopes that if I've never experienced something, I won't have it to miss.
+  Now, I do think that worked in large part for 2020, I haven't really lost a
+  whole lot this year, and I think it could be useful in later years as I expect
+  more 2020s to occur, but at the same time I think it's important to find
+  reasons to enjoy life, and food looks like it's the thing my animal brain
+  turns to. I definitely notice myself being happier after getting some
+  bibimbap, and angrier when I'm eating some homemade porridge. I think this is
+  something I need to own more going forward, since it's unlikely to impossible
+  to forget a good thing once it happens in your life.
+
+- **Spending time in community**: As a guy who prides himself on being
+  independent and individualistic, seeing how often I mention going to Morning
+  Poppins for writer's group or going to faith-based small group or virtual
+  friend group gatherings in my gratitude journal is pretty interesting. I
+  think, or maybe like to think, I'm pretty detached from the world, but this
+  year has shown how not even I am an island, and need other people to function
+  healthily.
+
+I think practicing gratitude explicitly is important for making sure I stay sane
+in the short-term, but this exercise is also helpful in terms of understanding
+what my brain is primed to do or reach towards for emotional comfort, which
+helps inform some of the priorities for next year's New Year's Resolutions and
+how likely I am to accomplish them.
+
+__________
+
+Update:
+
+I digitized my gratitude journal like my fitness calendar and my sleep log and
+my financial ledger, and generated the following wordcloud:
+
+![wordcloud2](/img/posts/2020/12/31/wordcloud2.png)
+
+Should be more reliable than using an online service.

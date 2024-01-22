@@ -1,0 +1,49 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: April 18th, 2020"
+date: "2020-04-18T08:51:45-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+__________
+
+Look! It's a baby burrito!! This video is quite famous on the Internet for being
+one of the cutest baby videos *ever*:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/04/18/morning_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+__________
+
+It's been one month since we started morning pages! So happy I have this group.
+And it's the first time in a long time that I made it to the morning session!
+:tada:
+
+Really happy yesterday that I got published in a official content network
+yesterday! I think that's a pretty big deal, when somebody thinks you should get
+paid for writing, and then you actually ship a piece they like. I'd like to
+write more, I think it might be healthy.
+
+I also watched "The Office" (US) for the first time yesterday. All of Season 1
+in one massive evening binge. *It's so good*, I was rolling around on my bed
+laughing. I didn't realize just how much I needed to laugh. I might go on a
+marathon binge of "The Office" this weekend in order to properly relax
+(something I've been trying to work on and failing to do so).
+
+Speaking of this weekend, I think I'll try to work on some "side projects" (or
+really, side of side projects) on the weekends. I think it'll be good to learn
+Vagrant, or otherwise figure out how to define a GUI layout through a
+data-defined VM. Need that for my map thing.

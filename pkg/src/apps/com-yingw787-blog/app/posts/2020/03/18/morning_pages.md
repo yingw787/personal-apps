@@ -1,0 +1,48 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages, March 18th, 2020"
+date: "2020-03-18T08:44:37-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of partial lockdown. To alleviate fear and
+stress, my writer's group has put together a daily "morning pages" get-together
+on Zoom in order to touch base before starting the day. Here's some of my brief
+thoughts.
+
+__________
+
+Last night I was pretty worried about what to do in the situation where both my
+parents died. They picked up my little brother from college and he's in
+"quarantine" at home for two weeks, but I don't know how much is enough. If
+anything happens to them, I'll be caught flat-footed and vulnerable to predatory
+actors who might want a chunk of the estate. I don't think being paranoid will
+help things. I think I should probably put together some sort of a checklist of
+items of things to do in that situation. I'll add it to my todo list.
+
+I'm sick with something viral. A dry cough with no fever. It's been like this
+for about a week or two. I've been sick for weeks on end at times with just a
+cold, so this isn't surprising, but the inability to get coronavirus tests is a
+bit scary. I actually wish I had nausea or something because those are
+explicitly not symptoms of coronavirus.
+
+My productivity has been shit over the past few days. I checked my GitHub and
+apparently I had zero commits over the past four days alone. I promised people I
+would have an MVP by the end of the week, and I'm not sure how reasonable that
+might be. I don't have a deployment path set up after a week of running through
+tutorials. Turns out good tutorials on how to set up production sites on AWS
+without the usage of AWS RDS is extremely hard, and I wasted a lot of time by
+doing so. Pretty disappointing.
+
+Good things. I'm really happy I got my bike back from the old office bike cage.
+They cut both my locks, and I'm not sure where my bike-mounted flashlight,
+grocery panniers, and kickstand are (or at least it wasn't on the bike), but my
+bike is still there in one piece. I love this bike, I had it when I was a kid,
+and I have around 1,500 miles on it. Just got the gear mechanism replaced a few
+years ago too. I decided to keep it in my apartment in order to avoid the raw
+sewage that bubbles up in the apartment complex bike room. It's nice just
+looking at it and having it in my life. I thought it had been scrapped.

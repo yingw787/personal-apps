@@ -1,0 +1,173 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: March 27th, 2020"
+date: "2020-03-27T08:49:47-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of partial lockdown. To alleviate fear and
+stress, my writer's group has put together a daily "morning pages" get-together
+on Zoom in order to touch base before starting the day. Here's some of my brief
+thoughts.
+
+__________
+
+Well, one reason to sleep with your phone is if you have a Calm membership and
+wish to listen to Sleep Stories. I love "The Velveteen Rabbit" and "The Big Bad
+Wolf Learns Anger Management". I find these stories soothing, and as I used my
+phone in the evening for the first time in two days, quite cathartic.
+
+One reason not to sleep with your phone is the news you might wake up to in the
+morning. Apparently [President Trump says states are lying about their
+ventilator
+needs](https://www.newsweek.com/trump-claims-us-states-dont-need-amount-ventilators-theyre-asking-i-dont-believe-you-need-1494599),
+which for me confirms my suspicions that the shortage is artificial. It sounds
+crazy before, but maybe a bit prophetic now, but one reason I didn't want to
+move to New York City last year was because of the population density and the
+lack of hard power representation within the federal government. The D.C. metro
+area is quite spread out, and filled to the brim with military folks who are
+good at following orders and who the President needs if he himself wants to stay
+alive, like it or not. It is kind of crazy to think a POTUS will let America's
+greatest city perish out of sheer pettiness, but [I don't put anything past this
+president](https://www.vanityfair.com/news/2019/10/bill-taylor-testimony-ukraine-quid-pro-quo),
+and I [definitely shouldn't
+now](https://www.bloomberg.com/news/articles/2020-03-19/trump-told-governors-to-buy-own-virus-supplies-then-outbid-them).
+
+Here's [one comment](https://news.ycombinator.com/item?id=22453381) I made about
+the coronavirus, as of writing this, 27 days ago, and [one top-level
+response](https://news.ycombinator.com/item?id=22453530) dismissing my concerns:
+
+>   I’m starting to take some precautionary measures even here in Virginia.
+>   Stocking up on food and other emergency supplies, avoiding public transit
+>   and walking everywhere, wiping down all surfaces I come in contact with with
+>   Clorox wipes I keep in my backpack. Hopefully I’m just going insane and
+>   there’s no reason to panic, but a respiratory illness with no treatment
+>   protocol besides quarantine, an r nought of probably no less than 2 given
+>   lack of testing, and untraceable infection paths for new cases domestically
+>   sounds concerning to me. This isn’t Ebola or Zika. This doesn’t even look
+>   like SARS. It looks more like the first wave of Spanish flu. Second wave of
+>   Spanish flu made it land in the history books.
+>
+>   I really, really hope I’m just going insane and nothing will happen.
+
+__________
+
+>   Definitely sounds insane to me. Stop reading the news mate.
+>
+>  >80% of cases are mild symptoms. A mild cold. Under 50 has a fatality rate of
+>  >less than 0.5%. Almost all fatalities are over 70 or people who are already
+>  >severely ill. You are about 25x more likely to die of the seasonal flu at
+>  >this point.
+>
+>  This is media hysteria in a post fact world where all information from all
+>  sources is equally valid. Everyone is trying to be heard to make their case.
+>
+>  If you are 70+ or severely ill this IS pretty bad because, unlike the flu,
+>  their is literally no defense. If you don’t fit that profile it’s just a
+>  bunch of FUD.
+
+__________
+
+My God, here's [another comment I
+made](https://news.ycombinator.com/item?id=22111815) 66 days ago, and two
+top-level comments, [here](https://news.ycombinator.com/item?id=22113628) and
+[here](https://news.ycombinator.com/item?id=22112475) dismissing my concerns:
+
+>    I read on Reddit that Chinese New Year is the largest regularly occurring
+>   human migration event in the world. Millions of Chinese people gather on
+>   public transport and planes To go home to celebrate. It’s in a few days I
+>   think.
+>
+>   Also I’m not sure how the CDC is preparing for this under 45, but given the
+>   state of the federal government I would guess it’s less prepared than the
+>   days of the Ebola scare.
+>
+>   Hopefully things will not be too interesting. I hate it when things are
+>   interesting.
+
+__________
+
+>   A couple notes, from an infectious disease epidemiologist:
+>
+> - The CDC Director is, in rare form for this administration, not someone
+>   devoted to dismantling the agency he's in charge of. I work with the CDC
+>   fairly frequently, and they're in pretty good shape.
+>
+> - This is our third novel coronavirus, and the 2nd out of China. There's been
+>   a lot of prep work for this.
+
+__________
+
+>  > Also I’m not sure how the CDC is preparing for this under 45, but given the
+>  > state of the federal government I would guess it’s less prepared than the
+>  > days of the Ebola scare.
+>
+>   Despite "45" apparently being such a comic book villain as to warrant
+>  "guess[ing the CDC is] less prepared", the CDC has actually had guidelines
+>  out since August 2019:
+>  https://www.cdc.gov/coronavirus/mers/preparedness/checklist-...
+>
+>   This is part of how we even know of this case: the CDC under "45" was
+>   prepared, a local HCP was informed about what to watch for, and the system
+>   worked as intended. We have literally been through a very similar situation
+>   already with SARS and those protocols worked very well.
+
+Now 20,000+ people are dead, and POTUS45 wants to reopen the country by Easter
+Sunday which if it happens will result in likely hundreds of thousands of people
+dead, if not millions, by the end of the year. I'm also expecting Dr. Anthony
+Fauci, the head of NIAID (because the CDC is nowhere to be found), also looks
+like he might get fired soon for contradicting POTUS45 and making him look bad.
+And this is nowhere ***near*** my nightmare scenario...but it's inching there,
+slowly but surely.
+
+[Here's](https://news.ycombinator.com/item?id=22699560) a comment I made
+yesterday, partially copied here:
+
+>   I respectfully disagree. Things get better or worse based on our
+>   decision-making skills and the physical state of the world, not because we
+>   "deserve" to get better or because it "naturally" happens. We have to put in
+>   the effort and hard work in order to attain greatness, it doesn't just come.
+>
+>   For example, I made two Hacker News posts about the coronavirus before all
+>   this happened, and both times people rose to dismiss my concerns:
+>
+>   https://news.ycombinator.com/item?id=22111815
+>   https://news.ycombinator.com/item?id=22453381
+>
+>   Now JHU CSSE is reporting 23,970 deaths and a continued exponential rise in
+>   confirmed cases with no peaking in sight. We're quarantining themselves on a
+>   state-by-state basis, NY w/ Cuomo is locking down hard while New Orleans was
+>   partying @ Mardi Gras. No restrictions on domestic interstate travel. No
+>   federal roadmap for the next three to six months. No communications with
+>   even our closest allies on travel bans.
+>
+>   Just as surely as the sun rises, black swans can and do happen, and
+>   sometimes empires and peoples don't get up. Not ever. Carthage, Babylon,
+>   Jericho, Palmyra, Teotihuacan, and a hundred other once-great cities said we
+>   will overcome and persevere, and now they're dead and dead forever.
+>
+>   We have absolutely got to stop thinking we're exceptional and we're
+>   different. We're where we are now because a lot of good men and women worked
+>   tirelessly to get us here, sometimes kicking and screaming. We'll get out of
+>   it if and only if we listen to those same men and women working tirelessly
+>   on our behalf.
+>
+>   Otherwise we will join the dead in the scrap heap of history. Don't ever,
+>   ever assume it can't happen to you.
+
+__________
+
+I'm such a happy ball of fluff, aren't I? If you're as gullible as I am, the
+answer is no, this is all quite terribly depressing. So here's a cute picture!!
+
+![floof](/img/posts/2020/03/27/morning_pages_2.jpg)
+
+You know what, that's not enough (sorry Mr. Floof!), so here's another picture!!
+
+![pipes](/img/posts/2020/03/27/morning_pages.jpg)
+
+That'll have to do :smile:
