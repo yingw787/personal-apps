@@ -1,11 +1,21 @@
----
-author: ["yingwang"]
-categories:
-  - Books
-title: 'Book Review: "How To Not Die Alone: The Surprising Science That Will Help You Find Love", by Logan Ury'
-date: "2021-12-28T20:40:38-05:00"
-draft: false
----
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2021-12-28",
+  title: "Book Review: \"How To Not Die Alone: The Surprising Science That Will Help You Find Love\", by Logan Ury",
+  description: "Book Review: \"How To Not Die Alone: The Surprising Science That Will Help You Find Love\", by Logan Ury",
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
 
 I've been mentioning relationship issues (mostly the fact that I don't have one)
 to the psychotherapist I've been seeing, and she recommended me this book to
