@@ -1,0 +1,30 @@
+---
+author: ["yingwang"]
+categories:
+  - Books
+title: 'Book Review: "Unbroken", by Laura Hillenbrand'
+date: "2021-04-24T21:29:59-04:00"
+draft: false
+---
+
+I both purchased a copy of this book (I think from Goodwill) and borrowed a copy
+of this book from the writer's salon on Dupont Circle. Perhaps unusually for me,
+I watched the movie before I read the book, and the movie was pretty good at
+convincing me to read the book.
+
+"Unbroken" chronciles the story of Louie Zamperini, the man who could have run
+the first four-minute mile in known human history. I say could have, because
+before he did, Pearl Harbor blew up and America had to go return some bombs to
+the original sender. As part of this effort, Louie had to go drop some bombs,
+which he did before he crashed into the Pacific, drifted two thousand miles into
+Japanese hands, and then got beaten and starved to an inch of his life for a few
+years.
+
+I think this book does bring a very human face to war, and the side that people
+don't really see. It's not the glamorous aviator or the heroic Marine, but the
+ragged and dejected POW. It also chronicles how wars don't just end because
+somebody signed a piece of paper. Louie struggled for years with drink and
+temprament issues before finding his peace (with God as it turns out), and
+struggled with knowing that his tormentor was not only alive but also immensely
+rich and financially successful. I think it's a great read for those of us who
+listen too much to propaganda, and put a rosy face on war instead.

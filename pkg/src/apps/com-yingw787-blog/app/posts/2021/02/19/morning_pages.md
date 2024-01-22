@@ -1,0 +1,51 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: February 19th, 2021"
+date: "2021-02-19T08:44:30-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+So I found a picture of a really shiny golden horse, and I had to add it:
+
+![](/img/posts/2021/02/19/morning_pages.webp)
+
+Apparently you can find them in Turkmenistan. I don't know if I'll be visiting
+Turkmenistan anytime soon, but if I was, seeing these horsies would be at the
+top of my bucket list.
+
+---
+
+So the condo closed yesterday (sellers accepted my offer), and now I'm under
+contract in order to deliver around $200,000 over 15 years. Ideally, I'd like to
+pay it off quicker than that, like just start a company, sell it, and then pay
+off my mortgage in 3 years kind of quick. I do not like debt. At the same time,
+it would realllllly suck if I did that, then encountered some need to get a lot
+of money upfront really quickly, and then had to refinance my paid-off condo for
+a higher interest rate. So maybe the idea is to see a mortgage as a security
+rather than just all debt. I mean, I guess the condo fees are high enough as it
+is.
+
+So I'll be moving into that new place in a month or so. Should be fairly
+exciting.
+
+In other news, I'm also looking at Burlington, Vermont as a possible summering
+location. Apparently, it's right next to a lake, which feeds directly into the
+St. Lawerence. And Quebec is right across the border. And the people there are
+New Englanders!
+
+I need to go read some math or physics books. I had a dream I failed 10th grade
+physics last night and it was traumatizing. Also can't do some basic math
+anymore. I think laughing it off is maybe the right response because I have
+Python which does the simple stuff my mushy headmeat might mess up. But maybe I
+am getting dumber and maybe it's not that funny. So much to learn, so little
+time.

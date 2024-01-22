@@ -1,0 +1,31 @@
+---
+author: ["yingwang"]
+categories:
+  - Television
+title: 'TV Show Review: "The Crown" Season 1, by Peter Morgan'
+date: "2021-04-18T20:32:02-04:00"
+draft: false
+---
+
+So I decided to watch a TV show on Netflix because I have Netflix now, and I
+chose to watch "The Crown" because I can't find anything else good on Netflix's
+search. I've heard good reviews of this show, and even though it's not finished
+(and could end very, very badly and which is why I'm reviewing season by
+season), I'd like to try and start watching a show where I don't know the
+ending.
+
+So this season chronicles Elizabeth's rise to power (or really being chucked
+into the big chair) and also describes the empire's process of
+self-dismantlement (otherwise known as decolonization). The whole suddenness of
+King George VI's death defines this season, since Elizabeth's status as Queen,
+her relationship with Philip (Duke of Edinburgh) and the strains from him
+playing a distinct second fiddle, and Churchill's eventful (but not as eventful)
+second term as prime minister all revolve around the Queen and getting her ready
+to stand by herself.
+
+It's hard to believe, but the British Empire's greatest extent happened _after_
+World War I. So all of decolonization (besides successful breakaway states like
+the U.S.) happened pretty much during the 20th century, which is basically half
+ruled by the Queen (and this Queen specifically). So it's kind of interesting to
+see all the anxiety up front: "don't screw this up", when you realize what's
+going to happen.

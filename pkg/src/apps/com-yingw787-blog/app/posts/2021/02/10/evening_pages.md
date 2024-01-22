@@ -1,0 +1,57 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Evening Pages: February 10th, 2021"
+date: "2021-02-10T18:50:47-05:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+Heheh, dog baby.
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/02/10/afternoon_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+On a serious note, that looks comfortable and I want one. I was going to say
+just the bed, but if the dog comes with he will get tummy rubs.
+
+---
+
+I got two 3-roll sushi combos from a local sushi takeout joint. Yup, 6 rolls, 3
+salmon rolls with avocado and 3 tuna rolls with avocado, and 2 miso soups. I ate
+it all. For lunch. I'm not sure if it was a good idea, I think it was an actual
+bad idea, but I wanted to continue to prove to myself that DoorDash is not worth
+it, and what better way to do that than to cram my face full of good and cram my
+brain full of serotonin by eating food that would cost a fortune via app? You
+know? I don't think I'll do it again, but that last burger purchase from
+DoorDash...man...that's gonna stick as a pretty big contrast to what I can get
+locally.
+
+I don't think I've worked a whole lot on `oneitemstore.yingw787.com` a whole lot
+since it's come out. I think I'll start publishing weekly updates until that's
+done. I'm looking into things I want to get besides food delivery, and
+uh...houses and cars are expensive, like hella expensive if you buy them
+outright. I don't think I do very well in the stock market, and I think a
+recession is probably coming anyways, so while I'll keep investing there to buy
+the dip whenever that comes or to insure myself against hyperinflation, that's
+both draining my savings and not providing immediate, realized gains. I need to
+build capital, and I don't think there's ever a good time to do that.
+
+Otherwise, things seem...steady, to a degree. I really like how quiet things
+are. I need to prove to myself that I can get shit done though, and that I don't
+relax without somebody riding me and therefore I don't need to be ridden.
+
+I think I need to make my own luck, and my own fun. Why not build?

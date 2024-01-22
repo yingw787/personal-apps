@@ -1,0 +1,73 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Wealthsimple..."
+date: "2021-03-13T16:09:07-05:00"
+draft: false
+---
+
+So for some reason I haven't had a whole lot of luck with financial institutions
+lately. After taking all my money from [Marcus by Goldman
+Sachs](/posts/2021/02/24/marcus_update/) and running all the way back to Schwab,
+I get this gem of an email from WealthSimple:
+
+> We are reaching out today to provide you with an important update regarding
+> your Wealthsimple investment accounts. We would like to inform you that after
+> careful consideration, we have made the decision to no longer provide
+> investment advisory services in the US and will be transferring all existing
+> accounts to Betterment over the coming months.
+
+![wtf](/img/posts/2021/03/13/wtf.gif)
+
+I got introduced to WealthSimple through a stranger / professional network
+contact I reached out to, a Canadian software contractor based out of Vancouver
+if I remember correctly. WealthSimple, this Canadian fintech company,
+auto-invests your money based on a "risk profile" of your choosing from a
+savings account. As far as I know, that's mostly it. It does roundups for credit
+card expenditures as well.
+
+Okay, so I don't want to get kicked over to Betterment, I'd rather just
+centralize my holdings into Schwab. I used the contact's referral link in order
+to save on management fees for the first $10k I invested. I invested about $12k
+using this platform, so a good chunk of change.
+
+So far, I have lost $300. It happens, but you know. Cherry on top and all.
+
+Then I get this email from WealthSimple support:
+
+> Thank you for choosing Wealthsimple! It looks like the recent transfer to your
+> account was returned with the note that the bank account chosen for the
+> transfer has been closed. The bank has now been removed as a funding source
+> from your Wealthsimple account. Our custodian charges a $30 fee for these
+> failed transfers; however, I have processed a credit for the NSF fee now. This
+> will be reflected in 5-7 business days. Feel free to Add a New Bank Account
+> and then re-initiate your deposits.
+
+Ah yes. Since I closed by Marcus account, and since I linked my WealthSimple
+account to Marcus, closing my Marcus account caused the auto-debit to fail,
+which made WealthSimple unhappy. Human centipede of shit.
+
+I begin transferring funds back into Schwab. I discover that WealthSimple has
+been purchasing gold and other crap because "it's not that risky". Apparently
+WealthSimple is backed by Apex Clearing, based out in Texas, which has a 2.5/5
+rating on Google Maps. I can't get my statements, it results in an HTTP 500
+error. I call WealthSimple. Nobody answers. I have no idea how long the wait
+queue is. I hang up after 15 minutes. I can't get my money out, because the app
+is failing and I have no idea what my Apex account number is. I want to nuke
+Toronto.
+
+What is so hard about running a company that's essentially just one cron job??
+And why withdraw from the U.S. market anyways? It's not big enough? Not
+unregulated enough? Not profitable enough? I don't get it.
+
+The app starts working again. I initiate a transfer from Apex to Schwab. It's
+still ongoing. Not sure what the wait is all about, but I've heard it can take a
+little while (a few weeks).
+
+Schwab has [intelligent, automated
+investing](https://www.schwab.com/invest-with-us/automated-investing) now too.
+So I might just go with that instead of using another platform. Schwab was nice
+to me when I was poor, and it is still nice to me when I have hundreds of
+thousands of dollars of debt from my mortgage. I don't get why I looked
+elsewhere. Always believe in papa Schwab. Don't go anywhere else.

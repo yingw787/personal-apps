@@ -1,0 +1,74 @@
+---
+author: ["yingwang"]
+categories:
+  - Personal
+title: "Morning Pages: March 19th, 2021"
+date: "2021-03-19T08:44:10-04:00"
+draft: false
+---
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+I have so many cute pictures and videos, I've been stockpiling them for this
+day. Alright here we go.
+
+A wee wiggly potato!!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/03/19/morning_pages_1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+A wee potato sleeping!!
+
+![sleepyboi](/img/posts/2021/03/19/morning_pages_1.webp)
+
+A golden boi with boop snoot!
+
+![boopsnoot](/img/posts/2021/03/19/morning_pages_2.webp)
+
+A chickadee who loves shiny keys!
+
+![chickadee](/img/posts/2021/03/19/morning_pages_3.webp)
+
+And a pupper and a butterfly!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2021/03/19/morning_pages_2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+Aren't these the best gems you've seen all week?
+
+---
+
+Not sure if I've mentioned this anywhere, but I keep copying and pasting
+`https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic`. Now that redirects
+to `https://en.wikipedia.org/wiki/COVID-19_pandemic`.
+
+Also I think this is the first time I've posted since the mass killing in
+Atlanta. Honestly I feel burned out still from 2020 and well (gestures around
+vaguely) so I just did a number of things. First donated $100 to [Stop AAPI
+Hate](https://stopaapihate.org/) (which was matched by my manager and my CEO, in
+addition to the company, which was phenomenal), spoke out on LinkedIn, and
+complained about a mildly racist ham radio group to the Arlington County Board
+since I'm doing CERT training (finally!) and CERT might be working with them.
+Also need to increase donations to the ACLU from $15 / mo. to $100 / mo. I think
+I'll increase my donations to the ACLU each time there's a mass killing I care
+about (there's just honestly so many I feel like I have to add that filter). I
+think my upper limit is $2000 / mo, though honestly if we get up to that number
+it might be high time to consider my options and leaving the country lol.
+
+Also I'm closing on my apartment today! That should be pretty cool.
