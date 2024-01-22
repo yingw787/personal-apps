@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-02-03",
-    title: "Minimizing Regret",
-    description: "Minimizing Regret",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-02-03",
+  title: "Minimizing Regret",
+  description: "Minimizing Regret",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 When I look back on my life, I realize just how much of my life is about
 minimizing regret and fear. How much I missed out on, because I'm constantly

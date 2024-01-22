@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-01-27",
-    title: "Roman Roads",
-    description: "Roman Roads",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-01-27",
+  title: "Roman Roads",
+  description: "Roman Roads",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 ![offensive bias](/img/posts/2020/01/27/roman_roads_1.png)
 

@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-05-31",
-    title: "Afternoon Pages: May 31st, 2020",
-    description: "Afternoon Pages: May 31st, 2020",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-05-31",
+  title: "Afternoon Pages: May 31st, 2020",
+  description: "Afternoon Pages: May 31st, 2020",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Due to the [coronavirus
 pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
@@ -37,6 +35,7 @@ MP3 player! That's so cool.
 **(Update 08/16/2020):** Audio element for an autoplay:
 
 <!-- https://stackoverflow.com/a/20179321/1497211 -->
+
 <audio style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls loop>
   <source src="/music/posts/2020/05/31/bbc_dubstep.mp3" type="audio/mpeg">
   Your browser does not support the audio element.

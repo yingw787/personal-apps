@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-08-03",
-    title: "All Things Die",
-    description: "All Things Die",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-08-03",
+  title: "All Things Die",
+  description: "All Things Die",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 I recently came across [a Reddit post about certain Star Wars
 quotes](https://www.reddit.com/r/MawInstallation/comments/78yn10/post_a_quote_from_revenge_of_the_sith_and_ill/).

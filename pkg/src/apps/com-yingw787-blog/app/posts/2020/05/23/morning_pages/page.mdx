@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-05-23",
-    title: "Morning Pages: May 23rd, 2020",
-    description: "Morning Pages: May 23rd, 2020",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-05-23",
+  title: "Morning Pages: May 23rd, 2020",
+  description: "Morning Pages: May 23rd, 2020",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Due to the [coronavirus
 pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.

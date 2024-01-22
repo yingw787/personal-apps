@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-01-04",
-    title: "Lessons About Life",
-    description: "Lessons About Life",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-01-04",
+  title: "Lessons About Life",
+  description: "Lessons About Life",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 So I saw [a recent AskReddit
 post](https://www.reddit.com/r/AskReddit/comments/ejfvct/the_pope_slapped_a_woman_on_day_1_of_2020_world/)

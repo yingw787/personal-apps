@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-03-23",
-    title: "The Only Thing I've Ever Wanted",
-    description: "The Only Thing I've Ever Wanted",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-03-23",
+  title: "The Only Thing I've Ever Wanted",
+  description: "The Only Thing I've Ever Wanted",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 > **One day, whether you are 14, 28 or 65**
 >

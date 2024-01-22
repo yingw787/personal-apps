@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-12-06",
-    title: "Morning Pages: December 6th, 2020",
-    description: "Morning Pages: December 6th, 2020",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-12-06",
+  title: "Morning Pages: December 6th, 2020",
+  description: "Morning Pages: December 6th, 2020",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Due to the [coronavirus
 pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
@@ -31,6 +29,7 @@ of my brief thoughts.
 A big baby!
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
     <source src="/video/posts/2020/12/06/morning_pages.mp4" type="video/mp4">
     Your browser does not support HTML5 video.

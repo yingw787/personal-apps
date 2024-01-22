@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-12-31",
-    title: "Year in Review: Fitness",
-    description: "Year in Review: Fitness",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-12-31",
+  title: "Year in Review: Fitness",
+  description: "Year in Review: Fitness",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 The Year In Review:
 

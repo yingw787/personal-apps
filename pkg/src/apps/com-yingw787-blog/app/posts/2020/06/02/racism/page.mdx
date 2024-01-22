@@ -1,23 +1,22 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-06-02",
-    title: "I was once a racist. Here's three things I've learned since then.",
-    description: "I was once a racist. Here's three things I've learned since then.",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-06-02",
+  title: "I was once a racist. Here's three things I've learned since then.",
+  description:
+    "I was once a racist. Here's three things I've learned since then.",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Welcome to my personal blog! I don't usually share my personal content (in fact
 this is the first time), but I think this message here should be heard by

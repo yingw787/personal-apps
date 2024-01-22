@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-01-20",
-    title: "On Failure",
-    description: "On Failure",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-01-20",
+  title: "On Failure",
+  description: "On Failure",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 I recently went back home for the holidays, and was talking about work with a
 friend from high school, who's now a dental student. We had an interesting

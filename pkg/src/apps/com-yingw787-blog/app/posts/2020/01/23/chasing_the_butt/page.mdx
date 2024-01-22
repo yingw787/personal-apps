@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-01-23",
-    title: "Chasing The Butt",
-    description: "Chasing The Butt",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-01-23",
+  title: "Chasing The Butt",
+  description: "Chasing The Butt",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 I think every time I try to avoid accepting a hard truth, I become less well
 off.

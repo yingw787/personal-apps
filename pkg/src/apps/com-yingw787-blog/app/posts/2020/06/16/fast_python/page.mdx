@@ -1,4 +1,3 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
@@ -10,14 +9,13 @@ export const article = {
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 One friend of mine, [Chris](https://github.com/chrisconlan), recently wrote a
 book on Python and performance. I had the pleasure of reviewing it recently;

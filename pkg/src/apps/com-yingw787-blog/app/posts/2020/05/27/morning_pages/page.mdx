@@ -1,23 +1,21 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2020-05-27",
-    title: "Morning Pages: May 27th, 2020",
-    description: "Morning Pages: May 27th, 2020",
-    categories: ['Personal'],
+  author: "Ying Wang",
+  date: "2020-05-27",
+  title: "Morning Pages: May 27th, 2020",
+  description: "Morning Pages: May 27th, 2020",
+  categories: ["Personal"],
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 Due to the [coronavirus
 pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
@@ -30,6 +28,7 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 He's got the jiggles!
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
     <source src="/video/posts/2020/05/27/morning_pages.mp4" type="video/mp4">
     Your browser does not support HTML5 video.

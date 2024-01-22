@@ -1,4 +1,3 @@
-
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
@@ -10,14 +9,13 @@ export const article = {
 };
 
 export const metadata = {
-    title: article.title,
-    description: article.description,
+  title: article.title,
+  description: article.description,
 };
 
 export default (props) => (
-    <ArticleLayout article={article} theme="solarized" {...props} />
+  <ArticleLayout article={article} theme="solarized" {...props} />
 );
-
 
 The Incerto Series:
 
@@ -35,6 +33,7 @@ and the subsequent economic cratering is quite the black swan. Just take a look
 at the trend lines for recent initial jobless claims:
 
 <!-- https://stackoverflow.com/a/26276254 -->
+
 <video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
     <source src="/video/posts/2020/04/09/the_black_swan.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
