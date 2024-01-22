@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { AudioPlayer } from "@libs/audio/components/audio-player";
 
 export const article = {
   author: "Ying Wang",
@@ -34,14 +35,14 @@ MP3 player! That's so cool.
 
 **(Update 08/16/2020):** Audio element for an autoplay:
 
-<!-- https://stackoverflow.com/a/20179321/1497211 -->
-
-<audio style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls loop>
-  <source src="/music/posts/2020/05/31/bbc_dubstep.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<br/>
-<br/>
+<AudioPlayer
+  sources={[
+    {
+      src: "/music/posts/2020/05/31/bbc_dubstep.mp3",
+      type: "audio/mpeg",
+    },
+  ]}
+/>
 
 **(End update 08/16/2020)**
 
