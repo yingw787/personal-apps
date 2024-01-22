@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
 
 export const article = {
   author: "Ying Wang",
@@ -29,14 +30,14 @@ of my brief thoughts.
 I was going to post a video on a mom cat dragging an almost-adult kitten around,
 but I found this baby deer video and I'll go with this instead.
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/12/05/evening_pages_2.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/12/05/evening_pages_2.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 Ahhhhhhhhhhh
 
@@ -50,14 +51,14 @@ video screen into real life. Feels weird man.
 
 Here's a short video on what it's like here by myself:
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2020/12/05/evening_pages.mov" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/12/05/evening_pages.mov",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 Very nice. Very cozy. Have some coffeeshop music playing on my laptop.
 
