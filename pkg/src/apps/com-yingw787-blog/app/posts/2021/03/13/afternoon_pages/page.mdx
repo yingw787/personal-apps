@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
 
 export const article = {
   author: "Ying Wang",
@@ -27,14 +28,14 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 
 Dog snuggling puppy.
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/03/13/afternoon_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/03/13/afternoon_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 That's some PTSD in those eyes right there. Probably lack of sleep.
 
