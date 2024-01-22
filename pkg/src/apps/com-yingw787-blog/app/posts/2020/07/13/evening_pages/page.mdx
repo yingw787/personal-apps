@@ -1,0 +1,157 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-07-13",
+    title: "Evening Pages: July 13th, 2020",
+    description: "Evening Pages: July 13th, 2020",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+Man, it's been a while since I've written here. Hence I'm trying to find the
+cutest animal picture / video from this week, instead of just from today.
+
+And here you go!
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/07/13/evening_pages.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+I wonder whether cat toys are made not because cats enjoy it, but because people
+do. That has to be why, I don't think I've seen a cat enjoy a cat toy more than
+a human.
+
+---
+
+I'm pretty frustrated with myself. I think I say this usually, but today and
+recently I've been feeling the heat much more. My sabbatical kind of went off
+the rails, and I'm not sure what to do about it. So my day project for my
+sabbatical turned from working on a CRM for software engineers, to working on a
+data layer for event-driven clients, to a Firebase-like framework for BI +
+personal life management tools, to a database-backed spreadsheet tool (that I
+never really got started on...), to a consulting agency thing that hasn't gotten
+off the ground yet, to building out a demo SaaS that I'm having trouble with
+because I can't get a friggin' side menu bar to collapse properly.
+
+The kicker? _I haven't shipped any of these_. Besides throwing up a landing
+page, an email address, sending out some cold emails (that haven't gotten
+returned), and maybe doing some amount of development (plus a _lot_ of devops),
+I don't have too much to show in production since...late January.
+
+![awkward](/img/posts/2020/07/13/evening_pages_2.jpg)
+
+---
+
+I don't think this just happened. I think one goal of mine was almost this exact
+situation, to exhaust myself against the impossibility of doing everything
+myself so that I can come back into the workforce a bit more humbled. But now
+that I'm applying to jobs again, this "victory" (if you can even call it that)
+rings very, very, very hollow. I think what I really wanted was freedom. Freedom
+to do what I wanted, on my own terms, and that's not really a freedom you get to
+enjoy frequently unless you have financial freedom, which in our world comes
+from (smartly) doing things other people want in a way that most benefits you.
+Like building a company and answering to customer's needs.
+
+If I had to do my sabbatical over again...what would I do differently...? For
+starters, I think I'd be a bit more liberal on spending money on Heroku.
+Seriously, not having to worry about devops is the best thing ever. Ship a demo,
+get money in the bank from pre-orders or sales or what-not, then iterate on
+customer demands because not even I know what I want for myself (I really have
+only inklings of ideas, and I don't dream full project specifications). I think
+after I had realized what a travesty AWS Elastic Beanstalk really was, and the
+horror of what it's like to configure everything from scratch, I should have
+pivoted instead of going neck deep into AWS.
+
+I'm not sure if I've mentioned this, but I realized maybe two days ago that AWS
+does not allow ECS containers to talk to the public internet, unless they're on
+a private subnet with a NAT gateway. A lot of technical gobbledygook, and what
+it means is that you're looking to spend about $50 / mo. on AWS if you want to
+"do things right" (follow generalized devops best practices). Which is far out
+of budget for me. Whereas Heroku would cost $15 / mo. and have services up and
+ready to go. _Heroku is price-competitive with AWS_, in fact Heroku is priced
+even better than AWS, for Internet-facing services. I don't think I could have
+believed that statement just a few months ago. The vendor lock-in isn't real, if
+you have a container. How can it not be real??
+
+If you have a public API, and you can't use CORS in order to limit who can ping
+your API, you'll have random pings from random crawlers just trying different
+things. And who knows, maybe one day they'll get through to the admin page and
+hold your data ransom. So you need something like AWS Web Application Firewall,
+which charges $5 / mo. for _one_ web ACL rule. When I see what the true cost of
+hosting is like, it makes the value proposition for a managed service much, much
+more attractive.
+
+I think I also need to stop being afraid of letting myself write bad code. This
+is a fear I haven't overcome yet, and maybe it's because I just haven't written
+enough code in general. It's a Catch-22. I'd rather not write any code at all
+than write bad code, but writing good code means writing a lot of bad code
+first. So yeah, I have to write a small quantity of "good" code (the definition
+of which changes every so often), only after doing compulsive research on what
+good and bad is.
+
+---
+
+I think it's dangerous to get into a spiral of negative thinking, so what are
+some good things that came out of this sabbatical? Hmmm...
+
+I learned many things the hard way. I learn things best the hard way, because
+while the higher-order mind forgets things (I think `stack ghci` is one of the
+few commands I remember from earlier this year), the simian mind does not (that
+`awsvpc` meltdown will stay with me long after I forget most everything
+else...). So I guess in a sense I've learned where to assign my priorities in
+developing side projects, and I can see much further on the horizon (e.g.
+scaling a product and what that will entail) than I could before. So that's
+good.
+
+I think it's also nice learning a good deal of DevOps. I think DevOps is
+recession-resistant in a way other software engineering disciplines might not
+be. So I can always pivot to that in case, you know, next job doesn't work out
+or something. And since I made sure to learn everything from the base layer up,
+it works for pretty much any cloud. ACLs, routing tables, and DNS records exist
+everywhere. It's also great because since I can control my pipeline to
+production, I'm not so scared of the big bad vendor lock-in anymore. Come to
+think of it, I'm not sure what I'm really afraid of. Probably security-related
+issues, where if I do something wrong not only is it a silent failure but I can
+get hurt really, really bad. I guess it's nice to learn infrastructure-as-code
+stuff, I can deploy a landing page in less than a day now without being locked
+into a proprietary vendor of some sort, and then only need to worry about SEO.
+
+What else is nice. It's cool learning things people need. I'm much less
+terrified about finding a job this time around than I was previously. Mostly
+because I've kind of stopped giving a shit about finding the "best" job, but
+also because I know I can kind of stand my ground on some things. I've gone out,
+I've made a _little_ money on my own doing some contracting, and you know what?
+I have a base level of self-worth, because I'm fundamentally sick of being
+stepped on. So I'm going to ask for what I want, and I'll allow myself to want
+what I want (and I don't even want all that much). I think I have a leg to stand
+on for that kind of assertion.
+
+Sigh. It's not the suffering Olympics, because if it is I wouldn't win, and so I
+think things are a bit hard at the moment, even for a privileged guy like me.
+It's difficult to plan for the future, and even more difficult when you know
+just how hard things are going to be. I wish my sabbatical aimed more squarely
+at that point, because now keeping those thoughts at bay keeps me up at night.

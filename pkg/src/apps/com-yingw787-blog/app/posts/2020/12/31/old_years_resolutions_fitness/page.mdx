@@ -1,0 +1,137 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-12-31",
+    title: "Year in Review: Fitness",
+    description: "Year in Review: Fitness",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+The Year In Review:
+
+- [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+- [**Year In Review: Fitness**](/posts/2020/12/31/old_years_resolutions_fitness)
+- [Year in Review:
+  Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [Year In Review:
+  Resolutions](/posts/2020/12/31/old_years_resolutions_review)
+- [Year In Review:
+  Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+
+---
+
+[**GitHub repository
+(PRIVATE)**](https://github.com/yingw787/fitness-calendar.yingw787.com)
+
+---
+
+So this year was a unique one in terms of exercise. Not just in the stay-at-home
+orders, which means no more gym (not that I was going to the gym regularly
+anyways), but also the pandemic and trying to avoid the hospital and any broken
+/ sprained bones and ligaments discouraging exercise too. That, plus adjusting
+to a work-from-home routine that doesn't involve long periods of sitting in
+front of a screen, all resulted in a substantial backslide this year compared to
+the last.
+
+Good news is I kept a bunch of metrics throughout most of this year, and I got
+around to Dockerizing that data and plotting a bunch of visualization for
+certain metrics. So let's get to it.
+
+![iphone screen time](/img/posts/2020/12/31/iphone_screen_time.png)
+
+Hmm, for the amount of time I spend on my iPhone, I can present some
+observations:
+
+- **There's a big reduction in outliers sometime in May.** I think this is
+  because I started using [Boss as a Service](https://bossasaservice.life/) at
+  that time, and started reporting in times spent on my phone and prioritizing a
+  decrease in screen time then.
+
+  I am a little disappointed that the [Kitchen
+  Safe](https://www.thekitchensafe.com/) I purchased for the express purpose of
+  locking up my phone didn't seem to have as big of an impact as I had hoped. It
+  might be because it's a bit small and cramped, in which case maybe purchasing
+  a bigger bottom would be better, or because I keep it out of the way of where
+  my work area is, in which case maybe I should look into getting a bigger desk.
+
+- **I spend wayyyy too much time on my phone than I should.** I think my target
+  is around 3 hours a day, but I think I usually spend up to 5-6 hours on my
+  phone (or 400 minutes). A lot of times, locking up my phone in my Kitchen Safe
+  is really inconvenient, I can't be reached via text, and I think some websites
+  require SMS two-factor authentication instead of token-based auth (which is
+  available on my laptop via Authy for Linux), so I can't log into those
+  websites if I need to.
+
+![iphone screen time](/img/posts/2020/12/31/weight_lbs.png)
+
+Hmm. Fuck.
+
+- **Lots of missing data.** I stopped recording my weight when I went back to my
+  parent's place to Michigan for a few months, because the scale at my parent's
+  place isn't all that accurate compared to my digital, self-calibrating scale
+  at my place. So I lacked information on how much calories I was building up
+  and not burning off until I got back to my place three months later.
+
+  I think I should record what information I can from this point onwards,
+  because 1-2 pounds variance is nothing compared to gaining 10-20 pounds over a
+  few months of overeating. If possible, I should bring my scale from my place
+  to my parent's place, or just purchase another scale and ship to my parent's
+  place next time I stay there.
+
+  Also parent's food is good. So at least I didn't gain weight eating McDonald's
+  or some crap like that.
+
+- **I kinda gave up latter half of the year.** I think I was really working
+  towards losing weight, and I had a target of around 145 lbs (which I never
+  really reached but was close to). After discovering that my weight
+  skyrocketed, I became depressed and despairing and stopped caring about losing
+  weight, and traded off gaining weight for mental sanity as the pandemic took
+  off by stress eating. Hence the ever-increasing amount of weight gained.
+
+  I think it's hard given a routine of sitting in one place to build another
+  routine of exercising regularly over a few weeks. I still lack that capability
+  to build multi-week habits. I'll need to pick that back up if I'm going to
+  lose this stress weight.
+
+Yeah gaining 40 pounds over this year is not my cup of tea. I'll need to fix
+this in 2021.
+
+![iphone screen time](/img/posts/2020/12/31/waist_size_inches.png)
+
+- **Same shtick as weight.** Only with a lesser granularity because my waist
+  usually varies by increments of half an inch for whatever reason.
+
+  Also interesting is how waist size varies for any given period. I think my
+  waist size was around 33.5'' consistently at the beginning of the year, and
+  now it's 37''. I don't think I'd be able to deduce this pattern until I see
+  the entire data in full.
+
+This is probably the most depressing part of my year in review, how I failed to
+keep my body healthy in ways I measured. I'm still incredibly lucky, though.
+I've heard people who've gotten COVID invariably cannot exercise anymore due to
+the lack of lung capacity, and I'm guessing whenever the ACA gets repealed
+insurance companies will label COVID a pre-existing condition with skyrocketing
+premiums, along with weight gain from inability to exercise meaningfully, will
+result in a drastic decline in physical health among the U.S. population.
+Compared to that I'm hella lucky (though I still might catch COVID if I'm not
+careful). I can always do a better job though, and whenever I get the vaccine I
+should look at exercising more and re-evaluating the risk of a broken bone or
+something vs. decreased health from overweight-ness and obesity and blah blah
+blah.
+
+I think I'd rather just know things are horrible early on rather than wait until
+I'm a literal beach ball of fat. This is another argument for making an in-house
+database-backed spreadsheet application + streaming visualization tool; if I
+don't, I might not see the bigger picture on a day-to-day basis.

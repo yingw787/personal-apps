@@ -1,0 +1,61 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-12-28",
+    title: "Evening Pages: December 28th, 2020",
+    description: "Evening Pages: December 28th, 2020",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+I love it when animals make carbon copies of themselves. Especially when they're
+already cute. It's like cuteness and then more cute slathered on top because
+they're smaller.
+
+Case in point:
+
+![smol](/img/posts/2020/12/28/evening_pages.webp)
+
+---
+
+It's the end of the year coming up, and I'm putting together a set of
+(hopefully) comprehensive datasets that detail how my year went. Hopefully, I'll
+be able to do this every year, and I'll be able to invest in things that don't
+change. To that end, I built myself a small test database harness that should
+allow me to enter in data via a nice command line called `pgcli` (with
+auto-complete to help discover commands). I was hoping to find a
+spreadsheet-like data entry tool (...like a database-backed spreadsheet web
+application that sits on top of PostgREST and PostGraphile, like the one I was
+meaning to build during the latter half of my sabbatical), but I don't think
+I've found a good app. Closest thing might be PostGUI, but I think it might be
+more of a research project rather than a coupled solution. I might just dump the
+data in there for recording this year since I want to run analytics and do some
+dataviz stuff (e.g. y-axes for my sleep log are pretty messed up), but long term
+I might want a better solution. I am glad that I'm proceeding with the
+de-Googlification of my life though. I think the only major service I use from
+Google is Gmail, and I guess whenever Gmail becomes too hard to use for some
+reason and there's a real competitor, I'll migrate away from Gmail to there and
+just call it.
+
+I don't think people mention my haircut! I walked from my apartment to DC and
+back and nobody said anything. I feel a good deal less self-conscious now.

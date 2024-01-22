@@ -1,0 +1,115 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-04-09",
+    title: "Book Review: "The Black Swan", by Nassim Nicholas Taleb",
+    description: "Book Review: "The Black Swan", by Nassim Nicholas Taleb",
+    categories: ['Books'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+The Incerto Series:
+
+- [**The Black Swan**](/posts/2020/04/09/the_black_swan)
+- [Antifragile](/posts/2020/05/06/antifragile)
+- [Fooled by Randomness](/posts/2020/07/16/fooled_by_randomness)
+- [The Bed of Procrustes](/posts/2020/07/17/the_bed_of_procrustes)
+
+---
+
+In 400 or so pages, Professor Taleb shatters your worldview and rebuilds it with
+"The Black Swan", or a book describing the significant impact of highly
+improbable events. The timing couldn't be better, as the coronavirus pandemic
+and the subsequent economic cratering is quite the black swan. Just take a look
+at the trend lines for recent initial jobless claims:
+
+<!-- https://stackoverflow.com/a/26276254 -->
+<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
+    <source src="/video/posts/2020/04/09/the_black_swan.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<br/>
+<br/>
+
+There's two spikes next to each other. One spike is 3 million claims two weeks
+ago, which shattered the previous record shattered sometime in the 1980s. That
+week was then shattered by last week which was around 6 million claims. The
+previous record was <700,000 back in the 1980s.
+
+Two things I learned from reading this book were:
+
+- **Beware the Ludic fallacy.** Your probability of your ability to weigh
+  probabilities may be flawed. Professor Taleb brings up the story of Fat Tony
+  (street smart) and Dr. John (book smart). When asked what the probability of a
+  coin landing tails up if it landed on heads 49 times already, Dr. John
+  immediately exclaimed "50%" because probabilities are separate from each
+  other, while Fat Tony said "<1%" because _he assumes the coin is rigged to
+  land heads_. Dr. John used a probability model that would completely break if
+  the (unspoken) assumption of a fair game was relaxed. Don't be like Dr. John.
+  Be like Fat Tony, and apply credibility factors to your assumptions.
+
+  On a similar note, anytime you see a Gaussian model, especially one that
+  changes completely after adding one more parameter, run. Nothing in the real
+  world depends on only two parameters.
+
+- **The more you know, the more blind you become.** The turkey raised for 1,000
+  days on grains and eats out of the farmer's hand is wholly unprepared for the
+  1,001st day when the farmer slaughters and roasts it for Thanksgiving. Yet if
+  you used the prior 1,000 days to project what would happen on the 1,001st day,
+  ending up on a dinner plate wouldn't even be on your radar. You can't reason
+  how inevitable a situation is from prior information, same as you can't reason
+  what shape an ice cube was before melting into a puddle.
+
+  It also demonstrates the power of information asymmetry. Thanksgiving is a
+  Black Swan to the turkey. It is a holiday to the farmer.
+
+Three things I took away were:
+
+- **Build in redundancy towards any actions you take.** This might be keeping
+  computer backups and practicing a 3-2-1 backup strategy. It might be exploring
+  how to gain additional streams of income or information. It could be living a
+  healthy life even if you have "good genes". It could even be storing and
+  reserving food (or toilet paper) during times of plenty, so you can prepare
+  during times of famine.
+
+- **Use the barbell strategy to plan against Black Swans:** Use a
+  hyper-passive strategy coupled with a hyper-aggressive strategy in order to
+  protect against the downsides of Black Swans, while still taking advantage of
+  the Black Swans that might benefit you. A financial barbell strategy might
+  look like dollar reserves and U.S. Treasuries (or gold bars under your bed),
+  and investing in biotech ventures or tech companies.
+
+  As a counterexample, I sold my stake in Zoom and kept my stake in AT&T some
+  months before this recession as a form of safety and stability. With the
+  ongoing pandemic, 33% of cable subscribers would unsubscribe if there were no
+  sports on TV. This might permanently crater AT&T's market capitalization due
+  to losses in the recent DIRECTV acquisition. Meanwhile, Zoom doubled during
+  the pandemic because everybody needs to work at home and their video
+  teleconferencing platform is top-notch. Don't be like me.
+
+- **The more you rely on universal truths, the safer you'll be.** I very much
+  trust hard sciences like physics, because each theory builds on the prior one
+  and Black Swan events in physics (i.e. general relativity) are relatively
+  rare. I would trust but verify complex and opaque topics like modern medicine
+  (which may prove [iatrogenic, or harms more than
+  helps](https://en.wikipedia.org/wiki/Iatrogenesis)) or my own background of
+  computer engineering (which I've learned is getting rocks to think, a tricky
+  proposition).
+
+  Despite an amateur background in economics, I don't trust the vast majority of
+  economists and produced economic theory at all, due to wildly differing models
+  that quickly get invalidated (an indication of overfitting). In those
+  situations, I prefer the simplest approach I agree with, which right now is
+  John Maynard Keynes (pay people to dig holes and pay other people to fill them
+  up).

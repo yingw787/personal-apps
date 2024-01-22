@@ -1,0 +1,45 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-02-16",
+    title: "Book Review: "Virtual Power", by Will Angel",
+    description: "Book Review: "Virtual Power", by Will Angel",
+    categories: ['Books'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+![cover](/img/posts/2020/02/16/virtual_power_1.png)
+
+My friend [Will Angel](https://twitter.com/DataDrivenAngel) recently wrote a
+book, and I got the opportunity to purchase an early draft and review it. I'm so
+happy that he's made it this far, and I'm really glad to learn more about
+[virtual power](https://en.wikipedia.org/wiki/Virtual_power_plant) and its
+implications in both climate change and energy policy.
+
+Will does a great job discussing the benefits of virtual power with respect to
+policy implications, especially around national security, cost savings, and
+feasibility. In doing so, he targets many high-powered professions around the
+D.C. area, and does a great job using examples of how parts of the virtual power
+network benefit him and the people of D.C. already. For example, he discusses
+PEPCO's "Energy Wise Reward" and "Peak Savings Day" events as successful
+applications of demand response modulation, and he mentions Kyle Yost and his
+standing offer to mount solar panels on your roof for free in D.C. thanks to
+Solar Renewable Energy Credits (SRECs). These strike home the idea that virtual
+power is possible, moreso for policymakers based out of the D.C. area.
+
+I'm definitely biased, but I found the book an enjoyable and relatable read, and
+I'm looking forward to the book's paper publication in a few months. Check out
+the [Indiegogo campaign
+here](https://www.indiegogo.com/projects/virtual-power-by-will-angel#/) for more
+information.

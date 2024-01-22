@@ -1,0 +1,56 @@
+
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+    author: "Ying Wang",
+    date: "2020-03-24",
+    title: "Morning Pages: March 24th, 2020",
+    description: "Morning Pages: March 24th, 2020",
+    categories: ['Personal'],
+};
+
+export const metadata = {
+    title: article.title,
+    description: article.description,
+};
+
+export default (props) => (
+    <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of partial lockdown. To alleviate fear and
+stress, my writer's group has put together a daily "morning pages" get-together
+on Zoom in order to touch base before starting the day. Here's some of my brief
+thoughts.
+
+---
+
+I created a writing sample and shared it with a friend, and the question arose
+as to how to protect certain routes from premature viewing. I took a look at
+using Lambda@Edge and AWS Cognito in order to secure S3 resources requested by
+CloudFront, but it seems like a lot of work...it's not like anybody will really
+read that post anyways. I think it would be good practice down the line, but I
+also don't want to dump energy into something for my personal blog when I can be
+dumping more energy into
+
+Speaking of energy, my parents strongly recommended to not visit any grocery
+stores during this time and only handle delivery items. I really, really wish
+Trader Joe's did delivery. I also wish I wasn't addicted to Trader Joe's and
+that their stuff wasn't so awesome. But then again if it wasn't, I wouldn't miss
+it. First-world problems make life complicated.
+
+I locked my phone up in my Kitchen Safe for 14 hours yesterday!! Got so much
+work done (because otherwise I would go insane) and it was so successful I think
+I'll keep locking it up. I think I'll set my Kitchen Safe to unlock during the
+day so that I can call my parents for a liveness check and to get information,
+then lock it up for a full 24 hours so that way I'm even less tempted to use it.
+I already configured IFTTT applets for my Google assistant, and I have my trusty
+notepad and pen, so it's not like my sleep log will suffer anyways.
+
+I saw a great Reddit picture today about a baby being born. Hello baby! Post
+titled something like "no matter what happens, life goes on".
+
+![aww baby](/img/posts/2020/03/24/morning_pages.jpg)
