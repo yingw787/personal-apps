@@ -1,0 +1,53 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-05-10",
+  title: "Afternoon Pages: May 10th, 2020",
+  description: "Afternoon Pages: May 10th, 2020",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+This is delicious:
+
+{/*<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/05/10/afternoon_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>*/}
+
+Well, maybe not. There's an interesting new video format called `.m3u8`, and I
+haven't really figured out how conversion to `.mp4` will work. Instead I've been
+using an online video conversion tool.
+
+---
+
+This weekend has been...uneventful I'd say. Time is definitely blending
+together, and it's difficult to concentrate on what matters. What I really
+should do is go outside right about now, or maybe boil some eggs so that I can
+get some oomph into my diet. There's a bunch of things piling up on my to-do
+list, and I feel like the higher the pile, the less interested I'm in in dealing
+with it.
+
+Yeah, I think I'll just go boil some eggs. I need to eat something today.

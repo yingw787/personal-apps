@@ -1,0 +1,24 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-01-30",
+  title:
+    'Book Review: "Haskell Programming, From First Principles", by Chris Allen and Julie Moronuki',
+  description:
+    'Book Review: "Haskell Programming, From First Principles", by Chris Allen and Julie Moronuki',
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+I read through this 1,857 page book in about three months, and it was a
+refreshing and enlightening experience. See [my review on
+Haskell](https://bytes.yingw787.com/posts/2020/01/30/a_review_of_haskell/).

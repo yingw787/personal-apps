@@ -1,0 +1,192 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-12-31",
+  title: "Year in Review: Resolutions",
+  description: "Year in Review: Resolutions",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+The Year In Review:
+
+- [Year In Review: Finances](/posts/2020/12/31/old_years_resolutions_finances)
+- [Year In Review: Fitness](/posts/2020/12/31/old_years_resolutions_fitness)
+- [Year in Review:
+  Gratitude](/posts/2020/12/31/old_years_resolutions_gratitude)
+- [**Year In Review:
+  Resolutions**](/posts/2020/12/31/old_years_resolutions_review)
+- [Year In Review:
+  Sleep](/posts/2020/12/31/old_years_resolutions_sleep_schedule)
+
+---
+
+Another year in the bag! And what a year it has been! Feels like thirty years
+have gone by, I think I forgot all about [the New Year's Resolutions I started
+this year](/posts/2020/01/01/new_years_resolutions), until maybe last week.
+
+Let's take a stroll down memory lane and see what I planned for myself / did for
+myself.
+
+The "soft" (not measurable) resolutions:
+
+- **<span style="color:green">Learn to love myself (MEETS / EXCEEDS
+  EXPECTATIONS)</span>**: It's strange to say this year out of all years, but
+  I don't think I've been happier or been at a happier point in my life than
+  this year. I think it's in large part getting out of (what I think was) a
+  work environment I wasn't a great cultural fit for, taking time off and
+  resetting my emotional / mental state through a sabbatical, getting a job
+  that I really like and finding my own voice, and most importantly going to
+  psychotherapy and really getting some stuff off my chest. There's some stuff
+  that seems bad, like the rest of 2020, but I think this year I've been
+  climbing out of a deep hole I've dug for myself and it just seems like a
+  part of the climb. It's also in large part due to the formation and
+  maintenance of several key habits. I did use my habit tracker for at least
+  the beginning of this year, and through [Boss as a
+  Service](https://bossasaservice.life/) I submit daily affirmation emails
+  that keep me repeating "I live in the best of all possible worlds.
+  Everything I do today, I choose to do." explicitly, and I've created an
+  hourly journal where I track every 15 minutes of my day so I know my time is
+  being used productively.
+
+  We'll see what happens during 2021, but I'm cautiously optimistic that I'll
+  be able to keep up this tempo.
+
+- **<span style="color:green">Make others happy (MEETS / EXCEEDS
+  EXPECTATIONS)</span>**: I think I've helped a couple friends through some
+  tough moments this year (e.g. a good number of friends from college are now
+  in medical school, and starting your medical career during a pandemic is
+  always stressful), and I like to think I've been a good friend. At least
+  last year, I remember friends trying to support me and me being all
+  emotionally flabby, and this year friends starting to deflate here and there
+  and me being supportive and there for them. I think in large part, this
+  change comes from me being able to love myself, and having this self-love
+  radiate outwards towards others. Some friends have drifted further apart,
+  but more friend groups than I expected have stayed in some capacity (e.g. a
+  group of college friends gather every Wednesday evening, another friend
+  group for professional development gathering on Telegram, etc). It's also
+  beneficial when going into a new workspace and creating positive first
+  impressions. I think this is very much a positive development, and I'd like
+  to keep the good vibes going into next year.
+
+- **<span style="color:green">Find joy in the ugliness of life (MEETS /
+  EXCEEDS EXPECTATIONS)</span>**: I think I've definitely succeeded in this
+  regards, through some (I would say) relatively thorough planning ahead.
+  After Trump won in 2016 I started stockpiling cash in my bank account like
+  an insane man expecting things to go to shit at some point in time, and this
+  was strengthened by my experience at my first company. So when 2020 finally
+  hit, it was a liberating feeling of having been proven right and being ready
+  (e.g. I had expected the government to completely botch a response to
+  $SOME_BIG_BAD_EVENT and having no financial assistance for at least two
+  years if not longer). With financials and social stuff taken care of, I
+  could dedicate most if not all of my energy towards being happy and enjoying
+  myself, which I could do because I had so deprived myself in years past the
+  smallest things could spark joy. So I could micro-dose on natural endorphin
+  / serotonin increases by doing things like getting takeout or eating meat in
+  order to regulate my emotional state. It's not all scientific, and I expect
+  that as 2020-like years becomes the new normal for life going forwards I
+  would have to downscale some of these pleasures in order to maintain some of
+  that balance, but I've found a great deal of success with my current
+  approach. This, in addition to doing things like always reframing
+  thoughts/sayings/actions in a positive manner, addressing stressors with my
+  therapist and support network as they come along and nipping them in the
+  bud, help keep the abyss at bay.
+
+The "hard" (measurable) resolutions:
+
+- **<span style="color:orange">Build the software products along my personal
+  critical path towards personal improvement (PARTIALLY MEETS
+  EXPECTATIONS)</span>**: So I didn't end up building the apps I wanted to
+  build (the digital tele-Rolodex and the habit tracker), but I did end up
+  building the "on-prem Firebase" proof-of-concept and gained a lot of skills
+  there, plus learned a good deal of DevOps, and gained a lot by building out
+  my own cooking website, ukulele progress tracker, and hourly journal (and
+  email report tracker). This, in addition to other things like hoarding some
+  mapping data in case society collapses and I need to find my family back in
+  Michigan by walking from D.C. using an on-prem maptile server on my laptop.
+  I think I'm well on my way to replacing the cloud-native, proprietary
+  services I use with services I build and maintain myself.
+
+  Next year, I might expect to build out e.g. my own photo gallery service
+  syncing data to S3 (or S3 cold storage), my own spreadsheet app sitting on
+  PostgreSQL, and maybe a smattering of other projects akin to
+  https://tinyprojects.dev/.
+
+- **<span style="color:green">Find a job that I like (MEETS / EXCEEDS
+  EXPECTATIONS)</span>**: Finding my current place of employment was a
+  **_huge_** relief off my chest. Before MotoRefi, I didn't think a good tech
+  company in D.C. was possible, or that there were any good companies
+  anywhere. Thank God for my fellow coworkers. I don't have to feel like I
+  need to keep running, I don't have to uproot my life and go to some
+  expensive tech hub in order to feel like I'm at the cutting edge, and I can
+  learn things on the job as opposed to having to learn the wrong thing at
+  work and then relearn the right thing after hours (I can actually relax!!).
+  Thank God.
+
+- **<span style="color:red">Get my first kiss (DOES NOT MEET
+  EXPECTATIONS)</span>**: I did go on one virtual date (as opposed to five
+  dates last year), but this wasn't something I ended up pushing hard towards,
+  nor something that I felt was feasible this year. I'm not quite sure what my
+  dating strategy will be going forwards, but I anticipate that it will become
+  more and more ancillary to other priorities (e.g. speaking at a tech
+  conference and meeting somebody there, going to an in-person sports league
+  and meeting somebody, doing cooking classes or ukulele classes, etc). As
+  long as I keep putting myself out there and don't shrink away from the
+  world, that's as much as I can do.
+
+In addition, some aggregate statistics I think help describe this year:
+
+- Commits over the past 52-week period as of `2020-12-26T15:32:15.272282`: 3,957
+  commits on GitHub from `2020/01/01`, and (2633 + 27 + 49 + 13 = 2722) on
+  GitLab over four projects started this year for a total of **6,679** commits.
+  I had originally wanted **10,000** commits but these things are just so easy
+  to fudge (e.g. most of my commits are for my hourly journal, which are mostly
+  one-liner changes).
+
+- Books read: **21** as of `2020-12-26T15:57:14.766652` (and I'm not sure if
+  I'll be stacking up these numbers at the end of the year like before so this
+  should be a more or less accurate tally). I've heard that most CEOs read
+  something like 50-60 books per year, and of course Warren Buffett reads
+  something like 500 pages per day, and I'm not at that level yet. But I think
+  there's a good mix of meaty subjects that change my worldview (like [Taleb's
+  "Incerto" series](http://localhost:1313/posts/2020/04/09/the_black_swan/)),
+  and fun books that I enjoy engaging with.
+
+  What's surprising is that this tally is more than the **19** books I've read
+  in 2019, when I thought I should have been reading more, though less than the
+  **31** books I've read in 2018 and **29** books I've read in 2017. I think I
+  only really tried in the first half of this year, otherwise I've been watching
+  a good number of TV shows and such.
+
+- I think this year I started using
+  [RescueTime](https://www.rescuetime.com/dashboard), because I switched away
+  from macOS to Ubuntu and lost the usage of
+  [Timing.app](https://timingapp.com/?lang=en). In terms of statistics through
+  RescueTime, as of `2020-12-31T13:58:37.200101`:
+
+  - 1,113h on software development
+  - 746h on utilities
+  - 685h on entertainment
+  - 379h on communication and scheduling
+  - 161h on uncategorized
+
+  <br />
+
+  Here's a picture of that report!
+
+  [year_in_review](/img/posts/2020/12/31/year_in_review.png)
+
+So, yeah. Overall, a pretty good year me. Actually better than most years.
+Actually, fantastic, I think this is the best year I've had probably for the
+last ten or fifteen years, by a significant margin. A large part of me hopes
+every year is like 2020. But that's not nice for other people, and years change
+anyways, so I wish instead I can keep riding this choo-choo train.

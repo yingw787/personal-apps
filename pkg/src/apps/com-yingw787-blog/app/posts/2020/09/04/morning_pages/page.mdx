@@ -1,0 +1,64 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-09-04",
+  title: "Morning Pages: September 4th, 2020",
+  description: "Morning Pages: September 4th, 2020",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), I've been
+locking myself down until I think it's safe to go out again. To alleviate fear
+and stress, my writer's group has put together a daily "morning pages"
+get-together on Zoom in order to touch base before starting the day. Here's some
+of my brief thoughts.
+
+---
+
+So fun fact, I had accidentally wiped my hard drive last week, and I failed to
+save any backups, so I had to set everything up from scratch. I took the
+opportunity to convert some of the infrastructure from my old `bash` scripting
+approach to a `make` approach w/ deployment via AWS CloudFormation. It was kind
+of a PITA, and I had put it off for years. And the thing that got me to do it?
+Being able to share this video!
+
+{/*<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/09/04/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>*/}
+
+Sources:
+
+- [Reddit](https://www.reddit.com/r/Eyebleach/comments/imasjv/a_chickens_best_friend/)
+- [TikTok](https://www.tiktok.com/@hoest/video/6868422335377067270)
+
+I thought it was a dog at first, then I realized it was a baby cow and then I
+had to get everything up and running again.
+
+---
+
+I think Arts, Beats, and Eats came by my neighborhood yesterday! I was going out
+for a walk and I saw a few food trucks come by. [Arts, Beats, and
+Eats](http://artsbeatseats.com/) is a show that typically takes place around
+September in my parent's county, and usually it's a big blast. This year, it's a
+bunch of smaller blasts, and I guess the food trucks are going from neighborhood
+to neighborhood in order to avoid tempting larger crowds gathering in any one
+location. I like the concept! Also liked smelling everything from a distance; I
+didn't have a mask on at the time, and didn't bring my wallet, so I couldn't buy
+anything.

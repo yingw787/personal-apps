@@ -19,6 +19,7 @@
       "@apps/com-yingw787-blog/*": ["pkg/src/apps/com-yingw787-blog/*"],
       "@apps/com-yingw787-bytes/*": ["pkg/src/apps/com-yingw787-bytes/*"],
       "@apps/com-yingw787/*": ["pkg/src/apps/com-yingw787/*"],
+      "@libs/audio/*": ["pkg/src/libs/lib-ui-audio/src/*"],
       "@libs/blog/*": ["pkg/src/libs/lib-ui-blog/src/*"],
       "@libs/mdx-components/*": ["pkg/src/libs/lib-ui-mdx-components/src/*"],
       "@libs/shadcn-ui/*": ["pkg/src/libs/lib-ui-shadcn/src/*"],

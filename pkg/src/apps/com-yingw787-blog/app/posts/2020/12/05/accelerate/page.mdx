@@ -1,0 +1,75 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-12-05",
+  title:
+    'Book Review: "Accelerate: Building and Scaling High Performing Technology Organizations", by Nichole Forsgren, Jez Humble, and Gene Kim',
+  description:
+    'Book Review: "Accelerate: Building and Scaling High Performing Technology Organizations", by Nichole Forsgren, Jez Humble, and Gene Kim',
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+I got this book on the recommendation of my manager; I had it for a few months
+now in my Amazon "Saved for Later" (seriously, what's up with that, if I add an
+item to my cart and then don't want it I can only save for later vs. adding to
+my wishlist), and during a 1:1 I mentioned I had it there, and he bought it for
+me!! So I spent the past month or so reading through it on and off.
+
+I think this book confirmed a lot of my original ideas about how software in
+production should be working. I say original as coming out of college into my
+first job and reading through a bunch of books on software. The thing about
+"original" though is I gradually lost my compass as the years went on, and
+doubted my original beliefs because of places I've worked at had different needs
+(and honestly addressed them in ways that could have gone better). This book
+brought back a lot of the core arguments, and backed them up with data.
+
+I think what this book really excels at is selling the concept of survey
+management and qualitative data. I think for me as an engineer, I tend to value
+quantitative data a lot. The arguments against quantitative data they made, like
+"oh if something went wrong with your quantitative data a whole bunch of data
+points are off in the same way vs. much more stochastic outliers with bad
+qualitative data" and "you cant capture everything with your quantitative data"
+didn't really appeal a whole lot to me. Yeah, quantitative data can be bad, but
+there are ways in order to preserve data quality and I think at this point in
+the tech world people should be on the same page regarding quantitative data not
+capturing the full source of truth. I do agree though that having more data is
+always nice, and given data around people's thoughts, feelings, perceptions,
+etc. changes constantly, taking snapshots of that data and evolving that schema
+with people trained in-house to do so is really important for measuring org
+efficacy. I've seen this at my current place; we use this tool called Lattice,
+and it's really nice to keep track of 1:! / skip-level agenda items, weekly
+updates, and pulse surveys. This is on top of Google Forms (which I think come
+with our G Suite account), and third-party form builders like Qualtrics or
+SurveyMonkey.
+
+Another good thing the book does is to tie in org culture with DevOps. I've seen
+this first-hand, working at orgs just with access to CI and without access to
+CI; it's a complete world of difference, because with CI the nits don't build up
+and cause friction between people and orgs. Wide permissions and audit trails
+help create a high-trust (but verifiable) environment, and logging + quality
+deployment topologies means easy tracing and patching of issues. Implementing
+all this really does add a smile to your lips and a bounce to your step when
+you're coming into work (or opening the laptop lid) every day.
+
+One thing I wish the book did better was present its captured data. It mentioned
+that it's based off of a "State of DevOps" report, but I don't think the report
+is highlighted (or if it is, highlighted in color because this is black/white
+paperback). It'd also be nice in order to have a copy of the raw survey data as
+a CSV file hosted somewhere, so people / organizations can make their own
+deductions and see how the deductions are broken down within the book. There's
+some charts in the book to back some arguments, but I wish they were more
+substantive.
+
+Overall, I think it's a quality book in order to adjust your org outlook, esp.
+if you're part of a larger organization (I don't know what a change assessment
+board is, I'm guessing it's relevant in larger orgs). Pretty quick, and fun too.

@@ -1,0 +1,42 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-01-05",
+  title: 'Book Review: "How to be a Friend", by Marcus Tullius Cicero',
+  description: 'Book Review: "How to be a Friend", by Marcus Tullius Cicero',
+  categories: ["Books"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+> **Amor enim, ex quo amicitia nominata est, princeps est ad benevolentiam
+> coniungendam.**
+>
+> **For it is love (amor) from which the word "friendship" (amicitia) comes, and
+> this is the origin of goodwill.**
+>
+> Marcus Tullius Cicero (Section 26)
+
+[cover](/img/posts/2020/01/05/how_to_be_a_friend_1.jpg)
+
+This book was the second of a classics series by [Princeton University
+Press](https://press.princeton.edu/), the first of which was ["On
+Anger"](/posts/2019/11/07/on_anger). This book describes Cicero's views on
+friendship, in a letter to a best friend based in Greece named Atticus. Cicero
+describes what makes up a good friendship, based on his then-sixty years of
+experience making them.
+
+I really enjoyed reading this book. It flows very well, which is quite
+surprising given the Latin to English translation, and I'm guessing the
+formalism regarded to a former Roman consul (a head of state during the Roman
+Republic). It seems very genuine. Cicero's letter demonstrated to me just how
+constant many things about people are throughout the ages, and how the same
+things end up mattering to everyone.

@@ -1,0 +1,55 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-05-08",
+  title: "Morning Pages: May 8th, 2020",
+  description: "Morning Pages: May 8th, 2020",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+Due to the [coronavirus
+pandemic](https://en.wikipedia.org/wiki/2019-20_coronavirus_pandemic), the D.C.
+metro region has been in a state of lockdown. To alleviate fear and stress, my
+writer's group has put together a daily "morning pages" get-together on Zoom in
+order to touch base before starting the day. Here's some of my brief thoughts.
+
+---
+
+This is a nice doggo.
+
+{/*<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2020/05/08/morning_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>*/}
+
+Apparently Reddit uploads iOS videos as `.m3u8` format, which are tricky to
+handle and to convert to `.mp4`. I like gfycat now.
+
+---
+
+It's Friday, and another week gone. Time is passing by insanely quickly for me
+and I wish I could slow it down somehow. I could use the extra time. The hourly
+journal I've been keeping of my day helps a little bit, but I think
+psychologically being in the exact same environment day after day probably
+contributes to the subconscious "sameness" I've been feeling. I'm also having
+trouble timeboxing specific tasks, especially since some tasks are blockers for
+others. I feel like I just need to get over this one little hill, I'm sooo
+close, and then things can finally relax a bit.
+
+Maybe I'm lying to myself, but this is honestly how I feel. Only time will tell
+if I'm right, and I hope that day doesn't come until I'm ready.

@@ -1,11 +1,13 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
 
 export const article = {
-    author: "Ying Wang",
-    date: "2017-12-22",
-    title: "Book Review: "Effective Python: 59 Specific Ways to Write Better Python", by Brett Slatkin",
-    description: "Book Review: "Effective Python: 59 Specific Ways to Write Better Python", by Brett Slatkin",
-    categories: ['Books'],
+  author: "Ying Wang",
+  date: "2017-12-22",
+  title:
+    'Book Review: "Effective Python: 59 Specific Ways to Write Better Python", by Brett Slatkin',
+  description:
+    'Book Review: "Effective Python: 59 Specific Ways to Write Better Python", by Brett Slatkin',
+  categories: ["Books"],
 };
 
 export const metadata = {
@@ -17,92 +19,167 @@ export default (props) => (
   <ArticleLayout article={article} theme="solarized" {...props} />
 );
 
-This book is definitely geared towards intermediate Python developers, or those with a basic understanding of Python. As this book is primarily a list of Python tips, I will go through the points that I have personally encountered, and if applicable any improvements I have on the author's comments.
+This book is definitely geared towards intermediate Python developers, or those
+with a basic understanding of Python. As this book is primarily a list of Python
+tips, I will go through the points that I have personally encountered, and if
+applicable any improvements I have on the author's comments.
 
 **1. Know Which Version of Python You're Using**
 
-I have been using Python 2.7 at work; the latest Python standard is 3.6. There are considerable breaking changes between Python 2 and Python 3 and new projects should all be using Python 3. If you are using Python 2, definitely refactor as you develop to keep with Python 3 syntax, keeping in mind that Python 2 maintenance will cease in 2020.
+I have been using Python 2.7 at work; the latest Python standard is 3.6. There
+are considerable breaking changes between Python 2 and Python 3 and new projects
+should all be using Python 3. If you are using Python 2, definitely refactor as
+you develop to keep with Python 3 syntax, keeping in mind that Python 2
+maintenance will cease in 2020.
 
 **2. Follow the PE8 Style Guide**
 
-Definitely use PEP8 as a reference, but do not feel bound to strictly follow every single rule. Some rules, such as hard-wrapping 80 characters per line, may be outdated. Instead, use [`pylint`](https://www.pylint.org/) and a `.pylintrc` file in order to maintain code consistency.
+Definitely use PEP8 as a reference, but do not feel bound to strictly follow
+every single rule. Some rules, such as hard-wrapping 80 characters per line, may
+be outdated. Instead, use [`pylint`](https://www.pylint.org/) and a `.pylintrc`
+file in order to maintain code consistency.
 
 **3. Know the Differences between `bytes`, `str`, and `unicode`**
 
-One major reason Python 3 took such a long time to adopt was because it used `unicode` strings by default, while Python 2 used `ascii`. So if you used strings in your packages in Python 2, porting your packages to Python 3 took nonzero effort. Definitely keep this in mind if you are still on Python 2.
+One major reason Python 3 took such a long time to adopt was because it used
+`unicode` strings by default, while Python 2 used `ascii`. So if you used
+strings in your packages in Python 2, porting your packages to Python 3 took
+nonzero effort. Definitely keep this in mind if you are still on Python 2.
 
 **7. Use List Comprehensions Instead of `map` and `filter`**
 
-At the beginning of this year, I didn't know what list comprehensions are. Now that I've used them for a good amount of time, I wholeheartedly recommend them. It's clear, it's functional, it's _Pythonic_. Even nested list comprehensions can make sense, given the right circumstances. Definitely worth learning.
+At the beginning of this year, I didn't know what list comprehensions are. Now
+that I've used them for a good amount of time, I wholeheartedly recommend them.
+It's clear, it's functional, it's _Pythonic_. Even nested list comprehensions
+can make sense, given the right circumstances. Definitely worth learning.
 
 **10: Prefer `enumerate` over `range`**
 
-Why wouldn't you want access to the element and the index in the same loop? If you don't need something, just use `_` to zero it out.
+Why wouldn't you want access to the element and the index in the same loop? If
+you don't need something, just use `_` to zero it out.
 
 **14. Prefer Exceptions to Returning `None`**
 
-If something bad has happened, you want your code to break with an exception. That way, you have a full stack trace, args, everything you need in order to debug and fix the code. If you return `None`, you're just passing the error along until it breaks something somewhere along the critical path. Data issues are no excuse; data should be sanitized and validated before being run through business logic.
+If something bad has happened, you want your code to break with an exception.
+That way, you have a full stack trace, args, everything you need in order to
+debug and fix the code. If you return `None`, you're just passing the error
+along until it breaks something somewhere along the critical path. Data issues
+are no excuse; data should be sanitized and validated before being run through
+business logic.
 
 **18. Reduce Visual Noise with Variable Positional Arguments (`*args`)**
 
-In my experience, I'm not a big fan of using `*args` because I like my arguments strictly defined. If a method has too many arguments (more than 7), I would rather break up the method if possible. Under certain circumstances, say defining a public API that cannot change input parameters easily, I would be more willing to consider `*args`.
+In my experience, I'm not a big fan of using `*args` because I like my arguments
+strictly defined. If a method has too many arguments (more than 7), I would
+rather break up the method if possible. Under certain circumstances, say
+defining a public API that cannot change input parameters easily, I would be
+more willing to consider `*args`.
 
 **19. Provide Optional Behavior with Keyword Arguments**
 
-I really don't like `**kwargs`, and differing number of arguments within a given function. For me, function definitions change too much for business reasons in order to use keyword arguments effectively.
+I really don't like `**kwargs`, and differing number of arguments within a given
+function. For me, function definitions change too much for business reasons in
+order to use keyword arguments effectively.
 
 **20. Use `None` and Docstrings to Specify Dynamic Default Arguments**
 
-OMG YES. I didn't fully understand this until I was burned by it twice, but this is extremely important. NEVER put mutable objects as default params; always assign within a method. This is because a mutable object is instantiated when the function is defined, not when it is called. It is effectively a global variable. This is very bad. Define a default argument of None, and if the value is None within the method, instantiate the object. Document as needed.
+OMG YES. I didn't fully understand this until I was burned by it twice, but this
+is extremely important. NEVER put mutable objects as default params; always
+assign within a method. This is because a mutable object is instantiated when
+the function is defined, not when it is called. It is effectively a global
+variable. This is very bad. Define a default argument of None, and if the value
+is None within the method, instantiate the object. Document as needed.
 
 **22. Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples**
 
-Python is an object-oriented language; classes have much more power over more basic object types. However, when you should use classes over dicts and tuples is a discretionary matter that should be left to the developer / team to decide.
+Python is an object-oriented language; classes have much more power over more
+basic object types. However, when you should use classes over dicts and tuples
+is a discretionary matter that should be left to the developer / team to decide.
 
 **27. Prefer Public Attributes Over Private Ones**
 
-I was going to make a joke about how there is no privacy anymore, but in Python's case it isn't really a joke. If you want to mark something as _"you shouldn't access this"_, use protected field syntax, such as `_protected_field` vs `public_field`.
+I was going to make a joke about how there is no privacy anymore, but in
+Python's case it isn't really a joke. If you want to mark something as _"you
+shouldn't access this"_, use protected field syntax, such as `_protected_field`
+vs `public_field`.
 
 **29. Use Plain Attributes Instead of Get and Set Methods**
 
-I've seen getters and setters in Python code; it's like the Maginot Line (and about as effective too). Somebody will just go around it.
+I've seen getters and setters in Python code; it's like the Maginot Line (and
+about as effective too). Somebody will just go around it.
 
 **42. Define Function Decorators with `functools.wraps`**
 
-Very useful for adding in separate functionality. I've used it to protect functions at the API level (adding in token_required for authentication to business logic, for example); it's very good.
+Very useful for adding in separate functionality. I've used it to protect
+functions at the API level (adding in token_required for authentication to
+business logic, for example); it's very good.
 
 **44. Use `datetime` Instead of `time` for Local Clocks**
 
-Completely agree with the author in this case; there is no reason to use the `time` module. Use `datetime` and `pytz`. And for God's sakes, ensure that all timestamps have a timezone. I've seen timestamps in Eastern, UTC, and no timezone at all in the same code; it is very confusing to sort through those. I'm not the only one: https://xkcd.com/1883/
+Completely agree with the author in this case; there is no reason to use the
+`time` module. Use `datetime` and `pytz`. And for God's sakes, ensure that all
+timestamps have a timezone. I've seen timestamps in Eastern, UTC, and no
+timezone at all in the same code; it is very confusing to sort through those.
+I'm not the only one: https://xkcd.com/1883/
 
 **49. Write Docstrings for Every Function, Class, and Module**
 
-YES YES YES. I said earlier you don't need to follow every rule of PEP8; you really should follow this one. Without good documentation, your code is just yours and nobody else's, and that makes collaboration and cooperation very difficult.
+YES YES YES. I said earlier you don't need to follow every rule of PEP8; you
+really should follow this one. Without good documentation, your code is just
+yours and nobody else's, and that makes collaboration and cooperation very
+difficult.
 
 **50. Use Packages to Organize Modules and Provide Stable APIs**
 
-I really like Python's packages. All you need to do is stick an `__init__.py` within the directory you want to make a module, and Python will automatically index it for you. That being said, there are other ways in order to create stable APIs. I highly recommend [`conda`](https://conda.io/docs/) and `conda build`; you can add your own channels to deploy to a private server (unlike `pip`, which can only deploy to PyPi) and all dependencies are included and tests are run during build as specified in your `meta.yaml` file. Definitely consider if your module code gets out of hand.
+I really like Python's packages. All you need to do is stick an `__init__.py`
+within the directory you want to make a module, and Python will automatically
+index it for you. That being said, there are other ways in order to create
+stable APIs. I highly recommend [`conda`](https://conda.io/docs/) and `conda
+build`; you can add your own channels to deploy to a private server (unlike
+`pip`, which can only deploy to PyPi) and all dependencies are included and
+tests are run during build as specified in your `meta.yaml` file. Definitely
+consider if your module code gets out of hand.
 
 **53. Use Virtual Environments for Isolated and Reproducible Dependencies**
 
-I highly recommend this approach. I really wish `pip` or `conda` was more like `mix` for Elixir or `yarn` for JavaScript, where they have a lock file that updates whenever you install a package. This is important because you can `pip install` a package and your `requirements.txt` file will not be updated. Having a virtual environment means that's just moot. If you know you have the latest dependencies, you can just do `pip freeze > requirements.txt` and push up to remote for others to use. If you installed on system, well...
+I highly recommend this approach. I really wish `pip` or `conda` was more like
+`mix` for Elixir or `yarn` for JavaScript, where they have a lock file that
+updates whenever you install a package. This is important because you can `pip
+install` a package and your `requirements.txt` file will not be updated. Having
+a virtual environment means that's just moot. If you know you have the latest
+dependencies, you can just do `pip freeze > requirements.txt` and push up to
+remote for others to use. If you installed on system, well...
 
 **54. Consider Module-Scoped Code to Configure Deployment Environments**
 
-I do not recommend this approach; I'm much more a fan of using `.env` or similar environment variable configuration, and having Python read those into Python variables. This is because configuration info can be highly sensitive (keys and secrets for API services, for example) and you do not want to check those into version control, because you will never be able to get them back out (unless you did a `git reset`, which is painful).
+I do not recommend this approach; I'm much more a fan of using `.env` or similar
+environment variable configuration, and having Python read those into Python
+variables. This is because configuration info can be highly sensitive (keys and
+secrets for API services, for example) and you do not want to check those into
+version control, because you will never be able to get them back out (unless you
+did a `git reset`, which is painful).
 
 **56. Test Everything with `unittest`**
 
-I do not recommend this approach. [`pytest`](https://docs.pytest.org/en/latest/) offers so much more out of the box than `unittest` does. This might be different for Python 3. I do agree that tests should be inside modules (I don't think PyTest has that constraint).
+I do not recommend this approach. [`pytest`](https://docs.pytest.org/en/latest/)
+offers so much more out of the box than `unittest` does. This might be different
+for Python 3. I do agree that tests should be inside modules (I don't think
+PyTest has that constraint).
 
 **57. Consider Interactive Debugging with `pdb`**
 
-A preference choice, but check out [`ipdb`](https://github.com/gotcha/ipdb); it's a lot prettier in the terminal, and useful pretty too.
+A preference choice, but check out [`ipdb`](https://github.com/gotcha/ipdb);
+it's a lot prettier in the terminal, and useful pretty too.
 
 **58. Profile Before Optimizing**
 
-Definitely agree with the message. One thing to make sure is that you are calling the functions you think you are calling. Sometimes you may be calling a fast function multiple times. A call graph can be helpful here; use a tool like [`pyprof2calltree`](https://pypi.python.org/pypi/pyprof2calltree/) to generate call graphs from `.prof` files.
+Definitely agree with the message. One thing to make sure is that you are
+calling the functions you think you are calling. Sometimes you may be calling a
+fast function multiple times. A call graph can be helpful here; use a tool like
+[`pyprof2calltree`](https://pypi.python.org/pypi/pyprof2calltree/) to generate
+call graphs from `.prof` files.
 
 ---
 
-There's a lot of knowledge in this book, and a lot of stuff that I haven't used, understood, or encountered in my day-to-day work. Definitely worth a buy.
+There's a lot of knowledge in this book, and a lot of stuff that I haven't used,
+understood, or encountered in my day-to-day work. Definitely worth a buy.
