@@ -1,0 +1,26 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2018-12-02",
+  title: "A 150 day meditation streak",
+  description: "A 150 day meditation streak",
+  categories: ["Personal"],
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="solarized" {...props} />
+);
+
+![hooray](/img/posts/2018/12/02/150_day_streak_1.jpg)
+
+Really proud of myself for this and wanted to share. I also purchased a lifetime
+membership for Calm during their Black Friday sale for $149.99, only the second
+time I've purchased a lifetime membership for anything besides Plex (which I
+don't actually use all that much, honestly). If you haven't checked out Calm, it
+will not disappoint.
