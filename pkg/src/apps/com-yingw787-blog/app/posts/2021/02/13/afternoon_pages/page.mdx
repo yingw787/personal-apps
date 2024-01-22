@@ -28,14 +28,14 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 So the most interesting thing about this cat isn't actually the cat (IMHO) but
 that its name is Linux.
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/02/13/aww.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/02/13/aww.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 And the guy uses Debian!!
 
@@ -43,14 +43,14 @@ And the guy uses Debian!!
 
 Check out me singing into my fancy microphone setup for the first time!
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/02/13/me_singing.webm" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/02/13/me_singing.webm",
+      type: "video/webm",
+    },
+  ]}
+/>
 
 I was singing along to the song on YouTube (because the microphone allows
 playback through headphones in addition to streaming microphone input
@@ -76,11 +76,11 @@ ports are just USB-C.
 To highlight the differences between the two docks, here is the Anker docking
 station:
 
-[](/img/posts/2021/02/13/anker.jpg)
+[anker](/img/posts/2021/02/13/anker.jpg)
 
 And here is the Dell WD19TB:
 
-[](/img/posts/2021/02/13/dell.jpg)
+[dell](/img/posts/2021/02/13/dell.jpg)
 
 So the significance of this? I have one cable now connected to my laptop,
 driving two 27'', 1440p displays using 2 DisplayPort -> USB-C ports, laptop
@@ -90,7 +90,7 @@ cable!**
 
 Look at the girth of this cable! Or thickness rather!
 
-[](/img/posts/2021/02/13/thunderbolt.jpg)
+[thunderbolt](/img/posts/2021/02/13/thunderbolt.jpg)
 
 The benefit of this is not just that I can drive more peripherals that
 connecting directly to ports doesn't allow, but also that my work and personal
@@ -99,7 +99,7 @@ instead of four or five.
 
 Here's the full setup I have nowadays:
 
-[](/img/posts/2021/02/13/full_setup.jpg)
+[setup](/img/posts/2021/02/13/full_setup.jpg)
 
 I was thinking about getting two 43'' monitors and a larger Jarvis Fully desk,
 but I feel like that might be a bit excessive. This setup works for me right now

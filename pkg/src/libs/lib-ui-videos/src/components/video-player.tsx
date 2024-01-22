@@ -1,6 +1,6 @@
 type Source = {
   src: string;
-  type: "video/mp4";
+  type: "video/mp4" | "video/webm";
 };
 
 interface VideoPlayerProps {

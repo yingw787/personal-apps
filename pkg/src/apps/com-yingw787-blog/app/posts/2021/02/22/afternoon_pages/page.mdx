@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
 
 export const article = {
   author: "Ying Wang",
@@ -27,14 +28,14 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 
 Ahhhhh a puppy trying to bark but purring instead!!
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/02/22/afternoon_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/02/22/afternoon_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 This is probably the most adorable video I've seen in a while.
 
@@ -42,7 +43,7 @@ This is probably the most adorable video I've seen in a while.
 
 Ohh nooo `$ICLN` why have you forsaken me
 
-[](/img/posts/2021/02/22/afternoon_pages.png)
+[icln](/img/posts/2021/02/22/afternoon_pages.png)
 
 It's okay. I ain't no paper-handed bitch. All about those :gem: :open_hands:
 :gem: diamond hands babbbyyyy $ICLN to the moooooooon :rocket: :rocket: :rocket:

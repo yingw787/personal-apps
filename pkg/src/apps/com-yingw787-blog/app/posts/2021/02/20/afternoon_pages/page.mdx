@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@libs/blog/components/article-layout";
+import { VideoPlayer } from "@libs/videos/components/video-player";
 
 export const article = {
   author: "Ying Wang",
@@ -27,14 +28,14 @@ order to touch base before starting the day. Here's some of my brief thoughts.
 
 Hey look the roles are reversed!
 
-<!-- https://stackoverflow.com/a/26276254 -->
-
-<video style="width: 100%; width: -moz-available; width: -webkit-fill-available; width: fill-available; max-width: 100%;" controls>
-    <source src="/video/posts/2021/02/20/afternoon_pages.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-<br/>
-<br/>
+<VideoPlayer
+  sources={[
+    {
+      src: "/video/posts/2021/02/20/afternoon_pages.mp4",
+      type: "video/mp4",
+    },
+  ]}
+/>
 
 Also such a patient pupper.
 
@@ -45,7 +46,7 @@ senator from his party voted to convict him and his state party is not happy.
 This is a correction the New York Times had to make in [this
 article](https://www.nytimes.com/2021/02/17/opinion/trump-mconnell-republicans.html):
 
-[](/img/posts/2021/02/20/afternoon_pages.png)
+[nytimes](/img/posts/2021/02/20/afternoon_pages.png)
 
 Wanted to make sure that I for one think not convicting people who have commited
 crimes because they're popular is not a good idea. But we'll see in four years.
