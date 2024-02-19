@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  com-yingw787:
+    image: com-yingw787:latest
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    env_file:
+      - ./.env.local
+  com-yingw787-blog:
+    image: com-yingw787-blog:latest
+    expose:
+      - 3001
+    ports:
+      - 3001:3001
+    env_file:
+      - ./.env.local
+  com-yingw787-bytes:
+    image: com-yingw787-bytes:latest
+    expose:
+      - 3002
+    ports:
+      - 3002:3002
+    env_file:
+      - ./.env.local
