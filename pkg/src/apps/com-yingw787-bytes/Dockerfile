@@ -10,7 +10,7 @@ RUN npm install --omit=dev
 FROM docker.io/node:lts-alpine as runner
 RUN apk add --no-cache dumb-init
 ENV NODE_ENV production
-ENV PORT 3000
+ENV PORT 3002
 WORKDIR /usr/src/app
 COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY --from=deps /usr/src/app/package.json ./package.json
@@ -18,11 +18,11 @@ COPY dist/pkg/src/apps/com-yingw787-bytes/public ./public
 COPY dist/pkg/src/apps/com-yingw787-bytes/.next ./.next
 RUN chown -R node:node .
 USER node
-EXPOSE 3000
+EXPOSE 3002
 # COPY --chown=node:node ./tools/scripts/entrypoints/api.sh /usr/local/bin/docker-entrypoint.sh
 # ENTRYPOINT [ "docker-entrypoint.sh" ]
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry.
 ENV NEXT_TELEMETRY_DISABLED 1
-CMD ["dumb-init", "node_modules/.bin/next", "start"]
+CMD ["dumb-init", "node_modules/.bin/next", "start", "-p", "3002"]
