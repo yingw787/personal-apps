@@ -99,6 +99,7 @@
   },
   "devDependencies": {
     "@next/codemod": "^13.5.5",
+    "@nx-tools/container-metadata": "^5.2.0",
     "@nx-tools/nx-container": "^5.2.0",
     "@nx/devkit": "17.2.8",
     "@nx/eslint": "17.2.8",
