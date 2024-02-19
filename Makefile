@@ -20,12 +20,15 @@ check:
 	# law.
 	echo $$(make --version)
 	# git version 2.25.1
-	# hub version 2.7.0
 	echo $$(git --version)
 	# 8.19.4
 	echo $$(npx --version)
 	# 8.19.4
 	echo $$(npm --version)
+	# Docker version 25.0.3, build 4debf41
+	echo $$(docker --version)
+	# docker-compose version 1.29.2, build unknown
+	echo $$(docker-compose --version)
 
 # Instead of typecheck, use build instead, since it typechecks more reliably
 # than tsc. This is also necessary for deploying to Vercel.
@@ -35,3 +38,8 @@ build:
 # Autoformats code in repositories.
 autoformat:
 	npx nx run-many -t autoformat --parallel=12
+
+# Build production as containers, then serve locally.
+container:
+	npx nx run-many -t container --parallel=12
+	docker-compose up

@@ -63,6 +63,14 @@
         "parallel": true
       },
       "envFile": ".env.local"
+    },
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": ["build"],
+      "options": {
+        "engine": "docker",
+        "tags": ["com-yingw787:latest"]
+      }
     }
   },
   "tags": []
