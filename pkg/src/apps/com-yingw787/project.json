@@ -69,17 +69,7 @@
       "dependsOn": ["build"],
       "options": {
         "engine": "docker",
-        "metadata": {
-          "images": ["com-yingw787"],
-          "load": true,
-          "tags": [
-            "type=schedule",
-            "type=ref,event=branch",
-            "type=ref,event=tag",
-            "type=ref,event=pr",
-            "type=sha,prefix=sha-"
-          ]
-        }
+        "tags": ["com-yingw787:latest"]
       }
     }
   },
