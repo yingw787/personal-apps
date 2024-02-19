@@ -3278,17 +3278,17 @@
   resolved "https://registry.yarnpkg.com/@react-email/text/-/text-0.0.6.tgz#c28a2b70f3e17de8e93e3fbdf9a18afff3623a29"
   integrity sha512-PDUTAD1PjlzXFOIUrR1zuV2xxguL62yne5YLcn1k+u/dVUyzn6iU/5lFShxCfzuh3QDWCf4+JRNnXN9rmV6jzw==
 
-"@react-input/core@^1.0.5":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@react-input/core/-/core-1.0.6.tgz#0d9947e72b13a6ae23672d639ee755141248d6bd"
-  integrity sha512-iUIslCIwsMdoosPhaAU356YQFzCosR/wa4jZRcNB+VDhWmV7b6AvkBtoL1MRi/54S+DQmhNdp0ukT+Uw3Std5Q==
+"@react-input/core@^1.0.5", "@react-input/core@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@react-input/core/-/core-1.0.7.tgz#4a5fd7bf1701e1eb268a54776b0b85dfae807afd"
+  integrity sha512-3jYPSO0APYKCKTS2G+pWA0cEO0GOqffEKUXPxPuQtTDNtz88aPlnRxT3FSw6oFS5XOsbtA4ILlt5E2jqN/btGg==
 
-"@react-input/mask@^1.0.20":
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/@react-input/mask/-/mask-1.0.20.tgz#f37350fbcd4b4c1bd6643f7c12093b9aa08c577e"
-  integrity sha512-UTd1AhSpkzAdq8bb0/lTOlTxBdm1HWOC0bqgP1ICrXKkpathyQ2zBDY3elzEIkCrJ7RxiwdTVVBBrYXZOInZUA==
+"@react-input/mask@^1.0.21":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@react-input/mask/-/mask-1.0.21.tgz#caef024bfd3a728d44b9c6fe99a60c7676685bd8"
+  integrity sha512-+MYGjvAOzFwhMeubpbVKMVg2lFNgmm6PRnufE5ShKsFc8uYGfNOd2TFadZ/k95kvoqE2pyLQVaMCis0JkZyIPg==
   dependencies:
-    "@react-input/core" "^1.0.5"
+    "@react-input/core" "^1.0.7"
 
 "@react-input/number-format@^1.0.20":
   version "1.0.20"
