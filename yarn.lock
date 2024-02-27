@@ -12609,10 +12609,10 @@ strip-outer@^2.0.0:
   resolved "https://registry.yarnpkg.com/strip-outer/-/strip-outer-2.0.0.tgz#c45c724ed9b1ff6be5f660503791404f4714084b"
   integrity sha512-A21Xsm1XzUkK0qK1ZrytDUvqsQWict2Cykhvi0fBQntGG5JSprESasEyV1EZ/4CiR5WB5KjzLTrP/bO37B0wPg==
 
-stripe@^14.10.0:
-  version "14.12.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.12.0.tgz#1fcf1a124343f9b7f63597d5b3f122a8ece7cdd6"
-  integrity sha512-3lze4QdO8fM6nh1vaRsnFpaoA0WV7DerYtjEprOwcwyfdF5LdesfQNZiT22LO1dFiYobBifDzEn8V51MXHPrPQ==
+stripe@^14.18.0:
+  version "14.18.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.18.0.tgz#71f6d192c322418bd0962897006b0f47e232f94c"
+  integrity sha512-yLqKPqYgGJbMxrQiE4+i2i00ZVA2NRIZbZ1rejzj5XR3F3Uc+1iy9QE133knZudhVGMw367b8vTpB8D9pYMETw==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
