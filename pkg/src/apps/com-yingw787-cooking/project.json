@@ -1,5 +1,5 @@
 {
-  "name": "com-yingw87-cooking",
+  "name": "com-yingw787-cooking",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "pkg/src/apps/com-yingw787-cooking",
   "projectType": "application",
@@ -22,16 +22,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "com-yingw87-cooking:build",
+        "buildTarget": "com-yingw787-cooking:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "com-yingw87-cooking:build:development",
+          "buildTarget": "com-yingw787-cooking:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "com-yingw87-cooking:build:production",
+          "buildTarget": "com-yingw787-cooking:build:production",
           "dev": false
         }
       }
@@ -39,7 +39,7 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "com-yingw87-cooking:build:production"
+        "buildTarget": "com-yingw787-cooking:build:production"
       }
     },
     "test": {
@@ -52,6 +52,17 @@
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
+    },
+    "autoformat": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "pkg/src/apps/com-yingw787-cooking",
+        "commands": [
+          "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
+        ],
+        "parallel": true
+      },
+      "envFile": ".env.local"
     }
   },
   "tags": []
