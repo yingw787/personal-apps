@@ -107,7 +107,7 @@
     "@nx/jest": "17.2.8",
     "@nx/js": "17.2.8",
     "@nx/linter": "17.2.8",
-    "@nx/node": "^17.2.8",
+    "@nx/node": "^18.0.5",
     "@nx/playwright": "17.2.8",
     "@nx/react": "17.2.8",
     "@nx/workspace": "^17.2.8",
