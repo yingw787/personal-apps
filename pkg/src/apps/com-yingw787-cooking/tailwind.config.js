@@ -6,19 +6,19 @@ const { join } = require("path");
 const theme_colors = {
   // Color gradients generated from https://uicolors.app/create
 
-  // Primary color: Cerise Red
-  'brand-primary': '#e63f66',
-  'brand-primary-50': '#fef2f4',
-  'brand-primary-100': '#fde6e9',
-  'brand-primary-200': '#fbd0d9',
-  'brand-primary-300': '#f7aab9',
-  'brand-primary-400': '#f27a93',
-  'brand-primary-500': '#e63f66',
-  'brand-primary-600': '#d42a5b',
-  'brand-primary-700': '#b21e4b',
-  'brand-primary-800': '#951c45',
-  'brand-primary-900': '#801b40',
-  'brand-primary-950': '#470a1f',
+  // Primary color: Royal Blue
+  'brand-primary': '#3d5ce6',
+  'brand-primary-50': '#f0f3fe',
+  'brand-primary-100': '#dee4fb',
+  'brand-primary-200': '#c4d2f9',
+  'brand-primary-300': '#9bb3f5',
+  'brand-primary-400': '#6c8cee',
+  'brand-primary-500': '#3d5ce6',
+  'brand-primary-600': '#3448dc',
+  'brand-primary-700': '#2b36ca',
+  'brand-primary-800': '#292ea4',
+  'brand-primary-900': '#262c82',
+  'brand-primary-950': '#1c1e4f',
 };
 
 module.exports = {
