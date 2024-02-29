@@ -5,11 +5,12 @@ import { SimpleLayout } from "@libs/blog/components/simple-layout";
 
 import MikeEshelman from "@apps/com-yingw787/public/images/picture_mike_eshelman.jpeg";
 import AlanMcKellar from "@apps/com-yingw787/public/images/picture_alan_mckellar.png";
+import MikeSpainhower from "@apps/com-yingw787/public/images/picture_mike_spainhower.jpg";
 
 interface TestimonialSectionProps {
   quote: React.ReactNode;
   avatarImage: StaticImageData;
-  name: React.ReactNode;
+  name?: React.ReactNode;
   role: React.ReactNode;
 }
 
@@ -42,7 +43,7 @@ const TestimonialSection = ({
             priority
           />
           <div className="text-sm leading-6">
-            <div className="font-semibold text-gray-900">{name}</div>
+            {name && <div className="font-semibold text-gray-900">{name}</div>}
             <div className="mt-0.5 text-gray-600">{role}</div>
           </div>
         </figcaption>
@@ -59,7 +60,7 @@ export const metadata = {
 type TestimonialQuote = {
   quote: React.ReactNode;
   avatarImage: StaticImageData;
-  name: React.ReactNode;
+  name?: React.ReactNode;
   role: React.ReactNode;
 };
 
@@ -123,6 +124,35 @@ const Testimonials = () => {
         </>
       ),
       role: <>fmr. VP of Engineering at Janus Health</>,
+    },
+    {
+      quote: (
+        <>
+          Initially, I had concerns about our acquisition channel reporting
+          pipeline, which had been experiencing frequent downtime. This hindered
+          our ability to effectively measure, improve, and scale our acquisition
+          channels. However, Ying stepped in and implemented measures to
+          strengthen the pipelines, thereby ensuring that the business could
+          depend on accurate and timely acquisition channel data. I was
+          particularly impressed by the level of engagement that Ying brought to
+          the project, collaborating with stakeholders to ensure that their
+          needs were met. Ying's ability to work seamlessly across functions and
+          effectively apply technology to solve complex business issues is a
+          testament to his exceptional engineering skills.
+        </>
+      ),
+      avatarImage: MikeSpainhower,
+      name: (
+        <>
+          <a
+            href="https://www.linkedin.com/in/spainhower"
+            className="text-blue-600"
+          >
+            Mike Spainhower
+          </a>
+        </>
+      ),
+      role: <>fmr. CTO of Caribou</>,
     },
   ];
 
