@@ -30,16 +30,15 @@ const InspirationalQuote = () => {
 };
 
 async function RecentPosts() {
-  // const articles = (await getAllPosts()).slice(0, 4);
+  const articles = (await getAllPosts()).slice(0, 4);
   return (
-    <></>
-    // <div className="mx-6 my-12 max-w-2xl">
-    //   <div className="flex flex-col space-y-10">
-    //     {articles.map((article, index) => (
-    //       <RecentArticle key={index} article={article} />
-    //     ))}
-    //   </div>
-    // </div>
+    <div className="mx-6 my-12 max-w-2xl">
+      <div className="flex flex-col space-y-10">
+        {articles.map((article, index) => (
+          <RecentArticle key={index} article={article} />
+        ))}
+      </div>
+    </div>
   );
 }
 
