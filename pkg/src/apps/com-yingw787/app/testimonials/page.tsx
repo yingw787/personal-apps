@@ -103,7 +103,12 @@ const Testimonials = () => {
     {
       quote: (
         <>
-          You want the data engineering job done right? You want Ying. He is the consummate professional who seeks to understand his customer's needs and then implement innovative solutions. What I really enjoyed about working with Ying is that I knew I could provide some high-level requirements and step away to focus on other items. He always delivered for me and my teams.
+          You want the data engineering job done right? You want Ying. He is the
+          consummate professional who seeks to understand his customer's needs
+          and then implement innovative solutions. What I really enjoyed about
+          working with Ying is that I knew I could provide some high-level
+          requirements and step away to focus on other items. He always
+          delivered for me and my teams.
         </>
       ),
       avatarImage: AlanMcKellar,
@@ -117,11 +122,7 @@ const Testimonials = () => {
           </a>
         </>
       ),
-      role: (
-        <>
-          fmr. VP of Engineering at Janus Health
-        </>
-      ),
+      role: <>fmr. VP of Engineering at Janus Health</>,
     },
   ];
 
