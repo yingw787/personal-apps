@@ -3,6 +3,11 @@ export const ROUTE_TESTIMONIALS = "/testimonials";
 export const ROUTE_PROJECTS = "/projects";
 export const ROUTE_TOOLCHAIN = "/toolchain";
 
-export const ALL_ROUTES = [ROUTE_HOME, ROUTE_TESTIMONIALS, ROUTE_PROJECTS, ROUTE_TOOLCHAIN];
+export const ALL_ROUTES = [
+  ROUTE_HOME,
+  ROUTE_TESTIMONIALS,
+  ROUTE_PROJECTS,
+  ROUTE_TOOLCHAIN,
+];
 
 export const ROUTE_REDIRECT_TO = ROUTE_HOME;
