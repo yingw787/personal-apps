@@ -1,0 +1,58 @@
+{
+  "name": "com-yingw87-cooking",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkg/src/apps/com-yingw787-cooking",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/pkg/src/apps/com-yingw787-cooking"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "pkg/src/apps/com-yingw787-cooking"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "com-yingw87-cooking:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "com-yingw87-cooking:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "com-yingw87-cooking:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "com-yingw87-cooking:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "pkg/src/apps/com-yingw787-cooking/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
