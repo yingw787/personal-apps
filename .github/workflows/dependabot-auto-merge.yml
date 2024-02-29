@@ -1,0 +1,9 @@
+name: Dependabot Auto Merge
+run-name: ${{ github.actor }} is auto-merging Dependabot pull request 🚀
+on: [create]
+jobs:
+  dependabot-auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dependabot Auto Merge
+      uses: ahmadnassri/action-dependabot-auto-merge@v2.6.6
