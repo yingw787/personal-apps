@@ -2,6 +2,7 @@ import {
   ROUTE_HOME,
   ROUTE_PROJECTS,
   ROUTE_TOOLCHAIN,
+  ROUTE_TESTIMONIALS,
 } from "@apps/com-yingw787/lib/routes";
 import { Navigation } from "@libs/blog/types/navigation";
 
@@ -10,6 +11,10 @@ export const createNavigation = (): Navigation[] => {
     {
       href: ROUTE_HOME,
       title: "Home",
+    },
+    {
+      href: ROUTE_TESTIMONIALS,
+      title: "Testimonials",
     },
     {
       href: ROUTE_PROJECTS,
