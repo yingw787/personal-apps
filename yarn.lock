@@ -5272,7 +5272,7 @@ axios@1.1.3:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
-axios@^1.5.0, axios@^1.5.1, axios@^1.6.0:
+axios@^1.5.1, axios@^1.6.0, axios@^1.6.2:
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.7.tgz#7b48c2e27c96f9c68a2f8f31e2ab19f59b06b0a7"
   integrity sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==
@@ -11589,12 +11589,12 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-plaid@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/plaid/-/plaid-16.0.0.tgz#cfb8f63fb9441ddee3e5bd0cd95e8d80d67096ec"
-  integrity sha512-WtVquGIF1AlAImYEaoIB/axkbk+yD+4i/FnYkEudZgTUjEYyaZKqPAenFmMYeP+/yha+YjsX1YyR8E6754iPag==
+plaid@^21.0.0:
+  version "21.0.0"
+  resolved "https://registry.yarnpkg.com/plaid/-/plaid-21.0.0.tgz#77e304ef8c7e1eb28ea011b2a882b29359b22e7c"
+  integrity sha512-y5cjUxbFyW7whk8qG5aeI7+5bi0nAQ1bt06MCw/lDP98uJMYLy+1L29+JBeD9O82EiReVX+XVDwS/6Thnjez0g==
   dependencies:
-    axios "^1.5.0"
+    axios "^1.6.2"
 
 playwright-core@1.41.0:
   version "1.41.0"
