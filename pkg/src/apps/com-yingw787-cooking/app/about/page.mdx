@@ -1,0 +1,24 @@
+import { ArticleLayout } from "@libs/blog/components/article-layout";
+
+export const article = {
+  author: "Ying Wang",
+  date: "2020-03-22",
+  title: "About",
+  description: "About",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => (
+  <ArticleLayout article={article} theme="default" {...props} />
+);
+
+This site records my empirically tested recipes for my own uses. Nothing more.
+
+If you're faithfully following a recipe posted here and have trouble, it's on
+me, not you. Please [email me](mailto:me@yingw787.com) with a description of
+your trouble so that I can add additional notes where needed. I'll probably need
+them too.

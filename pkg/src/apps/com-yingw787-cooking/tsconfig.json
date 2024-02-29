@@ -26,6 +26,7 @@
     "../../../../pkg/src/apps/com-yingw787-cooking/.next/types/**/*.ts",
     "../../../../dist/pkg/src/apps/com-yingw787-cooking/.next/types/**/*.ts",
     "next-env.d.ts",
+    ".next/types/**/*.ts",
   ],
   "exclude": [
     "node_modules",

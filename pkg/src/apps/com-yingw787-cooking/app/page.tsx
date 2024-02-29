@@ -11,8 +11,8 @@ import { Container } from "@libs/blog/components/container";
 import { SocialLinksSection } from "@libs/blog/components/social-links";
 import { SocialLinkNavigation } from "@libs/blog/types/navigation";
 import { RecentArticle } from "@libs/blog/components/article";
-import portraitImage from "@apps/com-yingw787-cooking/public/images/picture_kate_sleeping.jpg";
-import { getAllRecipes } from "@apps/com-yingw787-cooking/lib/recipes";
+import portraitImage from "@apps/com-yingw787-blog/public/images/picture_kate_sleeping.jpg";
+import { getAllPosts } from "@apps/com-yingw787-cooking/lib/posts";
 
 const InspirationalQuote = () => {
   return (
@@ -30,15 +30,16 @@ const InspirationalQuote = () => {
 };
 
 async function RecentPosts() {
-  const articles = (await getAllRecipes()).slice(0, 4);
+  // const articles = (await getAllPosts()).slice(0, 4);
   return (
-    <div className="mx-6 my-12 max-w-2xl">
-      <div className="flex flex-col space-y-10">
-        {articles.map((article, index) => (
-          <RecentArticle key={index} article={article} />
-        ))}
-      </div>
-    </div>
+    <></>
+    // <div className="mx-6 my-12 max-w-2xl">
+    //   <div className="flex flex-col space-y-10">
+    //     {articles.map((article, index) => (
+    //       <RecentArticle key={index} article={article} />
+    //     ))}
+    //   </div>
+    // </div>
   );
 }
 
@@ -92,7 +93,7 @@ const Home = () => {
           <SocialLinksSection
             socialLinks={socialLinks}
             emailLink={emailLink}
-            theme="solarized"
+            theme="default"
           />
         </div>
       </div>

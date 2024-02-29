@@ -7,18 +7,18 @@ const theme_colors = {
   // Color gradients generated from https://uicolors.app/create
 
   // Primary color: Royal Blue
-  'brand-primary': '#3d5ce6',
-  'brand-primary-50': '#f0f3fe',
-  'brand-primary-100': '#dee4fb',
-  'brand-primary-200': '#c4d2f9',
-  'brand-primary-300': '#9bb3f5',
-  'brand-primary-400': '#6c8cee',
-  'brand-primary-500': '#3d5ce6',
-  'brand-primary-600': '#3448dc',
-  'brand-primary-700': '#2b36ca',
-  'brand-primary-800': '#292ea4',
-  'brand-primary-900': '#262c82',
-  'brand-primary-950': '#1c1e4f',
+  "brand-primary": "#3d5ce6",
+  "brand-primary-50": "#f0f3fe",
+  "brand-primary-100": "#dee4fb",
+  "brand-primary-200": "#c4d2f9",
+  "brand-primary-300": "#9bb3f5",
+  "brand-primary-400": "#6c8cee",
+  "brand-primary-500": "#3d5ce6",
+  "brand-primary-600": "#3448dc",
+  "brand-primary-700": "#2b36ca",
+  "brand-primary-800": "#292ea4",
+  "brand-primary-900": "#262c82",
+  "brand-primary-950": "#1c1e4f",
 };
 
 module.exports = {

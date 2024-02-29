@@ -1,7 +1,7 @@
 import {
   ROUTE_ABOUT,
   ROUTE_HOME,
-  ROUTE_RECIPES,
+  ROUTE_POSTS,
 } from "@apps/com-yingw787-cooking/lib/routes";
 import { Navigation } from "@libs/blog/types/navigation";
 
@@ -16,8 +16,8 @@ export const createNavigation = (): Navigation[] => {
       title: "About",
     },
     {
-      href: ROUTE_RECIPES,
-      title: "Recipes",
+      href: ROUTE_POSTS,
+      title: "Posts",
     },
   ];
   return links;
