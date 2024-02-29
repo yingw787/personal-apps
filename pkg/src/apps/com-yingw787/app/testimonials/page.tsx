@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { SimpleLayout } from "@libs/blog/components/simple-layout";
 
 import MikeEshelman from "@apps/com-yingw787/public/images/picture_mike_eshelman.jpeg";
+import AlanMcKellar from "@apps/com-yingw787/public/images/picture_alan_mckellar.png";
 
 interface TestimonialSectionProps {
   quote: React.ReactNode;
@@ -19,10 +20,10 @@ const TestimonialSection = ({
   role,
 }: TestimonialSectionProps) => {
   return (
-    <section className="bg-white px-6 py-6 sm:py-8 lg:px-4">
+    <section className="bg-white dark: px-6 py-6 sm:py-8 lg:px-4">
       <figure className="mx-auto max-w-2xl">
         <p className="sr-only">5 out of 5 stars</p>
-        <div className="flex gap-x-1 text-green-500">
+        <div className="flex gap-x-1 text-yellow-500">
           <StarIcon className="h-5 w-5 flex-none" aria-hidden="true" />
           <StarIcon className="h-5 w-5 flex-none" aria-hidden="true" />
           <StarIcon className="h-5 w-5 flex-none" aria-hidden="true" />
@@ -96,6 +97,29 @@ const Testimonials = () => {
           >
             (NASDAQ: $COOP)
           </a>
+        </>
+      ),
+    },
+    {
+      quote: (
+        <>
+          You want the data engineering job done right? You want Ying. He is the consummate professional who seeks to understand his customer's needs and then implement innovative solutions. What I really enjoyed about working with Ying is that I knew I could provide some high-level requirements and step away to focus on other items. He always delivered for me and my teams.
+        </>
+      ),
+      avatarImage: AlanMcKellar,
+      name: (
+        <>
+          <a
+            href="https://www.linkedin.com/in/alanmckellar"
+            className="text-blue-600"
+          >
+            Alan McKellar
+          </a>
+        </>
+      ),
+      role: (
+        <>
+          fmr. VP of Engineering at Janus Health
         </>
       ),
     },
