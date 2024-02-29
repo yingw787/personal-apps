@@ -54,6 +54,24 @@
       "envFile": "${workspaceFolder}/.env.local",
       "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "com-yingw787-cooking",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "nx",
+        "serve",
+        "com-yingw787-cooking",
+        "--port",
+        "5003",
+        "--inspect"
+      ],
+      "envFile": "${workspaceFolder}/.env.local",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
     // repeat for each debuggable app
   ]
