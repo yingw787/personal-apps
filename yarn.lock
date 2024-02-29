@@ -3644,10 +3644,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@swc/helpers@~0.5.2":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.3.tgz#98c6da1e196f5f08f977658b80d6bd941b5f294f"
-  integrity sha512-FaruWX6KdudYloq1AHD/4nU+UsMTdNE8CKyrseXWEcgjDAbvkwJg2QGPAnfIJLIWsjZOSPLOAykK6fuYp4vp4A==
+"@swc/helpers@~0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.6.tgz#d16d8566b7aea2bef90d059757e2d77f48224160"
+  integrity sha512-aYX01Ke9hunpoCexYAgQucEpARGQ5w/cqHFrIR+e9gdKb1QWTsVJuTJ2ozQzIAxLyRQe/m+2RqzkyOOGiMKRQA==
   dependencies:
     tslib "^2.4.0"
 
@@ -3945,10 +3945,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^29.4.0":
-  version "29.5.11"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.11.tgz#0c13aa0da7d0929f078ab080ae5d4ced80fa2f2c"
-  integrity sha512-S2mHmYIVe13vrm6q4kN6fLYYAka15ALQki/vgDC3mIukEOx8WJlv0kQPM+d4w8Gp6u0uSdKND04IlTXBv0rwnQ==
+"@types/jest@^29.5.12":
+  version "29.5.12"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.12.tgz#7f7dc6eb4cf246d2474ed78744b05d06ce025544"
+  integrity sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -6828,10 +6828,12 @@ eslint-plugin-jsx-a11y@^6.5.1:
     object.entries "^1.1.7"
     object.fromentries "^2.0.7"
 
-eslint-plugin-playwright@^0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-playwright/-/eslint-plugin-playwright-0.15.3.tgz#9fd8753688351bcaf41797eb6a7df8807fd5eb1b"
-  integrity sha512-LQMW5y0DLK5Fnpya7JR1oAYL2/7Y9wDiYw6VZqlKqcRGSgjbVKNqxraphk7ra1U3Bb5EK444xMgUlQPbMg2M1g==
+eslint-plugin-playwright@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-playwright/-/eslint-plugin-playwright-1.5.0.tgz#210df1bcdda86a0b8e06ebd0a407635596e2d91e"
+  integrity sha512-IavBCP8zVx26yPkcF0fToq00dSq4q6h95DbgnhtQj6gOSVJqgy826heq0h/L0JjGLllF5kLnYlVj5oBd8nLkyA==
+  dependencies:
+    globals "^13.23.0"
 
 eslint-plugin-react-hooks@4.6.0, eslint-plugin-react-hooks@^4.5.0:
   version "4.6.0"
@@ -7713,7 +7715,7 @@ globals@^11.1.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-globals@^13.19.0:
+globals@^13.19.0, globals@^13.23.0:
   version "13.24.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-13.24.0.tgz#8432a19d78ce0c1e833949c36adb345400bb1171"
   integrity sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==
@@ -12609,10 +12611,10 @@ strip-outer@^2.0.0:
   resolved "https://registry.yarnpkg.com/strip-outer/-/strip-outer-2.0.0.tgz#c45c724ed9b1ff6be5f660503791404f4714084b"
   integrity sha512-A21Xsm1XzUkK0qK1ZrytDUvqsQWict2Cykhvi0fBQntGG5JSprESasEyV1EZ/4CiR5WB5KjzLTrP/bO37B0wPg==
 
-stripe@^14.10.0:
-  version "14.12.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.12.0.tgz#1fcf1a124343f9b7f63597d5b3f122a8ece7cdd6"
-  integrity sha512-3lze4QdO8fM6nh1vaRsnFpaoA0WV7DerYtjEprOwcwyfdF5LdesfQNZiT22LO1dFiYobBifDzEn8V51MXHPrPQ==
+stripe@^14.18.0:
+  version "14.18.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-14.18.0.tgz#71f6d192c322418bd0962897006b0f47e232f94c"
+  integrity sha512-yLqKPqYgGJbMxrQiE4+i2i00ZVA2NRIZbZ1rejzj5XR3F3Uc+1iy9QE133knZudhVGMw367b8vTpB8D9pYMETw==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
