@@ -1,7 +1,7 @@
 import "$/global.css";
 
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
 import { ApplicationProvider } from "@libs/blog/contexts/application-context";
@@ -11,11 +11,11 @@ import { createNavigation } from "@apps/com-yingw787-bytes/lib/navigation";
 import avatarImage from "@apps/com-yingw787-bytes/public/images/picture_guido_cropped.jpg";
 import { ROUTE_HOME } from "@apps/com-yingw787-bytes/lib/routes";
 
-const ibmPlexMono = IBM_Plex_Mono({ weight: "400", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ying's Cooking Notes",
-  description: "Cooking notes. No bullshit.",
+  description: "Ying's Cooking Notes",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={twMerge(
           "flex h-full bg-zinc-50 dark:bg-black",
-          ibmPlexMono.className,
+          inter.className,
         )}
       >
         <ApplicationProvider>
