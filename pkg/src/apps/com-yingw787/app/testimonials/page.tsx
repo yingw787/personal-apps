@@ -6,6 +6,7 @@ import { SimpleLayout } from "@libs/blog/components/simple-layout";
 import MikeEshelman from "@apps/com-yingw787/public/images/picture_mike_eshelman.jpeg";
 import AlanMcKellar from "@apps/com-yingw787/public/images/picture_alan_mckellar.png";
 import MikeSpainhower from "@apps/com-yingw787/public/images/picture_mike_spainhower.jpg";
+import DefaultAvatar from "@apps/com-yingw787/public/images/picture_default_avatar.jpg";
 
 interface TestimonialSectionProps {
   quote: React.ReactNode;
@@ -153,6 +154,19 @@ const Testimonials = () => {
         </>
       ),
       role: <>fmr. CTO of Caribou</>,
+    },
+    {
+      quote: (
+        <>
+          The reason this [project] was one of the more seamless integrations
+          I’ve worked on is because of good attitudes from you and others and
+          the willingness to come back to the table over and over again and
+          clarify things through dialogue. A lot of companies never make it this
+          far, they're stuck with [legacy solutions].
+        </>
+      ),
+      avatarImage: DefaultAvatar,
+      role: <>VP of Acquisition Marketing, Series F security startup</>,
     },
   ];
 
