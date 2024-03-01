@@ -1,4 +1,4 @@
-# `personal-apps`: Monorepo for all personal applications
+# `personal-apps`: Monorepo for all my personal applications
 
 ## Getting Started
 
