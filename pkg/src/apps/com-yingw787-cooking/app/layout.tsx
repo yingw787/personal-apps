@@ -8,7 +8,7 @@ import { ApplicationProvider } from "@libs/blog/contexts/application-context";
 import { ApplicationLayout } from "@libs/blog/components/application-layout";
 
 import { createNavigation } from "@apps/com-yingw787-bytes/lib/navigation";
-import avatarImage from "@apps/com-yingw787-cooking/public/img/recipes/poached_eggs.01062021.6.jpg"
+import avatarImage from "@apps/com-yingw787-cooking/public/img/recipes/poached_eggs.01062021.6.jpg";
 import { ROUTE_HOME } from "@apps/com-yingw787-bytes/lib/routes";
 
 const inter = Inter({ subsets: ["latin"] });

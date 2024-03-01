@@ -11,7 +11,7 @@ import { Container } from "@libs/blog/components/container";
 import { SocialLinksSection } from "@libs/blog/components/social-links";
 import { SocialLinkNavigation } from "@libs/blog/types/navigation";
 import { RecentArticle } from "@libs/blog/components/article";
-import poachedEggsImage from "@apps/com-yingw787-cooking/public/img/recipes/poached_eggs.01062021.6.jpg"
+import poachedEggsImage from "@apps/com-yingw787-cooking/public/img/recipes/poached_eggs.01062021.6.jpg";
 
 import { getAllPosts } from "@apps/com-yingw787-cooking/lib/posts";
 
