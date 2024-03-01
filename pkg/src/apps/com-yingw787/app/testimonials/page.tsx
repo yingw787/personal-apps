@@ -22,7 +22,7 @@ const TestimonialSection = ({
   role,
 }: TestimonialSectionProps) => {
   return (
-    <section className="bg-white dark: px-6 py-6 sm:py-8 lg:px-4">
+    <section className="bg-white dark:bg-zinc-900 px-6 py-6 sm:py-8 lg:px-4">
       <figure className="mx-auto max-w-2xl">
         <p className="sr-only">5 out of 5 stars</p>
         <div className="flex gap-x-1 text-yellow-500">
@@ -33,7 +33,7 @@ const TestimonialSection = ({
           <StarIcon className="h-5 w-5 flex-none" aria-hidden="true" />
         </div>
         <blockquote className="mt-5 text-xl font-semibold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
-          <p>{quote}</p>
+          <p className="text-zinc-800 dark:text-zinc-100">{quote}</p>
         </blockquote>
         <figcaption className="mt-5 flex items-center gap-x-6">
           <Image
@@ -44,8 +44,14 @@ const TestimonialSection = ({
             priority
           />
           <div className="text-sm leading-6">
-            {name && <div className="font-semibold text-gray-900">{name}</div>}
-            <div className="mt-0.5 text-gray-600">{role}</div>
+            {name && (
+              <div className="font-semibold text-zinc-800 dark:text-zinc-100">
+                {name}
+              </div>
+            )}
+            <div className="mt-0.5 text-zinc-800 dark:text-zinc-100">
+              {role}
+            </div>
           </div>
         </figcaption>
       </figure>
