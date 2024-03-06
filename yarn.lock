@@ -3645,7 +3645,7 @@ __metadata:
     openai: "npm:^4.16.1"
     plaid: "npm:^21.0.0"
     postcss: "npm:^8.4.31"
-    posthog-js: "npm:^1.83.0"
+    posthog-js: "npm:^1.111.0"
     prettier: "npm:^3.0.0"
     prettier-plugin-sql: "npm:^0.15.1"
     qrcode: "npm:^1.5.3"
@@ -18177,13 +18177,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.83.0":
-  version: 1.110.0
-  resolution: "posthog-js@npm:1.110.0"
+"posthog-js@npm:^1.111.0":
+  version: 1.111.0
+  resolution: "posthog-js@npm:1.111.0"
   dependencies:
     fflate: "npm:^0.4.8"
     preact: "npm:^10.19.3"
-  checksum: 10c0/c7701f7a7a797e95dd99f5163317d24937469bb2655d9d19410f588624876323e7b1106b40fdfede290d691cfc824336c5c67a1e8c2c669a22c95eb70ae9a066
+  checksum: 10c0/e9d3842521bd50304835122d3bc276fe8b4a40485ddc765273048842e9675a7d3bec5a3fc1a91c7d2e8de04301a916bab3745780724d3414ffde5ebe564d0160
   languageName: node
   linkType: hard
 
