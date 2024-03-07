@@ -3778,7 +3778,7 @@ __metadata:
     openai: "npm:^4.16.1"
     plaid: "npm:^21.0.0"
     postcss: "npm:^8.4.31"
-    posthog-js: "npm:^1.83.0"
+    posthog-js: "npm:^1.111.3"
     prettier: "npm:^3.0.0"
     prettier-plugin-sql: "npm:^0.15.1"
     qrcode: "npm:^1.5.3"
@@ -3799,7 +3799,7 @@ __metadata:
     resend: "npm:^2.0.0"
     sharp: "npm:^0.32.6"
     shelljs: "npm:^0.8.5"
-    sonner: "npm:^1.4.0"
+    sonner: "npm:^1.4.3"
     string-width: "npm:^7.1.0"
     stripe: "npm:^14.18.0"
     supabase: "npm:1.115.5"
@@ -18396,13 +18396,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.83.0":
-  version: 1.110.0
-  resolution: "posthog-js@npm:1.110.0"
+"posthog-js@npm:^1.111.3":
+  version: 1.111.3
+  resolution: "posthog-js@npm:1.111.3"
   dependencies:
     fflate: "npm:^0.4.8"
     preact: "npm:^10.19.3"
-  checksum: 10c0/c7701f7a7a797e95dd99f5163317d24937469bb2655d9d19410f588624876323e7b1106b40fdfede290d691cfc824336c5c67a1e8c2c669a22c95eb70ae9a066
+  checksum: 10c0/3afe45217478cd085590af7dfe2c487050a40bb44be2c6e63852531f4a10b0e32ddf570109bff589a2f660764d9fdf9c196ac4c3a82c28d0a165c4ca52433f1e
   languageName: node
   linkType: hard
 
@@ -20243,13 +20243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sonner@npm:^1.4.0":
-  version: 1.4.2
-  resolution: "sonner@npm:1.4.2"
+"sonner@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "sonner@npm:1.4.3"
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 10c0/9542f1c92f857849aa84e14a08b4ac43014f0033dc3316a906f241cdad767c5b2d1df3b92e6a447c2f886bda59cc6665e30aeff30d0c9f1e1ead569bf35357cf
+  checksum: 10c0/d105a3195a5e72b85a13abc460da2cbb8a05133da57fd2f1084593edca5b6a839a7263a4e872952d9e550a19f2262fbc22113be30a4c9b3dee9e6d359a0cef34
   languageName: node
   linkType: hard
 
