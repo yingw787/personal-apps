@@ -3799,7 +3799,7 @@ __metadata:
     resend: "npm:^2.0.0"
     sharp: "npm:^0.32.6"
     shelljs: "npm:^0.8.5"
-    sonner: "npm:^1.4.0"
+    sonner: "npm:^1.4.3"
     string-width: "npm:^7.1.0"
     stripe: "npm:^14.18.0"
     supabase: "npm:1.115.5"
@@ -20243,13 +20243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sonner@npm:^1.4.0":
-  version: 1.4.2
-  resolution: "sonner@npm:1.4.2"
+"sonner@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "sonner@npm:1.4.3"
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 10c0/9542f1c92f857849aa84e14a08b4ac43014f0033dc3316a906f241cdad767c5b2d1df3b92e6a447c2f886bda59cc6665e30aeff30d0c9f1e1ead569bf35357cf
+  checksum: 10c0/d105a3195a5e72b85a13abc460da2cbb8a05133da57fd2f1084593edca5b6a839a7263a4e872952d9e550a19f2262fbc22113be30a4c9b3dee9e6d359a0cef34
   languageName: node
   linkType: hard
 
