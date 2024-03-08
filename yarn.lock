@@ -2749,7 +2749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:18.0.5, @nx/devkit@npm:^18.0.5":
+"@nx/devkit@npm:18.0.5":
   version: 18.0.5
   resolution: "@nx/devkit@npm:18.0.5"
   dependencies:
@@ -2767,7 +2767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:18.0.7":
+"@nx/devkit@npm:18.0.7, @nx/devkit@npm:^18.0.7":
   version: 18.0.7
   resolution: "@nx/devkit@npm:18.0.7"
   dependencies:
@@ -3673,7 +3673,7 @@ __metadata:
     "@nx-extend/terraform": "npm:^5.0.0"
     "@nx-tools/container-metadata": "npm:^5.2.0"
     "@nx-tools/nx-container": "npm:^5.2.0"
-    "@nx/devkit": "npm:^18.0.5"
+    "@nx/devkit": "npm:^18.0.7"
     "@nx/eslint": "npm:17.2.8"
     "@nx/eslint-plugin": "npm:17.2.8"
     "@nx/jest": "npm:17.2.8"

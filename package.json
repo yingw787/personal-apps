@@ -102,7 +102,7 @@
     "@nx-extend/terraform": "^5.0.0",
     "@nx-tools/container-metadata": "^5.2.0",
     "@nx-tools/nx-container": "^5.2.0",
-    "@nx/devkit": "^18.0.5",
+    "@nx/devkit": "^18.0.7",
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
     "@nx/jest": "17.2.8",
