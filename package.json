@@ -110,7 +110,7 @@
     "@nx/linter": "17.2.8",
     "@nx/node": "^18.0.5",
     "@nx/playwright": "17.2.8",
-    "@nx/react": "17.2.8",
+    "@nx/react": "18.0.8",
     "@nx/workspace": "^18.0.7",
     "@playwright/test": "^1.36.0",
     "@swc-node/register": "~1.8.0",
