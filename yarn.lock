@@ -3769,7 +3769,7 @@ __metadata:
     jest-environment-node: "npm:^29.4.1"
     libphonenumber-js: "npm:^1.10.47"
     lodash: "npm:^4.17.21"
-    lucide-react: "npm:^0.309.0"
+    lucide-react: "npm:^0.354.0"
     moment: "npm:^2.29.4"
     next: "npm:^14.0.3"
     next-themes: "npm:^0.2.1"
@@ -15337,12 +15337,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.309.0":
-  version: 0.309.0
-  resolution: "lucide-react@npm:0.309.0"
+"lucide-react@npm:^0.354.0":
+  version: 0.354.0
+  resolution: "lucide-react@npm:0.354.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/3253675fa2225f742c3f66423445551fa4b973108951fd161d41c494ff60d388cc2d36ed3f76c4677a988bf9f1e127ce40d4a957f38bf355300906f29e67523b
+  checksum: 10c0/743fd42855df964aa1afc4b2db294754777802bde818ec0cf1f67db2790be22e53dfd431051ffeb6e875209ca4d0652c93f5e61f9682032a030cf183aba468e0
   languageName: node
   linkType: hard
 
