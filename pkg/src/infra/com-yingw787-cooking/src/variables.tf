@@ -5,3 +5,8 @@ variable "aws_region" {
   description = "The AWS region to put the bucket into"
   default     = "us-east-1"
 }
+
+variable "domain_name" {
+  type        = string
+  description = "The domain name for this website."
+}
