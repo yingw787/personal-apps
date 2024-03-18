@@ -39,6 +39,9 @@ build:
 autoformat:
 	npx nx run-many -t autoformat --parallel=12
 
+fmt:
+	npx nx run-many -t fmt --parallel=12
+
 # Build production as containers, then serve locally.
 container:
 	npx nx run-many -t container --parallel=12

@@ -57,3 +57,10 @@ Thumbs.db
 
 # Nx
 .nx/
+
+# Terraform
+**/.terraform/
+**/defaultplan
+**/*.tfvars
+**/*.tfstate
+**/*.tfstate.backup
