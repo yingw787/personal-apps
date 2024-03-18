@@ -147,7 +147,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
     "nx": "^18.0.4",
-    "nx-cloud": "^16.5.2",
+    "nx-cloud": "^18.0.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.0",
     "prettier-plugin-sql": "^0.15.1",
