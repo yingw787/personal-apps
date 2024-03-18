@@ -5,3 +5,4 @@
 # variables should not be checked into version control.
 domain_name = "cooking.yingw787.com"
 custom_acm_certificate_arn = ""
+hosted_zone_id = ""
