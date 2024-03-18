@@ -63,3 +63,4 @@ Thumbs.db
 **/defaultplan
 **/*.tfvars
 **/*.tfstate
+**/*.tfstate.backup
