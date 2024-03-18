@@ -114,7 +114,7 @@
     "@nx/workspace": "^18.0.7",
     "@playwright/test": "^1.36.0",
     "@swc-node/register": "~1.8.0",
-    "@swc/cli": "~0.1.62",
+    "@swc/cli": "~0.3.10",
     "@swc/core": "~1.4.6",
     "@testing-library/react": "14.0.0",
     "@types/common-tags": "^1.8.3",
