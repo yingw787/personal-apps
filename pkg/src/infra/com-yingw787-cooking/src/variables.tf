@@ -10,3 +10,8 @@ variable "domain_name" {
   type        = string
   description = "The domain name for this website."
 }
+
+variable "custom_acm_certificate_arn" {
+  type        = string
+  description = "The Amazon Resource Number (ARN) for the wildcard SSL certificate *yingw787.com already provisioned via AWS Certificate Manager (ACM). No default as this should be set via .tfvars only!"
+}
