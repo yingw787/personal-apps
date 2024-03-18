@@ -2688,12 +2688,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/nx-cloud@npm:16.5.2":
-  version: 16.5.2
-  resolution: "@nrwl/nx-cloud@npm:16.5.2"
+"@nrwl/nx-cloud@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@nrwl/nx-cloud@npm:18.0.0"
   dependencies:
-    nx-cloud: "npm:16.5.2"
-  checksum: 10c0/2e33e731968245938d489480fd65e47d9fcf60b69b62a3aea3ff8eb777a87e650557ea7923d26381f26b72ce97c35de312183e858bd8e2549cc6690b1fe7106a
+    nx-cloud: "npm:18.0.0"
+  checksum: 10c0/4041181f9d9b5ac3786ac1e371e189cfd1bddf90ffa4ba308ed7eaeab4b42fd66300837dbb2369871cf6a68a8852841d65f55163ee5b16203685dc559ac4982d
   languageName: node
   linkType: hard
 
@@ -4170,7 +4170,7 @@ __metadata:
     next: "npm:^14.0.3"
     next-themes: "npm:^0.2.1"
     nx: "npm:^18.0.4"
-    nx-cloud: "npm:^16.5.2"
+    nx-cloud: "npm:^18.0.0"
     openai: "npm:^4.16.1"
     plaid: "npm:^21.0.0"
     postcss: "npm:^8.4.31"
@@ -17221,11 +17221,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx-cloud@npm:16.5.2, nx-cloud@npm:^16.5.2":
-  version: 16.5.2
-  resolution: "nx-cloud@npm:16.5.2"
+"nx-cloud@npm:18.0.0, nx-cloud@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "nx-cloud@npm:18.0.0"
   dependencies:
-    "@nrwl/nx-cloud": "npm:16.5.2"
+    "@nrwl/nx-cloud": "npm:18.0.0"
     axios: "npm:1.1.3"
     chalk: "npm:^4.1.0"
     dotenv: "npm:~10.0.0"
@@ -17237,7 +17237,7 @@ __metadata:
     yargs-parser: "npm:>=21.1.1"
   bin:
     nx-cloud: bin/nx-cloud.js
-  checksum: 10c0/7c4ccecd567c9cc68bb24b2f8921b8791d8822a097624de91bfcbbfcdd0b1e93c8a08e769c3d1c8e0616d2096d0416b94f472555de3de6ba6af37d4ab1df6d2a
+  checksum: 10c0/9e1a8f18b3d255eb385eb7dd2d5f1fc71862c39f8ad857be14f095315da45f31a713bb2516529a42d5236315389efce76dde5c5d0a0c6216d88663c50fb021bc
   languageName: node
   linkType: hard
 
