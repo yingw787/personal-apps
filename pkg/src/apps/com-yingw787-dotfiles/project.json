@@ -1,0 +1,30 @@
+{
+  "name": "com-yingw787-dotfiles",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "pkg/src/apps/com-yingw787-dotfiles",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/pkg/src/apps/com-yingw787-dotfiles"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "pkg/src/apps/com-yingw787-dotfiles"
+        },
+        "production": {}
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "pkg/src/apps/com-yingw787-dotfiles/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
