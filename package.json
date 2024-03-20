@@ -69,6 +69,7 @@
     "openai": "^4.16.1",
     "plaid": "^21.0.0",
     "posthog-js": "^1.111.3",
+    "prism-react-renderer": "^2.3.1",
     "qrcode": "^1.5.3",
     "react": "18.2.0",
     "react-day-picker": "^8.10.0",
