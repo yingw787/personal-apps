@@ -1,10 +1,10 @@
 import "$/global.css";
 
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 
-const ibmPlexMono = IBM_Plex_Mono({ weight: "400", subsets: ["latin"] });
+const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ying's Dotfiles",
@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body
         className={twMerge(
-          "flex h-full bg-base3 dark:bg-base03",
-          ibmPlexMono.className,
+          "bg-base03 text-base1 flex flex-col justify-center items-center min-h-screen",
+          inter.className,
         )}
       >
         {children}
