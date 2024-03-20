@@ -18,12 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body
-        className={twMerge(
-          "bg-base03 text-base1 flex flex-col justify-center items-center min-h-screen",
-          inter.className,
-        )}
-      >
+      <body className={twMerge("bg-base03 text-base1", inter.className)}>
         {children}
       </body>
     </html>
