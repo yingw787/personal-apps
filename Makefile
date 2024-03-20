@@ -53,3 +53,7 @@ container:
 tf-deploy: build
 	npx nx run pkg-src-infra-com-yingw787-dotfiles:plan
 	npx nx run pkg-src-infra-com-yingw787-dotfiles:apply
+
+# Check for source code updates (e.g. `shadcn-ui`)
+source-update:
+	npx shadcn-ui@latest diff
