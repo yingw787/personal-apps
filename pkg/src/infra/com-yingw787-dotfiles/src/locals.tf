@@ -7,7 +7,7 @@
 # Most of these variables are used in `aws_s3_object.tf`.
 
 locals {
-  dist_dir    = "${path.module}/dist"
+  dist_dir    = "${path.module}/../../../../../dist/pkg/src/apps/com-yingw787-dotfiles/.next"
   module_name = basename(abspath(path.module))
 
   content_types = {
