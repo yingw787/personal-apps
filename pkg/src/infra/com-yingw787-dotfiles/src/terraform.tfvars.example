@@ -3,6 +3,6 @@
 #
 # Make a copy of `terraform.tfvars.example` to `terraform.tfvars`, as Terraform
 # variables should not be checked into version control.
-domain_name = "cooking.yingw787.com"
+domain_name = "dotfiles.yingw787.com"
 custom_acm_certificate_arn = ""
 hosted_zone_id = ""
