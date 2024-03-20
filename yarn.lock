@@ -4291,7 +4291,7 @@ __metadata:
     shelljs: "npm:^0.8.5"
     sonner: "npm:^1.4.32"
     string-width: "npm:^7.1.0"
-    stripe: "npm:^14.18.0"
+    stripe: "npm:^14.21.0"
     supabase: "npm:1.115.5"
     supabase-to-zod: "npm:^1.0.5"
     swiper: "npm:^10.3.1"
@@ -21509,13 +21509,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stripe@npm:^14.18.0":
-  version: 14.19.0
-  resolution: "stripe@npm:14.19.0"
+"stripe@npm:^14.21.0":
+  version: 14.21.0
+  resolution: "stripe@npm:14.21.0"
   dependencies:
     "@types/node": "npm:>=8.1.0"
     qs: "npm:^6.11.0"
-  checksum: 10c0/2ded93390fbdc55cafe265e8311746b75706f0eb9ec0fa259b8558aefa44f06b5fd4b5281ee27f1da8b2c0b943488f8a6cf952766cefdd7c851602880f8a0aca
+  checksum: 10c0/b35b28fc46f9306a99e8902f5dba1823516e01abd673222d7195ea3e7d1df87b5abd55062059e24c8f70bcd5e32c6993a2eda9530607129dff399302ecf6317b
   languageName: node
   linkType: hard
 
