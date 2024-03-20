@@ -12,7 +12,7 @@
         "serve",
         "com-yingw787",
         "--port",
-        "5000",
+        "3000",
         "--inspect"
       ],
       "envFile": "${workspaceFolder}/.env.local",
@@ -30,7 +30,7 @@
         "serve",
         "com-yingw787-blog",
         "--port",
-        "5001",
+        "3001",
         "--inspect"
       ],
       "envFile": "${workspaceFolder}/.env.local",
@@ -48,7 +48,7 @@
         "serve",
         "com-yingw787-bytes",
         "--port",
-        "5002",
+        "3002",
         "--inspect"
       ],
       "envFile": "${workspaceFolder}/.env.local",
@@ -66,7 +66,25 @@
         "serve",
         "com-yingw787-cooking",
         "--port",
-        "5003",
+        "3003",
+        "--inspect"
+      ],
+      "envFile": "${workspaceFolder}/.env.local",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/*"],
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "com-yingw787-dotfiles",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "nx",
+        "serve",
+        "com-yingw787-dotfiles",
+        "--port",
+        "3004",
         "--inspect"
       ],
       "envFile": "${workspaceFolder}/.env.local",
