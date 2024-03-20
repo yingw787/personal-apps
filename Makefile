@@ -46,3 +46,10 @@ fmt:
 container:
 	npx nx run-many -t container --parallel=12
 	docker-compose up
+
+# Deploy Terraform-configured applications.
+#
+# TODO: Change to run-many plan and run-many apply later on.
+tf-deploy: build
+	npx nx run pkg-src-infra-com-yingw787-dotfiles:plan
+	npx nx run pkg-src-infra-com-yingw787-dotfiles:apply
