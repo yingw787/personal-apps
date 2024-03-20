@@ -1,8 +1,8 @@
 {
-  "name": "pkg-src-infra-com-yingw787-cooking",
+  "name": "pkg-src-infra-com-yingw787-dotfiles",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "pkg/src/infra/com-yingw787-cooking/src",
+  "sourceRoot": "pkg/src/infra/com-yingw787-dotfiles/src",
   "targets": {
     "plan": {
       "executor": "@nx-extend/terraform:plan",

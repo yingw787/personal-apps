@@ -1,7 +1,7 @@
 {
-  "name": "com-yingw787-blog",
+  "name": "com-yingw787-dotfiles",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "pkg/src/apps/com-yingw787-blog",
+  "sourceRoot": "pkg/src/apps/com-yingw787-dotfiles",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,11 +9,11 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/pkg/src/apps/com-yingw787-blog"
+        "outputPath": "dist/pkg/src/apps/com-yingw787-dotfiles"
       },
       "configurations": {
         "development": {
-          "outputPath": "pkg/src/apps/com-yingw787-blog"
+          "outputPath": "pkg/src/apps/com-yingw787-dotfiles"
         },
         "production": {}
       }
@@ -22,16 +22,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "com-yingw787-blog:build",
+        "buildTarget": "com-yingw787-dotfiles:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "com-yingw787-blog:build:development",
+          "buildTarget": "com-yingw787-dotfiles:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "com-yingw787-blog:build:production",
+          "buildTarget": "com-yingw787-dotfiles:build:production",
           "dev": false
         }
       }
@@ -40,7 +40,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "pkg/src/apps/com-yingw787-blog/jest.config.ts"
+        "jestConfig": "pkg/src/apps/com-yingw787-dotfiles/jest.config.ts"
       }
     },
     "lint": {
@@ -50,7 +50,7 @@
     "autoformat": {
       "executor": "nx:run-commands",
       "options": {
-        "cwd": "pkg/src/apps/com-yingw787-blog",
+        "cwd": "pkg/src/apps/com-yingw787-dotfiles",
         "commands": [
           "npx prettier --config ../../../../.prettierrc.json --ignore-path ../../../../.prettierignore --write ."
         ],
@@ -63,7 +63,7 @@
       "dependsOn": ["build"],
       "options": {
         "engine": "docker",
-        "tags": ["com-yingw787-blog:latest"]
+        "tags": ["com-yingw787-dotfiles:latest"]
       }
     }
   },

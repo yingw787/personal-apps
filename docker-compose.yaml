@@ -33,3 +33,11 @@ services:
       - 3003:3003
     env_file:
       - ./.env.local
+  com-yingw787-dotfiles:
+    image: com-yingw787-dotfiles:latest
+    expose:
+      - 3004
+    ports:
+      - 3004:3004
+    env_file:
+      - ./.env.local
