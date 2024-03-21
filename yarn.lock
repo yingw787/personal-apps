@@ -4200,7 +4200,7 @@ __metadata:
     "@radix-ui/react-toggle-group": "npm:^1.0.4"
     "@radix-ui/react-tooltip": "npm:^1.0.7"
     "@react-email/components": "npm:^0.0.15"
-    "@react-input/mask": "npm:^1.0.21"
+    "@react-input/mask": "npm:^1.0.22"
     "@react-input/number-format": "npm:^1.0.20"
     "@supabase/auth-helpers-nextjs": "npm:^0.8.1"
     "@supabase/auth-helpers-react": "npm:^0.4.2"
@@ -5785,11 +5785,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-input/mask@npm:^1.0.21":
-  version: 1.0.21
-  resolution: "@react-input/mask@npm:1.0.21"
-  dependencies:
-    "@react-input/core": "npm:^1.0.7"
+"@react-input/core@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "@react-input/core@npm:1.0.8"
   peerDependencies:
     "@types/react": ">=16.8"
     react: ">=16.8"
@@ -5797,7 +5795,23 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/1558ca46588de4a7df71f40f92827bb1378b4956968809489ca1df2718a38783c4477fa6b21327d409b96636b00cb9960b88e5f0e91bc1a0de920b73c2fc8b8f
+  checksum: 10c0/d8b4635093f2cec1dca290f8a76fa52ac1d2fd39d4a2e8f7632d2b29d35cf3e43fe94f459db6dce5caad6aa3c98fd8169228a9edeb7717debac28d30bff44d9c
+  languageName: node
+  linkType: hard
+
+"@react-input/mask@npm:^1.0.22":
+  version: 1.0.22
+  resolution: "@react-input/mask@npm:1.0.22"
+  dependencies:
+    "@react-input/core": "npm:^1.0.8"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/7944e7b0b00d9605e2a54245ca0061b406e14f403ff30eecccec376db22f8201cd22d5657a38dbfd01ef3381ca0e14d296825d7016b38c680dbdeebfb90b1562
   languageName: node
   linkType: hard
 
