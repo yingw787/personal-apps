@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center min-h-screen">
-        <Card className="w-[700px]">
+        <Card className="w-[80%] max-w-[700px]">
           <CardHeader>
             <CardTitle>Dotfiles</CardTitle>
             <CardDescription>
