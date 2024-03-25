@@ -4292,7 +4292,7 @@ __metadata:
     sonner: "npm:^1.4.32"
     string-width: "npm:^7.1.0"
     stripe: "npm:^14.21.0"
-    supabase: "npm:1.115.5"
+    supabase: "npm:1.150.0"
     supabase-to-zod: "npm:^1.0.5"
     swiper: "npm:^10.3.1"
     tailwind-merge: "npm:^2.2.0"
@@ -8847,7 +8847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bin-links@npm:^4.0.1":
+"bin-links@npm:^4.0.3":
   version: 4.0.3
   resolution: "bin-links@npm:4.0.3"
   dependencies:
@@ -17169,7 +17169,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^3.2.10":
+"node-fetch@npm:^3.3.2":
   version: 3.3.2
   resolution: "node-fetch@npm:3.3.2"
   dependencies:
@@ -21667,17 +21667,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supabase@npm:1.115.5":
-  version: 1.115.5
-  resolution: "supabase@npm:1.115.5"
+"supabase@npm:1.150.0":
+  version: 1.150.0
+  resolution: "supabase@npm:1.150.0"
   dependencies:
-    bin-links: "npm:^4.0.1"
+    bin-links: "npm:^4.0.3"
     https-proxy-agent: "npm:^7.0.2"
-    node-fetch: "npm:^3.2.10"
+    node-fetch: "npm:^3.3.2"
     tar: "npm:6.2.0"
   bin:
     supabase: bin/supabase
-  checksum: 10c0/45a2c5545f080354039564aaa85d1cb18bf372c049712f12a0c7cae2a0d66e458e09ddfc6a05b315096e8965a4c785b6291d814b64bc7df1c8ae19dd5c3b0a26
+  checksum: 10c0/067b61e1e387d458779bd85b1e2186f28dbb5d3172a2cb05f9b37e26f1adcf7791f9a072e48e03b8274f5634862c11c01f298aac6476d93397a889450b386e49
   languageName: node
   linkType: hard
 
