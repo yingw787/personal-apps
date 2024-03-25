@@ -4201,7 +4201,7 @@ __metadata:
     "@radix-ui/react-tooltip": "npm:^1.0.7"
     "@react-email/components": "npm:^0.0.15"
     "@react-input/mask": "npm:^1.0.23"
-    "@react-input/number-format": "npm:^1.0.20"
+    "@react-input/number-format": "npm:^1.0.23"
     "@supabase/auth-helpers-nextjs": "npm:^0.8.1"
     "@supabase/auth-helpers-react": "npm:^0.4.2"
     "@supabase/supabase-js": "npm:^2.38.4"
@@ -5771,20 +5771,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-input/core@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "@react-input/core@npm:1.0.7"
-  peerDependencies:
-    "@types/react": ">=16.8"
-    react: ">=16.8"
-    react-dom: ">=16.8"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 10c0/89620b63ace395d3f6f866c1d8394408118dfbdca49ee3393482115979b2b400ab5a4c5099bb305df9d826f786811f60811d62eb23d0397b0023ec9a21c7ffe6
-  languageName: node
-  linkType: hard
-
 "@react-input/core@npm:^1.0.9":
   version: 1.0.9
   resolution: "@react-input/core@npm:1.0.9"
@@ -5815,11 +5801,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-input/number-format@npm:^1.0.20":
-  version: 1.0.21
-  resolution: "@react-input/number-format@npm:1.0.21"
+"@react-input/number-format@npm:^1.0.23":
+  version: 1.0.23
+  resolution: "@react-input/number-format@npm:1.0.23"
   dependencies:
-    "@react-input/core": "npm:^1.0.7"
+    "@react-input/core": "npm:^1.0.9"
   peerDependencies:
     "@types/react": ">=16.8"
     react: ">=16.8"
@@ -5827,7 +5813,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 10c0/3d8746ab5d74ff67702fba3f4cce5582e9e13314f346816d9d9b91bd466c9b09c267825775391f8c6fdfca3d3c7160d7c580bb7f096dcc2f1cae2cca2083858c
+  checksum: 10c0/0dccabcfe76f31dd9f6ebbc3cde160f8343b9807e36058ae55b9f18caa6c68839cd8d332c97dd8807297f9fa97028de139103fc47e8c471f67fcf51c41d78ff1
   languageName: node
   linkType: hard
 
