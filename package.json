@@ -154,7 +154,7 @@
     "postcss": "^8.4.31",
     "prettier": "^3.0.0",
     "prettier-plugin-sql": "^0.18.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.33.3",
     "shelljs": "^0.8.5",
     "string-width": "^7.1.0",
     "supabase-to-zod": "^1.0.5",
