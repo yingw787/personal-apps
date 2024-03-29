@@ -100,7 +100,7 @@
   "devDependencies": {
     "@next/codemod": "^13.5.5",
     "@nx-extend/core": "^6.0.1",
-    "@nx-extend/terraform": "^5.0.0",
+    "@nx-extend/terraform": "^5.2.1",
     "@nx-tools/container-metadata": "^5.2.0",
     "@nx-tools/nx-container": "^5.2.0",
     "@nx/devkit": "^18.0.7",
