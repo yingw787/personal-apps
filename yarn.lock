@@ -4438,7 +4438,7 @@ __metadata:
     "@types/mdx": "npm:^2.0.12"
     "@types/node": "npm:20.11.25"
     "@types/qrcode": "npm:^1.5.2"
-    "@types/react": "npm:18.2.33"
+    "@types/react": "npm:18.2.73"
     "@types/react-dom": "npm:18.2.14"
     "@types/react-scroll": "npm:^1.8.10"
     "@types/react-syntax-highlighter": "npm:^15"
@@ -7437,14 +7437,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.33":
-  version: 18.2.33
-  resolution: "@types/react@npm:18.2.33"
+"@types/react@npm:18.2.73":
+  version: 18.2.73
+  resolution: "@types/react@npm:18.2.73"
   dependencies:
     "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/d3392785660d78121541403a5d1da57dc79e8ce402769251a626aa06a6886a6aaead868a01ee473661380ddd4ac79743de78853d69f652544da191d435f78afb
+  checksum: 10c0/b6645ab3c20efa41cfccf58ce0be45419517a0ba4594e323dd400342fb1c1f9589d169cf9bfa85b5b0605e9097fe9de7734b6d0c533f5b9bc32aaadb624537a4
   languageName: node
   linkType: hard
 
