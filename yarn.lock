@@ -4683,7 +4683,7 @@ __metadata:
     gpt3-tokenizer: "npm:^1.1.5"
     humanparser: "npm:^2.7.0"
     image-size: "npm:^1.1.1"
-    input-otp: "npm:^1.2.2"
+    input-otp: "npm:^1.2.4"
     jest: "npm:^29.4.1"
     jest-environment-jsdom: "npm:^29.4.1"
     jest-environment-node: "npm:^29.4.1"
@@ -14243,13 +14243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"input-otp@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "input-otp@npm:1.2.2"
+"input-otp@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "input-otp@npm:1.2.4"
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
-  checksum: 10c0/8c1666368474cc8205eb6c7cb366c627f1b1cdc71769e72c479a1bf6492ee6ed01e4ce47cb26022774a21a21cdf698ac4c51566e3162140b85ee3f7e54619b0f
+  checksum: 10c0/bb2cd158cb244da6e807f791261a77a6184de19580af4afba6cc1ea5ff69e675d401537f8186dd6eab7985748e8e2f0ae67c3a7edfbffe963dda029679ee2d8d
   languageName: node
   linkType: hard
 
