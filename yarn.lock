@@ -4716,7 +4716,7 @@ __metadata:
     react-spring: "npm:^9.7.3"
     react-syntax-highlighter: "npm:^15.5.0"
     react-wrap-balancer: "npm:^1.1.0"
-    recharts: "npm:^2.12.1"
+    recharts: "npm:^2.12.4"
     resend: "npm:^2.0.0"
     sharp: "npm:^0.33.3"
     shelljs: "npm:^0.8.5"
@@ -20368,9 +20368,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recharts@npm:^2.12.1":
-  version: 2.12.1
-  resolution: "recharts@npm:2.12.1"
+"recharts@npm:^2.12.4":
+  version: 2.12.4
+  resolution: "recharts@npm:2.12.4"
   dependencies:
     clsx: "npm:^2.0.0"
     eventemitter3: "npm:^4.0.1"
@@ -20383,7 +20383,7 @@ __metadata:
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/e4fa6f17a48581e8ab05ba8dfabd84538f7f33e3a853ff8046262bde7b4a8daac176823a0cf101df290da34afe88baae29c58be674636165b67875c02c647f1e
+  checksum: 10c0/15b250b0b45bf26cb3e3913aa0f2ef931fbf1511d5e535c871f0ac3443a9e71bd1c105ec673761d73cbe492d83e98f66f03bea3e30f905118a606249733d0f5c
   languageName: node
   linkType: hard
 
