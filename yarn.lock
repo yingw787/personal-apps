@@ -4595,7 +4595,7 @@ __metadata:
     "@nx/eslint": "npm:18.2.2"
     "@nx/eslint-plugin": "npm:17.2.8"
     "@nx/jest": "npm:17.2.8"
-    "@nx/js": "npm:18.0.5"
+    "@nx/js": "npm:18.2.2"
     "@nx/linter": "npm:18.2.1"
     "@nx/next": "npm:18.0.5"
     "@nx/node": "npm:^18.0.5"
