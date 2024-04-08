@@ -2636,6 +2636,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:18.2.3":
+  version: 18.2.3
+  resolution: "@nrwl/devkit@npm:18.2.3"
+  dependencies:
+    "@nx/devkit": "npm:18.2.3"
+  checksum: 10c0/4dfa4d5774d11b0b0d42b8f80ab7cf30064f456144c97278a351ad336bdc0eb3099f7f45348e7fd69f5ba96289ab56f323ccb61acb326c905f73d68e09dc2d64
+  languageName: node
+  linkType: hard
+
 "@nrwl/eslint-plugin-nx@npm:17.2.8":
   version: 17.2.8
   resolution: "@nrwl/eslint-plugin-nx@npm:17.2.8"
@@ -3094,7 +3103,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:18.0.7, @nx/devkit@npm:^18.0.7":
+"@nx/devkit@npm:18.0.7":
   version: 18.0.7
   resolution: "@nx/devkit@npm:18.0.7"
   dependencies:
@@ -3163,6 +3172,24 @@ __metadata:
   peerDependencies:
     nx: ">= 16 <= 18"
   checksum: 10c0/aa9fd7f61f336ef9c3e15ecf26ebe67ad8895d8d0f700082e14b9957a65b82672c4de653fade2fd03728e43904ada2e6e7312c833e0a8d8a72482c419289da52
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:18.2.3, @nx/devkit@npm:^18.2.3":
+  version: 18.2.3
+  resolution: "@nx/devkit@npm:18.2.3"
+  dependencies:
+    "@nrwl/devkit": "npm:18.2.3"
+    ejs: "npm:^3.1.7"
+    enquirer: "npm:~2.3.6"
+    ignore: "npm:^5.0.4"
+    semver: "npm:^7.5.3"
+    tmp: "npm:~0.2.1"
+    tslib: "npm:^2.3.0"
+    yargs-parser: "npm:21.1.1"
+  peerDependencies:
+    nx: ">= 16 <= 18"
+  checksum: 10c0/7e79ae99043a7ac291867aad2943692694f779059afa4617aff8871f5db854a9b16856ab6669a3f0459c79a496d5f96da39d043b652a83e324dee891c6a2612b
   languageName: node
   linkType: hard
 
@@ -4591,7 +4618,7 @@ __metadata:
     "@nx-extend/terraform": "npm:^5.2.1"
     "@nx-tools/container-metadata": "npm:^5.2.0"
     "@nx-tools/nx-container": "npm:^5.2.0"
-    "@nx/devkit": "npm:^18.0.7"
+    "@nx/devkit": "npm:^18.2.3"
     "@nx/eslint": "npm:18.2.2"
     "@nx/eslint-plugin": "npm:17.2.8"
     "@nx/jest": "npm:17.2.8"
