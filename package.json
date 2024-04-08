@@ -118,7 +118,7 @@
     "@swc-node/register": "~1.9.0",
     "@swc/cli": "~0.3.10",
     "@swc/core": "~1.4.12",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/react": "14.2.2",
     "@types/common-tags": "^1.8.3",
     "@types/humanparser": "^1.1.6",
     "@types/jest": "^29.5.12",
