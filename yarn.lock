@@ -4670,7 +4670,7 @@ __metadata:
     "@tailwindcss/forms": "npm:^0.5.6"
     "@tanstack/react-query": "npm:^5.24.1"
     "@tanstack/react-table": "npm:^8.15.3"
-    "@testing-library/react": "npm:14.0.0"
+    "@testing-library/react": "npm:14.3.0"
     "@types/common-tags": "npm:^1.8.3"
     "@types/humanparser": "npm:^1.1.6"
     "@types/jest": "npm:^29.5.12"
@@ -7018,9 +7018,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:14.0.0":
-  version: 14.0.0
-  resolution: "@testing-library/react@npm:14.0.0"
+"@testing-library/react@npm:14.3.0":
+  version: 14.3.0
+  resolution: "@testing-library/react@npm:14.3.0"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
     "@testing-library/dom": "npm:^9.0.0"
@@ -7028,7 +7028,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 10c0/81035913024faf18ba7e163418af517b2c3b85aef496fbd6334bda38f6f6dd4072678c6b76c41148b46b7fc846764f875e1156cbfc7643ffa1b62ee069d78951
+  checksum: 10c0/2a2529d2bd428074654f75a313c55a33b59e7ab497ff5adcf208b59afd96b19e1e565da48289fdcf898348a0227caef4b43ac888003b6a992331d4c12a488bfc
   languageName: node
   linkType: hard
 
