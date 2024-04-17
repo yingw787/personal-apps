@@ -112,7 +112,7 @@
     "@nx/next": "18.0.5",
     "@nx/node": "^18.0.5",
     "@nx/playwright": "18.3.0",
-    "@nx/react": "18.1.2",
+    "@nx/react": "18.3.0",
     "@nx/workspace": "^18.0.7",
     "@playwright/test": "^1.42.1",
     "@swc-node/register": "~1.9.0",
