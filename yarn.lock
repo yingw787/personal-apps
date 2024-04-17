@@ -4687,7 +4687,7 @@ __metadata:
     "@react-input/number-format": "npm:^1.0.23"
     "@supabase/auth-helpers-nextjs": "npm:^0.8.1"
     "@supabase/auth-helpers-react": "npm:^0.4.2"
-    "@supabase/supabase-js": "npm:^2.38.4"
+    "@supabase/supabase-js": "npm:^2.42.4"
     "@swc-node/register": "npm:~1.9.0"
     "@swc/cli": "npm:~0.3.10"
     "@swc/core": "npm:~1.4.12"
@@ -6512,21 +6512,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/functions-js@npm:2.1.5":
-  version: 2.1.5
-  resolution: "@supabase/functions-js@npm:2.1.5"
+"@supabase/auth-js@npm:2.63.0":
+  version: 2.63.0
+  resolution: "@supabase/auth-js@npm:2.63.0"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 10c0/f2af9f12c9ffa4460998c166d71184bb2fc7753f2063548d482a51db3178da24217cd9dea1be8803356c3fd743848fdfb1e1903d882aa90fa7a7ae0c5dc7d070
+  checksum: 10c0/f1654ad8254508e736705a8142b6e3e161a82532e693493ec878b7a006238e8f7dfc276e7d729fe14ec84b1ec01f3919f272869144ecf6e4e4c357318c92830b
   languageName: node
   linkType: hard
 
-"@supabase/gotrue-js@npm:2.62.2":
-  version: 2.62.2
-  resolution: "@supabase/gotrue-js@npm:2.62.2"
+"@supabase/functions-js@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@supabase/functions-js@npm:2.3.0"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 10c0/132bf31f00d321466a5e956e4fcd24ad7d2908b65bafa4b10d7e5c77fb0bd39ca643806de879acd71ae83089a7a581300c91f6a3717a1afec8e122c8dfd05e2c
+  checksum: 10c0/d0284cf2d4bcfe92f260006787afd02a96965ec52a6111d27a36a21330f701b9e78fc93ab7d397bb29ae5f90bdf7051acb5236f9cb4946c044545cecc6007d33
   languageName: node
   linkType: hard
 
@@ -6539,24 +6539,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/postgrest-js@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@supabase/postgrest-js@npm:1.9.2"
+"@supabase/postgrest-js@npm:1.15.2":
+  version: 1.15.2
+  resolution: "@supabase/postgrest-js@npm:1.15.2"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
-  checksum: 10c0/dab4144b54010f4d332f892d03529b3b5525f3a2bb164bbf254be7e6faaccbd0a6e25732b91808f7ec6987600ddc79508ffcb15a3ef037b646639b04eb969121
+  checksum: 10c0/a7dd2ef25a9b73f6fcd374b84c45ce610cfd9c2e565cb7a1c978601b62a6ec6cffa32751ef0857f850dc212acc9971aa6f0612aa9f8c0c0cb54cfb8b4d9a3cdb
   languageName: node
   linkType: hard
 
-"@supabase/realtime-js@npm:2.9.3":
-  version: 2.9.3
-  resolution: "@supabase/realtime-js@npm:2.9.3"
+"@supabase/realtime-js@npm:2.9.4":
+  version: 2.9.4
+  resolution: "@supabase/realtime-js@npm:2.9.4"
   dependencies:
     "@supabase/node-fetch": "npm:^2.6.14"
     "@types/phoenix": "npm:^1.5.4"
     "@types/ws": "npm:^8.5.10"
     ws: "npm:^8.14.2"
-  checksum: 10c0/321c98237e3255cad221ed16b54739ce327d395b80faba1416ba81577f043681ae0dde10e0ac1b7e3427412d1dbb35cb4b66d8466c21239932aa3dca6b9cc87c
+  checksum: 10c0/2c8499ef332d1214c8dda2cabac362034d3e0a38c5941b8a8ffc9bc4666b40d4525c0b5064c17a05468cc4472aa5507c14cb69581a1077f902ece0493ef92cd3
   languageName: node
   linkType: hard
 
@@ -6569,17 +6569,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:^2.38.4":
-  version: 2.39.7
-  resolution: "@supabase/supabase-js@npm:2.39.7"
+"@supabase/supabase-js@npm:^2.42.4":
+  version: 2.42.4
+  resolution: "@supabase/supabase-js@npm:2.42.4"
   dependencies:
-    "@supabase/functions-js": "npm:2.1.5"
-    "@supabase/gotrue-js": "npm:2.62.2"
+    "@supabase/auth-js": "npm:2.63.0"
+    "@supabase/functions-js": "npm:2.3.0"
     "@supabase/node-fetch": "npm:2.6.15"
-    "@supabase/postgrest-js": "npm:1.9.2"
-    "@supabase/realtime-js": "npm:2.9.3"
+    "@supabase/postgrest-js": "npm:1.15.2"
+    "@supabase/realtime-js": "npm:2.9.4"
     "@supabase/storage-js": "npm:2.5.5"
-  checksum: 10c0/dfa931bba8e30ac8541783c6e527fda3df5c86b4ad5b5f5a9b02b459a21dca2bf4eab8c18648f3c7f409cf98a03f0479a96cac299420e221b7c63f7566ed2301
+  checksum: 10c0/6077ba797dea77acf571110eb6c48d7beddebe6affab0b84bd9eb482169841fbb8658a93a7823737932227c96ae47b0af155680941327344142e88ace8938f48
   languageName: node
   linkType: hard
 
