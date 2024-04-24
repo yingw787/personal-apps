@@ -57,6 +57,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ai-sdk/provider-utils@npm:0.0.3":
+  version: 0.0.3
+  resolution: "@ai-sdk/provider-utils@npm:0.0.3"
+  dependencies:
+    "@ai-sdk/provider": "npm:0.0.2"
+    eventsource-parser: "npm:1.1.2"
+    nanoid: "npm:3.3.6"
+    secure-json-parse: "npm:2.7.0"
+  peerDependencies:
+    zod: ^3.0.0
+  peerDependenciesMeta:
+    zod:
+      optional: true
+  checksum: 10c0/6bb9ec1313dcdac8834fd84a3b5dcb7db7aff337d8e49538e1cb0d323f58e3ebf3d4e28ded1241e31389a40f2c9acb135a658cf3d75396fa1ed771a27aa0a49e
+  languageName: node
+  linkType: hard
+
+"@ai-sdk/provider@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@ai-sdk/provider@npm:0.0.2"
+  dependencies:
+    json-schema: "npm:0.4.0"
+  checksum: 10c0/7a4960ae797d30641363e4fa02270f99240c571fc5057c96313e4dd1bfac56277a94781c6d3b58b6492d87a6f7775bbdce27a88156f3fa98d74e220f7c875d4f
+  languageName: node
+  linkType: hard
+
 "@alloc/quick-lru@npm:^5.2.0":
   version: 5.2.0
   resolution: "@alloc/quick-lru@npm:5.2.0"
@@ -4577,7 +4603,7 @@ __metadata:
     "@types/uniqid": "npm:^5.3.2"
     "@typescript-eslint/eslint-plugin": "npm:^7.7.1"
     "@typescript-eslint/parser": "npm:^7.3.1"
-    ai: "npm:^2.2.16"
+    ai: "npm:^3.0.30"
     autoprefixer: "npm:^10.4.19"
     babel-jest: "npm:^29.4.1"
     class-variance-authority: "npm:^0.7.0"
@@ -7174,6 +7200,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/diff-match-patch@npm:^1.0.36":
+  version: 1.0.36
+  resolution: "@types/diff-match-patch@npm:1.0.36"
+  checksum: 10c0/0bad011ab138baa8bde94e7815064bb881f010452463272644ddbbb0590659cb93f7aa2776ff442c6721d70f202839e1053f8aa62d801cc4166f7a3ea9130055
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.7
   resolution: "@types/eslint-scope@npm:3.7.7"
@@ -8408,22 +8441,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ai@npm:^2.2.16":
-  version: 2.2.37
-  resolution: "ai@npm:2.2.37"
+"ai@npm:^3.0.30":
+  version: 3.0.30
+  resolution: "ai@npm:3.0.30"
   dependencies:
-    eventsource-parser: "npm:1.0.0"
+    "@ai-sdk/provider": "npm:0.0.2"
+    "@ai-sdk/provider-utils": "npm:0.0.3"
+    eventsource-parser: "npm:1.1.2"
+    json-schema: "npm:0.4.0"
+    jsondiffpatch: "npm:0.6.0"
     nanoid: "npm:3.3.6"
+    secure-json-parse: "npm:2.7.0"
     solid-swr-store: "npm:0.10.7"
     sswr: "npm:2.0.0"
     swr: "npm:2.2.0"
     swr-store: "npm:0.10.6"
     swrv: "npm:1.0.4"
+    zod-to-json-schema: "npm:3.22.5"
   peerDependencies:
     react: ^18.2.0
     solid-js: ^1.7.7
     svelte: ^3.0.0 || ^4.0.0
     vue: ^3.3.4
+    zod: ^3.0.0
   peerDependenciesMeta:
     react:
       optional: true
@@ -8433,7 +8473,9 @@ __metadata:
       optional: true
     vue:
       optional: true
-  checksum: 10c0/a2b723d6751f5928ec383e97cf3cbae0c8355a3cdc18bca0b1cea7dee385dfa30bbd1b604eff8967d0f1afb6c6621a7165d5aab38e76b46c8232180438f1dd66
+    zod:
+      optional: true
+  checksum: 10c0/c349f5b6b6768fffa627640f2b8fc794b573e5e961cffa43e68a75e64d1821e3b5c909e156827817a809a8afa6a4533d26cf27c28519b503cfd8b34dd88603c6
   languageName: node
   linkType: hard
 
@@ -9697,6 +9739,13 @@ __metadata:
     escape-string-regexp: "npm:^1.0.5"
     supports-color: "npm:^5.3.0"
   checksum: 10c0/e6543f02ec877732e3a2d1c3c3323ddb4d39fbab687c23f526e25bd4c6a9bf3b83a696e8c769d078e04e5754921648f7821b2a2acfd16c550435fd630026e073
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "chalk@npm:5.3.0"
+  checksum: 10c0/8297d436b2c0f95801103ff2ef67268d362021b8210daf8ddbe349695333eb3610a71122172ff3b0272f1ef2cf7cc2c41fdaa4715f52e49ffe04c56340feed09
   languageName: node
   linkType: hard
 
@@ -11249,6 +11298,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"diff-match-patch@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "diff-match-patch@npm:1.0.5"
+  checksum: 10c0/142b6fad627b9ef309d11bd935e82b84c814165a02500f046e2773f4ea894d10ed3017ac20454900d79d4a0322079f5b713cf0986aaf15fce0ec4a2479980c86
+  languageName: node
+  linkType: hard
+
 "diff-sequences@npm:^29.6.3":
   version: 29.6.3
   resolution: "diff-sequences@npm:29.6.3"
@@ -12459,10 +12515,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eventsource-parser@npm:1.0.0":
-  version: 1.0.0
-  resolution: "eventsource-parser@npm:1.0.0"
-  checksum: 10c0/eb6b66231bd2b383f7a5fa1c5ca17d61cd8145afc560de8cc9f11ab60a05a22afd760de594886241378b831314c3b875c64ae3f596e9ce90cded99cbeef0ef9a
+"eventsource-parser@npm:1.1.2":
+  version: 1.1.2
+  resolution: "eventsource-parser@npm:1.1.2"
+  checksum: 10c0/b38948bc81ae6c2a8b9c88383d4f8c2bfbaf23955827a9af68d39bc0550ae83cc400b197e814bea9aef6e0cdc9bae5afd95787418ee3d9ad01ffc4774cf1b84a
   languageName: node
   linkType: hard
 
@@ -15798,6 +15854,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-schema@npm:0.4.0":
+  version: 0.4.0
+  resolution: "json-schema@npm:0.4.0"
+  checksum: 10c0/d4a637ec1d83544857c1c163232f3da46912e971d5bf054ba44fdb88f07d8d359a462b4aec46f2745efbc57053365608d88bc1d7b1729f7b4fc3369765639ed3
+  languageName: node
+  linkType: hard
+
 "json-stable-stringify-without-jsonify@npm:^1.0.1":
   version: 1.0.1
   resolution: "json-stable-stringify-without-jsonify@npm:1.0.1"
@@ -15841,6 +15904,19 @@ __metadata:
   version: 3.2.0
   resolution: "jsonc-parser@npm:3.2.0"
   checksum: 10c0/5a12d4d04dad381852476872a29dcee03a57439574e4181d91dca71904fcdcc5e8e4706c0a68a2c61ad9810e1e1c5806b5100d52d3e727b78f5cdc595401045b
+  languageName: node
+  linkType: hard
+
+"jsondiffpatch@npm:0.6.0":
+  version: 0.6.0
+  resolution: "jsondiffpatch@npm:0.6.0"
+  dependencies:
+    "@types/diff-match-patch": "npm:^1.0.36"
+    chalk: "npm:^5.3.0"
+    diff-match-patch: "npm:^1.0.5"
+  bin:
+    jsondiffpatch: bin/jsondiffpatch.js
+  checksum: 10c0/f7822e48a8ef8b9f7c6024cc59b7d3707a9fe6d84fd776d169de5a1803ad551ffe7cfdc7587f3900f224bc70897355884ed43eb1c8ccd02e7f7b43a7ebcfed4f
   languageName: node
   linkType: hard
 
@@ -20992,6 +21068,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"secure-json-parse@npm:2.7.0":
+  version: 2.7.0
+  resolution: "secure-json-parse@npm:2.7.0"
+  checksum: 10c0/f57eb6a44a38a3eeaf3548228585d769d788f59007454214fab9ed7f01fbf2e0f1929111da6db28cf0bcc1a2e89db5219a59e83eeaec3a54e413a0197ce879e4
+  languageName: node
+  linkType: hard
+
 "selderee@npm:^0.11.0":
   version: 0.11.0
   resolution: "selderee@npm:0.11.0"
@@ -24251,6 +24334,15 @@ __metadata:
   version: 1.0.0
   resolution: "yocto-queue@npm:1.0.0"
   checksum: 10c0/856117aa15cf5103d2a2fb173f0ab4acb12b4b4d0ed3ab249fdbbf612e55d1cadfd27a6110940e24746fb0a78cf640b522cc8bca76f30a3b00b66e90cf82abe0
+  languageName: node
+  linkType: hard
+
+"zod-to-json-schema@npm:3.22.5":
+  version: 3.22.5
+  resolution: "zod-to-json-schema@npm:3.22.5"
+  peerDependencies:
+    zod: ^3.22.4
+  checksum: 10c0/f3c4038338af3c0268ced73edaa2eed12002d461ae181657547b0a4a296be4247edc3dcdd5bf14a4058426c1e0c3574407cb282f115249f0ec0fcbc82dcbdabd
   languageName: node
   linkType: hard
 
