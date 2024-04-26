@@ -111,7 +111,7 @@
     "@nx/linter": "18.3.3",
     "@nx/next": "18.0.5",
     "@nx/node": "^18.0.5",
-    "@nx/playwright": "18.3.0",
+    "@nx/playwright": "18.3.4",
     "@nx/react": "18.3.0",
     "@nx/workspace": "^18.3.3",
     "@playwright/test": "^1.42.1",
