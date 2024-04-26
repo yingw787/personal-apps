@@ -4746,7 +4746,7 @@ __metadata:
     nx: "npm:18.3.4"
     nx-cloud: "npm:^18.0.0"
     openai: "npm:^4.33.0"
-    plaid: "npm:^21.0.0"
+    plaid: "npm:^23.0.0"
     postcss: "npm:^8.4.38"
     posthog-js: "npm:^1.111.3"
     prettier: "npm:^3.0.0"
@@ -19213,12 +19213,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaid@npm:^21.0.0":
-  version: 21.0.0
-  resolution: "plaid@npm:21.0.0"
+"plaid@npm:^23.0.0":
+  version: 23.0.0
+  resolution: "plaid@npm:23.0.0"
   dependencies:
     axios: "npm:^1.6.2"
-  checksum: 10c0/449a054d3350007bb9d9562b3eb1a933ca83e8dc0eb1b38a1c88f3615fbe9450f3df9c70c06c99e75907ab10c315fa00030568f06743b60ba99c8f56ee60310c
+  checksum: 10c0/e46484edbcd4ca59ee26ba04a447619624a73e36982e3fc4ea29c35d07c112031df5db56e3df0b798b245d08be73dc7afea0f0ea4f139a0e792ebbe8f152f41c
   languageName: node
   linkType: hard
 
