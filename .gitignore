@@ -68,3 +68,6 @@ Thumbs.db
 # Static NextJS builds
 
 **/out/
+
+# Yarn: https://yarnpkg.com/getting-started/qa
+.yarn/install-state.gz
