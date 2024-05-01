@@ -4758,7 +4758,7 @@ __metadata:
     react-facebook-pixel: "npm:^1.0.4"
     react-hook-form: "npm:^7.51.1"
     react-hot-toast: "npm:^2.4.1"
-    react-icons: "npm:^4.11.0"
+    react-icons: "npm:^5.2.0"
     react-plaid-link: "npm:^3.4.1"
     react-resizable-panels: "npm:^2.0.13"
     react-scroll: "npm:^1.9.0"
@@ -20169,12 +20169,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.11.0":
-  version: 4.12.0
-  resolution: "react-icons@npm:4.12.0"
+"react-icons@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "react-icons@npm:5.2.0"
   peerDependencies:
     react: "*"
-  checksum: 10c0/2170f43031ee7365539f72d4075cbe6c7fbf9a66d6cf4494aa9393b194272da0564f5b19d1b24dbfc567c0ac89f5fe5b8974d92dd83f61e252388dde6a226fb8
+  checksum: 10c0/bd9176b1aa6ddaa99b2abea2cecb523443b39a470912725e12da0b478697312fdefb55daaee921cf28bd9d76f580f0fa879d127c8f63fa1ca4516d44817eb6f4
   languageName: node
   linkType: hard
 
