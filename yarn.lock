@@ -11613,13 +11613,13 @@ __metadata:
   linkType: hard
 
 "ejs@npm:^3.1.7, ejs@npm:^3.1.9":
-  version: 3.1.9
-  resolution: "ejs@npm:3.1.9"
+  version: 3.1.10
+  resolution: "ejs@npm:3.1.10"
   dependencies:
     jake: "npm:^10.8.5"
   bin:
     ejs: bin/cli.js
-  checksum: 10c0/f0e249c79128810f5f6d5cbf347fc906d86bb9384263db0b2a9004aea649f2bc2d112736de5716c509c80afb4721c47281bd5b57c757d3b63f1bf5ac5f885893
+  checksum: 10c0/52eade9e68416ed04f7f92c492183340582a36482836b11eab97b159fcdcfdedc62233a1bf0bf5e5e1851c501f2dca0e2e9afd111db2599e4e7f53ee29429ae1
   languageName: node
   linkType: hard
 
@@ -23285,11 +23285,11 @@ __metadata:
   linkType: hard
 
 "undici@npm:^5.25.4":
-  version: 5.28.3
-  resolution: "undici@npm:5.28.3"
+  version: 5.28.4
+  resolution: "undici@npm:5.28.4"
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
-  checksum: 10c0/3c559ae50ef3104b7085251445dda6f4de871553b9e290845649d2f80b06c0c9cfcdf741b0029c6b20d36c82e6a74dc815b139fa9a26757d70728074ca6d6f5c
+  checksum: 10c0/08d0f2596553aa0a54ca6e8e9c7f45aef7d042c60918564e3a142d449eda165a80196f6ef19ea2ef2e6446959e293095d8e40af1236f0d67223b06afac5ecad7
   languageName: node
   linkType: hard
 
