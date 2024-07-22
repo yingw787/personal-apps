@@ -63,6 +63,7 @@
     "libphonenumber-js": "^1.10.47",
     "lodash": "^4.17.21",
     "lucide-react": "^0.354.0",
+    "minimatch": "^10.0.1",
     "moment": "^2.29.4",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
@@ -165,4 +166,3 @@
   },
   "packageManager": "yarn@4.1.0"
 }
-
