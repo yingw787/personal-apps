@@ -3770,7 +3770,7 @@ __metadata:
     react-syntax-highlighter: "npm:^15.5.0"
     react-wrap-balancer: "npm:^1.1.0"
     recharts: "npm:^2.12.4"
-    resend: "npm:^2.0.0"
+    resend: "npm:^3.5.0"
     sharp: "npm:^0.33.3"
     shelljs: "npm:^0.8.5"
     sonner: "npm:^1.4.32"
@@ -5205,15 +5205,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-email/render@npm:0.0.9":
-  version: 0.0.9
-  resolution: "@react-email/render@npm:0.0.9"
+"@react-email/render@npm:0.0.16":
+  version: 0.0.16
+  resolution: "@react-email/render@npm:0.0.16"
   dependencies:
     html-to-text: "npm:9.0.5"
-    pretty: "npm:2.0.0"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-  checksum: 10c0/128b3a7c65e77a14600e48fb24183e182de82b4ddc8ff11bb239c421fa68bd6eb8b063822b5abe9f8599e34ece315cdb961b4133c59285cebcc517d2ec0ae8da
+    js-beautify: "npm:^1.14.11"
+    react-promise-suspense: "npm:0.3.4"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/1cc3479f674f070f8564b8944dcb86081b7f52b67742d0c255d79b6cea989be0e2207d2adcd5a920ff4b41fbe360d655ac97a71f8ebd5e6d78441cafcfc668dc
   languageName: node
   linkType: hard
 
@@ -9317,17 +9319,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"condense-newlines@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "condense-newlines@npm:0.2.1"
-  dependencies:
-    extend-shallow: "npm:^2.0.1"
-    is-whitespace: "npm:^0.3.0"
-    kind-of: "npm:^3.0.2"
-  checksum: 10c0/19485db92a5d4658b50ab250626ece0cebe57f73af126b348604309894ed9a2b05f88f1802a090fd1897156eda0af69d8f14446bc62f978e0d048b5135e91694
-  languageName: node
-  linkType: hard
-
 "config-chain@npm:^1.1.13":
   version: 1.1.13
   resolution: "config-chain@npm:1.1.13"
@@ -11721,6 +11712,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-deep-equal@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "fast-deep-equal@npm:2.0.1"
+  checksum: 10c0/1602e0d6ed63493c865cc6b03f9070d6d3926e8cd086a123060b58f80a295f3f08b1ecfb479ae7c45b7fd45535202aea7cf5b49bc31bffb81c20b1502300be84
+  languageName: node
+  linkType: hard
+
 "fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
@@ -14006,13 +14004,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-whitespace@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "is-whitespace@npm:0.3.0"
-  checksum: 10c0/2f4ef13e0195170bbb587437133ef81ed9d6aec1c5e88f4c2b9055a18a1e70f75d9a9376f0cdae64f3c519e05e5f734d6b8f9682e5cb50384843480bade785ae
-  languageName: node
-  linkType: hard
-
 "is-windows@npm:^1.0.1, is-windows@npm:^1.0.2":
   version: 1.0.2
   resolution: "is-windows@npm:1.0.2"
@@ -14674,7 +14665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-beautify@npm:^1.14.11, js-beautify@npm:^1.6.12":
+"js-beautify@npm:^1.14.11":
   version: 1.15.1
   resolution: "js-beautify@npm:1.15.1"
   dependencies:
@@ -18469,17 +18460,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty@npm:2.0.0":
-  version: 2.0.0
-  resolution: "pretty@npm:2.0.0"
-  dependencies:
-    condense-newlines: "npm:^0.2.1"
-    extend-shallow: "npm:^2.0.1"
-    js-beautify: "npm:^1.6.12"
-  checksum: 10c0/2fcd72f331d0afae3893ba88a5c05f6fdd62b059cb309028aa3309fc8a90410d81dfe66ae95677bc6d6d4a68f3cc1a247c13e5872bd35686f99acb33acc51164
-  languageName: node
-  linkType: hard
-
 "prismjs@npm:1.29.0, prismjs@npm:^1.27.0":
   version: 1.29.0
   resolution: "prismjs@npm:1.29.0"
@@ -18854,6 +18834,15 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/9e3af9e9c148464aa66f8fbdeb883b7349731884dd0484ffd205c65f5be9d9dac3422a117286eb6bbe6b39ef5e1928c302eadfb72546bb67b86dfa34e22c9052
+  languageName: node
+  linkType: hard
+
+"react-promise-suspense@npm:0.3.4":
+  version: 0.3.4
+  resolution: "react-promise-suspense@npm:0.3.4"
+  dependencies:
+    fast-deep-equal: "npm:^2.0.1"
+  checksum: 10c0/ab7a22f5400f9e9933995537bf6430a4c79e33a121aedb51864968e7604e5c40421fd539ead62554f32300b7d49755c79636de06caa36fe52973b626b4ddfebf
   languageName: node
   linkType: hard
 
@@ -19380,12 +19369,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resend@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "resend@npm:2.1.0"
+"resend@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "resend@npm:3.5.0"
   dependencies:
-    "@react-email/render": "npm:0.0.9"
-  checksum: 10c0/86279c7896e6cf7afddb145344cc937ce3ad6bd12ef89bc15a235410d73ba2fc942ef5436d422b97e4b0d8520bd92ccc8ab6d691ae6c0d5310e32809b49c8c17
+    "@react-email/render": "npm:0.0.16"
+  checksum: 10c0/9920a456b926ef7be165a550c1c02355a8390fb215f05778118e3758a636411d49e4fa1ce3c648f42499e5928e7e159e2ebcce89b991c5708ae8b3393a84c242
   languageName: node
   linkType: hard
 
