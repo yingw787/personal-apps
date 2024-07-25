@@ -3756,7 +3756,7 @@ __metadata:
     prettier-plugin-sql: "npm:^0.18.0"
     qrcode: "npm:^1.5.3"
     react: "npm:18.3.1"
-    react-day-picker: "npm:^8.10.0"
+    react-day-picker: "npm:^9.0.4"
     react-dom: "npm:18.3.1"
     react-facebook-pixel: "npm:^1.0.4"
     react-hook-form: "npm:^7.51.1"
@@ -18752,13 +18752,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-day-picker@npm:^8.10.0":
-  version: 8.10.0
-  resolution: "react-day-picker@npm:8.10.0"
+"react-day-picker@npm:^9.0.4":
+  version: 9.0.4
+  resolution: "react-day-picker@npm:9.0.4"
+  dependencies:
+    date-fns: "npm:^3.6.0"
   peerDependencies:
-    date-fns: ^2.28.0 || ^3.0.0
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/e9868aced1e40b4cb7d6cf8d50e250226b38ec7ebea944b65aa9db20a0f36d0581b8a501297d09dcbf2d812de852168952b3fb27990915381629d6e314c2a4d8
+    react: ">=16.8.0"
+  checksum: 10c0/15f9b3ccbfe2070ecbad322ad370d788ad5f16ba941cb403f7713d1cb46bb4e25cb8248dd5e9812798400e3c74c253e86fac921bbaa9148b3643cc25b95cff10
   languageName: node
   linkType: hard
 
